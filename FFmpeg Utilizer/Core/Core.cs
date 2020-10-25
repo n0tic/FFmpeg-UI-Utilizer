@@ -6,7 +6,7 @@ using System.IO;
 using System.Net;
 using System.Windows.Forms;
 
-namespace FFMPEG_Utilizer
+namespace FFmpeg_Utilizer
 {
     public static class Core
     {

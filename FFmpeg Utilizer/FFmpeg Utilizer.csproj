@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Core.cs" />
+    <Compile Include="Data\Argument.cs" />
+    <Compile Include="Data\Headers.cs" />
+    <Compile Include="Data\ProcesserData.cs" />
+    <Compile Include="Data\Settings.cs" />
+    <Compile Include="Data\static\CommonExtensions.cs" />
+    <Compile Include="Data\static\Libs.cs" />
     <Compile Include="Data\Tab.cs" />
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
@@ -54,6 +62,7 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\NoticeModule.cs" />
+    <Compile Include="Modules\UtilityUpdaterModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Main.resx">

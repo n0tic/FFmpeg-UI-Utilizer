@@ -1,4 +1,5 @@
-﻿using FFmpeg_Utilizer.Modules;
+﻿using FFmpeg_Utilizer.Data;
+using FFmpeg_Utilizer.Modules;
 using FFMPEG_Utilizer;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,9 @@ namespace FFmpeg_Utilizer
 {
     public partial class Main : Form
     {
+        //Settings
+        internal Settings settings = new Settings();
+
         //Modules
         public NoticeModule notice;
 

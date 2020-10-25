@@ -331,21 +331,21 @@
             this.button8 = new System.Windows.Forms.Button();
             this.panel40 = new System.Windows.Forms.Panel();
             this.panel42 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.Update_StatusLabel = new System.Windows.Forms.Label();
             this.panel71 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel72 = new System.Windows.Forms.Panel();
             this.panel89 = new System.Windows.Forms.Panel();
-            this.button28 = new System.Windows.Forms.Button();
+            this.Update_DownloadButton = new System.Windows.Forms.Button();
             this.panel90 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
+            this.Update_LastUpdateLabel = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel91 = new System.Windows.Forms.Panel();
             this.panel92 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel93 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
+            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.InstallProcessBar = new System.Windows.Forms.ProgressBar();
             this.SpeedLabel = new System.Windows.Forms.Label();
@@ -2877,7 +2877,7 @@
             this.GitLabel.ForeColor = System.Drawing.Color.White;
             this.GitLabel.Location = new System.Drawing.Point(1, 63);
             this.GitLabel.Name = "GitLabel";
-            this.GitLabel.Size = new System.Drawing.Size(158, 20);
+            this.GitLabel.Size = new System.Drawing.Size(147, 20);
             this.GitLabel.TabIndex = 8;
             this.GitLabel.Text = "-";
             this.GitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3733,9 +3733,9 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
@@ -3896,7 +3896,7 @@
             // panel42
             // 
             this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel42.Controls.Add(this.label21);
+            this.panel42.Controls.Add(this.Update_StatusLabel);
             this.panel42.Controls.Add(this.panel71);
             this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel42.Location = new System.Drawing.Point(0, 0);
@@ -3904,19 +3904,19 @@
             this.panel42.Size = new System.Drawing.Size(882, 38);
             this.panel42.TabIndex = 3;
             // 
-            // label21
+            // Update_StatusLabel
             // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label21.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(55, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(447, 38);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Status : ";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_StatusLabel.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
+            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
+            this.Update_StatusLabel.Name = "Update_StatusLabel";
+            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
+            this.Update_StatusLabel.TabIndex = 6;
+            this.Update_StatusLabel.Text = "Status";
+            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel71
             // 
@@ -3932,7 +3932,7 @@
             this.groupBox4.Controls.Add(this.panel91);
             this.groupBox4.Location = new System.Drawing.Point(9, 44);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(603, 72);
+            this.groupBox4.Size = new System.Drawing.Size(864, 72);
             this.groupBox4.TabIndex = 55;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "FFMPEG";
@@ -3944,36 +3944,36 @@
             this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel72.Location = new System.Drawing.Point(3, 41);
             this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(597, 23);
+            this.panel72.Size = new System.Drawing.Size(858, 23);
             this.panel72.TabIndex = 1;
             // 
             // panel89
             // 
-            this.panel89.Controls.Add(this.button28);
+            this.panel89.Controls.Add(this.Update_DownloadButton);
             this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel89.Location = new System.Drawing.Point(301, 0);
+            this.panel89.Location = new System.Drawing.Point(562, 0);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(296, 23);
             this.panel89.TabIndex = 1;
             // 
-            // button28
+            // Update_DownloadButton
             // 
-            this.button28.BackColor = System.Drawing.Color.White;
-            this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button28.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.button28.FlatAppearance.BorderSize = 2;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button28.Location = new System.Drawing.Point(0, 0);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(296, 23);
-            this.button28.TabIndex = 71;
-            this.button28.Text = "Update Available";
-            this.button28.UseVisualStyleBackColor = false;
+            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
+            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_DownloadButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
+            this.Update_DownloadButton.Name = "Update_DownloadButton";
+            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 23);
+            this.Update_DownloadButton.TabIndex = 71;
+            this.Update_DownloadButton.Text = "Update Available";
+            this.Update_DownloadButton.UseVisualStyleBackColor = false;
             // 
             // panel90
             // 
-            this.panel90.Controls.Add(this.label23);
+            this.panel90.Controls.Add(this.Update_LastUpdateLabel);
             this.panel90.Controls.Add(this.label24);
             this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel90.Location = new System.Drawing.Point(0, 0);
@@ -3981,16 +3981,16 @@
             this.panel90.Size = new System.Drawing.Size(295, 23);
             this.panel90.TabIndex = 0;
             // 
-            // label23
+            // Update_LastUpdateLabel
             // 
-            this.label23.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label23.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label23.Location = new System.Drawing.Point(72, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(223, 23);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "-";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Update_LastUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_LastUpdateLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Update_LastUpdateLabel.Location = new System.Drawing.Point(72, 0);
+            this.Update_LastUpdateLabel.Name = "Update_LastUpdateLabel";
+            this.Update_LastUpdateLabel.Size = new System.Drawing.Size(484, 23);
+            this.Update_LastUpdateLabel.TabIndex = 2;
+            this.Update_LastUpdateLabel.Text = "-";
+            this.Update_LastUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label24
             // 
@@ -4010,7 +4010,7 @@
             this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel91.Location = new System.Drawing.Point(3, 16);
             this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(597, 25);
+            this.panel91.Size = new System.Drawing.Size(858, 25);
             this.panel91.TabIndex = 0;
             // 
             // panel92
@@ -4018,7 +4018,7 @@
             this.panel92.Controls.Add(this.label26);
             this.panel92.Controls.Add(this.label35);
             this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel92.Location = new System.Drawing.Point(301, 0);
+            this.panel92.Location = new System.Drawing.Point(562, 0);
             this.panel92.Name = "panel92";
             this.panel92.Size = new System.Drawing.Size(296, 25);
             this.panel92.TabIndex = 1;
@@ -4027,11 +4027,11 @@
             // 
             this.label26.Dock = System.Windows.Forms.DockStyle.Left;
             this.label26.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label26.Location = new System.Drawing.Point(139, 0);
+            this.label26.Location = new System.Drawing.Point(106, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(157, 25);
+            this.label26.Size = new System.Drawing.Size(190, 25);
             this.label26.TabIndex = 2;
-            this.label26.Text = "Installed FFmpeg Version:";
+            this.label26.Text = "-";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label35
@@ -4040,14 +4040,14 @@
             this.label35.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.label35.Location = new System.Drawing.Point(0, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(139, 25);
+            this.label35.Size = new System.Drawing.Size(106, 25);
             this.label35.TabIndex = 1;
-            this.label35.Text = "Downloadable FFmpeg Version:";
+            this.label35.Text = "Online FFmpeg Version:";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel93
             // 
-            this.panel93.Controls.Add(this.label36);
+            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
             this.panel93.Controls.Add(this.label37);
             this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel93.Location = new System.Drawing.Point(0, 0);
@@ -4055,16 +4055,16 @@
             this.panel93.Size = new System.Drawing.Size(295, 25);
             this.panel93.TabIndex = 0;
             // 
-            // label36
+            // Update_InstalledVersionLabel
             // 
-            this.label36.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label36.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label36.Location = new System.Drawing.Point(118, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(177, 25);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "-";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
+            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
+            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
+            this.Update_InstalledVersionLabel.TabIndex = 1;
+            this.Update_InstalledVersionLabel.Text = "-";
+            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label37
             // 
@@ -4102,9 +4102,9 @@
             this.panel94.BackColor = System.Drawing.Color.White;
             this.panel94.Controls.Add(this.label40);
             this.panel94.Controls.Add(this.panel96);
-            this.panel94.Location = new System.Drawing.Point(27, 303);
+            this.panel94.Location = new System.Drawing.Point(27, 306);
             this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(622, 94);
+            this.panel94.Size = new System.Drawing.Size(882, 129);
             this.panel94.TabIndex = 29;
             // 
             // panel96
@@ -4115,7 +4115,7 @@
             this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel96.Location = new System.Drawing.Point(0, 0);
             this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(622, 38);
+            this.panel96.Size = new System.Drawing.Size(882, 38);
             this.panel96.TabIndex = 3;
             // 
             // label41
@@ -4144,9 +4144,9 @@
             // label40
             // 
             this.label40.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label40.Location = new System.Drawing.Point(6, 46);
+            this.label40.Location = new System.Drawing.Point(6, 50);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(611, 45);
+            this.label40.Size = new System.Drawing.Size(870, 75);
             this.label40.TabIndex = 4;
             this.label40.Text = resources.GetString("label40.Text");
             // 
@@ -4599,21 +4599,16 @@
         internal System.Windows.Forms.Label SpeedLabel;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel71;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Panel panel72;
         private System.Windows.Forms.Panel panel89;
-        private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Panel panel90;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel91;
         private System.Windows.Forms.Panel panel92;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel93;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel panel94;
         private System.Windows.Forms.Panel panel96;
@@ -4621,6 +4616,11 @@
         private System.Windows.Forms.Panel panel97;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.PictureBox pictureBox11;
+        internal System.Windows.Forms.Button Update_DownloadButton;
+        internal System.Windows.Forms.Label Update_StatusLabel;
+        internal System.Windows.Forms.Label Update_LastUpdateLabel;
+        internal System.Windows.Forms.Label label26;
+        internal System.Windows.Forms.Label Update_InstalledVersionLabel;
     }
 }
 
