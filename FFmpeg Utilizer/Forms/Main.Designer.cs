@@ -32,9 +32,7 @@
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Drag and drop a folder or multiple files here...",
-            ""}, -1);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.FullPanel = new System.Windows.Forms.Panel();
             this.EncoderMainPanel = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -97,23 +95,10 @@
             this.panel53 = new System.Windows.Forms.Panel();
             this.SettingsMainPanel = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel92 = new System.Windows.Forms.Panel();
-            this.panel93 = new System.Windows.Forms.Panel();
-            this.panel94 = new System.Windows.Forms.Panel();
-            this.panel89 = new System.Windows.Forms.Panel();
-            this.panel90 = new System.Windows.Forms.Panel();
-            this.panel91 = new System.Windows.Forms.Panel();
             this.panel86 = new System.Windows.Forms.Panel();
             this.panel87 = new System.Windows.Forms.Panel();
             this.panel88 = new System.Windows.Forms.Panel();
@@ -125,11 +110,6 @@
             this.panel83 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel84 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.Settings_URIServerPort = new System.Windows.Forms.NumericUpDown();
-            this.Settings_URIServerIndicator = new System.Windows.Forms.Panel();
-            this.Settings_URIServerCheckbox = new System.Windows.Forms.CheckBox();
             this.panel44 = new System.Windows.Forms.Panel();
             this.panel78 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -250,42 +230,13 @@
             this.label34 = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
             this.UpdateMainPanel = new System.Windows.Forms.Panel();
-            this.label82 = new System.Windows.Forms.Label();
-            this.Encoder_BitrateDropdown = new System.Windows.Forms.ComboBox();
-            this.Encoder_PreviewButton = new System.Windows.Forms.Button();
-            this.label71 = new System.Windows.Forms.Label();
-            this.panel71 = new System.Windows.Forms.Panel();
-            this.panel72 = new System.Windows.Forms.Panel();
-            this.label72 = new System.Windows.Forms.Label();
-            this.Encoder_ExtensionDropdown = new System.Windows.Forms.ComboBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.Encoder_OverwriteDropdown = new System.Windows.Forms.ComboBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.Encoder_FramesDropdown = new System.Windows.Forms.ComboBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.Encoder_ResolutionDropdown = new System.Windows.Forms.ComboBox();
-            this.Encoder_TunerDropdown = new System.Windows.Forms.ComboBox();
-            this.Encoder_FileListView = new System.Windows.Forms.ListView();
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label77 = new System.Windows.Forms.Label();
             this.panel73 = new System.Windows.Forms.Panel();
             this.label78 = new System.Windows.Forms.Label();
-            this.Encoder_QualitySpeedDropdown = new System.Windows.Forms.ComboBox();
             this.panel74 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.Encoder_StatusProgressbar = new System.Windows.Forms.ProgressBar();
-            this.Encoder_OutputFolderTextfield = new System.Windows.Forms.TextBox();
-            this.Encoder_StartEncodingButton = new System.Windows.Forms.Button();
             this.panel75 = new System.Windows.Forms.Panel();
             this.label79 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
-            this.label80 = new System.Windows.Forms.Label();
             this.panel77 = new System.Windows.Forms.Panel();
-            this.Encoder_VideoCodecDropdown = new System.Windows.Forms.ComboBox();
-            this.label81 = new System.Windows.Forms.Label();
-            this.Encoder_AudioCodecDropdown = new System.Windows.Forms.ComboBox();
             this.NoticePanel = new System.Windows.Forms.Panel();
             this.NoticeCloseButton = new System.Windows.Forms.Label();
             this.NoticeTextLabel = new System.Windows.Forms.Label();
@@ -367,6 +318,43 @@
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel95 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Settings_URIServerPort = new System.Windows.Forms.NumericUpDown();
+            this.Settings_URIServerIndicator = new System.Windows.Forms.Panel();
+            this.Settings_URIServerCheckbox = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel71 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.button28 = new System.Windows.Forms.Button();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel93 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.InstallProcessBar = new System.Windows.Forms.ProgressBar();
+            this.SpeedLabel = new System.Windows.Forms.Label();
+            this.panel94 = new System.Windows.Forms.Panel();
+            this.panel96 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.FullPanel.SuspendLayout();
             this.EncoderMainPanel.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -380,20 +368,16 @@
             this.panel51.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.panel24.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.panel40.SuspendLayout();
-            this.panel42.SuspendLayout();
             this.panel27.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel92.SuspendLayout();
-            this.panel89.SuspendLayout();
             this.panel86.SuspendLayout();
+            this.panel87.SuspendLayout();
+            this.panel88.SuspendLayout();
             this.panel17.SuspendLayout();
+            this.panel85.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel82.SuspendLayout();
             this.panel83.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).BeginInit();
             this.panel44.SuspendLayout();
             this.panel78.SuspendLayout();
             this.panel43.SuspendLayout();
@@ -467,6 +451,20 @@
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
             this.panel95.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).BeginInit();
+            this.panel40.SuspendLayout();
+            this.panel42.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel72.SuspendLayout();
+            this.panel89.SuspendLayout();
+            this.panel90.SuspendLayout();
+            this.panel91.SuspendLayout();
+            this.panel92.SuspendLayout();
+            this.panel93.SuspendLayout();
+            this.panel94.SuspendLayout();
+            this.panel96.SuspendLayout();
+            this.panel97.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // FullPanel
@@ -555,9 +553,10 @@
             // Encoder_OutputFolderTextBox
             // 
             this.Encoder_OutputFolderTextBox.Enabled = false;
+            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(3, 45);
             this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
-            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(783, 20);
+            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(783, 22);
             this.Encoder_OutputFolderTextBox.TabIndex = 23;
             // 
             // Encoder_StartEncodingProcessButton
@@ -679,11 +678,11 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button5.Location = new System.Drawing.Point(810, 70);
+            this.button5.Location = new System.Drawing.Point(791, 70);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(66, 21);
+            this.button5.Size = new System.Drawing.Size(85, 21);
             this.button5.TabIndex = 53;
-            this.button5.Text = "Preview ▶";
+            this.button5.Text = "Play Selected ▶";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // label14
@@ -727,10 +726,11 @@
             // Encoder_ExtensionBox
             // 
             this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_ExtensionBox.FormattingEnabled = true;
             this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
             this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
-            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_ExtensionBox.TabIndex = 38;
             // 
             // label6
@@ -746,6 +746,7 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Ask",
@@ -753,7 +754,7 @@
             "No"});
             this.comboBox1.Location = new System.Drawing.Point(6, 69);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(81, 21);
+            this.comboBox1.Size = new System.Drawing.Size(81, 22);
             this.comboBox1.TabIndex = 48;
             // 
             // label5
@@ -769,10 +770,11 @@
             // Encoder_FPSBox
             // 
             this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_FPSBox.FormattingEnabled = true;
             this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
             this.Encoder_FPSBox.Name = "Encoder_FPSBox";
-            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_FPSBox.TabIndex = 46;
             // 
             // label32
@@ -831,19 +833,21 @@
             // Encoder_AudioCodecBox
             // 
             this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_AudioCodecBox.FormattingEnabled = true;
             this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
             this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
-            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_AudioCodecBox.TabIndex = 35;
             // 
             // Encoder_ResolutionBox
             // 
             this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_ResolutionBox.FormattingEnabled = true;
             this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
             this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
-            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_ResolutionBox.TabIndex = 44;
             // 
             // label13
@@ -859,19 +863,21 @@
             // Encoder_TunerBox
             // 
             this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_TunerBox.FormattingEnabled = true;
             this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
             this.Encoder_TunerBox.Name = "Encoder_TunerBox";
-            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_TunerBox.TabIndex = 44;
             // 
             // Encoder_VideoCodecBox
             // 
             this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_VideoCodecBox.FormattingEnabled = true;
             this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
             this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
-            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_VideoCodecBox.TabIndex = 34;
             // 
             // label12
@@ -897,10 +903,11 @@
             // Encoder_PresetsBox
             // 
             this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_PresetsBox.FormattingEnabled = true;
             this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
             this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
-            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_PresetsBox.TabIndex = 40;
             // 
             // M3U8MainPanel
@@ -926,11 +933,11 @@
             this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button12.Location = new System.Drawing.Point(843, 53);
+            this.button12.Location = new System.Drawing.Point(824, 53);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(66, 21);
+            this.button12.Size = new System.Drawing.Size(85, 21);
             this.button12.TabIndex = 79;
-            this.button12.Text = "Preview ▶";
+            this.button12.Text = "Play Selected ▶";
             this.button12.UseVisualStyleBackColor = false;
             // 
             // label38
@@ -1065,9 +1072,10 @@
             // textBox3
             // 
             this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.textBox3.Location = new System.Drawing.Point(3, 45);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(783, 20);
+            this.textBox3.Size = new System.Drawing.Size(783, 22);
             this.textBox3.TabIndex = 23;
             // 
             // button14
@@ -1143,84 +1151,12 @@
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.White;
-            this.panel24.Controls.Add(this.groupBox5);
             this.panel24.Controls.Add(this.panel27);
             this.panel24.Controls.Add(this.groupBox1);
-            this.panel24.Location = new System.Drawing.Point(27, 289);
+            this.panel24.Location = new System.Drawing.Point(27, 186);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(882, 200);
+            this.panel24.Size = new System.Drawing.Size(617, 123);
             this.panel24.TabIndex = 69;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.panel40);
-            this.groupBox5.Controls.Add(this.panel42);
-            this.groupBox5.Location = new System.Drawing.Point(696, 52);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(261, 139);
-            this.groupBox5.TabIndex = 55;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "FFMPEG";
-            // 
-            // panel40
-            // 
-            this.panel40.Controls.Add(this.label21);
-            this.panel40.Controls.Add(this.label23);
-            this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel40.Location = new System.Drawing.Point(3, 43);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(255, 27);
-            this.panel40.TabIndex = 2;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label21.Location = new System.Drawing.Point(71, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(10, 13);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "-";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label23.Location = new System.Drawing.Point(0, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(71, 13);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Last Updated";
-            // 
-            // panel42
-            // 
-            this.panel42.Controls.Add(this.label24);
-            this.panel42.Controls.Add(this.label26);
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel42.Location = new System.Drawing.Point(3, 16);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(255, 27);
-            this.panel42.TabIndex = 1;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label24.Location = new System.Drawing.Point(112, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(10, 13);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "-";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label26.Location = new System.Drawing.Point(0, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(112, 13);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Installed Gyan Version";
             // 
             // panel27
             // 
@@ -1230,7 +1166,7 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel27.Location = new System.Drawing.Point(0, 0);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(882, 38);
+            this.panel27.Size = new System.Drawing.Size(617, 38);
             this.panel27.TabIndex = 3;
             // 
             // label20
@@ -1244,7 +1180,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(447, 38);
             this.label20.TabIndex = 6;
-            this.label20.Text = "Locations";
+            this.label20.Text = "FFmpeg Information";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel28
@@ -1257,68 +1193,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.panel92);
-            this.groupBox1.Controls.Add(this.panel89);
             this.groupBox1.Controls.Add(this.panel86);
             this.groupBox1.Controls.Add(this.panel17);
             this.groupBox1.Location = new System.Drawing.Point(6, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(423, 139);
+            this.groupBox1.Size = new System.Drawing.Size(603, 72);
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "FFMPEG";
-            // 
-            // panel92
-            // 
-            this.panel92.Controls.Add(this.panel93);
-            this.panel92.Controls.Add(this.panel94);
-            this.panel92.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel92.Location = new System.Drawing.Point(3, 87);
-            this.panel92.Name = "panel92";
-            this.panel92.Size = new System.Drawing.Size(417, 23);
-            this.panel92.TabIndex = 3;
-            // 
-            // panel93
-            // 
-            this.panel93.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel93.Location = new System.Drawing.Point(208, 0);
-            this.panel93.Name = "panel93";
-            this.panel93.Size = new System.Drawing.Size(209, 23);
-            this.panel93.TabIndex = 1;
-            // 
-            // panel94
-            // 
-            this.panel94.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel94.Location = new System.Drawing.Point(0, 0);
-            this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(202, 23);
-            this.panel94.TabIndex = 0;
-            // 
-            // panel89
-            // 
-            this.panel89.Controls.Add(this.panel90);
-            this.panel89.Controls.Add(this.panel91);
-            this.panel89.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel89.Location = new System.Drawing.Point(3, 64);
-            this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(417, 23);
-            this.panel89.TabIndex = 2;
-            // 
-            // panel90
-            // 
-            this.panel90.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel90.Location = new System.Drawing.Point(208, 0);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(209, 23);
-            this.panel90.TabIndex = 1;
-            // 
-            // panel91
-            // 
-            this.panel91.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel91.Location = new System.Drawing.Point(0, 0);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(202, 23);
-            this.panel91.TabIndex = 0;
             // 
             // panel86
             // 
@@ -1327,23 +1209,26 @@
             this.panel86.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel86.Location = new System.Drawing.Point(3, 41);
             this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(417, 23);
+            this.panel86.Size = new System.Drawing.Size(597, 23);
             this.panel86.TabIndex = 1;
             // 
             // panel87
             // 
+            this.panel87.Controls.Add(this.button7);
             this.panel87.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel87.Location = new System.Drawing.Point(208, 0);
+            this.panel87.Location = new System.Drawing.Point(301, 0);
             this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(209, 23);
+            this.panel87.Size = new System.Drawing.Size(296, 23);
             this.panel87.TabIndex = 1;
             // 
             // panel88
             // 
+            this.panel88.Controls.Add(this.label33);
+            this.panel88.Controls.Add(this.label31);
             this.panel88.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel88.Location = new System.Drawing.Point(0, 0);
             this.panel88.Name = "panel88";
-            this.panel88.Size = new System.Drawing.Size(202, 23);
+            this.panel88.Size = new System.Drawing.Size(295, 23);
             this.panel88.TabIndex = 0;
             // 
             // panel17
@@ -1353,41 +1238,49 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(3, 16);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(417, 25);
+            this.panel17.Size = new System.Drawing.Size(597, 25);
             this.panel17.TabIndex = 0;
             // 
             // panel85
             // 
+            this.panel85.Controls.Add(this.label29);
+            this.panel85.Controls.Add(this.label27);
             this.panel85.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel85.Location = new System.Drawing.Point(208, 0);
+            this.panel85.Location = new System.Drawing.Point(301, 0);
             this.panel85.Name = "panel85";
-            this.panel85.Size = new System.Drawing.Size(209, 25);
+            this.panel85.Size = new System.Drawing.Size(296, 25);
             this.panel85.TabIndex = 1;
             // 
             // panel18
             // 
+            this.panel18.Controls.Add(this.label17);
             this.panel18.Controls.Add(this.label16);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(202, 25);
+            this.panel18.Size = new System.Drawing.Size(295, 25);
             this.panel18.TabIndex = 0;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(47, 9);
+            this.label16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label16.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label16.Location = new System.Drawing.Point(0, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.Size = new System.Drawing.Size(118, 25);
             this.label16.TabIndex = 0;
-            this.label16.Text = "label16";
+            this.label16.Text = "Installed FFmpeg Version:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel82
             // 
             this.panel82.BackColor = System.Drawing.Color.White;
+            this.panel82.Controls.Add(this.checkBox1);
+            this.panel82.Controls.Add(this.Settings_URIServerPort);
+            this.panel82.Controls.Add(this.Settings_URIServerIndicator);
+            this.panel82.Controls.Add(this.Settings_URIServerCheckbox);
             this.panel82.Controls.Add(this.panel83);
-            this.panel82.Controls.Add(this.groupBox4);
-            this.panel82.Location = new System.Drawing.Point(391, 184);
+            this.panel82.Location = new System.Drawing.Point(652, 186);
             this.panel82.Name = "panel82";
             this.panel82.Size = new System.Drawing.Size(234, 95);
             this.panel82.TabIndex = 70;
@@ -1425,73 +1318,6 @@
             this.panel84.Size = new System.Drawing.Size(55, 38);
             this.panel84.TabIndex = 0;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.checkBox1);
-            this.groupBox4.Controls.Add(this.Settings_URIServerPort);
-            this.groupBox4.Controls.Add(this.Settings_URIServerIndicator);
-            this.groupBox4.Controls.Add(this.Settings_URIServerCheckbox);
-            this.groupBox4.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.groupBox4.Location = new System.Drawing.Point(9, 44);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(215, 43);
-            this.groupBox4.TabIndex = 67;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "URI Listener";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.checkBox1.Location = new System.Drawing.Point(96, 24);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(69, 18);
-            this.checkBox1.TabIndex = 49;
-            this.checkBox1.Text = "Auto Start";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // Settings_URIServerPort
-            // 
-            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Settings_URIServerPort.Location = new System.Drawing.Point(31, 14);
-            this.Settings_URIServerPort.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.Settings_URIServerPort.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.Settings_URIServerPort.Name = "Settings_URIServerPort";
-            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 22);
-            this.Settings_URIServerPort.TabIndex = 48;
-            this.Settings_URIServerPort.Value = new decimal(new int[] {
-            288,
-            0,
-            0,
-            0});
-            // 
-            // Settings_URIServerIndicator
-            // 
-            this.Settings_URIServerIndicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Settings_URIServerIndicator.Location = new System.Drawing.Point(5, 14);
-            this.Settings_URIServerIndicator.Name = "Settings_URIServerIndicator";
-            this.Settings_URIServerIndicator.Size = new System.Drawing.Size(20, 20);
-            this.Settings_URIServerIndicator.TabIndex = 47;
-            // 
-            // Settings_URIServerCheckbox
-            // 
-            this.Settings_URIServerCheckbox.AutoSize = true;
-            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Settings_URIServerCheckbox.Location = new System.Drawing.Point(96, 8);
-            this.Settings_URIServerCheckbox.Name = "Settings_URIServerCheckbox";
-            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(89, 18);
-            this.Settings_URIServerCheckbox.TabIndex = 46;
-            this.Settings_URIServerCheckbox.Text = "URI Controller";
-            this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
-            // 
             // panel44
             // 
             this.panel44.BackColor = System.Drawing.Color.White;
@@ -1503,7 +1329,7 @@
             this.panel44.Controls.Add(this.Settings_QualityDropdown);
             this.panel44.Controls.Add(this.Settings_AudioCodecDropdown);
             this.panel44.Controls.Add(this.label15);
-            this.panel44.Location = new System.Drawing.Point(27, 184);
+            this.panel44.Location = new System.Drawing.Point(27, 320);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(354, 95);
             this.panel44.TabIndex = 69;
@@ -1639,6 +1465,7 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Bebas Kai", 9F);
@@ -1647,7 +1474,7 @@
             this.button6.Size = new System.Drawing.Size(111, 23);
             this.button6.TabIndex = 55;
             this.button6.Text = "Default Output Folder";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // panel79
             // 
@@ -1693,6 +1520,7 @@
             // 
             // Settings_AutoDefaultOutputButton
             // 
+            this.Settings_AutoDefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_AutoDefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_AutoDefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(741, 95);
@@ -1700,7 +1528,7 @@
             this.Settings_AutoDefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_AutoDefaultOutputButton.TabIndex = 59;
             this.Settings_AutoDefaultOutputButton.Text = "✓";
-            this.Settings_AutoDefaultOutputButton.UseVisualStyleBackColor = true;
+            this.Settings_AutoDefaultOutputButton.UseVisualStyleBackColor = false;
             // 
             // Settings_ffmpegLocBox
             // 
@@ -1713,6 +1541,7 @@
             // 
             // Settings_FFMPEGLocationButton
             // 
+            this.Settings_FFMPEGLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_FFMPEGLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_FFMPEGLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
@@ -1721,10 +1550,11 @@
             this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(103, 23);
             this.Settings_FFMPEGLocationButton.TabIndex = 51;
             this.Settings_FFMPEGLocationButton.Text = "FFMPEG Location";
-            this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = true;
+            this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = false;
             // 
             // Settings_FFPLAYLocationButton
             // 
+            this.Settings_FFPLAYLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_FFPLAYLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_FFPLAYLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
@@ -1733,33 +1563,35 @@
             this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(103, 23);
             this.Settings_FFPLAYLocationButton.TabIndex = 53;
             this.Settings_FFPLAYLocationButton.Text = "FFplay Location";
-            this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = true;
+            this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = false;
             // 
             // ResetSettingsButton
             // 
+            this.ResetSettingsButton.BackColor = System.Drawing.Color.White;
             this.ResetSettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ResetSettingsButton.FlatAppearance.BorderSize = 2;
             this.ResetSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ResetSettingsButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.ResetSettingsButton.Location = new System.Drawing.Point(636, 224);
+            this.ResetSettingsButton.Location = new System.Drawing.Point(27, 457);
             this.ResetSettingsButton.Name = "ResetSettingsButton";
             this.ResetSettingsButton.Size = new System.Drawing.Size(116, 26);
             this.ResetSettingsButton.TabIndex = 58;
             this.ResetSettingsButton.Text = "Reset Settings";
-            this.ResetSettingsButton.UseVisualStyleBackColor = true;
+            this.ResetSettingsButton.UseVisualStyleBackColor = false;
             // 
             // SaveSettingsButton
             // 
+            this.SaveSettingsButton.BackColor = System.Drawing.Color.White;
             this.SaveSettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.SaveSettingsButton.FlatAppearance.BorderSize = 2;
             this.SaveSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveSettingsButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.SaveSettingsButton.Location = new System.Drawing.Point(768, 224);
+            this.SaveSettingsButton.Location = new System.Drawing.Point(793, 457);
             this.SaveSettingsButton.Name = "SaveSettingsButton";
             this.SaveSettingsButton.Size = new System.Drawing.Size(116, 26);
             this.SaveSettingsButton.TabIndex = 57;
             this.SaveSettingsButton.Text = "Save Settings";
-            this.SaveSettingsButton.UseVisualStyleBackColor = true;
+            this.SaveSettingsButton.UseVisualStyleBackColor = false;
             // 
             // panel21
             // 
@@ -2008,6 +1840,7 @@
             // Merge_QualityBox
             // 
             this.Merge_QualityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Merge_QualityBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Merge_QualityBox.FormattingEnabled = true;
             this.Merge_QualityBox.Items.AddRange(new object[] {
             "ultrafast",
@@ -2021,7 +1854,7 @@
             "veryslow"});
             this.Merge_QualityBox.Location = new System.Drawing.Point(273, 65);
             this.Merge_QualityBox.Name = "Merge_QualityBox";
-            this.Merge_QualityBox.Size = new System.Drawing.Size(81, 21);
+            this.Merge_QualityBox.Size = new System.Drawing.Size(81, 22);
             this.Merge_QualityBox.TabIndex = 77;
             // 
             // label55
@@ -2037,6 +1870,7 @@
             // Merge_ExtensionBox
             // 
             this.Merge_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Merge_ExtensionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Merge_ExtensionBox.FormattingEnabled = true;
             this.Merge_ExtensionBox.Items.AddRange(new object[] {
             ".mp4",
@@ -2044,7 +1878,7 @@
             ".mpeg"});
             this.Merge_ExtensionBox.Location = new System.Drawing.Point(360, 65);
             this.Merge_ExtensionBox.Name = "Merge_ExtensionBox";
-            this.Merge_ExtensionBox.Size = new System.Drawing.Size(81, 21);
+            this.Merge_ExtensionBox.Size = new System.Drawing.Size(81, 22);
             this.Merge_ExtensionBox.TabIndex = 75;
             // 
             // Merge_listView
@@ -2098,7 +1932,7 @@
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(447, 38);
             this.label88.TabIndex = 6;
-            this.label88.Text = "Input";
+            this.label88.Text = "Options";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel56
@@ -2146,9 +1980,10 @@
             // textBox6
             // 
             this.textBox6.Enabled = false;
+            this.textBox6.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.textBox6.Location = new System.Drawing.Point(3, 45);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(783, 20);
+            this.textBox6.Size = new System.Drawing.Size(783, 22);
             this.textBox6.TabIndex = 23;
             // 
             // button18
@@ -2608,7 +2443,7 @@
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(447, 38);
             this.label60.TabIndex = 6;
-            this.label60.Text = "Input";
+            this.label60.Text = "Options";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel46
@@ -2679,9 +2514,10 @@
             // textBox5
             // 
             this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.textBox5.Location = new System.Drawing.Point(3, 45);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(783, 20);
+            this.textBox5.Size = new System.Drawing.Size(783, 22);
             this.textBox5.TabIndex = 23;
             // 
             // button20
@@ -2759,6 +2595,7 @@
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.Location = new System.Drawing.Point(277, 47);
             this.button9.Name = "button9";
@@ -2772,6 +2609,7 @@
             this.button21.BackColor = System.Drawing.Color.White;
             this.button21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button21.Location = new System.Drawing.Point(193, 47);
             this.button21.Name = "button21";
@@ -2785,6 +2623,7 @@
             this.button24.BackColor = System.Drawing.Color.White;
             this.button24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button24.Location = new System.Drawing.Point(119, 47);
             this.button24.Name = "button24";
@@ -2798,6 +2637,7 @@
             this.button26.BackColor = System.Drawing.Color.White;
             this.button26.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button26.Location = new System.Drawing.Point(792, 47);
             this.button26.Name = "button26";
@@ -2811,6 +2651,7 @@
             this.button27.BackColor = System.Drawing.Color.White;
             this.button27.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button27.Location = new System.Drawing.Point(27, 47);
             this.button27.Name = "button27";
@@ -2821,7 +2662,7 @@
             // 
             // ArgumentPreviewBox
             // 
-            this.ArgumentPreviewBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ArgumentPreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.ArgumentPreviewBox.Location = new System.Drawing.Point(27, 77);
             this.ArgumentPreviewBox.Multiline = true;
             this.ArgumentPreviewBox.Name = "ArgumentPreviewBox";
@@ -2861,236 +2702,17 @@
             // UpdateMainPanel
             // 
             this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.UpdateMainPanel.Controls.Add(this.label82);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_BitrateDropdown);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_PreviewButton);
-            this.UpdateMainPanel.Controls.Add(this.label71);
-            this.UpdateMainPanel.Controls.Add(this.panel71);
-            this.UpdateMainPanel.Controls.Add(this.panel72);
-            this.UpdateMainPanel.Controls.Add(this.label72);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_ExtensionDropdown);
-            this.UpdateMainPanel.Controls.Add(this.label73);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_OverwriteDropdown);
-            this.UpdateMainPanel.Controls.Add(this.label74);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_FramesDropdown);
-            this.UpdateMainPanel.Controls.Add(this.label75);
-            this.UpdateMainPanel.Controls.Add(this.label76);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_ResolutionDropdown);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_TunerDropdown);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_FileListView);
-            this.UpdateMainPanel.Controls.Add(this.label77);
+            this.UpdateMainPanel.Controls.Add(this.panel94);
+            this.UpdateMainPanel.Controls.Add(this.panel40);
+            this.UpdateMainPanel.Controls.Add(this.button8);
             this.UpdateMainPanel.Controls.Add(this.panel73);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_QualitySpeedDropdown);
             this.UpdateMainPanel.Controls.Add(this.panel74);
-            this.UpdateMainPanel.Controls.Add(this.label80);
             this.UpdateMainPanel.Controls.Add(this.panel77);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_VideoCodecDropdown);
-            this.UpdateMainPanel.Controls.Add(this.label81);
-            this.UpdateMainPanel.Controls.Add(this.Encoder_AudioCodecDropdown);
             this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
             this.UpdateMainPanel.Name = "UpdateMainPanel";
             this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
             this.UpdateMainPanel.TabIndex = 11;
-            // 
-            // label82
-            // 
-            this.label82.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label82.Location = new System.Drawing.Point(730, 52);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(68, 16);
-            this.label82.TabIndex = 55;
-            this.label82.Text = "Bitrate";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_BitrateDropdown
-            // 
-            this.Encoder_BitrateDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_BitrateDropdown.FormattingEnabled = true;
-            this.Encoder_BitrateDropdown.Location = new System.Drawing.Point(723, 71);
-            this.Encoder_BitrateDropdown.Name = "Encoder_BitrateDropdown";
-            this.Encoder_BitrateDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_BitrateDropdown.TabIndex = 54;
-            // 
-            // Encoder_PreviewButton
-            // 
-            this.Encoder_PreviewButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_PreviewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_PreviewButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_PreviewButton.Location = new System.Drawing.Point(843, 71);
-            this.Encoder_PreviewButton.Name = "Encoder_PreviewButton";
-            this.Encoder_PreviewButton.Size = new System.Drawing.Size(66, 21);
-            this.Encoder_PreviewButton.TabIndex = 53;
-            this.Encoder_PreviewButton.Text = "Preview ▶";
-            this.Encoder_PreviewButton.UseVisualStyleBackColor = true;
-            // 
-            // label71
-            // 
-            this.label71.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label71.Location = new System.Drawing.Point(799, 41);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(47, 16);
-            this.label71.TabIndex = 52;
-            this.label71.Text = "Overrides";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip.SetToolTip(this.label71, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
-        "ave default if you are unsure and let ffmpeg decide.");
-            // 
-            // panel71
-            // 
-            this.panel71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel71.Location = new System.Drawing.Point(462, 48);
-            this.panel71.Name = "panel71";
-            this.panel71.Size = new System.Drawing.Size(1, 20);
-            this.panel71.TabIndex = 51;
-            // 
-            // panel72
-            // 
-            this.panel72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel72.Location = new System.Drawing.Point(462, 48);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(335, 1);
-            this.panel72.TabIndex = 50;
-            // 
-            // label72
-            // 
-            this.label72.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label72.Location = new System.Drawing.Point(382, 52);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(68, 16);
-            this.label72.TabIndex = 39;
-            this.label72.Text = "Extension";
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_ExtensionDropdown
-            // 
-            this.Encoder_ExtensionDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ExtensionDropdown.FormattingEnabled = true;
-            this.Encoder_ExtensionDropdown.Location = new System.Drawing.Point(375, 71);
-            this.Encoder_ExtensionDropdown.Name = "Encoder_ExtensionDropdown";
-            this.Encoder_ExtensionDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_ExtensionDropdown.TabIndex = 38;
-            // 
-            // label73
-            // 
-            this.label73.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label73.Location = new System.Drawing.Point(27, 52);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(81, 16);
-            this.label73.TabIndex = 49;
-            this.label73.Text = "Auto Overwrite";
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_OverwriteDropdown
-            // 
-            this.Encoder_OverwriteDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_OverwriteDropdown.FormattingEnabled = true;
-            this.Encoder_OverwriteDropdown.Items.AddRange(new object[] {
-            "Ask",
-            "Yes",
-            "No"});
-            this.Encoder_OverwriteDropdown.Location = new System.Drawing.Point(27, 71);
-            this.Encoder_OverwriteDropdown.Name = "Encoder_OverwriteDropdown";
-            this.Encoder_OverwriteDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_OverwriteDropdown.TabIndex = 48;
-            // 
-            // label74
-            // 
-            this.label74.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label74.Location = new System.Drawing.Point(643, 52);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(68, 16);
-            this.label74.TabIndex = 47;
-            this.label74.Text = "FPS/Frames";
-            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_FramesDropdown
-            // 
-            this.Encoder_FramesDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_FramesDropdown.FormattingEnabled = true;
-            this.Encoder_FramesDropdown.Location = new System.Drawing.Point(636, 71);
-            this.Encoder_FramesDropdown.Name = "Encoder_FramesDropdown";
-            this.Encoder_FramesDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_FramesDropdown.TabIndex = 46;
-            // 
-            // label75
-            // 
-            this.label75.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label75.Location = new System.Drawing.Point(556, 52);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(68, 16);
-            this.label75.TabIndex = 45;
-            this.label75.Text = "Resolution";
-            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label76
-            // 
-            this.label76.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label76.Location = new System.Drawing.Point(467, 52);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(68, 16);
-            this.label76.TabIndex = 45;
-            this.label76.Text = "Tuner";
-            this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_ResolutionDropdown
-            // 
-            this.Encoder_ResolutionDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ResolutionDropdown.FormattingEnabled = true;
-            this.Encoder_ResolutionDropdown.Location = new System.Drawing.Point(549, 71);
-            this.Encoder_ResolutionDropdown.Name = "Encoder_ResolutionDropdown";
-            this.Encoder_ResolutionDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_ResolutionDropdown.TabIndex = 44;
-            // 
-            // Encoder_TunerDropdown
-            // 
-            this.Encoder_TunerDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_TunerDropdown.FormattingEnabled = true;
-            this.Encoder_TunerDropdown.Location = new System.Drawing.Point(462, 71);
-            this.Encoder_TunerDropdown.Name = "Encoder_TunerDropdown";
-            this.Encoder_TunerDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_TunerDropdown.TabIndex = 44;
-            // 
-            // Encoder_FileListView
-            // 
-            this.Encoder_FileListView.AllowDrop = true;
-            this.Encoder_FileListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader13,
-            this.columnHeader14});
-            this.Encoder_FileListView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_FileListView.FullRowSelect = true;
-            this.Encoder_FileListView.GridLines = true;
-            this.Encoder_FileListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Encoder_FileListView.HideSelection = false;
-            this.Encoder_FileListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
-            this.Encoder_FileListView.Location = new System.Drawing.Point(27, 98);
-            this.Encoder_FileListView.MultiSelect = false;
-            this.Encoder_FileListView.Name = "Encoder_FileListView";
-            this.Encoder_FileListView.Size = new System.Drawing.Size(881, 263);
-            this.Encoder_FileListView.TabIndex = 43;
-            this.Encoder_FileListView.UseCompatibleStateImageBehavior = false;
-            this.Encoder_FileListView.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "File";
-            this.columnHeader13.Width = 775;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Status";
-            this.columnHeader14.Width = 80;
-            // 
-            // label77
-            // 
-            this.label77.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label77.Location = new System.Drawing.Point(288, 52);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(81, 16);
-            this.label77.TabIndex = 41;
-            this.label77.Text = "Quality/Speed";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel73
             // 
@@ -3115,69 +2737,15 @@
             this.label78.Text = "Updates";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Encoder_QualitySpeedDropdown
-            // 
-            this.Encoder_QualitySpeedDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_QualitySpeedDropdown.FormattingEnabled = true;
-            this.Encoder_QualitySpeedDropdown.Location = new System.Drawing.Point(288, 71);
-            this.Encoder_QualitySpeedDropdown.Name = "Encoder_QualitySpeedDropdown";
-            this.Encoder_QualitySpeedDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_QualitySpeedDropdown.TabIndex = 40;
-            // 
             // panel74
             // 
             this.panel74.BackColor = System.Drawing.Color.White;
-            this.panel74.Controls.Add(this.button22);
-            this.panel74.Controls.Add(this.Encoder_StatusProgressbar);
-            this.panel74.Controls.Add(this.Encoder_OutputFolderTextfield);
-            this.panel74.Controls.Add(this.Encoder_StartEncodingButton);
+            this.panel74.Controls.Add(this.groupBox4);
             this.panel74.Controls.Add(this.panel75);
-            this.panel74.Location = new System.Drawing.Point(27, 377);
+            this.panel74.Location = new System.Drawing.Point(27, 80);
             this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(882, 106);
+            this.panel74.Size = new System.Drawing.Size(882, 125);
             this.panel74.TabIndex = 2;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button22.Location = new System.Drawing.Point(792, 43);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(87, 24);
-            this.button22.TabIndex = 25;
-            this.button22.Text = "Output Folder";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // Encoder_StatusProgressbar
-            // 
-            this.Encoder_StatusProgressbar.Location = new System.Drawing.Point(3, 72);
-            this.Encoder_StatusProgressbar.Name = "Encoder_StatusProgressbar";
-            this.Encoder_StatusProgressbar.Size = new System.Drawing.Size(783, 25);
-            this.Encoder_StatusProgressbar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Encoder_StatusProgressbar.TabIndex = 24;
-            // 
-            // Encoder_OutputFolderTextfield
-            // 
-            this.Encoder_OutputFolderTextfield.Enabled = false;
-            this.Encoder_OutputFolderTextfield.Location = new System.Drawing.Point(3, 45);
-            this.Encoder_OutputFolderTextfield.Name = "Encoder_OutputFolderTextfield";
-            this.Encoder_OutputFolderTextfield.Size = new System.Drawing.Size(783, 20);
-            this.Encoder_OutputFolderTextfield.TabIndex = 23;
-            // 
-            // Encoder_StartEncodingButton
-            // 
-            this.Encoder_StartEncodingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_StartEncodingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_StartEncodingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_StartEncodingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_StartEncodingButton.Location = new System.Drawing.Point(792, 72);
-            this.Encoder_StartEncodingButton.Name = "Encoder_StartEncodingButton";
-            this.Encoder_StartEncodingButton.Size = new System.Drawing.Size(87, 24);
-            this.Encoder_StartEncodingButton.TabIndex = 22;
-            this.Encoder_StartEncodingButton.Text = "Start Encoding";
-            this.Encoder_StartEncodingButton.UseVisualStyleBackColor = false;
             // 
             // panel75
             // 
@@ -3212,50 +2780,12 @@
             this.panel76.Size = new System.Drawing.Size(55, 38);
             this.panel76.TabIndex = 0;
             // 
-            // label80
-            // 
-            this.label80.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label80.Location = new System.Drawing.Point(198, 52);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(87, 16);
-            this.label80.TabIndex = 37;
-            this.label80.Text = "Audio Encoder";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel77
             // 
             this.panel77.Location = new System.Drawing.Point(719, 495);
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(200, 73);
             this.panel77.TabIndex = 1;
-            // 
-            // Encoder_VideoCodecDropdown
-            // 
-            this.Encoder_VideoCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_VideoCodecDropdown.FormattingEnabled = true;
-            this.Encoder_VideoCodecDropdown.Location = new System.Drawing.Point(114, 71);
-            this.Encoder_VideoCodecDropdown.Name = "Encoder_VideoCodecDropdown";
-            this.Encoder_VideoCodecDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_VideoCodecDropdown.TabIndex = 34;
-            // 
-            // label81
-            // 
-            this.label81.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label81.Location = new System.Drawing.Point(111, 52);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(87, 16);
-            this.label81.TabIndex = 36;
-            this.label81.Text = "Video Encoder";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_AudioCodecDropdown
-            // 
-            this.Encoder_AudioCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_AudioCodecDropdown.FormattingEnabled = true;
-            this.Encoder_AudioCodecDropdown.Location = new System.Drawing.Point(201, 71);
-            this.Encoder_AudioCodecDropdown.Name = "Encoder_AudioCodecDropdown";
-            this.Encoder_AudioCodecDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_AudioCodecDropdown.TabIndex = 35;
             // 
             // NoticePanel
             // 
@@ -4203,18 +3733,434 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.EncoderMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
+            this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
-            this.panel95.Controls.Add(this.SettingsMainPanel);
-            this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.checkBox1.Location = new System.Drawing.Point(117, 66);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(69, 18);
+            this.checkBox1.TabIndex = 71;
+            this.checkBox1.Text = "Auto Start";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // Settings_URIServerPort
+            // 
+            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_URIServerPort.Location = new System.Drawing.Point(44, 56);
+            this.Settings_URIServerPort.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.Settings_URIServerPort.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Settings_URIServerPort.Name = "Settings_URIServerPort";
+            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 22);
+            this.Settings_URIServerPort.TabIndex = 70;
+            this.Settings_URIServerPort.Value = new decimal(new int[] {
+            288,
+            0,
+            0,
+            0});
+            // 
+            // Settings_URIServerIndicator
+            // 
+            this.Settings_URIServerIndicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Settings_URIServerIndicator.Location = new System.Drawing.Point(18, 56);
+            this.Settings_URIServerIndicator.Name = "Settings_URIServerIndicator";
+            this.Settings_URIServerIndicator.Size = new System.Drawing.Size(20, 20);
+            this.Settings_URIServerIndicator.TabIndex = 69;
+            // 
+            // Settings_URIServerCheckbox
+            // 
+            this.Settings_URIServerCheckbox.AutoSize = true;
+            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_URIServerCheckbox.Location = new System.Drawing.Point(117, 50);
+            this.Settings_URIServerCheckbox.Name = "Settings_URIServerCheckbox";
+            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(89, 18);
+            this.Settings_URIServerCheckbox.TabIndex = 68;
+            this.Settings_URIServerCheckbox.Text = "URI Controller";
+            this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label17.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label17.Location = new System.Drawing.Point(118, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(177, 25);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "-";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label27
+            // 
+            this.label27.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label27.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label27.Location = new System.Drawing.Point(0, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(139, 25);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "Downloadable FFmpeg Version:";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label29
+            // 
+            this.label29.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label29.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label29.Location = new System.Drawing.Point(139, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(157, 25);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Installed FFmpeg Version:";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label31
+            // 
+            this.label31.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label31.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label31.Location = new System.Drawing.Point(0, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 23);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Latest Update:";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label33
+            // 
+            this.label33.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label33.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label33.Location = new System.Drawing.Point(72, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(223, 23);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "-";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.button7.FlatAppearance.BorderSize = 2;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button7.Location = new System.Drawing.Point(0, 0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(296, 23);
+            this.button7.TabIndex = 71;
+            this.button7.Text = "Update";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button8.Location = new System.Drawing.Point(27, 50);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(90, 24);
+            this.button8.TabIndex = 26;
+            this.button8.Text = "Check For Update";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.White;
+            this.panel40.Controls.Add(this.SpeedLabel);
+            this.panel40.Controls.Add(this.InstallProcessBar);
+            this.panel40.Controls.Add(this.panel42);
+            this.panel40.Location = new System.Drawing.Point(27, 216);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(882, 78);
+            this.panel40.TabIndex = 26;
+            // 
+            // panel42
+            // 
+            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel42.Controls.Add(this.label21);
+            this.panel42.Controls.Add(this.panel71);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel42.Location = new System.Drawing.Point(0, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(882, 38);
+            this.panel42.TabIndex = 3;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label21.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(55, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(447, 38);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Status : ";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel71
+            // 
+            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel71.Location = new System.Drawing.Point(0, 0);
+            this.panel71.Name = "panel71";
+            this.panel71.Size = new System.Drawing.Size(55, 38);
+            this.panel71.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.panel72);
+            this.groupBox4.Controls.Add(this.panel91);
+            this.groupBox4.Location = new System.Drawing.Point(9, 44);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(603, 72);
+            this.groupBox4.TabIndex = 55;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "FFMPEG";
+            // 
+            // panel72
+            // 
+            this.panel72.Controls.Add(this.panel89);
+            this.panel72.Controls.Add(this.panel90);
+            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel72.Location = new System.Drawing.Point(3, 41);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(597, 23);
+            this.panel72.TabIndex = 1;
+            // 
+            // panel89
+            // 
+            this.panel89.Controls.Add(this.button28);
+            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel89.Location = new System.Drawing.Point(301, 0);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(296, 23);
+            this.panel89.TabIndex = 1;
+            // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.Color.White;
+            this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button28.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.button28.FlatAppearance.BorderSize = 2;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button28.Location = new System.Drawing.Point(0, 0);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(296, 23);
+            this.button28.TabIndex = 71;
+            this.button28.Text = "Update Available";
+            this.button28.UseVisualStyleBackColor = false;
+            // 
+            // panel90
+            // 
+            this.panel90.Controls.Add(this.label23);
+            this.panel90.Controls.Add(this.label24);
+            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel90.Location = new System.Drawing.Point(0, 0);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(295, 23);
+            this.panel90.TabIndex = 0;
+            // 
+            // label23
+            // 
+            this.label23.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label23.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label23.Location = new System.Drawing.Point(72, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(223, 23);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "-";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label24.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label24.Location = new System.Drawing.Point(0, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 23);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Latest Update:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel91
+            // 
+            this.panel91.Controls.Add(this.panel92);
+            this.panel91.Controls.Add(this.panel93);
+            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel91.Location = new System.Drawing.Point(3, 16);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(597, 25);
+            this.panel91.TabIndex = 0;
+            // 
+            // panel92
+            // 
+            this.panel92.Controls.Add(this.label26);
+            this.panel92.Controls.Add(this.label35);
+            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel92.Location = new System.Drawing.Point(301, 0);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(296, 25);
+            this.panel92.TabIndex = 1;
+            // 
+            // label26
+            // 
+            this.label26.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label26.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label26.Location = new System.Drawing.Point(139, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(157, 25);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "Installed FFmpeg Version:";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label35.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label35.Location = new System.Drawing.Point(0, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(139, 25);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Downloadable FFmpeg Version:";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel93
+            // 
+            this.panel93.Controls.Add(this.label36);
+            this.panel93.Controls.Add(this.label37);
+            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel93.Location = new System.Drawing.Point(0, 0);
+            this.panel93.Name = "panel93";
+            this.panel93.Size = new System.Drawing.Size(295, 25);
+            this.panel93.TabIndex = 0;
+            // 
+            // label36
+            // 
+            this.label36.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label36.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label36.Location = new System.Drawing.Point(118, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(177, 25);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "-";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label37
+            // 
+            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label37.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(118, 25);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Installed FFmpeg Version:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // InstallProcessBar
+            // 
+            this.InstallProcessBar.Location = new System.Drawing.Point(9, 44);
+            this.InstallProcessBar.Name = "InstallProcessBar";
+            this.InstallProcessBar.Size = new System.Drawing.Size(783, 25);
+            this.InstallProcessBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.InstallProcessBar.TabIndex = 27;
+            // 
+            // SpeedLabel
+            // 
+            this.SpeedLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SpeedLabel.Location = new System.Drawing.Point(794, 49);
+            this.SpeedLabel.Name = "SpeedLabel";
+            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SpeedLabel.Size = new System.Drawing.Size(82, 16);
+            this.SpeedLabel.TabIndex = 28;
+            this.SpeedLabel.Text = "0 KB/s ";
+            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel94
+            // 
+            this.panel94.BackColor = System.Drawing.Color.White;
+            this.panel94.Controls.Add(this.label40);
+            this.panel94.Controls.Add(this.panel96);
+            this.panel94.Location = new System.Drawing.Point(27, 303);
+            this.panel94.Name = "panel94";
+            this.panel94.Size = new System.Drawing.Size(622, 94);
+            this.panel94.TabIndex = 29;
+            // 
+            // panel96
+            // 
+            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel96.Controls.Add(this.label41);
+            this.panel96.Controls.Add(this.panel97);
+            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel96.Location = new System.Drawing.Point(0, 0);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(622, 38);
+            this.panel96.TabIndex = 3;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label41.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(55, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(447, 38);
+            this.label41.TabIndex = 6;
+            this.label41.Text = "Information";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel97
+            // 
+            this.panel97.Controls.Add(this.pictureBox11);
+            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel97.Location = new System.Drawing.Point(0, 0);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(55, 38);
+            this.panel97.TabIndex = 0;
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label40.Location = new System.Drawing.Point(6, 46);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(611, 45);
+            this.label40.TabIndex = 4;
+            this.label40.Text = resources.GetString("label40.Text");
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
             // 
             // Main
             // 
@@ -4242,24 +4188,17 @@
             this.panel51.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.panel40.ResumeLayout(false);
-            this.panel40.PerformLayout();
-            this.panel42.ResumeLayout(false);
-            this.panel42.PerformLayout();
             this.panel27.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.panel92.ResumeLayout(false);
-            this.panel89.ResumeLayout(false);
             this.panel86.ResumeLayout(false);
+            this.panel87.ResumeLayout(false);
+            this.panel88.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
+            this.panel85.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
             this.panel82.ResumeLayout(false);
+            this.panel82.PerformLayout();
             this.panel83.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).EndInit();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.panel78.ResumeLayout(false);
@@ -4303,7 +4242,6 @@
             this.UpdateMainPanel.ResumeLayout(false);
             this.panel73.ResumeLayout(false);
             this.panel74.ResumeLayout(false);
-            this.panel74.PerformLayout();
             this.panel75.ResumeLayout(false);
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
@@ -4341,6 +4279,20 @@
             this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
             this.panel95.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).EndInit();
+            this.panel40.ResumeLayout(false);
+            this.panel42.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.panel72.ResumeLayout(false);
+            this.panel89.ResumeLayout(false);
+            this.panel90.ResumeLayout(false);
+            this.panel91.ResumeLayout(false);
+            this.panel92.ResumeLayout(false);
+            this.panel93.ResumeLayout(false);
+            this.panel94.ResumeLayout(false);
+            this.panel96.ResumeLayout(false);
+            this.panel97.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4500,42 +4452,13 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Panel UpdateMainPanel;
-        private System.Windows.Forms.Button Encoder_PreviewButton;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Panel panel71;
-        private System.Windows.Forms.Panel panel72;
-        private System.Windows.Forms.Label label72;
-        internal System.Windows.Forms.ComboBox Encoder_ExtensionDropdown;
-        private System.Windows.Forms.Label label73;
-        internal System.Windows.Forms.ComboBox Encoder_OverwriteDropdown;
-        private System.Windows.Forms.Label label74;
-        internal System.Windows.Forms.ComboBox Encoder_FramesDropdown;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
-        internal System.Windows.Forms.ComboBox Encoder_ResolutionDropdown;
-        internal System.Windows.Forms.ComboBox Encoder_TunerDropdown;
-        public System.Windows.Forms.ListView Encoder_FileListView;
-        private System.Windows.Forms.ColumnHeader columnHeader13;
-        private System.Windows.Forms.ColumnHeader columnHeader14;
-        private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Panel panel73;
         private System.Windows.Forms.Label label78;
-        internal System.Windows.Forms.ComboBox Encoder_QualitySpeedDropdown;
         private System.Windows.Forms.Panel panel74;
-        private System.Windows.Forms.Button button22;
-        public System.Windows.Forms.ProgressBar Encoder_StatusProgressbar;
-        private System.Windows.Forms.TextBox Encoder_OutputFolderTextfield;
-        public System.Windows.Forms.Button Encoder_StartEncodingButton;
         private System.Windows.Forms.Panel panel75;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Panel panel76;
-        private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Panel panel77;
-        internal System.Windows.Forms.ComboBox Encoder_VideoCodecDropdown;
-        private System.Windows.Forms.Label label81;
-        internal System.Windows.Forms.ComboBox Encoder_AudioCodecDropdown;
-        private System.Windows.Forms.Label label82;
-        internal System.Windows.Forms.ComboBox Encoder_BitrateDropdown;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label61;
         public System.Windows.Forms.ListView Cut_listView;
@@ -4624,11 +4547,6 @@
         private System.Windows.Forms.Panel panel79;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel80;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.NumericUpDown Settings_URIServerPort;
-        private System.Windows.Forms.Panel Settings_URIServerIndicator;
-        private System.Windows.Forms.CheckBox Settings_URIServerCheckbox;
         private System.Windows.Forms.Label label30;
         internal System.Windows.Forms.ComboBox Settings_QualityDropdown;
         private System.Windows.Forms.Label label15;
@@ -4658,19 +4576,6 @@
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Panel panel40;
-        internal System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Panel panel42;
-        internal System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Panel panel92;
-        private System.Windows.Forms.Panel panel93;
-        private System.Windows.Forms.Panel panel94;
-        private System.Windows.Forms.Panel panel89;
-        private System.Windows.Forms.Panel panel90;
-        private System.Windows.Forms.Panel panel91;
         private System.Windows.Forms.Panel panel86;
         private System.Windows.Forms.Panel panel87;
         private System.Windows.Forms.Panel panel88;
@@ -4679,6 +4584,43 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel95;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.NumericUpDown Settings_URIServerPort;
+        private System.Windows.Forms.Panel Settings_URIServerIndicator;
+        private System.Windows.Forms.CheckBox Settings_URIServerCheckbox;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        internal System.Windows.Forms.ProgressBar InstallProcessBar;
+        internal System.Windows.Forms.Label SpeedLabel;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel panel71;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Panel panel72;
+        private System.Windows.Forms.Panel panel89;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Panel panel90;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel91;
+        private System.Windows.Forms.Panel panel92;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel93;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Panel panel94;
+        private System.Windows.Forms.Panel panel96;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Panel panel97;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }
 
