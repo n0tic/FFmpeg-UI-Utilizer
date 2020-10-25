@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43EBEACB-9AF9-4AB2-A39B-99BB733AC2CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FFmpeg_Utilizer</RootNamespace>
+    <AssemblyName>FFmpeg Utilizer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Core.cs" />
+    <Compile Include="Data\Tab.cs" />
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NoticeModule.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_apps_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffmpegLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_attention_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_check_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_close_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_delete_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_divide_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_download_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_edit_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_home_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_language_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_love_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_love_solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_menu_point_h_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_minus_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_multiply_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_notification_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_play_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_question_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_reload_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_settings_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_star_outline.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
