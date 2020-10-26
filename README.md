@@ -32,7 +32,7 @@ Initial need was to convert a filetype and encode to another.
 
 ## Preview 
 
-![PLACEHOLDER OF V1](http://bytevaultstudio.se/ShareX/FFMPEG_Utilizer_E4sLhX6Z8V.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_nXABH8gtqZ.png)
 
 Changes too often to post more images but once I settle for a design it will get updated with more.
 
