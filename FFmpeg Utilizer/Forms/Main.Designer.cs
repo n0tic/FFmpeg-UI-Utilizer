@@ -166,21 +166,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
             this.M3U8MainPanel = new System.Windows.Forms.Panel();
-            this.HLS_PlayButton = new System.Windows.Forms.Button();
+            this.M3U8_PlayButton = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
-            this.HLS_RemoveHLSButton = new System.Windows.Forms.Button();
-            this.HLS_AddHLSButton = new System.Windows.Forms.Button();
-            this.HLS_listView = new System.Windows.Forms.ListView();
+            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_listView = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel49 = new System.Windows.Forms.Panel();
             this.label45 = new System.Windows.Forms.Label();
             this.panel50 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
+            this.M3U8_OutputButton = new System.Windows.Forms.Button();
+            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
+            this.M3U8_StartButton = new System.Windows.Forms.Button();
             this.panel51 = new System.Windows.Forms.Panel();
             this.label46 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
@@ -485,9 +485,9 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
+            this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
@@ -1735,6 +1735,7 @@
             this.Encoder_PlayButton.TabIndex = 53;
             this.Encoder_PlayButton.Text = "Play Selected ▶";
             this.Encoder_PlayButton.UseVisualStyleBackColor = true;
+            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
             // 
             // label14
             // 
@@ -1960,11 +1961,11 @@
             // M3U8MainPanel
             // 
             this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8MainPanel.Controls.Add(this.HLS_PlayButton);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
             this.M3U8MainPanel.Controls.Add(this.label38);
-            this.M3U8MainPanel.Controls.Add(this.HLS_RemoveHLSButton);
-            this.M3U8MainPanel.Controls.Add(this.HLS_AddHLSButton);
-            this.M3U8MainPanel.Controls.Add(this.HLS_listView);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
             this.M3U8MainPanel.Controls.Add(this.panel49);
             this.M3U8MainPanel.Controls.Add(this.panel50);
             this.M3U8MainPanel.Controls.Add(this.panel53);
@@ -1974,19 +1975,19 @@
             this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
             this.M3U8MainPanel.TabIndex = 8;
             // 
-            // HLS_PlayButton
+            // M3U8_PlayButton
             // 
-            this.HLS_PlayButton.BackColor = System.Drawing.Color.White;
-            this.HLS_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.HLS_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HLS_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.HLS_PlayButton.Location = new System.Drawing.Point(824, 53);
-            this.HLS_PlayButton.Name = "HLS_PlayButton";
-            this.HLS_PlayButton.Size = new System.Drawing.Size(85, 21);
-            this.HLS_PlayButton.TabIndex = 79;
-            this.HLS_PlayButton.Text = "Play Selected ▶";
-            this.HLS_PlayButton.UseVisualStyleBackColor = false;
-            this.HLS_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
+            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(824, 53);
+            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(85, 21);
+            this.M3U8_PlayButton.TabIndex = 79;
+            this.M3U8_PlayButton.Text = "Play Selected ▶";
+            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
+            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
             // 
             // label38
             // 
@@ -1998,54 +1999,55 @@
             this.label38.Text = "Drag and drop local .m3u8 files below.";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // HLS_RemoveHLSButton
+            // M3U8_RemoveM3U8Button
             // 
-            this.HLS_RemoveHLSButton.BackColor = System.Drawing.Color.White;
-            this.HLS_RemoveHLSButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.HLS_RemoveHLSButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HLS_RemoveHLSButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.HLS_RemoveHLSButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HLS_RemoveHLSButton.Location = new System.Drawing.Point(150, 47);
-            this.HLS_RemoveHLSButton.Name = "HLS_RemoveHLSButton";
-            this.HLS_RemoveHLSButton.Size = new System.Drawing.Size(117, 24);
-            this.HLS_RemoveHLSButton.TabIndex = 72;
-            this.HLS_RemoveHLSButton.Text = "Remove Selected";
-            this.HLS_RemoveHLSButton.UseVisualStyleBackColor = false;
-            this.HLS_RemoveHLSButton.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
+            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
+            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_RemoveM3U8Button.TabIndex = 72;
+            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
+            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
             // 
-            // HLS_AddHLSButton
+            // M3U8_AddM3U8Button
             // 
-            this.HLS_AddHLSButton.BackColor = System.Drawing.Color.White;
-            this.HLS_AddHLSButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.HLS_AddHLSButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HLS_AddHLSButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.HLS_AddHLSButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HLS_AddHLSButton.Location = new System.Drawing.Point(27, 47);
-            this.HLS_AddHLSButton.Name = "HLS_AddHLSButton";
-            this.HLS_AddHLSButton.Size = new System.Drawing.Size(117, 24);
-            this.HLS_AddHLSButton.TabIndex = 71;
-            this.HLS_AddHLSButton.Text = "Add HLS/M3U8 URL";
-            this.HLS_AddHLSButton.UseVisualStyleBackColor = false;
+            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
+            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
+            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_AddM3U8Button.TabIndex = 71;
+            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
+            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
             // 
-            // HLS_listView
+            // M3U8_listView
             // 
-            this.HLS_listView.AllowDrop = true;
-            this.HLS_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.M3U8_listView.AllowDrop = true;
+            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader12});
-            this.HLS_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.HLS_listView.FullRowSelect = true;
-            this.HLS_listView.GridLines = true;
-            this.HLS_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.HLS_listView.HideSelection = false;
-            this.HLS_listView.Location = new System.Drawing.Point(27, 77);
-            this.HLS_listView.MultiSelect = false;
-            this.HLS_listView.Name = "HLS_listView";
-            this.HLS_listView.Size = new System.Drawing.Size(882, 293);
-            this.HLS_listView.TabIndex = 70;
-            this.HLS_listView.UseCompatibleStateImageBehavior = false;
-            this.HLS_listView.View = System.Windows.Forms.View.Details;
+            this.M3U8_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_listView.FullRowSelect = true;
+            this.M3U8_listView.GridLines = true;
+            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.M3U8_listView.HideSelection = false;
+            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
+            this.M3U8_listView.MultiSelect = false;
+            this.M3U8_listView.Name = "M3U8_listView";
+            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
+            this.M3U8_listView.TabIndex = 70;
+            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
+            this.M3U8_listView.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader7
             // 
@@ -2087,58 +2089,59 @@
             // panel50
             // 
             this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.Controls.Add(this.button13);
-            this.panel50.Controls.Add(this.progressBar3);
-            this.panel50.Controls.Add(this.textBox3);
-            this.panel50.Controls.Add(this.button14);
+            this.panel50.Controls.Add(this.M3U8_OutputButton);
+            this.panel50.Controls.Add(this.M3U8_ProgressBar);
+            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
+            this.panel50.Controls.Add(this.M3U8_StartButton);
             this.panel50.Controls.Add(this.panel51);
             this.panel50.Location = new System.Drawing.Point(27, 377);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(882, 106);
             this.panel50.TabIndex = 2;
             // 
-            // button13
+            // M3U8_OutputButton
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button13.Location = new System.Drawing.Point(792, 44);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(87, 23);
-            this.button13.TabIndex = 25;
-            this.button13.Text = "Output Folder";
-            this.button13.UseVisualStyleBackColor = false;
+            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
+            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
+            this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_OutputButton.TabIndex = 25;
+            this.M3U8_OutputButton.Text = "Output Folder";
+            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
             // 
-            // progressBar3
+            // M3U8_ProgressBar
             // 
-            this.progressBar3.Location = new System.Drawing.Point(3, 75);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(783, 20);
-            this.progressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar3.TabIndex = 24;
+            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
+            this.M3U8_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.M3U8_ProgressBar.TabIndex = 24;
             // 
-            // textBox3
+            // M3U8_OutputFolderTextbox
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.textBox3.Location = new System.Drawing.Point(3, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(783, 22);
-            this.textBox3.TabIndex = 23;
+            this.M3U8_OutputFolderTextbox.Enabled = false;
+            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
+            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(783, 22);
+            this.M3U8_OutputFolderTextbox.TabIndex = 23;
             // 
-            // button14
+            // M3U8_StartButton
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button14.Location = new System.Drawing.Point(792, 73);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(87, 23);
-            this.button14.TabIndex = 22;
-            this.button14.Text = "Start Download";
-            this.button14.UseVisualStyleBackColor = false;
+            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
+            this.M3U8_StartButton.Name = "M3U8_StartButton";
+            this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_StartButton.TabIndex = 22;
+            this.M3U8_StartButton.Text = "Start Download";
+            this.M3U8_StartButton.UseVisualStyleBackColor = false;
             // 
             // panel51
             // 
@@ -4475,10 +4478,10 @@
         private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.Button button13;
-        public System.Windows.Forms.ProgressBar progressBar3;
-        private System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button M3U8_OutputButton;
+        public System.Windows.Forms.ProgressBar M3U8_ProgressBar;
+        private System.Windows.Forms.TextBox M3U8_OutputFolderTextbox;
+        public System.Windows.Forms.Button M3U8_StartButton;
         private System.Windows.Forms.Panel panel51;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel panel52;
@@ -4582,13 +4585,13 @@
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Button HLS_RemoveHLSButton;
-        private System.Windows.Forms.Button HLS_AddHLSButton;
-        public System.Windows.Forms.ListView HLS_listView;
+        private System.Windows.Forms.Button M3U8_RemoveM3U8Button;
+        private System.Windows.Forms.Button M3U8_AddM3U8Button;
+        public System.Windows.Forms.ListView M3U8_listView;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.Button HLS_PlayButton;
+        private System.Windows.Forms.Button M3U8_PlayButton;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button24;

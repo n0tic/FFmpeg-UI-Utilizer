@@ -1,6 +1,7 @@
 ﻿#pragma warning disable IDE0044 // Nagging about hasInternet
 
 using FFmpeg_Utilizer.Data;
+using FFmpeg_Utilizer.Forms;
 using FFmpeg_Utilizer.Modules;
 using FFMPEG_Utilizer;
 using FFMPEG_Utilizer.Data;
@@ -492,7 +493,7 @@ namespace FFmpeg_Utilizer
 
         private void HLS_RemoveHLSButton_Click(object sender, EventArgs e)
         {
-            if (HLS_listView.SelectedItems.Count > 0) HLS_listView.Items.Remove(HLS_listView.SelectedItems[0]);
+            if (M3U8_listView.SelectedItems.Count > 0) M3U8_listView.Items.Remove(M3U8_listView.SelectedItems[0]);
         }
 
         private void HLS_PlayButton_Click(object sender, EventArgs e)
@@ -512,14 +513,14 @@ namespace FFmpeg_Utilizer
             catch (InvalidOperationException) { }
 
             //check if there is a selected item in the listview.
-            if (HLS_listView.SelectedItems.Count > 0)
+            if (M3U8_listView.SelectedItems.Count > 0)
             {
                 PlayProcess = new Process
                 {
                     StartInfo =
                     {
                         FileName = settings.ffplayPath,
-                        Arguments = "\"" + HLS_listView.SelectedItems[0].SubItems[1].Text + "\" -autoexit",
+                        Arguments = "\"" + M3U8_listView.SelectedItems[0].SubItems[1].Text + "\" -autoexit",
                         UseShellExecute = false
                     }
                 };
@@ -538,8 +539,55 @@ namespace FFmpeg_Utilizer
             catch (NotSupportedException) { }
             catch (InvalidOperationException) { }
 
-            uriRequestHandler.KillServer();
-            encodingProcesser.KillThreads();
+            uriRequestHandler?.KillServer();
+            encodingProcesser?.KillThreads();
+        }
+
+        private void Encoder_PlayButton_Click(object sender, EventArgs e)
+        {
+            if (!File.Exists(settings.ffplayPath))
+            {
+                notice.SetNotice("You need to specify a location of \"ffplay.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            try
+            {
+                PlayProcess?.Kill();
+            }
+            catch (Win32Exception) { }
+            catch (NotSupportedException) { }
+            catch (InvalidOperationException) { }
+
+            //check if there is a selected item in the listview.
+            if (Encoder_FilesList.SelectedItems.Count > 0)
+            {
+                PlayProcess = new Process
+                {
+                    StartInfo =
+                    {
+                        FileName = settings.ffplayPath,
+                        Arguments = "\"" + Encoder_FilesList.SelectedItems[0].Text + "\" -autoexit",
+                        UseShellExecute = false
+                    }
+                };
+
+                PlayProcess.Start();
+            }
+        }
+
+        private void M3U8_OutputButton_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog fb = new FolderBrowserDialog())
+            {
+                DialogResult result = fb.ShowDialog();
+                if (result == DialogResult.OK) M3U8_OutputFolderTextbox.Text = fb.SelectedPath;
+            }
+        }
+
+        private void M3U8_AddM3U8Button_Click(object sender, EventArgs e)
+        {
+            new AddM3U8URL().ShowDialog();
         }
     }
 }

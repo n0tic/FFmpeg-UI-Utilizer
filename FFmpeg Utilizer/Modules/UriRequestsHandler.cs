@@ -115,7 +115,7 @@ namespace FFmpeg_Utilizer.Modules
                                         Uri hlsFile = new Uri(tmpRequests[1]);
 
                                         ListViewItem item = new ListViewItem(new[] { Path.GetFileNameWithoutExtension(hlsFile.AbsoluteUri), tmpRequests[1], "• Waiting" });
-                                        main.HLS_listView.Items.Add(item);
+                                        main.M3U8_listView.Items.Add(item);
                                         Core.ChangeTab(Core.Tabs.M3U8);
 
                                         URIRequestExtender.SendResponse(sHttpVersion, ref connection, true);

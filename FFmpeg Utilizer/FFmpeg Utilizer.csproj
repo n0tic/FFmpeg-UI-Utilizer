@@ -55,6 +55,12 @@
     <Compile Include="Data\static\CommonExtensions.cs" />
     <Compile Include="Data\static\Libs.cs" />
     <Compile Include="Data\Tab.cs" />
+    <Compile Include="Forms\AddM3U8URL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddM3U8URL.Designer.cs">
+      <DependentUpon>AddM3U8URL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Modules\UtilityUpdaterModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddM3U8URL.resx">
+      <DependentUpon>AddM3U8URL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
       <SubType>Designer</SubType>
