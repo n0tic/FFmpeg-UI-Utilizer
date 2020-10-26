@@ -21,12 +21,5 @@ namespace FFMPEG_Utilizer.Data
 
         public void Add(Libs.Overwrite overwrite, FileInfo originalFile, Libs.VCodec vCodec, Libs.ACodec aCodec, Libs.Tune tuner, Libs.Preset preset, Libs.Frames fps, Libs.Size res, Libs.VideoFileExtensions ext) =>
             queue.Enqueue(new Argument(overwrite, originalFile, vCodec, aCodec, tuner, preset, fps, res, outputFolder, Path.GetFileNameWithoutExtension(originalFile.Name), ext));
-
-        public void Reset(string outputFolder, bool hideConsole)
-        {
-            this.outputFolder = outputFolder;
-            this.hideConsole = hideConsole;
-            queue.Clear();
-        }
     }
 }

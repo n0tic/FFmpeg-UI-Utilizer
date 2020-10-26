@@ -61,7 +61,10 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\EncodingProcesser.cs" />
     <Compile Include="Modules\NoticeModule.cs" />
+    <Compile Include="Modules\Submodule\URIRequestExtender.cs" />
+    <Compile Include="Modules\UriRequestsHandler.cs" />
     <Compile Include="Modules\UtilityUpdaterModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

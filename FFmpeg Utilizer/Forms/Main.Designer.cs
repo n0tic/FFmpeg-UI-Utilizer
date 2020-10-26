@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
@@ -112,7 +112,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
             this.Settings_DefaultOutputPathBox = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Settings_DefaultOutputButton = new System.Windows.Forms.Button();
             this.panel79 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel80 = new System.Windows.Forms.Panel();
@@ -142,14 +142,14 @@
             this.Encoder_FilesList = new System.Windows.Forms.ListView();
             this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button5 = new System.Windows.Forms.Button();
+            this.Encoder_PlayButton = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -357,6 +357,7 @@
             this.ApplicationCloseButton = new System.Windows.Forms.Label();
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
             this.UpdateMainPanel.SuspendLayout();
@@ -484,10 +485,10 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.SettingsMainPanel);
-            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
+            this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
@@ -1157,6 +1158,7 @@
             this.Settings_URIServerCheckbox.TabIndex = 68;
             this.Settings_URIServerCheckbox.Text = "Active";
             this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
+            this.Settings_URIServerCheckbox.CheckedChanged += new System.EventHandler(this.Settings_URIServerCheckbox_CheckedChanged);
             // 
             // panel83
             // 
@@ -1337,7 +1339,7 @@
             // 
             this.panel43.BackColor = System.Drawing.Color.White;
             this.panel43.Controls.Add(this.Settings_DefaultOutputPathBox);
-            this.panel43.Controls.Add(this.button6);
+            this.panel43.Controls.Add(this.Settings_DefaultOutputButton);
             this.panel43.Controls.Add(this.panel79);
             this.panel43.Controls.Add(this.Settings_FFplayPathBox);
             this.panel43.Controls.Add(this.Settings_AutoDefaultOutputButton);
@@ -1358,18 +1360,19 @@
             this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(730, 22);
             this.Settings_DefaultOutputPathBox.TabIndex = 54;
             // 
-            // button6
+            // Settings_DefaultOutputButton
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button6.Location = new System.Drawing.Point(765, 95);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 23);
-            this.button6.TabIndex = 55;
-            this.button6.Text = "Default Output Folder";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Settings_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(765, 95);
+            this.Settings_DefaultOutputButton.Name = "Settings_DefaultOutputButton";
+            this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(111, 23);
+            this.Settings_DefaultOutputButton.TabIndex = 55;
+            this.Settings_DefaultOutputButton.Text = "Default Output Folder";
+            this.Settings_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Settings_DefaultOutputButton.Click += new System.EventHandler(this.Settings_DefaultOutputButton_Click);
             // 
             // panel79
             // 
@@ -1447,6 +1450,7 @@
             this.Settings_FFMPEGLocationButton.TabIndex = 51;
             this.Settings_FFMPEGLocationButton.Text = "FFMPEG Location";
             this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = false;
+            this.Settings_FFMPEGLocationButton.Click += new System.EventHandler(this.Settings_FFMPEGLocationButton_Click);
             // 
             // Settings_FFPLAYLocationButton
             // 
@@ -1460,6 +1464,7 @@
             this.Settings_FFPLAYLocationButton.TabIndex = 53;
             this.Settings_FFPLAYLocationButton.Text = "FFplay Location";
             this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = false;
+            this.Settings_FFPLAYLocationButton.Click += new System.EventHandler(this.Settings_FFPLAYLocationButton_Click);
             // 
             // Settings_ResetButton
             // 
@@ -1582,6 +1587,7 @@
             this.Encoder_OutputFolderButton.TabIndex = 25;
             this.Encoder_OutputFolderButton.Text = "Output Folder";
             this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
+            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
             // 
             // Encoder_ProgressBar
             // 
@@ -1612,6 +1618,7 @@
             this.Encoder_StartEncodingProcessButton.TabIndex = 22;
             this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
             this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
+            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
             // 
             // panel9
             // 
@@ -1656,15 +1663,16 @@
             // panel37
             // 
             this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
             this.panel37.Controls.Add(this.Encoder_FilesList);
-            this.panel37.Controls.Add(this.button5);
+            this.panel37.Controls.Add(this.Encoder_PlayButton);
             this.panel37.Controls.Add(this.label14);
             this.panel37.Controls.Add(this.panel2);
             this.panel37.Controls.Add(this.panel1);
             this.panel37.Controls.Add(this.label7);
             this.panel37.Controls.Add(this.Encoder_ExtensionBox);
             this.panel37.Controls.Add(this.label6);
-            this.panel37.Controls.Add(this.comboBox1);
+            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
             this.panel37.Controls.Add(this.label5);
             this.panel37.Controls.Add(this.Encoder_FPSBox);
             this.panel37.Controls.Add(this.label32);
@@ -1695,7 +1703,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem10});
+            listViewItem1});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1703,33 +1711,35 @@
             this.Encoder_FilesList.TabIndex = 43;
             this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
             this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
+            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
+            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
             // 
             // ColumnHeader1
             // 
             this.ColumnHeader1.Text = "File";
-            this.ColumnHeader1.Width = 775;
+            this.ColumnHeader1.Width = 765;
             // 
             // ColumnHeader2
             // 
             this.ColumnHeader2.Text = "Status";
             this.ColumnHeader2.Width = 80;
             // 
-            // button5
+            // Encoder_PlayButton
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button5.Location = new System.Drawing.Point(791, 70);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 21);
-            this.button5.TabIndex = 53;
-            this.button5.Text = "Play Selected ▶";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Encoder_PlayButton.Location = new System.Drawing.Point(791, 70);
+            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
+            this.Encoder_PlayButton.Size = new System.Drawing.Size(85, 21);
+            this.Encoder_PlayButton.TabIndex = 53;
+            this.Encoder_PlayButton.Text = "Play Selected ▶";
+            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label14.Location = new System.Drawing.Point(713, 39);
+            this.label14.Location = new System.Drawing.Point(710, 39);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(47, 16);
             this.label14.TabIndex = 52;
@@ -1741,7 +1751,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel2.Location = new System.Drawing.Point(441, 46);
+            this.panel2.Location = new System.Drawing.Point(438, 46);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1, 20);
             this.panel2.TabIndex = 51;
@@ -1749,7 +1759,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel1.Location = new System.Drawing.Point(441, 46);
+            this.panel1.Location = new System.Drawing.Point(438, 46);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 1);
             this.panel1.TabIndex = 50;
@@ -1784,19 +1794,15 @@
             this.label6.Text = "Auto Overwrite";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // Encoder_OverwriteBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Ask",
-            "Yes",
-            "No"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(81, 22);
-            this.comboBox1.TabIndex = 48;
+            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Encoder_OverwriteBox.FormattingEnabled = true;
+            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
+            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
+            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 22);
+            this.Encoder_OverwriteBox.TabIndex = 48;
             // 
             // label5
             // 
@@ -2047,7 +2053,7 @@
             // columnHeader8
             // 
             this.columnHeader8.Text = "URL";
-            this.columnHeader8.Width = 390;
+            this.columnHeader8.Width = 665;
             // 
             // columnHeader12
             // 
@@ -4192,6 +4198,17 @@
             // 
             this.toolTip.AutomaticDelay = 250;
             // 
+            // Encoder_HideConsoleToggle
+            // 
+            this.Encoder_HideConsoleToggle.AutoSize = true;
+            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(701, 76);
+            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
+            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Encoder_HideConsoleToggle.TabIndex = 61;
+            this.Encoder_HideConsoleToggle.Text = "Hide Console";
+            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4250,6 +4267,7 @@
             this.panel6.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
             this.panel47.ResumeLayout(false);
             this.M3U8MainPanel.ResumeLayout(false);
             this.panel49.ResumeLayout(false);
@@ -4434,7 +4452,7 @@
         public System.Windows.Forms.ProgressBar Encoder_ProgressBar;
         public System.Windows.Forms.Button Encoder_StartEncodingProcessButton;
         private System.Windows.Forms.Label label6;
-        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.ComboBox Encoder_OverwriteBox;
         private System.Windows.Forms.Label label5;
         internal System.Windows.Forms.ComboBox Encoder_FPSBox;
         private System.Windows.Forms.Label label32;
@@ -4445,7 +4463,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Encoder_PlayButton;
         private System.Windows.Forms.Panel M3U8MainPanel;
         private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.Label label45;
@@ -4602,7 +4620,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel81;
         internal System.Windows.Forms.TextBox Settings_DefaultOutputPathBox;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Settings_DefaultOutputButton;
         private System.Windows.Forms.Panel Settings_NetPanel;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Label label20;
@@ -4654,6 +4672,7 @@
         private System.Windows.Forms.Label label21;
         internal System.Windows.Forms.Label Settings_InstalledVersionLabel;
         internal System.Windows.Forms.Label Settings_LatestUpdateLabel;
+        private System.Windows.Forms.CheckBox Encoder_HideConsoleToggle;
     }
 }
 

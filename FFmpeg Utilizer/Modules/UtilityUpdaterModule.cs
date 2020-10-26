@@ -115,7 +115,7 @@ namespace FFmpeg_Utilizer.Modules
             main.Update_OnlineVerLabel.Text = e.Result;
 
             // TODO: Fix Settings
-            if (e.Result != main.settings.ffVersion)
+            if (e.Result != main.settings.ffVersion && main.settings.ffVersion != "")
                 SetUtilityDownloader(UtilityType.Update);
             else
             {

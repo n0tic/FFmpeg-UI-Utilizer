@@ -6,6 +6,7 @@ using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
 {
@@ -33,6 +34,7 @@ namespace FFmpeg_Utilizer.Modules
 
         public void SetNotice(string noticeText, TypeNotice nType)
         {
+
             main.PixelTopNotice.BackColor = colors[(int)nType];
             main.NoticePanel.BackColor = colors[(int)nType + 1];
             main.NoticeTextLabel.BackColor = colors[(int)nType + 1];

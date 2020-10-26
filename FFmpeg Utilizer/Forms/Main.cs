@@ -3,6 +3,7 @@
 using FFmpeg_Utilizer.Data;
 using FFmpeg_Utilizer.Modules;
 using FFMPEG_Utilizer;
+using FFMPEG_Utilizer.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,8 @@ namespace FFmpeg_Utilizer
         //Modules
         public NoticeModule notice;
         public UtilityUpdaterModule updater;
+        public EncodingProcesser encodingProcesser;
+        public UriRequestsHandler uriRequestHandler;
 
         bool hasInternet = true;
 
@@ -62,8 +65,9 @@ namespace FFmpeg_Utilizer
             //Init Modules
             notice = new NoticeModule(this);
             notice.CloseNotice();
+            encodingProcesser = new EncodingProcesser(this);
 
-            if(hasInternet)
+            if (hasInternet)
                 updater = new UtilityUpdaterModule(this);
         }
 
@@ -161,6 +165,67 @@ namespace FFmpeg_Utilizer
 
             #endregion Settings
 
+            #region Encoder
+
+            //Get Settings Data
+            foreach (Libs.Overwrite ow in (Libs.Overwrite[])Enum.GetValues(typeof(Libs.Overwrite)))
+                Encoder_OverwriteBox.Items.Add(ow);
+
+            foreach (Libs.VCodec codec in (Libs.VCodec[])Enum.GetValues(typeof(Libs.VCodec)))
+                Encoder_VideoCodecBox.Items.Add(codec);
+
+            foreach (Libs.ACodec codec in (Libs.ACodec[])Enum.GetValues(typeof(Libs.ACodec)))
+                Encoder_AudioCodecBox.Items.Add(codec);
+
+            foreach (Libs.Preset quality in (Libs.Preset[])Enum.GetValues(typeof(Libs.Preset)))
+                Encoder_PresetsBox.Items.Add(quality);
+
+            foreach (Libs.VideoFileExtensions ext in (Libs.VideoFileExtensions[])Enum.GetValues(typeof(Libs.VideoFileExtensions)))
+                Encoder_ExtensionBox.Items.Add(ext);
+
+            foreach (Libs.Tune tune in (Libs.Tune[])Enum.GetValues(typeof(Libs.Tune)))
+                Encoder_TunerBox.Items.Add(tune);
+
+            foreach (Libs.Size res in (Libs.Size[])Enum.GetValues(typeof(Libs.Size)))
+                Encoder_ResolutionBox.Items.Add(res);
+
+            foreach (Libs.Frames fps in (Libs.Frames[])Enum.GetValues(typeof(Libs.Frames)))
+                Encoder_FPSBox.Items.Add(fps);
+
+            if (settings.loaded)
+            {
+                Encoder_OverwriteBox.SelectedIndex = Encoder_OverwriteBox.FindStringExact(settings.overwrite.ToString());
+                Encoder_VideoCodecBox.SelectedIndex = Encoder_VideoCodecBox.FindStringExact(settings.vCodec.ToString());
+                Encoder_AudioCodecBox.SelectedIndex = Encoder_AudioCodecBox.FindStringExact(settings.aCodec.ToString());
+                Encoder_PresetsBox.SelectedIndex = Encoder_PresetsBox.FindStringExact(settings.quality.ToString());
+                Encoder_ExtensionBox.SelectedIndex = 0;
+                Encoder_TunerBox.SelectedIndex = 0;
+                Encoder_ResolutionBox.SelectedIndex = 0;
+                Encoder_FPSBox.SelectedIndex = 0;
+                Encoder_HideConsoleToggle.Checked = settings.hideConsole;
+
+                if (Directory.Exists(settings.outputLocation))
+                    Encoder_OutputFolderTextBox.Text = settings.outputLocation;
+                else if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    Encoder_OutputFolderTextBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+            else //Default settings
+            {
+                Encoder_OverwriteBox.SelectedIndex = 0;
+                Encoder_VideoCodecBox.SelectedIndex = 2;
+                Encoder_AudioCodecBox.SelectedIndex = 2;
+                Encoder_PresetsBox.SelectedIndex = 0;
+                Encoder_ExtensionBox.SelectedIndex = 0;
+                Encoder_TunerBox.SelectedIndex = 0;
+                Encoder_ResolutionBox.SelectedIndex = 0;
+                Encoder_FPSBox.SelectedIndex = 0;
+                Encoder_HideConsoleToggle.Checked = false;
+
+                if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    Encoder_OutputFolderTextBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+
+            #endregion Encoder
 
 
             //Set lower left information
@@ -292,10 +357,124 @@ namespace FFmpeg_Utilizer
             Settings_DefaultOutputPathBox.Text = settings.outputLocation;
         }
 
+        public void SetURIServerStatus(bool status)
+        {
+            if (status)
+                Settings_URIServerIndicator.BackColor = Color.FromArgb(192, 255, 192);
+            else
+                Settings_URIServerIndicator.BackColor = Color.FromArgb(255, 128, 128);
+        }
+
         private void Settings_DownloadButton_Click(object sender, EventArgs e)
         {
             updater.StartUpdate();
             Core.ChangeTab(Core.Tabs.Updater);
+        }
+
+        private void Encoder_OutputFolderButton_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog fb = new FolderBrowserDialog())
+            {
+                DialogResult result = fb.ShowDialog();
+                if (result == DialogResult.OK) Encoder_OutputFolderTextBox.Text = fb.SelectedPath;
+            }
+        }
+
+        private void Settings_FFMPEGLocationButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog op = new OpenFileDialog())
+            {
+                op.Filter = "Executable Files(*exe.exe)|ffmpeg.exe";
+
+                DialogResult result = op.ShowDialog();
+                if (result == DialogResult.OK) Settings_FFmpegPathBox.Text = op.FileName;
+            }
+        }
+
+        private void Settings_FFPLAYLocationButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog op = new OpenFileDialog())
+            {
+                op.Filter = "Executable Files(*exe.exe)|ffplay.exe";
+
+                DialogResult result = op.ShowDialog();
+                if (result == DialogResult.OK) Settings_FFplayPathBox.Text = op.FileName;
+            }
+        }
+
+        private void Settings_DefaultOutputButton_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog fb = new FolderBrowserDialog())
+            {
+                DialogResult result = fb.ShowDialog();
+                if (result == DialogResult.OK) Settings_DefaultOutputPathBox.Text = fb.SelectedPath;
+            }
+        }
+
+        private void Encoder_FilesList_DragDrop(object sender, DragEventArgs e)
+        {
+            //Clear listview.
+            Encoder_FilesList.Items.Clear();
+
+            //Get all files dropped by user over the control.
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            //Detect if there was a directory. Use only directory.
+            if (Directory.Exists(files[0])) files = Directory.GetFiles(files[0]);
+
+            //Add data to the listview.
+            foreach (string file in files)
+            {
+                ListViewItem item = new ListViewItem(new[] { file, "• Waiting" });
+                Encoder_FilesList.Items.Add(item);
+            }
+        }
+
+        private void Encoder_FilesList_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+
+        private void Encoder_StartEncodingProcessButton_Click(object sender, EventArgs e)
+        {
+            //Stop if there are no files or application to work with.
+            if (!File.Exists(settings.ffmpegPath))
+            {
+                notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+            if (Encoder_FilesList.Items.Count < 1 || Encoder_FilesList.Items?[0].Text == "Drag and drop a folder or multiple files here...")
+            {
+                notice.SetNotice("The list of files to encode was empty. Drag files onto the list.", NoticeModule.TypeNotice.Warning);
+                return;
+            }
+
+            //Create a queue to process.
+            ProcesserData processQueueData = new ProcesserData(Encoder_OutputFolderTextBox.Text, Encoder_HideConsoleToggle.Checked);
+
+            //For every file...
+            for (int i = 0; i < Encoder_FilesList.Items.Count; i++)
+            {
+                FileInfo file = new FileInfo(Encoder_FilesList.Items[i].Text);
+
+                // TODO: Add advanced settings for overwrite
+                /*
+                 *Overwrite
+                 *libraries
+                 *
+                 */
+
+                processQueueData.Add(Libs.Overwrite.Yes, file, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
+            }
+
+            //Start the encoding process.
+            encodingProcesser.ProcessFileQueue(processQueueData);
+        }
+
+        private void Settings_URIServerCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Settings_URIServerCheckbox.Checked) uriRequestHandler = new UriRequestsHandler(this, Convert.ToInt32(Settings_URIServerPort.Value));
+            else uriRequestHandler.KillServer();
         }
     }
 }
