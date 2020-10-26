@@ -50,7 +50,12 @@ namespace FFmpeg_Utilizer.Modules
             while (true)
             {
                 //Accept new connection
-                Socket connection = tcpServer.AcceptSocket();
+                Socket connection = null;
+                try
+                {
+                    connection = tcpServer.AcceptSocket();
+                }
+                catch { }
                 //Core.WriteLine("Connection Type " + connection.SocketType, Core.LogType.Info);
 
                 if (connection.Connected)
@@ -134,8 +139,8 @@ namespace FFmpeg_Utilizer.Modules
 
         public void KillServer()
         {
-            UriListener?.Abort();
             tcpServer?.Stop();
+            UriListener?.Abort();
             main.SetURIServerStatus(false);
         }
     }

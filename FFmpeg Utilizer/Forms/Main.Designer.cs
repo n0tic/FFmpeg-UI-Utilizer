@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
@@ -166,7 +166,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
             this.M3U8MainPanel = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.HLS_PlayButton = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
             this.HLS_RemoveHLSButton = new System.Windows.Forms.Button();
             this.HLS_AddHLSButton = new System.Windows.Forms.Button();
@@ -485,9 +485,9 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.EncoderMainPanel);
-            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
+            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
@@ -1703,7 +1703,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1960,7 +1960,7 @@
             // M3U8MainPanel
             // 
             this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8MainPanel.Controls.Add(this.button12);
+            this.M3U8MainPanel.Controls.Add(this.HLS_PlayButton);
             this.M3U8MainPanel.Controls.Add(this.label38);
             this.M3U8MainPanel.Controls.Add(this.HLS_RemoveHLSButton);
             this.M3U8MainPanel.Controls.Add(this.HLS_AddHLSButton);
@@ -1974,18 +1974,19 @@
             this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
             this.M3U8MainPanel.TabIndex = 8;
             // 
-            // button12
+            // HLS_PlayButton
             // 
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button12.Location = new System.Drawing.Point(824, 53);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(85, 21);
-            this.button12.TabIndex = 79;
-            this.button12.Text = "Play Selected ▶";
-            this.button12.UseVisualStyleBackColor = false;
+            this.HLS_PlayButton.BackColor = System.Drawing.Color.White;
+            this.HLS_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.HLS_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HLS_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.HLS_PlayButton.Location = new System.Drawing.Point(824, 53);
+            this.HLS_PlayButton.Name = "HLS_PlayButton";
+            this.HLS_PlayButton.Size = new System.Drawing.Size(85, 21);
+            this.HLS_PlayButton.TabIndex = 79;
+            this.HLS_PlayButton.Text = "Play Selected ▶";
+            this.HLS_PlayButton.UseVisualStyleBackColor = false;
+            this.HLS_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
             // 
             // label38
             // 
@@ -2010,6 +2011,7 @@
             this.HLS_RemoveHLSButton.TabIndex = 72;
             this.HLS_RemoveHLSButton.Text = "Remove Selected";
             this.HLS_RemoveHLSButton.UseVisualStyleBackColor = false;
+            this.HLS_RemoveHLSButton.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
             // 
             // HLS_AddHLSButton
             // 
@@ -4040,6 +4042,7 @@
             this.button4.TabIndex = 17;
             this.button4.Text = "Success";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Button1
@@ -4050,6 +4053,7 @@
             this.Button1.TabIndex = 14;
             this.Button1.Text = "Warning";
             this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Visible = false;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // BottomRightPanel
@@ -4107,6 +4111,7 @@
             this.Button2.TabIndex = 15;
             this.Button2.Text = "Info";
             this.Button2.UseVisualStyleBackColor = true;
+            this.Button2.Visible = false;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // panel22
@@ -4128,7 +4133,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(200, 73);
             this.label8.TabIndex = 4;
-            this.label8.Text = "2020 © FFmpeg Utilizer";
+            this.label8.Text = "2020 © ByteVault Studio";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Button3
@@ -4139,6 +4144,7 @@
             this.Button3.TabIndex = 16;
             this.Button3.Text = "Error";
             this.Button3.UseVisualStyleBackColor = true;
+            this.Button3.Visible = false;
             this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // TopPanel
@@ -4220,6 +4226,7 @@
             this.Name = "Main";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
@@ -4581,7 +4588,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button HLS_PlayButton;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button24;

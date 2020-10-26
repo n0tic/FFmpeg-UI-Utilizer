@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -29,6 +30,9 @@ namespace FFmpeg_Utilizer
         public UtilityUpdaterModule updater;
         public EncodingProcesser encodingProcesser;
         public UriRequestsHandler uriRequestHandler;
+
+        //FFplay process
+        private Process PlayProcess;
 
         bool hasInternet = true;
 
@@ -138,6 +142,15 @@ namespace FFmpeg_Utilizer
                 Settings_VideoCodecDropdown.SelectedIndex = Settings_VideoCodecDropdown.FindStringExact(settings.vCodec.ToString());
                 Settings_AudioCodecDropdown.SelectedIndex = Settings_AudioCodecDropdown.FindStringExact(settings.aCodec.ToString());
                 Settings_QualityDropdown.SelectedIndex = Settings_QualityDropdown.FindStringExact(settings.quality.ToString());
+
+                Settings_HideConsoleCheckbox.Checked = settings.hideConsole;
+
+                Settings_URIServerPort.Value = Convert.ToDecimal(settings.URIPort);
+                if(settings.URIautoStart)
+                {
+                    Settings_URIServerAutoStart.Checked = settings.URIautoStart;
+                    Settings_URIServerCheckbox.Checked = settings.URIautoStart;
+                }
 
                 if (hasInternet)
                 {
@@ -475,6 +488,58 @@ namespace FFmpeg_Utilizer
         {
             if (Settings_URIServerCheckbox.Checked) uriRequestHandler = new UriRequestsHandler(this, Convert.ToInt32(Settings_URIServerPort.Value));
             else uriRequestHandler.KillServer();
+        }
+
+        private void HLS_RemoveHLSButton_Click(object sender, EventArgs e)
+        {
+            if (HLS_listView.SelectedItems.Count > 0) HLS_listView.Items.Remove(HLS_listView.SelectedItems[0]);
+        }
+
+        private void HLS_PlayButton_Click(object sender, EventArgs e)
+        {
+            if (!File.Exists(settings.ffplayPath))
+            {
+                notice.SetNotice("You need to specify a location of \"ffplay.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            try
+            {
+                PlayProcess?.Kill();
+            }
+            catch (Win32Exception) { }
+            catch (NotSupportedException) { }
+            catch (InvalidOperationException) { }
+
+            //check if there is a selected item in the listview.
+            if (HLS_listView.SelectedItems.Count > 0)
+            {
+                PlayProcess = new Process
+                {
+                    StartInfo =
+                    {
+                        FileName = settings.ffplayPath,
+                        Arguments = "\"" + HLS_listView.SelectedItems[0].SubItems[1].Text + "\" -autoexit",
+                        UseShellExecute = false
+                    }
+                };
+
+                PlayProcess.Start();
+            }
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                PlayProcess?.Kill();
+            }
+            catch (Win32Exception) { }
+            catch (NotSupportedException) { }
+            catch (InvalidOperationException) { }
+
+            uriRequestHandler.KillServer();
+            encodingProcesser.KillThreads();
         }
     }
 }
