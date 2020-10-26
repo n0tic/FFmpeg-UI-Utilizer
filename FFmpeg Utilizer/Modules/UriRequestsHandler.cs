@@ -42,7 +42,8 @@ namespace FFmpeg_Utilizer.Modules
 
         public void Server()
         {
-            main.Invoke(new Action(() => {
+            main.Invoke(new Action(() =>
+            {
                 main.SetURIServerStatus(true);
             }));
 

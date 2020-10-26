@@ -100,7 +100,7 @@ namespace FFmpeg_Utilizer.Modules.Submodule
 
         public static void SendResponse(string sHttpVersion, ref Socket connection, bool success)
         {
-            if(success)
+            if (success)
                 SendHeader(sHttpVersion, 0, " 202 Accepted", ref connection);
             else
                 SendHeader(sHttpVersion, 0, " 400 Bad Request", ref connection);

@@ -1,18 +1,14 @@
 ﻿#pragma warning disable IDE0044 // Stop nagging about main readonly. Not possible.
-using System;
+
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
 {
     public class NoticeModule
     {
-        Main main;
+        private Main main;
 
         public enum TypeNotice
         {
@@ -21,7 +17,8 @@ namespace FFmpeg_Utilizer.Modules
             Error = 4,
             Success = 6,
         }
-        readonly List<Color> colors = new List<Color>() {
+
+        private readonly List<Color> colors = new List<Color>() {
             Color.FromArgb(230, 165, 109),
             Color.FromArgb(255, 184, 120),
             Color.FromArgb(15, 188, 249),
@@ -30,11 +27,11 @@ namespace FFmpeg_Utilizer.Modules
             Color.FromArgb(252, 92, 101),
             Color.FromArgb(32, 191, 107),
             Color.FromArgb(38, 222, 129) };
+
         public NoticeModule(Main main) => this.main = main;
 
         public void SetNotice(string noticeText, TypeNotice nType)
         {
-
             main.PixelTopNotice.BackColor = colors[(int)nType];
             main.NoticePanel.BackColor = colors[(int)nType + 1];
             main.NoticeTextLabel.BackColor = colors[(int)nType + 1];
@@ -49,6 +46,7 @@ namespace FFmpeg_Utilizer.Modules
                 case TypeNotice.Warning:
                     SystemSounds.Hand.Play();
                     break;
+
                 case TypeNotice.Error:
                     SystemSounds.Hand.Play();
                     break;

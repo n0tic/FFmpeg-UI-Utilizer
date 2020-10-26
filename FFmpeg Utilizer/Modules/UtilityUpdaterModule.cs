@@ -1,16 +1,12 @@
 ﻿#pragma warning disable IDE0044 // Nagging about main
+
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
 {
@@ -19,10 +15,11 @@ namespace FFmpeg_Utilizer.Modules
         private Main main;
 
         //Client
-        WebClient client = new WebClient();
+        private WebClient client = new WebClient();
 
         //State
         private bool CheckingVersion = false;
+
         private bool updating = false;
 
         //Temporary version data...
@@ -59,12 +56,14 @@ namespace FFmpeg_Utilizer.Modules
                     main.Settings_DownloadButton.Text = "Download Utilities";
                     main.Settings_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(230, 165, 109);
                     break;
+
                 case UtilityType.Update:
                     main.Update_DownloadButton.Text = "Update Available";
                     main.Update_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(32, 191, 107);
                     main.Settings_DownloadButton.Text = "Update Available";
                     main.Settings_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(32, 191, 107);
                     break;
+
                 case UtilityType.Stop:
                     main.Update_DownloadButton.Text = "Stop Process";
                     main.Update_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
@@ -74,7 +73,7 @@ namespace FFmpeg_Utilizer.Modules
             }
         }
 
-        void ResetUI()
+        private void ResetUI()
         {
             main.Update_StatusLabel.Text = "Status";
             main.Update_ProgressBar.Value = 0;
@@ -89,7 +88,7 @@ namespace FFmpeg_Utilizer.Modules
                 main.notice.SetNotice("You can not check for updates while already updating.", NoticeModule.TypeNotice.Warning);
                 return;
             }
-            else if(CheckingVersion)
+            else if (CheckingVersion)
             {
                 main.notice.SetNotice("You are already checking for updates.", NoticeModule.TypeNotice.Warning);
                 return;

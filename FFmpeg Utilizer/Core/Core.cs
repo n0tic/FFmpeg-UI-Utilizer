@@ -186,7 +186,9 @@ namespace FFmpeg_Utilizer
         #endregion Word Notation
 
         #region Application
+
         #region Move Window
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -204,6 +206,7 @@ namespace FFmpeg_Utilizer
                 SendMessage(main.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
         #endregion Move Window
 
         public enum Tabs
@@ -226,22 +229,26 @@ namespace FFmpeg_Utilizer
             White = 3,
             NotSectedText = 4
         }
-        readonly static List<Color> colors = new List<Color>() { Color.FromArgb(43, 52, 67), Color.FromArgb(53, 64, 82), Color.FromArgb(25, 124, 237), Color.FromArgb(255, 255, 255), Color.FromArgb(159, 168, 179) };
+
+        private static readonly List<Color> colors = new List<Color>() { Color.FromArgb(43, 52, 67), Color.FromArgb(53, 64, 82), Color.FromArgb(25, 124, 237), Color.FromArgb(255, 255, 255), Color.FromArgb(159, 168, 179) };
         public static List<Tab> tabs = new List<Tab>();
+
         public static void AddTab(Panel tab, Panel indicator, Label text, Panel mainPanel, bool active = true) => tabs.Add(new Tab(tab, indicator, text, mainPanel, active));
+
         public static Main main;
+
         public static void ChangeTab(Tabs tab)
         {
             for (int i = 0; i < tabs.Count; i++)
             {
-                if(i == (int)tab)
+                if (i == (int)tab)
                 {
-                    if(!tabs[i].active) main.notice.SetNotice("Network features disabled. No network connection detected.", Modules.NoticeModule.TypeNotice.Warning);
+                    if (!tabs[i].active) main.notice.SetNotice("Network features disabled. No network connection detected.", Modules.NoticeModule.TypeNotice.Warning);
                     tabs[i].tab.BackColor = colors[(int)TabColor.Selected];
                     tabs[i].indicator.BackColor = colors[(int)TabColor.Indicator];
                     tabs[i].text.ForeColor = colors[(int)TabColor.White];
                     tabs[i].text.BackColor = colors[(int)TabColor.Selected];
-                    if(tabs[i].mainPanel != null)
+                    if (tabs[i].mainPanel != null)
                     {
                         tabs[i].mainPanel.Enabled = true;
                         tabs[i].mainPanel.Visible = true;
@@ -260,7 +267,7 @@ namespace FFmpeg_Utilizer
                     }
                 }
 
-                if((int)tab == 1 || (int)tab == 2 || (int)tab == 3)
+                if ((int)tab == 1 || (int)tab == 2 || (int)tab == 3)
                 {
                     tabs[2].tab.Visible = true;
                     tabs[3].tab.Visible = true;
