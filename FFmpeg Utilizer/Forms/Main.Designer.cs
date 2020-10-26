@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
@@ -484,8 +484,8 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
@@ -1695,7 +1695,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            listViewItem10});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -3264,7 +3264,7 @@
             this.NoticeCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(120)))));
             this.NoticeCloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NoticeCloseButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NoticeCloseButton.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoticeCloseButton.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.NoticeCloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.NoticeCloseButton.Location = new System.Drawing.Point(871, 7);
             this.NoticeCloseButton.Name = "NoticeCloseButton";
@@ -3278,7 +3278,7 @@
             // 
             this.NoticeTextLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(120)))));
             this.NoticeTextLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NoticeTextLabel.Font = new System.Drawing.Font("Bebas Kai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoticeTextLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
             this.NoticeTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.NoticeTextLabel.Location = new System.Drawing.Point(0, 7);
             this.NoticeTextLabel.Name = "NoticeTextLabel";

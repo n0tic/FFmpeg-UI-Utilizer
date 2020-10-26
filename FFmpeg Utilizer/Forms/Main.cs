@@ -38,7 +38,8 @@ namespace FFmpeg_Utilizer
 
         private void Main_Load(object sender, EventArgs e)
         {
-            updater.StartUpdateCheckAsync();
+            if(hasInternet)
+                updater.StartUpdateCheckAsync();
 
             SetupFolders();
             SetupUI();
@@ -250,7 +251,21 @@ namespace FFmpeg_Utilizer
 
         private void Settings_SaveButton_Click(object sender, EventArgs e)
         {
+            settings.ffmpegPath = Settings_FFmpegPathBox.Text;
+            settings.ffplayPath = Settings_FFplayPathBox.Text;
+            if (Directory.Exists(Settings_DefaultOutputPathBox.Text)) settings.outputLocation = Settings_DefaultOutputPathBox.Text;
 
+            settings.overwrite = (Libs.Overwrite)Enum.Parse(typeof(Libs.Overwrite), Settings_OverwriteDropdown.Text);
+            settings.vCodec = (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Settings_VideoCodecDropdown.Text);
+            settings.aCodec = (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Settings_AudioCodecDropdown.Text);
+            settings.quality = (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Settings_QualityDropdown.Text);
+            settings.hideConsole = Settings_HideConsoleCheckbox.Checked;
+
+            settings.URIPort = Convert.ToInt32(Settings_URIServerPort.Value);
+            settings.URIautoStart = Settings_URIServerAutoStart.Checked;
+
+            settings.SaveSettings();
+            notice.SetNotice("Settings has been saved.", NoticeModule.TypeNotice.Success);
         }
 
         private void Settings_ResetButton_Click(object sender, EventArgs e)

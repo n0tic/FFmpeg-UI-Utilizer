@@ -28,7 +28,7 @@ namespace FFmpeg_Utilizer.Data
         public bool hideConsole = false;
 
         public int URIPort = 288;
-        public bool autoStart = false;
+        public bool URIautoStart = false;
 
         public Settings() => LoadSettings();
 
@@ -60,7 +60,7 @@ namespace FFmpeg_Utilizer.Data
             hideConsole = false;
 
             URIPort = 288;
-            autoStart = false;
+            URIautoStart = false;
         }
 
         public void LoadSettings()
@@ -98,7 +98,7 @@ namespace FFmpeg_Utilizer.Data
                     object URIPortObject = key.GetValue("URIPort");
                     if (URIPortObject != null) URIPort = Convert.ToInt32(URIPortObject.ToString());
                     object autoStartObject = key.GetValue("autoStart");
-                    if (autoStartObject != null) if (autoStartObject.ToString() == "1") autoStart = true;
+                    if (autoStartObject != null) if (autoStartObject.ToString() == "1") URIautoStart = true;
 
                     key.Close();
 
@@ -123,6 +123,7 @@ namespace FFmpeg_Utilizer.Data
                     key.SetValue("ffplay_location", ffplayPath, RegistryValueKind.String);
                     key.SetValue("output_location", outputLocation, RegistryValueKind.String);
 
+                    key.SetValue("overwrite", overwrite.ToString(), RegistryValueKind.String);
                     key.SetValue("vCodec", vCodec.ToString(), RegistryValueKind.String);
                     key.SetValue("aCodec", aCodec.ToString(), RegistryValueKind.String);
                     key.SetValue("quality", quality.ToString(), RegistryValueKind.String);
@@ -130,7 +131,7 @@ namespace FFmpeg_Utilizer.Data
                     else key.SetValue("hideConsole", "0", RegistryValueKind.String);
 
                     key.SetValue("URIPort", URIPort.ToString(), RegistryValueKind.String);
-                    if (autoStart) key.SetValue("autoStart", "1", RegistryValueKind.String);
+                    if (URIautoStart) key.SetValue("autoStart", "1", RegistryValueKind.String);
                     else key.SetValue("autoStart", "0", RegistryValueKind.String);
 
                     key.Close();
