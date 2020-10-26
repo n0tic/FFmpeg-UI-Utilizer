@@ -228,14 +228,15 @@ namespace FFmpeg_Utilizer
         }
         readonly static List<Color> colors = new List<Color>() { Color.FromArgb(43, 52, 67), Color.FromArgb(53, 64, 82), Color.FromArgb(25, 124, 237), Color.FromArgb(255, 255, 255), Color.FromArgb(159, 168, 179) };
         public static List<Tab> tabs = new List<Tab>();
-        public static void AddTab(Panel tab, Panel indicator, Label text, Panel mainPanel) => tabs.Add(new Tab(tab, indicator, text, mainPanel));
-
+        public static void AddTab(Panel tab, Panel indicator, Label text, Panel mainPanel, bool active = true) => tabs.Add(new Tab(tab, indicator, text, mainPanel, active));
+        public static Main main;
         public static void ChangeTab(Tabs tab)
         {
             for (int i = 0; i < tabs.Count; i++)
             {
                 if(i == (int)tab)
                 {
+                    if(!tabs[i].active) main.notice.SetNotice("Network features disabled. No network connection detected.", Modules.NoticeModule.TypeNotice.Warning);
                     tabs[i].tab.BackColor = colors[(int)TabColor.Selected];
                     tabs[i].indicator.BackColor = colors[(int)TabColor.Indicator];
                     tabs[i].text.ForeColor = colors[(int)TabColor.White];

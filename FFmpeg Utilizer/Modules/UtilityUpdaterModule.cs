@@ -1,4 +1,5 @@
-﻿using System;
+﻿#pragma warning disable IDE0044 // Nagging about main
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -9,6 +10,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
 {
@@ -17,18 +19,20 @@ namespace FFmpeg_Utilizer.Modules
         private Main main;
 
         //Client
-        WebClient wc = new WebClient();
+        WebClient client = new WebClient();
 
         //State
+        private bool CheckingVersion = false;
         private bool updating = false;
 
         //Temporary version data...
-        private string downloadedVersion = "";
+        public string downloadedVersion = "";
 
-        //Calculate Download-Speed
+        //Calculate speed
         private DateTime now = DateTime.Now;
 
         private long lastData = 0;
+        private Thread extractThread;
 
         public enum UIState
         {
@@ -39,7 +43,8 @@ namespace FFmpeg_Utilizer.Modules
         public enum UtilityType
         {
             Download,
-            Update
+            Update,
+            Stop
         }
 
         public UtilityUpdaterModule(Main _main) => main = _main;
@@ -50,10 +55,21 @@ namespace FFmpeg_Utilizer.Modules
             {
                 case UtilityType.Download:
                     main.Update_DownloadButton.Text = "Download Utilities";
-                    main.Update_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(32, 191, 107);
+                    main.Update_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(230, 165, 109);
+                    main.Settings_DownloadButton.Text = "Download Utilities";
+                    main.Settings_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(230, 165, 109);
                     break;
                 case UtilityType.Update:
                     main.Update_DownloadButton.Text = "Update Available";
+                    main.Update_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(32, 191, 107);
+                    main.Settings_DownloadButton.Text = "Update Available";
+                    main.Settings_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(32, 191, 107);
+                    break;
+                case UtilityType.Stop:
+                    main.Update_DownloadButton.Text = "Stop Process";
+                    main.Update_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
+                    main.Settings_DownloadButton.Text = "Stop Process";
+                    main.Settings_DownloadButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
                     break;
             }
         }
@@ -61,38 +77,62 @@ namespace FFmpeg_Utilizer.Modules
         void ResetUI()
         {
             main.Update_StatusLabel.Text = "Status";
-            main.InstallProcessBar.Value = 0;
-            main.InstallProcessBar.Maximum = 100;
+            main.Update_ProgressBar.Value = 0;
+            main.Update_ProgressBar.Maximum = 100;
             main.SpeedLabel.Text = "";
         }
 
-        public void StartUpdateCheck()
+        public void StartUpdateCheckAsync()
         {
             if (updating)
             {
                 main.notice.SetNotice("You can not check for updates while already updating.", NoticeModule.TypeNotice.Warning);
                 return;
             }
+            else if(CheckingVersion)
+            {
+                main.notice.SetNotice("You are already checking for updates.", NoticeModule.TypeNotice.Warning);
+                return;
+            }
+
+            CheckingVersion = true;
+
+            client = new WebClient();
 
             ResetUI();
 
             main.Update_StatusLabel.Text = "Status: Getting Version...";
             main.Refresh();
 
-            wc.DownloadStringCompleted += wc_VersionCheckCompleted;
-            wc.DownloadStringAsync(new Uri(Core.FFmpeg64BitURLVersion));
+            client.DownloadStringCompleted += ClientVersionCheckCompleted;
+            client.DownloadStringAsync(new Uri(Core.FFmpeg64BitURLVersion));
         }
 
-        private void wc_VersionCheckCompleted(object sender, DownloadStringCompletedEventArgs e)
+        private void ClientVersionCheckCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            if (e.Result != "LOCALVERSION")
-            {
+            ResetUI();
+            main.Settings_OnlineVerLabel.Text = e.Result;
+            main.Update_OnlineVerLabel.Text = e.Result;
 
-            }
+            // TODO: Fix Settings
+            if (e.Result != main.settings.ffVersion)
+                SetUtilityDownloader(UtilityType.Update);
             else
             {
-
+                //If default files was not found and settings are loaded.
+                if (main.settings.loaded && !File.Exists(main.settings.ffmpegPath) || !File.Exists(main.settings.ffplayPath))
+                {
+                    SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
+                }
+                else if (!main.settings.loaded && !File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg)) || !File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay)))
+                {
+                    SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
+                }
+                else
+                    SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
             }
+
+            CheckingVersion = false;
         }
 
         public void StartUpdate()
@@ -100,20 +140,29 @@ namespace FFmpeg_Utilizer.Modules
             // TODO: Look into abort downloading. For now we just let the download continue.
             if (updating)
             {
-                wc.CancelAsync();
+                client?.CancelAsync();
+                extractThread?.Abort();
                 updating = false;
                 ResetUI();
                 return;
             }
+            else if (CheckingVersion)
+            {
+                main.notice.SetNotice("Check For Update is in progress. Stop process first.", NoticeModule.TypeNotice.Warning);
+                return;
+            }
             updating = true;
+
+            client = new WebClient();
 
             ResetUI();
 
-            main.Update_StatusLabel.Text = "Status: Getting Version...";
-            main.Refresh();
+            SetUtilityDownloader(UtilityType.Stop);
 
-            wc.DownloadStringCompleted += Wc_DownloadStringCompleted;
-            wc.DownloadStringAsync(new Uri(Core.FFmpeg64BitURLVersion));
+            main.Update_StatusLabel.Text = "Status: Getting Version...";
+
+            client.DownloadStringCompleted += Wc_DownloadStringCompleted;
+            client.DownloadStringAsync(new Uri(Core.FFmpeg64BitURLVersion));
         }
 
         private void Wc_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
@@ -121,12 +170,12 @@ namespace FFmpeg_Utilizer.Modules
             // TODO: Fix Settings
             if (e.Result != "LOCALVERSION")
             {
+                downloadedVersion = e.Result;
                 main.Update_StatusLabel.Text = "Status: Downloading...";
-                main.Refresh();
 
-                wc.DownloadProgressChanged += Wc_Download_DownloadProgressChanged;
-                wc.DownloadFileCompleted += Wc_Download_DownloadFileCompleted;
-                wc.DownloadFileAsync(new Uri(Core.FFmpeg64BitURLDownload + "?" + Core.GetUTCTime()), Core.GetSubfolder(Core.SubFolders.tmp) + "ffmpeg.zip");
+                client.DownloadProgressChanged += Wc_Download_DownloadProgressChanged;
+                client.DownloadFileCompleted += Wc_Download_DownloadFileCompleted;
+                client.DownloadFileAsync(new Uri(Core.FFmpeg64BitURLDownload + "?" + Core.GetUTCTime()), Core.GetSubfolder(Core.SubFolders.tmp) + "ffmpeg.zip");
             }
             else
             {
@@ -137,7 +186,7 @@ namespace FFmpeg_Utilizer.Modules
 
         private void Wc_Download_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            main.InstallProcessBar.Value = e.ProgressPercentage;
+            main.Update_ProgressBar.Value = e.ProgressPercentage;
 
             if (DateTime.Now > now.AddSeconds(1))
             {
@@ -149,9 +198,10 @@ namespace FFmpeg_Utilizer.Modules
 
         private void Wc_Download_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            main.SpeedLabel.Text = "Extracting 0/3";
-            main.InstallProcessBar.Value = 0;
-            main.InstallProcessBar.Maximum = 3;
+            main.Update_StatusLabel.Text = "Status: Extracting 0/3";
+            main.SpeedLabel.Text = "";
+            main.Update_ProgressBar.Value = 0;
+            main.Update_ProgressBar.Maximum = 2;
             main.SpeedLabel.Refresh();
 
             string path = Core.GetSubfolder(Core.SubFolders.Downloads) + "ffmpeg.zip"; // Get path to download folder and file.
@@ -160,7 +210,7 @@ namespace FFmpeg_Utilizer.Modules
 
             File.Move(Core.GetSubfolder(Core.SubFolders.tmp) + "ffmpeg.zip", path); // Move new file in.
 
-            new Thread(() =>
+            extractThread = new Thread(() =>
             {
                 using (ZipArchive archive = ZipFile.OpenRead(path))
                 {
@@ -175,9 +225,9 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             main.Invoke(new Action(() =>
                             {
-                                main.InstallProcessBar.Value++;
-                                main.InstallProcessBar.Refresh();
-                                main.SpeedLabel.Text = "Extracting " + main.InstallProcessBar.Value.ToString() + "/3";
+                                main.Update_ProgressBar.Value++;
+                                main.Update_ProgressBar.Refresh();
+                                main.Update_StatusLabel.Text = "Status: Extracting " + main.Update_ProgressBar.Value.ToString() + "/2";
                                 main.SpeedLabel.Refresh();
                             }));
 
@@ -188,27 +238,28 @@ namespace FFmpeg_Utilizer.Modules
                 }
 
                 FinishUpdate(path);
-            }).Start();
+            });
+            extractThread.Start();
         }
 
         private void FinishUpdate(string path)
         {
             if (File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg)))
             {
-                main.settings.ffmpegLoc = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
+                main.settings.ffmpegPath = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
 
                 main.Invoke(new Action(() =>
                 {
-                    main.Settings_ffmpegLocBox.Text = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
+                    main.Settings_FFmpegPathBox.Text = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
                 }));
             }
             if (File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay)))
             {
-                main.settings.ffplayLoc = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay);
+                main.settings.ffplayPath = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay);
 
                 main.Invoke(new Action(() =>
                 {
-                    main.Settings_ffplayLocBox.Text = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay);
+                    main.Settings_FFplayPathBox.Text = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay);
                 }));
             }
 
@@ -219,20 +270,16 @@ namespace FFmpeg_Utilizer.Modules
 
             main.Invoke(new Action(() =>
             {
-                SetUtilityDownloader(UtilityType.Download);
+                ResetUI();
 
                 main.Update_InstalledVersionLabel.Text = downloadedVersion;
-                main.Update_LastUpdateLabel.Text = main.settings.lastUpdate.ToString();
-                main.Update_LastUpdateLabel.Text = main.settings.lastUpdate.ToString();
+                main.Settings_InstalledVersionLabel.Text = downloadedVersion;
+                main.Update_LatestUpdateLabel.Text = main.settings.lastUpdate.ToString();
+                main.Settings_LatestUpdateLabel.Text = main.settings.lastUpdate.ToString();
 
-                main.InstallProcessLabel.Text = "";
                 main.SpeedLabel.Text = "";
 
-                main.InstallProcessButton.Enabled = false;
-                main.InstallProcessButton.Visible = false;
-                main.Settings_InstallProcessButton.Enabled = true;
-
-                main.tabControl1.SelectedTab = main.tabPage3;
+                SetUtilityDownloader(UtilityType.Download);
             }));
 
             main.settings.SaveSettings();
