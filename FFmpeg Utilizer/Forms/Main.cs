@@ -278,6 +278,10 @@ namespace FFmpeg_Utilizer
             Settings_VideoCodecDropdown.SelectedIndex = 2;
             Settings_AudioCodecDropdown.SelectedIndex = 2;
             Settings_QualityDropdown.SelectedIndex = 0;
+            Settings_HideConsoleCheckbox.Checked = false;
+
+            Settings_InstalledVersionLabel.Text = "";
+            Settings_LatestUpdateLabel.Text = "";
 
             Settings_URIServerPort.Value = 288;
             Settings_URIServerAutoStart.Checked = false;
