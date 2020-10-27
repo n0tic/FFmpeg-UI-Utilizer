@@ -11,7 +11,7 @@ namespace FFMPEG_Utilizer.Data
     {
         public string outputFolder;
         public bool hideConsole;
-        public Queue<Argument> queue = new Queue<Argument>();
+        public Queue<EncoderArgument> queue = new Queue<EncoderArgument>();
 
         public EncodeProcesserData(string outputFolder, bool hideConsole)
         {
@@ -20,6 +20,6 @@ namespace FFMPEG_Utilizer.Data
         }
 
         public void Add(Libs.Overwrite overwrite, FileInfo originalFile, Libs.VCodec vCodec, Libs.ACodec aCodec, Libs.Tune tuner, Libs.Preset preset, Libs.Frames fps, Libs.Size res, Libs.VideoFileExtensions ext) =>
-            queue.Enqueue(new Argument(overwrite, originalFile, vCodec, aCodec, tuner, preset, fps, res, outputFolder, Path.GetFileNameWithoutExtension(originalFile.Name), ext));
+            queue.Enqueue(new EncoderArgument(overwrite, originalFile, vCodec, aCodec, tuner, preset, fps, res, outputFolder, Path.GetFileNameWithoutExtension(originalFile.Name), ext));
     }
 }

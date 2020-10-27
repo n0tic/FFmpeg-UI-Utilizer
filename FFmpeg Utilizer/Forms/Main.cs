@@ -263,9 +263,26 @@ namespace FFmpeg_Utilizer
 
             #endregion M3U8
 
+            #region Cut
 
-                //Set lower left information
-                SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
+            if (settings.loaded)
+            {
+                if (Directory.Exists(settings.outputLocation))
+                    Cut_OutputDirectoryBox.Text = settings.outputLocation;
+                else if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    Cut_OutputDirectoryBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+            else
+            {
+                if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    Cut_OutputDirectoryBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+
+            #endregion Cut
+
+
+            //Set lower left information
+            SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
             AuthorLabel.Text = Core.authorRealName + " AKA " + Core.authorName;
             GitLabel.Text = Core.softwareGIT;
         }
@@ -705,12 +722,111 @@ namespace FFmpeg_Utilizer
 
         private void Argument_ShowEncodeButton_Click(object sender, EventArgs e)
         {
-            Argument args = new Argument((Libs.Overwrite)Enum.Parse(typeof(Libs.Overwrite), Encoder_OverwriteBox.Text, true), null, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), Encoder_OutputFolderTextBox.Text, "filename", (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
+            EncoderArgument args = new EncoderArgument((Libs.Overwrite)Enum.Parse(typeof(Libs.Overwrite), Encoder_OverwriteBox.Text, true), null, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), Encoder_OutputFolderTextBox.Text, "filename", (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
             string ff;
             if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
             else ff = "ffmpeg ";
 
             Argument_PreviewBox.Text = ff + args.ExecuteArgs();
+        }
+
+        private void Cut_InputMediaButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog op = new OpenFileDialog())
+            {
+                // TODO: Add real filters to everything.
+                //op.Filter = "Executable Files(*exe.exe)|ffmpeg.exe";
+                DialogResult result = op.ShowDialog();
+                if (result == DialogResult.OK) Cut_MediaInputTextbox.Text = op.FileName;
+            }
+        }
+
+        private string GetTimespanString()
+        {
+            Decimal startHour = Cut_StartHours.Value;
+            Decimal startMinute = Cut_StartMinutes.Value;
+            Decimal startSeconds = Cut_StartSeconds.Value;
+            Decimal startMiliseconds = Cut_StartMiliseconds.Value;
+
+            Decimal endHour = Cut_EndHours.Value;
+            Decimal endMinute = Cut_EndMinutes.Value;
+            Decimal endSeconds = Cut_EndSeconds.Value;
+            Decimal endMiliseconds = Cut_EndMiliseconds.Value;
+
+            string startMinutes;
+            if (startMinute < 10) startMinutes = "0" + startMinute.ToString();
+            else startMinutes = "0";
+
+            string endMinutes;
+            if (endMinute < 10) endMinutes = "0" + endMinute.ToString();
+            else endMinutes = "0";
+
+            string start = startHour.ToString() + ":" + startMinutes + ":" + startSeconds.ToString() + "." + startMiliseconds.ToString();
+            string end = endHour.ToString() + ":" + endMinutes + ":" + endSeconds.ToString() + "." + endMiliseconds.ToString();
+
+            decimal _start = startHour + startMinute + startSeconds + startMiliseconds;
+            decimal _end = endHour + endMinute + endSeconds + endMiliseconds;
+
+            if (_start >= _end) Cut_PreviewLabel.ForeColor = Color.FromArgb(255, 128, 128);
+            else Cut_PreviewLabel.ForeColor = Color.FromArgb(0, 0, 0);
+
+            return start + " - " + end;
+        }
+
+        private void Cut_AddTimespanButton_Click(object sender, EventArgs e)
+        {
+            string timespan = GetTimespanString();
+            if(Cut_listView.FindItemWithText(timespan) == null)
+            {
+                ListViewItem item = new ListViewItem(timespan);
+                Cut_listView.Items.Add(item);
+            }
+        }
+
+        private void Cut_StartHours_ValueChanged(object sender, EventArgs e) => Cut_PreviewLabel.Text = GetTimespanString();
+
+        private void Cut_RemoveSelectedButton_Click(object sender, EventArgs e)
+        {
+            if (Cut_listView.SelectedItems.Count > 0) Cut_listView.Items.Remove(Cut_listView.SelectedItems[0]);
+        }
+
+        private void Cut_StartCuttingButton_Click(object sender, EventArgs e)
+        {
+            //Stop if there are no files or application to work with.
+            if (!File.Exists(settings.ffmpegPath))
+            {
+                notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+            if (!File.Exists(Cut_MediaInputTextbox.Text))
+            {
+                notice.SetNotice("You have selected an input media that appears to not exist. Try again.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+            if (Cut_listView.Items.Count < 1)
+            {
+                notice.SetNotice("The list of files to encode was empty. Drag files onto the list.", NoticeModule.TypeNotice.Warning);
+                return;
+            }
+
+            //Create a queue to process.
+            Queue<TimeStamps> queue = new Queue<TimeStamps>();
+
+            //For every file...
+            for (int i = 0; i < Cut_listView.Items.Count; i++)
+            {
+                string start, end;
+                string[] split = Cut_listView.Items[i].Text.Split(' ');
+                start = split[0];
+                end = split[2];
+
+                queue.Enqueue(new TimeStamps(start, end));
+            }
+
+            CutArgument processQueueData = new CutArgument(new FileInfo(Cut_MediaInputTextbox.Text), Cut_OutputDirectoryBox.Text, queue);
+
+            //Start the encoding process.
+            //encodingProcesser.ProcessFileQueue(processQueueData);
         }
     }
 }

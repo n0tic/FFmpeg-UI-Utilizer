@@ -29,7 +29,6 @@ namespace FFmpeg_Utilizer.Modules
 
         public M3U8Processor(Main _main) => this.main = _main;
 
-
         internal void ProcessFileQueue(M3U8ProcesserData data)
         {
             if (inProcess)

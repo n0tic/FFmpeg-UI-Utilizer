@@ -52,7 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Core.cs" />
-    <Compile Include="Data\Argument.cs" />
+    <Compile Include="Data\CutArgument.cs" />
+    <Compile Include="Data\EncoderArgument.cs" />
     <Compile Include="Data\Headers.cs" />
     <Compile Include="Data\EncodeProcesserData.cs" />
     <Compile Include="Data\M3U8Argument.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\CutProcesser.cs" />
     <Compile Include="Modules\EncodingProcesser.cs" />
     <Compile Include="Modules\M3U8Processor.cs" />
     <Compile Include="Modules\NoticeModule.cs" />

@@ -35,6 +35,82 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
+            this.CutMainPanel = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.Cut_RemoveSelectedButton = new System.Windows.Forms.Button();
+            this.Cut_listView = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Cut_EndMiliseconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndSeconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndMinutes = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndHours = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartMiliseconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartSeconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartMinutes = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartHours = new System.Windows.Forms.NumericUpDown();
+            this.Cut_PreviewLabel = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.Cut_AddTimespanButton = new System.Windows.Forms.Button();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.Cut_InputMediaButton = new System.Windows.Forms.Button();
+            this.Cut_MediaInputTextbox = new System.Windows.Forms.TextBox();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label60 = new System.Windows.Forms.Label();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel65 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
+            this.Cut_StartCuttingButton = new System.Windows.Forms.Button();
+            this.panel67 = new System.Windows.Forms.Panel();
+            this.label68 = new System.Windows.Forms.Label();
+            this.panel68 = new System.Windows.Forms.Panel();
+            this.panel69 = new System.Windows.Forms.Panel();
+            this.M3U8MainPanel = new System.Windows.Forms.Panel();
+            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
+            this.M3U8_PlayButton = new System.Windows.Forms.Button();
+            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_listView = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.M3U8_OutputButton = new System.Windows.Forms.Button();
+            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
+            this.M3U8_StartButton = new System.Windows.Forms.Button();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.ArgumentMainPanel = new System.Windows.Forms.Panel();
+            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
+            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
+            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
+            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
+            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
+            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel45 = new System.Windows.Forms.Panel();
             this.SettingsMainPanel = new System.Windows.Forms.Panel();
             this.Settings_NetPanel = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -92,30 +168,53 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.M3U8MainPanel = new System.Windows.Forms.Panel();
-            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
-            this.M3U8_PlayButton = new System.Windows.Forms.Button();
-            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_listView = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.M3U8_OutputButton = new System.Windows.Forms.Button();
-            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
-            this.M3U8_StartButton = new System.Windows.Forms.Button();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
+            this.MergeMainPanel = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.Merge_mediaExtensionDescLabel = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.panel63 = new System.Windows.Forms.Panel();
+            this.Merge_mediaExtensionLabel = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel64 = new System.Windows.Forms.Panel();
+            this.Merge_mediaPathLabel = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.panel70 = new System.Windows.Forms.Panel();
+            this.Merge_mediaOrderLabel = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.Merge_QualityBox = new System.Windows.Forms.ComboBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Merge_ExtensionBox = new System.Windows.Forms.ComboBox();
+            this.Merge_listView = new System.Windows.Forms.ListView();
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.label88 = new System.Windows.Forms.Label();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.Merge_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Merge_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.Merge_OutputDirectoryTextbox = new System.Windows.Forms.TextBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.label89 = new System.Windows.Forms.Label();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.panel57 = new System.Windows.Forms.Panel();
+            this.label56 = new System.Windows.Forms.Label();
+            this.panel61 = new System.Windows.Forms.Panel();
             this.EncoderMainPanel = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
             this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
             this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
             this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
@@ -187,98 +286,6 @@
             this.label79 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
-            this.ArgumentMainPanel = new System.Windows.Forms.Panel();
-            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
-            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
-            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
-            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
-            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
-            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.CutMainPanel = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
-            this.Cut_listView = new System.Windows.Forms.ListView();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Cut_QualityBox = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Cut_EndMiliseconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndSeconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndMinutes = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndHours = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartMiliseconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartSeconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartMinutes = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartHours = new System.Windows.Forms.NumericUpDown();
-            this.Cut_PreviewLabel = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.Cut_AddTimespanButton = new System.Windows.Forms.Button();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel65 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.panel66 = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
-            this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
-            this.button20 = new System.Windows.Forms.Button();
-            this.panel67 = new System.Windows.Forms.Panel();
-            this.label68 = new System.Windows.Forms.Label();
-            this.panel68 = new System.Windows.Forms.Panel();
-            this.panel69 = new System.Windows.Forms.Panel();
-            this.MergeMainPanel = new System.Windows.Forms.Panel();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel62 = new System.Windows.Forms.Panel();
-            this.Merge_mediaExtensionDescLabel = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.panel63 = new System.Windows.Forms.Panel();
-            this.Merge_mediaExtensionLabel = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.panel64 = new System.Windows.Forms.Panel();
-            this.Merge_mediaPathLabel = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.panel70 = new System.Windows.Forms.Panel();
-            this.Merge_mediaOrderLabel = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.Merge_QualityBox = new System.Windows.Forms.ComboBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.Merge_ExtensionBox = new System.Windows.Forms.ComboBox();
-            this.Merge_listView = new System.Windows.Forms.ListView();
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel55 = new System.Windows.Forms.Panel();
-            this.label88 = new System.Windows.Forms.Label();
-            this.panel56 = new System.Windows.Forms.Panel();
-            this.panel58 = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.Merge_OutputDirectoryTextbox = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.panel59 = new System.Windows.Forms.Panel();
-            this.label89 = new System.Windows.Forms.Label();
-            this.panel60 = new System.Windows.Forms.Panel();
-            this.panel57 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
-            this.panel61 = new System.Windows.Forms.Panel();
             this.NoticePanel = new System.Windows.Forms.Panel();
             this.NoticeCloseButton = new System.Windows.Forms.Label();
             this.NoticeTextLabel = new System.Windows.Forms.Label();
@@ -360,16 +367,29 @@
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
-            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Merge_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Merge_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
+            this.CutMainPanel.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).BeginInit();
+            this.panel32.SuspendLayout();
+            this.panel65.SuspendLayout();
+            this.panel66.SuspendLayout();
+            this.panel67.SuspendLayout();
+            this.M3U8MainPanel.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel51.SuspendLayout();
+            this.ArgumentMainPanel.SuspendLayout();
+            this.panel41.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.Settings_NetPanel.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -388,10 +408,17 @@
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.M3U8MainPanel.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel51.SuspendLayout();
+            this.MergeMainPanel.SuspendLayout();
+            this.panel54.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel62.SuspendLayout();
+            this.panel63.SuspendLayout();
+            this.panel64.SuspendLayout();
+            this.panel70.SuspendLayout();
+            this.panel55.SuspendLayout();
+            this.panel58.SuspendLayout();
+            this.panel59.SuspendLayout();
+            this.panel57.SuspendLayout();
             this.EncoderMainPanel.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -415,34 +442,6 @@
             this.panel92.SuspendLayout();
             this.panel93.SuspendLayout();
             this.panel75.SuspendLayout();
-            this.ArgumentMainPanel.SuspendLayout();
-            this.panel41.SuspendLayout();
-            this.CutMainPanel.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).BeginInit();
-            this.panel32.SuspendLayout();
-            this.panel65.SuspendLayout();
-            this.panel66.SuspendLayout();
-            this.panel67.SuspendLayout();
-            this.MergeMainPanel.SuspendLayout();
-            this.panel54.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.panel62.SuspendLayout();
-            this.panel63.SuspendLayout();
-            this.panel64.SuspendLayout();
-            this.panel70.SuspendLayout();
-            this.panel55.SuspendLayout();
-            this.panel58.SuspendLayout();
-            this.panel59.SuspendLayout();
-            this.panel57.SuspendLayout();
             this.NoticePanel.SuspendLayout();
             this.MenuPanel.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -495,11 +494,11 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
-            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -507,6 +506,924 @@
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
+            // 
+            // CutMainPanel
+            // 
+            this.CutMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.CutMainPanel.Controls.Add(this.panel14);
+            this.CutMainPanel.Controls.Add(this.panel65);
+            this.CutMainPanel.Controls.Add(this.panel66);
+            this.CutMainPanel.Controls.Add(this.panel69);
+            this.CutMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CutMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.CutMainPanel.Name = "CutMainPanel";
+            this.CutMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.CutMainPanel.TabIndex = 10;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.Cut_RemoveSelectedButton);
+            this.panel14.Controls.Add(this.Cut_listView);
+            this.panel14.Controls.Add(this.groupBox2);
+            this.panel14.Controls.Add(this.Cut_InputMediaButton);
+            this.panel14.Controls.Add(this.Cut_MediaInputTextbox);
+            this.panel14.Controls.Add(this.panel32);
+            this.panel14.Location = new System.Drawing.Point(27, 50);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(882, 314);
+            this.panel14.TabIndex = 9;
+            // 
+            // Cut_RemoveSelectedButton
+            // 
+            this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
+            this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(138, 69);
+            this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
+            this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
+            this.Cut_RemoveSelectedButton.TabIndex = 73;
+            this.Cut_RemoveSelectedButton.Text = "Remove Selected";
+            this.Cut_RemoveSelectedButton.UseVisualStyleBackColor = false;
+            this.Cut_RemoveSelectedButton.Click += new System.EventHandler(this.Cut_RemoveSelectedButton_Click);
+            // 
+            // Cut_listView
+            // 
+            this.Cut_listView.AllowDrop = true;
+            this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11});
+            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_listView.FullRowSelect = true;
+            this.Cut_listView.GridLines = true;
+            this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Cut_listView.HideSelection = false;
+            this.Cut_listView.Location = new System.Drawing.Point(3, 69);
+            this.Cut_listView.MultiSelect = false;
+            this.Cut_listView.Name = "Cut_listView";
+            this.Cut_listView.Size = new System.Drawing.Size(129, 242);
+            this.Cut_listView.TabIndex = 72;
+            this.Cut_listView.UseCompatibleStateImageBehavior = false;
+            this.Cut_listView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Timespans";
+            this.columnHeader11.Width = 107;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Cut_EndMiliseconds);
+            this.groupBox2.Controls.Add(this.Cut_EndSeconds);
+            this.groupBox2.Controls.Add(this.Cut_EndMinutes);
+            this.groupBox2.Controls.Add(this.Cut_EndHours);
+            this.groupBox2.Controls.Add(this.Cut_StartMiliseconds);
+            this.groupBox2.Controls.Add(this.Cut_StartSeconds);
+            this.groupBox2.Controls.Add(this.Cut_StartMinutes);
+            this.groupBox2.Controls.Add(this.Cut_StartHours);
+            this.groupBox2.Controls.Add(this.Cut_PreviewLabel);
+            this.groupBox2.Controls.Add(this.label62);
+            this.groupBox2.Controls.Add(this.label63);
+            this.groupBox2.Controls.Add(this.Cut_AddTimespanButton);
+            this.groupBox2.Controls.Add(this.label64);
+            this.groupBox2.Controls.Add(this.label65);
+            this.groupBox2.Controls.Add(this.label66);
+            this.groupBox2.Controls.Add(this.label69);
+            this.groupBox2.Controls.Add(this.label70);
+            this.groupBox2.Controls.Add(this.label83);
+            this.groupBox2.Controls.Add(this.label84);
+            this.groupBox2.Controls.Add(this.label85);
+            this.groupBox2.Location = new System.Drawing.Point(138, 105);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(343, 196);
+            this.groupBox2.TabIndex = 69;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Cut Timers";
+            // 
+            // Cut_EndMiliseconds
+            // 
+            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMiliseconds.Location = new System.Drawing.Point(277, 88);
+            this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
+            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMiliseconds.TabIndex = 54;
+            this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndSeconds
+            // 
+            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndSeconds.Location = new System.Drawing.Point(211, 88);
+            this.Cut_EndSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_EndSeconds.Name = "Cut_EndSeconds";
+            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndSeconds.TabIndex = 53;
+            this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndMinutes
+            // 
+            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMinutes.Location = new System.Drawing.Point(145, 88);
+            this.Cut_EndMinutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_EndMinutes.Name = "Cut_EndMinutes";
+            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMinutes.TabIndex = 52;
+            this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndHours
+            // 
+            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
+            this.Cut_EndHours.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_EndHours.Name = "Cut_EndHours";
+            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndHours.TabIndex = 51;
+            this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartMiliseconds
+            // 
+            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMiliseconds.Location = new System.Drawing.Point(277, 31);
+            this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
+            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMiliseconds.TabIndex = 50;
+            this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartSeconds
+            // 
+            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartSeconds.Location = new System.Drawing.Point(211, 32);
+            this.Cut_StartSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_StartSeconds.Name = "Cut_StartSeconds";
+            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartSeconds.TabIndex = 49;
+            this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartMinutes
+            // 
+            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMinutes.Location = new System.Drawing.Point(145, 31);
+            this.Cut_StartMinutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_StartMinutes.Name = "Cut_StartMinutes";
+            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMinutes.TabIndex = 48;
+            this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartHours
+            // 
+            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
+            this.Cut_StartHours.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_StartHours.Name = "Cut_StartHours";
+            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartHours.TabIndex = 45;
+            this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_PreviewLabel
+            // 
+            this.Cut_PreviewLabel.AutoSize = true;
+            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PreviewLabel.ForeColor = System.Drawing.Color.Black;
+            this.Cut_PreviewLabel.Location = new System.Drawing.Point(102, 136);
+            this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
+            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
+            this.Cut_PreviewLabel.TabIndex = 47;
+            this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label62.Location = new System.Drawing.Point(12, 91);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(47, 14);
+            this.label62.TabIndex = 46;
+            this.label62.Text = "End Time:";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label63.Location = new System.Drawing.Point(7, 34);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(53, 14);
+            this.label63.TabIndex = 45;
+            this.label63.Text = "Start Time:";
+            // 
+            // Cut_AddTimespanButton
+            // 
+            this.Cut_AddTimespanButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
+            this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
+            this.Cut_AddTimespanButton.Size = new System.Drawing.Size(337, 23);
+            this.Cut_AddTimespanButton.TabIndex = 44;
+            this.Cut_AddTimespanButton.Text = "Add Timespan";
+            this.Cut_AddTimespanButton.UseVisualStyleBackColor = false;
+            this.Cut_AddTimespanButton.Click += new System.EventHandler(this.Cut_AddTimespanButton_Click);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label64.Location = new System.Drawing.Point(79, 16);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(31, 14);
+            this.label64.TabIndex = 32;
+            this.label64.Text = "Hours";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label65.Location = new System.Drawing.Point(274, 71);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(58, 14);
+            this.label65.TabIndex = 43;
+            this.label65.Text = "Miliseconds";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label66.Location = new System.Drawing.Point(208, 71);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(41, 14);
+            this.label66.TabIndex = 42;
+            this.label66.Text = "Seconds";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label69.Location = new System.Drawing.Point(142, 71);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(41, 14);
+            this.label69.TabIndex = 41;
+            this.label69.Text = "Minutes";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label70.Location = new System.Drawing.Point(79, 71);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(31, 14);
+            this.label70.TabIndex = 40;
+            this.label70.Text = "Hours";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label83.Location = new System.Drawing.Point(142, 16);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(41, 14);
+            this.label83.TabIndex = 33;
+            this.label83.Text = "Minutes";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label84.Location = new System.Drawing.Point(208, 16);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(41, 14);
+            this.label84.TabIndex = 34;
+            this.label84.Text = "Seconds";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label85.Location = new System.Drawing.Point(274, 16);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(58, 14);
+            this.label85.TabIndex = 35;
+            this.label85.Text = "Miliseconds";
+            // 
+            // Cut_InputMediaButton
+            // 
+            this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
+            this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
+            this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
+            this.Cut_InputMediaButton.TabIndex = 68;
+            this.Cut_InputMediaButton.Text = "Input Media";
+            this.Cut_InputMediaButton.UseVisualStyleBackColor = false;
+            this.Cut_InputMediaButton.Click += new System.EventHandler(this.Cut_InputMediaButton_Click);
+            // 
+            // Cut_MediaInputTextbox
+            // 
+            this.Cut_MediaInputTextbox.Enabled = false;
+            this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
+            this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
+            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 20);
+            this.Cut_MediaInputTextbox.TabIndex = 67;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel32.Controls.Add(this.label60);
+            this.panel32.Controls.Add(this.panel46);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(0, 0);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(882, 38);
+            this.panel32.TabIndex = 3;
+            // 
+            // label60
+            // 
+            this.label60.BackColor = System.Drawing.Color.Transparent;
+            this.label60.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label60.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label60.ForeColor = System.Drawing.Color.White;
+            this.label60.Location = new System.Drawing.Point(55, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(447, 38);
+            this.label60.TabIndex = 6;
+            this.label60.Text = "Options";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel46
+            // 
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel46.Location = new System.Drawing.Point(0, 0);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(55, 38);
+            this.panel46.TabIndex = 0;
+            // 
+            // panel65
+            // 
+            this.panel65.Controls.Add(this.label67);
+            this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel65.Location = new System.Drawing.Point(0, 0);
+            this.panel65.Name = "panel65";
+            this.panel65.Size = new System.Drawing.Size(919, 44);
+            this.panel65.TabIndex = 8;
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.Transparent;
+            this.label67.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label67.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label67.Location = new System.Drawing.Point(22, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(897, 44);
+            this.label67.TabIndex = 7;
+            this.label67.Text = "Cut";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel66
+            // 
+            this.panel66.BackColor = System.Drawing.Color.White;
+            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
+            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
+            this.panel66.Controls.Add(this.button19);
+            this.panel66.Controls.Add(this.progressBar5);
+            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
+            this.panel66.Controls.Add(this.Cut_StartCuttingButton);
+            this.panel66.Controls.Add(this.panel67);
+            this.panel66.Location = new System.Drawing.Point(27, 377);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(885, 106);
+            this.panel66.TabIndex = 2;
+            // 
+            // Cut_DefaultOutputButton
+            // 
+            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
+            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_DefaultOutputButton.TabIndex = 61;
+            this.Cut_DefaultOutputButton.Text = "✓";
+            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
+            // 
+            // Cut_OpenDirectoryButton
+            // 
+            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
+            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_OpenDirectoryButton.TabIndex = 62;
+            this.Cut_OpenDirectoryButton.Text = "▶";
+            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button19.Location = new System.Drawing.Point(792, 44);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(87, 23);
+            this.button19.TabIndex = 25;
+            this.button19.Text = "Output Folder";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // progressBar5
+            // 
+            this.progressBar5.Location = new System.Drawing.Point(3, 75);
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(783, 20);
+            this.progressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar5.TabIndex = 24;
+            // 
+            // Cut_OutputDirectoryBox
+            // 
+            this.Cut_OutputDirectoryBox.Enabled = false;
+            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
+            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
+            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
+            this.Cut_OutputDirectoryBox.TabIndex = 23;
+            // 
+            // Cut_StartCuttingButton
+            // 
+            this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
+            this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
+            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
+            this.Cut_StartCuttingButton.TabIndex = 22;
+            this.Cut_StartCuttingButton.Text = "Start Cutting";
+            this.Cut_StartCuttingButton.UseVisualStyleBackColor = false;
+            this.Cut_StartCuttingButton.Click += new System.EventHandler(this.Cut_StartCuttingButton_Click);
+            // 
+            // panel67
+            // 
+            this.panel67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel67.Controls.Add(this.label68);
+            this.panel67.Controls.Add(this.panel68);
+            this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel67.Location = new System.Drawing.Point(0, 0);
+            this.panel67.Name = "panel67";
+            this.panel67.Size = new System.Drawing.Size(885, 38);
+            this.panel67.TabIndex = 3;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label68.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label68.ForeColor = System.Drawing.Color.White;
+            this.label68.Location = new System.Drawing.Point(55, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(447, 38);
+            this.label68.TabIndex = 6;
+            this.label68.Text = "Output";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel68
+            // 
+            this.panel68.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel68.Location = new System.Drawing.Point(0, 0);
+            this.panel68.Name = "panel68";
+            this.panel68.Size = new System.Drawing.Size(55, 38);
+            this.panel68.TabIndex = 0;
+            // 
+            // panel69
+            // 
+            this.panel69.Location = new System.Drawing.Point(719, 495);
+            this.panel69.Name = "panel69";
+            this.panel69.Size = new System.Drawing.Size(200, 73);
+            this.panel69.TabIndex = 1;
+            // 
+            // M3U8MainPanel
+            // 
+            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
+            this.M3U8MainPanel.Controls.Add(this.panel49);
+            this.M3U8MainPanel.Controls.Add(this.panel50);
+            this.M3U8MainPanel.Controls.Add(this.panel53);
+            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.M3U8MainPanel.Name = "M3U8MainPanel";
+            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
+            this.M3U8MainPanel.TabIndex = 8;
+            // 
+            // M3U8_HideConsoleCheckbox
+            // 
+            this.M3U8_HideConsoleCheckbox.AutoSize = true;
+            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(273, 55);
+            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
+            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(80, 18);
+            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
+            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
+            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // M3U8_PlayButton
+            // 
+            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
+            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(824, 53);
+            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(85, 21);
+            this.M3U8_PlayButton.TabIndex = 79;
+            this.M3U8_PlayButton.Text = "Play Selected ▶";
+            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
+            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            // 
+            // M3U8_RemoveM3U8Button
+            // 
+            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
+            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
+            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_RemoveM3U8Button.TabIndex = 72;
+            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
+            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            // 
+            // M3U8_AddM3U8Button
+            // 
+            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
+            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
+            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_AddM3U8Button.TabIndex = 71;
+            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
+            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
+            // 
+            // M3U8_listView
+            // 
+            this.M3U8_listView.AllowDrop = true;
+            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader12});
+            this.M3U8_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_listView.FullRowSelect = true;
+            this.M3U8_listView.GridLines = true;
+            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.M3U8_listView.HideSelection = false;
+            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
+            this.M3U8_listView.MultiSelect = false;
+            this.M3U8_listView.Name = "M3U8_listView";
+            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
+            this.M3U8_listView.TabIndex = 70;
+            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
+            this.M3U8_listView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Name";
+            this.columnHeader7.Width = 130;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "URL";
+            this.columnHeader8.Width = 655;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Status";
+            this.columnHeader12.Width = 70;
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.label45);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel49.Location = new System.Drawing.Point(0, 0);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(919, 44);
+            this.panel49.TabIndex = 8;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label45.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label45.Location = new System.Drawing.Point(22, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(897, 44);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "M3U8";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
+            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
+            this.panel50.Controls.Add(this.M3U8_OutputButton);
+            this.panel50.Controls.Add(this.M3U8_ProgressBar);
+            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
+            this.panel50.Controls.Add(this.M3U8_StartButton);
+            this.panel50.Controls.Add(this.panel51);
+            this.panel50.Location = new System.Drawing.Point(27, 377);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(882, 106);
+            this.panel50.TabIndex = 2;
+            // 
+            // M3U8_DefaultOutputButton
+            // 
+            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
+            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_DefaultOutputButton.TabIndex = 65;
+            this.M3U8_DefaultOutputButton.Text = "✓";
+            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
+            // 
+            // M3U8_OpenDirectoryButton
+            // 
+            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
+            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_OpenDirectoryButton.TabIndex = 64;
+            this.M3U8_OpenDirectoryButton.Text = "▶";
+            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
+            // 
+            // M3U8_OutputButton
+            // 
+            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
+            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
+            this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_OutputButton.TabIndex = 25;
+            this.M3U8_OutputButton.Text = "Output Folder";
+            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
+            // 
+            // M3U8_ProgressBar
+            // 
+            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
+            this.M3U8_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.M3U8_ProgressBar.TabIndex = 24;
+            // 
+            // M3U8_OutputFolderTextbox
+            // 
+            this.M3U8_OutputFolderTextbox.Enabled = false;
+            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
+            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(733, 22);
+            this.M3U8_OutputFolderTextbox.TabIndex = 23;
+            // 
+            // M3U8_StartButton
+            // 
+            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
+            this.M3U8_StartButton.Name = "M3U8_StartButton";
+            this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_StartButton.TabIndex = 22;
+            this.M3U8_StartButton.Text = "Start Download";
+            this.M3U8_StartButton.UseVisualStyleBackColor = false;
+            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel51.Controls.Add(this.label46);
+            this.panel51.Controls.Add(this.panel52);
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel51.Location = new System.Drawing.Point(0, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(882, 38);
+            this.panel51.TabIndex = 3;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label46.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(55, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(447, 38);
+            this.label46.TabIndex = 6;
+            this.label46.Text = "Output";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel52
+            // 
+            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel52.Location = new System.Drawing.Point(0, 0);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(55, 38);
+            this.panel52.TabIndex = 0;
+            // 
+            // panel53
+            // 
+            this.panel53.Location = new System.Drawing.Point(719, 495);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(200, 73);
+            this.panel53.TabIndex = 1;
+            // 
+            // ArgumentMainPanel
+            // 
+            this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
+            this.ArgumentMainPanel.Controls.Add(this.panel41);
+            this.ArgumentMainPanel.Controls.Add(this.panel45);
+            this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.ArgumentMainPanel.Name = "ArgumentMainPanel";
+            this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.ArgumentMainPanel.TabIndex = 7;
+            // 
+            // Argument_ShowM3U8Button
+            // 
+            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
+            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
+            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(76, 24);
+            this.Argument_ShowM3U8Button.TabIndex = 74;
+            this.Argument_ShowM3U8Button.Text = "Show M3U8";
+            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
+            // 
+            // Argument_ShowMergeButton
+            // 
+            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
+            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
+            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(78, 24);
+            this.Argument_ShowMergeButton.TabIndex = 73;
+            this.Argument_ShowMergeButton.Text = "Show Merge";
+            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
+            // 
+            // Argument_ShowCutButton
+            // 
+            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
+            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
+            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
+            this.Argument_ShowCutButton.TabIndex = 72;
+            this.Argument_ShowCutButton.Text = "Show Cut";
+            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
+            // 
+            // Argument_RunArgumentButton
+            // 
+            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
+            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
+            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
+            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
+            this.Argument_RunArgumentButton.TabIndex = 71;
+            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
+            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
+            // 
+            // Argument_ShowEncodeButton
+            // 
+            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
+            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
+            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(86, 24);
+            this.Argument_ShowEncodeButton.TabIndex = 70;
+            this.Argument_ShowEncodeButton.Text = "Show Encode";
+            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
+            // 
+            // Argument_PreviewBox
+            // 
+            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
+            this.Argument_PreviewBox.Multiline = true;
+            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
+            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
+            this.Argument_PreviewBox.TabIndex = 69;
+            // 
+            // panel41
+            // 
+            this.panel41.Controls.Add(this.label34);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel41.Location = new System.Drawing.Point(0, 0);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(919, 44);
+            this.panel41.TabIndex = 8;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label34.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label34.Location = new System.Drawing.Point(22, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(897, 44);
+            this.label34.TabIndex = 7;
+            this.label34.Text = "Argument";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel45
+            // 
+            this.panel45.Location = new System.Drawing.Point(719, 495);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(200, 73);
+            this.panel45.TabIndex = 1;
             // 
             // SettingsMainPanel
             // 
@@ -1167,235 +2084,472 @@
             this.panel31.Size = new System.Drawing.Size(200, 73);
             this.panel31.TabIndex = 1;
             // 
-            // M3U8MainPanel
+            // MergeMainPanel
             // 
-            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
-            this.M3U8MainPanel.Controls.Add(this.panel49);
-            this.M3U8MainPanel.Controls.Add(this.panel50);
-            this.M3U8MainPanel.Controls.Add(this.panel53);
-            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.M3U8MainPanel.Name = "M3U8MainPanel";
-            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
-            this.M3U8MainPanel.TabIndex = 8;
+            this.MergeMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.MergeMainPanel.Controls.Add(this.panel54);
+            this.MergeMainPanel.Controls.Add(this.panel58);
+            this.MergeMainPanel.Controls.Add(this.panel57);
+            this.MergeMainPanel.Controls.Add(this.panel61);
+            this.MergeMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MergeMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MergeMainPanel.Name = "MergeMainPanel";
+            this.MergeMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.MergeMainPanel.TabIndex = 9;
             // 
-            // M3U8_HideConsoleCheckbox
+            // panel54
             // 
-            this.M3U8_HideConsoleCheckbox.AutoSize = true;
-            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(273, 55);
-            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
-            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(80, 18);
-            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
-            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
-            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
+            this.panel54.BackColor = System.Drawing.Color.White;
+            this.panel54.Controls.Add(this.button25);
+            this.panel54.Controls.Add(this.button15);
+            this.panel54.Controls.Add(this.button16);
+            this.panel54.Controls.Add(this.groupBox3);
+            this.panel54.Controls.Add(this.label54);
+            this.panel54.Controls.Add(this.Merge_QualityBox);
+            this.panel54.Controls.Add(this.label55);
+            this.panel54.Controls.Add(this.Merge_ExtensionBox);
+            this.panel54.Controls.Add(this.Merge_listView);
+            this.panel54.Controls.Add(this.panel55);
+            this.panel54.Location = new System.Drawing.Point(27, 50);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(882, 314);
+            this.panel54.TabIndex = 11;
             // 
-            // M3U8_PlayButton
+            // button25
             // 
-            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
-            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_PlayButton.Location = new System.Drawing.Point(824, 53);
-            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
-            this.M3U8_PlayButton.Size = new System.Drawing.Size(85, 21);
-            this.M3U8_PlayButton.TabIndex = 79;
-            this.M3U8_PlayButton.Text = "Play Selected ▶";
-            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
-            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Location = new System.Drawing.Point(253, 70);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(5, 212);
+            this.button25.TabIndex = 85;
+            this.button25.UseVisualStyleBackColor = false;
             // 
-            // M3U8_RemoveM3U8Button
+            // button15
             // 
-            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
-            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
-            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_RemoveM3U8Button.TabIndex = 72;
-            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
-            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(246, 288);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(20, 20);
+            this.button15.TabIndex = 84;
+            this.button15.Text = "▼";
+            this.button15.UseVisualStyleBackColor = false;
             // 
-            // M3U8_AddM3U8Button
+            // button16
             // 
-            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
-            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
-            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_AddM3U8Button.TabIndex = 71;
-            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
-            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(246, 44);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(20, 20);
+            this.button16.TabIndex = 83;
+            this.button16.Text = "▲";
+            this.button16.UseVisualStyleBackColor = false;
             // 
-            // M3U8_listView
+            // groupBox3
             // 
-            this.M3U8_listView.AllowDrop = true;
-            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader12});
-            this.M3U8_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_listView.FullRowSelect = true;
-            this.M3U8_listView.GridLines = true;
-            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.M3U8_listView.HideSelection = false;
-            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
-            this.M3U8_listView.MultiSelect = false;
-            this.M3U8_listView.Name = "M3U8_listView";
-            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
-            this.M3U8_listView.TabIndex = 70;
-            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
-            this.M3U8_listView.View = System.Windows.Forms.View.Details;
+            this.groupBox3.Controls.Add(this.panel62);
+            this.groupBox3.Controls.Add(this.panel63);
+            this.groupBox3.Controls.Add(this.panel64);
+            this.groupBox3.Controls.Add(this.panel70);
+            this.groupBox3.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.groupBox3.Location = new System.Drawing.Point(273, 93);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(606, 209);
+            this.groupBox3.TabIndex = 79;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Media Details";
             // 
-            // columnHeader7
+            // panel62
             // 
-            this.columnHeader7.Text = "Name";
-            this.columnHeader7.Width = 130;
+            this.panel62.Controls.Add(this.Merge_mediaExtensionDescLabel);
+            this.panel62.Controls.Add(this.label50);
+            this.panel62.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel62.Location = new System.Drawing.Point(3, 93);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(600, 25);
+            this.panel62.TabIndex = 3;
             // 
-            // columnHeader8
+            // Merge_mediaExtensionDescLabel
             // 
-            this.columnHeader8.Text = "URL";
-            this.columnHeader8.Width = 655;
+            this.Merge_mediaExtensionDescLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(113, 0);
+            this.Merge_mediaExtensionDescLabel.Name = "Merge_mediaExtensionDescLabel";
+            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(487, 25);
+            this.Merge_mediaExtensionDescLabel.TabIndex = 1;
+            this.Merge_mediaExtensionDescLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // columnHeader12
+            // label50
             // 
-            this.columnHeader12.Text = "Status";
-            this.columnHeader12.Width = 70;
+            this.label50.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label50.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label50.Location = new System.Drawing.Point(0, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(113, 25);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Extension Description:";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel49
+            // panel63
             // 
-            this.panel49.Controls.Add(this.label45);
-            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel49.Location = new System.Drawing.Point(0, 0);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(919, 44);
-            this.panel49.TabIndex = 8;
+            this.panel63.Controls.Add(this.Merge_mediaExtensionLabel);
+            this.panel63.Controls.Add(this.label51);
+            this.panel63.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel63.Location = new System.Drawing.Point(3, 68);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(600, 25);
+            this.panel63.TabIndex = 2;
             // 
-            // label45
+            // Merge_mediaExtensionLabel
             // 
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label45.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label45.Location = new System.Drawing.Point(22, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(897, 44);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "M3U8";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Merge_mediaExtensionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaExtensionLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaExtensionLabel.Location = new System.Drawing.Point(72, 0);
+            this.Merge_mediaExtensionLabel.Name = "Merge_mediaExtensionLabel";
+            this.Merge_mediaExtensionLabel.Size = new System.Drawing.Size(528, 25);
+            this.Merge_mediaExtensionLabel.TabIndex = 1;
+            this.Merge_mediaExtensionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel50
+            // label51
             // 
-            this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
-            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
-            this.panel50.Controls.Add(this.M3U8_OutputButton);
-            this.panel50.Controls.Add(this.M3U8_ProgressBar);
-            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
-            this.panel50.Controls.Add(this.M3U8_StartButton);
-            this.panel50.Controls.Add(this.panel51);
-            this.panel50.Location = new System.Drawing.Point(27, 377);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(882, 106);
-            this.panel50.TabIndex = 2;
+            this.label51.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label51.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label51.Location = new System.Drawing.Point(0, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(72, 25);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Extension:";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M3U8_OutputButton
+            // panel64
             // 
-            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
-            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
-            this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
-            this.M3U8_OutputButton.TabIndex = 25;
-            this.M3U8_OutputButton.Text = "Output Folder";
-            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
+            this.panel64.Controls.Add(this.Merge_mediaPathLabel);
+            this.panel64.Controls.Add(this.label52);
+            this.panel64.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel64.Location = new System.Drawing.Point(3, 43);
+            this.panel64.Name = "panel64";
+            this.panel64.Size = new System.Drawing.Size(600, 25);
+            this.panel64.TabIndex = 1;
             // 
-            // M3U8_ProgressBar
+            // Merge_mediaPathLabel
             // 
-            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
-            this.M3U8_ProgressBar.Size = new System.Drawing.Size(783, 20);
-            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.M3U8_ProgressBar.TabIndex = 24;
+            this.Merge_mediaPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaPathLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaPathLabel.Location = new System.Drawing.Point(72, 0);
+            this.Merge_mediaPathLabel.Name = "Merge_mediaPathLabel";
+            this.Merge_mediaPathLabel.Size = new System.Drawing.Size(528, 25);
+            this.Merge_mediaPathLabel.TabIndex = 1;
+            this.Merge_mediaPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M3U8_OutputFolderTextbox
+            // label52
             // 
-            this.M3U8_OutputFolderTextbox.Enabled = false;
-            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
-            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
-            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(733, 22);
-            this.M3U8_OutputFolderTextbox.TabIndex = 23;
+            this.label52.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label52.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label52.Location = new System.Drawing.Point(0, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(72, 25);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Media Path:";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M3U8_StartButton
+            // panel70
             // 
-            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
-            this.M3U8_StartButton.Name = "M3U8_StartButton";
-            this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
-            this.M3U8_StartButton.TabIndex = 22;
-            this.M3U8_StartButton.Text = "Start Download";
-            this.M3U8_StartButton.UseVisualStyleBackColor = false;
-            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
+            this.panel70.Controls.Add(this.Merge_mediaOrderLabel);
+            this.panel70.Controls.Add(this.label53);
+            this.panel70.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel70.Location = new System.Drawing.Point(3, 18);
+            this.panel70.Name = "panel70";
+            this.panel70.Size = new System.Drawing.Size(600, 25);
+            this.panel70.TabIndex = 0;
             // 
-            // panel51
+            // Merge_mediaOrderLabel
             // 
-            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel51.Controls.Add(this.label46);
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel51.Location = new System.Drawing.Point(0, 0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(882, 38);
-            this.panel51.TabIndex = 3;
+            this.Merge_mediaOrderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaOrderLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaOrderLabel.Location = new System.Drawing.Point(72, 0);
+            this.Merge_mediaOrderLabel.Name = "Merge_mediaOrderLabel";
+            this.Merge_mediaOrderLabel.Size = new System.Drawing.Size(528, 25);
+            this.Merge_mediaOrderLabel.TabIndex = 1;
+            this.Merge_mediaOrderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label46
+            // label53
             // 
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label46.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(55, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(447, 38);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "Output";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label53.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label53.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label53.Location = new System.Drawing.Point(0, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(72, 25);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "Media Order:";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel52
+            // label54
             // 
-            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel52.Location = new System.Drawing.Point(0, 0);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(55, 38);
-            this.panel52.TabIndex = 0;
+            this.label54.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label54.Location = new System.Drawing.Point(273, 46);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(81, 16);
+            this.label54.TabIndex = 78;
+            this.label54.Text = "Speed/Quality";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel53
+            // Merge_QualityBox
             // 
-            this.panel53.Location = new System.Drawing.Point(719, 495);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(200, 73);
-            this.panel53.TabIndex = 1;
+            this.Merge_QualityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Merge_QualityBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_QualityBox.FormattingEnabled = true;
+            this.Merge_QualityBox.Items.AddRange(new object[] {
+            "ultrafast",
+            "superfast",
+            "veryfast",
+            "faster",
+            "fast",
+            "medium",
+            "slow",
+            "slower",
+            "veryslow"});
+            this.Merge_QualityBox.Location = new System.Drawing.Point(273, 65);
+            this.Merge_QualityBox.Name = "Merge_QualityBox";
+            this.Merge_QualityBox.Size = new System.Drawing.Size(81, 22);
+            this.Merge_QualityBox.TabIndex = 77;
+            // 
+            // label55
+            // 
+            this.label55.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label55.Location = new System.Drawing.Point(367, 46);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(68, 16);
+            this.label55.TabIndex = 76;
+            this.label55.Text = "Extension";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Merge_ExtensionBox
+            // 
+            this.Merge_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Merge_ExtensionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_ExtensionBox.FormattingEnabled = true;
+            this.Merge_ExtensionBox.Items.AddRange(new object[] {
+            ".mp4",
+            ".flv",
+            ".mpeg"});
+            this.Merge_ExtensionBox.Location = new System.Drawing.Point(360, 65);
+            this.Merge_ExtensionBox.Name = "Merge_ExtensionBox";
+            this.Merge_ExtensionBox.Size = new System.Drawing.Size(81, 22);
+            this.Merge_ExtensionBox.TabIndex = 75;
+            // 
+            // Merge_listView
+            // 
+            this.Merge_listView.AllowDrop = true;
+            this.Merge_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader9,
+            this.columnHeader10});
+            this.Merge_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_listView.FullRowSelect = true;
+            this.Merge_listView.GridLines = true;
+            this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Merge_listView.HideSelection = false;
+            this.Merge_listView.Location = new System.Drawing.Point(6, 44);
+            this.Merge_listView.MultiSelect = false;
+            this.Merge_listView.Name = "Merge_listView";
+            this.Merge_listView.Size = new System.Drawing.Size(235, 264);
+            this.Merge_listView.TabIndex = 72;
+            this.Merge_listView.UseCompatibleStateImageBehavior = false;
+            this.Merge_listView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Order";
+            this.columnHeader9.Width = 40;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Media";
+            this.columnHeader10.Width = 187;
+            // 
+            // panel55
+            // 
+            this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel55.Controls.Add(this.label88);
+            this.panel55.Controls.Add(this.panel56);
+            this.panel55.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel55.Location = new System.Drawing.Point(0, 0);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(882, 38);
+            this.panel55.TabIndex = 3;
+            // 
+            // label88
+            // 
+            this.label88.BackColor = System.Drawing.Color.Transparent;
+            this.label88.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label88.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label88.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label88.ForeColor = System.Drawing.Color.White;
+            this.label88.Location = new System.Drawing.Point(55, 0);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(447, 38);
+            this.label88.TabIndex = 6;
+            this.label88.Text = "Options";
+            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel56
+            // 
+            this.panel56.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel56.Location = new System.Drawing.Point(0, 0);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(55, 38);
+            this.panel56.TabIndex = 0;
+            // 
+            // panel58
+            // 
+            this.panel58.BackColor = System.Drawing.Color.White;
+            this.panel58.Controls.Add(this.Merge_DefaultOutputButton);
+            this.panel58.Controls.Add(this.Merge_OpenDirectoryButton);
+            this.panel58.Controls.Add(this.button17);
+            this.panel58.Controls.Add(this.progressBar4);
+            this.panel58.Controls.Add(this.Merge_OutputDirectoryTextbox);
+            this.panel58.Controls.Add(this.button18);
+            this.panel58.Controls.Add(this.panel59);
+            this.panel58.Location = new System.Drawing.Point(27, 377);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(885, 106);
+            this.panel58.TabIndex = 10;
+            // 
+            // Merge_DefaultOutputButton
+            // 
+            this.Merge_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
+            this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Merge_DefaultOutputButton.TabIndex = 64;
+            this.Merge_DefaultOutputButton.Text = "✓";
+            this.Merge_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Merge_DefaultOutputButton.Click += new System.EventHandler(this.Merge_DefaultOutputButton_Click);
+            // 
+            // Merge_OpenDirectoryButton
+            // 
+            this.Merge_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
+            this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Merge_OpenDirectoryButton.TabIndex = 63;
+            this.Merge_OpenDirectoryButton.Text = "▶";
+            this.Merge_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Merge_OpenDirectoryButton.Click += new System.EventHandler(this.Merge_OpenDirectoryButton_Click);
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button17.Location = new System.Drawing.Point(792, 44);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(87, 23);
+            this.button17.TabIndex = 25;
+            this.button17.Text = "Output Folder";
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(3, 75);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(783, 20);
+            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar4.TabIndex = 24;
+            // 
+            // Merge_OutputDirectoryTextbox
+            // 
+            this.Merge_OutputDirectoryTextbox.Enabled = false;
+            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
+            this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
+            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(733, 22);
+            this.Merge_OutputDirectoryTextbox.TabIndex = 23;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button18.Location = new System.Drawing.Point(792, 73);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(87, 23);
+            this.button18.TabIndex = 22;
+            this.button18.Text = "Start Merging";
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // panel59
+            // 
+            this.panel59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel59.Controls.Add(this.label89);
+            this.panel59.Controls.Add(this.panel60);
+            this.panel59.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel59.Location = new System.Drawing.Point(0, 0);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(885, 38);
+            this.panel59.TabIndex = 3;
+            // 
+            // label89
+            // 
+            this.label89.BackColor = System.Drawing.Color.Transparent;
+            this.label89.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label89.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label89.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label89.ForeColor = System.Drawing.Color.White;
+            this.label89.Location = new System.Drawing.Point(55, 0);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(447, 38);
+            this.label89.TabIndex = 6;
+            this.label89.Text = "Output";
+            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel60
+            // 
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel60.Location = new System.Drawing.Point(0, 0);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(55, 38);
+            this.panel60.TabIndex = 0;
+            // 
+            // panel57
+            // 
+            this.panel57.Controls.Add(this.label56);
+            this.panel57.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel57.Location = new System.Drawing.Point(0, 0);
+            this.panel57.Name = "panel57";
+            this.panel57.Size = new System.Drawing.Size(919, 44);
+            this.panel57.TabIndex = 8;
+            // 
+            // label56
+            // 
+            this.label56.BackColor = System.Drawing.Color.Transparent;
+            this.label56.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label56.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label56.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label56.Location = new System.Drawing.Point(22, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(897, 44);
+            this.label56.TabIndex = 7;
+            this.label56.Text = "Merge";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel61
+            // 
+            this.panel61.Location = new System.Drawing.Point(719, 495);
+            this.panel61.Name = "panel61";
+            this.panel61.Size = new System.Drawing.Size(200, 73);
+            this.panel61.TabIndex = 1;
             // 
             // EncoderMainPanel
             // 
@@ -1447,6 +2601,32 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(882, 106);
             this.panel6.TabIndex = 2;
+            // 
+            // Encoder_DefaultOutputButton
+            // 
+            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
+            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_DefaultOutputButton.TabIndex = 60;
+            this.Encoder_DefaultOutputButton.Text = "✓";
+            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
+            // 
+            // Encoder_OpenDirectoryButton
+            // 
+            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
+            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_OpenDirectoryButton.TabIndex = 61;
+            this.Encoder_OpenDirectoryButton.Text = "▶";
+            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
             // 
             // Encoder_OutputFolderButton
             // 
@@ -2224,1087 +3404,6 @@
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(200, 73);
             this.panel77.TabIndex = 1;
-            // 
-            // ArgumentMainPanel
-            // 
-            this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
-            this.ArgumentMainPanel.Controls.Add(this.panel41);
-            this.ArgumentMainPanel.Controls.Add(this.panel45);
-            this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.ArgumentMainPanel.Name = "ArgumentMainPanel";
-            this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.ArgumentMainPanel.TabIndex = 7;
-            // 
-            // Argument_ShowM3U8Button
-            // 
-            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
-            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
-            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(76, 24);
-            this.Argument_ShowM3U8Button.TabIndex = 74;
-            this.Argument_ShowM3U8Button.Text = "Show M3U8";
-            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
-            // 
-            // Argument_ShowMergeButton
-            // 
-            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
-            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
-            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(78, 24);
-            this.Argument_ShowMergeButton.TabIndex = 73;
-            this.Argument_ShowMergeButton.Text = "Show Merge";
-            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
-            // 
-            // Argument_ShowCutButton
-            // 
-            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
-            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
-            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
-            this.Argument_ShowCutButton.TabIndex = 72;
-            this.Argument_ShowCutButton.Text = "Show Cut";
-            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
-            // 
-            // Argument_RunArgumentButton
-            // 
-            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
-            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
-            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
-            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
-            this.Argument_RunArgumentButton.TabIndex = 71;
-            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
-            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
-            // 
-            // Argument_ShowEncodeButton
-            // 
-            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
-            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
-            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(86, 24);
-            this.Argument_ShowEncodeButton.TabIndex = 70;
-            this.Argument_ShowEncodeButton.Text = "Show Encode";
-            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
-            // 
-            // Argument_PreviewBox
-            // 
-            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
-            this.Argument_PreviewBox.Multiline = true;
-            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
-            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
-            this.Argument_PreviewBox.TabIndex = 69;
-            // 
-            // panel41
-            // 
-            this.panel41.Controls.Add(this.label34);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel41.Location = new System.Drawing.Point(0, 0);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(919, 44);
-            this.panel41.TabIndex = 8;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label34.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label34.Location = new System.Drawing.Point(22, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(897, 44);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "Argument";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel45
-            // 
-            this.panel45.Location = new System.Drawing.Point(719, 495);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(200, 73);
-            this.panel45.TabIndex = 1;
-            // 
-            // CutMainPanel
-            // 
-            this.CutMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.CutMainPanel.Controls.Add(this.panel14);
-            this.CutMainPanel.Controls.Add(this.panel65);
-            this.CutMainPanel.Controls.Add(this.panel66);
-            this.CutMainPanel.Controls.Add(this.panel69);
-            this.CutMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CutMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.CutMainPanel.Name = "CutMainPanel";
-            this.CutMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.CutMainPanel.TabIndex = 10;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.label61);
-            this.panel14.Controls.Add(this.Cut_listView);
-            this.panel14.Controls.Add(this.Cut_QualityBox);
-            this.panel14.Controls.Add(this.groupBox2);
-            this.panel14.Controls.Add(this.button23);
-            this.panel14.Controls.Add(this.textBox7);
-            this.panel14.Controls.Add(this.panel32);
-            this.panel14.Location = new System.Drawing.Point(27, 50);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(882, 314);
-            this.panel14.TabIndex = 9;
-            // 
-            // label61
-            // 
-            this.label61.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label61.Location = new System.Drawing.Point(138, 69);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(81, 16);
-            this.label61.TabIndex = 76;
-            this.label61.Text = "Speed/Quality";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_listView
-            // 
-            this.Cut_listView.AllowDrop = true;
-            this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader11});
-            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_listView.FullRowSelect = true;
-            this.Cut_listView.GridLines = true;
-            this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Cut_listView.HideSelection = false;
-            this.Cut_listView.Location = new System.Drawing.Point(3, 69);
-            this.Cut_listView.MultiSelect = false;
-            this.Cut_listView.Name = "Cut_listView";
-            this.Cut_listView.Size = new System.Drawing.Size(129, 242);
-            this.Cut_listView.TabIndex = 72;
-            this.Cut_listView.UseCompatibleStateImageBehavior = false;
-            this.Cut_listView.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Timespans";
-            this.columnHeader11.Width = 107;
-            // 
-            // Cut_QualityBox
-            // 
-            this.Cut_QualityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_QualityBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_QualityBox.FormattingEnabled = true;
-            this.Cut_QualityBox.Items.AddRange(new object[] {
-            "ultrafast",
-            "superfast",
-            "veryfast",
-            "faster",
-            "fast",
-            "medium",
-            "slow",
-            "slower",
-            "veryslow"});
-            this.Cut_QualityBox.Location = new System.Drawing.Point(138, 88);
-            this.Cut_QualityBox.Name = "Cut_QualityBox";
-            this.Cut_QualityBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_QualityBox.TabIndex = 75;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.Cut_EndMiliseconds);
-            this.groupBox2.Controls.Add(this.Cut_EndSeconds);
-            this.groupBox2.Controls.Add(this.Cut_EndMinutes);
-            this.groupBox2.Controls.Add(this.Cut_EndHours);
-            this.groupBox2.Controls.Add(this.Cut_StartMiliseconds);
-            this.groupBox2.Controls.Add(this.Cut_StartSeconds);
-            this.groupBox2.Controls.Add(this.Cut_StartMinutes);
-            this.groupBox2.Controls.Add(this.Cut_StartHours);
-            this.groupBox2.Controls.Add(this.Cut_PreviewLabel);
-            this.groupBox2.Controls.Add(this.label62);
-            this.groupBox2.Controls.Add(this.label63);
-            this.groupBox2.Controls.Add(this.Cut_AddTimespanButton);
-            this.groupBox2.Controls.Add(this.label64);
-            this.groupBox2.Controls.Add(this.label65);
-            this.groupBox2.Controls.Add(this.label66);
-            this.groupBox2.Controls.Add(this.label69);
-            this.groupBox2.Controls.Add(this.label70);
-            this.groupBox2.Controls.Add(this.label83);
-            this.groupBox2.Controls.Add(this.label84);
-            this.groupBox2.Controls.Add(this.label85);
-            this.groupBox2.Location = new System.Drawing.Point(138, 115);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(343, 196);
-            this.groupBox2.TabIndex = 69;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cut Timers";
-            // 
-            // Cut_EndMiliseconds
-            // 
-            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndMiliseconds.Location = new System.Drawing.Point(277, 88);
-            this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
-            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndMiliseconds.TabIndex = 54;
-            // 
-            // Cut_EndSeconds
-            // 
-            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndSeconds.Location = new System.Drawing.Point(211, 88);
-            this.Cut_EndSeconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_EndSeconds.Name = "Cut_EndSeconds";
-            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndSeconds.TabIndex = 53;
-            // 
-            // Cut_EndMinutes
-            // 
-            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndMinutes.Location = new System.Drawing.Point(145, 88);
-            this.Cut_EndMinutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_EndMinutes.Name = "Cut_EndMinutes";
-            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndMinutes.TabIndex = 52;
-            // 
-            // Cut_EndHours
-            // 
-            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
-            this.Cut_EndHours.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_EndHours.Name = "Cut_EndHours";
-            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndHours.TabIndex = 51;
-            // 
-            // Cut_StartMiliseconds
-            // 
-            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartMiliseconds.Location = new System.Drawing.Point(277, 31);
-            this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
-            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartMiliseconds.TabIndex = 50;
-            // 
-            // Cut_StartSeconds
-            // 
-            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartSeconds.Location = new System.Drawing.Point(211, 32);
-            this.Cut_StartSeconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_StartSeconds.Name = "Cut_StartSeconds";
-            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartSeconds.TabIndex = 49;
-            // 
-            // Cut_StartMinutes
-            // 
-            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartMinutes.Location = new System.Drawing.Point(145, 31);
-            this.Cut_StartMinutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_StartMinutes.Name = "Cut_StartMinutes";
-            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartMinutes.TabIndex = 48;
-            // 
-            // Cut_StartHours
-            // 
-            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
-            this.Cut_StartHours.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_StartHours.Name = "Cut_StartHours";
-            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartHours.TabIndex = 45;
-            // 
-            // Cut_PreviewLabel
-            // 
-            this.Cut_PreviewLabel.AutoSize = true;
-            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_PreviewLabel.Location = new System.Drawing.Point(102, 133);
-            this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
-            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
-            this.Cut_PreviewLabel.TabIndex = 47;
-            this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label62.Location = new System.Drawing.Point(12, 91);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(47, 14);
-            this.label62.TabIndex = 46;
-            this.label62.Text = "End Time:";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label63.Location = new System.Drawing.Point(7, 34);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(53, 14);
-            this.label63.TabIndex = 45;
-            this.label63.Text = "Start Time:";
-            // 
-            // Cut_AddTimespanButton
-            // 
-            this.Cut_AddTimespanButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
-            this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
-            this.Cut_AddTimespanButton.Size = new System.Drawing.Size(337, 23);
-            this.Cut_AddTimespanButton.TabIndex = 44;
-            this.Cut_AddTimespanButton.Text = "Add Timespan";
-            this.Cut_AddTimespanButton.UseVisualStyleBackColor = false;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label64.Location = new System.Drawing.Point(79, 16);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(31, 14);
-            this.label64.TabIndex = 32;
-            this.label64.Text = "Hours";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label65.Location = new System.Drawing.Point(274, 71);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(58, 14);
-            this.label65.TabIndex = 43;
-            this.label65.Text = "Miliseconds";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label66.Location = new System.Drawing.Point(208, 71);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(41, 14);
-            this.label66.TabIndex = 42;
-            this.label66.Text = "Seconds";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label69.Location = new System.Drawing.Point(142, 71);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(41, 14);
-            this.label69.TabIndex = 41;
-            this.label69.Text = "Minutes";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label70.Location = new System.Drawing.Point(79, 71);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(31, 14);
-            this.label70.TabIndex = 40;
-            this.label70.Text = "Hours";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label83.Location = new System.Drawing.Point(142, 16);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(41, 14);
-            this.label83.TabIndex = 33;
-            this.label83.Text = "Minutes";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label84.Location = new System.Drawing.Point(208, 16);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(41, 14);
-            this.label84.TabIndex = 34;
-            this.label84.Text = "Seconds";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label85.Location = new System.Drawing.Point(274, 16);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(58, 14);
-            this.label85.TabIndex = 35;
-            this.label85.Text = "Miliseconds";
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button23.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button23.Location = new System.Drawing.Point(782, 41);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(96, 24);
-            this.button23.TabIndex = 68;
-            this.button23.Text = "Input Media";
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(3, 43);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(774, 20);
-            this.textBox7.TabIndex = 67;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel32.Controls.Add(this.label60);
-            this.panel32.Controls.Add(this.panel46);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel32.Location = new System.Drawing.Point(0, 0);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(882, 38);
-            this.panel32.TabIndex = 3;
-            // 
-            // label60
-            // 
-            this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label60.ForeColor = System.Drawing.Color.White;
-            this.label60.Location = new System.Drawing.Point(55, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(447, 38);
-            this.label60.TabIndex = 6;
-            this.label60.Text = "Options";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel46
-            // 
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel46.Location = new System.Drawing.Point(0, 0);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(55, 38);
-            this.panel46.TabIndex = 0;
-            // 
-            // panel65
-            // 
-            this.panel65.Controls.Add(this.label67);
-            this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel65.Location = new System.Drawing.Point(0, 0);
-            this.panel65.Name = "panel65";
-            this.panel65.Size = new System.Drawing.Size(919, 44);
-            this.panel65.TabIndex = 8;
-            // 
-            // label67
-            // 
-            this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label67.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label67.Location = new System.Drawing.Point(22, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(897, 44);
-            this.label67.TabIndex = 7;
-            this.label67.Text = "Cut";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel66
-            // 
-            this.panel66.BackColor = System.Drawing.Color.White;
-            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
-            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
-            this.panel66.Controls.Add(this.button19);
-            this.panel66.Controls.Add(this.progressBar5);
-            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
-            this.panel66.Controls.Add(this.button20);
-            this.panel66.Controls.Add(this.panel67);
-            this.panel66.Location = new System.Drawing.Point(27, 377);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(885, 106);
-            this.panel66.TabIndex = 2;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button19.Location = new System.Drawing.Point(792, 44);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(87, 23);
-            this.button19.TabIndex = 25;
-            this.button19.Text = "Output Folder";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // progressBar5
-            // 
-            this.progressBar5.Location = new System.Drawing.Point(3, 75);
-            this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(783, 20);
-            this.progressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar5.TabIndex = 24;
-            // 
-            // Cut_OutputDirectoryBox
-            // 
-            this.Cut_OutputDirectoryBox.Enabled = false;
-            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
-            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
-            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
-            this.Cut_OutputDirectoryBox.TabIndex = 23;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button20.Location = new System.Drawing.Point(792, 73);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(87, 23);
-            this.button20.TabIndex = 22;
-            this.button20.Text = "Start Cutting";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // panel67
-            // 
-            this.panel67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel67.Controls.Add(this.label68);
-            this.panel67.Controls.Add(this.panel68);
-            this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel67.Location = new System.Drawing.Point(0, 0);
-            this.panel67.Name = "panel67";
-            this.panel67.Size = new System.Drawing.Size(885, 38);
-            this.panel67.TabIndex = 3;
-            // 
-            // label68
-            // 
-            this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label68.ForeColor = System.Drawing.Color.White;
-            this.label68.Location = new System.Drawing.Point(55, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(447, 38);
-            this.label68.TabIndex = 6;
-            this.label68.Text = "Output";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel68
-            // 
-            this.panel68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel68.Location = new System.Drawing.Point(0, 0);
-            this.panel68.Name = "panel68";
-            this.panel68.Size = new System.Drawing.Size(55, 38);
-            this.panel68.TabIndex = 0;
-            // 
-            // panel69
-            // 
-            this.panel69.Location = new System.Drawing.Point(719, 495);
-            this.panel69.Name = "panel69";
-            this.panel69.Size = new System.Drawing.Size(200, 73);
-            this.panel69.TabIndex = 1;
-            // 
-            // MergeMainPanel
-            // 
-            this.MergeMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.MergeMainPanel.Controls.Add(this.panel54);
-            this.MergeMainPanel.Controls.Add(this.panel58);
-            this.MergeMainPanel.Controls.Add(this.panel57);
-            this.MergeMainPanel.Controls.Add(this.panel61);
-            this.MergeMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MergeMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.MergeMainPanel.Name = "MergeMainPanel";
-            this.MergeMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.MergeMainPanel.TabIndex = 9;
-            // 
-            // panel54
-            // 
-            this.panel54.BackColor = System.Drawing.Color.White;
-            this.panel54.Controls.Add(this.button25);
-            this.panel54.Controls.Add(this.button15);
-            this.panel54.Controls.Add(this.button16);
-            this.panel54.Controls.Add(this.groupBox3);
-            this.panel54.Controls.Add(this.label54);
-            this.panel54.Controls.Add(this.Merge_QualityBox);
-            this.panel54.Controls.Add(this.label55);
-            this.panel54.Controls.Add(this.Merge_ExtensionBox);
-            this.panel54.Controls.Add(this.Merge_listView);
-            this.panel54.Controls.Add(this.panel55);
-            this.panel54.Location = new System.Drawing.Point(27, 50);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(882, 314);
-            this.panel54.TabIndex = 11;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Location = new System.Drawing.Point(253, 70);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(5, 212);
-            this.button25.TabIndex = 85;
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(246, 288);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(20, 20);
-            this.button15.TabIndex = 84;
-            this.button15.Text = "▼";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(246, 44);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(20, 20);
-            this.button16.TabIndex = 83;
-            this.button16.Text = "▲";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.panel62);
-            this.groupBox3.Controls.Add(this.panel63);
-            this.groupBox3.Controls.Add(this.panel64);
-            this.groupBox3.Controls.Add(this.panel70);
-            this.groupBox3.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.groupBox3.Location = new System.Drawing.Point(273, 93);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(606, 209);
-            this.groupBox3.TabIndex = 79;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Media Details";
-            // 
-            // panel62
-            // 
-            this.panel62.Controls.Add(this.Merge_mediaExtensionDescLabel);
-            this.panel62.Controls.Add(this.label50);
-            this.panel62.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel62.Location = new System.Drawing.Point(3, 93);
-            this.panel62.Name = "panel62";
-            this.panel62.Size = new System.Drawing.Size(600, 25);
-            this.panel62.TabIndex = 3;
-            // 
-            // Merge_mediaExtensionDescLabel
-            // 
-            this.Merge_mediaExtensionDescLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(113, 0);
-            this.Merge_mediaExtensionDescLabel.Name = "Merge_mediaExtensionDescLabel";
-            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(487, 25);
-            this.Merge_mediaExtensionDescLabel.TabIndex = 1;
-            this.Merge_mediaExtensionDescLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label50
-            // 
-            this.label50.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label50.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(113, 25);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Extension Description:";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel63
-            // 
-            this.panel63.Controls.Add(this.Merge_mediaExtensionLabel);
-            this.panel63.Controls.Add(this.label51);
-            this.panel63.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel63.Location = new System.Drawing.Point(3, 68);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(600, 25);
-            this.panel63.TabIndex = 2;
-            // 
-            // Merge_mediaExtensionLabel
-            // 
-            this.Merge_mediaExtensionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaExtensionLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_mediaExtensionLabel.Location = new System.Drawing.Point(72, 0);
-            this.Merge_mediaExtensionLabel.Name = "Merge_mediaExtensionLabel";
-            this.Merge_mediaExtensionLabel.Size = new System.Drawing.Size(528, 25);
-            this.Merge_mediaExtensionLabel.TabIndex = 1;
-            this.Merge_mediaExtensionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label51
-            // 
-            this.label51.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label51.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(72, 25);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Extension:";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel64
-            // 
-            this.panel64.Controls.Add(this.Merge_mediaPathLabel);
-            this.panel64.Controls.Add(this.label52);
-            this.panel64.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel64.Location = new System.Drawing.Point(3, 43);
-            this.panel64.Name = "panel64";
-            this.panel64.Size = new System.Drawing.Size(600, 25);
-            this.panel64.TabIndex = 1;
-            // 
-            // Merge_mediaPathLabel
-            // 
-            this.Merge_mediaPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaPathLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_mediaPathLabel.Location = new System.Drawing.Point(72, 0);
-            this.Merge_mediaPathLabel.Name = "Merge_mediaPathLabel";
-            this.Merge_mediaPathLabel.Size = new System.Drawing.Size(528, 25);
-            this.Merge_mediaPathLabel.TabIndex = 1;
-            this.Merge_mediaPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label52
-            // 
-            this.label52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label52.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label52.Location = new System.Drawing.Point(0, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(72, 25);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "Media Path:";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel70
-            // 
-            this.panel70.Controls.Add(this.Merge_mediaOrderLabel);
-            this.panel70.Controls.Add(this.label53);
-            this.panel70.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel70.Location = new System.Drawing.Point(3, 18);
-            this.panel70.Name = "panel70";
-            this.panel70.Size = new System.Drawing.Size(600, 25);
-            this.panel70.TabIndex = 0;
-            // 
-            // Merge_mediaOrderLabel
-            // 
-            this.Merge_mediaOrderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaOrderLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_mediaOrderLabel.Location = new System.Drawing.Point(72, 0);
-            this.Merge_mediaOrderLabel.Name = "Merge_mediaOrderLabel";
-            this.Merge_mediaOrderLabel.Size = new System.Drawing.Size(528, 25);
-            this.Merge_mediaOrderLabel.TabIndex = 1;
-            this.Merge_mediaOrderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label53
-            // 
-            this.label53.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label53.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label53.Location = new System.Drawing.Point(0, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(72, 25);
-            this.label53.TabIndex = 0;
-            this.label53.Text = "Media Order:";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label54
-            // 
-            this.label54.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label54.Location = new System.Drawing.Point(273, 46);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(81, 16);
-            this.label54.TabIndex = 78;
-            this.label54.Text = "Speed/Quality";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Merge_QualityBox
-            // 
-            this.Merge_QualityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Merge_QualityBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_QualityBox.FormattingEnabled = true;
-            this.Merge_QualityBox.Items.AddRange(new object[] {
-            "ultrafast",
-            "superfast",
-            "veryfast",
-            "faster",
-            "fast",
-            "medium",
-            "slow",
-            "slower",
-            "veryslow"});
-            this.Merge_QualityBox.Location = new System.Drawing.Point(273, 65);
-            this.Merge_QualityBox.Name = "Merge_QualityBox";
-            this.Merge_QualityBox.Size = new System.Drawing.Size(81, 22);
-            this.Merge_QualityBox.TabIndex = 77;
-            // 
-            // label55
-            // 
-            this.label55.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label55.Location = new System.Drawing.Point(367, 46);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(68, 16);
-            this.label55.TabIndex = 76;
-            this.label55.Text = "Extension";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Merge_ExtensionBox
-            // 
-            this.Merge_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Merge_ExtensionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_ExtensionBox.FormattingEnabled = true;
-            this.Merge_ExtensionBox.Items.AddRange(new object[] {
-            ".mp4",
-            ".flv",
-            ".mpeg"});
-            this.Merge_ExtensionBox.Location = new System.Drawing.Point(360, 65);
-            this.Merge_ExtensionBox.Name = "Merge_ExtensionBox";
-            this.Merge_ExtensionBox.Size = new System.Drawing.Size(81, 22);
-            this.Merge_ExtensionBox.TabIndex = 75;
-            // 
-            // Merge_listView
-            // 
-            this.Merge_listView.AllowDrop = true;
-            this.Merge_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader9,
-            this.columnHeader10});
-            this.Merge_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_listView.FullRowSelect = true;
-            this.Merge_listView.GridLines = true;
-            this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Merge_listView.HideSelection = false;
-            this.Merge_listView.Location = new System.Drawing.Point(6, 44);
-            this.Merge_listView.MultiSelect = false;
-            this.Merge_listView.Name = "Merge_listView";
-            this.Merge_listView.Size = new System.Drawing.Size(235, 264);
-            this.Merge_listView.TabIndex = 72;
-            this.Merge_listView.UseCompatibleStateImageBehavior = false;
-            this.Merge_listView.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Order";
-            this.columnHeader9.Width = 40;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Media";
-            this.columnHeader10.Width = 187;
-            // 
-            // panel55
-            // 
-            this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel55.Controls.Add(this.label88);
-            this.panel55.Controls.Add(this.panel56);
-            this.panel55.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel55.Location = new System.Drawing.Point(0, 0);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(882, 38);
-            this.panel55.TabIndex = 3;
-            // 
-            // label88
-            // 
-            this.label88.BackColor = System.Drawing.Color.Transparent;
-            this.label88.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label88.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label88.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label88.ForeColor = System.Drawing.Color.White;
-            this.label88.Location = new System.Drawing.Point(55, 0);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(447, 38);
-            this.label88.TabIndex = 6;
-            this.label88.Text = "Options";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel56
-            // 
-            this.panel56.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel56.Location = new System.Drawing.Point(0, 0);
-            this.panel56.Name = "panel56";
-            this.panel56.Size = new System.Drawing.Size(55, 38);
-            this.panel56.TabIndex = 0;
-            // 
-            // panel58
-            // 
-            this.panel58.BackColor = System.Drawing.Color.White;
-            this.panel58.Controls.Add(this.Merge_DefaultOutputButton);
-            this.panel58.Controls.Add(this.Merge_OpenDirectoryButton);
-            this.panel58.Controls.Add(this.button17);
-            this.panel58.Controls.Add(this.progressBar4);
-            this.panel58.Controls.Add(this.Merge_OutputDirectoryTextbox);
-            this.panel58.Controls.Add(this.button18);
-            this.panel58.Controls.Add(this.panel59);
-            this.panel58.Location = new System.Drawing.Point(27, 377);
-            this.panel58.Name = "panel58";
-            this.panel58.Size = new System.Drawing.Size(885, 106);
-            this.panel58.TabIndex = 10;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button17.Location = new System.Drawing.Point(792, 44);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(87, 23);
-            this.button17.TabIndex = 25;
-            this.button17.Text = "Output Folder";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(3, 75);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(783, 20);
-            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar4.TabIndex = 24;
-            // 
-            // Merge_OutputDirectoryTextbox
-            // 
-            this.Merge_OutputDirectoryTextbox.Enabled = false;
-            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
-            this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
-            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(733, 22);
-            this.Merge_OutputDirectoryTextbox.TabIndex = 23;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button18.Location = new System.Drawing.Point(792, 73);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(87, 23);
-            this.button18.TabIndex = 22;
-            this.button18.Text = "Start Merging";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // panel59
-            // 
-            this.panel59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel59.Controls.Add(this.label89);
-            this.panel59.Controls.Add(this.panel60);
-            this.panel59.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel59.Location = new System.Drawing.Point(0, 0);
-            this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(885, 38);
-            this.panel59.TabIndex = 3;
-            // 
-            // label89
-            // 
-            this.label89.BackColor = System.Drawing.Color.Transparent;
-            this.label89.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label89.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label89.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label89.ForeColor = System.Drawing.Color.White;
-            this.label89.Location = new System.Drawing.Point(55, 0);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(447, 38);
-            this.label89.TabIndex = 6;
-            this.label89.Text = "Output";
-            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel60
-            // 
-            this.panel60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel60.Location = new System.Drawing.Point(0, 0);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(55, 38);
-            this.panel60.TabIndex = 0;
-            // 
-            // panel57
-            // 
-            this.panel57.Controls.Add(this.label56);
-            this.panel57.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel57.Location = new System.Drawing.Point(0, 0);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(919, 44);
-            this.panel57.TabIndex = 8;
-            // 
-            // label56
-            // 
-            this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label56.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label56.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label56.Location = new System.Drawing.Point(22, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(897, 44);
-            this.label56.TabIndex = 7;
-            this.label56.Text = "Merge";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel61
-            // 
-            this.panel61.Location = new System.Drawing.Point(719, 495);
-            this.panel61.Name = "panel61";
-            this.panel61.Size = new System.Drawing.Size(200, 73);
-            this.panel61.TabIndex = 1;
             // 
             // NoticePanel
             // 
@@ -4263,110 +4362,6 @@
             this.TraySystem.Text = "FFmpeg Utilizer";
             this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
             // 
-            // Encoder_OpenDirectoryButton
-            // 
-            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
-            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_OpenDirectoryButton.TabIndex = 61;
-            this.Encoder_OpenDirectoryButton.Text = "▶";
-            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
-            // 
-            // Cut_OpenDirectoryButton
-            // 
-            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
-            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Cut_OpenDirectoryButton.TabIndex = 62;
-            this.Cut_OpenDirectoryButton.Text = "▶";
-            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
-            // 
-            // Merge_OpenDirectoryButton
-            // 
-            this.Merge_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
-            this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Merge_OpenDirectoryButton.TabIndex = 63;
-            this.Merge_OpenDirectoryButton.Text = "▶";
-            this.Merge_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Merge_OpenDirectoryButton.Click += new System.EventHandler(this.Merge_OpenDirectoryButton_Click);
-            // 
-            // M3U8_OpenDirectoryButton
-            // 
-            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
-            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.M3U8_OpenDirectoryButton.TabIndex = 64;
-            this.M3U8_OpenDirectoryButton.Text = "▶";
-            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
-            // 
-            // Encoder_DefaultOutputButton
-            // 
-            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
-            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_DefaultOutputButton.TabIndex = 60;
-            this.Encoder_DefaultOutputButton.Text = "✓";
-            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
-            // 
-            // Cut_DefaultOutputButton
-            // 
-            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
-            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Cut_DefaultOutputButton.TabIndex = 61;
-            this.Cut_DefaultOutputButton.Text = "✓";
-            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
-            // 
-            // Merge_DefaultOutputButton
-            // 
-            this.Merge_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
-            this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Merge_DefaultOutputButton.TabIndex = 64;
-            this.Merge_DefaultOutputButton.Text = "✓";
-            this.Merge_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Merge_DefaultOutputButton.Click += new System.EventHandler(this.Merge_DefaultOutputButton_Click);
-            // 
-            // M3U8_DefaultOutputButton
-            // 
-            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
-            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.M3U8_DefaultOutputButton.TabIndex = 65;
-            this.M3U8_DefaultOutputButton.Text = "✓";
-            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4383,6 +4378,33 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
+            this.CutMainPanel.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).EndInit();
+            this.panel32.ResumeLayout(false);
+            this.panel65.ResumeLayout(false);
+            this.panel66.ResumeLayout(false);
+            this.panel66.PerformLayout();
+            this.panel67.ResumeLayout(false);
+            this.M3U8MainPanel.ResumeLayout(false);
+            this.M3U8MainPanel.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel51.ResumeLayout(false);
+            this.ArgumentMainPanel.ResumeLayout(false);
+            this.ArgumentMainPanel.PerformLayout();
+            this.panel41.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.Settings_NetPanel.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -4404,12 +4426,18 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            this.M3U8MainPanel.ResumeLayout(false);
-            this.M3U8MainPanel.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel51.ResumeLayout(false);
+            this.MergeMainPanel.ResumeLayout(false);
+            this.panel54.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.panel62.ResumeLayout(false);
+            this.panel63.ResumeLayout(false);
+            this.panel64.ResumeLayout(false);
+            this.panel70.ResumeLayout(false);
+            this.panel55.ResumeLayout(false);
+            this.panel58.ResumeLayout(false);
+            this.panel58.PerformLayout();
+            this.panel59.ResumeLayout(false);
+            this.panel57.ResumeLayout(false);
             this.EncoderMainPanel.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -4435,39 +4463,6 @@
             this.panel92.ResumeLayout(false);
             this.panel93.ResumeLayout(false);
             this.panel75.ResumeLayout(false);
-            this.ArgumentMainPanel.ResumeLayout(false);
-            this.ArgumentMainPanel.PerformLayout();
-            this.panel41.ResumeLayout(false);
-            this.CutMainPanel.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).EndInit();
-            this.panel32.ResumeLayout(false);
-            this.panel65.ResumeLayout(false);
-            this.panel66.ResumeLayout(false);
-            this.panel66.PerformLayout();
-            this.panel67.ResumeLayout(false);
-            this.MergeMainPanel.ResumeLayout(false);
-            this.panel54.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.panel62.ResumeLayout(false);
-            this.panel63.ResumeLayout(false);
-            this.panel64.ResumeLayout(false);
-            this.panel70.ResumeLayout(false);
-            this.panel55.ResumeLayout(false);
-            this.panel58.ResumeLayout(false);
-            this.panel58.PerformLayout();
-            this.panel59.ResumeLayout(false);
-            this.panel57.ResumeLayout(false);
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -4647,7 +4642,7 @@
         private System.Windows.Forms.Button button19;
         public System.Windows.Forms.ProgressBar progressBar5;
         private System.Windows.Forms.TextBox Cut_OutputDirectoryBox;
-        public System.Windows.Forms.Button button20;
+        public System.Windows.Forms.Button Cut_StartCuttingButton;
         private System.Windows.Forms.Panel panel67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Panel panel68;
@@ -4669,10 +4664,8 @@
         private System.Windows.Forms.Panel panel76;
         private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label61;
         public System.Windows.Forms.ListView Cut_listView;
         private System.Windows.Forms.ColumnHeader columnHeader11;
-        internal System.Windows.Forms.ComboBox Cut_QualityBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.NumericUpDown Cut_EndMiliseconds;
         private System.Windows.Forms.NumericUpDown Cut_EndSeconds;
@@ -4694,8 +4687,8 @@
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Button button23;
-        internal System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button Cut_InputMediaButton;
+        internal System.Windows.Forms.TextBox Cut_MediaInputTextbox;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Panel panel46;
@@ -4844,6 +4837,7 @@
         private System.Windows.Forms.Button Cut_DefaultOutputButton;
         private System.Windows.Forms.Button Merge_DefaultOutputButton;
         private System.Windows.Forms.Button M3U8_DefaultOutputButton;
+        private System.Windows.Forms.Button Cut_RemoveSelectedButton;
     }
 }
 

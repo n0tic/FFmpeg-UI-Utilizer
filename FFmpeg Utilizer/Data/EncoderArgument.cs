@@ -6,7 +6,7 @@ using System.IO;
 namespace FFmpeg_Utilizer.Data
 {
     [Serializable]
-    public class Argument
+    public class EncoderArgument
     {
         public Libs.Overwrite overwrite = Libs.Overwrite.Ask;
         public FileInfo inputFile;
@@ -22,7 +22,7 @@ namespace FFmpeg_Utilizer.Data
 
         public string latestArgOutput = "";
 
-        public Argument(Libs.Overwrite _overwrite, FileInfo inputFile, Libs.VCodec vC, Libs.ACodec aC, Libs.Tune _tuner, Libs.Preset _preset, Libs.Frames frames, Libs.Size res, string outputDir, string fileName, Libs.VideoFileExtensions fileExt)
+        public EncoderArgument(Libs.Overwrite _overwrite, FileInfo inputFile, Libs.VCodec vC, Libs.ACodec aC, Libs.Tune _tuner, Libs.Preset _preset, Libs.Frames frames, Libs.Size res, string outputDir, string fileName, Libs.VideoFileExtensions fileExt)
         {
             overwrite = _overwrite;
             this.inputFile = inputFile;
