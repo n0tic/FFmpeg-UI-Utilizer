@@ -63,9 +63,9 @@ namespace FFmpeg_Utilizer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ffmpegLogo {
+        internal static System.Drawing.Bitmap ffmpegUtilizerLogo {
             get {
-                object obj = ResourceManager.GetObject("ffmpegLogo", resourceCulture);
+                object obj = ResourceManager.GetObject("ffmpegUtilizerLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -86,7 +86,7 @@
             // TopLogo
             // 
             this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegLogo;
+            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
             this.TopLogo.Location = new System.Drawing.Point(0, 0);
             this.TopLogo.Name = "TopLogo";
             this.TopLogo.Size = new System.Drawing.Size(200, 27);

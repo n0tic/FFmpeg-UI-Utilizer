@@ -30,6 +30,7 @@ namespace FFmpeg_Utilizer
         public NoticeModule notice;
         public UtilityUpdaterModule updater;
         public EncodingProcesser encodingProcesser;
+        public M3U8Processor m3u8Processor;
         public UriRequestsHandler uriRequestHandler;
 
         //FFplay process
@@ -68,9 +69,11 @@ namespace FFmpeg_Utilizer
         private void SetupModules()
         {
             //Init Modules
+            Core.main = this;
             notice = new NoticeModule(this);
             notice.CloseNotice();
             encodingProcesser = new EncodingProcesser(this);
+            m3u8Processor = new M3U8Processor(this);
 
             if (hasInternet)
                 updater = new UtilityUpdaterModule(this);
@@ -241,9 +244,28 @@ namespace FFmpeg_Utilizer
 
             #endregion Encoder
 
+            #region M3U8
 
-            //Set lower left information
-            SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
+            if (settings.loaded)
+            {
+                M3U8_HideConsoleCheckbox.Checked = settings.hideConsole;
+
+                if (Directory.Exists(settings.outputLocation))
+                    M3U8_OutputFolderTextbox.Text = settings.outputLocation;
+                else if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    M3U8_OutputFolderTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+            else
+            {
+                if(Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    M3U8_OutputFolderTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+
+            #endregion M3U8
+
+
+                //Set lower left information
+                SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
             AuthorLabel.Text = Core.authorRealName + " AKA " + Core.authorName;
             GitLabel.Text = Core.softwareGIT;
         }
@@ -254,7 +276,17 @@ namespace FFmpeg_Utilizer
 
         private void ApplicationCloseButton_Click(object sender, EventArgs e) => Application.Exit();
 
-        private void ApplicationMinimizeButton_Click(object sender, EventArgs e) => WindowState = FormWindowState.Minimized;
+        private void ApplicationMinimizeButton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                TraySystem.Visible = true;
+
+                TraySystem.ShowBalloonTip(1000);
+            }
+        }
 
         private void TopLogo_MouseDown(object sender, MouseEventArgs e) => Core.MoveWindow(this, e);
         #endregion Software Window
@@ -263,7 +295,6 @@ namespace FFmpeg_Utilizer
         private void AddTabs()
         {
             //Set reference;
-            Core.main = this;
             Core.AddTab(Menu_EncoderTab, Menu_EncoderTabIndicator, Menu_EncoderTabLabel, EncoderMainPanel);
             Core.AddTab(Menu_CutMergeTab, Menu_CutMergeTabIndicator, Menu_CutMergeTabLabel, null);
             Core.AddTab(Menu_MergeTab, Menu_MergeTabIndicator, Menu_MergeTabLabel, MergeMainPanel);
@@ -464,7 +495,7 @@ namespace FFmpeg_Utilizer
             }
 
             //Create a queue to process.
-            ProcesserData processQueueData = new ProcesserData(Encoder_OutputFolderTextBox.Text, Encoder_HideConsoleToggle.Checked);
+            EncodeProcesserData processQueueData = new EncodeProcesserData(Encoder_OutputFolderTextBox.Text, Encoder_HideConsoleToggle.Checked);
 
             //For every file...
             for (int i = 0; i < Encoder_FilesList.Items.Count; i++)
@@ -477,8 +508,7 @@ namespace FFmpeg_Utilizer
                  *libraries
                  *
                  */
-
-                processQueueData.Add(Libs.Overwrite.Yes, file, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
+                processQueueData.Add((Libs.Overwrite)Enum.Parse(typeof(Libs.Overwrite), Encoder_OverwriteBox.Text, true), file, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
             }
 
             //Start the encoding process.
@@ -605,6 +635,82 @@ namespace FFmpeg_Utilizer
 
             ListViewItem item = new ListViewItem(new[] { name, url, "• Waiting" });
             M3U8_listView.Items.Add(item);
+        }
+
+        private void TraySystem_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            TraySystem.Visible = false;
+        }
+
+        private void M3U8_StartButton_Click(object sender, EventArgs e)
+        {
+            //Stop if there are no files or application to work with.
+            if (!File.Exists(settings.ffmpegPath))
+            {
+                notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+            if (M3U8_listView.Items.Count < 1)
+            {
+                notice.SetNotice("The list of files to encode was empty. Aborting.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            //Create a queue to process.
+            M3U8ProcesserData processQueueData = new M3U8ProcesserData(M3U8_OutputFolderTextbox.Text, M3U8_HideConsoleCheckbox.Checked);
+
+            //For every file...
+            for (int i = 0; i < M3U8_listView.Items.Count; i++)
+                processQueueData.Add(M3U8_listView.Items[i].SubItems[0].Text, M3U8_listView.Items[i].SubItems[1].Text);
+
+            //Start the encoding process.
+            m3u8Processor.ProcessFileQueue(processQueueData);
+        }
+
+        private void Settings_OpenDirectoryButton_Click(object sender, EventArgs e) => Core.OpenDirectory(Settings_DefaultOutputPathBox.Text);
+
+        private void Encoder_OpenDirectoryButton_Click(object sender, EventArgs e) => Core.OpenDirectory(Encoder_OutputFolderTextBox.Text);
+
+        private void Cut_OpenDirectoryButton_Click(object sender, EventArgs e) => Core.OpenDirectory(Cut_OutputDirectoryBox.Text);
+
+        private void Merge_OpenDirectoryButton_Click(object sender, EventArgs e) => Core.OpenDirectory(Merge_OutputDirectoryTextbox.Text);
+
+        private void M3U8_OpenDirectoryButton_Click(object sender, EventArgs e) => Core.OpenDirectory(M3U8_OutputFolderTextbox.Text);
+
+        private void Encoder_DefaultOutputButton_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output))) Directory.CreateDirectory(Core.GetSubfolder(Core.SubFolders.Output));
+            Encoder_OutputFolderTextBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+        }
+
+        private void Cut_DefaultOutputButton_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output))) Directory.CreateDirectory(Core.GetSubfolder(Core.SubFolders.Output));
+            Cut_OutputDirectoryBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+        }
+
+        private void Merge_DefaultOutputButton_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output))) Directory.CreateDirectory(Core.GetSubfolder(Core.SubFolders.Output));
+            Merge_OutputDirectoryTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+        }
+
+        private void M3U8_DefaultOutputButton_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output))) Directory.CreateDirectory(Core.GetSubfolder(Core.SubFolders.Output));
+            M3U8_OutputFolderTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+        }
+
+        private void Argument_ShowEncodeButton_Click(object sender, EventArgs e)
+        {
+            Argument args = new Argument((Libs.Overwrite)Enum.Parse(typeof(Libs.Overwrite), Encoder_OverwriteBox.Text, true), null, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), Encoder_OutputFolderTextBox.Text, "filename", (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
+            string ff;
+            if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
+            else ff = "ffmpeg ";
+
+            Argument_PreviewBox.Text = ff + args.ExecuteArgs();
         }
     }
 }

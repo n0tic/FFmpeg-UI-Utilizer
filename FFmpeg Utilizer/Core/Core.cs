@@ -1,6 +1,8 @@
 ﻿using FFmpeg_Utilizer.Data;
+using FFmpeg_Utilizer.Modules;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
@@ -39,6 +41,25 @@ namespace FFmpeg_Utilizer
         #endregion Version
 
         #region Files, Folders and Paths
+
+        public static void OpenDirectory(string path)
+        {
+            if (Directory.Exists(path))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    Arguments = path,
+                    FileName = "explorer.exe"
+                };
+
+                Process.Start(startInfo);
+            }
+            else
+            {
+                main.notice.SetNotice("The directory does not exist.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+        }
 
         public static void CreateAllDefaultFolders()
         {

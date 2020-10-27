@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FFmpegUtilizerIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,7 +54,9 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Data\Argument.cs" />
     <Compile Include="Data\Headers.cs" />
-    <Compile Include="Data\ProcesserData.cs" />
+    <Compile Include="Data\EncodeProcesserData.cs" />
+    <Compile Include="Data\M3U8Argument.cs" />
+    <Compile Include="Data\M3U8ProcesserData.cs" />
     <Compile Include="Data\Settings.cs" />
     <Compile Include="Data\static\CommonExtensions.cs" />
     <Compile Include="Data\static\Libs.cs" />
@@ -68,6 +74,7 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\EncodingProcesser.cs" />
+    <Compile Include="Modules\M3U8Processor.cs" />
     <Compile Include="Modules\NoticeModule.cs" />
     <Compile Include="Modules\Submodule\URIRequestExtender.cs" />
     <Compile Include="Modules\UriRequestsHandler.cs" />
@@ -108,7 +115,7 @@
     <None Include="Resources\Icon_apps_outline.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ffmpegLogo.jpg" />
+    <None Include="Resources\ffmpegUtilizerLogo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon_attention_outline.png" />
@@ -170,6 +177,8 @@
   <ItemGroup>
     <None Include="Resources\Icon_star_outline.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="FFmpegUtilizerIcon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

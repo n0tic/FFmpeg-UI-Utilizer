@@ -29,47 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
-            this.UpdateMainPanel = new System.Windows.Forms.Panel();
-            this.panel94 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.panel96 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.SpeedLabel = new System.Windows.Forms.Label();
-            this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.Update_StatusLabel = new System.Windows.Forms.Label();
-            this.panel71 = new System.Windows.Forms.Panel();
-            this.Update_CheckForUpdateButton = new System.Windows.Forms.Button();
-            this.panel73 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.panel74 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel72 = new System.Windows.Forms.Panel();
-            this.panel89 = new System.Windows.Forms.Panel();
-            this.Update_DownloadButton = new System.Windows.Forms.Button();
-            this.panel90 = new System.Windows.Forms.Panel();
-            this.Update_LatestUpdateLabel = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel91 = new System.Windows.Forms.Panel();
-            this.panel92 = new System.Windows.Forms.Panel();
-            this.Update_OnlineVerLabel = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel93 = new System.Windows.Forms.Panel();
-            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel75 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.panel77 = new System.Windows.Forms.Panel();
             this.SettingsMainPanel = new System.Windows.Forms.Panel();
             this.Settings_NetPanel = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -111,6 +76,7 @@
             this.Settings_AudioCodecDropdown = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
+            this.Settings_OpenDirectoryButton = new System.Windows.Forms.Button();
             this.Settings_DefaultOutputPathBox = new System.Windows.Forms.TextBox();
             this.Settings_DefaultOutputButton = new System.Windows.Forms.Button();
             this.panel79 = new System.Windows.Forms.Panel();
@@ -126,6 +92,26 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
+            this.M3U8MainPanel = new System.Windows.Forms.Panel();
+            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
+            this.M3U8_PlayButton = new System.Windows.Forms.Button();
+            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_listView = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.M3U8_OutputButton = new System.Windows.Forms.Button();
+            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
+            this.M3U8_StartButton = new System.Windows.Forms.Button();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
             this.EncoderMainPanel = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -139,6 +125,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel37 = new System.Windows.Forms.Panel();
+            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.Encoder_FilesList = new System.Windows.Forms.ListView();
             this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -165,33 +152,48 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
-            this.M3U8MainPanel = new System.Windows.Forms.Panel();
-            this.M3U8_PlayButton = new System.Windows.Forms.Button();
-            this.label38 = new System.Windows.Forms.Label();
-            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_listView = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.M3U8_OutputButton = new System.Windows.Forms.Button();
-            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
-            this.M3U8_StartButton = new System.Windows.Forms.Button();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
+            this.UpdateMainPanel = new System.Windows.Forms.Panel();
+            this.panel94 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel96 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.SpeedLabel = new System.Windows.Forms.Label();
+            this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.Update_StatusLabel = new System.Windows.Forms.Label();
+            this.panel71 = new System.Windows.Forms.Panel();
+            this.Update_CheckForUpdateButton = new System.Windows.Forms.Button();
+            this.panel73 = new System.Windows.Forms.Panel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.panel74 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.Update_DownloadButton = new System.Windows.Forms.Button();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.Update_LatestUpdateLabel = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.Update_OnlineVerLabel = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel93 = new System.Windows.Forms.Panel();
+            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel75 = new System.Windows.Forms.Panel();
+            this.label79 = new System.Windows.Forms.Label();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.panel77 = new System.Windows.Forms.Panel();
             this.ArgumentMainPanel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.ArgumentPreviewBox = new System.Windows.Forms.TextBox();
+            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
+            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
+            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
+            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
+            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
+            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
             this.panel41 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
@@ -232,7 +234,7 @@
             this.panel66 = new System.Windows.Forms.Panel();
             this.button19 = new System.Windows.Forms.Button();
             this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
             this.button20 = new System.Windows.Forms.Button();
             this.panel67 = new System.Windows.Forms.Panel();
             this.label68 = new System.Windows.Forms.Label();
@@ -269,7 +271,7 @@
             this.panel58 = new System.Windows.Forms.Panel();
             this.button17 = new System.Windows.Forms.Button();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Merge_OutputDirectoryTextbox = new System.Windows.Forms.TextBox();
             this.button18 = new System.Windows.Forms.Button();
             this.panel59 = new System.Windows.Forms.Panel();
             this.label89 = new System.Windows.Forms.Label();
@@ -357,26 +359,17 @@
             this.ApplicationCloseButton = new System.Windows.Forms.Label();
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
+            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Merge_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Merge_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
-            this.UpdateMainPanel.SuspendLayout();
-            this.panel94.SuspendLayout();
-            this.panel96.SuspendLayout();
-            this.panel97.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.panel40.SuspendLayout();
-            this.panel42.SuspendLayout();
-            this.panel73.SuspendLayout();
-            this.panel74.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel72.SuspendLayout();
-            this.panel89.SuspendLayout();
-            this.panel90.SuspendLayout();
-            this.panel91.SuspendLayout();
-            this.panel92.SuspendLayout();
-            this.panel93.SuspendLayout();
-            this.panel75.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.Settings_NetPanel.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -395,16 +388,33 @@
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.M3U8MainPanel.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel51.SuspendLayout();
             this.EncoderMainPanel.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel37.SuspendLayout();
             this.panel47.SuspendLayout();
-            this.M3U8MainPanel.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel51.SuspendLayout();
+            this.UpdateMainPanel.SuspendLayout();
+            this.panel94.SuspendLayout();
+            this.panel96.SuspendLayout();
+            this.panel97.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel40.SuspendLayout();
+            this.panel42.SuspendLayout();
+            this.panel73.SuspendLayout();
+            this.panel74.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel72.SuspendLayout();
+            this.panel89.SuspendLayout();
+            this.panel90.SuspendLayout();
+            this.panel91.SuspendLayout();
+            this.panel92.SuspendLayout();
+            this.panel93.SuspendLayout();
+            this.panel75.SuspendLayout();
             this.ArgumentMainPanel.SuspendLayout();
             this.panel41.SuspendLayout();
             this.CutMainPanel.SuspendLayout();
@@ -485,401 +495,18 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.EncoderMainPanel);
-            this.panel95.Controls.Add(this.SettingsMainPanel);
-            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
+            this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.EncoderMainPanel);
+            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
-            // 
-            // UpdateMainPanel
-            // 
-            this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.UpdateMainPanel.Controls.Add(this.panel94);
-            this.UpdateMainPanel.Controls.Add(this.panel40);
-            this.UpdateMainPanel.Controls.Add(this.Update_CheckForUpdateButton);
-            this.UpdateMainPanel.Controls.Add(this.panel73);
-            this.UpdateMainPanel.Controls.Add(this.panel74);
-            this.UpdateMainPanel.Controls.Add(this.panel77);
-            this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.UpdateMainPanel.Name = "UpdateMainPanel";
-            this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.UpdateMainPanel.TabIndex = 11;
-            // 
-            // panel94
-            // 
-            this.panel94.BackColor = System.Drawing.Color.White;
-            this.panel94.Controls.Add(this.label40);
-            this.panel94.Controls.Add(this.panel96);
-            this.panel94.Location = new System.Drawing.Point(27, 306);
-            this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(882, 141);
-            this.panel94.TabIndex = 29;
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label40.Location = new System.Drawing.Point(6, 50);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(870, 86);
-            this.label40.TabIndex = 4;
-            this.label40.Text = resources.GetString("label40.Text");
-            // 
-            // panel96
-            // 
-            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel96.Controls.Add(this.label41);
-            this.panel96.Controls.Add(this.panel97);
-            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel96.Location = new System.Drawing.Point(0, 0);
-            this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(882, 38);
-            this.panel96.TabIndex = 3;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label41.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(55, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(447, 38);
-            this.label41.TabIndex = 6;
-            this.label41.Text = "Information";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel97
-            // 
-            this.panel97.Controls.Add(this.pictureBox11);
-            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel97.Location = new System.Drawing.Point(0, 0);
-            this.panel97.Name = "panel97";
-            this.panel97.Size = new System.Drawing.Size(55, 38);
-            this.panel97.TabIndex = 0;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.Color.White;
-            this.panel40.Controls.Add(this.SpeedLabel);
-            this.panel40.Controls.Add(this.Update_ProgressBar);
-            this.panel40.Controls.Add(this.panel42);
-            this.panel40.Location = new System.Drawing.Point(27, 82);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(882, 78);
-            this.panel40.TabIndex = 26;
-            // 
-            // SpeedLabel
-            // 
-            this.SpeedLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
-            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SpeedLabel.Location = new System.Drawing.Point(794, 49);
-            this.SpeedLabel.Name = "SpeedLabel";
-            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SpeedLabel.Size = new System.Drawing.Size(82, 16);
-            this.SpeedLabel.TabIndex = 28;
-            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Update_ProgressBar
-            // 
-            this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
-            this.Update_ProgressBar.Name = "Update_ProgressBar";
-            this.Update_ProgressBar.Size = new System.Drawing.Size(783, 25);
-            this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Update_ProgressBar.TabIndex = 27;
-            // 
-            // panel42
-            // 
-            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel42.Controls.Add(this.Update_StatusLabel);
-            this.panel42.Controls.Add(this.panel71);
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel42.Location = new System.Drawing.Point(0, 0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(882, 38);
-            this.panel42.TabIndex = 3;
-            // 
-            // Update_StatusLabel
-            // 
-            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_StatusLabel.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
-            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
-            this.Update_StatusLabel.Name = "Update_StatusLabel";
-            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
-            this.Update_StatusLabel.TabIndex = 6;
-            this.Update_StatusLabel.Text = "Status";
-            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel71
-            // 
-            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel71.Location = new System.Drawing.Point(0, 0);
-            this.panel71.Name = "panel71";
-            this.panel71.Size = new System.Drawing.Size(55, 38);
-            this.panel71.TabIndex = 0;
-            // 
-            // Update_CheckForUpdateButton
-            // 
-            this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
-            this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
-            this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
-            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(90, 24);
-            this.Update_CheckForUpdateButton.TabIndex = 26;
-            this.Update_CheckForUpdateButton.Text = "Check For Update";
-            this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
-            this.Update_CheckForUpdateButton.Click += new System.EventHandler(this.Update_CheckForUpdateButton_Click);
-            // 
-            // panel73
-            // 
-            this.panel73.Controls.Add(this.label78);
-            this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel73.Location = new System.Drawing.Point(0, 0);
-            this.panel73.Name = "panel73";
-            this.panel73.Size = new System.Drawing.Size(919, 44);
-            this.panel73.TabIndex = 8;
-            // 
-            // label78
-            // 
-            this.label78.BackColor = System.Drawing.Color.Transparent;
-            this.label78.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label78.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label78.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label78.Location = new System.Drawing.Point(22, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(897, 44);
-            this.label78.TabIndex = 7;
-            this.label78.Text = "Updates";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel74
-            // 
-            this.panel74.BackColor = System.Drawing.Color.White;
-            this.panel74.Controls.Add(this.groupBox4);
-            this.panel74.Controls.Add(this.panel75);
-            this.panel74.Location = new System.Drawing.Point(27, 171);
-            this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(882, 125);
-            this.panel74.TabIndex = 2;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.panel72);
-            this.groupBox4.Controls.Add(this.panel91);
-            this.groupBox4.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.groupBox4.Location = new System.Drawing.Point(9, 44);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(864, 72);
-            this.groupBox4.TabIndex = 55;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "FFMPEG";
-            // 
-            // panel72
-            // 
-            this.panel72.Controls.Add(this.panel89);
-            this.panel72.Controls.Add(this.panel90);
-            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel72.Location = new System.Drawing.Point(3, 43);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(858, 23);
-            this.panel72.TabIndex = 1;
-            // 
-            // panel89
-            // 
-            this.panel89.Controls.Add(this.Update_DownloadButton);
-            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel89.Location = new System.Drawing.Point(562, 0);
-            this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(296, 23);
-            this.panel89.TabIndex = 1;
-            // 
-            // Update_DownloadButton
-            // 
-            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
-            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_DownloadButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
-            this.Update_DownloadButton.Name = "Update_DownloadButton";
-            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 23);
-            this.Update_DownloadButton.TabIndex = 71;
-            this.Update_DownloadButton.Text = "Loading...";
-            this.Update_DownloadButton.UseVisualStyleBackColor = false;
-            this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
-            // 
-            // panel90
-            // 
-            this.panel90.Controls.Add(this.Update_LatestUpdateLabel);
-            this.panel90.Controls.Add(this.label24);
-            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel90.Location = new System.Drawing.Point(0, 0);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(295, 23);
-            this.panel90.TabIndex = 0;
-            // 
-            // Update_LatestUpdateLabel
-            // 
-            this.Update_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
-            this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
-            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 23);
-            this.Update_LatestUpdateLabel.TabIndex = 2;
-            this.Update_LatestUpdateLabel.Text = "-";
-            this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label24
-            // 
-            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label24.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label24.Location = new System.Drawing.Point(0, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 23);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Latest Update:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel91
-            // 
-            this.panel91.Controls.Add(this.panel92);
-            this.panel91.Controls.Add(this.panel93);
-            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel91.Location = new System.Drawing.Point(3, 18);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(858, 25);
-            this.panel91.TabIndex = 0;
-            // 
-            // panel92
-            // 
-            this.panel92.Controls.Add(this.Update_OnlineVerLabel);
-            this.panel92.Controls.Add(this.label35);
-            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel92.Location = new System.Drawing.Point(562, 0);
-            this.panel92.Name = "panel92";
-            this.panel92.Size = new System.Drawing.Size(296, 25);
-            this.panel92.TabIndex = 1;
-            // 
-            // Update_OnlineVerLabel
-            // 
-            this.Update_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_OnlineVerLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Update_OnlineVerLabel.Location = new System.Drawing.Point(106, 0);
-            this.Update_OnlineVerLabel.Name = "Update_OnlineVerLabel";
-            this.Update_OnlineVerLabel.Size = new System.Drawing.Size(190, 25);
-            this.Update_OnlineVerLabel.TabIndex = 2;
-            this.Update_OnlineVerLabel.Text = "-";
-            this.Update_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label35
-            // 
-            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label35.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label35.Location = new System.Drawing.Point(0, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(106, 25);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Online FFmpeg Version:";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel93
-            // 
-            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
-            this.panel93.Controls.Add(this.label37);
-            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel93.Location = new System.Drawing.Point(0, 0);
-            this.panel93.Name = "panel93";
-            this.panel93.Size = new System.Drawing.Size(295, 25);
-            this.panel93.TabIndex = 0;
-            // 
-            // Update_InstalledVersionLabel
-            // 
-            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
-            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
-            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
-            this.Update_InstalledVersionLabel.TabIndex = 1;
-            this.Update_InstalledVersionLabel.Text = "-";
-            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label37
-            // 
-            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label37.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label37.Location = new System.Drawing.Point(0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(118, 25);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Installed FFmpeg Version:";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel75
-            // 
-            this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel75.Controls.Add(this.label79);
-            this.panel75.Controls.Add(this.panel76);
-            this.panel75.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel75.Location = new System.Drawing.Point(0, 0);
-            this.panel75.Name = "panel75";
-            this.panel75.Size = new System.Drawing.Size(882, 38);
-            this.panel75.TabIndex = 3;
-            // 
-            // label79
-            // 
-            this.label79.BackColor = System.Drawing.Color.Transparent;
-            this.label79.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label79.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label79.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label79.ForeColor = System.Drawing.Color.White;
-            this.label79.Location = new System.Drawing.Point(55, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(447, 38);
-            this.label79.TabIndex = 6;
-            this.label79.Text = "Installed Information";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel76
-            // 
-            this.panel76.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel76.Location = new System.Drawing.Point(0, 0);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(55, 38);
-            this.panel76.TabIndex = 0;
-            // 
-            // panel77
-            // 
-            this.panel77.Location = new System.Drawing.Point(719, 495);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(200, 73);
-            this.panel77.TabIndex = 1;
             // 
             // SettingsMainPanel
             // 
@@ -1338,6 +965,7 @@
             // panel43
             // 
             this.panel43.BackColor = System.Drawing.Color.White;
+            this.panel43.Controls.Add(this.Settings_OpenDirectoryButton);
             this.panel43.Controls.Add(this.Settings_DefaultOutputPathBox);
             this.panel43.Controls.Add(this.Settings_DefaultOutputButton);
             this.panel43.Controls.Add(this.panel79);
@@ -1351,13 +979,26 @@
             this.panel43.Size = new System.Drawing.Size(882, 125);
             this.panel43.TabIndex = 68;
             // 
+            // Settings_OpenDirectoryButton
+            // 
+            this.Settings_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(716, 95);
+            this.Settings_OpenDirectoryButton.Name = "Settings_OpenDirectoryButton";
+            this.Settings_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Settings_OpenDirectoryButton.TabIndex = 60;
+            this.Settings_OpenDirectoryButton.Text = "▶";
+            this.Settings_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Settings_OpenDirectoryButton.Click += new System.EventHandler(this.Settings_OpenDirectoryButton_Click);
+            // 
             // Settings_DefaultOutputPathBox
             // 
             this.Settings_DefaultOutputPathBox.Enabled = false;
             this.Settings_DefaultOutputPathBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Settings_DefaultOutputPathBox.Location = new System.Drawing.Point(5, 97);
             this.Settings_DefaultOutputPathBox.Name = "Settings_DefaultOutputPathBox";
-            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(730, 22);
+            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(705, 22);
             this.Settings_DefaultOutputPathBox.TabIndex = 54;
             // 
             // Settings_DefaultOutputButton
@@ -1526,6 +1167,236 @@
             this.panel31.Size = new System.Drawing.Size(200, 73);
             this.panel31.TabIndex = 1;
             // 
+            // M3U8MainPanel
+            // 
+            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
+            this.M3U8MainPanel.Controls.Add(this.panel49);
+            this.M3U8MainPanel.Controls.Add(this.panel50);
+            this.M3U8MainPanel.Controls.Add(this.panel53);
+            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.M3U8MainPanel.Name = "M3U8MainPanel";
+            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
+            this.M3U8MainPanel.TabIndex = 8;
+            // 
+            // M3U8_HideConsoleCheckbox
+            // 
+            this.M3U8_HideConsoleCheckbox.AutoSize = true;
+            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(273, 55);
+            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
+            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(80, 18);
+            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
+            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
+            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // M3U8_PlayButton
+            // 
+            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
+            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(824, 53);
+            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(85, 21);
+            this.M3U8_PlayButton.TabIndex = 79;
+            this.M3U8_PlayButton.Text = "Play Selected ▶";
+            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
+            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            // 
+            // M3U8_RemoveM3U8Button
+            // 
+            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
+            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
+            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_RemoveM3U8Button.TabIndex = 72;
+            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
+            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            // 
+            // M3U8_AddM3U8Button
+            // 
+            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
+            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
+            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_AddM3U8Button.TabIndex = 71;
+            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
+            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
+            // 
+            // M3U8_listView
+            // 
+            this.M3U8_listView.AllowDrop = true;
+            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader12});
+            this.M3U8_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_listView.FullRowSelect = true;
+            this.M3U8_listView.GridLines = true;
+            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.M3U8_listView.HideSelection = false;
+            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
+            this.M3U8_listView.MultiSelect = false;
+            this.M3U8_listView.Name = "M3U8_listView";
+            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
+            this.M3U8_listView.TabIndex = 70;
+            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
+            this.M3U8_listView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Name";
+            this.columnHeader7.Width = 130;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "URL";
+            this.columnHeader8.Width = 655;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Status";
+            this.columnHeader12.Width = 70;
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.label45);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel49.Location = new System.Drawing.Point(0, 0);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(919, 44);
+            this.panel49.TabIndex = 8;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label45.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label45.Location = new System.Drawing.Point(22, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(897, 44);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "M3U8";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
+            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
+            this.panel50.Controls.Add(this.M3U8_OutputButton);
+            this.panel50.Controls.Add(this.M3U8_ProgressBar);
+            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
+            this.panel50.Controls.Add(this.M3U8_StartButton);
+            this.panel50.Controls.Add(this.panel51);
+            this.panel50.Location = new System.Drawing.Point(27, 377);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(882, 106);
+            this.panel50.TabIndex = 2;
+            // 
+            // M3U8_OutputButton
+            // 
+            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
+            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
+            this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_OutputButton.TabIndex = 25;
+            this.M3U8_OutputButton.Text = "Output Folder";
+            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
+            // 
+            // M3U8_ProgressBar
+            // 
+            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
+            this.M3U8_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.M3U8_ProgressBar.TabIndex = 24;
+            // 
+            // M3U8_OutputFolderTextbox
+            // 
+            this.M3U8_OutputFolderTextbox.Enabled = false;
+            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
+            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(733, 22);
+            this.M3U8_OutputFolderTextbox.TabIndex = 23;
+            // 
+            // M3U8_StartButton
+            // 
+            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
+            this.M3U8_StartButton.Name = "M3U8_StartButton";
+            this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_StartButton.TabIndex = 22;
+            this.M3U8_StartButton.Text = "Start Download";
+            this.M3U8_StartButton.UseVisualStyleBackColor = false;
+            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel51.Controls.Add(this.label46);
+            this.panel51.Controls.Add(this.panel52);
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel51.Location = new System.Drawing.Point(0, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(882, 38);
+            this.panel51.TabIndex = 3;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label46.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(55, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(447, 38);
+            this.label46.TabIndex = 6;
+            this.label46.Text = "Output";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel52
+            // 
+            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel52.Location = new System.Drawing.Point(0, 0);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(55, 38);
+            this.panel52.TabIndex = 0;
+            // 
+            // panel53
+            // 
+            this.panel53.Location = new System.Drawing.Point(719, 495);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(200, 73);
+            this.panel53.TabIndex = 1;
+            // 
             // EncoderMainPanel
             // 
             this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -1565,6 +1436,8 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
+            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
             this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
             this.panel6.Controls.Add(this.Encoder_ProgressBar);
             this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
@@ -1603,7 +1476,7 @@
             this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(3, 45);
             this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
-            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(783, 22);
+            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(732, 22);
             this.Encoder_OutputFolderTextBox.TabIndex = 23;
             // 
             // Encoder_StartEncodingProcessButton
@@ -1690,6 +1563,17 @@
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(882, 314);
             this.panel37.TabIndex = 54;
+            // 
+            // Encoder_HideConsoleToggle
+            // 
+            this.Encoder_HideConsoleToggle.AutoSize = true;
+            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(701, 76);
+            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
+            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Encoder_HideConsoleToggle.TabIndex = 61;
+            this.Encoder_HideConsoleToggle.Text = "Hide Console";
+            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
             // 
             // Encoder_FilesList
             // 
@@ -1958,240 +1842,398 @@
             this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_PresetsBox.TabIndex = 40;
             // 
-            // M3U8MainPanel
+            // UpdateMainPanel
             // 
-            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
-            this.M3U8MainPanel.Controls.Add(this.label38);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
-            this.M3U8MainPanel.Controls.Add(this.panel49);
-            this.M3U8MainPanel.Controls.Add(this.panel50);
-            this.M3U8MainPanel.Controls.Add(this.panel53);
-            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.M3U8MainPanel.Name = "M3U8MainPanel";
-            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
-            this.M3U8MainPanel.TabIndex = 8;
+            this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.UpdateMainPanel.Controls.Add(this.panel94);
+            this.UpdateMainPanel.Controls.Add(this.panel40);
+            this.UpdateMainPanel.Controls.Add(this.Update_CheckForUpdateButton);
+            this.UpdateMainPanel.Controls.Add(this.panel73);
+            this.UpdateMainPanel.Controls.Add(this.panel74);
+            this.UpdateMainPanel.Controls.Add(this.panel77);
+            this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.UpdateMainPanel.Name = "UpdateMainPanel";
+            this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.UpdateMainPanel.TabIndex = 11;
             // 
-            // M3U8_PlayButton
+            // panel94
             // 
-            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
-            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_PlayButton.Location = new System.Drawing.Point(824, 53);
-            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
-            this.M3U8_PlayButton.Size = new System.Drawing.Size(85, 21);
-            this.M3U8_PlayButton.TabIndex = 79;
-            this.M3U8_PlayButton.Text = "Play Selected ▶";
-            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
-            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            this.panel94.BackColor = System.Drawing.Color.White;
+            this.panel94.Controls.Add(this.label40);
+            this.panel94.Controls.Add(this.panel96);
+            this.panel94.Location = new System.Drawing.Point(27, 306);
+            this.panel94.Name = "panel94";
+            this.panel94.Size = new System.Drawing.Size(882, 141);
+            this.panel94.TabIndex = 29;
             // 
-            // label38
+            // label40
             // 
-            this.label38.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label38.Location = new System.Drawing.Point(269, 51);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(181, 16);
-            this.label38.TabIndex = 77;
-            this.label38.Text = "Drag and drop local .m3u8 files below.";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label40.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label40.Location = new System.Drawing.Point(6, 50);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(870, 86);
+            this.label40.TabIndex = 4;
+            this.label40.Text = resources.GetString("label40.Text");
             // 
-            // M3U8_RemoveM3U8Button
+            // panel96
             // 
-            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
-            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
-            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_RemoveM3U8Button.TabIndex = 72;
-            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
-            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel96.Controls.Add(this.label41);
+            this.panel96.Controls.Add(this.panel97);
+            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel96.Location = new System.Drawing.Point(0, 0);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(882, 38);
+            this.panel96.TabIndex = 3;
             // 
-            // M3U8_AddM3U8Button
+            // label41
             // 
-            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
-            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
-            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_AddM3U8Button.TabIndex = 71;
-            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
-            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label41.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(55, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(447, 38);
+            this.label41.TabIndex = 6;
+            this.label41.Text = "Information";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M3U8_listView
+            // panel97
             // 
-            this.M3U8_listView.AllowDrop = true;
-            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader12});
-            this.M3U8_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_listView.FullRowSelect = true;
-            this.M3U8_listView.GridLines = true;
-            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.M3U8_listView.HideSelection = false;
-            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
-            this.M3U8_listView.MultiSelect = false;
-            this.M3U8_listView.Name = "M3U8_listView";
-            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
-            this.M3U8_listView.TabIndex = 70;
-            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
-            this.M3U8_listView.View = System.Windows.Forms.View.Details;
+            this.panel97.Controls.Add(this.pictureBox11);
+            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel97.Location = new System.Drawing.Point(0, 0);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(55, 38);
+            this.panel97.TabIndex = 0;
             // 
-            // columnHeader7
+            // pictureBox11
             // 
-            this.columnHeader7.Text = "Name";
-            this.columnHeader7.Width = 130;
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
             // 
-            // columnHeader8
+            // panel40
             // 
-            this.columnHeader8.Text = "URL";
-            this.columnHeader8.Width = 665;
+            this.panel40.BackColor = System.Drawing.Color.White;
+            this.panel40.Controls.Add(this.SpeedLabel);
+            this.panel40.Controls.Add(this.Update_ProgressBar);
+            this.panel40.Controls.Add(this.panel42);
+            this.panel40.Location = new System.Drawing.Point(27, 82);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(882, 78);
+            this.panel40.TabIndex = 26;
             // 
-            // columnHeader12
+            // SpeedLabel
             // 
-            this.columnHeader12.Text = "Status";
+            this.SpeedLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SpeedLabel.Location = new System.Drawing.Point(794, 49);
+            this.SpeedLabel.Name = "SpeedLabel";
+            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SpeedLabel.Size = new System.Drawing.Size(82, 16);
+            this.SpeedLabel.TabIndex = 28;
+            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel49
+            // Update_ProgressBar
             // 
-            this.panel49.Controls.Add(this.label45);
-            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel49.Location = new System.Drawing.Point(0, 0);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(919, 44);
-            this.panel49.TabIndex = 8;
+            this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
+            this.Update_ProgressBar.Name = "Update_ProgressBar";
+            this.Update_ProgressBar.Size = new System.Drawing.Size(783, 25);
+            this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Update_ProgressBar.TabIndex = 27;
             // 
-            // label45
+            // panel42
             // 
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label45.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label45.Location = new System.Drawing.Point(22, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(897, 44);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "M3U8";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel42.Controls.Add(this.Update_StatusLabel);
+            this.panel42.Controls.Add(this.panel71);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel42.Location = new System.Drawing.Point(0, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(882, 38);
+            this.panel42.TabIndex = 3;
             // 
-            // panel50
+            // Update_StatusLabel
             // 
-            this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.Controls.Add(this.M3U8_OutputButton);
-            this.panel50.Controls.Add(this.M3U8_ProgressBar);
-            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
-            this.panel50.Controls.Add(this.M3U8_StartButton);
-            this.panel50.Controls.Add(this.panel51);
-            this.panel50.Location = new System.Drawing.Point(27, 377);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(882, 106);
-            this.panel50.TabIndex = 2;
+            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_StatusLabel.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
+            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
+            this.Update_StatusLabel.Name = "Update_StatusLabel";
+            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
+            this.Update_StatusLabel.TabIndex = 6;
+            this.Update_StatusLabel.Text = "Status";
+            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M3U8_OutputButton
+            // panel71
             // 
-            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
-            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
-            this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
-            this.M3U8_OutputButton.TabIndex = 25;
-            this.M3U8_OutputButton.Text = "Output Folder";
-            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
+            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel71.Location = new System.Drawing.Point(0, 0);
+            this.panel71.Name = "panel71";
+            this.panel71.Size = new System.Drawing.Size(55, 38);
+            this.panel71.TabIndex = 0;
             // 
-            // M3U8_ProgressBar
+            // Update_CheckForUpdateButton
             // 
-            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
-            this.M3U8_ProgressBar.Size = new System.Drawing.Size(783, 20);
-            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.M3U8_ProgressBar.TabIndex = 24;
+            this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
+            this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
+            this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
+            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(90, 24);
+            this.Update_CheckForUpdateButton.TabIndex = 26;
+            this.Update_CheckForUpdateButton.Text = "Check For Update";
+            this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
+            this.Update_CheckForUpdateButton.Click += new System.EventHandler(this.Update_CheckForUpdateButton_Click);
             // 
-            // M3U8_OutputFolderTextbox
+            // panel73
             // 
-            this.M3U8_OutputFolderTextbox.Enabled = false;
-            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
-            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
-            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(783, 22);
-            this.M3U8_OutputFolderTextbox.TabIndex = 23;
+            this.panel73.Controls.Add(this.label78);
+            this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel73.Location = new System.Drawing.Point(0, 0);
+            this.panel73.Name = "panel73";
+            this.panel73.Size = new System.Drawing.Size(919, 44);
+            this.panel73.TabIndex = 8;
             // 
-            // M3U8_StartButton
+            // label78
             // 
-            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
-            this.M3U8_StartButton.Name = "M3U8_StartButton";
-            this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
-            this.M3U8_StartButton.TabIndex = 22;
-            this.M3U8_StartButton.Text = "Start Download";
-            this.M3U8_StartButton.UseVisualStyleBackColor = false;
+            this.label78.BackColor = System.Drawing.Color.Transparent;
+            this.label78.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label78.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label78.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label78.Location = new System.Drawing.Point(22, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(897, 44);
+            this.label78.TabIndex = 7;
+            this.label78.Text = "Updates";
+            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel51
+            // panel74
             // 
-            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel51.Controls.Add(this.label46);
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel51.Location = new System.Drawing.Point(0, 0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(882, 38);
-            this.panel51.TabIndex = 3;
+            this.panel74.BackColor = System.Drawing.Color.White;
+            this.panel74.Controls.Add(this.groupBox4);
+            this.panel74.Controls.Add(this.panel75);
+            this.panel74.Location = new System.Drawing.Point(27, 171);
+            this.panel74.Name = "panel74";
+            this.panel74.Size = new System.Drawing.Size(882, 125);
+            this.panel74.TabIndex = 2;
             // 
-            // label46
+            // groupBox4
             // 
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label46.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(55, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(447, 38);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "Output";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.groupBox4.Controls.Add(this.panel72);
+            this.groupBox4.Controls.Add(this.panel91);
+            this.groupBox4.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.groupBox4.Location = new System.Drawing.Point(9, 44);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(864, 72);
+            this.groupBox4.TabIndex = 55;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "FFMPEG";
             // 
-            // panel52
+            // panel72
             // 
-            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel52.Location = new System.Drawing.Point(0, 0);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(55, 38);
-            this.panel52.TabIndex = 0;
+            this.panel72.Controls.Add(this.panel89);
+            this.panel72.Controls.Add(this.panel90);
+            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel72.Location = new System.Drawing.Point(3, 43);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(858, 23);
+            this.panel72.TabIndex = 1;
             // 
-            // panel53
+            // panel89
             // 
-            this.panel53.Location = new System.Drawing.Point(719, 495);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(200, 73);
-            this.panel53.TabIndex = 1;
+            this.panel89.Controls.Add(this.Update_DownloadButton);
+            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel89.Location = new System.Drawing.Point(562, 0);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(296, 23);
+            this.panel89.TabIndex = 1;
+            // 
+            // Update_DownloadButton
+            // 
+            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
+            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_DownloadButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
+            this.Update_DownloadButton.Name = "Update_DownloadButton";
+            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 23);
+            this.Update_DownloadButton.TabIndex = 71;
+            this.Update_DownloadButton.Text = "Loading...";
+            this.Update_DownloadButton.UseVisualStyleBackColor = false;
+            this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
+            // 
+            // panel90
+            // 
+            this.panel90.Controls.Add(this.Update_LatestUpdateLabel);
+            this.panel90.Controls.Add(this.label24);
+            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel90.Location = new System.Drawing.Point(0, 0);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(295, 23);
+            this.panel90.TabIndex = 0;
+            // 
+            // Update_LatestUpdateLabel
+            // 
+            this.Update_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
+            this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
+            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 23);
+            this.Update_LatestUpdateLabel.TabIndex = 2;
+            this.Update_LatestUpdateLabel.Text = "-";
+            this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label24.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label24.Location = new System.Drawing.Point(0, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 23);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Latest Update:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel91
+            // 
+            this.panel91.Controls.Add(this.panel92);
+            this.panel91.Controls.Add(this.panel93);
+            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel91.Location = new System.Drawing.Point(3, 18);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(858, 25);
+            this.panel91.TabIndex = 0;
+            // 
+            // panel92
+            // 
+            this.panel92.Controls.Add(this.Update_OnlineVerLabel);
+            this.panel92.Controls.Add(this.label35);
+            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel92.Location = new System.Drawing.Point(562, 0);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(296, 25);
+            this.panel92.TabIndex = 1;
+            // 
+            // Update_OnlineVerLabel
+            // 
+            this.Update_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_OnlineVerLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Update_OnlineVerLabel.Location = new System.Drawing.Point(106, 0);
+            this.Update_OnlineVerLabel.Name = "Update_OnlineVerLabel";
+            this.Update_OnlineVerLabel.Size = new System.Drawing.Size(190, 25);
+            this.Update_OnlineVerLabel.TabIndex = 2;
+            this.Update_OnlineVerLabel.Text = "-";
+            this.Update_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label35.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label35.Location = new System.Drawing.Point(0, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(106, 25);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Online FFmpeg Version:";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel93
+            // 
+            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
+            this.panel93.Controls.Add(this.label37);
+            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel93.Location = new System.Drawing.Point(0, 0);
+            this.panel93.Name = "panel93";
+            this.panel93.Size = new System.Drawing.Size(295, 25);
+            this.panel93.TabIndex = 0;
+            // 
+            // Update_InstalledVersionLabel
+            // 
+            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
+            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
+            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
+            this.Update_InstalledVersionLabel.TabIndex = 1;
+            this.Update_InstalledVersionLabel.Text = "-";
+            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label37
+            // 
+            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label37.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(118, 25);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Installed FFmpeg Version:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel75
+            // 
+            this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel75.Controls.Add(this.label79);
+            this.panel75.Controls.Add(this.panel76);
+            this.panel75.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel75.Location = new System.Drawing.Point(0, 0);
+            this.panel75.Name = "panel75";
+            this.panel75.Size = new System.Drawing.Size(882, 38);
+            this.panel75.TabIndex = 3;
+            // 
+            // label79
+            // 
+            this.label79.BackColor = System.Drawing.Color.Transparent;
+            this.label79.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label79.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label79.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label79.ForeColor = System.Drawing.Color.White;
+            this.label79.Location = new System.Drawing.Point(55, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(447, 38);
+            this.label79.TabIndex = 6;
+            this.label79.Text = "Installed Information";
+            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel76
+            // 
+            this.panel76.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel76.Location = new System.Drawing.Point(0, 0);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(55, 38);
+            this.panel76.TabIndex = 0;
+            // 
+            // panel77
+            // 
+            this.panel77.Location = new System.Drawing.Point(719, 495);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(200, 73);
+            this.panel77.TabIndex = 1;
             // 
             // ArgumentMainPanel
             // 
             this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ArgumentMainPanel.Controls.Add(this.button9);
-            this.ArgumentMainPanel.Controls.Add(this.button21);
-            this.ArgumentMainPanel.Controls.Add(this.button24);
-            this.ArgumentMainPanel.Controls.Add(this.button26);
-            this.ArgumentMainPanel.Controls.Add(this.button27);
-            this.ArgumentMainPanel.Controls.Add(this.ArgumentPreviewBox);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
             this.ArgumentMainPanel.Controls.Add(this.panel41);
             this.ArgumentMainPanel.Controls.Add(this.panel45);
             this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2200,84 +2242,85 @@
             this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
             this.ArgumentMainPanel.TabIndex = 7;
             // 
-            // button9
+            // Argument_ShowM3U8Button
             // 
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(277, 47);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(76, 24);
-            this.button9.TabIndex = 74;
-            this.button9.Text = "Show M3U8";
-            this.button9.UseVisualStyleBackColor = false;
+            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
+            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
+            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(76, 24);
+            this.Argument_ShowM3U8Button.TabIndex = 74;
+            this.Argument_ShowM3U8Button.Text = "Show M3U8";
+            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
             // 
-            // button21
+            // Argument_ShowMergeButton
             // 
-            this.button21.BackColor = System.Drawing.Color.White;
-            this.button21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.Location = new System.Drawing.Point(193, 47);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(78, 24);
-            this.button21.TabIndex = 73;
-            this.button21.Text = "Show Merge";
-            this.button21.UseVisualStyleBackColor = false;
+            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
+            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
+            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(78, 24);
+            this.Argument_ShowMergeButton.TabIndex = 73;
+            this.Argument_ShowMergeButton.Text = "Show Merge";
+            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // Argument_ShowCutButton
             // 
-            this.button24.BackColor = System.Drawing.Color.White;
-            this.button24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button24.Location = new System.Drawing.Point(119, 47);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(68, 24);
-            this.button24.TabIndex = 72;
-            this.button24.Text = "Show Cut";
-            this.button24.UseVisualStyleBackColor = false;
+            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
+            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
+            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
+            this.Argument_ShowCutButton.TabIndex = 72;
+            this.Argument_ShowCutButton.Text = "Show Cut";
+            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // Argument_RunArgumentButton
             // 
-            this.button26.BackColor = System.Drawing.Color.White;
-            this.button26.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button26.Location = new System.Drawing.Point(792, 47);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(117, 24);
-            this.button26.TabIndex = 71;
-            this.button26.Text = "Run Argument ▶";
-            this.button26.UseVisualStyleBackColor = false;
+            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
+            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
+            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
+            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
+            this.Argument_RunArgumentButton.TabIndex = 71;
+            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
+            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
             // 
-            // button27
+            // Argument_ShowEncodeButton
             // 
-            this.button27.BackColor = System.Drawing.Color.White;
-            this.button27.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button27.Location = new System.Drawing.Point(27, 47);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(86, 24);
-            this.button27.TabIndex = 70;
-            this.button27.Text = "Show Encode";
-            this.button27.UseVisualStyleBackColor = false;
+            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
+            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
+            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(86, 24);
+            this.Argument_ShowEncodeButton.TabIndex = 70;
+            this.Argument_ShowEncodeButton.Text = "Show Encode";
+            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
             // 
-            // ArgumentPreviewBox
+            // Argument_PreviewBox
             // 
-            this.ArgumentPreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.ArgumentPreviewBox.Location = new System.Drawing.Point(27, 77);
-            this.ArgumentPreviewBox.Multiline = true;
-            this.ArgumentPreviewBox.Name = "ArgumentPreviewBox";
-            this.ArgumentPreviewBox.Size = new System.Drawing.Size(882, 412);
-            this.ArgumentPreviewBox.TabIndex = 69;
+            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
+            this.Argument_PreviewBox.Multiline = true;
+            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
+            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
+            this.Argument_PreviewBox.TabIndex = 69;
             // 
             // panel41
             // 
@@ -2727,9 +2770,11 @@
             // panel66
             // 
             this.panel66.BackColor = System.Drawing.Color.White;
+            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
+            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
             this.panel66.Controls.Add(this.button19);
             this.panel66.Controls.Add(this.progressBar5);
-            this.panel66.Controls.Add(this.textBox5);
+            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
             this.panel66.Controls.Add(this.button20);
             this.panel66.Controls.Add(this.panel67);
             this.panel66.Location = new System.Drawing.Point(27, 377);
@@ -2758,14 +2803,14 @@
             this.progressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar5.TabIndex = 24;
             // 
-            // textBox5
+            // Cut_OutputDirectoryBox
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.textBox5.Location = new System.Drawing.Point(3, 45);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(783, 22);
-            this.textBox5.TabIndex = 23;
+            this.Cut_OutputDirectoryBox.Enabled = false;
+            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
+            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
+            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
+            this.Cut_OutputDirectoryBox.TabIndex = 23;
             // 
             // button20
             // 
@@ -3143,9 +3188,11 @@
             // panel58
             // 
             this.panel58.BackColor = System.Drawing.Color.White;
+            this.panel58.Controls.Add(this.Merge_DefaultOutputButton);
+            this.panel58.Controls.Add(this.Merge_OpenDirectoryButton);
             this.panel58.Controls.Add(this.button17);
             this.panel58.Controls.Add(this.progressBar4);
-            this.panel58.Controls.Add(this.textBox6);
+            this.panel58.Controls.Add(this.Merge_OutputDirectoryTextbox);
             this.panel58.Controls.Add(this.button18);
             this.panel58.Controls.Add(this.panel59);
             this.panel58.Location = new System.Drawing.Point(27, 377);
@@ -3174,14 +3221,14 @@
             this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar4.TabIndex = 24;
             // 
-            // textBox6
+            // Merge_OutputDirectoryTextbox
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.textBox6.Location = new System.Drawing.Point(3, 45);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(783, 22);
-            this.textBox6.TabIndex = 23;
+            this.Merge_OutputDirectoryTextbox.Enabled = false;
+            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
+            this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
+            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(733, 22);
+            this.Merge_OutputDirectoryTextbox.TabIndex = 23;
             // 
             // button18
             // 
@@ -4194,7 +4241,7 @@
             // TopLogo
             // 
             this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegLogo;
+            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
             this.TopLogo.Location = new System.Drawing.Point(0, 0);
             this.TopLogo.Name = "TopLogo";
             this.TopLogo.Size = new System.Drawing.Size(200, 27);
@@ -4207,16 +4254,118 @@
             // 
             this.toolTip.AutomaticDelay = 250;
             // 
-            // Encoder_HideConsoleToggle
+            // TraySystem
             // 
-            this.Encoder_HideConsoleToggle.AutoSize = true;
-            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(701, 76);
-            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
-            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
-            this.Encoder_HideConsoleToggle.TabIndex = 61;
-            this.Encoder_HideConsoleToggle.Text = "Hide Console";
-            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
+            this.TraySystem.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.TraySystem.BalloonTipText = "The software is still running!";
+            this.TraySystem.BalloonTipTitle = "FFmpeg Utilizer";
+            this.TraySystem.Icon = ((System.Drawing.Icon)(resources.GetObject("TraySystem.Icon")));
+            this.TraySystem.Text = "FFmpeg Utilizer";
+            this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
+            // 
+            // Encoder_OpenDirectoryButton
+            // 
+            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
+            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_OpenDirectoryButton.TabIndex = 61;
+            this.Encoder_OpenDirectoryButton.Text = "▶";
+            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
+            // 
+            // Cut_OpenDirectoryButton
+            // 
+            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
+            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_OpenDirectoryButton.TabIndex = 62;
+            this.Cut_OpenDirectoryButton.Text = "▶";
+            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
+            // 
+            // Merge_OpenDirectoryButton
+            // 
+            this.Merge_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
+            this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Merge_OpenDirectoryButton.TabIndex = 63;
+            this.Merge_OpenDirectoryButton.Text = "▶";
+            this.Merge_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Merge_OpenDirectoryButton.Click += new System.EventHandler(this.Merge_OpenDirectoryButton_Click);
+            // 
+            // M3U8_OpenDirectoryButton
+            // 
+            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
+            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_OpenDirectoryButton.TabIndex = 64;
+            this.M3U8_OpenDirectoryButton.Text = "▶";
+            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
+            // 
+            // Encoder_DefaultOutputButton
+            // 
+            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
+            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_DefaultOutputButton.TabIndex = 60;
+            this.Encoder_DefaultOutputButton.Text = "✓";
+            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
+            // 
+            // Cut_DefaultOutputButton
+            // 
+            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
+            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_DefaultOutputButton.TabIndex = 61;
+            this.Cut_DefaultOutputButton.Text = "✓";
+            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
+            // 
+            // Merge_DefaultOutputButton
+            // 
+            this.Merge_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
+            this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Merge_DefaultOutputButton.TabIndex = 64;
+            this.Merge_DefaultOutputButton.Text = "✓";
+            this.Merge_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Merge_DefaultOutputButton.Click += new System.EventHandler(this.Merge_DefaultOutputButton_Click);
+            // 
+            // M3U8_DefaultOutputButton
+            // 
+            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
+            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_DefaultOutputButton.TabIndex = 65;
+            this.M3U8_DefaultOutputButton.Text = "✓";
+            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
             // 
             // Main
             // 
@@ -4226,6 +4375,7 @@
             this.ClientSize = new System.Drawing.Size(1080, 650);
             this.Controls.Add(this.FullPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Main";
@@ -4233,23 +4383,6 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
-            this.UpdateMainPanel.ResumeLayout(false);
-            this.panel94.ResumeLayout(false);
-            this.panel96.ResumeLayout(false);
-            this.panel97.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.panel40.ResumeLayout(false);
-            this.panel42.ResumeLayout(false);
-            this.panel73.ResumeLayout(false);
-            this.panel74.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.panel72.ResumeLayout(false);
-            this.panel89.ResumeLayout(false);
-            this.panel90.ResumeLayout(false);
-            this.panel91.ResumeLayout(false);
-            this.panel92.ResumeLayout(false);
-            this.panel93.ResumeLayout(false);
-            this.panel75.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.Settings_NetPanel.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -4271,6 +4404,12 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
+            this.M3U8MainPanel.ResumeLayout(false);
+            this.M3U8MainPanel.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel51.ResumeLayout(false);
             this.EncoderMainPanel.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -4279,11 +4418,23 @@
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
             this.panel47.ResumeLayout(false);
-            this.M3U8MainPanel.ResumeLayout(false);
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel51.ResumeLayout(false);
+            this.UpdateMainPanel.ResumeLayout(false);
+            this.panel94.ResumeLayout(false);
+            this.panel96.ResumeLayout(false);
+            this.panel97.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel40.ResumeLayout(false);
+            this.panel42.ResumeLayout(false);
+            this.panel73.ResumeLayout(false);
+            this.panel74.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.panel72.ResumeLayout(false);
+            this.panel89.ResumeLayout(false);
+            this.panel90.ResumeLayout(false);
+            this.panel91.ResumeLayout(false);
+            this.panel92.ResumeLayout(false);
+            this.panel93.ResumeLayout(false);
+            this.panel75.ResumeLayout(false);
             this.ArgumentMainPanel.ResumeLayout(false);
             this.ArgumentMainPanel.PerformLayout();
             this.panel41.ResumeLayout(false);
@@ -4481,7 +4632,6 @@
         private System.Windows.Forms.Button M3U8_OutputButton;
         public System.Windows.Forms.ProgressBar M3U8_ProgressBar;
         private System.Windows.Forms.TextBox M3U8_OutputFolderTextbox;
-        public System.Windows.Forms.Button M3U8_StartButton;
         private System.Windows.Forms.Panel panel51;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel panel52;
@@ -4496,7 +4646,7 @@
         private System.Windows.Forms.Panel panel66;
         private System.Windows.Forms.Button button19;
         public System.Windows.Forms.ProgressBar progressBar5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Cut_OutputDirectoryBox;
         public System.Windows.Forms.Button button20;
         private System.Windows.Forms.Panel panel67;
         private System.Windows.Forms.Label label68;
@@ -4556,7 +4706,7 @@
         private System.Windows.Forms.Panel panel58;
         private System.Windows.Forms.Button button17;
         public System.Windows.Forms.ProgressBar progressBar4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Merge_OutputDirectoryTextbox;
         public System.Windows.Forms.Button button18;
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.Label label89;
@@ -4584,20 +4734,18 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Button M3U8_RemoveM3U8Button;
         private System.Windows.Forms.Button M3U8_AddM3U8Button;
-        public System.Windows.Forms.ListView M3U8_listView;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.Button M3U8_PlayButton;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.TextBox ArgumentPreviewBox;
+        private System.Windows.Forms.Button Argument_ShowM3U8Button;
+        private System.Windows.Forms.Button Argument_ShowMergeButton;
+        private System.Windows.Forms.Button Argument_ShowCutButton;
+        private System.Windows.Forms.Button Argument_RunArgumentButton;
+        private System.Windows.Forms.Button Argument_ShowEncodeButton;
+        private System.Windows.Forms.TextBox Argument_PreviewBox;
         private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.Panel panel47;
         private System.Windows.Forms.Label label39;
@@ -4683,6 +4831,19 @@
         internal System.Windows.Forms.Label Settings_InstalledVersionLabel;
         internal System.Windows.Forms.Label Settings_LatestUpdateLabel;
         private System.Windows.Forms.CheckBox Encoder_HideConsoleToggle;
+        private System.Windows.Forms.CheckBox M3U8_HideConsoleCheckbox;
+        private System.Windows.Forms.NotifyIcon TraySystem;
+        internal System.Windows.Forms.Button M3U8_StartButton;
+        internal System.Windows.Forms.ListView M3U8_listView;
+        private System.Windows.Forms.Button Settings_OpenDirectoryButton;
+        private System.Windows.Forms.Button Encoder_OpenDirectoryButton;
+        private System.Windows.Forms.Button Cut_OpenDirectoryButton;
+        private System.Windows.Forms.Button Merge_OpenDirectoryButton;
+        private System.Windows.Forms.Button M3U8_OpenDirectoryButton;
+        private System.Windows.Forms.Button Encoder_DefaultOutputButton;
+        private System.Windows.Forms.Button Cut_DefaultOutputButton;
+        private System.Windows.Forms.Button Merge_DefaultOutputButton;
+        private System.Windows.Forms.Button M3U8_DefaultOutputButton;
     }
 }
 

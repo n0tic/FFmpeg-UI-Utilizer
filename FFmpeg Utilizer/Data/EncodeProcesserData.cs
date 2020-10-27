@@ -7,13 +7,13 @@ namespace FFMPEG_Utilizer.Data
     // TODO: Fix main to store + use reset methods
 
     [System.Serializable]
-    public class ProcesserData
+    public class EncodeProcesserData
     {
         public string outputFolder;
         public bool hideConsole;
         public Queue<Argument> queue = new Queue<Argument>();
 
-        public ProcesserData(string outputFolder, bool hideConsole)
+        public EncodeProcesserData(string outputFolder, bool hideConsole)
         {
             this.outputFolder = outputFolder;
             this.hideConsole = hideConsole;

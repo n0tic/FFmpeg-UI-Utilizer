@@ -1,47 +1,44 @@
-﻿using FFMPEG_Utilizer.Data;
+﻿using FFmpeg_Utilizer.Data;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Media;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-
-/*
- * This is a stupid class that I wrote under duress. I apologize to all affected.
- * Those with heart conditions are advised to not continue
- *
- * ---> Because this is the reincarnation of a system I had to re-invent after an accidental deletion of this entire folder structure using SHIFT+DEL on windows.
- * I had no version control or backup. No File History or File Recovery could do it for me. Sadface - FML.
- */
 
 namespace FFmpeg_Utilizer.Modules
 {
-    public class EncodingProcesser
+    public class M3U8Processor
     {
         public Main main;
 
-        internal bool encodingInProcess = false;
+        internal bool inProcess = false;
 
-        private EncodeProcesserData processQueue;
+        private M3U8ProcesserData processQueue;
 
         internal Thread encodingThread;
         internal Thread queueThread;
 
-        private Process encodingProcess;
+        private Process m3u8Process;
 
-        public EncodingProcesser(Main _main) => main = _main;
+        public M3U8Processor(Main _main) => this.main = _main;
 
-        internal void ProcessFileQueue(EncodeProcesserData data)
+
+        internal void ProcessFileQueue(M3U8ProcesserData data)
         {
-            if (encodingInProcess)
+            if (inProcess)
             {
                 try
                 {
                     if (processQueue.queue.Count > 0)
                     {
-                        ListView.ListViewItemCollection items = main.Encoder_FilesList.Items;
+                        ListView.ListViewItemCollection items = main.M3U8_listView.Items;
                         foreach (ListViewItem item in items)
                         {
                             switch (item.SubItems[1].Text)
@@ -61,7 +58,7 @@ namespace FFmpeg_Utilizer.Modules
                         }
                     }
 
-                    encodingProcess.Kill();
+                    m3u8Process.Kill();
                 }
                 catch (Win32Exception) { }
                 catch (NotSupportedException) { }
@@ -69,9 +66,9 @@ namespace FFmpeg_Utilizer.Modules
 
                 KillThreads();
 
-                main.Encoder_ProgressBar.Value = 0;
-                main.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
-                main.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229); // 99, 172, 229 blue | 255, 128, 128 red
+                main.M3U8_ProgressBar.Value = 0;
+                main.M3U8_StartButton.Text = "Start Encoding";
+                main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229); // 99, 172, 229 blue | 255, 128, 128 red
             }
             else
             {
@@ -82,15 +79,15 @@ namespace FFmpeg_Utilizer.Modules
                 }
 
                 processQueue = data;
-                main.Encoder_ProgressBar.Value = 0;
-                main.Encoder_ProgressBar.Maximum = data.queue.Count;
+                main.M3U8_ProgressBar.Value = 0;
+                main.M3U8_ProgressBar.Maximum = data.queue.Count;
 
                 queueThread = new Thread(() => StartQueueProcess());
                 queueThread.Start();
 
-                encodingInProcess = true;
-                main.Encoder_StartEncodingProcessButton.Text = "Stop Encoding";
-                main.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
+                inProcess = true;
+                main.M3U8_StartButton.Text = "Stop Encoding";
+                main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
             }
         }
 
@@ -99,10 +96,9 @@ namespace FFmpeg_Utilizer.Modules
             bool queueProcess = true;
             while (queueProcess)
             {
-                main.Invoke(new Action(() =>
-                {
-                    var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
-                    item.SubItems[1].Text = "¿ Processing";
+                main.Invoke(new Action(() => {
+                    var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
+                    item.SubItems[2].Text = "¿ Processing";
                 }));
 
                 encodingThread = new Thread(() => StartEncodingProcess());
@@ -111,9 +107,9 @@ namespace FFmpeg_Utilizer.Modules
                 //Give time for application to start. Is it needed?
                 Thread.Sleep(100);
 
-                while (encodingProcess != null) Thread.Sleep(25);
+                while (m3u8Process != null) Thread.Sleep(25);
 
-                FileInfo file = new FileInfo(processQueue.outputFolder + @"\" + processQueue.queue.Peek().outputName + "." + processQueue.queue.Peek().outputExtension);
+                FileInfo file = new FileInfo(processQueue.outputFolder + @"\" + processQueue.queue.Peek().name + ".mp4");
 
                 if (File.Exists(file.FullName))
                 {
@@ -121,16 +117,16 @@ namespace FFmpeg_Utilizer.Modules
                     {
                         main.Invoke(new Action(() =>
                         {
-                            var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
-                            item.SubItems[1].Text = "✓ Finished";
+                            var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
+                            item.SubItems[2].Text = "✓ Finished";
                         }));
                     }
                     else
                     {
                         main.Invoke(new Action(() =>
                         {
-                            var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
-                            item.SubItems[1].Text = "✗ Failed";
+                            var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
+                            item.SubItems[2].Text = "✗ Failed";
                         }));
                     }
                 }
@@ -138,14 +134,13 @@ namespace FFmpeg_Utilizer.Modules
                 {
                     main.Invoke(new Action(() =>
                     {
-                        var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
-                        item.SubItems[1].Text = "✗ Failed";
+                        var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
+                        item.SubItems[2].Text = "✗ Failed";
                     }));
                 }
 
-                main.Invoke(new Action(() =>
-                {
-                    main.Encoder_ProgressBar.Value++;
+                main.Invoke(new Action(() => {
+                    main.M3U8_ProgressBar.Value++;
                 }));
 
                 processQueue.queue.Dequeue();
@@ -157,39 +152,37 @@ namespace FFmpeg_Utilizer.Modules
             {
                 //Don't reset if successful.
                 SystemSounds.Exclamation.Play();
-                main.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
-                main.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
+                main.M3U8_StartButton.Text = "Start Encoding";
+                main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
             }));
 
-            encodingInProcess = false;
+            inProcess = false;
         }
 
         private void StartEncodingProcess()
         {
-            string args = processQueue.queue.Peek().ExecuteArgs();
-
-            encodingProcess = new Process
+            m3u8Process = new Process
             {
                 StartInfo =
                 {
                     FileName = main.settings.ffmpegPath,
-                    Arguments = args,
+                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -acodec copy -vcodec copy -absf aac_adtstoasc \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4",
                     UseShellExecute = false
                 }
             };
 
-            if (processQueue.hideConsole) encodingProcess.StartInfo.CreateNoWindow = true;
+            if (processQueue.hideConsole) m3u8Process.StartInfo.CreateNoWindow = true;
 
             try
             {
-                encodingProcess.Start(); // ffmpegProcess.Id
-                encodingProcess.WaitForExit();
+                m3u8Process.Start(); // ffmpegProcess.Id
+                m3u8Process.WaitForExit();
             }
             catch (ObjectDisposedException x) { MessageBox.Show(x.Message); }
             catch (InvalidOperationException x) { MessageBox.Show(x.Message); }
             catch (Win32Exception x) { MessageBox.Show(x.Message); }
             catch (PlatformNotSupportedException x) { MessageBox.Show(x.Message); }
-            finally { encodingProcess = null; }
+            finally { m3u8Process = null; }
         }
 
         internal void KillThreads()
@@ -203,7 +196,7 @@ namespace FFmpeg_Utilizer.Modules
             catch (System.Security.SecurityException) { }
             catch (ThreadStateException) { }
 
-            encodingInProcess = false;
+            inProcess = false;
         }
     }
 }
