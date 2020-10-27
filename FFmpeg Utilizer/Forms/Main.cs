@@ -587,7 +587,24 @@ namespace FFmpeg_Utilizer
 
         private void M3U8_AddM3U8Button_Click(object sender, EventArgs e)
         {
-            new AddM3U8URL().ShowDialog();
+            using(AddM3U8URL form = new AddM3U8URL())
+            {
+                DialogResult res = form.ShowDialog();
+                if(res == DialogResult.OK)
+                {
+                    AddM3U8URLData(form.NameField.Text, form.URLField.Text);
+                }
+            }
+        }
+
+        private void AddM3U8URLData(string customName, string url)
+        {
+            string name;
+            if (customName == "" || customName == "Name...") name = Path.GetFileNameWithoutExtension(new Uri(url).LocalPath);
+            else name = customName;
+
+            ListViewItem item = new ListViewItem(new[] { name, url, "• Waiting" });
+            M3U8_listView.Items.Add(item);
         }
     }
 }

@@ -56,5 +56,11 @@ namespace FFmpeg_Utilizer.Forms
         }
 
         private void TopLogo_MouseDown(object sender, MouseEventArgs e) => Core.MoveWindow(this, e);
+
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            Close();
+        }
     }
 }

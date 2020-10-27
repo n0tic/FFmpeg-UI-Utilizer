@@ -123,6 +123,7 @@
             this.OKButton.TabIndex = 73;
             this.OKButton.Text = "Add HLS/M3U8 URL";
             this.OKButton.UseVisualStyleBackColor = false;
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // NameField
             // 
