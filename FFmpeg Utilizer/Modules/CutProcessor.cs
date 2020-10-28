@@ -79,7 +79,7 @@ namespace FFmpeg_Utilizer.Modules
 
                 main.Invoke(new Action(() =>
                 {
-                    main.M3U8_ProgressBar.Value++;
+                    main.Cut_ProgressBar.Value++;
                 }));
 
                 processQueue.timestamps.Dequeue();
@@ -91,8 +91,8 @@ namespace FFmpeg_Utilizer.Modules
             {
                 //Don't reset if successful.
                 SystemSounds.Exclamation.Play();
-                main.M3U8_StartButton.Text = "Start Cutting";
-                main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
+                main.Cut_StartCuttingButton.Text = "Start Cutting";
+                main.Cut_StartCuttingButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
             }));
 
             inProcess = false;
@@ -114,7 +114,7 @@ namespace FFmpeg_Utilizer.Modules
                     UseShellExecute = false
                 }
             };
-            //-y -ss 0:00:0.0 -i "C:\DownloadMerger m3u8 files\Pokemon S01\Pokemon S01 E01.ts" -c copy -t 0:00:15.0 "C:\DownloadMerger m3u8 files\Pokemon S01\Encoded\Pokemon S01 E01.ts"
+
             if (main.Cut_HideConsoleToggle.Checked) cutProcess.StartInfo.CreateNoWindow = true;
 
             try

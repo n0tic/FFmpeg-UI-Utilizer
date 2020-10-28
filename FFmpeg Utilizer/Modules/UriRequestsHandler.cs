@@ -56,7 +56,6 @@ namespace FFmpeg_Utilizer.Modules
                     connection = tcpServer.AcceptSocket();
                 }
                 catch { }
-                //Core.WriteLine("Connection Type " + connection.SocketType, Core.LogType.Info);
 
                 if (connection.Connected)
                 {
@@ -104,11 +103,11 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             main.Invoke(new Action(() =>
                             {
-                                if (URIRequestExtender.IsValidUrl(tmpRequests[1]) && URIRequestExtender.IsM3u8(tmpRequests[1]))
+                                if (URIRequestExtender.IsValidUrl(tmpRequests[1]) && URIRequestExtender.IsM3u8(tmpRequests[1]) && !main.m3u8Processor.inProcess)
                                 {
                                     try
                                     {
-                                        //Is the GET request encrypted? "%2F" == "/"
+                                        //Is the GET request http? "%2F" == "/"
                                         if (tmpRequests[1].Contains("%2F"))
                                             tmpRequests[1] = URIRequestExtender.FixURL(tmpRequests[1]);
 

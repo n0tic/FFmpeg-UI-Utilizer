@@ -262,6 +262,24 @@ namespace FFmpeg_Utilizer
 
             #region Cut
 
+            foreach (Libs.VCodec codec in (Libs.VCodec[])Enum.GetValues(typeof(Libs.VCodec)))
+                Cut_VideoCodecBox.Items.Add(codec);
+            Cut_VideoCodecBox.SelectedIndex = 0;
+
+            foreach (Libs.ACodec codec in (Libs.ACodec[])Enum.GetValues(typeof(Libs.ACodec)))
+                Cut_AudioCodecBox.Items.Add(codec);
+            Cut_AudioCodecBox.SelectedIndex = 0;
+
+            foreach (Libs.Preset quality in (Libs.Preset[])Enum.GetValues(typeof(Libs.Preset)))
+                Cut_PresetBox.Items.Add(quality);
+            Cut_PresetBox.SelectedIndex = 0;
+
+            for (int i = 0; i <= 51; i++)
+            {
+                Cut_CRFBox.Items.Add(i.ToString());
+            }
+            Cut_CRFBox.SelectedIndex = 23;
+
             if (settings.loaded)
             {
                 Cut_HideConsoleToggle.Checked = settings.hideConsole;
@@ -468,6 +486,12 @@ namespace FFmpeg_Utilizer
 
         private void Encoder_FilesList_DragDrop(object sender, DragEventArgs e)
         {
+            if (encodingProcessor.encodingInProcess)
+            {
+                notice.SetNotice("Encoder is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
             //Clear listview.
             Encoder_FilesList.Items.Clear();
 
@@ -533,6 +557,12 @@ namespace FFmpeg_Utilizer
 
         private void HLS_RemoveHLSButton_Click(object sender, EventArgs e)
         {
+            if (m3u8Processor.inProcess)
+            {
+                notice.SetNotice("M3U8 is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
             if (M3U8_listView.SelectedItems.Count > 0) M3U8_listView.Items.Remove(M3U8_listView.SelectedItems[0]);
         }
 
@@ -627,6 +657,12 @@ namespace FFmpeg_Utilizer
 
         private void M3U8_AddM3U8Button_Click(object sender, EventArgs e)
         {
+            if (m3u8Processor.inProcess)
+            {
+                notice.SetNotice("M3U8 is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
             using (AddM3U8URL form = new AddM3U8URL())
             {
                 DialogResult res = form.ShowDialog();
@@ -768,6 +804,12 @@ namespace FFmpeg_Utilizer
 
         private void Cut_AddTimespanButton_Click(object sender, EventArgs e)
         {
+            if (cutProcessor.inProcess)
+            {
+                notice.SetNotice("Cutting is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
             string timespan = GetTimespanString();
             string start = timespan.Split(' ')[0];
             string end = timespan.Split(' ')[2];
@@ -783,6 +825,12 @@ namespace FFmpeg_Utilizer
 
         private void Cut_RemoveSelectedButton_Click(object sender, EventArgs e)
         {
+            if (cutProcessor.inProcess)
+            {
+                notice.SetNotice("Cutting is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
             if (Cut_listView.SelectedItems.Count > 0) Cut_listView.Items.Remove(Cut_listView.SelectedItems[0]);
         }
 
@@ -819,7 +867,7 @@ namespace FFmpeg_Utilizer
                 queue.Enqueue(new TimeStamps(start, end, queue.Count + 1));
             }
 
-            CutArgument processQueueData = new CutArgument(new FileInfo(Cut_MediaInputTextbox.Text), Cut_OutputDirectoryBox.Text, queue);
+            CutArgument processQueueData = new CutArgument(new FileInfo(Cut_MediaInputTextbox.Text), Cut_OutputDirectoryBox.Text, queue, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Cut_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Cut_AudioCodecBox.Text, true), Cut_CRFBox.Text, (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Cut_PresetBox.Text, true));
 
             //Start the encoding process.
             cutProcessor.ProcessFileQueue(processQueueData);
