@@ -55,7 +55,7 @@ namespace FFmpeg_Utilizer.Data
                     break;
             }
 
-            if(inputFile != null)
+            if (inputFile != null)
                 args += " -i \"" + inputFile.FullName + "\"";
             else
                 args += " -i \"C:\\inputfile.avi\"";

@@ -1,15 +1,11 @@
 ﻿using FFmpeg_Utilizer.Data;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Media;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
@@ -95,7 +91,8 @@ namespace FFmpeg_Utilizer.Modules
             bool queueProcess = true;
             while (queueProcess)
             {
-                main.Invoke(new Action(() => {
+                main.Invoke(new Action(() =>
+                {
                     var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
                     item.SubItems[2].Text = "¿ Processing";
                 }));
@@ -138,7 +135,8 @@ namespace FFmpeg_Utilizer.Modules
                     }));
                 }
 
-                main.Invoke(new Action(() => {
+                main.Invoke(new Action(() =>
+                {
                     main.M3U8_ProgressBar.Value++;
                 }));
 

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FFmpeg_Utilizer.Data
 {
@@ -20,7 +16,7 @@ namespace FFmpeg_Utilizer.Data
             this.timestamps = timestamps;
         }
 
-        public string ExecuteArgs() => "-y -ss " + timestamps.Peek().startTime + " -i \"" + inputMedia.FullName + "\" -c copy -t " + timestamps.Peek().endTime + " \"" + outputFolder + "\\" + inputMedia.Name + "\"";
+        public string ExecuteArgs() => "-y -ss " + timestamps.Peek().startTime + " -i \"" + inputMedia.FullName + "\" -t " + timestamps.Peek().endTime + " \"" + outputFolder + "\\" + Path.GetFileNameWithoutExtension(inputMedia.Name) + "_" + timestamps.Peek().id.ToString() + inputMedia.Extension + "\"";
     }
 
     public class TimeStamps

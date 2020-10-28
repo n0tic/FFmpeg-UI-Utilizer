@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
@@ -72,7 +72,7 @@
             this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
             this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.Cut_ProgressBar = new System.Windows.Forms.ProgressBar();
             this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
             this.Cut_StartCuttingButton = new System.Windows.Forms.Button();
             this.panel67 = new System.Windows.Forms.Panel();
@@ -368,6 +368,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.ToTrayButton = new System.Windows.Forms.PictureBox();
             this.TopLogo = new System.Windows.Forms.PictureBox();
+            this.Cut_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
             this.CutMainPanel.SuspendLayout();
@@ -497,11 +498,11 @@
             // panel95
             // 
             this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
-            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
@@ -525,6 +526,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.Cut_HideConsoleToggle);
             this.panel14.Controls.Add(this.Cut_RemoveSelectedButton);
             this.panel14.Controls.Add(this.Cut_listView);
             this.panel14.Controls.Add(this.groupBox2);
@@ -543,7 +545,7 @@
             this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(138, 69);
+            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(138, 287);
             this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
             this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
             this.Cut_RemoveSelectedButton.TabIndex = 73;
@@ -596,7 +598,7 @@
             this.groupBox2.Controls.Add(this.label83);
             this.groupBox2.Controls.Add(this.label84);
             this.groupBox2.Controls.Add(this.label85);
-            this.groupBox2.Location = new System.Drawing.Point(138, 105);
+            this.groupBox2.Location = new System.Drawing.Point(138, 89);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(343, 196);
             this.groupBox2.TabIndex = 69;
@@ -925,7 +927,7 @@
             this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
             this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
             this.panel66.Controls.Add(this.button19);
-            this.panel66.Controls.Add(this.progressBar5);
+            this.panel66.Controls.Add(this.Cut_ProgressBar);
             this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
             this.panel66.Controls.Add(this.Cut_StartCuttingButton);
             this.panel66.Controls.Add(this.panel67);
@@ -973,13 +975,13 @@
             this.button19.Text = "Output Folder";
             this.button19.UseVisualStyleBackColor = false;
             // 
-            // progressBar5
+            // Cut_ProgressBar
             // 
-            this.progressBar5.Location = new System.Drawing.Point(3, 75);
-            this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(783, 20);
-            this.progressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar5.TabIndex = 24;
+            this.Cut_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.Cut_ProgressBar.Name = "Cut_ProgressBar";
+            this.Cut_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Cut_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Cut_ProgressBar.TabIndex = 24;
             // 
             // Cut_OutputDirectoryBox
             // 
@@ -2769,7 +2771,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem2});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -4377,6 +4379,17 @@
             this.TopLogo.TabStop = false;
             this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
             // 
+            // Cut_HideConsoleToggle
+            // 
+            this.Cut_HideConsoleToggle.AutoSize = true;
+            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(138, 69);
+            this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
+            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Cut_HideConsoleToggle.TabIndex = 74;
+            this.Cut_HideConsoleToggle.Text = "Hide Console";
+            this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4656,9 +4669,7 @@
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Panel panel66;
         private System.Windows.Forms.Button button19;
-        public System.Windows.Forms.ProgressBar progressBar5;
         private System.Windows.Forms.TextBox Cut_OutputDirectoryBox;
-        public System.Windows.Forms.Button Cut_StartCuttingButton;
         private System.Windows.Forms.Panel panel67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Panel panel68;
@@ -4680,7 +4691,6 @@
         private System.Windows.Forms.Panel panel76;
         private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.Panel panel14;
-        public System.Windows.Forms.ListView Cut_listView;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.NumericUpDown Cut_EndMiliseconds;
@@ -4855,6 +4865,10 @@
         private System.Windows.Forms.Button M3U8_DefaultOutputButton;
         private System.Windows.Forms.Button Cut_RemoveSelectedButton;
         private System.Windows.Forms.PictureBox ToTrayButton;
+        internal System.Windows.Forms.ProgressBar Cut_ProgressBar;
+        internal System.Windows.Forms.Button Cut_StartCuttingButton;
+        internal System.Windows.Forms.ListView Cut_listView;
+        internal System.Windows.Forms.CheckBox Cut_HideConsoleToggle;
     }
 }
 

@@ -3,20 +3,14 @@
 using FFmpeg_Utilizer.Data;
 using FFmpeg_Utilizer.Forms;
 using FFmpeg_Utilizer.Modules;
-using FFMPEG_Utilizer;
 using FFMPEG_Utilizer.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Media;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer
@@ -28,6 +22,7 @@ namespace FFmpeg_Utilizer
 
         //Modules
         public NoticeModule notice;
+
         public UtilityUpdaterModule updater;
         public EncodingProcessor encodingProcessor;
         public M3U8Processor m3u8Processor;
@@ -37,7 +32,7 @@ namespace FFmpeg_Utilizer
         //FFplay process
         private Process PlayProcess;
 
-        bool hasInternet = true;
+        private bool hasInternet = true;
 
         public Main()
         {
@@ -48,7 +43,7 @@ namespace FFmpeg_Utilizer
 
         private void Main_Load(object sender, EventArgs e)
         {
-            if(hasInternet)
+            if (hasInternet)
                 updater.StartUpdateCheckAsync();
 
             SetupFolders();
@@ -124,7 +119,7 @@ namespace FFmpeg_Utilizer
             if (settings.loaded)
             {
                 if (File.Exists(settings.ffmpegPath)) Settings_FFmpegPathBox.Text = settings.ffmpegPath;
-                else if(File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg)))
+                else if (File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg)))
                 {
                     settings.ffmpegPath = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
                     Settings_FFmpegPathBox.Text = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
@@ -152,7 +147,7 @@ namespace FFmpeg_Utilizer
                 Settings_HideConsoleCheckbox.Checked = settings.hideConsole;
 
                 Settings_URIServerPort.Value = Convert.ToDecimal(settings.URIPort);
-                if(settings.URIautoStart)
+                if (settings.URIautoStart)
                 {
                     Settings_URIServerAutoStart.Checked = settings.URIautoStart;
                     Settings_URIServerCheckbox.Checked = settings.URIautoStart;
@@ -259,7 +254,7 @@ namespace FFmpeg_Utilizer
             }
             else
             {
-                if(Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
                     M3U8_OutputFolderTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
             }
 
@@ -269,6 +264,8 @@ namespace FFmpeg_Utilizer
 
             if (settings.loaded)
             {
+                Cut_HideConsoleToggle.Checked = settings.hideConsole;
+
                 if (Directory.Exists(settings.outputLocation))
                     Cut_OutputDirectoryBox.Text = settings.outputLocation;
                 else if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
@@ -282,15 +279,14 @@ namespace FFmpeg_Utilizer
 
             #endregion Cut
 
-
             //Set lower left information
             SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
             AuthorLabel.Text = Core.authorRealName + " AKA " + Core.authorName;
             GitLabel.Text = Core.softwareGIT;
         }
 
-
         #region Software Window
+
         private void NoticeCloseButton_Click(object sender, EventArgs e) => notice.CloseNotice();
 
         private void ApplicationCloseButton_Click(object sender, EventArgs e) => Application.Exit();
@@ -298,9 +294,11 @@ namespace FFmpeg_Utilizer
         private void ApplicationMinimizeButton_Click(object sender, EventArgs e) => WindowState = FormWindowState.Minimized;
 
         private void TopLogo_MouseDown(object sender, MouseEventArgs e) => Core.MoveWindow(this, e);
+
         #endregion Software Window
 
         #region Tabs
+
         private void AddTabs()
         {
             //Set reference;
@@ -329,9 +327,11 @@ namespace FFmpeg_Utilizer
         private void Menu_SettingsTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Settings);
 
         private void Menu_UpdatesTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Updater);
+
         #endregion Tabs
 
         #region Testing
+
         private void Button1_Click(object sender, EventArgs e)
         {
             notice.SetNotice("A notice system for errors, warnings, infos and successful operations.", NoticeModule.TypeNotice.Warning);
@@ -351,6 +351,7 @@ namespace FFmpeg_Utilizer
         {
             notice.SetNotice("A notice system for errors, warnings, infos and successful operations.", NoticeModule.TypeNotice.Success);
         }
+
         #endregion Testing
 
         private void Update_CheckForUpdateButton_Click(object sender, EventArgs e)
@@ -626,10 +627,10 @@ namespace FFmpeg_Utilizer
 
         private void M3U8_AddM3U8Button_Click(object sender, EventArgs e)
         {
-            using(AddM3U8URL form = new AddM3U8URL())
+            using (AddM3U8URL form = new AddM3U8URL())
             {
                 DialogResult res = form.ShowDialog();
-                if(res == DialogResult.OK)
+                if (res == DialogResult.OK)
                 {
                     AddM3U8URLData(form.NameField.Text, form.URLField.Text);
                 }
@@ -800,7 +801,7 @@ namespace FFmpeg_Utilizer
             }
             if (Cut_listView.Items.Count < 1)
             {
-                notice.SetNotice("The list of files to encode was empty. Drag files onto the list.", NoticeModule.TypeNotice.Warning);
+                notice.SetNotice("The list of timestamps to cut/encode was empty. Add timestamp(s).", NoticeModule.TypeNotice.Warning);
                 return;
             }
 
@@ -821,7 +822,7 @@ namespace FFmpeg_Utilizer
             CutArgument processQueueData = new CutArgument(new FileInfo(Cut_MediaInputTextbox.Text), Cut_OutputDirectoryBox.Text, queue);
 
             //Start the encoding process.
-            //encodingProcesser.ProcessFileQueue(processQueueData);
+            cutProcessor.ProcessFileQueue(processQueueData);
         }
 
         private void ToTrayButton_Click(object sender, EventArgs e)
