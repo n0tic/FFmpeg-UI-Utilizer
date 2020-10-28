@@ -74,8 +74,8 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\CutProcesser.cs" />
-    <Compile Include="Modules\EncodingProcesser.cs" />
+    <Compile Include="Modules\CutProcessor.cs" />
+    <Compile Include="Modules\EncodingProcessor.cs" />
     <Compile Include="Modules\M3U8Processor.cs" />
     <Compile Include="Modules\NoticeModule.cs" />
     <Compile Include="Modules\Submodule\URIRequestExtender.cs" />
@@ -181,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FFmpegUtilizerIcon.ico" />
+    <None Include="Resources\TrayIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FFmpeg_Utilizer.Modules
 {
-    public class CutProcesser
+    public class CutProcessor
     {
         public Main main;
 
@@ -22,6 +22,6 @@ namespace FFmpeg_Utilizer.Modules
 
         private Process cutProcess;
 
-        public CutProcesser(Main _main) => this.main = _main;
+        public CutProcessor(Main _main) => this.main = _main;
     }
 }

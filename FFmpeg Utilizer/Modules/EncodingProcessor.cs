@@ -18,7 +18,7 @@ using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
 {
-    public class EncodingProcesser
+    public class EncodingProcessor
     {
         public Main main;
 
@@ -31,7 +31,7 @@ namespace FFmpeg_Utilizer.Modules
 
         private Process encodingProcess;
 
-        public EncodingProcesser(Main _main) => main = _main;
+        public EncodingProcessor(Main _main) => main = _main;
 
         internal void ProcessFileQueue(EncodeProcesserData data)
         {

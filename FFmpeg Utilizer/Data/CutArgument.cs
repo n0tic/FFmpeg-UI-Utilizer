@@ -25,11 +25,13 @@ namespace FFmpeg_Utilizer.Data
 
     public class TimeStamps
     {
+        public int id;
         public string startTime;
         public string endTime;
 
-        public TimeStamps(string startTime, string endTime)
+        public TimeStamps(string startTime, string endTime, int id)
         {
+            this.id = id;
             this.startTime = startTime;
             this.endTime = endTime;
         }

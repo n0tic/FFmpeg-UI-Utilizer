@@ -29,8 +29,9 @@ namespace FFmpeg_Utilizer
         //Modules
         public NoticeModule notice;
         public UtilityUpdaterModule updater;
-        public EncodingProcesser encodingProcesser;
+        public EncodingProcessor encodingProcessor;
         public M3U8Processor m3u8Processor;
+        public CutProcessor cutProcessor;
         public UriRequestsHandler uriRequestHandler;
 
         //FFplay process
@@ -72,8 +73,9 @@ namespace FFmpeg_Utilizer
             Core.main = this;
             notice = new NoticeModule(this);
             notice.CloseNotice();
-            encodingProcesser = new EncodingProcesser(this);
+            encodingProcessor = new EncodingProcessor(this);
             m3u8Processor = new M3U8Processor(this);
+            cutProcessor = new CutProcessor(this);
 
             if (hasInternet)
                 updater = new UtilityUpdaterModule(this);
@@ -293,17 +295,7 @@ namespace FFmpeg_Utilizer
 
         private void ApplicationCloseButton_Click(object sender, EventArgs e) => Application.Exit();
 
-        private void ApplicationMinimizeButton_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                Hide();
-                TraySystem.Visible = true;
-
-                TraySystem.ShowBalloonTip(1000);
-            }
-        }
+        private void ApplicationMinimizeButton_Click(object sender, EventArgs e) => WindowState = FormWindowState.Minimized;
 
         private void TopLogo_MouseDown(object sender, MouseEventArgs e) => Core.MoveWindow(this, e);
         #endregion Software Window
@@ -529,7 +521,7 @@ namespace FFmpeg_Utilizer
             }
 
             //Start the encoding process.
-            encodingProcesser.ProcessFileQueue(processQueueData);
+            encodingProcessor.ProcessFileQueue(processQueueData);
         }
 
         private void Settings_URIServerCheckbox_CheckedChanged(object sender, EventArgs e)
@@ -587,7 +579,7 @@ namespace FFmpeg_Utilizer
             catch (InvalidOperationException) { }
 
             uriRequestHandler?.KillServer();
-            encodingProcesser?.KillThreads();
+            encodingProcessor?.KillThreads();
         }
 
         private void Encoder_PlayButton_Click(object sender, EventArgs e)
@@ -776,7 +768,10 @@ namespace FFmpeg_Utilizer
         private void Cut_AddTimespanButton_Click(object sender, EventArgs e)
         {
             string timespan = GetTimespanString();
-            if(Cut_listView.FindItemWithText(timespan) == null)
+            string start = timespan.Split(' ')[0];
+            string end = timespan.Split(' ')[2];
+
+            if (start != end && Cut_listView.FindItemWithText(timespan) == null)
             {
                 ListViewItem item = new ListViewItem(timespan);
                 Cut_listView.Items.Add(item);
@@ -820,13 +815,21 @@ namespace FFmpeg_Utilizer
                 start = split[0];
                 end = split[2];
 
-                queue.Enqueue(new TimeStamps(start, end));
+                queue.Enqueue(new TimeStamps(start, end, queue.Count + 1));
             }
 
             CutArgument processQueueData = new CutArgument(new FileInfo(Cut_MediaInputTextbox.Text), Cut_OutputDirectoryBox.Text, queue);
 
             //Start the encoding process.
             //encodingProcesser.ProcessFileQueue(processQueueData);
+        }
+
+        private void ToTrayButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TraySystem.Visible = true;
+
+            TraySystem.ShowBalloonTip(1000);
         }
     }
 }
