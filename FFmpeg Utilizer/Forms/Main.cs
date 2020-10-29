@@ -784,11 +784,11 @@ namespace FFmpeg_Utilizer
 
             string startMinutes;
             if (startMinute < 10) startMinutes = "0" + startMinute.ToString();
-            else startMinutes = "0";
+            else startMinutes = startMinute.ToString();
 
             string endMinutes;
             if (endMinute < 10) endMinutes = "0" + endMinute.ToString();
-            else endMinutes = "0";
+            else endMinutes = endMinute.ToString();
 
             string start = startHour.ToString() + ":" + startMinutes + ":" + startSeconds.ToString() + "." + startMiliseconds.ToString();
             string end = endHour.ToString() + ":" + endMinutes + ":" + endSeconds.ToString() + "." + endMiliseconds.ToString();

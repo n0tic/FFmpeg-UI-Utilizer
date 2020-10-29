@@ -35,59 +35,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
-            this.CutMainPanel = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.Cut_CRFBox = new System.Windows.Forms.ComboBox();
-            this.Cut_AudioCodecBox = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.Cut_VideoCodecBox = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.Cut_PresetBox = new System.Windows.Forms.ComboBox();
-            this.Cut_HideConsoleToggle = new System.Windows.Forms.CheckBox();
-            this.Cut_RemoveSelectedButton = new System.Windows.Forms.Button();
-            this.Cut_listView = new System.Windows.Forms.ListView();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Cut_EndMiliseconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndSeconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndMinutes = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndHours = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartMiliseconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartSeconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartMinutes = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartHours = new System.Windows.Forms.NumericUpDown();
-            this.Cut_PreviewLabel = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.Cut_AddTimespanButton = new System.Windows.Forms.Button();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.Cut_InputMediaButton = new System.Windows.Forms.Button();
-            this.Cut_MediaInputTextbox = new System.Windows.Forms.TextBox();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel65 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.panel66 = new System.Windows.Forms.Panel();
-            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.Cut_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
-            this.Cut_StartCuttingButton = new System.Windows.Forms.Button();
-            this.panel67 = new System.Windows.Forms.Panel();
-            this.label68 = new System.Windows.Forms.Label();
-            this.panel68 = new System.Windows.Forms.Panel();
-            this.panel69 = new System.Windows.Forms.Panel();
             this.EncoderMainPanel = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -152,6 +99,59 @@
             this.label46 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
             this.panel53 = new System.Windows.Forms.Panel();
+            this.CutMainPanel = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.Cut_CRFBox = new System.Windows.Forms.ComboBox();
+            this.Cut_AudioCodecBox = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Cut_VideoCodecBox = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.Cut_PresetBox = new System.Windows.Forms.ComboBox();
+            this.Cut_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.Cut_RemoveSelectedButton = new System.Windows.Forms.Button();
+            this.Cut_listView = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Cut_EndMiliseconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndSeconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndMinutes = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndHours = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartMiliseconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartSeconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartMinutes = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartHours = new System.Windows.Forms.NumericUpDown();
+            this.Cut_PreviewLabel = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.Cut_AddTimespanButton = new System.Windows.Forms.Button();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.Cut_InputMediaButton = new System.Windows.Forms.Button();
+            this.Cut_MediaInputTextbox = new System.Windows.Forms.TextBox();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label60 = new System.Windows.Forms.Label();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel65 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.Cut_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
+            this.Cut_StartCuttingButton = new System.Windows.Forms.Button();
+            this.panel67 = new System.Windows.Forms.Panel();
+            this.label68 = new System.Windows.Forms.Label();
+            this.panel68 = new System.Windows.Forms.Panel();
+            this.panel69 = new System.Windows.Forms.Panel();
             this.ArgumentMainPanel = new System.Windows.Forms.Panel();
             this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
             this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
@@ -379,6 +379,16 @@
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
+            this.EncoderMainPanel.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel47.SuspendLayout();
+            this.M3U8MainPanel.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel51.SuspendLayout();
             this.CutMainPanel.SuspendLayout();
             this.panel14.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -394,16 +404,6 @@
             this.panel65.SuspendLayout();
             this.panel66.SuspendLayout();
             this.panel67.SuspendLayout();
-            this.EncoderMainPanel.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.panel47.SuspendLayout();
-            this.M3U8MainPanel.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel51.SuspendLayout();
             this.ArgumentMainPanel.SuspendLayout();
             this.panel41.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
@@ -505,9 +505,9 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
@@ -517,641 +517,6 @@
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
-            // 
-            // CutMainPanel
-            // 
-            this.CutMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.CutMainPanel.Controls.Add(this.panel14);
-            this.CutMainPanel.Controls.Add(this.panel65);
-            this.CutMainPanel.Controls.Add(this.panel66);
-            this.CutMainPanel.Controls.Add(this.panel69);
-            this.CutMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CutMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.CutMainPanel.Name = "CutMainPanel";
-            this.CutMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.CutMainPanel.TabIndex = 10;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.label29);
-            this.panel14.Controls.Add(this.Cut_CRFBox);
-            this.panel14.Controls.Add(this.Cut_AudioCodecBox);
-            this.panel14.Controls.Add(this.label17);
-            this.panel14.Controls.Add(this.Cut_VideoCodecBox);
-            this.panel14.Controls.Add(this.label23);
-            this.panel14.Controls.Add(this.label26);
-            this.panel14.Controls.Add(this.Cut_PresetBox);
-            this.panel14.Controls.Add(this.Cut_HideConsoleToggle);
-            this.panel14.Controls.Add(this.Cut_RemoveSelectedButton);
-            this.panel14.Controls.Add(this.Cut_listView);
-            this.panel14.Controls.Add(this.groupBox2);
-            this.panel14.Controls.Add(this.Cut_InputMediaButton);
-            this.panel14.Controls.Add(this.Cut_MediaInputTextbox);
-            this.panel14.Controls.Add(this.panel32);
-            this.panel14.Location = new System.Drawing.Point(27, 50);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(882, 314);
-            this.panel14.TabIndex = 9;
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label29.Location = new System.Drawing.Point(314, 69);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(81, 16);
-            this.label29.TabIndex = 82;
-            this.label29.Text = "Quality";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_CRFBox
-            // 
-            this.Cut_CRFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_CRFBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_CRFBox.FormattingEnabled = true;
-            this.Cut_CRFBox.Location = new System.Drawing.Point(314, 88);
-            this.Cut_CRFBox.Name = "Cut_CRFBox";
-            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_CRFBox.TabIndex = 81;
-            // 
-            // Cut_AudioCodecBox
-            // 
-            this.Cut_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_AudioCodecBox.FormattingEnabled = true;
-            this.Cut_AudioCodecBox.Location = new System.Drawing.Point(227, 88);
-            this.Cut_AudioCodecBox.Name = "Cut_AudioCodecBox";
-            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_AudioCodecBox.TabIndex = 76;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label17.Location = new System.Drawing.Point(137, 69);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(87, 16);
-            this.label17.TabIndex = 77;
-            this.label17.Text = "Video Encoder";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_VideoCodecBox
-            // 
-            this.Cut_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_VideoCodecBox.FormattingEnabled = true;
-            this.Cut_VideoCodecBox.Location = new System.Drawing.Point(140, 88);
-            this.Cut_VideoCodecBox.Name = "Cut_VideoCodecBox";
-            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_VideoCodecBox.TabIndex = 75;
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label23.Location = new System.Drawing.Point(224, 69);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 16);
-            this.label23.TabIndex = 78;
-            this.label23.Text = "Audio Encoder";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label26.Location = new System.Drawing.Point(401, 69);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(81, 16);
-            this.label26.TabIndex = 80;
-            this.label26.Text = "Speed";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_PresetBox
-            // 
-            this.Cut_PresetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_PresetBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_PresetBox.FormattingEnabled = true;
-            this.Cut_PresetBox.Location = new System.Drawing.Point(401, 88);
-            this.Cut_PresetBox.Name = "Cut_PresetBox";
-            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_PresetBox.TabIndex = 79;
-            // 
-            // Cut_HideConsoleToggle
-            // 
-            this.Cut_HideConsoleToggle.AutoSize = true;
-            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(488, 95);
-            this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
-            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
-            this.Cut_HideConsoleToggle.TabIndex = 74;
-            this.Cut_HideConsoleToggle.Text = "Hide Console";
-            this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
-            // 
-            // Cut_RemoveSelectedButton
-            // 
-            this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
-            this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 287);
-            this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
-            this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
-            this.Cut_RemoveSelectedButton.TabIndex = 73;
-            this.Cut_RemoveSelectedButton.Text = "Remove Selected";
-            this.Cut_RemoveSelectedButton.UseVisualStyleBackColor = false;
-            this.Cut_RemoveSelectedButton.Click += new System.EventHandler(this.Cut_RemoveSelectedButton_Click);
-            // 
-            // Cut_listView
-            // 
-            this.Cut_listView.AllowDrop = true;
-            this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader11});
-            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_listView.FullRowSelect = true;
-            this.Cut_listView.GridLines = true;
-            this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Cut_listView.HideSelection = false;
-            this.Cut_listView.Location = new System.Drawing.Point(3, 69);
-            this.Cut_listView.MultiSelect = false;
-            this.Cut_listView.Name = "Cut_listView";
-            this.Cut_listView.Size = new System.Drawing.Size(129, 212);
-            this.Cut_listView.TabIndex = 72;
-            this.Cut_listView.UseCompatibleStateImageBehavior = false;
-            this.Cut_listView.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Timespans";
-            this.columnHeader11.Width = 107;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.Cut_EndMiliseconds);
-            this.groupBox2.Controls.Add(this.Cut_EndSeconds);
-            this.groupBox2.Controls.Add(this.Cut_EndMinutes);
-            this.groupBox2.Controls.Add(this.Cut_EndHours);
-            this.groupBox2.Controls.Add(this.Cut_StartMiliseconds);
-            this.groupBox2.Controls.Add(this.Cut_StartSeconds);
-            this.groupBox2.Controls.Add(this.Cut_StartMinutes);
-            this.groupBox2.Controls.Add(this.Cut_StartHours);
-            this.groupBox2.Controls.Add(this.Cut_PreviewLabel);
-            this.groupBox2.Controls.Add(this.label62);
-            this.groupBox2.Controls.Add(this.label63);
-            this.groupBox2.Controls.Add(this.Cut_AddTimespanButton);
-            this.groupBox2.Controls.Add(this.label64);
-            this.groupBox2.Controls.Add(this.label65);
-            this.groupBox2.Controls.Add(this.label66);
-            this.groupBox2.Controls.Add(this.label69);
-            this.groupBox2.Controls.Add(this.label70);
-            this.groupBox2.Controls.Add(this.label83);
-            this.groupBox2.Controls.Add(this.label84);
-            this.groupBox2.Controls.Add(this.label85);
-            this.groupBox2.Location = new System.Drawing.Point(138, 115);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(426, 196);
-            this.groupBox2.TabIndex = 69;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cut Timers";
-            // 
-            // Cut_EndMiliseconds
-            // 
-            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndMiliseconds.Location = new System.Drawing.Point(307, 88);
-            this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
-            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndMiliseconds.TabIndex = 54;
-            this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_EndSeconds
-            // 
-            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndSeconds.Location = new System.Drawing.Point(231, 88);
-            this.Cut_EndSeconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_EndSeconds.Name = "Cut_EndSeconds";
-            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndSeconds.TabIndex = 53;
-            this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_EndMinutes
-            // 
-            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndMinutes.Location = new System.Drawing.Point(155, 88);
-            this.Cut_EndMinutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_EndMinutes.Name = "Cut_EndMinutes";
-            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndMinutes.TabIndex = 52;
-            this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_EndHours
-            // 
-            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
-            this.Cut_EndHours.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_EndHours.Name = "Cut_EndHours";
-            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndHours.TabIndex = 51;
-            this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartMiliseconds
-            // 
-            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartMiliseconds.Location = new System.Drawing.Point(307, 31);
-            this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
-            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartMiliseconds.TabIndex = 50;
-            this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartSeconds
-            // 
-            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartSeconds.Location = new System.Drawing.Point(231, 32);
-            this.Cut_StartSeconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_StartSeconds.Name = "Cut_StartSeconds";
-            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartSeconds.TabIndex = 49;
-            this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartMinutes
-            // 
-            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartMinutes.Location = new System.Drawing.Point(155, 31);
-            this.Cut_StartMinutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_StartMinutes.Name = "Cut_StartMinutes";
-            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartMinutes.TabIndex = 48;
-            this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartHours
-            // 
-            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
-            this.Cut_StartHours.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_StartHours.Name = "Cut_StartHours";
-            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartHours.TabIndex = 45;
-            this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_PreviewLabel
-            // 
-            this.Cut_PreviewLabel.AutoSize = true;
-            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_PreviewLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Cut_PreviewLabel.Location = new System.Drawing.Point(155, 133);
-            this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
-            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
-            this.Cut_PreviewLabel.TabIndex = 47;
-            this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label62.Location = new System.Drawing.Point(12, 91);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(47, 14);
-            this.label62.TabIndex = 46;
-            this.label62.Text = "End Time:";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label63.Location = new System.Drawing.Point(7, 34);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(53, 14);
-            this.label63.TabIndex = 45;
-            this.label63.Text = "Start Time:";
-            // 
-            // Cut_AddTimespanButton
-            // 
-            this.Cut_AddTimespanButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
-            this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
-            this.Cut_AddTimespanButton.Size = new System.Drawing.Size(420, 23);
-            this.Cut_AddTimespanButton.TabIndex = 44;
-            this.Cut_AddTimespanButton.Text = "Add Timespan";
-            this.Cut_AddTimespanButton.UseVisualStyleBackColor = false;
-            this.Cut_AddTimespanButton.Click += new System.EventHandler(this.Cut_AddTimespanButton_Click);
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label64.Location = new System.Drawing.Point(79, 16);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(31, 14);
-            this.label64.TabIndex = 32;
-            this.label64.Text = "Hours";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label65.Location = new System.Drawing.Point(304, 71);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(58, 14);
-            this.label65.TabIndex = 43;
-            this.label65.Text = "Miliseconds";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label66.Location = new System.Drawing.Point(228, 71);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(41, 14);
-            this.label66.TabIndex = 42;
-            this.label66.Text = "Seconds";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label69.Location = new System.Drawing.Point(152, 71);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(41, 14);
-            this.label69.TabIndex = 41;
-            this.label69.Text = "Minutes";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label70.Location = new System.Drawing.Point(79, 71);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(31, 14);
-            this.label70.TabIndex = 40;
-            this.label70.Text = "Hours";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label83.Location = new System.Drawing.Point(152, 16);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(41, 14);
-            this.label83.TabIndex = 33;
-            this.label83.Text = "Minutes";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label84.Location = new System.Drawing.Point(228, 16);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(41, 14);
-            this.label84.TabIndex = 34;
-            this.label84.Text = "Seconds";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label85.Location = new System.Drawing.Point(304, 16);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(58, 14);
-            this.label85.TabIndex = 35;
-            this.label85.Text = "Miliseconds";
-            // 
-            // Cut_InputMediaButton
-            // 
-            this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
-            this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
-            this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
-            this.Cut_InputMediaButton.TabIndex = 68;
-            this.Cut_InputMediaButton.Text = "Input Media";
-            this.Cut_InputMediaButton.UseVisualStyleBackColor = false;
-            this.Cut_InputMediaButton.Click += new System.EventHandler(this.Cut_InputMediaButton_Click);
-            // 
-            // Cut_MediaInputTextbox
-            // 
-            this.Cut_MediaInputTextbox.Enabled = false;
-            this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
-            this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
-            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 20);
-            this.Cut_MediaInputTextbox.TabIndex = 67;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel32.Controls.Add(this.label60);
-            this.panel32.Controls.Add(this.panel46);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel32.Location = new System.Drawing.Point(0, 0);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(882, 38);
-            this.panel32.TabIndex = 3;
-            // 
-            // label60
-            // 
-            this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label60.ForeColor = System.Drawing.Color.White;
-            this.label60.Location = new System.Drawing.Point(55, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(447, 38);
-            this.label60.TabIndex = 6;
-            this.label60.Text = "Options";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel46
-            // 
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel46.Location = new System.Drawing.Point(0, 0);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(55, 38);
-            this.panel46.TabIndex = 0;
-            // 
-            // panel65
-            // 
-            this.panel65.Controls.Add(this.label67);
-            this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel65.Location = new System.Drawing.Point(0, 0);
-            this.panel65.Name = "panel65";
-            this.panel65.Size = new System.Drawing.Size(919, 44);
-            this.panel65.TabIndex = 8;
-            // 
-            // label67
-            // 
-            this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label67.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label67.Location = new System.Drawing.Point(22, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(897, 44);
-            this.label67.TabIndex = 7;
-            this.label67.Text = "Cut";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel66
-            // 
-            this.panel66.BackColor = System.Drawing.Color.White;
-            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
-            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
-            this.panel66.Controls.Add(this.button19);
-            this.panel66.Controls.Add(this.Cut_ProgressBar);
-            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
-            this.panel66.Controls.Add(this.Cut_StartCuttingButton);
-            this.panel66.Controls.Add(this.panel67);
-            this.panel66.Location = new System.Drawing.Point(27, 377);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(885, 106);
-            this.panel66.TabIndex = 2;
-            // 
-            // Cut_DefaultOutputButton
-            // 
-            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
-            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Cut_DefaultOutputButton.TabIndex = 61;
-            this.Cut_DefaultOutputButton.Text = "✓";
-            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
-            // 
-            // Cut_OpenDirectoryButton
-            // 
-            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
-            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Cut_OpenDirectoryButton.TabIndex = 62;
-            this.Cut_OpenDirectoryButton.Text = "▶";
-            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button19.Location = new System.Drawing.Point(792, 44);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(87, 23);
-            this.button19.TabIndex = 25;
-            this.button19.Text = "Output Folder";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // Cut_ProgressBar
-            // 
-            this.Cut_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.Cut_ProgressBar.Name = "Cut_ProgressBar";
-            this.Cut_ProgressBar.Size = new System.Drawing.Size(783, 20);
-            this.Cut_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Cut_ProgressBar.TabIndex = 24;
-            // 
-            // Cut_OutputDirectoryBox
-            // 
-            this.Cut_OutputDirectoryBox.Enabled = false;
-            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
-            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
-            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
-            this.Cut_OutputDirectoryBox.TabIndex = 23;
-            // 
-            // Cut_StartCuttingButton
-            // 
-            this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
-            this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
-            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
-            this.Cut_StartCuttingButton.TabIndex = 22;
-            this.Cut_StartCuttingButton.Text = "Start Cutting";
-            this.Cut_StartCuttingButton.UseVisualStyleBackColor = false;
-            this.Cut_StartCuttingButton.Click += new System.EventHandler(this.Cut_StartCuttingButton_Click);
-            // 
-            // panel67
-            // 
-            this.panel67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel67.Controls.Add(this.label68);
-            this.panel67.Controls.Add(this.panel68);
-            this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel67.Location = new System.Drawing.Point(0, 0);
-            this.panel67.Name = "panel67";
-            this.panel67.Size = new System.Drawing.Size(885, 38);
-            this.panel67.TabIndex = 3;
-            // 
-            // label68
-            // 
-            this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label68.ForeColor = System.Drawing.Color.White;
-            this.label68.Location = new System.Drawing.Point(55, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(447, 38);
-            this.label68.TabIndex = 6;
-            this.label68.Text = "Output";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel68
-            // 
-            this.panel68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel68.Location = new System.Drawing.Point(0, 0);
-            this.panel68.Name = "panel68";
-            this.panel68.Size = new System.Drawing.Size(55, 38);
-            this.panel68.TabIndex = 0;
-            // 
-            // panel69
-            // 
-            this.panel69.Location = new System.Drawing.Point(719, 495);
-            this.panel69.Name = "panel69";
-            this.panel69.Size = new System.Drawing.Size(200, 73);
-            this.panel69.TabIndex = 1;
             // 
             // EncoderMainPanel
             // 
@@ -1879,6 +1244,641 @@
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(200, 73);
             this.panel53.TabIndex = 1;
+            // 
+            // CutMainPanel
+            // 
+            this.CutMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.CutMainPanel.Controls.Add(this.panel14);
+            this.CutMainPanel.Controls.Add(this.panel65);
+            this.CutMainPanel.Controls.Add(this.panel66);
+            this.CutMainPanel.Controls.Add(this.panel69);
+            this.CutMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CutMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.CutMainPanel.Name = "CutMainPanel";
+            this.CutMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.CutMainPanel.TabIndex = 10;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.label29);
+            this.panel14.Controls.Add(this.Cut_CRFBox);
+            this.panel14.Controls.Add(this.Cut_AudioCodecBox);
+            this.panel14.Controls.Add(this.label17);
+            this.panel14.Controls.Add(this.Cut_VideoCodecBox);
+            this.panel14.Controls.Add(this.label23);
+            this.panel14.Controls.Add(this.label26);
+            this.panel14.Controls.Add(this.Cut_PresetBox);
+            this.panel14.Controls.Add(this.Cut_HideConsoleToggle);
+            this.panel14.Controls.Add(this.Cut_RemoveSelectedButton);
+            this.panel14.Controls.Add(this.Cut_listView);
+            this.panel14.Controls.Add(this.groupBox2);
+            this.panel14.Controls.Add(this.Cut_InputMediaButton);
+            this.panel14.Controls.Add(this.Cut_MediaInputTextbox);
+            this.panel14.Controls.Add(this.panel32);
+            this.panel14.Location = new System.Drawing.Point(27, 50);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(882, 314);
+            this.panel14.TabIndex = 9;
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label29.Location = new System.Drawing.Point(314, 69);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(81, 16);
+            this.label29.TabIndex = 82;
+            this.label29.Text = "Quality";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cut_CRFBox
+            // 
+            this.Cut_CRFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_CRFBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_CRFBox.FormattingEnabled = true;
+            this.Cut_CRFBox.Location = new System.Drawing.Point(314, 88);
+            this.Cut_CRFBox.Name = "Cut_CRFBox";
+            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_CRFBox.TabIndex = 81;
+            // 
+            // Cut_AudioCodecBox
+            // 
+            this.Cut_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AudioCodecBox.FormattingEnabled = true;
+            this.Cut_AudioCodecBox.Location = new System.Drawing.Point(227, 88);
+            this.Cut_AudioCodecBox.Name = "Cut_AudioCodecBox";
+            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_AudioCodecBox.TabIndex = 76;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label17.Location = new System.Drawing.Point(137, 69);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(87, 16);
+            this.label17.TabIndex = 77;
+            this.label17.Text = "Video Encoder";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cut_VideoCodecBox
+            // 
+            this.Cut_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_VideoCodecBox.FormattingEnabled = true;
+            this.Cut_VideoCodecBox.Location = new System.Drawing.Point(140, 88);
+            this.Cut_VideoCodecBox.Name = "Cut_VideoCodecBox";
+            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_VideoCodecBox.TabIndex = 75;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label23.Location = new System.Drawing.Point(224, 69);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(87, 16);
+            this.label23.TabIndex = 78;
+            this.label23.Text = "Audio Encoder";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label26.Location = new System.Drawing.Point(401, 69);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(81, 16);
+            this.label26.TabIndex = 80;
+            this.label26.Text = "Speed";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cut_PresetBox
+            // 
+            this.Cut_PresetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_PresetBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PresetBox.FormattingEnabled = true;
+            this.Cut_PresetBox.Location = new System.Drawing.Point(401, 88);
+            this.Cut_PresetBox.Name = "Cut_PresetBox";
+            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_PresetBox.TabIndex = 79;
+            // 
+            // Cut_HideConsoleToggle
+            // 
+            this.Cut_HideConsoleToggle.AutoSize = true;
+            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(488, 95);
+            this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
+            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Cut_HideConsoleToggle.TabIndex = 74;
+            this.Cut_HideConsoleToggle.Text = "Hide Console";
+            this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
+            // Cut_RemoveSelectedButton
+            // 
+            this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
+            this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 287);
+            this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
+            this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
+            this.Cut_RemoveSelectedButton.TabIndex = 73;
+            this.Cut_RemoveSelectedButton.Text = "Remove Selected";
+            this.Cut_RemoveSelectedButton.UseVisualStyleBackColor = false;
+            this.Cut_RemoveSelectedButton.Click += new System.EventHandler(this.Cut_RemoveSelectedButton_Click);
+            // 
+            // Cut_listView
+            // 
+            this.Cut_listView.AllowDrop = true;
+            this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11});
+            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_listView.FullRowSelect = true;
+            this.Cut_listView.GridLines = true;
+            this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Cut_listView.HideSelection = false;
+            this.Cut_listView.Location = new System.Drawing.Point(3, 69);
+            this.Cut_listView.MultiSelect = false;
+            this.Cut_listView.Name = "Cut_listView";
+            this.Cut_listView.Size = new System.Drawing.Size(129, 212);
+            this.Cut_listView.TabIndex = 72;
+            this.Cut_listView.UseCompatibleStateImageBehavior = false;
+            this.Cut_listView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Timespans";
+            this.columnHeader11.Width = 107;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Cut_EndMiliseconds);
+            this.groupBox2.Controls.Add(this.Cut_EndSeconds);
+            this.groupBox2.Controls.Add(this.Cut_EndMinutes);
+            this.groupBox2.Controls.Add(this.Cut_EndHours);
+            this.groupBox2.Controls.Add(this.Cut_StartMiliseconds);
+            this.groupBox2.Controls.Add(this.Cut_StartSeconds);
+            this.groupBox2.Controls.Add(this.Cut_StartMinutes);
+            this.groupBox2.Controls.Add(this.Cut_StartHours);
+            this.groupBox2.Controls.Add(this.Cut_PreviewLabel);
+            this.groupBox2.Controls.Add(this.label62);
+            this.groupBox2.Controls.Add(this.label63);
+            this.groupBox2.Controls.Add(this.Cut_AddTimespanButton);
+            this.groupBox2.Controls.Add(this.label64);
+            this.groupBox2.Controls.Add(this.label65);
+            this.groupBox2.Controls.Add(this.label66);
+            this.groupBox2.Controls.Add(this.label69);
+            this.groupBox2.Controls.Add(this.label70);
+            this.groupBox2.Controls.Add(this.label83);
+            this.groupBox2.Controls.Add(this.label84);
+            this.groupBox2.Controls.Add(this.label85);
+            this.groupBox2.Location = new System.Drawing.Point(138, 115);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(426, 196);
+            this.groupBox2.TabIndex = 69;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Cut Timers";
+            // 
+            // Cut_EndMiliseconds
+            // 
+            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMiliseconds.Location = new System.Drawing.Point(307, 88);
+            this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
+            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMiliseconds.TabIndex = 54;
+            this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndSeconds
+            // 
+            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndSeconds.Location = new System.Drawing.Point(231, 88);
+            this.Cut_EndSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_EndSeconds.Name = "Cut_EndSeconds";
+            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndSeconds.TabIndex = 53;
+            this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndMinutes
+            // 
+            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMinutes.Location = new System.Drawing.Point(155, 88);
+            this.Cut_EndMinutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_EndMinutes.Name = "Cut_EndMinutes";
+            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMinutes.TabIndex = 52;
+            this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndHours
+            // 
+            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
+            this.Cut_EndHours.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_EndHours.Name = "Cut_EndHours";
+            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndHours.TabIndex = 51;
+            this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartMiliseconds
+            // 
+            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMiliseconds.Location = new System.Drawing.Point(307, 31);
+            this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
+            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMiliseconds.TabIndex = 50;
+            this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartSeconds
+            // 
+            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartSeconds.Location = new System.Drawing.Point(231, 32);
+            this.Cut_StartSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_StartSeconds.Name = "Cut_StartSeconds";
+            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartSeconds.TabIndex = 49;
+            this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartMinutes
+            // 
+            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMinutes.Location = new System.Drawing.Point(155, 31);
+            this.Cut_StartMinutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_StartMinutes.Name = "Cut_StartMinutes";
+            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMinutes.TabIndex = 48;
+            this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartHours
+            // 
+            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
+            this.Cut_StartHours.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_StartHours.Name = "Cut_StartHours";
+            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartHours.TabIndex = 45;
+            this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_PreviewLabel
+            // 
+            this.Cut_PreviewLabel.AutoSize = true;
+            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PreviewLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Cut_PreviewLabel.Location = new System.Drawing.Point(155, 133);
+            this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
+            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
+            this.Cut_PreviewLabel.TabIndex = 47;
+            this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label62.Location = new System.Drawing.Point(12, 91);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(47, 14);
+            this.label62.TabIndex = 46;
+            this.label62.Text = "End Time:";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label63.Location = new System.Drawing.Point(7, 34);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(53, 14);
+            this.label63.TabIndex = 45;
+            this.label63.Text = "Start Time:";
+            // 
+            // Cut_AddTimespanButton
+            // 
+            this.Cut_AddTimespanButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
+            this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
+            this.Cut_AddTimespanButton.Size = new System.Drawing.Size(420, 23);
+            this.Cut_AddTimespanButton.TabIndex = 44;
+            this.Cut_AddTimespanButton.Text = "Add Timespan";
+            this.Cut_AddTimespanButton.UseVisualStyleBackColor = false;
+            this.Cut_AddTimespanButton.Click += new System.EventHandler(this.Cut_AddTimespanButton_Click);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label64.Location = new System.Drawing.Point(79, 16);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(31, 14);
+            this.label64.TabIndex = 32;
+            this.label64.Text = "Hours";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label65.Location = new System.Drawing.Point(304, 71);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(58, 14);
+            this.label65.TabIndex = 43;
+            this.label65.Text = "Miliseconds";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label66.Location = new System.Drawing.Point(228, 71);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(41, 14);
+            this.label66.TabIndex = 42;
+            this.label66.Text = "Seconds";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label69.Location = new System.Drawing.Point(152, 71);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(41, 14);
+            this.label69.TabIndex = 41;
+            this.label69.Text = "Minutes";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label70.Location = new System.Drawing.Point(79, 71);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(31, 14);
+            this.label70.TabIndex = 40;
+            this.label70.Text = "Hours";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label83.Location = new System.Drawing.Point(152, 16);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(41, 14);
+            this.label83.TabIndex = 33;
+            this.label83.Text = "Minutes";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label84.Location = new System.Drawing.Point(228, 16);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(41, 14);
+            this.label84.TabIndex = 34;
+            this.label84.Text = "Seconds";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label85.Location = new System.Drawing.Point(304, 16);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(58, 14);
+            this.label85.TabIndex = 35;
+            this.label85.Text = "Miliseconds";
+            // 
+            // Cut_InputMediaButton
+            // 
+            this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
+            this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
+            this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
+            this.Cut_InputMediaButton.TabIndex = 68;
+            this.Cut_InputMediaButton.Text = "Input Media";
+            this.Cut_InputMediaButton.UseVisualStyleBackColor = false;
+            this.Cut_InputMediaButton.Click += new System.EventHandler(this.Cut_InputMediaButton_Click);
+            // 
+            // Cut_MediaInputTextbox
+            // 
+            this.Cut_MediaInputTextbox.Enabled = false;
+            this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
+            this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
+            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 20);
+            this.Cut_MediaInputTextbox.TabIndex = 67;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel32.Controls.Add(this.label60);
+            this.panel32.Controls.Add(this.panel46);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(0, 0);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(882, 38);
+            this.panel32.TabIndex = 3;
+            // 
+            // label60
+            // 
+            this.label60.BackColor = System.Drawing.Color.Transparent;
+            this.label60.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label60.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label60.ForeColor = System.Drawing.Color.White;
+            this.label60.Location = new System.Drawing.Point(55, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(447, 38);
+            this.label60.TabIndex = 6;
+            this.label60.Text = "Options";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel46
+            // 
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel46.Location = new System.Drawing.Point(0, 0);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(55, 38);
+            this.panel46.TabIndex = 0;
+            // 
+            // panel65
+            // 
+            this.panel65.Controls.Add(this.label67);
+            this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel65.Location = new System.Drawing.Point(0, 0);
+            this.panel65.Name = "panel65";
+            this.panel65.Size = new System.Drawing.Size(919, 44);
+            this.panel65.TabIndex = 8;
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.Transparent;
+            this.label67.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label67.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label67.Location = new System.Drawing.Point(22, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(897, 44);
+            this.label67.TabIndex = 7;
+            this.label67.Text = "Cut";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel66
+            // 
+            this.panel66.BackColor = System.Drawing.Color.White;
+            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
+            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
+            this.panel66.Controls.Add(this.button19);
+            this.panel66.Controls.Add(this.Cut_ProgressBar);
+            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
+            this.panel66.Controls.Add(this.Cut_StartCuttingButton);
+            this.panel66.Controls.Add(this.panel67);
+            this.panel66.Location = new System.Drawing.Point(27, 377);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(885, 106);
+            this.panel66.TabIndex = 2;
+            // 
+            // Cut_DefaultOutputButton
+            // 
+            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
+            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_DefaultOutputButton.TabIndex = 61;
+            this.Cut_DefaultOutputButton.Text = "✓";
+            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
+            // 
+            // Cut_OpenDirectoryButton
+            // 
+            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
+            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_OpenDirectoryButton.TabIndex = 62;
+            this.Cut_OpenDirectoryButton.Text = "▶";
+            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button19.Location = new System.Drawing.Point(792, 44);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(87, 23);
+            this.button19.TabIndex = 25;
+            this.button19.Text = "Output Folder";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // Cut_ProgressBar
+            // 
+            this.Cut_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.Cut_ProgressBar.Name = "Cut_ProgressBar";
+            this.Cut_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Cut_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Cut_ProgressBar.TabIndex = 24;
+            // 
+            // Cut_OutputDirectoryBox
+            // 
+            this.Cut_OutputDirectoryBox.Enabled = false;
+            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
+            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
+            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
+            this.Cut_OutputDirectoryBox.TabIndex = 23;
+            // 
+            // Cut_StartCuttingButton
+            // 
+            this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
+            this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
+            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
+            this.Cut_StartCuttingButton.TabIndex = 22;
+            this.Cut_StartCuttingButton.Text = "Start Cutting";
+            this.Cut_StartCuttingButton.UseVisualStyleBackColor = false;
+            this.Cut_StartCuttingButton.Click += new System.EventHandler(this.Cut_StartCuttingButton_Click);
+            // 
+            // panel67
+            // 
+            this.panel67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel67.Controls.Add(this.label68);
+            this.panel67.Controls.Add(this.panel68);
+            this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel67.Location = new System.Drawing.Point(0, 0);
+            this.panel67.Name = "panel67";
+            this.panel67.Size = new System.Drawing.Size(885, 38);
+            this.panel67.TabIndex = 3;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label68.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label68.ForeColor = System.Drawing.Color.White;
+            this.label68.Location = new System.Drawing.Point(55, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(447, 38);
+            this.label68.TabIndex = 6;
+            this.label68.Text = "Output";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel68
+            // 
+            this.panel68.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel68.Location = new System.Drawing.Point(0, 0);
+            this.panel68.Name = "panel68";
+            this.panel68.Size = new System.Drawing.Size(55, 38);
+            this.panel68.TabIndex = 0;
+            // 
+            // panel69
+            // 
+            this.panel69.Location = new System.Drawing.Point(719, 495);
+            this.panel69.Name = "panel69";
+            this.panel69.Size = new System.Drawing.Size(200, 73);
+            this.panel69.TabIndex = 1;
             // 
             // ArgumentMainPanel
             // 
@@ -4502,6 +4502,20 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
+            this.EncoderMainPanel.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel47.ResumeLayout(false);
+            this.M3U8MainPanel.ResumeLayout(false);
+            this.M3U8MainPanel.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel51.ResumeLayout(false);
             this.CutMainPanel.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
@@ -4520,20 +4534,6 @@
             this.panel66.ResumeLayout(false);
             this.panel66.PerformLayout();
             this.panel67.ResumeLayout(false);
-            this.EncoderMainPanel.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel47.ResumeLayout(false);
-            this.M3U8MainPanel.ResumeLayout(false);
-            this.M3U8MainPanel.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel51.ResumeLayout(false);
             this.ArgumentMainPanel.ResumeLayout(false);
             this.ArgumentMainPanel.PerformLayout();
             this.panel41.ResumeLayout(false);
