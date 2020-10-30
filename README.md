@@ -2,12 +2,17 @@
     <img src="https://github.com/n0tic/FFmpeg-UI-Utilizer/raw/master/FFmpeg%20Utilizer/Resources/ffmpegUtilizerLogo.jpg" alt="FFmpeg Utilizer Logo">
     <br />
     <br />
+	WIP!
+    <br />
+    <br />
     <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with LOVE">
     <br />
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
-    <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer.svg" alt="License Badge">
+    <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer" alt="License Badge">
     <img src="https://img.shields.io/maintenance/YES/2020" alt="Maintained Badge">
 </p>
+
+WIP!
 
 FFMPEG Utilizer is a UI/GUI application which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
 
@@ -32,13 +37,22 @@ Initial need was to convert a filetype and encode to another.
 
 ## Preview 
 
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ThBUAuPFYC.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_1L2YUkyZUa.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_Im8QBOTLeN.png)
-
-Changes too often to post more images but once I settle for a design it will get updated with more.
+<details>
+  <summary>Hiding images to save space, click to show!</summary>
+  
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_bgHaNJQ7dE.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hM9XKIB3kS.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_AV3oxeaD8N.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_VnnHXr3Pm0.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_yrbbBs2xMH.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_LkBdY5PeUl.png)
+  
+</details>
+UI & Styling may change.
 
 ## Features
+
+NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING IS NOT FUNCTIONAL!
 
 * FFMPEG Gyan auto version checker/updater.
 * Encode files using library presets.
@@ -131,8 +145,11 @@ The application itself is portable and does not need to be installed. Make sure 
 
 ## Bugs
 
-First off, this project is a work in progress (WIP) and will have unfinished features scattered everywhere.
-Protytyping first, polishing later.
+First off, this project is a work in progress (WIP) and will have unfinished features scattered.
+I am no pro when it comes to using FFmpeg so the arguments FFmpeg Utilizer generates may not be working well with all codecs.
+So the results of the process may not be 100% satsfactory. Please leave your feedback and or information regarding features you feel are missing or wrong.
+
+~ Protytyping first, polishing later.
 
 - UI has been designed but no actions has been added to some UI elements.
 - More coming.
