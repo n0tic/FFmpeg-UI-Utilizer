@@ -48,7 +48,7 @@ Initial need was to convert a filetype and encode to another.
 ![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_LkBdY5PeUl.png)
   
 </details>
-UI/Style may change quite often.
+UI & Styling may change.
 
 ## Features
 
