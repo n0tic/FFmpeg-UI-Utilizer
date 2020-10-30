@@ -48,7 +48,8 @@ Initial need was to convert a filetype and encode to another.
 ![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_LkBdY5PeUl.png)
   
 </details>
-UI & Styling may change.
+If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
+UI & Styling may change. Imgur 
 
 ## Features
 
