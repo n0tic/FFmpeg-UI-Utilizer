@@ -49,7 +49,8 @@ Initial need was to convert a filetype and encode to another.
   
 </details>
 If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
-UI & Styling may change. Imgur 
+
+UI & Styling may change.
 
 ## Features
 
