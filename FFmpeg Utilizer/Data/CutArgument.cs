@@ -29,7 +29,12 @@ namespace FFmpeg_Utilizer.Data
             string args;
 
             args = "-y -i ";
+
+            if(inputMedia != null)
             args += "\"" + inputMedia.FullName + "\"";
+            else args += "\"C:\\inputfile.mp4\"";
+
+
             if (vCodec != Libs.VCodec.Default) args += " -c:v " + vCodec.ToString();
             if (aCodec != Libs.ACodec.Default) args += " -c:a " + aCodec.ToString();
             args += " -crf " + crf;
@@ -37,7 +42,11 @@ namespace FFmpeg_Utilizer.Data
             args += " -ss " + timestamps.Peek().startTime;
             args += " -t " + timestamps.Peek().endTime;
             args += " -map 0";
-            args += " \"" + outputFolder + "\\" + Path.GetFileNameWithoutExtension(inputMedia.Name) + "_" + timestamps.Peek().id.ToString() + inputMedia.Extension + "\"";
+
+            if (inputMedia != null)
+                args += " \"" + outputFolder + "\\" + Path.GetFileNameWithoutExtension(inputMedia.Name) + "_" + timestamps.Peek().id.ToString() + inputMedia.Extension + "\"";
+            else args += " \"C:\\outputfolder\\outputfile_num.ext\"";
+
 
             return args;
         }

@@ -880,5 +880,31 @@ namespace FFmpeg_Utilizer
 
             TraySystem.ShowBalloonTip(1000);
         }
+
+        private void Argument_ShowCutButton_Click(object sender, EventArgs e)
+        {
+            Queue<TimeStamps> queue = new Queue<TimeStamps>();
+            queue.Enqueue(new TimeStamps("00:00:00.000", "00:00:30.000", 0));
+
+            FileInfo file;
+            if (File.Exists(Cut_MediaInputTextbox.Text)) file = new FileInfo(Cut_MediaInputTextbox.Text);
+            else file = null;
+
+            CutArgument args = new CutArgument(file, Cut_OutputDirectoryBox.Text, queue, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Cut_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Cut_AudioCodecBox.Text, true), Cut_CRFBox.Text, (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Cut_PresetBox.Text, true));
+            string ff;
+            if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
+            else ff = "ffmpeg ";
+
+            Argument_PreviewBox.Text = ff + args.ExecuteArgs();
+        }
+
+        private void Argument_ShowM3U8Button_Click(object sender, EventArgs e)
+        {
+            string ff;
+            if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
+            else ff = "ffmpeg ";
+
+            Argument_PreviewBox.Text = ff + "-y -i \"http://whateverurl.com/stuff.m3u8\" -acodec copy -vcodec copy -absf aac_adtstoasc \"c:\\outputfolder\\outputfile.mp4";
+        }
     }
 }

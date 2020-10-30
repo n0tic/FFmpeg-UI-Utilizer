@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here... List reset on every drop.",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
@@ -505,10 +505,10 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
@@ -734,7 +734,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem6});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1910,6 +1910,7 @@
             this.Argument_ShowM3U8Button.TabIndex = 74;
             this.Argument_ShowM3U8Button.Text = "Show M3U8";
             this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
+            this.Argument_ShowM3U8Button.Click += new System.EventHandler(this.Argument_ShowM3U8Button_Click);
             // 
             // Argument_ShowMergeButton
             // 
@@ -1938,6 +1939,7 @@
             this.Argument_ShowCutButton.TabIndex = 72;
             this.Argument_ShowCutButton.Text = "Show Cut";
             this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowCutButton.Click += new System.EventHandler(this.Argument_ShowCutButton_Click);
             // 
             // Argument_RunArgumentButton
             // 
@@ -4430,6 +4432,7 @@
             this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ToTrayButton.TabIndex = 8;
             this.ToTrayButton.TabStop = false;
+            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
             this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
             // 
             // ApplicationMinimizeButton
