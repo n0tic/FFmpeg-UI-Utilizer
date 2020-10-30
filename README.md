@@ -45,7 +45,7 @@ Changes too often to post more images but once I settle for a design it will get
 
 ## Features
 
-NOTE: THIS IS A WORK IN PROGRESS AND THIS IS THE PLANNED FEATURES. NOT ALL ARE FUNCTIONAL!
+NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING IS NOT FUNCTIONAL!
 
 * FFMPEG Gyan auto version checker/updater.
 * Encode files using library presets.
