@@ -37,11 +37,18 @@ Initial need was to convert a filetype and encode to another.
 
 ## Preview 
 
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ThBUAuPFYC.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_1L2YUkyZUa.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_Im8QBOTLeN.png)
-
-Changes too often to post more images but once I settle for a design it will get updated with more.
+<details>
+  <summary>Hiding images to save space, click to show!</summary>
+  
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_bgHaNJQ7dE.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hM9XKIB3kS.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_AV3oxeaD8N.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_VnnHXr3Pm0.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_yrbbBs2xMH.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_LkBdY5PeUl.png)
+  
+</details>
+UI/Style may change quite often.
 
 ## Features
 
