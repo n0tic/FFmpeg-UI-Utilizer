@@ -2,12 +2,17 @@
     <img src="https://github.com/n0tic/FFmpeg-UI-Utilizer/raw/master/FFmpeg%20Utilizer/Resources/ffmpegUtilizerLogo.jpg" alt="FFmpeg Utilizer Logo">
     <br />
     <br />
+	WIP!
+    <br />
+    <br />
     <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with LOVE">
     <br />
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
     <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer.svg" alt="License Badge">
     <img src="https://img.shields.io/maintenance/YES/2020" alt="Maintained Badge">
 </p>
+
+WIP!
 
 FFMPEG Utilizer is a UI/GUI application which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
 
