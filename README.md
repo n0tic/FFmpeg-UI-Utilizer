@@ -136,8 +136,11 @@ The application itself is portable and does not need to be installed. Make sure 
 
 ## Bugs
 
-First off, this project is a work in progress (WIP) and will have unfinished features scattered everywhere.
-Protytyping first, polishing later.
+First off, this project is a work in progress (WIP) and will have unfinished features scattered.
+I am no pro when it comes to using FFmpeg so the arguments FFmpeg Utilizer generates may not be working well with all codecs.
+So the results of the process may not be 100% satsfactory. Please leave your feedback and or information regarding features you feel are missing or wrong.
+
+~ Protytyping first, polishing later.
 
 - UI has been designed but no actions has been added to some UI elements.
 - More coming.
