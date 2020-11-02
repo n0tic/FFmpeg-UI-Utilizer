@@ -111,7 +111,7 @@ namespace FFmpeg_Utilizer
             button4.Visible = true;
 #endif
 
-#region Settings
+            #region Settings
 
             //Get Settings Data
             foreach (Libs.Overwrite ow in (Libs.Overwrite[])Enum.GetValues(typeof(Libs.Overwrite)))
@@ -187,9 +187,9 @@ namespace FFmpeg_Utilizer
                 Settings_QualityDropdown.SelectedIndex = 0;
             }
 
-#endregion Settings
+            #endregion Settings
 
-#region Encoder
+            #region Encoder
 
             //Get Settings Data
             foreach (Libs.Overwrite ow in (Libs.Overwrite[])Enum.GetValues(typeof(Libs.Overwrite)))
@@ -249,9 +249,9 @@ namespace FFmpeg_Utilizer
                     Encoder_OutputFolderTextBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
             }
 
-#endregion Encoder
+            #endregion Encoder
 
-#region M3U8
+            #region M3U8
 
             if (settings.loaded)
             {
@@ -268,9 +268,9 @@ namespace FFmpeg_Utilizer
                     M3U8_OutputFolderTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
             }
 
-#endregion M3U8
+            #endregion M3U8
 
-#region Cut
+            #region Cut
 
             foreach (Libs.VCodec codec in (Libs.VCodec[])Enum.GetValues(typeof(Libs.VCodec)))
                 Cut_VideoCodecBox.Items.Add(codec);
@@ -305,7 +305,7 @@ namespace FFmpeg_Utilizer
                     Cut_OutputDirectoryBox.Text = Core.GetSubfolder(Core.SubFolders.Output);
             }
 
-#endregion Cut
+            #endregion Cut
 
             //Set lower left information
             SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
@@ -313,7 +313,7 @@ namespace FFmpeg_Utilizer
             GitLabel.Text = Core.softwareGIT;
         }
 
-#region Software Window
+        #region Software Window
 
         private void NoticeCloseButton_Click(object sender, EventArgs e) => notice.CloseNotice();
 
@@ -323,9 +323,9 @@ namespace FFmpeg_Utilizer
 
         private void TopLogo_MouseDown(object sender, MouseEventArgs e) => Core.MoveWindow(this, e);
 
-#endregion Software Window
+        #endregion Software Window
 
-#region Tabs
+        #region Tabs
 
         private void AddTabs()
         {
@@ -356,9 +356,9 @@ namespace FFmpeg_Utilizer
 
         private void Menu_UpdatesTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Updater);
 
-#endregion Tabs
+        #endregion Tabs
 
-#region Testing
+        #region Testing
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -380,7 +380,7 @@ namespace FFmpeg_Utilizer
             notice.SetNotice("A notice system for errors, warnings, infos and successful operations.", NoticeModule.TypeNotice.Success);
         }
 
-#endregion Testing
+        #endregion Testing
 
         private void Update_CheckForUpdateButton_Click(object sender, EventArgs e) => updater.StartUpdateCheckAsync();
 
@@ -920,12 +920,10 @@ namespace FFmpeg_Utilizer
 
         private void Argument_ShowMergeButton_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Argument_RunArgumentButton_Click(object sender, EventArgs e)
         {
-
         }
     }
 }
