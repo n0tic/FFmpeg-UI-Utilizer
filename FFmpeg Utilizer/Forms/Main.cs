@@ -13,6 +13,9 @@ using System.IO;
 using System.Net;
 using System.Windows.Forms;
 
+// TODO: Merge
+// TODO: Comments
+
 namespace FFmpeg_Utilizer
 {
     public partial class Main : Form
