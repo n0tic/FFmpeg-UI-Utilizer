@@ -120,9 +120,6 @@
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="label40.Text" xml:space="preserve">
     <value>When launched FFmpeg Utilizer always create the default folders (Downloads, Output, tmp, Tools). These folders will help to automate FFmpeg Utilizer.
 The download of FFmpeg &amp; FFplay will always be the stable essentials release from https://www.gyan.dev/ffmpeg/builds/

@@ -36,18 +36,18 @@ namespace FFmpeg_Utilizer.Modules
                         ListView.ListViewItemCollection items = main.M3U8_listView.Items;
                         foreach (ListViewItem item in items)
                         {
-                            switch (item.SubItems[1].Text)
+                            switch (item.SubItems[2].Text)
                             {
                                 case "¿ Processing":
-                                    item.SubItems[1].Text = "✗ Aborted";
+                                    item.SubItems[2].Text = "✗ Aborted";
                                     break;
 
                                 case "✗ Aborted":
-                                    item.SubItems[1].Text = "• Waiting";
+                                    item.SubItems[2].Text = "• Waiting";
                                     break;
 
                                 case "✗ Failed":
-                                    item.SubItems[1].Text = "• Waiting";
+                                    item.SubItems[2].Text = "• Waiting";
                                     break;
                             }
                         }
@@ -62,7 +62,7 @@ namespace FFmpeg_Utilizer.Modules
                 KillThreads();
 
                 main.M3U8_ProgressBar.Value = 0;
-                main.M3U8_StartButton.Text = "Start Encoding";
+                main.M3U8_StartButton.Text = "Start M3U8";
                 main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229); // 99, 172, 229 blue | 255, 128, 128 red
             }
             else
@@ -81,7 +81,7 @@ namespace FFmpeg_Utilizer.Modules
                 queueThread.Start();
 
                 inProcess = true;
-                main.M3U8_StartButton.Text = "Stop Encoding";
+                main.M3U8_StartButton.Text = "Stop M3U8";
                 main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
             }
         }
@@ -149,7 +149,7 @@ namespace FFmpeg_Utilizer.Modules
             {
                 //Don't reset if successful.
                 SystemSounds.Exclamation.Play();
-                main.M3U8_StartButton.Text = "Start Encoding";
+                main.M3U8_StartButton.Text = "Start M3U8";
                 main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
             }));
 
@@ -163,7 +163,7 @@ namespace FFmpeg_Utilizer.Modules
                 StartInfo =
                 {
                     FileName = main.settings.ffmpegPath,
-                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -acodec copy -vcodec copy -absf aac_adtstoasc \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4",
+                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -absf aac_adtstoasc -acodec copy -vcodec copy \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4",
                     UseShellExecute = false
                 }
             };
