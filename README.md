@@ -14,7 +14,7 @@
 
 WIP!
 
-FFMPEG Utilizer is a UI/GUI application which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
+FFMPEG Utilizer is a UI/GUI software which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
 
 FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way officially connected with FFmpeg.
 [FFmpeg](https://ffmpeg.org/) itself is a complete, cross-platform solution to record, convert and stream audio and video. 
@@ -70,14 +70,20 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
             Video Max Bufsize (Bitrate) (To be added)
             File Exstension / Type
 * Cut and Merge files
-	* Cut
+    * Cut
     	* This feature will extract video/audio from user timestamps.
+	   * Provide timestamps as start and end.
+	   * You can set video / Audio codecs.
+	   * Speed / Quality
+	      * This can be specifiec with an additional crf quality. Lower = better | Higher = worse.
     * Merge
     	* This feature will merge multiple video/audio files using a ordered list.
+	* Unfinished
 * M3U8
 	* This feature is intended to download and merge segmented HLS video/Audio files.
     	* Standard Add and Remove features are available.
         * Video Preview button is available.
+	* URI Listener is working with this feature of the software.
 * Arguments
 	* This feature offers the user a way to see the generated argument or run their own custom argument.
     	* It comes with a feature to copy commands to clipboard.
@@ -85,14 +91,14 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
 	* *Manual Start Required! - (Settings tab)*
 ```
 This feature is supposed to filter connections and limit to browser requests.
-Check if the request match our specific GET request for adding a URL to our application. 
-If the request is satisfactory the request will be handled and the data added to our application. 
+Check if the request match our specific GET request for adding a URL to our software. 
+If the request is satisfactory the request will be handled and the data added to our software. 
 The idea is intended to be working hand in hand with a browser extension. 
 ```
 ```
 For now, only manual inputs work:
 http://127.0.0.1:{PORT}?add=http://google.se/hls.m3u8
-This will add the required information automatically to our application.
+This will add the required information automatically to our software.
 ```
 Query Headers - Bad Request
 ```
@@ -132,8 +138,8 @@ For full functionallity:
 - ffmpeg.exe (Download feature included. Requires Internet Connection.)
 - ffplay.exe (Download feature included. Requires Internet Connection.)
 
-This application needs .NET Framework 4.6 minumum to run.
-The application itself will need ffmpeg and ffplay to be able to execute requested commands. The application has a built-in feature to automatically download and unpack the latest build from Gyan.
+This software needs .NET Framework 4.6 minumum to run.
+The software itself will need ffmpeg and ffplay to be able to execute requested commands. The software has a built-in feature to automatically download and unpack the latest build from Gyan.
 ```
 https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 ```
@@ -143,7 +149,7 @@ https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 [.Net Framework 4.6](https://www.microsoft.com/en-US/download/details.aspx?id=48130) Download location.
 
 
-The application itself is portable and does not need to be installed. Make sure you have .Net Framework installed and simply unpack and run FFMPEG_Utilizer.exe.
+The software itself is portable and does not need to be installed. Make sure you have .Net Framework installed and simply unpack and run FFMPEG_Utilizer.exe.
 
 ## Bugs
 
@@ -171,7 +177,7 @@ All files are provided as-is with no express or implied warranty.
 No liability for content in external links.
 
 Neither I, personally, nor ByteVault Studio are affiliated, associated, endorsed by, or in any way officially connected with FFmpeg or any of its subsidiaries or its affiliates.
-FFMPEG Utilizer and all its content is provided "as is" and "with all faults." I makes no representations or warranties of any kind concerning the safety, suitability, inaccuracies, typographical errors, or other components mishaps. I guarantee no accuracy or completeness of any information or usage on or in this project or found by following any link in this readme. There are inherent dangers in the use of any software, and you are solely responsible for determining whether this application is compatible with your equipment and other softwares installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and I nor ByteVault Studio will be liable for any damages you may suffer in connection with using, modifying, or distributing FFMPEG Utilizer.
+FFMPEG Utilizer and all its content is provided "as is" and "with all faults." I makes no representations or warranties of any kind concerning the safety, suitability, inaccuracies, typographical errors, or other components mishaps. I guarantee no accuracy or completeness of any information or usage on or in this project or found by following any link in this readme. There are inherent dangers in the use of any software, and you are solely responsible for determining whether this software is compatible with your equipment and other softwares installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and I nor ByteVault Studio will be liable for any damages you may suffer in connection with using, modifying, or distributing FFMPEG Utilizer.
 
 ## License
 
