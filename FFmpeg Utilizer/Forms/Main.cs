@@ -30,6 +30,7 @@ namespace FFmpeg_Utilizer
         public EncodingProcessor encodingProcessor;
         public M3U8Processor m3u8Processor;
         public CutProcessor cutProcessor;
+        public MergeProcessor mergeProcessor;
         public UriRequestsHandler uriRequestHandler;
 
         //FFplay process
@@ -74,6 +75,7 @@ namespace FFmpeg_Utilizer
             encodingProcessor = new EncodingProcessor(this);
             m3u8Processor = new M3U8Processor(this);
             cutProcessor = new CutProcessor(this);
+            mergeProcessor = new MergeProcessor(this);
 
             if (hasInternet)
                 updater = new UtilityUpdaterModule(this);
@@ -307,6 +309,25 @@ namespace FFmpeg_Utilizer
 
             #endregion Cut
 
+            #region Merge
+
+            if (settings.loaded)
+            {
+                Merge_HideConsoleToggle.Checked = settings.hideConsole;
+
+                if (Directory.Exists(settings.outputLocation))
+                    Merge_OutputDirectoryTextbox.Text = settings.outputLocation;
+                else if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    Merge_OutputDirectoryTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+            else
+            {
+                if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    Merge_OutputDirectoryTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+
+            #endregion Merge
+
             //Set lower left information
             SoftwareLabel.Text = Core.softwareName + " " + Core.GetVersion();
             AuthorLabel.Text = Core.authorRealName + " AKA " + Core.authorName;
@@ -499,6 +520,8 @@ namespace FFmpeg_Utilizer
                 return;
             }
 
+            List<string> allowedExtensions = Libs.GetAllowedExtension();
+
             //Clear listview.
             Encoder_FilesList.Items.Clear();
 
@@ -511,8 +534,22 @@ namespace FFmpeg_Utilizer
             //Add data to the listview.
             foreach (string file in files)
             {
-                ListViewItem item = new ListViewItem(new[] { file, "• Waiting" });
-                Encoder_FilesList.Items.Add(item);
+                FileInfo f = new FileInfo(file);
+                foreach (string ext in allowedExtensions)
+                {
+                    if ("." + ext == f.Extension)
+                    {
+                        ListViewItem item = new ListViewItem(new[] { file, "• Waiting" });
+                        Encoder_FilesList.Items.Add(item);
+                        break;
+                    }
+                }
+            }
+
+            if(files.Length > Encoder_FilesList.Items.Count)
+            {
+                // TODO: Fix location?
+                notice.SetNotice("Some files has been filtered out since they were not an allowed extension.", NoticeModule.TypeNotice.Warning);
             }
         }
 
@@ -531,7 +568,7 @@ namespace FFmpeg_Utilizer
             }
             if (Encoder_FilesList.Items.Count < 1 || Encoder_FilesList.Items?[0].Text == "Drag and drop a folder or multiple files here...")
             {
-                notice.SetNotice("The list of files to encode was empty. Drag files onto the list.", NoticeModule.TypeNotice.Warning);
+                notice.SetNotice("The list of files to encode was empty. Drag files onto the list.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -924,6 +961,110 @@ namespace FFmpeg_Utilizer
 
         private void Argument_RunArgumentButton_Click(object sender, EventArgs e)
         {
+        }
+
+        private void Merge_listView_DragDrop(object sender, DragEventArgs e)
+        {
+            // TODO: Fix to Merge
+            if (encodingProcessor.encodingInProcess)
+            {
+                notice.SetNotice("Merge is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            List<string> allowedExtensions = Libs.GetAllowedExtension();
+
+            //Clear listview.
+            Merge_listView.Items.Clear();
+
+            //Get all files dropped by user over the control.
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            //Detect if there was a directory. Use only directory.
+            if (Directory.Exists(files[0])) files = Directory.GetFiles(files[0]);
+
+            //Add data to the listview.
+            foreach (string file in files)
+            {
+                FileInfo f = new FileInfo(file);
+                foreach (string  ext in allowedExtensions)
+                {
+                    if("."+ext == f.Extension)
+                    {
+                        ListViewItem item = new ListViewItem(new[] { (Merge_listView.Items.Count + 1).ToString(), file });
+                        Merge_listView.Items.Add(item);
+                        break;
+                    }
+                }
+            }
+
+            if (files.Length > Merge_listView.Items.Count)
+            {
+                // TODO: Fix location?
+                notice.SetNotice("Some files has been filtered out since they were not an allowed extension.", NoticeModule.TypeNotice.Warning);
+            }
+        }
+
+        private void Merge_listView_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+
+        private void Merge_StartButton_Click(object sender, EventArgs e)
+        {
+            if(Merge_listView.Items[0].SubItems[1].Text == "Drag and drop a folder or multiple files here...")
+            {
+                notice.SetNotice("File list can not be empty. Drag files to merge onto the list.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            List<string> data = new List<string>() { "# This is the list, in order, from which the new file will generated from." };
+            foreach (ListViewItem item in Merge_listView.Items)
+                data.Add(item.SubItems[1].Text);
+
+            // TODO: Add checks
+            if(Core.WriteToFile(data, "tmptest.txt"))
+            {
+                MergeProcesserData processData = new MergeProcesserData(Core.GetSubfolder(Core.SubFolders.tmp) + "tmptest.txt",Merge_OutputDirectoryTextbox.Text, Merge_OutputFileName.Text, Path.GetExtension(Merge_listView.Items[0].SubItems[1].Text), Merge_HideConsoleToggle.Checked);
+                mergeProcessor.ProcessMerge(processData);
+            }
+        }
+
+        private void Merge_listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Merge_listView.SelectedItems.Count > 0 && Merge_listView.SelectedItems[0].SubItems[1].Text != "Drag and drop a folder or multiple files here...")
+            {
+                FileInfo file = new FileInfo(Merge_listView.SelectedItems[0].SubItems[1].Text);
+                Merge_mediaOrderLabel.Text = Merge_listView.SelectedItems[0].SubItems[0].Text;
+                Merge_mediaPathLabel.Text = file.FullName;
+                toolTip.SetToolTip(Merge_mediaPathLabel, file.FullName);
+                Merge_SizeLabel.Text = Core.WordNotation(file.Length).Replace("/s", "");
+                Merge_mediaExtensionLabel.Text = file.Extension;
+                List<string> knownExtensions = CommonExtensions.GetAllExtensionsList();
+                int known = -1;
+                for (int i = 0; i < knownExtensions.Count; i++)
+                {
+                    if (knownExtensions[i] == file.Extension)
+                    {
+                        known = i;
+                        break;
+                    }
+                }
+                if (known > -1)
+                {
+                    List<string> desc = CommonExtensions.GetAllExtensionsDescriptionsList();
+                    Merge_mediaExtensionDescLabel.Text = desc[known];
+                }
+            }
+            else
+            {
+                Merge_mediaOrderLabel.Text = "";
+                Merge_mediaPathLabel.Text = "";
+                toolTip.SetToolTip(Merge_mediaPathLabel, "");
+                Merge_SizeLabel.Text = "";
+                Merge_mediaExtensionLabel.Text = "";
+                Merge_mediaExtensionDescLabel.Text = "";
+            }
         }
     }
 }

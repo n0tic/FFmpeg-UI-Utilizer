@@ -58,6 +58,7 @@
     <Compile Include="Data\EncodeProcesserData.cs" />
     <Compile Include="Data\M3U8Argument.cs" />
     <Compile Include="Data\M3U8ProcesserData.cs" />
+    <Compile Include="Data\MergeProcesserData.cs" />
     <Compile Include="Data\Settings.cs" />
     <Compile Include="Data\static\CommonExtensions.cs" />
     <Compile Include="Data\static\Libs.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Modules\CutProcessor.cs" />
     <Compile Include="Modules\EncodingProcessor.cs" />
     <Compile Include="Modules\M3U8Processor.cs" />
+    <Compile Include="Modules\MergeProcessor.cs" />
     <Compile Include="Modules\NoticeModule.cs" />
     <Compile Include="Modules\Submodule\URIRequestExtender.cs" />
     <Compile Include="Modules\UriRequestsHandler.cs" />

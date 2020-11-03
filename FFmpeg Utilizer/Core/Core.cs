@@ -20,7 +20,7 @@ namespace FFmpeg_Utilizer
         public static string authorContact = "contact@bytevaultstudio.se";
         public static string companyWebsite = "http://bytevaultstudio.se/";
         public static string softwareGIT = "Git /n0tic/FFmpeg-UI-Utilizer";
-        public static string softwareGITURL = "https://github.com/n0tic/FFMPEG-UI-Utilizer";
+        public static string softwareGITURL = "https://github.com/n0tic/FFmpeg-UI-Utilizer";
 
         #region Version
 
@@ -144,6 +144,53 @@ namespace FFmpeg_Utilizer
             return false;
         }
 
+        public static void WriteToFile(string data, string file = "tmp.txt")
+        {
+            try
+            {
+                using (StreamWriter sw = File.AppendText(GetSubfolder(SubFolders.tmp) + file))
+                {
+                    sw.WriteLine(data);
+                    sw.Close();
+                }
+            }
+            catch (UnauthorizedAccessException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (ArgumentNullException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (ArgumentException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (DirectoryNotFoundException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (PathTooLongException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (NotSupportedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (IOException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+        }
+
+        public static bool WriteToFile(List<string> data, string file = "tmp.txt")
+        {
+            try
+            {
+                if (File.Exists(GetSubfolder(SubFolders.tmp) + file)) File.Delete(GetSubfolder(SubFolders.tmp) + file);
+
+                using (StreamWriter sw = File.AppendText(GetSubfolder(SubFolders.tmp) + file))
+                {
+                    foreach (string f in data)
+                    {
+                        if(!f.Contains("#"))
+                            sw.WriteLine("file '" +f+ "'");
+                        else
+                            sw.WriteLine(f);
+                    }
+                    sw.Close();
+                }
+                return true;
+            }
+            catch (UnauthorizedAccessException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+            catch (ArgumentNullException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+            catch (ArgumentException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+            catch (DirectoryNotFoundException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+            catch (PathTooLongException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+            catch (NotSupportedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+            catch (IOException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); return false; }
+        }
+
         #endregion Files, Folders and Paths
 
         #region Network
@@ -201,7 +248,7 @@ namespace FFmpeg_Utilizer
                 number /= 1024;
                 counter++;
             }
-            return string.Format("{0:n1}{1}", number, suffixes[counter]);
+            return string.Format("{0:n1} {1}", number, suffixes[counter]);
         }
 
         #endregion Word Notation

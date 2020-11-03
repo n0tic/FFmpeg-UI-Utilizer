@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace FFmpeg_Utilizer.Data
 {
@@ -207,12 +208,23 @@ namespace FFmpeg_Utilizer.Data
 
         #region Files
 
+        public static List<string> GetAllowedExtension()
+        {
+            List<string> extensions = new List<string>();
+            foreach (VideoFileExtensions ext in (VideoFileExtensions[])Enum.GetValues(typeof(VideoFileExtensions)))
+                extensions.Add(ext.ToString());
+            foreach (AudioFileExtensions ext in (AudioFileExtensions[])Enum.GetValues(typeof(AudioFileExtensions)))
+                extensions.Add(ext.ToString());
+            return extensions;
+        }
+
         public enum VideoFileExtensions
         {
             mp4,
             avi,
             mov,
-            flv
+            flv,
+            ts
         }
 
         public enum AudioFileExtensions
