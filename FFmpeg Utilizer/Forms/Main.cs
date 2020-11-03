@@ -840,7 +840,7 @@ namespace FFmpeg_Utilizer
             decimal _start = startHour + startMinute + startSeconds + startMiliseconds;
             decimal _end = endHour + endMinute + endSeconds + endMiliseconds;
 
-            if (_start >= _end) Cut_PreviewLabel.ForeColor = Color.FromArgb(255, 128, 128);
+            if (_end == 0) Cut_PreviewLabel.ForeColor = Color.FromArgb(255, 128, 128);
             else Cut_PreviewLabel.ForeColor = Color.FromArgb(0, 0, 0);
 
             return start + " - " + end;
@@ -858,7 +858,7 @@ namespace FFmpeg_Utilizer
             string start = timespan.Split(' ')[0];
             string end = timespan.Split(' ')[2];
 
-            if (start != end && Cut_listView.FindItemWithText(timespan) == null)
+            if (end != "0:00:0.0" && Cut_listView.FindItemWithText(timespan) == null)
             {
                 ListViewItem item = new ListViewItem(timespan);
                 Cut_listView.Items.Add(item);
@@ -1025,7 +1025,10 @@ namespace FFmpeg_Utilizer
                 Merge_mediaOrderLabel.Text = Merge_listView.SelectedItems[0].SubItems[0].Text;
                 Merge_mediaPathLabel.Text = file.FullName;
                 toolTip.SetToolTip(Merge_mediaPathLabel, file.FullName);
-                Merge_SizeLabel.Text = Core.WordNotation(file.Length).Replace("/s", "");
+                if(file.Exists)
+                    Merge_SizeLabel.Text = Core.WordNotation(file.Length).Replace("/s", "");
+                else
+                    Merge_SizeLabel.Text = "File moved or deleted.";
                 Merge_mediaExtensionLabel.Text = file.Extension;
                 List<string> knownExtensions = CommonExtensions.GetAllExtensionsList();
                 int known = -1;

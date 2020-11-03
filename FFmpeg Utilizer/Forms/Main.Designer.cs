@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag and drop a folder or multiple files here..."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
@@ -513,9 +513,9 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
@@ -772,7 +772,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7});
+            listViewItem19});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -1447,7 +1447,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem8});
+            listViewItem20});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -2158,9 +2158,9 @@
             this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
             this.label62.Location = new System.Drawing.Point(12, 91);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(47, 14);
+            this.label62.Size = new System.Drawing.Size(49, 14);
             this.label62.TabIndex = 46;
-            this.label62.Text = "End Time:";
+            this.label62.Text = "How long:";
             // 
             // label63
             // 
