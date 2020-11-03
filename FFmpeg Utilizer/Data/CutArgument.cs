@@ -30,6 +30,8 @@ namespace FFmpeg_Utilizer.Data
 
             args = "-y -i ";
 
+            // TODO: Fix cutting. Appears to not listen to start time.
+
             if (inputMedia != null)
                 args += "\"" + inputMedia.FullName + "\"";
             else args += "\"C:\\inputfile.mp4\"";

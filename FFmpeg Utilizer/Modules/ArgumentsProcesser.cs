@@ -1,5 +1,4 @@
-﻿using FFmpeg_Utilizer.Data;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -9,28 +8,28 @@ using System.Threading;
 
 namespace FFmpeg_Utilizer.Modules
 {
-    public class MergeProcessor
+    public class ArgumentsProcesser
     {
         public Main main;
 
         internal bool inProcess = false;
 
-        private MergeProcesserData data;
-
-        internal Thread mergeWorkerThread;
+        internal Thread argsWorkerThread;
         internal Thread checkerThread;
 
-        private Process mergeProcess;
+        private string args = "";
 
-        public MergeProcessor(Main _main) => this.main = _main;
+        private Process argsProcess;
 
-        internal void ProcessMerge(MergeProcesserData data)
+        public ArgumentsProcesser(Main _main) => this.main = _main;
+
+        internal void ProcessArgs(string args)
         {
             if (inProcess)
             {
                 try
                 {
-                    mergeProcess.Kill();
+                    argsProcess.Kill();
                 }
                 catch (Win32Exception) { }
                 catch (NotSupportedException) { }
@@ -38,9 +37,8 @@ namespace FFmpeg_Utilizer.Modules
 
                 KillThreads();
 
-                main.Merge_ProgressBar.Value = 0;
-                main.Merge_StartButton.Text = "Start Merging";
-                main.Merge_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229); // 99, 172, 229 blue | 255, 128, 128 red
+                main.Argument_RunArgumentButton.Text = "Run Argument ▶";
+                main.Argument_RunArgumentButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229); // 99, 172, 229 blue | 255, 128, 128 red
             }
             else
             {
@@ -50,35 +48,33 @@ namespace FFmpeg_Utilizer.Modules
                     return;
                 }
 
-                this.data = data;
-                main.Merge_ProgressBar.Value = 0;
-                main.Merge_ProgressBar.Maximum = 1;
+                this.args = args;
 
                 checkerThread = new Thread(() => StartQueueProcess());
                 checkerThread.Start();
 
                 inProcess = true;
-                main.Merge_StartButton.Text = "Stop Merging";
-                main.Merge_StartButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
+                main.Argument_RunArgumentButton.Text = "Stop Argument";
+                main.Argument_RunArgumentButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
             }
         }
 
         private void StartQueueProcess()
         {
-            mergeWorkerThread = new Thread(() => StartEncodingProcess());
-            mergeWorkerThread.Start();
+            argsWorkerThread = new Thread(() => StartEncodingProcess());
+            argsWorkerThread.Start();
 
             //Give time for application to start. Is it needed?
             Thread.Sleep(100);
 
-            while (mergeProcess != null) Thread.Sleep(25);
+            while (argsProcess != null) Thread.Sleep(25);
 
             main.Invoke(new Action(() =>
             {
                 //Don't reset if successful.
                 SystemSounds.Exclamation.Play();
-                main.Merge_StartButton.Text = "Start Merging";
-                main.Merge_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
+                main.Argument_RunArgumentButton.Text = "Run Argument ▶";
+                main.Argument_RunArgumentButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
             }));
 
             inProcess = false;
@@ -86,28 +82,26 @@ namespace FFmpeg_Utilizer.Modules
 
         private void StartEncodingProcess()
         {
-            mergeProcess = new Process
+            argsProcess = new Process
             {
                 StartInfo =
                 {
                     FileName = main.settings.ffmpegPath,
-                    Arguments = "-y -f concat -safe 0 -i \"" + data.file + "\" -c copy \"" + data.outputFolder + "\\" + data.outputname + data.ext + "\"",
+                    Arguments = args,
                     UseShellExecute = false
                 }
             };
 
-            if (data.hideConsole) mergeProcess.StartInfo.CreateNoWindow = true;
-
             try
             {
-                mergeProcess.Start(); // ffmpegProcess.Id
-                mergeProcess.WaitForExit();
+                argsProcess.Start(); // ffmpegProcess.Id
+                argsProcess.WaitForExit();
             }
             catch (ObjectDisposedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
             catch (InvalidOperationException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
             catch (Win32Exception x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
             catch (PlatformNotSupportedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
-            finally { mergeProcess = null; }
+            finally { argsProcess = null; }
         }
 
         internal void KillThreads()
@@ -115,7 +109,7 @@ namespace FFmpeg_Utilizer.Modules
             try
             {
                 checkerThread?.Abort();
-                mergeWorkerThread?.Abort();
+                argsWorkerThread?.Abort();
             }
             catch (PlatformNotSupportedException) { }
             catch (System.Security.SecurityException) { }

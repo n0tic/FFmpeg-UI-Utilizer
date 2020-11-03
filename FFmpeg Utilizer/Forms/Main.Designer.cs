@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag and drop a folder or multiple files here..."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
@@ -382,6 +382,8 @@
             this.Merge_OutputFileName = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.Argument_ClearButton = new System.Windows.Forms.Button();
+            this.label38 = new System.Windows.Forms.Label();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
             this.MergeMainPanel.SuspendLayout();
@@ -511,11 +513,11 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
-            this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -598,9 +600,9 @@
             this.groupBox3.Controls.Add(this.panel64);
             this.groupBox3.Controls.Add(this.panel70);
             this.groupBox3.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.groupBox3.Location = new System.Drawing.Point(270, 57);
+            this.groupBox3.Location = new System.Drawing.Point(270, 62);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(606, 196);
+            this.groupBox3.Size = new System.Drawing.Size(606, 191);
             this.groupBox3.TabIndex = 79;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Media Details";
@@ -611,7 +613,7 @@
             this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
             this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(3, 143);
             this.Merge_mediaExtensionDescLabel.Name = "Merge_mediaExtensionDescLabel";
-            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(600, 50);
+            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(600, 45);
             this.Merge_mediaExtensionDescLabel.TabIndex = 5;
             // 
             // panel24
@@ -770,7 +772,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem7});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -1445,7 +1447,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem8});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1703,6 +1705,8 @@
             // ArgumentMainPanel
             // 
             this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.ArgumentMainPanel.Controls.Add(this.label38);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ClearButton);
             this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
             this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
             this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
@@ -4503,12 +4507,37 @@
             // 
             this.Merge_HideConsoleToggle.AutoSize = true;
             this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(364, 42);
+            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 43);
             this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
             this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
             this.Merge_HideConsoleToggle.TabIndex = 88;
             this.Merge_HideConsoleToggle.Text = "Hide Console";
             this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
+            // Argument_ClearButton
+            // 
+            this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ClearButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ClearButton.Location = new System.Drawing.Point(359, 47);
+            this.Argument_ClearButton.Name = "Argument_ClearButton";
+            this.Argument_ClearButton.Size = new System.Drawing.Size(76, 24);
+            this.Argument_ClearButton.TabIndex = 75;
+            this.Argument_ClearButton.Text = "Clear Args";
+            this.Argument_ClearButton.UseVisualStyleBackColor = false;
+            this.Argument_ClearButton.Click += new System.EventHandler(this.Argument_ClearButton_Click);
+            // 
+            // label38
+            // 
+            this.label38.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label38.Location = new System.Drawing.Point(500, 50);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(217, 25);
+            this.label38.TabIndex = 88;
+            this.label38.Text = "You can freely write your own arguments here. ";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Main
             // 
@@ -4880,7 +4909,6 @@
         private System.Windows.Forms.Button Argument_ShowM3U8Button;
         private System.Windows.Forms.Button Argument_ShowMergeButton;
         private System.Windows.Forms.Button Argument_ShowCutButton;
-        private System.Windows.Forms.Button Argument_RunArgumentButton;
         private System.Windows.Forms.Button Argument_ShowEncodeButton;
         private System.Windows.Forms.TextBox Argument_PreviewBox;
         private System.Windows.Forms.Panel panel37;
@@ -5001,6 +5029,9 @@
         private System.Windows.Forms.TextBox Merge_OutputFileName;
         private System.Windows.Forms.Label label33;
         internal System.Windows.Forms.CheckBox Merge_HideConsoleToggle;
+        private System.Windows.Forms.Button Argument_ClearButton;
+        internal System.Windows.Forms.Button Argument_RunArgumentButton;
+        private System.Windows.Forms.Label label38;
     }
 }
 

@@ -173,8 +173,8 @@ namespace FFmpeg_Utilizer
                 {
                     foreach (string f in data)
                     {
-                        if(!f.Contains("#"))
-                            sw.WriteLine("file '" +f+ "'");
+                        if (!f.Contains("#"))
+                            sw.WriteLine("file '" + f + "'");
                         else
                             sw.WriteLine(f);
                     }

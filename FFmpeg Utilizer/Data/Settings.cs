@@ -2,7 +2,6 @@
 using Microsoft.Win32;
 using System;
 using System.Security;
-using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Data
 {
@@ -105,7 +104,7 @@ namespace FFmpeg_Utilizer.Data
                     loaded = true;
                 }
             }
-            catch (Exception e) { MessageBox.Show(e.Message); }
+            catch (Exception) { }
         }
 
         public void SaveSettings()
@@ -137,7 +136,7 @@ namespace FFmpeg_Utilizer.Data
                     key.Close();
                 }
             }
-            catch (Exception) { MessageBox.Show("Unknown error occured when saving settings. Try again..."); }
+            catch (Exception) { }
         }
 
         public enum UpdateType

@@ -66,8 +66,6 @@ namespace FFmpeg_Utilizer.Modules
                     //Convert Byte to String
                     string buffer = Encoding.ASCII.GetString(bReceive);
 
-                    //MessageBox.Show(buffer);
-
                     //Create headers
                     Headers headers = new Headers();
                     headers.AddHeaders(buffer.Split(new string[] { Environment.NewLine }, StringSplitOptions.None));

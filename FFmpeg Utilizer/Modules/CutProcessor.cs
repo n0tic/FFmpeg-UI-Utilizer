@@ -122,10 +122,10 @@ namespace FFmpeg_Utilizer.Modules
                 cutProcess.Start(); // ffmpegProcess.Id
                 cutProcess.WaitForExit();
             }
-            catch (ObjectDisposedException x) { MessageBox.Show(x.Message); }
-            catch (InvalidOperationException x) { MessageBox.Show(x.Message); }
-            catch (Win32Exception x) { MessageBox.Show(x.Message); }
-            catch (PlatformNotSupportedException x) { MessageBox.Show(x.Message); }
+            catch (ObjectDisposedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (InvalidOperationException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (Win32Exception x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
+            catch (PlatformNotSupportedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
             finally { cutProcess = null; }
         }
 

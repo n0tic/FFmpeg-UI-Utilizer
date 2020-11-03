@@ -75,6 +75,7 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ArgumentsProcesser.cs" />
     <Compile Include="Modules\CutProcessor.cs" />
     <Compile Include="Modules\EncodingProcessor.cs" />
     <Compile Include="Modules\M3U8Processor.cs" />

@@ -13,7 +13,7 @@ using System.IO;
 using System.Net;
 using System.Windows.Forms;
 
-// TODO: Merge
+// TODO: Arguments run command
 // TODO: Comments
 
 namespace FFmpeg_Utilizer
@@ -32,6 +32,7 @@ namespace FFmpeg_Utilizer
         public CutProcessor cutProcessor;
         public MergeProcessor mergeProcessor;
         public UriRequestsHandler uriRequestHandler;
+        public ArgumentsProcesser argumentsProcesser;
 
         //FFplay process
         private Process PlayProcess;
@@ -76,6 +77,7 @@ namespace FFmpeg_Utilizer
             m3u8Processor = new M3U8Processor(this);
             cutProcessor = new CutProcessor(this);
             mergeProcessor = new MergeProcessor(this);
+            argumentsProcesser = new ArgumentsProcesser(this);
 
             if (hasInternet)
                 updater = new UtilityUpdaterModule(this);
@@ -798,11 +800,7 @@ namespace FFmpeg_Utilizer
         private void Argument_ShowEncodeButton_Click(object sender, EventArgs e)
         {
             EncoderArgument args = new EncoderArgument((Libs.Overwrite)Enum.Parse(typeof(Libs.Overwrite), Encoder_OverwriteBox.Text, true), null, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Encoder_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Encoder_AudioCodecBox.Text, true), (Libs.Tune)Enum.Parse(typeof(Libs.Tune), Encoder_TunerBox.Text, true), (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Encoder_PresetsBox.Text, true), (Libs.Frames)Enum.Parse(typeof(Libs.Frames), Encoder_FPSBox.Text, true), (Libs.Size)Enum.Parse(typeof(Libs.Size), Encoder_ResolutionBox.Text, true), Encoder_OutputFolderTextBox.Text, "filename", (Libs.VideoFileExtensions)Enum.Parse(typeof(Libs.VideoFileExtensions), Encoder_ExtensionBox.Text, true));
-            string ff;
-            if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
-            else ff = "ffmpeg ";
-
-            Argument_PreviewBox.Text = ff + args.ExecuteArgs();
+            Argument_PreviewBox.Text = args.ExecuteArgs();
         }
 
         private void Cut_InputMediaButton_Click(object sender, EventArgs e)
@@ -937,30 +935,19 @@ namespace FFmpeg_Utilizer
             else file = null;
 
             CutArgument args = new CutArgument(file, Cut_OutputDirectoryBox.Text, queue, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Cut_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Cut_AudioCodecBox.Text, true), Cut_CRFBox.Text, (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Cut_PresetBox.Text, true));
-            string ff;
-            if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
-            else ff = "ffmpeg ";
 
-            Argument_PreviewBox.Text = ff + args.ExecuteArgs();
+            Argument_PreviewBox.Text = args.ExecuteArgs();
         }
 
-        private void Argument_ShowM3U8Button_Click(object sender, EventArgs e)
-        {
-            string ff;
-            if (File.Exists(settings.ffmpegPath)) ff = "\"" + settings.ffmpegPath + "\" ";
-            else ff = "ffmpeg ";
-
-            Argument_PreviewBox.Text = ff + "-y -i \"http://whateverurl.com/stuff.m3u8\" -acodec copy -vcodec copy -absf aac_adtstoasc \"c:\\outputfolder\\outputfile.mp4";
-        }
+        private void Argument_ShowM3U8Button_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "-y -i \"http://whateverurl.com/stuff.m3u8\" -acodec copy -vcodec copy -absf aac_adtstoasc \"c:\\outputfolder\\outputfile.mp4\"";
 
         private void GitLabel_Click(object sender, EventArgs e) => Process.Start(Core.softwareGITURL);
 
-        private void Argument_ShowMergeButton_Click(object sender, EventArgs e)
-        {
-        }
+        private void Argument_ShowMergeButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "-y -f concat -safe 0 -i \"C:\\filelist.txt\" \"C:\\outputfolder\\OutputFileName.extension\"";
 
         private void Argument_RunArgumentButton_Click(object sender, EventArgs e)
         {
+            argumentsProcesser.ProcessArgs(Argument_PreviewBox.Text);
         }
 
         private void Merge_listView_DragDrop(object sender, DragEventArgs e)
@@ -1066,5 +1053,7 @@ namespace FFmpeg_Utilizer
                 Merge_mediaExtensionDescLabel.Text = "";
             }
         }
+
+        private void Argument_ClearButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "";
     }
 }
