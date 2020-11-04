@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag & drop here..."}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
@@ -513,13 +513,13 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.ArgumentMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
+            this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
-            this.panel95.Controls.Add(this.ArgumentMainPanel);
-            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
@@ -575,21 +575,21 @@
             // Cut_CRFBox
             // 
             this.Cut_CRFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_CRFBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_CRFBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_CRFBox.FormattingEnabled = true;
             this.Cut_CRFBox.Location = new System.Drawing.Point(314, 88);
             this.Cut_CRFBox.Name = "Cut_CRFBox";
-            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 24);
+            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 21);
             this.Cut_CRFBox.TabIndex = 81;
             // 
             // Cut_AudioCodecBox
             // 
             this.Cut_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_AudioCodecBox.FormattingEnabled = true;
             this.Cut_AudioCodecBox.Location = new System.Drawing.Point(227, 88);
             this.Cut_AudioCodecBox.Name = "Cut_AudioCodecBox";
-            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 24);
+            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
             this.Cut_AudioCodecBox.TabIndex = 76;
             // 
             // label17
@@ -605,11 +605,11 @@
             // Cut_VideoCodecBox
             // 
             this.Cut_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_VideoCodecBox.FormattingEnabled = true;
             this.Cut_VideoCodecBox.Location = new System.Drawing.Point(140, 88);
             this.Cut_VideoCodecBox.Name = "Cut_VideoCodecBox";
-            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 24);
+            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
             this.Cut_VideoCodecBox.TabIndex = 75;
             // 
             // label23
@@ -635,20 +635,20 @@
             // Cut_PresetBox
             // 
             this.Cut_PresetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_PresetBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_PresetBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_PresetBox.FormattingEnabled = true;
             this.Cut_PresetBox.Location = new System.Drawing.Point(401, 88);
             this.Cut_PresetBox.Name = "Cut_PresetBox";
-            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 24);
+            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 21);
             this.Cut_PresetBox.TabIndex = 79;
             // 
             // Cut_HideConsoleToggle
             // 
             this.Cut_HideConsoleToggle.AutoSize = true;
-            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(488, 95);
+            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(486, 95);
             this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
-            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(77, 18);
+            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
             this.Cut_HideConsoleToggle.TabIndex = 74;
             this.Cut_HideConsoleToggle.Text = "Hide Console";
             this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
@@ -723,7 +723,7 @@
             // 
             // Cut_EndMiliseconds
             // 
-            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_EndMiliseconds.Location = new System.Drawing.Point(307, 88);
             this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
             999,
@@ -731,13 +731,13 @@
             0,
             0});
             this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
-            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 23);
+            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 20);
             this.Cut_EndMiliseconds.TabIndex = 54;
             this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_EndSeconds
             // 
-            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_EndSeconds.Location = new System.Drawing.Point(231, 88);
             this.Cut_EndSeconds.Maximum = new decimal(new int[] {
             60,
@@ -745,13 +745,13 @@
             0,
             0});
             this.Cut_EndSeconds.Name = "Cut_EndSeconds";
-            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 23);
+            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 20);
             this.Cut_EndSeconds.TabIndex = 53;
             this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_EndMinutes
             // 
-            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_EndMinutes.Location = new System.Drawing.Point(155, 88);
             this.Cut_EndMinutes.Maximum = new decimal(new int[] {
             60,
@@ -759,13 +759,13 @@
             0,
             0});
             this.Cut_EndMinutes.Name = "Cut_EndMinutes";
-            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 23);
+            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 20);
             this.Cut_EndMinutes.TabIndex = 52;
             this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_EndHours
             // 
-            this.Cut_EndHours.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_EndHours.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
             this.Cut_EndHours.Maximum = new decimal(new int[] {
             1000,
@@ -773,13 +773,13 @@
             0,
             0});
             this.Cut_EndHours.Name = "Cut_EndHours";
-            this.Cut_EndHours.Size = new System.Drawing.Size(60, 23);
+            this.Cut_EndHours.Size = new System.Drawing.Size(60, 20);
             this.Cut_EndHours.TabIndex = 51;
             this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartMiliseconds
             // 
-            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_StartMiliseconds.Location = new System.Drawing.Point(307, 31);
             this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
             999,
@@ -787,13 +787,13 @@
             0,
             0});
             this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
-            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 23);
+            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 20);
             this.Cut_StartMiliseconds.TabIndex = 50;
             this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartSeconds
             // 
-            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_StartSeconds.Location = new System.Drawing.Point(231, 32);
             this.Cut_StartSeconds.Maximum = new decimal(new int[] {
             60,
@@ -801,13 +801,13 @@
             0,
             0});
             this.Cut_StartSeconds.Name = "Cut_StartSeconds";
-            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 23);
+            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 20);
             this.Cut_StartSeconds.TabIndex = 49;
             this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartMinutes
             // 
-            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_StartMinutes.Location = new System.Drawing.Point(155, 31);
             this.Cut_StartMinutes.Maximum = new decimal(new int[] {
             60,
@@ -815,13 +815,13 @@
             0,
             0});
             this.Cut_StartMinutes.Name = "Cut_StartMinutes";
-            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 23);
+            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 20);
             this.Cut_StartMinutes.TabIndex = 48;
             this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartHours
             // 
-            this.Cut_StartHours.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Cut_StartHours.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
             this.Cut_StartHours.Maximum = new decimal(new int[] {
             1000,
@@ -829,7 +829,7 @@
             0,
             0});
             this.Cut_StartHours.Name = "Cut_StartHours";
-            this.Cut_StartHours.Size = new System.Drawing.Size(60, 23);
+            this.Cut_StartHours.Size = new System.Drawing.Size(60, 20);
             this.Cut_StartHours.TabIndex = 45;
             this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
@@ -1372,7 +1372,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            listViewItem3});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1447,11 +1447,11 @@
             // Encoder_ExtensionBox
             // 
             this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_ExtensionBox.FormattingEnabled = true;
             this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
             this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
-            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_ExtensionBox.TabIndex = 38;
             // 
             // label6
@@ -1467,11 +1467,11 @@
             // Encoder_OverwriteBox
             // 
             this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_OverwriteBox.FormattingEnabled = true;
             this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
             this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
-            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_OverwriteBox.TabIndex = 48;
             // 
             // label5
@@ -1487,11 +1487,11 @@
             // Encoder_FPSBox
             // 
             this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_FPSBox.FormattingEnabled = true;
             this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
             this.Encoder_FPSBox.Name = "Encoder_FPSBox";
-            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_FPSBox.TabIndex = 46;
             // 
             // label32
@@ -1550,21 +1550,21 @@
             // Encoder_AudioCodecBox
             // 
             this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_AudioCodecBox.FormattingEnabled = true;
             this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
             this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
-            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_AudioCodecBox.TabIndex = 35;
             // 
             // Encoder_ResolutionBox
             // 
             this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_ResolutionBox.FormattingEnabled = true;
             this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
             this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
-            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_ResolutionBox.TabIndex = 44;
             // 
             // label13
@@ -1580,21 +1580,21 @@
             // Encoder_TunerBox
             // 
             this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_TunerBox.FormattingEnabled = true;
             this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
             this.Encoder_TunerBox.Name = "Encoder_TunerBox";
-            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_TunerBox.TabIndex = 44;
             // 
             // Encoder_VideoCodecBox
             // 
             this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_VideoCodecBox.FormattingEnabled = true;
             this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
             this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
-            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_VideoCodecBox.TabIndex = 34;
             // 
             // label12
@@ -1620,20 +1620,20 @@
             // Encoder_PresetsBox
             // 
             this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Encoder_PresetsBox.FormattingEnabled = true;
             this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
             this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
-            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 21);
             this.Encoder_PresetsBox.TabIndex = 40;
             // 
             // Encoder_HideConsoleToggle
             // 
             this.Encoder_HideConsoleToggle.AutoSize = true;
-            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(701, 76);
+            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(700, 76);
             this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
-            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(77, 18);
+            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
             this.Encoder_HideConsoleToggle.TabIndex = 61;
             this.Encoder_HideConsoleToggle.Text = "Hide Console";
             this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
@@ -2024,7 +2024,6 @@
             // ArgumentMainPanel
             // 
             this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ArgumentMainPanel.Controls.Add(this.label38);
             this.ArgumentMainPanel.Controls.Add(this.Argument_ClearButton);
             this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
             this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
@@ -2034,6 +2033,7 @@
             this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
             this.ArgumentMainPanel.Controls.Add(this.panel41);
             this.ArgumentMainPanel.Controls.Add(this.panel45);
+            this.ArgumentMainPanel.Controls.Add(this.label38);
             this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
             this.ArgumentMainPanel.Name = "ArgumentMainPanel";
@@ -2042,12 +2042,12 @@
             // 
             // label38
             // 
-            this.label38.Font = new System.Drawing.Font("Bahnschrift Condensed", 8F);
-            this.label38.Location = new System.Drawing.Point(500, 50);
+            this.label38.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label38.Location = new System.Drawing.Point(467, 51);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(217, 25);
+            this.label38.Size = new System.Drawing.Size(296, 25);
             this.label38.TabIndex = 88;
-            this.label38.Text = "You can freely write your own arguments here. ";
+            this.label38.Text = "You can freely write your own arguments here. (Without FFmpeg path)";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Argument_ClearButton
@@ -2212,10 +2212,10 @@
             // Merge_HideConsoleToggle
             // 
             this.Merge_HideConsoleToggle.AutoSize = true;
-            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 43);
+            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 44);
             this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
-            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(77, 18);
+            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
             this.Merge_HideConsoleToggle.TabIndex = 88;
             this.Merge_HideConsoleToggle.Text = "Hide Console";
             this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
@@ -2455,7 +2455,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem6});
+            listViewItem4});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -2680,10 +2680,10 @@
             // M3U8_HideConsoleCheckbox
             // 
             this.M3U8_HideConsoleCheckbox.AutoSize = true;
-            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(273, 55);
+            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(272, 57);
             this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
-            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(77, 18);
+            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
             this.M3U8_HideConsoleCheckbox.TabIndex = 80;
             this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
             this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
@@ -3147,17 +3147,17 @@
             // Settings_URIServerAutoStart
             // 
             this.Settings_URIServerAutoStart.AutoSize = true;
-            this.Settings_URIServerAutoStart.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_URIServerAutoStart.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
             this.Settings_URIServerAutoStart.Location = new System.Drawing.Point(117, 66);
             this.Settings_URIServerAutoStart.Name = "Settings_URIServerAutoStart";
-            this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(66, 18);
+            this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(68, 16);
             this.Settings_URIServerAutoStart.TabIndex = 71;
             this.Settings_URIServerAutoStart.Text = "Auto Start";
             this.Settings_URIServerAutoStart.UseVisualStyleBackColor = true;
             // 
             // Settings_URIServerPort
             // 
-            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Settings_URIServerPort.Location = new System.Drawing.Point(44, 56);
             this.Settings_URIServerPort.Maximum = new decimal(new int[] {
             65535,
@@ -3170,7 +3170,7 @@
             0,
             0});
             this.Settings_URIServerPort.Name = "Settings_URIServerPort";
-            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 23);
+            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 20);
             this.Settings_URIServerPort.TabIndex = 70;
             this.Settings_URIServerPort.Value = new decimal(new int[] {
             288,
@@ -3189,10 +3189,10 @@
             // Settings_URIServerCheckbox
             // 
             this.Settings_URIServerCheckbox.AutoSize = true;
-            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
             this.Settings_URIServerCheckbox.Location = new System.Drawing.Point(117, 50);
             this.Settings_URIServerCheckbox.Name = "Settings_URIServerCheckbox";
-            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(51, 18);
+            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(51, 16);
             this.Settings_URIServerCheckbox.TabIndex = 68;
             this.Settings_URIServerCheckbox.Text = "Active";
             this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
@@ -3252,16 +3252,16 @@
             // Settings_OverwriteDropdown
             // 
             this.Settings_OverwriteDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_OverwriteDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_OverwriteDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Settings_OverwriteDropdown.FormattingEnabled = true;
             this.Settings_OverwriteDropdown.Location = new System.Drawing.Point(9, 64);
             this.Settings_OverwriteDropdown.Name = "Settings_OverwriteDropdown";
-            this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 24);
+            this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_OverwriteDropdown.TabIndex = 67;
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label21.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label21.Location = new System.Drawing.Point(6, 45);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(87, 16);
@@ -3305,37 +3305,37 @@
             // Settings_VideoCodecDropdown
             // 
             this.Settings_VideoCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_VideoCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_VideoCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Settings_VideoCodecDropdown.FormattingEnabled = true;
             this.Settings_VideoCodecDropdown.Location = new System.Drawing.Point(96, 64);
             this.Settings_VideoCodecDropdown.Name = "Settings_VideoCodecDropdown";
-            this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 24);
+            this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_VideoCodecDropdown.TabIndex = 61;
             // 
             // Settings_HideConsoleCheckbox
             // 
             this.Settings_HideConsoleCheckbox.AutoSize = true;
-            this.Settings_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_HideConsoleCheckbox.Location = new System.Drawing.Point(356, 71);
+            this.Settings_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Settings_HideConsoleCheckbox.Location = new System.Drawing.Point(355, 71);
             this.Settings_HideConsoleCheckbox.Name = "Settings_HideConsoleCheckbox";
-            this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(77, 18);
+            this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
             this.Settings_HideConsoleCheckbox.TabIndex = 60;
             this.Settings_HideConsoleCheckbox.Text = "Hide Console";
             this.Settings_HideConsoleCheckbox.UseVisualStyleBackColor = true;
             // 
             // label30
             // 
-            this.label30.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label30.Location = new System.Drawing.Point(277, 45);
+            this.label30.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label30.Location = new System.Drawing.Point(270, 45);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(68, 16);
+            this.label30.Size = new System.Drawing.Size(81, 16);
             this.label30.TabIndex = 66;
             this.label30.Text = "Quality/Speed";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
             // 
-            this.label28.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label28.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label28.Location = new System.Drawing.Point(93, 45);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(87, 16);
@@ -3346,26 +3346,26 @@
             // Settings_QualityDropdown
             // 
             this.Settings_QualityDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_QualityDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_QualityDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Settings_QualityDropdown.FormattingEnabled = true;
             this.Settings_QualityDropdown.Location = new System.Drawing.Point(270, 64);
             this.Settings_QualityDropdown.Name = "Settings_QualityDropdown";
-            this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 24);
+            this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_QualityDropdown.TabIndex = 65;
             // 
             // Settings_AudioCodecDropdown
             // 
             this.Settings_AudioCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_AudioCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_AudioCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Settings_AudioCodecDropdown.FormattingEnabled = true;
             this.Settings_AudioCodecDropdown.Location = new System.Drawing.Point(183, 64);
             this.Settings_AudioCodecDropdown.Name = "Settings_AudioCodecDropdown";
-            this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 24);
+            this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_AudioCodecDropdown.TabIndex = 63;
             // 
             // label15
             // 
-            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label15.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label15.Location = new System.Drawing.Point(180, 45);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(87, 16);
