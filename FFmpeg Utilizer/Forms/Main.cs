@@ -1290,7 +1290,7 @@ namespace FFmpeg_Utilizer
         /// <param name="e"></param>
         private void Merge_listView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Merge_listView.SelectedItems.Count > 0 && Merge_listView.SelectedItems[0].SubItems[1].Text != "Drag and drop a folder or multiple files here...")
+            if (Merge_listView.SelectedItems.Count > 0 && Merge_listView.SelectedItems[0].SubItems[1].Text != "Drag & drop here...")
             {
                 FileInfo file = new FileInfo(Merge_listView.SelectedItems[0].SubItems[1].Text);
                 Merge_mediaOrderLabel.Text = Merge_listView.SelectedItems[0].SubItems[0].Text;

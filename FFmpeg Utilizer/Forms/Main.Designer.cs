@@ -514,12 +514,12 @@
             // panel95
             // 
             this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
-            this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
@@ -658,9 +658,9 @@
             this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
             this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 287);
+            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 285);
             this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
             this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
             this.Cut_RemoveSelectedButton.TabIndex = 73;
@@ -870,7 +870,7 @@
             this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
             this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
             this.Cut_AddTimespanButton.Size = new System.Drawing.Size(420, 23);
@@ -964,7 +964,7 @@
             this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
             this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
             this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
@@ -1059,7 +1059,7 @@
             this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cut_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(749, 45);
             this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
             this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Cut_DefaultOutputButton.TabIndex = 61;
@@ -1073,7 +1073,7 @@
             this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cut_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(724, 45);
             this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
             this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.Cut_OpenDirectoryButton.TabIndex = 62;
@@ -1086,10 +1086,10 @@
             this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.button19.Location = new System.Drawing.Point(792, 44);
+            this.button19.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.button19.Location = new System.Drawing.Point(774, 44);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(87, 23);
+            this.button19.Size = new System.Drawing.Size(105, 23);
             this.button19.TabIndex = 25;
             this.button19.Text = "Output Folder";
             this.button19.UseVisualStyleBackColor = false;
@@ -1098,7 +1098,7 @@
             // 
             this.Cut_ProgressBar.Location = new System.Drawing.Point(3, 75);
             this.Cut_ProgressBar.Name = "Cut_ProgressBar";
-            this.Cut_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Cut_ProgressBar.Size = new System.Drawing.Size(765, 20);
             this.Cut_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.Cut_ProgressBar.TabIndex = 24;
             // 
@@ -1108,7 +1108,7 @@
             this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
             this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
-            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 23);
+            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(715, 23);
             this.Cut_OutputDirectoryBox.TabIndex = 23;
             // 
             // Cut_StartCuttingButton
@@ -1116,10 +1116,10 @@
             this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
+            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(774, 73);
             this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
-            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
+            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(105, 23);
             this.Cut_StartCuttingButton.TabIndex = 22;
             this.Cut_StartCuttingButton.Text = "Start Cutting";
             this.Cut_StartCuttingButton.UseVisualStyleBackColor = false;
@@ -1222,7 +1222,7 @@
             this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Encoder_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(749, 45);
             this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
             this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Encoder_DefaultOutputButton.TabIndex = 60;
@@ -1236,7 +1236,7 @@
             this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Encoder_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(724, 45);
             this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
             this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.Encoder_OpenDirectoryButton.TabIndex = 61;
@@ -1249,10 +1249,10 @@
             this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(792, 44);
+            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(774, 44);
             this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
-            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(87, 23);
+            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(105, 23);
             this.Encoder_OutputFolderButton.TabIndex = 25;
             this.Encoder_OutputFolderButton.Text = "Output Folder";
             this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
@@ -1262,7 +1262,7 @@
             // 
             this.Encoder_ProgressBar.Location = new System.Drawing.Point(3, 75);
             this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
-            this.Encoder_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Encoder_ProgressBar.Size = new System.Drawing.Size(765, 20);
             this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.Encoder_ProgressBar.TabIndex = 24;
             // 
@@ -1272,7 +1272,7 @@
             this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(3, 45);
             this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
-            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(732, 23);
+            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(715, 23);
             this.Encoder_OutputFolderTextBox.TabIndex = 23;
             // 
             // Encoder_StartEncodingProcessButton
@@ -1280,10 +1280,10 @@
             this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(791, 73);
+            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(774, 73);
             this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
-            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(88, 23);
+            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(105, 23);
             this.Encoder_StartEncodingProcessButton.TabIndex = 22;
             this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
             this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
@@ -1397,10 +1397,10 @@
             // 
             this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_PlayButton.Location = new System.Drawing.Point(781, 66);
+            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_PlayButton.Location = new System.Drawing.Point(777, 66);
             this.Encoder_PlayButton.Name = "Encoder_PlayButton";
-            this.Encoder_PlayButton.Size = new System.Drawing.Size(95, 26);
+            this.Encoder_PlayButton.Size = new System.Drawing.Size(99, 26);
             this.Encoder_PlayButton.TabIndex = 53;
             this.Encoder_PlayButton.Text = "Play Selected ▶";
             this.Encoder_PlayButton.UseVisualStyleBackColor = true;
@@ -1631,7 +1631,7 @@
             // 
             this.Encoder_HideConsoleToggle.AutoSize = true;
             this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(700, 76);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(699, 76);
             this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
             this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
             this.Encoder_HideConsoleToggle.TabIndex = 61;
@@ -1786,10 +1786,10 @@
             this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
             this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
             this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
-            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(103, 24);
+            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(132, 24);
             this.Update_CheckForUpdateButton.TabIndex = 26;
             this.Update_CheckForUpdateButton.Text = "Check For Update";
             this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
@@ -1866,7 +1866,7 @@
             this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
             this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
             this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
             this.Update_DownloadButton.Name = "Update_DownloadButton";
             this.Update_DownloadButton.Size = new System.Drawing.Size(296, 29);
@@ -2055,7 +2055,7 @@
             this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
             this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ClearButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ClearButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ClearButton.Location = new System.Drawing.Point(359, 47);
             this.Argument_ClearButton.Name = "Argument_ClearButton";
@@ -2070,7 +2070,7 @@
             this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
             this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
             this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
@@ -2085,7 +2085,7 @@
             this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
             this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
             this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
@@ -2100,7 +2100,7 @@
             this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
             this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
             this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
@@ -2115,7 +2115,7 @@
             this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
             this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
             this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
@@ -2130,7 +2130,7 @@
             this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
             this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
             this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
@@ -2531,7 +2531,7 @@
             this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Merge_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(749, 44);
             this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
             this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Merge_DefaultOutputButton.TabIndex = 64;
@@ -2545,7 +2545,7 @@
             this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Merge_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(724, 44);
             this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
             this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.Merge_OpenDirectoryButton.TabIndex = 63;
@@ -2558,10 +2558,10 @@
             this.Merge_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Merge_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_OutputButton.Location = new System.Drawing.Point(792, 44);
+            this.Merge_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Merge_OutputButton.Location = new System.Drawing.Point(774, 44);
             this.Merge_OutputButton.Name = "Merge_OutputButton";
-            this.Merge_OutputButton.Size = new System.Drawing.Size(87, 23);
+            this.Merge_OutputButton.Size = new System.Drawing.Size(105, 23);
             this.Merge_OutputButton.TabIndex = 25;
             this.Merge_OutputButton.Text = "Output Folder";
             this.Merge_OutputButton.UseVisualStyleBackColor = false;
@@ -2570,7 +2570,7 @@
             // 
             this.Merge_ProgressBar.Location = new System.Drawing.Point(3, 75);
             this.Merge_ProgressBar.Name = "Merge_ProgressBar";
-            this.Merge_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Merge_ProgressBar.Size = new System.Drawing.Size(765, 20);
             this.Merge_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.Merge_ProgressBar.TabIndex = 24;
             // 
@@ -2580,7 +2580,7 @@
             this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
             this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
-            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(733, 23);
+            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(715, 23);
             this.Merge_OutputDirectoryTextbox.TabIndex = 23;
             // 
             // Merge_StartButton
@@ -2588,10 +2588,10 @@
             this.Merge_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Merge_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_StartButton.Location = new System.Drawing.Point(792, 73);
+            this.Merge_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Merge_StartButton.Location = new System.Drawing.Point(774, 73);
             this.Merge_StartButton.Name = "Merge_StartButton";
-            this.Merge_StartButton.Size = new System.Drawing.Size(87, 23);
+            this.Merge_StartButton.Size = new System.Drawing.Size(105, 23);
             this.Merge_StartButton.TabIndex = 22;
             this.Merge_StartButton.Text = "Start Merging";
             this.Merge_StartButton.UseVisualStyleBackColor = false;
@@ -2693,10 +2693,10 @@
             this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
             this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_PlayButton.Location = new System.Drawing.Point(814, 47);
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(804, 47);
             this.M3U8_PlayButton.Name = "M3U8_PlayButton";
-            this.M3U8_PlayButton.Size = new System.Drawing.Size(95, 24);
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(105, 24);
             this.M3U8_PlayButton.TabIndex = 79;
             this.M3U8_PlayButton.Text = "Play Selected ▶";
             this.M3U8_PlayButton.UseVisualStyleBackColor = false;
@@ -2707,7 +2707,7 @@
             this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
             this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
             this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
@@ -2722,7 +2722,7 @@
             this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
             this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
             this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
@@ -2811,7 +2811,7 @@
             this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.M3U8_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(749, 45);
             this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
             this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.M3U8_DefaultOutputButton.TabIndex = 65;
@@ -2825,7 +2825,7 @@
             this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.M3U8_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(724, 45);
             this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
             this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.M3U8_OpenDirectoryButton.TabIndex = 64;
@@ -2838,10 +2838,10 @@
             this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_OutputButton.Location = new System.Drawing.Point(774, 44);
             this.M3U8_OutputButton.Name = "M3U8_OutputButton";
-            this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_OutputButton.Size = new System.Drawing.Size(105, 23);
             this.M3U8_OutputButton.TabIndex = 25;
             this.M3U8_OutputButton.Text = "Output Folder";
             this.M3U8_OutputButton.UseVisualStyleBackColor = false;
@@ -2851,7 +2851,7 @@
             // 
             this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
             this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
-            this.M3U8_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.M3U8_ProgressBar.Size = new System.Drawing.Size(765, 20);
             this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.M3U8_ProgressBar.TabIndex = 24;
             // 
@@ -2861,7 +2861,7 @@
             this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
             this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
-            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(733, 23);
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(715, 23);
             this.M3U8_OutputFolderTextbox.TabIndex = 23;
             // 
             // M3U8_StartButton
@@ -2869,10 +2869,10 @@
             this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_StartButton.Location = new System.Drawing.Point(774, 73);
             this.M3U8_StartButton.Name = "M3U8_StartButton";
-            this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
+            this.M3U8_StartButton.Size = new System.Drawing.Size(105, 23);
             this.M3U8_StartButton.TabIndex = 22;
             this.M3U8_StartButton.Text = "Start M3U8";
             this.M3U8_StartButton.UseVisualStyleBackColor = false;
@@ -3016,7 +3016,7 @@
             this.Settings_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
             this.Settings_DownloadButton.FlatAppearance.BorderSize = 2;
             this.Settings_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_DownloadButton.Location = new System.Drawing.Point(0, 0);
             this.Settings_DownloadButton.Name = "Settings_DownloadButton";
             this.Settings_DownloadButton.Size = new System.Drawing.Size(296, 28);
@@ -3396,7 +3396,7 @@
             this.Settings_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(716, 97);
+            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(674, 97);
             this.Settings_OpenDirectoryButton.Name = "Settings_OpenDirectoryButton";
             this.Settings_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_OpenDirectoryButton.TabIndex = 60;
@@ -3410,7 +3410,7 @@
             this.Settings_DefaultOutputPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_DefaultOutputPathBox.Location = new System.Drawing.Point(5, 97);
             this.Settings_DefaultOutputPathBox.Name = "Settings_DefaultOutputPathBox";
-            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(705, 23);
+            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(663, 23);
             this.Settings_DefaultOutputPathBox.TabIndex = 54;
             // 
             // Settings_DefaultOutputButton
@@ -3418,10 +3418,10 @@
             this.Settings_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(766, 97);
+            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(724, 97);
             this.Settings_DefaultOutputButton.Name = "Settings_DefaultOutputButton";
-            this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(111, 23);
+            this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(153, 23);
             this.Settings_DefaultOutputButton.TabIndex = 55;
             this.Settings_DefaultOutputButton.Text = "Default Output Folder";
             this.Settings_DefaultOutputButton.UseVisualStyleBackColor = false;
@@ -3466,7 +3466,7 @@
             this.Settings_FFplayPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_FFplayPathBox.Location = new System.Drawing.Point(6, 70);
             this.Settings_FFplayPathBox.Name = "Settings_FFplayPathBox";
-            this.Settings_FFplayPathBox.Size = new System.Drawing.Size(761, 23);
+            this.Settings_FFplayPathBox.Size = new System.Drawing.Size(743, 23);
             this.Settings_FFplayPathBox.TabIndex = 52;
             // 
             // Settings_AutoDefaultOutputButton
@@ -3475,7 +3475,7 @@
             this.Settings_AutoDefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_AutoDefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_AutoDefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(741, 97);
+            this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(699, 97);
             this.Settings_AutoDefaultOutputButton.Name = "Settings_AutoDefaultOutputButton";
             this.Settings_AutoDefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_AutoDefaultOutputButton.TabIndex = 59;
@@ -3489,7 +3489,7 @@
             this.Settings_FFmpegPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_FFmpegPathBox.Location = new System.Drawing.Point(6, 44);
             this.Settings_FFmpegPathBox.Name = "Settings_FFmpegPathBox";
-            this.Settings_FFmpegPathBox.Size = new System.Drawing.Size(761, 23);
+            this.Settings_FFmpegPathBox.Size = new System.Drawing.Size(743, 23);
             this.Settings_FFmpegPathBox.TabIndex = 50;
             // 
             // Settings_FFMPEGLocationButton
@@ -3497,10 +3497,10 @@
             this.Settings_FFMPEGLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_FFMPEGLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_FFMPEGLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Settings_FFMPEGLocationButton.Location = new System.Drawing.Point(774, 42);
+            this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_FFMPEGLocationButton.Location = new System.Drawing.Point(755, 43);
             this.Settings_FFMPEGLocationButton.Name = "Settings_FFMPEGLocationButton";
-            this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(103, 23);
+            this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(122, 23);
             this.Settings_FFMPEGLocationButton.TabIndex = 51;
             this.Settings_FFMPEGLocationButton.Text = "FFMPEG Location";
             this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = false;
@@ -3511,10 +3511,10 @@
             this.Settings_FFPLAYLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_FFPLAYLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_FFPLAYLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_FFPLAYLocationButton.Location = new System.Drawing.Point(774, 68);
+            this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_FFPLAYLocationButton.Location = new System.Drawing.Point(755, 70);
             this.Settings_FFPLAYLocationButton.Name = "Settings_FFPLAYLocationButton";
-            this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(103, 23);
+            this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(122, 23);
             this.Settings_FFPLAYLocationButton.TabIndex = 53;
             this.Settings_FFPLAYLocationButton.Text = "FFplay Location";
             this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = false;
@@ -3526,7 +3526,7 @@
             this.Settings_ResetButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Settings_ResetButton.FlatAppearance.BorderSize = 2;
             this.Settings_ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_ResetButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_ResetButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_ResetButton.Location = new System.Drawing.Point(27, 457);
             this.Settings_ResetButton.Name = "Settings_ResetButton";
             this.Settings_ResetButton.Size = new System.Drawing.Size(116, 26);
@@ -3541,7 +3541,7 @@
             this.Settings_SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_SaveButton.FlatAppearance.BorderSize = 2;
             this.Settings_SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_SaveButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_SaveButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_SaveButton.Location = new System.Drawing.Point(793, 457);
             this.Settings_SaveButton.Name = "Settings_SaveButton";
             this.Settings_SaveButton.Size = new System.Drawing.Size(116, 26);
@@ -3610,7 +3610,7 @@
             // 
             this.NoticeTextLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(120)))));
             this.NoticeTextLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NoticeTextLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.NoticeTextLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.NoticeTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.NoticeTextLabel.Location = new System.Drawing.Point(0, 7);
             this.NoticeTextLabel.Name = "NoticeTextLabel";
@@ -3666,7 +3666,7 @@
             // 
             this.GitLabel.BackColor = System.Drawing.Color.Transparent;
             this.GitLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GitLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.GitLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 7F);
             this.GitLabel.ForeColor = System.Drawing.Color.White;
             this.GitLabel.Location = new System.Drawing.Point(1, 63);
             this.GitLabel.Name = "GitLabel";
@@ -3680,7 +3680,7 @@
             // 
             this.AuthorLabel.BackColor = System.Drawing.Color.Transparent;
             this.AuthorLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.AuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.AuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 7F);
             this.AuthorLabel.ForeColor = System.Drawing.Color.White;
             this.AuthorLabel.Location = new System.Drawing.Point(1, 43);
             this.AuthorLabel.Name = "AuthorLabel";
@@ -3693,7 +3693,7 @@
             // 
             this.SoftwareLabel.BackColor = System.Drawing.Color.Transparent;
             this.SoftwareLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SoftwareLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.SoftwareLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 7F);
             this.SoftwareLabel.ForeColor = System.Drawing.Color.White;
             this.SoftwareLabel.Location = new System.Drawing.Point(1, 23);
             this.SoftwareLabel.Name = "SoftwareLabel";
@@ -3710,10 +3710,11 @@
             this.InfoText.ForeColor = System.Drawing.Color.White;
             this.InfoText.Location = new System.Drawing.Point(26, 0);
             this.InfoText.Name = "InfoText";
-            this.InfoText.Size = new System.Drawing.Size(102, 20);
+            this.InfoText.Size = new System.Drawing.Size(122, 20);
             this.InfoText.TabIndex = 4;
             this.InfoText.Text = "Information";
             this.InfoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip.SetToolTip(this.InfoText, "Click to view more information!");
             this.InfoText.Click += new System.EventHandler(this.InfoIcon_Click);
             // 
             // InfoIcon
@@ -3726,7 +3727,7 @@
             this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.InfoIcon.TabIndex = 1;
             this.InfoIcon.TabStop = false;
-            this.toolTip.SetToolTip(this.InfoIcon, "Software Information Area.");
+            this.toolTip.SetToolTip(this.InfoIcon, "Click to view more information!");
             this.InfoIcon.Click += new System.EventHandler(this.InfoIcon_Click);
             // 
             // Menu_UpdatesTab
@@ -3747,7 +3748,7 @@
             this.Menu_UpdatesTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_UpdatesTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_UpdatesTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_UpdatesTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_UpdatesTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_UpdatesTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_UpdatesTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_UpdatesTabLabel.Name = "Menu_UpdatesTabLabel";
@@ -3858,7 +3859,7 @@
             this.Menu_SettingsTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_SettingsTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_SettingsTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_SettingsTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_SettingsTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_SettingsTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_SettingsTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_SettingsTabLabel.Name = "Menu_SettingsTabLabel";
@@ -3929,7 +3930,7 @@
             this.Menu_ArgumentsTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_ArgumentsTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_ArgumentsTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_ArgumentsTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_ArgumentsTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_ArgumentsTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_ArgumentsTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_ArgumentsTabLabel.Name = "Menu_ArgumentsTabLabel";
@@ -4000,7 +4001,7 @@
             this.Menu_M3U8TabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_M3U8TabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_M3U8TabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_M3U8TabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_M3U8TabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_M3U8TabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_M3U8TabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_M3U8TabLabel.Name = "Menu_M3U8TabLabel";
@@ -4071,7 +4072,7 @@
             this.Menu_MergeTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_MergeTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_MergeTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_MergeTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_MergeTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_MergeTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_MergeTabLabel.Location = new System.Drawing.Point(71, 0);
             this.Menu_MergeTabLabel.Name = "Menu_MergeTabLabel";
@@ -4142,7 +4143,7 @@
             this.Menu_CutTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_CutTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_CutTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_CutTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_CutTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_CutTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_CutTabLabel.Location = new System.Drawing.Point(71, 0);
             this.Menu_CutTabLabel.Name = "Menu_CutTabLabel";
@@ -4213,7 +4214,7 @@
             this.Menu_CutMergeTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_CutMergeTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_CutMergeTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_CutMergeTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_CutMergeTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_CutMergeTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_CutMergeTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_CutMergeTabLabel.Name = "Menu_CutMergeTabLabel";
@@ -4285,7 +4286,7 @@
             this.Menu_EncoderTabLabel.BackColor = System.Drawing.Color.Transparent;
             this.Menu_EncoderTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_EncoderTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_EncoderTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.Menu_EncoderTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
             this.Menu_EncoderTabLabel.ForeColor = System.Drawing.Color.White;
             this.Menu_EncoderTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_EncoderTabLabel.Name = "Menu_EncoderTabLabel";
@@ -4399,12 +4400,12 @@
             this.label11.Cursor = System.Windows.Forms.Cursors.Default;
             this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(51, 43);
+            this.label11.Location = new System.Drawing.Point(27, 43);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 15);
+            this.label11.Size = new System.Drawing.Size(69, 15);
             this.label11.TabIndex = 6;
             this.label11.Text = "V2 Edition";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox8
             // 

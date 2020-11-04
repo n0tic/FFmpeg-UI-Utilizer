@@ -128,30 +128,30 @@
             // 
             this.ContactLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ContactLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.ContactLabel.Location = new System.Drawing.Point(99, 114);
+            this.ContactLabel.Location = new System.Drawing.Point(124, 114);
             this.ContactLabel.Name = "ContactLabel";
-            this.ContactLabel.Size = new System.Drawing.Size(242, 16);
+            this.ContactLabel.Size = new System.Drawing.Size(217, 16);
             this.ContactLabel.TabIndex = 89;
             this.ContactLabel.Text = "-";
             this.ContactLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 16);
+            this.label2.Size = new System.Drawing.Size(115, 16);
             this.label2.TabIndex = 88;
             this.label2.Text = "Contact:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SoftwareGithubRepoLabel
             // 
             this.SoftwareGithubRepoLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SoftwareGithubRepoLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.SoftwareGithubRepoLabel.Location = new System.Drawing.Point(99, 98);
+            this.SoftwareGithubRepoLabel.Location = new System.Drawing.Point(124, 98);
             this.SoftwareGithubRepoLabel.Name = "SoftwareGithubRepoLabel";
-            this.SoftwareGithubRepoLabel.Size = new System.Drawing.Size(242, 16);
+            this.SoftwareGithubRepoLabel.Size = new System.Drawing.Size(217, 16);
             this.SoftwareGithubRepoLabel.TabIndex = 87;
             this.SoftwareGithubRepoLabel.Text = "-";
             this.SoftwareGithubRepoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,21 +159,21 @@
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(3, 97);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 16);
+            this.label9.Size = new System.Drawing.Size(115, 16);
             this.label9.TabIndex = 86;
             this.label9.Text = "Github Repository:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SoftwareCompanyWebsite
             // 
             this.SoftwareCompanyWebsite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SoftwareCompanyWebsite.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.SoftwareCompanyWebsite.Location = new System.Drawing.Point(93, 81);
+            this.SoftwareCompanyWebsite.Location = new System.Drawing.Point(124, 81);
             this.SoftwareCompanyWebsite.Name = "SoftwareCompanyWebsite";
-            this.SoftwareCompanyWebsite.Size = new System.Drawing.Size(248, 16);
+            this.SoftwareCompanyWebsite.Size = new System.Drawing.Size(217, 16);
             this.SoftwareCompanyWebsite.TabIndex = 85;
             this.SoftwareCompanyWebsite.Text = "-";
             this.SoftwareCompanyWebsite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,80 +181,80 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 80);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 16);
+            this.label7.Size = new System.Drawing.Size(115, 16);
             this.label7.TabIndex = 84;
             this.label7.Text = "Company Website:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SoftwareAuthorLabel
             // 
             this.SoftwareAuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.SoftwareAuthorLabel.Location = new System.Drawing.Point(95, 64);
+            this.SoftwareAuthorLabel.Location = new System.Drawing.Point(124, 64);
             this.SoftwareAuthorLabel.Name = "SoftwareAuthorLabel";
-            this.SoftwareAuthorLabel.Size = new System.Drawing.Size(246, 16);
+            this.SoftwareAuthorLabel.Size = new System.Drawing.Size(217, 16);
             this.SoftwareAuthorLabel.TabIndex = 83;
             this.SoftwareAuthorLabel.Text = "-";
             this.SoftwareAuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 63);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
+            this.label5.Size = new System.Drawing.Size(115, 16);
             this.label5.TabIndex = 82;
             this.label5.Text = "Software Author:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SoftwareVersionLabel
             // 
             this.SoftwareVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.SoftwareVersionLabel.Location = new System.Drawing.Point(96, 47);
+            this.SoftwareVersionLabel.Location = new System.Drawing.Point(124, 47);
             this.SoftwareVersionLabel.Name = "SoftwareVersionLabel";
-            this.SoftwareVersionLabel.Size = new System.Drawing.Size(245, 16);
+            this.SoftwareVersionLabel.Size = new System.Drawing.Size(217, 16);
             this.SoftwareVersionLabel.TabIndex = 81;
             this.SoftwareVersionLabel.Text = "-";
             this.SoftwareVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 16);
+            this.label3.Size = new System.Drawing.Size(115, 16);
             this.label3.TabIndex = 80;
             this.label3.Text = "Software Version:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SoftwareNameLabel
             // 
             this.SoftwareNameLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.SoftwareNameLabel.Location = new System.Drawing.Point(85, 31);
+            this.SoftwareNameLabel.Location = new System.Drawing.Point(124, 31);
             this.SoftwareNameLabel.Name = "SoftwareNameLabel";
-            this.SoftwareNameLabel.Size = new System.Drawing.Size(256, 16);
+            this.SoftwareNameLabel.Size = new System.Drawing.Size(217, 16);
             this.SoftwareNameLabel.TabIndex = 79;
             this.SoftwareNameLabel.Text = "-";
             this.SoftwareNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label17
             // 
-            this.label17.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label17.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(3, 30);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 16);
+            this.label17.Size = new System.Drawing.Size(115, 16);
             this.label17.TabIndex = 78;
             this.label17.Text = "Software Name:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SoftwareInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(124)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(346, 137);
+            this.ClientSize = new System.Drawing.Size(346, 216);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
