@@ -415,6 +415,13 @@ namespace FFmpeg_Utilizer
         #region Software Window
 
         /// <summary>
+        /// Show information form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void InfoIcon_Click(object sender, EventArgs e) => new SoftwareInformation().ShowDialog();
+
+        /// <summary>
         /// Feature to show software when put in tray.
         /// </summary>
         /// <param name="sender"></param>
@@ -1383,7 +1390,5 @@ namespace FFmpeg_Utilizer
         private void Argument_ClearButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "";
 
         #endregion Argument
-
-        private void InfoIcon_Click(object sender, EventArgs e) => new SoftwareInformation().ShowDialog();
     }
 }
