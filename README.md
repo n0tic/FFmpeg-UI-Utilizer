@@ -78,7 +78,6 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
 	      * This can be specifiec with an additional crf quality. Lower = better | Higher = worse.
     * Merge
     	* This feature will merge multiple video/audio files using a ordered list.
-	* Unfinished
 * M3U8
 	* This feature is intended to download and merge segmented HLS video/Audio files.
     	* Standard Add and Remove features are available.
@@ -158,9 +157,6 @@ I am no pro when it comes to using FFmpeg so the arguments FFmpeg Utilizer gener
 So the results of the process may not be 100% satsfactory. Please leave your feedback and or information regarding features you feel are missing or wrong.
 
 ~ Protytyping first, polishing later.
-
-- UI has been designed but no actions has been added to some UI elements.
-- More coming.
 
 ## Issues
 
