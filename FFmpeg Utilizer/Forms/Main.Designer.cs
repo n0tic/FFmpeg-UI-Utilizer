@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "0",
-            "Drag and drop a folder or multiple files here..."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            "0",
+            "Drag & drop here..."}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
             this.CutMainPanel = new System.Windows.Forms.Panel();
@@ -91,6 +91,83 @@
             this.label68 = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
             this.panel69 = new System.Windows.Forms.Panel();
+            this.EncoderMainPanel = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
+            this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
+            this.Encoder_StartEncodingProcessButton = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.Encoder_FilesList = new System.Windows.Forms.ListView();
+            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Encoder_PlayButton = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Encoder_AudioCodecBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_ResolutionBox = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Encoder_TunerBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_VideoCodecBox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.UpdateMainPanel = new System.Windows.Forms.Panel();
+            this.panel94 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel96 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.SpeedLabel = new System.Windows.Forms.Label();
+            this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.Update_StatusLabel = new System.Windows.Forms.Label();
+            this.panel71 = new System.Windows.Forms.Panel();
+            this.Update_CheckForUpdateButton = new System.Windows.Forms.Button();
+            this.panel73 = new System.Windows.Forms.Panel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.panel74 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.Update_DownloadButton = new System.Windows.Forms.Button();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.Update_LatestUpdateLabel = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.Update_OnlineVerLabel = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel93 = new System.Windows.Forms.Panel();
+            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel75 = new System.Windows.Forms.Panel();
+            this.label79 = new System.Windows.Forms.Label();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.panel77 = new System.Windows.Forms.Panel();
             this.ArgumentMainPanel = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.Argument_ClearButton = new System.Windows.Forms.Button();
@@ -168,48 +245,6 @@
             this.label46 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
             this.panel53 = new System.Windows.Forms.Panel();
-            this.EncoderMainPanel = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
-            this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
-            this.Encoder_StartEncodingProcessButton = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
-            this.Encoder_FilesList = new System.Windows.Forms.ListView();
-            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Encoder_PlayButton = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Encoder_AudioCodecBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_ResolutionBox = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Encoder_TunerBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_VideoCodecBox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
             this.SettingsMainPanel = new System.Windows.Forms.Panel();
             this.Settings_NetPanel = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -267,41 +302,6 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.UpdateMainPanel = new System.Windows.Forms.Panel();
-            this.panel94 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.panel96 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.SpeedLabel = new System.Windows.Forms.Label();
-            this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.Update_StatusLabel = new System.Windows.Forms.Label();
-            this.panel71 = new System.Windows.Forms.Panel();
-            this.Update_CheckForUpdateButton = new System.Windows.Forms.Button();
-            this.panel73 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.panel74 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel72 = new System.Windows.Forms.Panel();
-            this.panel89 = new System.Windows.Forms.Panel();
-            this.Update_DownloadButton = new System.Windows.Forms.Button();
-            this.panel90 = new System.Windows.Forms.Panel();
-            this.Update_LatestUpdateLabel = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel91 = new System.Windows.Forms.Panel();
-            this.panel92 = new System.Windows.Forms.Panel();
-            this.Update_OnlineVerLabel = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel93 = new System.Windows.Forms.Panel();
-            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel75 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.panel77 = new System.Windows.Forms.Panel();
             this.NoticePanel = new System.Windows.Forms.Panel();
             this.NoticeCloseButton = new System.Windows.Forms.Label();
             this.NoticeTextLabel = new System.Windows.Forms.Label();
@@ -401,6 +401,29 @@
             this.panel65.SuspendLayout();
             this.panel66.SuspendLayout();
             this.panel67.SuspendLayout();
+            this.EncoderMainPanel.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel47.SuspendLayout();
+            this.UpdateMainPanel.SuspendLayout();
+            this.panel94.SuspendLayout();
+            this.panel96.SuspendLayout();
+            this.panel97.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel40.SuspendLayout();
+            this.panel42.SuspendLayout();
+            this.panel73.SuspendLayout();
+            this.panel74.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel72.SuspendLayout();
+            this.panel89.SuspendLayout();
+            this.panel90.SuspendLayout();
+            this.panel91.SuspendLayout();
+            this.panel92.SuspendLayout();
+            this.panel93.SuspendLayout();
+            this.panel75.SuspendLayout();
             this.ArgumentMainPanel.SuspendLayout();
             this.panel41.SuspendLayout();
             this.MergeMainPanel.SuspendLayout();
@@ -419,12 +442,6 @@
             this.panel49.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel51.SuspendLayout();
-            this.EncoderMainPanel.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.panel47.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.Settings_NetPanel.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -443,23 +460,6 @@
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.UpdateMainPanel.SuspendLayout();
-            this.panel94.SuspendLayout();
-            this.panel96.SuspendLayout();
-            this.panel97.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.panel40.SuspendLayout();
-            this.panel42.SuspendLayout();
-            this.panel73.SuspendLayout();
-            this.panel74.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel72.SuspendLayout();
-            this.panel89.SuspendLayout();
-            this.panel90.SuspendLayout();
-            this.panel91.SuspendLayout();
-            this.panel92.SuspendLayout();
-            this.panel93.SuspendLayout();
-            this.panel75.SuspendLayout();
             this.NoticePanel.SuspendLayout();
             this.MenuPanel.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -513,13 +513,13 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.UpdateMainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
-            this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
-            this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.EncoderMainPanel);
+            this.panel95.Controls.Add(this.UpdateMainPanel);
+            this.panel95.Controls.Add(this.ArgumentMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
@@ -564,7 +564,7 @@
             // 
             // label29
             // 
-            this.label29.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label29.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label29.Location = new System.Drawing.Point(314, 69);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(81, 16);
@@ -575,26 +575,26 @@
             // Cut_CRFBox
             // 
             this.Cut_CRFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_CRFBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_CRFBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_CRFBox.FormattingEnabled = true;
             this.Cut_CRFBox.Location = new System.Drawing.Point(314, 88);
             this.Cut_CRFBox.Name = "Cut_CRFBox";
-            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 24);
             this.Cut_CRFBox.TabIndex = 81;
             // 
             // Cut_AudioCodecBox
             // 
             this.Cut_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_AudioCodecBox.FormattingEnabled = true;
             this.Cut_AudioCodecBox.Location = new System.Drawing.Point(227, 88);
             this.Cut_AudioCodecBox.Name = "Cut_AudioCodecBox";
-            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 24);
             this.Cut_AudioCodecBox.TabIndex = 76;
             // 
             // label17
             // 
-            this.label17.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label17.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label17.Location = new System.Drawing.Point(137, 69);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(87, 16);
@@ -605,16 +605,16 @@
             // Cut_VideoCodecBox
             // 
             this.Cut_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_VideoCodecBox.FormattingEnabled = true;
             this.Cut_VideoCodecBox.Location = new System.Drawing.Point(140, 88);
             this.Cut_VideoCodecBox.Name = "Cut_VideoCodecBox";
-            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 24);
             this.Cut_VideoCodecBox.TabIndex = 75;
             // 
             // label23
             // 
-            this.label23.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label23.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label23.Location = new System.Drawing.Point(224, 69);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(87, 16);
@@ -624,7 +624,7 @@
             // 
             // label26
             // 
-            this.label26.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label26.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label26.Location = new System.Drawing.Point(401, 69);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(81, 16);
@@ -635,20 +635,20 @@
             // Cut_PresetBox
             // 
             this.Cut_PresetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_PresetBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PresetBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_PresetBox.FormattingEnabled = true;
             this.Cut_PresetBox.Location = new System.Drawing.Point(401, 88);
             this.Cut_PresetBox.Name = "Cut_PresetBox";
-            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 24);
             this.Cut_PresetBox.TabIndex = 79;
             // 
             // Cut_HideConsoleToggle
             // 
             this.Cut_HideConsoleToggle.AutoSize = true;
-            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(488, 95);
             this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
-            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(77, 18);
             this.Cut_HideConsoleToggle.TabIndex = 74;
             this.Cut_HideConsoleToggle.Text = "Hide Console";
             this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
@@ -658,7 +658,7 @@
             this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
             this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 287);
             this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
@@ -673,7 +673,7 @@
             this.Cut_listView.AllowDrop = true;
             this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader11});
-            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_listView.FullRowSelect = true;
             this.Cut_listView.GridLines = true;
             this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
@@ -713,6 +713,7 @@
             this.groupBox2.Controls.Add(this.label83);
             this.groupBox2.Controls.Add(this.label84);
             this.groupBox2.Controls.Add(this.label85);
+            this.groupBox2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(138, 115);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(426, 196);
@@ -722,7 +723,7 @@
             // 
             // Cut_EndMiliseconds
             // 
-            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_EndMiliseconds.Location = new System.Drawing.Point(307, 88);
             this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
             999,
@@ -730,13 +731,13 @@
             0,
             0});
             this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
-            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 23);
             this.Cut_EndMiliseconds.TabIndex = 54;
             this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_EndSeconds
             // 
-            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_EndSeconds.Location = new System.Drawing.Point(231, 88);
             this.Cut_EndSeconds.Maximum = new decimal(new int[] {
             60,
@@ -744,13 +745,13 @@
             0,
             0});
             this.Cut_EndSeconds.Name = "Cut_EndSeconds";
-            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 23);
             this.Cut_EndSeconds.TabIndex = 53;
             this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_EndMinutes
             // 
-            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_EndMinutes.Location = new System.Drawing.Point(155, 88);
             this.Cut_EndMinutes.Maximum = new decimal(new int[] {
             60,
@@ -758,13 +759,13 @@
             0,
             0});
             this.Cut_EndMinutes.Name = "Cut_EndMinutes";
-            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 23);
             this.Cut_EndMinutes.TabIndex = 52;
             this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_EndHours
             // 
-            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndHours.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
             this.Cut_EndHours.Maximum = new decimal(new int[] {
             1000,
@@ -772,13 +773,13 @@
             0,
             0});
             this.Cut_EndHours.Name = "Cut_EndHours";
-            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndHours.Size = new System.Drawing.Size(60, 23);
             this.Cut_EndHours.TabIndex = 51;
             this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartMiliseconds
             // 
-            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_StartMiliseconds.Location = new System.Drawing.Point(307, 31);
             this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
             999,
@@ -786,13 +787,13 @@
             0,
             0});
             this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
-            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 23);
             this.Cut_StartMiliseconds.TabIndex = 50;
             this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartSeconds
             // 
-            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_StartSeconds.Location = new System.Drawing.Point(231, 32);
             this.Cut_StartSeconds.Maximum = new decimal(new int[] {
             60,
@@ -800,13 +801,13 @@
             0,
             0});
             this.Cut_StartSeconds.Name = "Cut_StartSeconds";
-            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 23);
             this.Cut_StartSeconds.TabIndex = 49;
             this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartMinutes
             // 
-            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_StartMinutes.Location = new System.Drawing.Point(155, 31);
             this.Cut_StartMinutes.Maximum = new decimal(new int[] {
             60,
@@ -814,13 +815,13 @@
             0,
             0});
             this.Cut_StartMinutes.Name = "Cut_StartMinutes";
-            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 23);
             this.Cut_StartMinutes.TabIndex = 48;
             this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_StartHours
             // 
-            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartHours.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
             this.Cut_StartHours.Maximum = new decimal(new int[] {
             1000,
@@ -828,38 +829,38 @@
             0,
             0});
             this.Cut_StartHours.Name = "Cut_StartHours";
-            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartHours.Size = new System.Drawing.Size(60, 23);
             this.Cut_StartHours.TabIndex = 45;
             this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
             // 
             // Cut_PreviewLabel
             // 
             this.Cut_PreviewLabel.AutoSize = true;
-            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_PreviewLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Cut_PreviewLabel.Location = new System.Drawing.Point(155, 133);
             this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
-            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
+            this.Cut_PreviewLabel.Size = new System.Drawing.Size(149, 14);
             this.Cut_PreviewLabel.TabIndex = 47;
             this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
             // 
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label62.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label62.Location = new System.Drawing.Point(12, 91);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(49, 14);
+            this.label62.Size = new System.Drawing.Size(60, 14);
             this.label62.TabIndex = 46;
             this.label62.Text = "How long:";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label63.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label63.Location = new System.Drawing.Point(7, 34);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(53, 14);
+            this.label63.Size = new System.Drawing.Size(64, 14);
             this.label63.TabIndex = 45;
             this.label63.Text = "Start Time:";
             // 
@@ -869,7 +870,7 @@
             this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
             this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
             this.Cut_AddTimespanButton.Size = new System.Drawing.Size(420, 23);
@@ -881,80 +882,80 @@
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label64.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label64.Location = new System.Drawing.Point(79, 16);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(31, 14);
+            this.label64.Size = new System.Drawing.Size(40, 14);
             this.label64.TabIndex = 32;
             this.label64.Text = "Hours";
             // 
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label65.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label65.Location = new System.Drawing.Point(304, 71);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(58, 14);
+            this.label65.Size = new System.Drawing.Size(69, 14);
             this.label65.TabIndex = 43;
             this.label65.Text = "Miliseconds";
             // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label66.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label66.Location = new System.Drawing.Point(228, 71);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(41, 14);
+            this.label66.Size = new System.Drawing.Size(52, 14);
             this.label66.TabIndex = 42;
             this.label66.Text = "Seconds";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label69.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label69.Location = new System.Drawing.Point(152, 71);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(41, 14);
+            this.label69.Size = new System.Drawing.Size(49, 14);
             this.label69.TabIndex = 41;
             this.label69.Text = "Minutes";
             // 
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label70.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label70.Location = new System.Drawing.Point(79, 71);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(31, 14);
+            this.label70.Size = new System.Drawing.Size(40, 14);
             this.label70.TabIndex = 40;
             this.label70.Text = "Hours";
             // 
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label83.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label83.Location = new System.Drawing.Point(152, 16);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(41, 14);
+            this.label83.Size = new System.Drawing.Size(49, 14);
             this.label83.TabIndex = 33;
             this.label83.Text = "Minutes";
             // 
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label84.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label84.Location = new System.Drawing.Point(228, 16);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(41, 14);
+            this.label84.Size = new System.Drawing.Size(52, 14);
             this.label84.TabIndex = 34;
             this.label84.Text = "Seconds";
             // 
             // label85
             // 
             this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label85.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.label85.Location = new System.Drawing.Point(304, 16);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(58, 14);
+            this.label85.Size = new System.Drawing.Size(69, 14);
             this.label85.TabIndex = 35;
             this.label85.Text = "Miliseconds";
             // 
@@ -963,7 +964,7 @@
             this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
             this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
             this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
@@ -975,9 +976,10 @@
             // Cut_MediaInputTextbox
             // 
             this.Cut_MediaInputTextbox.Enabled = false;
+            this.Cut_MediaInputTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
             this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
-            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 20);
+            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 23);
             this.Cut_MediaInputTextbox.TabIndex = 67;
             // 
             // panel32
@@ -996,7 +998,7 @@
             this.label60.BackColor = System.Drawing.Color.Transparent;
             this.label60.Cursor = System.Windows.Forms.Cursors.Default;
             this.label60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label60.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label60.ForeColor = System.Drawing.Color.White;
             this.label60.Location = new System.Drawing.Point(55, 0);
             this.label60.Name = "label60";
@@ -1027,7 +1029,7 @@
             this.label67.BackColor = System.Drawing.Color.Transparent;
             this.label67.Cursor = System.Windows.Forms.Cursors.Default;
             this.label67.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label67.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
             this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
             this.label67.Location = new System.Drawing.Point(22, 0);
             this.label67.Name = "label67";
@@ -1056,6 +1058,7 @@
             this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
             this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
             this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
@@ -1069,6 +1072,7 @@
             this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
             this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
             this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
@@ -1082,7 +1086,7 @@
             this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button19.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.button19.Location = new System.Drawing.Point(792, 44);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(87, 23);
@@ -1101,10 +1105,10 @@
             // Cut_OutputDirectoryBox
             // 
             this.Cut_OutputDirectoryBox.Enabled = false;
-            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
             this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
-            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
+            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 23);
             this.Cut_OutputDirectoryBox.TabIndex = 23;
             // 
             // Cut_StartCuttingButton
@@ -1112,7 +1116,7 @@
             this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
             this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
             this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
@@ -1137,7 +1141,7 @@
             this.label68.BackColor = System.Drawing.Color.Transparent;
             this.label68.Cursor = System.Windows.Forms.Cursors.Default;
             this.label68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label68.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label68.ForeColor = System.Drawing.Color.White;
             this.label68.Location = new System.Drawing.Point(55, 0);
             this.label68.Name = "label68";
@@ -1161,6 +1165,862 @@
             this.panel69.Size = new System.Drawing.Size(200, 73);
             this.panel69.TabIndex = 1;
             // 
+            // EncoderMainPanel
+            // 
+            this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.EncoderMainPanel.Controls.Add(this.panel13);
+            this.EncoderMainPanel.Controls.Add(this.panel6);
+            this.EncoderMainPanel.Controls.Add(this.panel23);
+            this.EncoderMainPanel.Controls.Add(this.panel37);
+            this.EncoderMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EncoderMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.EncoderMainPanel.Name = "EncoderMainPanel";
+            this.EncoderMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.EncoderMainPanel.TabIndex = 5;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label3);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(919, 44);
+            this.panel13.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label3.Location = new System.Drawing.Point(22, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(897, 44);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "ENCODER";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
+            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
+            this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
+            this.panel6.Controls.Add(this.Encoder_ProgressBar);
+            this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
+            this.panel6.Controls.Add(this.Encoder_StartEncodingProcessButton);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Location = new System.Drawing.Point(27, 377);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(882, 106);
+            this.panel6.TabIndex = 2;
+            // 
+            // Encoder_DefaultOutputButton
+            // 
+            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
+            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_DefaultOutputButton.TabIndex = 60;
+            this.Encoder_DefaultOutputButton.Text = "✓";
+            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
+            // 
+            // Encoder_OpenDirectoryButton
+            // 
+            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
+            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_OpenDirectoryButton.TabIndex = 61;
+            this.Encoder_OpenDirectoryButton.Text = "▶";
+            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
+            // 
+            // Encoder_OutputFolderButton
+            // 
+            this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(792, 44);
+            this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
+            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(87, 23);
+            this.Encoder_OutputFolderButton.TabIndex = 25;
+            this.Encoder_OutputFolderButton.Text = "Output Folder";
+            this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
+            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
+            // 
+            // Encoder_ProgressBar
+            // 
+            this.Encoder_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
+            this.Encoder_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Encoder_ProgressBar.TabIndex = 24;
+            // 
+            // Encoder_OutputFolderTextBox
+            // 
+            this.Encoder_OutputFolderTextBox.Enabled = false;
+            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(3, 45);
+            this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
+            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(732, 23);
+            this.Encoder_OutputFolderTextBox.TabIndex = 23;
+            // 
+            // Encoder_StartEncodingProcessButton
+            // 
+            this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(791, 73);
+            this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
+            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(88, 23);
+            this.Encoder_StartEncodingProcessButton.TabIndex = 22;
+            this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
+            this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
+            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel9.Controls.Add(this.label2);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(882, 38);
+            this.panel9.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(55, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(447, 38);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Output";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(55, 38);
+            this.panel10.TabIndex = 0;
+            // 
+            // panel23
+            // 
+            this.panel23.Location = new System.Drawing.Point(719, 495);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(200, 73);
+            this.panel23.TabIndex = 1;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.Controls.Add(this.Encoder_FilesList);
+            this.panel37.Controls.Add(this.Encoder_PlayButton);
+            this.panel37.Controls.Add(this.label14);
+            this.panel37.Controls.Add(this.panel2);
+            this.panel37.Controls.Add(this.panel1);
+            this.panel37.Controls.Add(this.label7);
+            this.panel37.Controls.Add(this.Encoder_ExtensionBox);
+            this.panel37.Controls.Add(this.label6);
+            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
+            this.panel37.Controls.Add(this.label5);
+            this.panel37.Controls.Add(this.Encoder_FPSBox);
+            this.panel37.Controls.Add(this.label32);
+            this.panel37.Controls.Add(this.panel47);
+            this.panel37.Controls.Add(this.label4);
+            this.panel37.Controls.Add(this.Encoder_AudioCodecBox);
+            this.panel37.Controls.Add(this.Encoder_ResolutionBox);
+            this.panel37.Controls.Add(this.label13);
+            this.panel37.Controls.Add(this.Encoder_TunerBox);
+            this.panel37.Controls.Add(this.Encoder_VideoCodecBox);
+            this.panel37.Controls.Add(this.label12);
+            this.panel37.Controls.Add(this.label9);
+            this.panel37.Controls.Add(this.Encoder_PresetsBox);
+            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
+            this.panel37.Location = new System.Drawing.Point(27, 50);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(882, 314);
+            this.panel37.TabIndex = 54;
+            // 
+            // Encoder_FilesList
+            // 
+            this.Encoder_FilesList.AllowDrop = true;
+            this.Encoder_FilesList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnHeader1,
+            this.ColumnHeader2});
+            this.Encoder_FilesList.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_FilesList.FullRowSelect = true;
+            this.Encoder_FilesList.GridLines = true;
+            this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Encoder_FilesList.HideSelection = false;
+            this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem5});
+            this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
+            this.Encoder_FilesList.MultiSelect = false;
+            this.Encoder_FilesList.Name = "Encoder_FilesList";
+            this.Encoder_FilesList.Size = new System.Drawing.Size(870, 213);
+            this.Encoder_FilesList.TabIndex = 43;
+            this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
+            this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
+            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
+            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
+            // 
+            // ColumnHeader1
+            // 
+            this.ColumnHeader1.Text = "File";
+            this.ColumnHeader1.Width = 765;
+            // 
+            // ColumnHeader2
+            // 
+            this.ColumnHeader2.Text = "Status";
+            this.ColumnHeader2.Width = 80;
+            // 
+            // Encoder_PlayButton
+            // 
+            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_PlayButton.Location = new System.Drawing.Point(781, 66);
+            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
+            this.Encoder_PlayButton.Size = new System.Drawing.Size(95, 26);
+            this.Encoder_PlayButton.TabIndex = 53;
+            this.Encoder_PlayButton.Text = "Play Selected ▶";
+            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
+            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(710, 39);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 16);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "Overrides";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip.SetToolTip(this.label14, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
+        "ave default if you are unsure and let ffmpeg decide.");
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.panel2.Location = new System.Drawing.Point(438, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 20);
+            this.panel2.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.panel1.Location = new System.Drawing.Point(438, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(270, 1);
+            this.panel1.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(361, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 16);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Extension";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_ExtensionBox
+            // 
+            this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_ExtensionBox.FormattingEnabled = true;
+            this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
+            this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
+            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_ExtensionBox.TabIndex = 38;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(0, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 15);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Auto Overwrite";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_OverwriteBox
+            // 
+            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_OverwriteBox.FormattingEnabled = true;
+            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
+            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
+            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_OverwriteBox.TabIndex = 48;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(622, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 16);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "FPS/Frames";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_FPSBox
+            // 
+            this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_FPSBox.FormattingEnabled = true;
+            this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
+            this.Encoder_FPSBox.Name = "Encoder_FPSBox";
+            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_FPSBox.TabIndex = 46;
+            // 
+            // label32
+            // 
+            this.label32.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label32.Location = new System.Drawing.Point(535, 50);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(68, 16);
+            this.label32.TabIndex = 45;
+            this.label32.Text = "Resolution";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel47.Controls.Add(this.label39);
+            this.panel47.Controls.Add(this.panel48);
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel47.Location = new System.Drawing.Point(0, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(882, 38);
+            this.panel47.TabIndex = 3;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label39.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label39.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(55, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(447, 38);
+            this.label39.TabIndex = 6;
+            this.label39.Text = "Options";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel48
+            // 
+            this.panel48.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel48.Location = new System.Drawing.Point(0, 0);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(55, 38);
+            this.panel48.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(446, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 16);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Tuner";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_AudioCodecBox
+            // 
+            this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_AudioCodecBox.FormattingEnabled = true;
+            this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
+            this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
+            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_AudioCodecBox.TabIndex = 35;
+            // 
+            // Encoder_ResolutionBox
+            // 
+            this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_ResolutionBox.FormattingEnabled = true;
+            this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
+            this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
+            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_ResolutionBox.TabIndex = 44;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(90, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 16);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "Video Encoder";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_TunerBox
+            // 
+            this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_TunerBox.FormattingEnabled = true;
+            this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
+            this.Encoder_TunerBox.Name = "Encoder_TunerBox";
+            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_TunerBox.TabIndex = 44;
+            // 
+            // Encoder_VideoCodecBox
+            // 
+            this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_VideoCodecBox.FormattingEnabled = true;
+            this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
+            this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
+            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_VideoCodecBox.TabIndex = 34;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(177, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 16);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Audio Encoder";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(267, 50);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 16);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Quality/Speed";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_PresetsBox
+            // 
+            this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_PresetsBox.FormattingEnabled = true;
+            this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
+            this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
+            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 24);
+            this.Encoder_PresetsBox.TabIndex = 40;
+            // 
+            // Encoder_HideConsoleToggle
+            // 
+            this.Encoder_HideConsoleToggle.AutoSize = true;
+            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(701, 76);
+            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
+            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(77, 18);
+            this.Encoder_HideConsoleToggle.TabIndex = 61;
+            this.Encoder_HideConsoleToggle.Text = "Hide Console";
+            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
+            // UpdateMainPanel
+            // 
+            this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.UpdateMainPanel.Controls.Add(this.panel94);
+            this.UpdateMainPanel.Controls.Add(this.panel40);
+            this.UpdateMainPanel.Controls.Add(this.Update_CheckForUpdateButton);
+            this.UpdateMainPanel.Controls.Add(this.panel73);
+            this.UpdateMainPanel.Controls.Add(this.panel74);
+            this.UpdateMainPanel.Controls.Add(this.panel77);
+            this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.UpdateMainPanel.Name = "UpdateMainPanel";
+            this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.UpdateMainPanel.TabIndex = 11;
+            // 
+            // panel94
+            // 
+            this.panel94.BackColor = System.Drawing.Color.White;
+            this.panel94.Controls.Add(this.label40);
+            this.panel94.Controls.Add(this.panel96);
+            this.panel94.Location = new System.Drawing.Point(27, 306);
+            this.panel94.Name = "panel94";
+            this.panel94.Size = new System.Drawing.Size(882, 141);
+            this.panel94.TabIndex = 29;
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label40.Location = new System.Drawing.Point(6, 41);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(870, 95);
+            this.label40.TabIndex = 4;
+            this.label40.Text = resources.GetString("label40.Text");
+            // 
+            // panel96
+            // 
+            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel96.Controls.Add(this.label41);
+            this.panel96.Controls.Add(this.panel97);
+            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel96.Location = new System.Drawing.Point(0, 0);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(882, 38);
+            this.panel96.TabIndex = 3;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label41.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(55, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(447, 38);
+            this.label41.TabIndex = 6;
+            this.label41.Text = "Information";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel97
+            // 
+            this.panel97.Controls.Add(this.pictureBox11);
+            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel97.Location = new System.Drawing.Point(0, 0);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(55, 38);
+            this.panel97.TabIndex = 0;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.White;
+            this.panel40.Controls.Add(this.SpeedLabel);
+            this.panel40.Controls.Add(this.Update_ProgressBar);
+            this.panel40.Controls.Add(this.panel42);
+            this.panel40.Location = new System.Drawing.Point(27, 82);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(882, 78);
+            this.panel40.TabIndex = 26;
+            // 
+            // SpeedLabel
+            // 
+            this.SpeedLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SpeedLabel.Location = new System.Drawing.Point(794, 49);
+            this.SpeedLabel.Name = "SpeedLabel";
+            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SpeedLabel.Size = new System.Drawing.Size(82, 16);
+            this.SpeedLabel.TabIndex = 28;
+            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Update_ProgressBar
+            // 
+            this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
+            this.Update_ProgressBar.Name = "Update_ProgressBar";
+            this.Update_ProgressBar.Size = new System.Drawing.Size(783, 25);
+            this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Update_ProgressBar.TabIndex = 27;
+            // 
+            // panel42
+            // 
+            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel42.Controls.Add(this.Update_StatusLabel);
+            this.panel42.Controls.Add(this.panel71);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel42.Location = new System.Drawing.Point(0, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(882, 38);
+            this.panel42.TabIndex = 3;
+            // 
+            // Update_StatusLabel
+            // 
+            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_StatusLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
+            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
+            this.Update_StatusLabel.Name = "Update_StatusLabel";
+            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
+            this.Update_StatusLabel.TabIndex = 6;
+            this.Update_StatusLabel.Text = "Status";
+            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel71
+            // 
+            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel71.Location = new System.Drawing.Point(0, 0);
+            this.panel71.Name = "panel71";
+            this.panel71.Size = new System.Drawing.Size(55, 38);
+            this.panel71.TabIndex = 0;
+            // 
+            // Update_CheckForUpdateButton
+            // 
+            this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
+            this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
+            this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
+            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(103, 24);
+            this.Update_CheckForUpdateButton.TabIndex = 26;
+            this.Update_CheckForUpdateButton.Text = "Check For Update";
+            this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
+            this.Update_CheckForUpdateButton.Click += new System.EventHandler(this.Update_CheckForUpdateButton_Click);
+            // 
+            // panel73
+            // 
+            this.panel73.Controls.Add(this.label78);
+            this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel73.Location = new System.Drawing.Point(0, 0);
+            this.panel73.Name = "panel73";
+            this.panel73.Size = new System.Drawing.Size(919, 44);
+            this.panel73.TabIndex = 8;
+            // 
+            // label78
+            // 
+            this.label78.BackColor = System.Drawing.Color.Transparent;
+            this.label78.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label78.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label78.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label78.Location = new System.Drawing.Point(22, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(897, 44);
+            this.label78.TabIndex = 7;
+            this.label78.Text = "Updates";
+            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel74
+            // 
+            this.panel74.BackColor = System.Drawing.Color.White;
+            this.panel74.Controls.Add(this.groupBox4);
+            this.panel74.Controls.Add(this.panel75);
+            this.panel74.Location = new System.Drawing.Point(27, 171);
+            this.panel74.Name = "panel74";
+            this.panel74.Size = new System.Drawing.Size(882, 125);
+            this.panel74.TabIndex = 2;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.panel72);
+            this.groupBox4.Controls.Add(this.panel91);
+            this.groupBox4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.groupBox4.Location = new System.Drawing.Point(9, 44);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(864, 72);
+            this.groupBox4.TabIndex = 55;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "FFMPEG";
+            // 
+            // panel72
+            // 
+            this.panel72.Controls.Add(this.panel89);
+            this.panel72.Controls.Add(this.panel90);
+            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel72.Location = new System.Drawing.Point(3, 44);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(858, 29);
+            this.panel72.TabIndex = 1;
+            // 
+            // panel89
+            // 
+            this.panel89.Controls.Add(this.Update_DownloadButton);
+            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel89.Location = new System.Drawing.Point(562, 0);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(296, 29);
+            this.panel89.TabIndex = 1;
+            // 
+            // Update_DownloadButton
+            // 
+            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
+            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
+            this.Update_DownloadButton.Name = "Update_DownloadButton";
+            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 29);
+            this.Update_DownloadButton.TabIndex = 71;
+            this.Update_DownloadButton.Text = "Loading...";
+            this.Update_DownloadButton.UseVisualStyleBackColor = false;
+            this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
+            // 
+            // panel90
+            // 
+            this.panel90.Controls.Add(this.Update_LatestUpdateLabel);
+            this.panel90.Controls.Add(this.label24);
+            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel90.Location = new System.Drawing.Point(0, 0);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(295, 29);
+            this.panel90.TabIndex = 0;
+            // 
+            // Update_LatestUpdateLabel
+            // 
+            this.Update_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
+            this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
+            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 29);
+            this.Update_LatestUpdateLabel.TabIndex = 2;
+            this.Update_LatestUpdateLabel.Text = "-";
+            this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label24.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label24.Location = new System.Drawing.Point(0, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 29);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Latest Update:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel91
+            // 
+            this.panel91.Controls.Add(this.panel92);
+            this.panel91.Controls.Add(this.panel93);
+            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel91.Location = new System.Drawing.Point(3, 19);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(858, 25);
+            this.panel91.TabIndex = 0;
+            // 
+            // panel92
+            // 
+            this.panel92.Controls.Add(this.Update_OnlineVerLabel);
+            this.panel92.Controls.Add(this.label35);
+            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel92.Location = new System.Drawing.Point(562, 0);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(296, 25);
+            this.panel92.TabIndex = 1;
+            // 
+            // Update_OnlineVerLabel
+            // 
+            this.Update_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_OnlineVerLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Update_OnlineVerLabel.Location = new System.Drawing.Point(107, 0);
+            this.Update_OnlineVerLabel.Name = "Update_OnlineVerLabel";
+            this.Update_OnlineVerLabel.Size = new System.Drawing.Size(190, 25);
+            this.Update_OnlineVerLabel.TabIndex = 2;
+            this.Update_OnlineVerLabel.Text = "-";
+            this.Update_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label35.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label35.Location = new System.Drawing.Point(0, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(107, 25);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Online FFmpeg Version:";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel93
+            // 
+            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
+            this.panel93.Controls.Add(this.label37);
+            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel93.Location = new System.Drawing.Point(0, 0);
+            this.panel93.Name = "panel93";
+            this.panel93.Size = new System.Drawing.Size(295, 25);
+            this.panel93.TabIndex = 0;
+            // 
+            // Update_InstalledVersionLabel
+            // 
+            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
+            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
+            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
+            this.Update_InstalledVersionLabel.TabIndex = 1;
+            this.Update_InstalledVersionLabel.Text = "-";
+            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label37
+            // 
+            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label37.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(118, 25);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Installed FFmpeg Version:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel75
+            // 
+            this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel75.Controls.Add(this.label79);
+            this.panel75.Controls.Add(this.panel76);
+            this.panel75.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel75.Location = new System.Drawing.Point(0, 0);
+            this.panel75.Name = "panel75";
+            this.panel75.Size = new System.Drawing.Size(882, 38);
+            this.panel75.TabIndex = 3;
+            // 
+            // label79
+            // 
+            this.label79.BackColor = System.Drawing.Color.Transparent;
+            this.label79.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label79.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label79.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.label79.ForeColor = System.Drawing.Color.White;
+            this.label79.Location = new System.Drawing.Point(55, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(447, 38);
+            this.label79.TabIndex = 6;
+            this.label79.Text = "Installed Information";
+            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel76
+            // 
+            this.panel76.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel76.Location = new System.Drawing.Point(0, 0);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(55, 38);
+            this.panel76.TabIndex = 0;
+            // 
+            // panel77
+            // 
+            this.panel77.Location = new System.Drawing.Point(719, 495);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(200, 73);
+            this.panel77.TabIndex = 1;
+            // 
             // ArgumentMainPanel
             // 
             this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -1182,7 +2042,7 @@
             // 
             // label38
             // 
-            this.label38.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label38.Font = new System.Drawing.Font("Bahnschrift Condensed", 8F);
             this.label38.Location = new System.Drawing.Point(500, 50);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(217, 25);
@@ -1195,7 +2055,7 @@
             this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
             this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ClearButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ClearButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ClearButton.Location = new System.Drawing.Point(359, 47);
             this.Argument_ClearButton.Name = "Argument_ClearButton";
@@ -1210,7 +2070,7 @@
             this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
             this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
             this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
@@ -1225,7 +2085,7 @@
             this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
             this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
             this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
@@ -1240,7 +2100,7 @@
             this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
             this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
             this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
@@ -1255,7 +2115,7 @@
             this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
             this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
             this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
@@ -1270,7 +2130,7 @@
             this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
             this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
             this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
@@ -1282,7 +2142,7 @@
             // 
             // Argument_PreviewBox
             // 
-            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
             this.Argument_PreviewBox.Multiline = true;
             this.Argument_PreviewBox.Name = "Argument_PreviewBox";
@@ -1303,7 +2163,7 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Cursor = System.Windows.Forms.Cursors.Default;
             this.label34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label34.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label34.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
             this.label34.Location = new System.Drawing.Point(22, 0);
             this.label34.Name = "label34";
@@ -1352,17 +2212,17 @@
             // Merge_HideConsoleToggle
             // 
             this.Merge_HideConsoleToggle.AutoSize = true;
-            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 43);
             this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
-            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(77, 18);
             this.Merge_HideConsoleToggle.TabIndex = 88;
             this.Merge_HideConsoleToggle.Text = "Hide Console";
             this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
             // 
             // label33
             // 
-            this.label33.Font = new System.Drawing.Font("Bebas Kai", 7F);
+            this.label33.Font = new System.Drawing.Font("Bahnschrift Condensed", 8F);
             this.label33.Location = new System.Drawing.Point(278, 284);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(217, 25);
@@ -1372,10 +2232,10 @@
             // 
             // Merge_OutputFileName
             // 
-            this.Merge_OutputFileName.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_OutputFileName.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Merge_OutputFileName.Location = new System.Drawing.Point(270, 259);
             this.Merge_OutputFileName.Name = "Merge_OutputFileName";
-            this.Merge_OutputFileName.Size = new System.Drawing.Size(607, 22);
+            this.Merge_OutputFileName.Size = new System.Drawing.Size(607, 23);
             this.Merge_OutputFileName.TabIndex = 86;
             this.Merge_OutputFileName.Text = "OutputFileName";
             // 
@@ -1422,7 +2282,7 @@
             this.groupBox3.Controls.Add(this.panel63);
             this.groupBox3.Controls.Add(this.panel64);
             this.groupBox3.Controls.Add(this.panel70);
-            this.groupBox3.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.groupBox3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.groupBox3.Location = new System.Drawing.Point(270, 62);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(606, 191);
@@ -1433,17 +2293,17 @@
             // Merge_mediaExtensionDescLabel
             // 
             this.Merge_mediaExtensionDescLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(3, 143);
+            this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(3, 144);
             this.Merge_mediaExtensionDescLabel.Name = "Merge_mediaExtensionDescLabel";
-            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(600, 45);
+            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(600, 44);
             this.Merge_mediaExtensionDescLabel.TabIndex = 5;
             // 
             // panel24
             // 
             this.panel24.Controls.Add(this.label36);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(3, 118);
+            this.panel24.Location = new System.Drawing.Point(3, 119);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(600, 25);
             this.panel24.TabIndex = 4;
@@ -1451,7 +2311,7 @@
             // label36
             // 
             this.label36.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label36.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label36.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label36.Location = new System.Drawing.Point(0, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(113, 25);
@@ -1464,7 +2324,7 @@
             this.panel62.Controls.Add(this.Merge_mediaExtensionLabel);
             this.panel62.Controls.Add(this.label50);
             this.panel62.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel62.Location = new System.Drawing.Point(3, 93);
+            this.panel62.Location = new System.Drawing.Point(3, 94);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(600, 25);
             this.panel62.TabIndex = 3;
@@ -1472,7 +2332,7 @@
             // Merge_mediaExtensionLabel
             // 
             this.Merge_mediaExtensionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaExtensionLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaExtensionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Merge_mediaExtensionLabel.Location = new System.Drawing.Point(69, 0);
             this.Merge_mediaExtensionLabel.Name = "Merge_mediaExtensionLabel";
             this.Merge_mediaExtensionLabel.Size = new System.Drawing.Size(531, 25);
@@ -1482,7 +2342,7 @@
             // label50
             // 
             this.label50.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label50.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label50.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label50.Location = new System.Drawing.Point(0, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(69, 25);
@@ -1495,7 +2355,7 @@
             this.panel63.Controls.Add(this.Merge_SizeLabel);
             this.panel63.Controls.Add(this.label51);
             this.panel63.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel63.Location = new System.Drawing.Point(3, 68);
+            this.panel63.Location = new System.Drawing.Point(3, 69);
             this.panel63.Name = "panel63";
             this.panel63.Size = new System.Drawing.Size(600, 25);
             this.panel63.TabIndex = 2;
@@ -1503,7 +2363,7 @@
             // Merge_SizeLabel
             // 
             this.Merge_SizeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_SizeLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_SizeLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Merge_SizeLabel.Location = new System.Drawing.Point(35, 0);
             this.Merge_SizeLabel.Name = "Merge_SizeLabel";
             this.Merge_SizeLabel.Size = new System.Drawing.Size(565, 25);
@@ -1513,7 +2373,7 @@
             // label51
             // 
             this.label51.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label51.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label51.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label51.Location = new System.Drawing.Point(0, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(35, 25);
@@ -1526,7 +2386,7 @@
             this.panel64.Controls.Add(this.Merge_mediaPathLabel);
             this.panel64.Controls.Add(this.label52);
             this.panel64.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel64.Location = new System.Drawing.Point(3, 43);
+            this.panel64.Location = new System.Drawing.Point(3, 44);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(600, 25);
             this.panel64.TabIndex = 1;
@@ -1534,7 +2394,7 @@
             // Merge_mediaPathLabel
             // 
             this.Merge_mediaPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaPathLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaPathLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Merge_mediaPathLabel.Location = new System.Drawing.Point(72, 0);
             this.Merge_mediaPathLabel.Name = "Merge_mediaPathLabel";
             this.Merge_mediaPathLabel.Size = new System.Drawing.Size(528, 25);
@@ -1544,7 +2404,7 @@
             // label52
             // 
             this.label52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label52.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label52.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label52.Location = new System.Drawing.Point(0, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(72, 25);
@@ -1557,7 +2417,7 @@
             this.panel70.Controls.Add(this.Merge_mediaOrderLabel);
             this.panel70.Controls.Add(this.label53);
             this.panel70.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel70.Location = new System.Drawing.Point(3, 18);
+            this.panel70.Location = new System.Drawing.Point(3, 19);
             this.panel70.Name = "panel70";
             this.panel70.Size = new System.Drawing.Size(600, 25);
             this.panel70.TabIndex = 0;
@@ -1565,7 +2425,7 @@
             // Merge_mediaOrderLabel
             // 
             this.Merge_mediaOrderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaOrderLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_mediaOrderLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Merge_mediaOrderLabel.Location = new System.Drawing.Point(72, 0);
             this.Merge_mediaOrderLabel.Name = "Merge_mediaOrderLabel";
             this.Merge_mediaOrderLabel.Size = new System.Drawing.Size(528, 25);
@@ -1575,7 +2435,7 @@
             // label53
             // 
             this.label53.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label53.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label53.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label53.Location = new System.Drawing.Point(0, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(72, 25);
@@ -1589,13 +2449,13 @@
             this.Merge_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
             this.columnHeader10});
-            this.Merge_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Merge_listView.FullRowSelect = true;
             this.Merge_listView.GridLines = true;
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem6});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -1610,12 +2470,12 @@
             // columnHeader9
             // 
             this.columnHeader9.Text = "Order";
-            this.columnHeader9.Width = 40;
+            this.columnHeader9.Width = 50;
             // 
             // columnHeader10
             // 
             this.columnHeader10.Text = "Media";
-            this.columnHeader10.Width = 187;
+            this.columnHeader10.Width = 160;
             // 
             // panel55
             // 
@@ -1633,7 +2493,7 @@
             this.label88.BackColor = System.Drawing.Color.Transparent;
             this.label88.Cursor = System.Windows.Forms.Cursors.Default;
             this.label88.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label88.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label88.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label88.ForeColor = System.Drawing.Color.White;
             this.label88.Location = new System.Drawing.Point(55, 0);
             this.label88.Name = "label88";
@@ -1670,6 +2530,7 @@
             this.Merge_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
             this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
             this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
@@ -1683,6 +2544,7 @@
             this.Merge_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
             this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
             this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
@@ -1696,7 +2558,7 @@
             this.Merge_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Merge_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Merge_OutputButton.Location = new System.Drawing.Point(792, 44);
             this.Merge_OutputButton.Name = "Merge_OutputButton";
             this.Merge_OutputButton.Size = new System.Drawing.Size(87, 23);
@@ -1715,10 +2577,10 @@
             // Merge_OutputDirectoryTextbox
             // 
             this.Merge_OutputDirectoryTextbox.Enabled = false;
-            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
             this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
-            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(733, 22);
+            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(733, 23);
             this.Merge_OutputDirectoryTextbox.TabIndex = 23;
             // 
             // Merge_StartButton
@@ -1726,7 +2588,7 @@
             this.Merge_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Merge_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Merge_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Merge_StartButton.Location = new System.Drawing.Point(792, 73);
             this.Merge_StartButton.Name = "Merge_StartButton";
             this.Merge_StartButton.Size = new System.Drawing.Size(87, 23);
@@ -1751,7 +2613,7 @@
             this.label89.BackColor = System.Drawing.Color.Transparent;
             this.label89.Cursor = System.Windows.Forms.Cursors.Default;
             this.label89.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label89.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label89.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label89.ForeColor = System.Drawing.Color.White;
             this.label89.Location = new System.Drawing.Point(55, 0);
             this.label89.Name = "label89";
@@ -1782,7 +2644,7 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Cursor = System.Windows.Forms.Cursors.Default;
             this.label56.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label56.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label56.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
             this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
             this.label56.Location = new System.Drawing.Point(22, 0);
             this.label56.Name = "label56";
@@ -1818,10 +2680,10 @@
             // M3U8_HideConsoleCheckbox
             // 
             this.M3U8_HideConsoleCheckbox.AutoSize = true;
-            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(273, 55);
             this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
-            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(80, 18);
+            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(77, 18);
             this.M3U8_HideConsoleCheckbox.TabIndex = 80;
             this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
             this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
@@ -1831,10 +2693,10 @@
             this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
             this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.M3U8_PlayButton.Location = new System.Drawing.Point(824, 53);
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(814, 47);
             this.M3U8_PlayButton.Name = "M3U8_PlayButton";
-            this.M3U8_PlayButton.Size = new System.Drawing.Size(85, 21);
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(95, 24);
             this.M3U8_PlayButton.TabIndex = 79;
             this.M3U8_PlayButton.Text = "Play Selected ▶";
             this.M3U8_PlayButton.UseVisualStyleBackColor = false;
@@ -1845,7 +2707,7 @@
             this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
             this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
             this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
@@ -1860,7 +2722,7 @@
             this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
             this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
             this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
@@ -1877,7 +2739,7 @@
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader12});
-            this.M3U8_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.M3U8_listView.FullRowSelect = true;
             this.M3U8_listView.GridLines = true;
             this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
@@ -1919,7 +2781,7 @@
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Cursor = System.Windows.Forms.Cursors.Default;
             this.label45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label45.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label45.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
             this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
             this.label45.Location = new System.Drawing.Point(22, 0);
             this.label45.Name = "label45";
@@ -1948,6 +2810,7 @@
             this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
             this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
             this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
@@ -1961,6 +2824,7 @@
             this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
             this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
             this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
@@ -1974,7 +2838,7 @@
             this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_OutputButton.Location = new System.Drawing.Point(792, 44);
             this.M3U8_OutputButton.Name = "M3U8_OutputButton";
             this.M3U8_OutputButton.Size = new System.Drawing.Size(87, 23);
@@ -1994,10 +2858,10 @@
             // M3U8_OutputFolderTextbox
             // 
             this.M3U8_OutputFolderTextbox.Enabled = false;
-            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
             this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
-            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(733, 22);
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(733, 23);
             this.M3U8_OutputFolderTextbox.TabIndex = 23;
             // 
             // M3U8_StartButton
@@ -2005,7 +2869,7 @@
             this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_StartButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.M3U8_StartButton.Location = new System.Drawing.Point(792, 73);
             this.M3U8_StartButton.Name = "M3U8_StartButton";
             this.M3U8_StartButton.Size = new System.Drawing.Size(87, 23);
@@ -2030,7 +2894,7 @@
             this.label46.BackColor = System.Drawing.Color.Transparent;
             this.label46.Cursor = System.Windows.Forms.Cursors.Default;
             this.label46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label46.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label46.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label46.ForeColor = System.Drawing.Color.White;
             this.label46.Location = new System.Drawing.Point(55, 0);
             this.label46.Name = "label46";
@@ -2053,477 +2917,6 @@
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(200, 73);
             this.panel53.TabIndex = 1;
-            // 
-            // EncoderMainPanel
-            // 
-            this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.EncoderMainPanel.Controls.Add(this.panel13);
-            this.EncoderMainPanel.Controls.Add(this.panel6);
-            this.EncoderMainPanel.Controls.Add(this.panel23);
-            this.EncoderMainPanel.Controls.Add(this.panel37);
-            this.EncoderMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EncoderMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.EncoderMainPanel.Name = "EncoderMainPanel";
-            this.EncoderMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.EncoderMainPanel.TabIndex = 5;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.label3);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(919, 44);
-            this.panel13.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label3.Location = new System.Drawing.Point(22, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(897, 44);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ENCODER";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
-            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
-            this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
-            this.panel6.Controls.Add(this.Encoder_ProgressBar);
-            this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
-            this.panel6.Controls.Add(this.Encoder_StartEncodingProcessButton);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Location = new System.Drawing.Point(27, 377);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(882, 106);
-            this.panel6.TabIndex = 2;
-            // 
-            // Encoder_DefaultOutputButton
-            // 
-            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
-            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_DefaultOutputButton.TabIndex = 60;
-            this.Encoder_DefaultOutputButton.Text = "✓";
-            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
-            // 
-            // Encoder_OpenDirectoryButton
-            // 
-            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
-            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_OpenDirectoryButton.TabIndex = 61;
-            this.Encoder_OpenDirectoryButton.Text = "▶";
-            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
-            // 
-            // Encoder_OutputFolderButton
-            // 
-            this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(792, 44);
-            this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
-            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(87, 23);
-            this.Encoder_OutputFolderButton.TabIndex = 25;
-            this.Encoder_OutputFolderButton.Text = "Output Folder";
-            this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
-            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
-            // 
-            // Encoder_ProgressBar
-            // 
-            this.Encoder_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
-            this.Encoder_ProgressBar.Size = new System.Drawing.Size(783, 20);
-            this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Encoder_ProgressBar.TabIndex = 24;
-            // 
-            // Encoder_OutputFolderTextBox
-            // 
-            this.Encoder_OutputFolderTextBox.Enabled = false;
-            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(3, 45);
-            this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
-            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(732, 22);
-            this.Encoder_OutputFolderTextBox.TabIndex = 23;
-            // 
-            // Encoder_StartEncodingProcessButton
-            // 
-            this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(792, 73);
-            this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
-            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(87, 23);
-            this.Encoder_StartEncodingProcessButton.TabIndex = 22;
-            this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
-            this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
-            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel9.Controls.Add(this.label2);
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(882, 38);
-            this.panel9.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(447, 38);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Output";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(55, 38);
-            this.panel10.TabIndex = 0;
-            // 
-            // panel23
-            // 
-            this.panel23.Location = new System.Drawing.Point(719, 495);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(200, 73);
-            this.panel23.TabIndex = 1;
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.White;
-            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
-            this.panel37.Controls.Add(this.Encoder_FilesList);
-            this.panel37.Controls.Add(this.Encoder_PlayButton);
-            this.panel37.Controls.Add(this.label14);
-            this.panel37.Controls.Add(this.panel2);
-            this.panel37.Controls.Add(this.panel1);
-            this.panel37.Controls.Add(this.label7);
-            this.panel37.Controls.Add(this.Encoder_ExtensionBox);
-            this.panel37.Controls.Add(this.label6);
-            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
-            this.panel37.Controls.Add(this.label5);
-            this.panel37.Controls.Add(this.Encoder_FPSBox);
-            this.panel37.Controls.Add(this.label32);
-            this.panel37.Controls.Add(this.panel47);
-            this.panel37.Controls.Add(this.label4);
-            this.panel37.Controls.Add(this.Encoder_AudioCodecBox);
-            this.panel37.Controls.Add(this.Encoder_ResolutionBox);
-            this.panel37.Controls.Add(this.label13);
-            this.panel37.Controls.Add(this.Encoder_TunerBox);
-            this.panel37.Controls.Add(this.Encoder_VideoCodecBox);
-            this.panel37.Controls.Add(this.label12);
-            this.panel37.Controls.Add(this.label9);
-            this.panel37.Controls.Add(this.Encoder_PresetsBox);
-            this.panel37.Location = new System.Drawing.Point(27, 50);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(882, 314);
-            this.panel37.TabIndex = 54;
-            // 
-            // Encoder_HideConsoleToggle
-            // 
-            this.Encoder_HideConsoleToggle.AutoSize = true;
-            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(701, 76);
-            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
-            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
-            this.Encoder_HideConsoleToggle.TabIndex = 61;
-            this.Encoder_HideConsoleToggle.Text = "Hide Console";
-            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
-            // 
-            // Encoder_FilesList
-            // 
-            this.Encoder_FilesList.AllowDrop = true;
-            this.Encoder_FilesList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ColumnHeader1,
-            this.ColumnHeader2});
-            this.Encoder_FilesList.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_FilesList.FullRowSelect = true;
-            this.Encoder_FilesList.GridLines = true;
-            this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Encoder_FilesList.HideSelection = false;
-            this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
-            this.Encoder_FilesList.MultiSelect = false;
-            this.Encoder_FilesList.Name = "Encoder_FilesList";
-            this.Encoder_FilesList.Size = new System.Drawing.Size(870, 213);
-            this.Encoder_FilesList.TabIndex = 43;
-            this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
-            this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
-            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
-            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
-            // 
-            // ColumnHeader1
-            // 
-            this.ColumnHeader1.Text = "File";
-            this.ColumnHeader1.Width = 765;
-            // 
-            // ColumnHeader2
-            // 
-            this.ColumnHeader2.Text = "Status";
-            this.ColumnHeader2.Width = 80;
-            // 
-            // Encoder_PlayButton
-            // 
-            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_PlayButton.Location = new System.Drawing.Point(791, 70);
-            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
-            this.Encoder_PlayButton.Size = new System.Drawing.Size(85, 21);
-            this.Encoder_PlayButton.TabIndex = 53;
-            this.Encoder_PlayButton.Text = "Play Selected ▶";
-            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
-            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label14.Location = new System.Drawing.Point(710, 39);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 16);
-            this.label14.TabIndex = 52;
-            this.label14.Text = "Overrides";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip.SetToolTip(this.label14, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
-        "ave default if you are unsure and let ffmpeg decide.");
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel2.Location = new System.Drawing.Point(438, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 20);
-            this.panel2.TabIndex = 51;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel1.Location = new System.Drawing.Point(438, 46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 1);
-            this.panel1.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label7.Location = new System.Drawing.Point(361, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 16);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Extension";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_ExtensionBox
-            // 
-            this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_ExtensionBox.FormattingEnabled = true;
-            this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
-            this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
-            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_ExtensionBox.TabIndex = 38;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label6.Location = new System.Drawing.Point(6, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 16);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "Auto Overwrite";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_OverwriteBox
-            // 
-            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_OverwriteBox.FormattingEnabled = true;
-            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
-            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
-            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_OverwriteBox.TabIndex = 48;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label5.Location = new System.Drawing.Point(622, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 16);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "FPS/Frames";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_FPSBox
-            // 
-            this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_FPSBox.FormattingEnabled = true;
-            this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
-            this.Encoder_FPSBox.Name = "Encoder_FPSBox";
-            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_FPSBox.TabIndex = 46;
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label32.Location = new System.Drawing.Point(535, 50);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 16);
-            this.label32.TabIndex = 45;
-            this.label32.Text = "Resolution";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel47
-            // 
-            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel47.Controls.Add(this.label39);
-            this.panel47.Controls.Add(this.panel48);
-            this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel47.Location = new System.Drawing.Point(0, 0);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(882, 38);
-            this.panel47.TabIndex = 3;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label39.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label39.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(55, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(447, 38);
-            this.label39.TabIndex = 6;
-            this.label39.Text = "Options";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel48
-            // 
-            this.panel48.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel48.Location = new System.Drawing.Point(0, 0);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(55, 38);
-            this.panel48.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label4.Location = new System.Drawing.Point(446, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 16);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Tuner";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_AudioCodecBox
-            // 
-            this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_AudioCodecBox.FormattingEnabled = true;
-            this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
-            this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
-            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_AudioCodecBox.TabIndex = 35;
-            // 
-            // Encoder_ResolutionBox
-            // 
-            this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_ResolutionBox.FormattingEnabled = true;
-            this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
-            this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
-            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_ResolutionBox.TabIndex = 44;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label13.Location = new System.Drawing.Point(90, 50);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(87, 16);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Video Encoder";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_TunerBox
-            // 
-            this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_TunerBox.FormattingEnabled = true;
-            this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
-            this.Encoder_TunerBox.Name = "Encoder_TunerBox";
-            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_TunerBox.TabIndex = 44;
-            // 
-            // Encoder_VideoCodecBox
-            // 
-            this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_VideoCodecBox.FormattingEnabled = true;
-            this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
-            this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
-            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_VideoCodecBox.TabIndex = 34;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label12.Location = new System.Drawing.Point(177, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 16);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Audio Encoder";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label9.Location = new System.Drawing.Point(267, 50);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 16);
-            this.label9.TabIndex = 41;
-            this.label9.Text = "Quality/Speed";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_PresetsBox
-            // 
-            this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Encoder_PresetsBox.FormattingEnabled = true;
-            this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
-            this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
-            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 22);
-            this.Encoder_PresetsBox.TabIndex = 40;
             // 
             // SettingsMainPanel
             // 
@@ -2568,11 +2961,11 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Cursor = System.Windows.Forms.Cursors.Default;
             this.label20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label20.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label20.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(55, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(447, 38);
+            this.label20.Size = new System.Drawing.Size(559, 38);
             this.label20.TabIndex = 6;
             this.label20.Text = "FFmpeg Information";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2589,6 +2982,7 @@
             // 
             this.groupBox1.Controls.Add(this.panel86);
             this.groupBox1.Controls.Add(this.panel17);
+            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.groupBox1.Location = new System.Drawing.Point(6, 44);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(603, 72);
@@ -2601,9 +2995,9 @@
             this.panel86.Controls.Add(this.panel87);
             this.panel86.Controls.Add(this.panel88);
             this.panel86.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel86.Location = new System.Drawing.Point(3, 41);
+            this.panel86.Location = new System.Drawing.Point(3, 44);
             this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(597, 23);
+            this.panel86.Size = new System.Drawing.Size(597, 28);
             this.panel86.TabIndex = 1;
             // 
             // panel87
@@ -2612,7 +3006,7 @@
             this.panel87.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel87.Location = new System.Drawing.Point(301, 0);
             this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(296, 23);
+            this.panel87.Size = new System.Drawing.Size(296, 28);
             this.panel87.TabIndex = 1;
             // 
             // Settings_DownloadButton
@@ -2622,10 +3016,10 @@
             this.Settings_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
             this.Settings_DownloadButton.FlatAppearance.BorderSize = 2;
             this.Settings_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_DownloadButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_DownloadButton.Location = new System.Drawing.Point(0, 0);
             this.Settings_DownloadButton.Name = "Settings_DownloadButton";
-            this.Settings_DownloadButton.Size = new System.Drawing.Size(296, 23);
+            this.Settings_DownloadButton.Size = new System.Drawing.Size(296, 28);
             this.Settings_DownloadButton.TabIndex = 71;
             this.Settings_DownloadButton.Text = "Loading...";
             this.Settings_DownloadButton.UseVisualStyleBackColor = false;
@@ -2638,16 +3032,16 @@
             this.panel88.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel88.Location = new System.Drawing.Point(0, 0);
             this.panel88.Name = "panel88";
-            this.panel88.Size = new System.Drawing.Size(295, 23);
+            this.panel88.Size = new System.Drawing.Size(295, 28);
             this.panel88.TabIndex = 0;
             // 
             // Settings_LatestUpdateLabel
             // 
             this.Settings_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Settings_LatestUpdateLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Settings_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Settings_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
             this.Settings_LatestUpdateLabel.Name = "Settings_LatestUpdateLabel";
-            this.Settings_LatestUpdateLabel.Size = new System.Drawing.Size(223, 23);
+            this.Settings_LatestUpdateLabel.Size = new System.Drawing.Size(223, 28);
             this.Settings_LatestUpdateLabel.TabIndex = 2;
             this.Settings_LatestUpdateLabel.Text = "-";
             this.Settings_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2655,10 +3049,10 @@
             // label31
             // 
             this.label31.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label31.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label31.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label31.Location = new System.Drawing.Point(0, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 23);
+            this.label31.Size = new System.Drawing.Size(72, 28);
             this.label31.TabIndex = 1;
             this.label31.Text = "Latest Update:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2668,7 +3062,7 @@
             this.panel17.Controls.Add(this.panel85);
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(3, 16);
+            this.panel17.Location = new System.Drawing.Point(3, 19);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(597, 25);
             this.panel17.TabIndex = 0;
@@ -2686,7 +3080,7 @@
             // Settings_OnlineVerLabel
             // 
             this.Settings_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Settings_OnlineVerLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Settings_OnlineVerLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Settings_OnlineVerLabel.Location = new System.Drawing.Point(139, 0);
             this.Settings_OnlineVerLabel.Name = "Settings_OnlineVerLabel";
             this.Settings_OnlineVerLabel.Size = new System.Drawing.Size(157, 25);
@@ -2697,7 +3091,7 @@
             // label27
             // 
             this.label27.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label27.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label27.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label27.Location = new System.Drawing.Point(0, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(139, 25);
@@ -2718,7 +3112,7 @@
             // Settings_InstalledVersionLabel
             // 
             this.Settings_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Settings_InstalledVersionLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.Settings_InstalledVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Settings_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
             this.Settings_InstalledVersionLabel.Name = "Settings_InstalledVersionLabel";
             this.Settings_InstalledVersionLabel.Size = new System.Drawing.Size(177, 25);
@@ -2729,7 +3123,7 @@
             // label16
             // 
             this.label16.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label16.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label16.Location = new System.Drawing.Point(0, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(118, 25);
@@ -2753,17 +3147,17 @@
             // Settings_URIServerAutoStart
             // 
             this.Settings_URIServerAutoStart.AutoSize = true;
-            this.Settings_URIServerAutoStart.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_URIServerAutoStart.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_URIServerAutoStart.Location = new System.Drawing.Point(117, 66);
             this.Settings_URIServerAutoStart.Name = "Settings_URIServerAutoStart";
-            this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(69, 18);
+            this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(66, 18);
             this.Settings_URIServerAutoStart.TabIndex = 71;
             this.Settings_URIServerAutoStart.Text = "Auto Start";
             this.Settings_URIServerAutoStart.UseVisualStyleBackColor = true;
             // 
             // Settings_URIServerPort
             // 
-            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_URIServerPort.Location = new System.Drawing.Point(44, 56);
             this.Settings_URIServerPort.Maximum = new decimal(new int[] {
             65535,
@@ -2776,7 +3170,7 @@
             0,
             0});
             this.Settings_URIServerPort.Name = "Settings_URIServerPort";
-            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 22);
+            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 23);
             this.Settings_URIServerPort.TabIndex = 70;
             this.Settings_URIServerPort.Value = new decimal(new int[] {
             288,
@@ -2795,10 +3189,10 @@
             // Settings_URIServerCheckbox
             // 
             this.Settings_URIServerCheckbox.AutoSize = true;
-            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_URIServerCheckbox.Location = new System.Drawing.Point(117, 50);
             this.Settings_URIServerCheckbox.Name = "Settings_URIServerCheckbox";
-            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(53, 18);
+            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(51, 18);
             this.Settings_URIServerCheckbox.TabIndex = 68;
             this.Settings_URIServerCheckbox.Text = "Active";
             this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
@@ -2820,11 +3214,11 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Cursor = System.Windows.Forms.Cursors.Default;
             this.label19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label19.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label19.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(55, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(447, 38);
+            this.label19.Size = new System.Drawing.Size(176, 38);
             this.label19.TabIndex = 6;
             this.label19.Text = "URI Listener";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2858,16 +3252,16 @@
             // Settings_OverwriteDropdown
             // 
             this.Settings_OverwriteDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_OverwriteDropdown.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_OverwriteDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_OverwriteDropdown.FormattingEnabled = true;
             this.Settings_OverwriteDropdown.Location = new System.Drawing.Point(9, 64);
             this.Settings_OverwriteDropdown.Name = "Settings_OverwriteDropdown";
-            this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 22);
+            this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 24);
             this.Settings_OverwriteDropdown.TabIndex = 67;
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label21.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label21.Location = new System.Drawing.Point(6, 45);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(87, 16);
@@ -2891,11 +3285,11 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Cursor = System.Windows.Forms.Cursors.Default;
             this.label18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label18.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label18.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(55, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(447, 38);
+            this.label18.Size = new System.Drawing.Size(377, 38);
             this.label18.TabIndex = 6;
             this.label18.Text = "Default Encoder Options";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2911,27 +3305,27 @@
             // Settings_VideoCodecDropdown
             // 
             this.Settings_VideoCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_VideoCodecDropdown.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_VideoCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_VideoCodecDropdown.FormattingEnabled = true;
             this.Settings_VideoCodecDropdown.Location = new System.Drawing.Point(96, 64);
             this.Settings_VideoCodecDropdown.Name = "Settings_VideoCodecDropdown";
-            this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 22);
+            this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 24);
             this.Settings_VideoCodecDropdown.TabIndex = 61;
             // 
             // Settings_HideConsoleCheckbox
             // 
             this.Settings_HideConsoleCheckbox.AutoSize = true;
-            this.Settings_HideConsoleCheckbox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_HideConsoleCheckbox.Location = new System.Drawing.Point(356, 71);
             this.Settings_HideConsoleCheckbox.Name = "Settings_HideConsoleCheckbox";
-            this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(80, 18);
+            this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(77, 18);
             this.Settings_HideConsoleCheckbox.TabIndex = 60;
             this.Settings_HideConsoleCheckbox.Text = "Hide Console";
             this.Settings_HideConsoleCheckbox.UseVisualStyleBackColor = true;
             // 
             // label30
             // 
-            this.label30.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label30.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label30.Location = new System.Drawing.Point(277, 45);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(68, 16);
@@ -2941,7 +3335,7 @@
             // 
             // label28
             // 
-            this.label28.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label28.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label28.Location = new System.Drawing.Point(93, 45);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(87, 16);
@@ -2952,26 +3346,26 @@
             // Settings_QualityDropdown
             // 
             this.Settings_QualityDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_QualityDropdown.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_QualityDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_QualityDropdown.FormattingEnabled = true;
             this.Settings_QualityDropdown.Location = new System.Drawing.Point(270, 64);
             this.Settings_QualityDropdown.Name = "Settings_QualityDropdown";
-            this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 22);
+            this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 24);
             this.Settings_QualityDropdown.TabIndex = 65;
             // 
             // Settings_AudioCodecDropdown
             // 
             this.Settings_AudioCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_AudioCodecDropdown.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_AudioCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_AudioCodecDropdown.FormattingEnabled = true;
             this.Settings_AudioCodecDropdown.Location = new System.Drawing.Point(183, 64);
             this.Settings_AudioCodecDropdown.Name = "Settings_AudioCodecDropdown";
-            this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 22);
+            this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 24);
             this.Settings_AudioCodecDropdown.TabIndex = 63;
             // 
             // label15
             // 
-            this.label15.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label15.Location = new System.Drawing.Point(180, 45);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(87, 16);
@@ -3001,7 +3395,8 @@
             this.Settings_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(716, 95);
+            this.Settings_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(716, 97);
             this.Settings_OpenDirectoryButton.Name = "Settings_OpenDirectoryButton";
             this.Settings_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_OpenDirectoryButton.TabIndex = 60;
@@ -3012,10 +3407,10 @@
             // Settings_DefaultOutputPathBox
             // 
             this.Settings_DefaultOutputPathBox.Enabled = false;
-            this.Settings_DefaultOutputPathBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_DefaultOutputPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_DefaultOutputPathBox.Location = new System.Drawing.Point(5, 97);
             this.Settings_DefaultOutputPathBox.Name = "Settings_DefaultOutputPathBox";
-            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(705, 22);
+            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(705, 23);
             this.Settings_DefaultOutputPathBox.TabIndex = 54;
             // 
             // Settings_DefaultOutputButton
@@ -3023,8 +3418,8 @@
             this.Settings_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(765, 95);
+            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(766, 97);
             this.Settings_DefaultOutputButton.Name = "Settings_DefaultOutputButton";
             this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(111, 23);
             this.Settings_DefaultOutputButton.TabIndex = 55;
@@ -3048,11 +3443,11 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Cursor = System.Windows.Forms.Cursors.Default;
             this.label25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label25.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label25.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(55, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(447, 38);
+            this.label25.Size = new System.Drawing.Size(823, 38);
             this.label25.TabIndex = 6;
             this.label25.Text = "Locations";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3068,10 +3463,10 @@
             // Settings_FFplayPathBox
             // 
             this.Settings_FFplayPathBox.Enabled = false;
-            this.Settings_FFplayPathBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_FFplayPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_FFplayPathBox.Location = new System.Drawing.Point(6, 70);
             this.Settings_FFplayPathBox.Name = "Settings_FFplayPathBox";
-            this.Settings_FFplayPathBox.Size = new System.Drawing.Size(761, 22);
+            this.Settings_FFplayPathBox.Size = new System.Drawing.Size(761, 23);
             this.Settings_FFplayPathBox.TabIndex = 52;
             // 
             // Settings_AutoDefaultOutputButton
@@ -3079,7 +3474,8 @@
             this.Settings_AutoDefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_AutoDefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_AutoDefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(741, 95);
+            this.Settings_AutoDefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(741, 97);
             this.Settings_AutoDefaultOutputButton.Name = "Settings_AutoDefaultOutputButton";
             this.Settings_AutoDefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_AutoDefaultOutputButton.TabIndex = 59;
@@ -3090,10 +3486,10 @@
             // Settings_FFmpegPathBox
             // 
             this.Settings_FFmpegPathBox.Enabled = false;
-            this.Settings_FFmpegPathBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_FFmpegPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Settings_FFmpegPathBox.Location = new System.Drawing.Point(6, 44);
             this.Settings_FFmpegPathBox.Name = "Settings_FFmpegPathBox";
-            this.Settings_FFmpegPathBox.Size = new System.Drawing.Size(761, 22);
+            this.Settings_FFmpegPathBox.Size = new System.Drawing.Size(761, 23);
             this.Settings_FFmpegPathBox.TabIndex = 50;
             // 
             // Settings_FFMPEGLocationButton
@@ -3101,7 +3497,7 @@
             this.Settings_FFMPEGLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_FFMPEGLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_FFMPEGLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Settings_FFMPEGLocationButton.Location = new System.Drawing.Point(774, 42);
             this.Settings_FFMPEGLocationButton.Name = "Settings_FFMPEGLocationButton";
             this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(103, 23);
@@ -3115,7 +3511,7 @@
             this.Settings_FFPLAYLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.Settings_FFPLAYLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_FFPLAYLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_FFPLAYLocationButton.Location = new System.Drawing.Point(774, 68);
             this.Settings_FFPLAYLocationButton.Name = "Settings_FFPLAYLocationButton";
             this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(103, 23);
@@ -3130,7 +3526,7 @@
             this.Settings_ResetButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Settings_ResetButton.FlatAppearance.BorderSize = 2;
             this.Settings_ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_ResetButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_ResetButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_ResetButton.Location = new System.Drawing.Point(27, 457);
             this.Settings_ResetButton.Name = "Settings_ResetButton";
             this.Settings_ResetButton.Size = new System.Drawing.Size(116, 26);
@@ -3145,7 +3541,7 @@
             this.Settings_SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.Settings_SaveButton.FlatAppearance.BorderSize = 2;
             this.Settings_SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_SaveButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Settings_SaveButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.Settings_SaveButton.Location = new System.Drawing.Point(793, 457);
             this.Settings_SaveButton.Name = "Settings_SaveButton";
             this.Settings_SaveButton.Size = new System.Drawing.Size(116, 26);
@@ -3168,7 +3564,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Cursor = System.Windows.Forms.Cursors.Default;
             this.label22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label22.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
             this.label22.Location = new System.Drawing.Point(22, 0);
             this.label22.Name = "label22";
@@ -3183,389 +3579,6 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(200, 73);
             this.panel31.TabIndex = 1;
-            // 
-            // UpdateMainPanel
-            // 
-            this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.UpdateMainPanel.Controls.Add(this.panel94);
-            this.UpdateMainPanel.Controls.Add(this.panel40);
-            this.UpdateMainPanel.Controls.Add(this.Update_CheckForUpdateButton);
-            this.UpdateMainPanel.Controls.Add(this.panel73);
-            this.UpdateMainPanel.Controls.Add(this.panel74);
-            this.UpdateMainPanel.Controls.Add(this.panel77);
-            this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.UpdateMainPanel.Name = "UpdateMainPanel";
-            this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.UpdateMainPanel.TabIndex = 11;
-            // 
-            // panel94
-            // 
-            this.panel94.BackColor = System.Drawing.Color.White;
-            this.panel94.Controls.Add(this.label40);
-            this.panel94.Controls.Add(this.panel96);
-            this.panel94.Location = new System.Drawing.Point(27, 306);
-            this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(882, 141);
-            this.panel94.TabIndex = 29;
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label40.Location = new System.Drawing.Point(6, 50);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(870, 86);
-            this.label40.TabIndex = 4;
-            this.label40.Text = resources.GetString("label40.Text");
-            // 
-            // panel96
-            // 
-            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel96.Controls.Add(this.label41);
-            this.panel96.Controls.Add(this.panel97);
-            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel96.Location = new System.Drawing.Point(0, 0);
-            this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(882, 38);
-            this.panel96.TabIndex = 3;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label41.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(55, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(447, 38);
-            this.label41.TabIndex = 6;
-            this.label41.Text = "Information";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel97
-            // 
-            this.panel97.Controls.Add(this.pictureBox11);
-            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel97.Location = new System.Drawing.Point(0, 0);
-            this.panel97.Name = "panel97";
-            this.panel97.Size = new System.Drawing.Size(55, 38);
-            this.panel97.TabIndex = 0;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.Color.White;
-            this.panel40.Controls.Add(this.SpeedLabel);
-            this.panel40.Controls.Add(this.Update_ProgressBar);
-            this.panel40.Controls.Add(this.panel42);
-            this.panel40.Location = new System.Drawing.Point(27, 82);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(882, 78);
-            this.panel40.TabIndex = 26;
-            // 
-            // SpeedLabel
-            // 
-            this.SpeedLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
-            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SpeedLabel.Location = new System.Drawing.Point(794, 49);
-            this.SpeedLabel.Name = "SpeedLabel";
-            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SpeedLabel.Size = new System.Drawing.Size(82, 16);
-            this.SpeedLabel.TabIndex = 28;
-            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Update_ProgressBar
-            // 
-            this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
-            this.Update_ProgressBar.Name = "Update_ProgressBar";
-            this.Update_ProgressBar.Size = new System.Drawing.Size(783, 25);
-            this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Update_ProgressBar.TabIndex = 27;
-            // 
-            // panel42
-            // 
-            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel42.Controls.Add(this.Update_StatusLabel);
-            this.panel42.Controls.Add(this.panel71);
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel42.Location = new System.Drawing.Point(0, 0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(882, 38);
-            this.panel42.TabIndex = 3;
-            // 
-            // Update_StatusLabel
-            // 
-            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_StatusLabel.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
-            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
-            this.Update_StatusLabel.Name = "Update_StatusLabel";
-            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
-            this.Update_StatusLabel.TabIndex = 6;
-            this.Update_StatusLabel.Text = "Status";
-            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel71
-            // 
-            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel71.Location = new System.Drawing.Point(0, 0);
-            this.panel71.Name = "panel71";
-            this.panel71.Size = new System.Drawing.Size(55, 38);
-            this.panel71.TabIndex = 0;
-            // 
-            // Update_CheckForUpdateButton
-            // 
-            this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
-            this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
-            this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
-            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(90, 24);
-            this.Update_CheckForUpdateButton.TabIndex = 26;
-            this.Update_CheckForUpdateButton.Text = "Check For Update";
-            this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
-            this.Update_CheckForUpdateButton.Click += new System.EventHandler(this.Update_CheckForUpdateButton_Click);
-            // 
-            // panel73
-            // 
-            this.panel73.Controls.Add(this.label78);
-            this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel73.Location = new System.Drawing.Point(0, 0);
-            this.panel73.Name = "panel73";
-            this.panel73.Size = new System.Drawing.Size(919, 44);
-            this.panel73.TabIndex = 8;
-            // 
-            // label78
-            // 
-            this.label78.BackColor = System.Drawing.Color.Transparent;
-            this.label78.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label78.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label78.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label78.Location = new System.Drawing.Point(22, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(897, 44);
-            this.label78.TabIndex = 7;
-            this.label78.Text = "Updates";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel74
-            // 
-            this.panel74.BackColor = System.Drawing.Color.White;
-            this.panel74.Controls.Add(this.groupBox4);
-            this.panel74.Controls.Add(this.panel75);
-            this.panel74.Location = new System.Drawing.Point(27, 171);
-            this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(882, 125);
-            this.panel74.TabIndex = 2;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.panel72);
-            this.groupBox4.Controls.Add(this.panel91);
-            this.groupBox4.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.groupBox4.Location = new System.Drawing.Point(9, 44);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(864, 72);
-            this.groupBox4.TabIndex = 55;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "FFMPEG";
-            // 
-            // panel72
-            // 
-            this.panel72.Controls.Add(this.panel89);
-            this.panel72.Controls.Add(this.panel90);
-            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel72.Location = new System.Drawing.Point(3, 43);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(858, 23);
-            this.panel72.TabIndex = 1;
-            // 
-            // panel89
-            // 
-            this.panel89.Controls.Add(this.Update_DownloadButton);
-            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel89.Location = new System.Drawing.Point(562, 0);
-            this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(296, 23);
-            this.panel89.TabIndex = 1;
-            // 
-            // Update_DownloadButton
-            // 
-            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
-            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_DownloadButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
-            this.Update_DownloadButton.Name = "Update_DownloadButton";
-            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 23);
-            this.Update_DownloadButton.TabIndex = 71;
-            this.Update_DownloadButton.Text = "Loading...";
-            this.Update_DownloadButton.UseVisualStyleBackColor = false;
-            this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
-            // 
-            // panel90
-            // 
-            this.panel90.Controls.Add(this.Update_LatestUpdateLabel);
-            this.panel90.Controls.Add(this.label24);
-            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel90.Location = new System.Drawing.Point(0, 0);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(295, 23);
-            this.panel90.TabIndex = 0;
-            // 
-            // Update_LatestUpdateLabel
-            // 
-            this.Update_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
-            this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
-            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 23);
-            this.Update_LatestUpdateLabel.TabIndex = 2;
-            this.Update_LatestUpdateLabel.Text = "-";
-            this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label24
-            // 
-            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label24.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label24.Location = new System.Drawing.Point(0, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 23);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Latest Update:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel91
-            // 
-            this.panel91.Controls.Add(this.panel92);
-            this.panel91.Controls.Add(this.panel93);
-            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel91.Location = new System.Drawing.Point(3, 18);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(858, 25);
-            this.panel91.TabIndex = 0;
-            // 
-            // panel92
-            // 
-            this.panel92.Controls.Add(this.Update_OnlineVerLabel);
-            this.panel92.Controls.Add(this.label35);
-            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel92.Location = new System.Drawing.Point(562, 0);
-            this.panel92.Name = "panel92";
-            this.panel92.Size = new System.Drawing.Size(296, 25);
-            this.panel92.TabIndex = 1;
-            // 
-            // Update_OnlineVerLabel
-            // 
-            this.Update_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_OnlineVerLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Update_OnlineVerLabel.Location = new System.Drawing.Point(106, 0);
-            this.Update_OnlineVerLabel.Name = "Update_OnlineVerLabel";
-            this.Update_OnlineVerLabel.Size = new System.Drawing.Size(190, 25);
-            this.Update_OnlineVerLabel.TabIndex = 2;
-            this.Update_OnlineVerLabel.Text = "-";
-            this.Update_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label35
-            // 
-            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label35.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label35.Location = new System.Drawing.Point(0, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(106, 25);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Online FFmpeg Version:";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel93
-            // 
-            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
-            this.panel93.Controls.Add(this.label37);
-            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel93.Location = new System.Drawing.Point(0, 0);
-            this.panel93.Name = "panel93";
-            this.panel93.Size = new System.Drawing.Size(295, 25);
-            this.panel93.TabIndex = 0;
-            // 
-            // Update_InstalledVersionLabel
-            // 
-            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
-            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
-            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
-            this.Update_InstalledVersionLabel.TabIndex = 1;
-            this.Update_InstalledVersionLabel.Text = "-";
-            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label37
-            // 
-            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label37.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label37.Location = new System.Drawing.Point(0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(118, 25);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Installed FFmpeg Version:";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel75
-            // 
-            this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel75.Controls.Add(this.label79);
-            this.panel75.Controls.Add(this.panel76);
-            this.panel75.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel75.Location = new System.Drawing.Point(0, 0);
-            this.panel75.Name = "panel75";
-            this.panel75.Size = new System.Drawing.Size(882, 38);
-            this.panel75.TabIndex = 3;
-            // 
-            // label79
-            // 
-            this.label79.BackColor = System.Drawing.Color.Transparent;
-            this.label79.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label79.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label79.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label79.ForeColor = System.Drawing.Color.White;
-            this.label79.Location = new System.Drawing.Point(55, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(447, 38);
-            this.label79.TabIndex = 6;
-            this.label79.Text = "Installed Information";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel76
-            // 
-            this.panel76.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel76.Location = new System.Drawing.Point(0, 0);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(55, 38);
-            this.panel76.TabIndex = 0;
-            // 
-            // panel77
-            // 
-            this.panel77.Location = new System.Drawing.Point(719, 495);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(200, 73);
-            this.panel77.TabIndex = 1;
             // 
             // NoticePanel
             // 
@@ -3583,7 +3596,7 @@
             this.NoticeCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(120)))));
             this.NoticeCloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NoticeCloseButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NoticeCloseButton.Font = new System.Drawing.Font("Consolas", 16F, System.Drawing.FontStyle.Bold);
+            this.NoticeCloseButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
             this.NoticeCloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.NoticeCloseButton.Location = new System.Drawing.Point(871, 7);
             this.NoticeCloseButton.Name = "NoticeCloseButton";
@@ -3597,7 +3610,7 @@
             // 
             this.NoticeTextLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(120)))));
             this.NoticeTextLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NoticeTextLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.NoticeTextLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.NoticeTextLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.NoticeTextLabel.Location = new System.Drawing.Point(0, 7);
             this.NoticeTextLabel.Name = "NoticeTextLabel";
@@ -3653,7 +3666,7 @@
             // 
             this.GitLabel.BackColor = System.Drawing.Color.Transparent;
             this.GitLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GitLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.GitLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.GitLabel.ForeColor = System.Drawing.Color.White;
             this.GitLabel.Location = new System.Drawing.Point(1, 63);
             this.GitLabel.Name = "GitLabel";
@@ -3667,7 +3680,7 @@
             // 
             this.AuthorLabel.BackColor = System.Drawing.Color.Transparent;
             this.AuthorLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.AuthorLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.AuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.AuthorLabel.ForeColor = System.Drawing.Color.White;
             this.AuthorLabel.Location = new System.Drawing.Point(1, 43);
             this.AuthorLabel.Name = "AuthorLabel";
@@ -3680,7 +3693,7 @@
             // 
             this.SoftwareLabel.BackColor = System.Drawing.Color.Transparent;
             this.SoftwareLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SoftwareLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.SoftwareLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.SoftwareLabel.ForeColor = System.Drawing.Color.White;
             this.SoftwareLabel.Location = new System.Drawing.Point(1, 23);
             this.SoftwareLabel.Name = "SoftwareLabel";
@@ -3693,9 +3706,9 @@
             // 
             this.InfoText.BackColor = System.Drawing.Color.Transparent;
             this.InfoText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.InfoText.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.InfoText.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
             this.InfoText.ForeColor = System.Drawing.Color.White;
-            this.InfoText.Location = new System.Drawing.Point(27, 1);
+            this.InfoText.Location = new System.Drawing.Point(26, 0);
             this.InfoText.Name = "InfoText";
             this.InfoText.Size = new System.Drawing.Size(102, 20);
             this.InfoText.TabIndex = 4;
@@ -3707,7 +3720,7 @@
             // 
             this.InfoIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.InfoIcon.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.InfoIcon.Location = new System.Drawing.Point(0, 0);
+            this.InfoIcon.Location = new System.Drawing.Point(2, 2);
             this.InfoIcon.Name = "InfoIcon";
             this.InfoIcon.Size = new System.Drawing.Size(20, 20);
             this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -3734,7 +3747,7 @@
             this.Menu_UpdatesTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_UpdatesTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_UpdatesTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_UpdatesTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_UpdatesTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_UpdatesTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_UpdatesTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_UpdatesTabLabel.Name = "Menu_UpdatesTabLabel";
@@ -3845,7 +3858,7 @@
             this.Menu_SettingsTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_SettingsTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_SettingsTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_SettingsTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_SettingsTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_SettingsTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_SettingsTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_SettingsTabLabel.Name = "Menu_SettingsTabLabel";
@@ -3916,7 +3929,7 @@
             this.Menu_ArgumentsTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_ArgumentsTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_ArgumentsTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_ArgumentsTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_ArgumentsTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_ArgumentsTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_ArgumentsTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_ArgumentsTabLabel.Name = "Menu_ArgumentsTabLabel";
@@ -3987,7 +4000,7 @@
             this.Menu_M3U8TabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_M3U8TabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_M3U8TabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_M3U8TabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_M3U8TabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_M3U8TabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_M3U8TabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_M3U8TabLabel.Name = "Menu_M3U8TabLabel";
@@ -4058,7 +4071,7 @@
             this.Menu_MergeTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_MergeTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_MergeTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_MergeTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_MergeTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_MergeTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_MergeTabLabel.Location = new System.Drawing.Point(71, 0);
             this.Menu_MergeTabLabel.Name = "Menu_MergeTabLabel";
@@ -4129,7 +4142,7 @@
             this.Menu_CutTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_CutTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_CutTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_CutTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_CutTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_CutTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_CutTabLabel.Location = new System.Drawing.Point(71, 0);
             this.Menu_CutTabLabel.Name = "Menu_CutTabLabel";
@@ -4200,7 +4213,7 @@
             this.Menu_CutMergeTabLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.Menu_CutMergeTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_CutMergeTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_CutMergeTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_CutMergeTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_CutMergeTabLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
             this.Menu_CutMergeTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_CutMergeTabLabel.Name = "Menu_CutMergeTabLabel";
@@ -4272,7 +4285,7 @@
             this.Menu_EncoderTabLabel.BackColor = System.Drawing.Color.Transparent;
             this.Menu_EncoderTabLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_EncoderTabLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menu_EncoderTabLabel.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.Menu_EncoderTabLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.Menu_EncoderTabLabel.ForeColor = System.Drawing.Color.White;
             this.Menu_EncoderTabLabel.Location = new System.Drawing.Point(51, 0);
             this.Menu_EncoderTabLabel.Name = "Menu_EncoderTabLabel";
@@ -4383,10 +4396,10 @@
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Font = new System.Drawing.Font("Bebas Kai", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(49, 42);
+            this.label11.Location = new System.Drawing.Point(51, 43);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(45, 15);
             this.label11.TabIndex = 6;
@@ -4395,6 +4408,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
             this.pictureBox8.Location = new System.Drawing.Point(86, 24);
             this.pictureBox8.Name = "pictureBox8";
@@ -4406,9 +4420,9 @@
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Default;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Name = "label10";
@@ -4441,13 +4455,13 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Bebas Kai", 10F);
+            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 11F);
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(200, 73);
             this.label8.TabIndex = 4;
-            this.label8.Text = "2020 © ByteVault Studio";
+            this.label8.Text = "ByteVault Studio © 2020";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Button3
@@ -4491,7 +4505,7 @@
             // 
             this.ApplicationMinimizeButton.BackColor = System.Drawing.Color.White;
             this.ApplicationMinimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ApplicationMinimizeButton.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApplicationMinimizeButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold);
             this.ApplicationMinimizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.ApplicationMinimizeButton.Location = new System.Drawing.Point(1030, -4);
             this.ApplicationMinimizeButton.Name = "ApplicationMinimizeButton";
@@ -4506,7 +4520,7 @@
             this.ApplicationCloseButton.BackColor = System.Drawing.Color.White;
             this.ApplicationCloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ApplicationCloseButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ApplicationCloseButton.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApplicationCloseButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.ApplicationCloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.ApplicationCloseButton.Location = new System.Drawing.Point(1054, 0);
             this.ApplicationCloseButton.Name = "ApplicationCloseButton";
@@ -4575,6 +4589,31 @@
             this.panel66.ResumeLayout(false);
             this.panel66.PerformLayout();
             this.panel67.ResumeLayout(false);
+            this.EncoderMainPanel.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel47.ResumeLayout(false);
+            this.UpdateMainPanel.ResumeLayout(false);
+            this.panel94.ResumeLayout(false);
+            this.panel96.ResumeLayout(false);
+            this.panel97.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel40.ResumeLayout(false);
+            this.panel42.ResumeLayout(false);
+            this.panel73.ResumeLayout(false);
+            this.panel74.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.panel72.ResumeLayout(false);
+            this.panel89.ResumeLayout(false);
+            this.panel90.ResumeLayout(false);
+            this.panel91.ResumeLayout(false);
+            this.panel92.ResumeLayout(false);
+            this.panel93.ResumeLayout(false);
+            this.panel75.ResumeLayout(false);
             this.ArgumentMainPanel.ResumeLayout(false);
             this.ArgumentMainPanel.PerformLayout();
             this.panel41.ResumeLayout(false);
@@ -4598,14 +4637,6 @@
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
             this.panel51.ResumeLayout(false);
-            this.EncoderMainPanel.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel47.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.Settings_NetPanel.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -4627,23 +4658,6 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            this.UpdateMainPanel.ResumeLayout(false);
-            this.panel94.ResumeLayout(false);
-            this.panel96.ResumeLayout(false);
-            this.panel97.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.panel40.ResumeLayout(false);
-            this.panel42.ResumeLayout(false);
-            this.panel73.ResumeLayout(false);
-            this.panel74.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.panel72.ResumeLayout(false);
-            this.panel89.ResumeLayout(false);
-            this.panel90.ResumeLayout(false);
-            this.panel91.ResumeLayout(false);
-            this.panel92.ResumeLayout(false);
-            this.panel93.ResumeLayout(false);
-            this.panel75.ResumeLayout(false);
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

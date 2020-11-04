@@ -31,23 +31,23 @@
             this.TopPanel = new System.Windows.Forms.Panel();
             this.ApplicationMinimizeButton = new System.Windows.Forms.Label();
             this.CloseButton = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.SoftwareNameLabel = new System.Windows.Forms.Label();
-            this.SoftwareVersionLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.SoftwareAuthorLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.SoftwareCompanyWebsite = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.SoftwareGithubRepoLabel = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.TopLogo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ContactLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.SoftwareGithubRepoLabel = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.SoftwareCompanyWebsite = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SoftwareAuthorLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.SoftwareVersionLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SoftwareNameLabel = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.TopPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopPanel
@@ -81,7 +81,7 @@
             this.CloseButton.BackColor = System.Drawing.Color.White;
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseButton.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.CloseButton.Location = new System.Drawing.Point(320, 0);
             this.CloseButton.Name = "CloseButton";
@@ -90,6 +90,18 @@
             this.CloseButton.Text = "X";
             this.CloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // TopLogo
+            // 
+            this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
+            this.TopLogo.Location = new System.Drawing.Point(0, 0);
+            this.TopLogo.Name = "TopLogo";
+            this.TopLogo.Size = new System.Drawing.Size(200, 27);
+            this.TopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.TopLogo.TabIndex = 0;
+            this.TopLogo.TabStop = false;
+            this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseDown);
             // 
             // panel1
             // 
@@ -112,92 +124,31 @@
             this.panel1.Size = new System.Drawing.Size(344, 135);
             this.panel1.TabIndex = 4;
             // 
-            // label17
+            // ContactLabel
             // 
-            this.label17.Font = new System.Drawing.Font("Bebas Kai", 10F);
-            this.label17.Location = new System.Drawing.Point(3, 30);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 16);
-            this.label17.TabIndex = 78;
-            this.label17.Text = "Software Name:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContactLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ContactLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.ContactLabel.Location = new System.Drawing.Point(99, 114);
+            this.ContactLabel.Name = "ContactLabel";
+            this.ContactLabel.Size = new System.Drawing.Size(242, 16);
+            this.ContactLabel.TabIndex = 89;
+            this.ContactLabel.Text = "-";
+            this.ContactLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // SoftwareNameLabel
+            // label2
             // 
-            this.SoftwareNameLabel.Font = new System.Drawing.Font("Bebas Kai", 8.5F);
-            this.SoftwareNameLabel.Location = new System.Drawing.Point(85, 31);
-            this.SoftwareNameLabel.Name = "SoftwareNameLabel";
-            this.SoftwareNameLabel.Size = new System.Drawing.Size(256, 16);
-            this.SoftwareNameLabel.TabIndex = 79;
-            this.SoftwareNameLabel.Text = "-";
-            this.SoftwareNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // SoftwareVersionLabel
-            // 
-            this.SoftwareVersionLabel.Font = new System.Drawing.Font("Bebas Kai", 8.5F);
-            this.SoftwareVersionLabel.Location = new System.Drawing.Point(96, 47);
-            this.SoftwareVersionLabel.Name = "SoftwareVersionLabel";
-            this.SoftwareVersionLabel.Size = new System.Drawing.Size(245, 16);
-            this.SoftwareVersionLabel.TabIndex = 81;
-            this.SoftwareVersionLabel.Text = "-";
-            this.SoftwareVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Bebas Kai", 10F);
-            this.label3.Location = new System.Drawing.Point(3, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 16);
-            this.label3.TabIndex = 80;
-            this.label3.Text = "Software Version:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SoftwareAuthorLabel
-            // 
-            this.SoftwareAuthorLabel.Font = new System.Drawing.Font("Bebas Kai", 8.5F);
-            this.SoftwareAuthorLabel.Location = new System.Drawing.Point(95, 64);
-            this.SoftwareAuthorLabel.Name = "SoftwareAuthorLabel";
-            this.SoftwareAuthorLabel.Size = new System.Drawing.Size(246, 16);
-            this.SoftwareAuthorLabel.TabIndex = 83;
-            this.SoftwareAuthorLabel.Text = "-";
-            this.SoftwareAuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Bebas Kai", 10F);
-            this.label5.Location = new System.Drawing.Point(3, 63);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
-            this.label5.TabIndex = 82;
-            this.label5.Text = "Software Author:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SoftwareCompanyWebsite
-            // 
-            this.SoftwareCompanyWebsite.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SoftwareCompanyWebsite.Font = new System.Drawing.Font("Bebas Kai", 8.5F);
-            this.SoftwareCompanyWebsite.Location = new System.Drawing.Point(93, 81);
-            this.SoftwareCompanyWebsite.Name = "SoftwareCompanyWebsite";
-            this.SoftwareCompanyWebsite.Size = new System.Drawing.Size(248, 16);
-            this.SoftwareCompanyWebsite.TabIndex = 85;
-            this.SoftwareCompanyWebsite.Text = "-";
-            this.SoftwareCompanyWebsite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SoftwareCompanyWebsite.Click += new System.EventHandler(this.SoftwareCompanyWebsite_Click);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Bebas Kai", 10F);
-            this.label7.Location = new System.Drawing.Point(3, 80);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 16);
-            this.label7.TabIndex = 84;
-            this.label7.Text = "Company Website:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label2.Location = new System.Drawing.Point(3, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 16);
+            this.label2.TabIndex = 88;
+            this.label2.Text = "Contact:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SoftwareGithubRepoLabel
             // 
             this.SoftwareGithubRepoLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SoftwareGithubRepoLabel.Font = new System.Drawing.Font("Bebas Kai", 8.5F);
+            this.SoftwareGithubRepoLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.SoftwareGithubRepoLabel.Location = new System.Drawing.Point(99, 98);
             this.SoftwareGithubRepoLabel.Name = "SoftwareGithubRepoLabel";
             this.SoftwareGithubRepoLabel.Size = new System.Drawing.Size(242, 16);
@@ -208,7 +159,7 @@
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Bebas Kai", 10F);
+            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label9.Location = new System.Drawing.Point(3, 97);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(99, 16);
@@ -216,38 +167,87 @@
             this.label9.Text = "Github Repository:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TopLogo
+            // SoftwareCompanyWebsite
             // 
-            this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
-            this.TopLogo.Location = new System.Drawing.Point(0, 0);
-            this.TopLogo.Name = "TopLogo";
-            this.TopLogo.Size = new System.Drawing.Size(200, 27);
-            this.TopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.TopLogo.TabIndex = 0;
-            this.TopLogo.TabStop = false;
-            this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseDown);
+            this.SoftwareCompanyWebsite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SoftwareCompanyWebsite.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.SoftwareCompanyWebsite.Location = new System.Drawing.Point(93, 81);
+            this.SoftwareCompanyWebsite.Name = "SoftwareCompanyWebsite";
+            this.SoftwareCompanyWebsite.Size = new System.Drawing.Size(248, 16);
+            this.SoftwareCompanyWebsite.TabIndex = 85;
+            this.SoftwareCompanyWebsite.Text = "-";
+            this.SoftwareCompanyWebsite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SoftwareCompanyWebsite.Click += new System.EventHandler(this.SoftwareCompanyWebsite_Click);
             // 
-            // ContactLabel
+            // label7
             // 
-            this.ContactLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ContactLabel.Font = new System.Drawing.Font("Bebas Kai", 8.5F);
-            this.ContactLabel.Location = new System.Drawing.Point(99, 114);
-            this.ContactLabel.Name = "ContactLabel";
-            this.ContactLabel.Size = new System.Drawing.Size(242, 16);
-            this.ContactLabel.TabIndex = 89;
-            this.ContactLabel.Text = "-";
-            this.ContactLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label7.Location = new System.Drawing.Point(3, 80);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 16);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "Company Website:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // SoftwareAuthorLabel
             // 
-            this.label2.Font = new System.Drawing.Font("Bebas Kai", 10F);
-            this.label2.Location = new System.Drawing.Point(3, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 16);
-            this.label2.TabIndex = 88;
-            this.label2.Text = "Contact:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SoftwareAuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.SoftwareAuthorLabel.Location = new System.Drawing.Point(95, 64);
+            this.SoftwareAuthorLabel.Name = "SoftwareAuthorLabel";
+            this.SoftwareAuthorLabel.Size = new System.Drawing.Size(246, 16);
+            this.SoftwareAuthorLabel.TabIndex = 83;
+            this.SoftwareAuthorLabel.Text = "-";
+            this.SoftwareAuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label5.Location = new System.Drawing.Point(3, 63);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 16);
+            this.label5.TabIndex = 82;
+            this.label5.Text = "Software Author:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SoftwareVersionLabel
+            // 
+            this.SoftwareVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.SoftwareVersionLabel.Location = new System.Drawing.Point(96, 47);
+            this.SoftwareVersionLabel.Name = "SoftwareVersionLabel";
+            this.SoftwareVersionLabel.Size = new System.Drawing.Size(245, 16);
+            this.SoftwareVersionLabel.TabIndex = 81;
+            this.SoftwareVersionLabel.Text = "-";
+            this.SoftwareVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label3.Location = new System.Drawing.Point(3, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 16);
+            this.label3.TabIndex = 80;
+            this.label3.Text = "Software Version:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SoftwareNameLabel
+            // 
+            this.SoftwareNameLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.SoftwareNameLabel.Location = new System.Drawing.Point(85, 31);
+            this.SoftwareNameLabel.Name = "SoftwareNameLabel";
+            this.SoftwareNameLabel.Size = new System.Drawing.Size(256, 16);
+            this.SoftwareNameLabel.TabIndex = 79;
+            this.SoftwareNameLabel.Text = "-";
+            this.SoftwareNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label17.Location = new System.Drawing.Point(3, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(85, 16);
+            this.label17.TabIndex = 78;
+            this.label17.Text = "Software Name:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SoftwareInformation
             // 
@@ -267,8 +267,8 @@
             this.Text = "SoftwareInformation";
             this.TopMost = true;
             this.TopPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

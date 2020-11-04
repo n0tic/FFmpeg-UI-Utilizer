@@ -73,7 +73,7 @@
             this.CloseButton.BackColor = System.Drawing.Color.White;
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseButton.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
             this.CloseButton.Location = new System.Drawing.Point(473, 0);
             this.CloseButton.Name = "CloseButton";
@@ -100,7 +100,7 @@
             this._CancelButton.BackColor = System.Drawing.Color.White;
             this._CancelButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this._CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._CancelButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this._CancelButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this._CancelButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this._CancelButton.Location = new System.Drawing.Point(12, 64);
             this._CancelButton.Name = "_CancelButton";
@@ -115,7 +115,7 @@
             this.OKButton.BackColor = System.Drawing.Color.White;
             this.OKButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.OKButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OKButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.OKButton.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9F, System.Drawing.FontStyle.Bold);
             this.OKButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OKButton.Location = new System.Drawing.Point(370, 64);
             this.OKButton.Name = "OKButton";
@@ -127,18 +127,18 @@
             // 
             // NameField
             // 
-            this.NameField.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.NameField.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.NameField.Location = new System.Drawing.Point(12, 36);
             this.NameField.Name = "NameField";
-            this.NameField.Size = new System.Drawing.Size(188, 22);
+            this.NameField.Size = new System.Drawing.Size(188, 23);
             this.NameField.TabIndex = 75;
             // 
             // URLField
             // 
-            this.URLField.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.URLField.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.URLField.Location = new System.Drawing.Point(206, 36);
             this.URLField.Name = "URLField";
-            this.URLField.Size = new System.Drawing.Size(281, 22);
+            this.URLField.Size = new System.Drawing.Size(281, 23);
             this.URLField.TabIndex = 76;
             // 
             // panel1
