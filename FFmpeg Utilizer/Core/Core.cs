@@ -28,7 +28,7 @@ namespace FFmpeg_Utilizer
         public static BuildTypes buildType = BuildTypes.Alpha;
         public static int majorVersion = 0;
         public static int minorVersion = 1;
-        public static int buildVersion = 2;
+        public static int buildVersion = 3;
 
         public enum BuildTypes
         {
