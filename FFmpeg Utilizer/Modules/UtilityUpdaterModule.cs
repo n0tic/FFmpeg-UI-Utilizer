@@ -21,6 +21,7 @@ namespace FFmpeg_Utilizer.Modules
         private bool CheckingVersion = false;
 
         private bool updating = false;
+        private bool aborted = false;
 
         //Temporary version data...
         public string downloadedVersion = "";
@@ -137,10 +138,12 @@ namespace FFmpeg_Utilizer.Modules
         {
             if (updating)
             {
+                aborted = true;
                 client?.CancelAsync();
                 extractThread?.Abort();
                 updating = false;
                 ResetUI();
+                SetUtilityDownloader(UtilityType.Download);
                 return;
             }
             else if (CheckingVersion)
@@ -149,6 +152,7 @@ namespace FFmpeg_Utilizer.Modules
                 return;
             }
             updating = true;
+            aborted = false;
 
             client = new WebClient();
 
@@ -194,6 +198,12 @@ namespace FFmpeg_Utilizer.Modules
 
         private void Wc_Download_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
+            if (aborted)
+            {
+                ResetUI();
+                return;
+            }
+
             main.Update_StatusLabel.Text = "Status: Extracting 0/3";
             main.SpeedLabel.Text = "";
             main.Update_ProgressBar.Value = 0;

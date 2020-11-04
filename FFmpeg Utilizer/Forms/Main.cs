@@ -15,6 +15,7 @@ using System.Windows.Forms;
 
 // TODO: Comments
 // TODO: ADD libs etc till cut
+// TODO: Fix crash on stop update feature...
 
 namespace FFmpeg_Utilizer
 {
@@ -112,6 +113,8 @@ namespace FFmpeg_Utilizer
         /// <param name="e"></param>
         private void Main_Load(object sender, EventArgs e)
         {
+            notice.SetNotice("This software works best with the 'Libx264' Video Codec and 'AAC' Audio Codec library.", NoticeModule.TypeNotice.Info);
+
             // If we have determined we have internet; Check for updates.
             if (hasInternet)
                 updater.StartUpdateCheckAsync();
@@ -1081,7 +1084,6 @@ namespace FFmpeg_Utilizer
             string start = startHour.ToString() + ":" + startMinutes + ":" + startSeconds.ToString() + "." + startMiliseconds.ToString();
             string end = endHour.ToString() + ":" + endMinutes + ":" + endSeconds.ToString() + "." + endMiliseconds.ToString();
 
-            decimal _start = startHour + startMinute + startSeconds + startMiliseconds;
             decimal _end = endHour + endMinute + endSeconds + endMiliseconds;
 
             if (_end == 0) Cut_PreviewLabel.ForeColor = Color.FromArgb(255, 128, 128);
@@ -1104,7 +1106,6 @@ namespace FFmpeg_Utilizer
             }
 
             string timespan = GetTimespanString();
-            string start = timespan.Split(' ')[0];
             string end = timespan.Split(' ')[2];
 
             if (end != "0:00:0.0" && Cut_listView.FindItemWithText(timespan) == null)
