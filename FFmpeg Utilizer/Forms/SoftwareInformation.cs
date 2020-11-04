@@ -32,5 +32,9 @@ namespace FFmpeg_Utilizer.Forms
         private void SoftwareCompanyWebsite_Click(object sender, EventArgs e) => Process.Start(Core.companyWebsite);
 
         private void SoftwareGithubRepoLabel_Click(object sender, EventArgs e) => Process.Start(Core.softwareGITURL);
+
+        private void PackURL_Click(object sender, EventArgs e) => Process.Start("https://gumroad.com/l/PKAHx");
+
+        private void PackCreator_Click(object sender, EventArgs e) => Process.Start("https://gumroad.com/darkwing");
     }
 }

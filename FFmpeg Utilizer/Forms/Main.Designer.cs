@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag & drop here..."}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
@@ -513,8 +513,8 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
+            this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
@@ -1372,7 +1372,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem5});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1847,7 +1847,7 @@
             this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel72.Location = new System.Drawing.Point(3, 44);
             this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(858, 29);
+            this.panel72.Size = new System.Drawing.Size(858, 26);
             this.panel72.TabIndex = 1;
             // 
             // panel89
@@ -1856,7 +1856,7 @@
             this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel89.Location = new System.Drawing.Point(562, 0);
             this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(296, 29);
+            this.panel89.Size = new System.Drawing.Size(296, 26);
             this.panel89.TabIndex = 1;
             // 
             // Update_DownloadButton
@@ -1869,7 +1869,7 @@
             this.Update_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
             this.Update_DownloadButton.Name = "Update_DownloadButton";
-            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 29);
+            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 26);
             this.Update_DownloadButton.TabIndex = 71;
             this.Update_DownloadButton.Text = "Loading...";
             this.Update_DownloadButton.UseVisualStyleBackColor = false;
@@ -1882,7 +1882,7 @@
             this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel90.Location = new System.Drawing.Point(0, 0);
             this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(295, 29);
+            this.panel90.Size = new System.Drawing.Size(295, 26);
             this.panel90.TabIndex = 0;
             // 
             // Update_LatestUpdateLabel
@@ -1891,7 +1891,7 @@
             this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
             this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
-            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 29);
+            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 26);
             this.Update_LatestUpdateLabel.TabIndex = 2;
             this.Update_LatestUpdateLabel.Text = "-";
             this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1902,7 +1902,7 @@
             this.label24.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label24.Location = new System.Drawing.Point(0, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 29);
+            this.label24.Size = new System.Drawing.Size(72, 26);
             this.label24.TabIndex = 1;
             this.label24.Text = "Latest Update:";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2455,7 +2455,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem6});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";

@@ -45,6 +45,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.SoftwareNameLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.PackCreator = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PackURL = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -106,6 +110,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.panel1.Controls.Add(this.PackURL);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.PackCreator);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.ContactLabel);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.SoftwareGithubRepoLabel);
@@ -121,7 +129,7 @@
             this.panel1.Controls.Add(this.TopPanel);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(344, 135);
+            this.panel1.Size = new System.Drawing.Size(344, 183);
             this.panel1.TabIndex = 4;
             // 
             // ContactLabel
@@ -249,12 +257,56 @@
             this.label17.Text = "Software Name:";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // PackCreator
+            // 
+            this.PackCreator.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PackCreator.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.PackCreator.Location = new System.Drawing.Point(124, 145);
+            this.PackCreator.Name = "PackCreator";
+            this.PackCreator.Size = new System.Drawing.Size(217, 16);
+            this.PackCreator.TabIndex = 91;
+            this.PackCreator.Text = "Alexandr Martinov";
+            this.PackCreator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PackCreator.Click += new System.EventHandler(this.PackCreator_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 144);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(115, 16);
+            this.label4.TabIndex = 90;
+            this.label4.Text = "Icon Pack Creator:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PackURL
+            // 
+            this.PackURL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PackURL.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.PackURL.Location = new System.Drawing.Point(124, 162);
+            this.PackURL.Name = "PackURL";
+            this.PackURL.Size = new System.Drawing.Size(209, 16);
+            this.PackURL.TabIndex = 93;
+            this.PackURL.Text = "https://gumroad.com/l/PKAHx";
+            this.PackURL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PackURL.Click += new System.EventHandler(this.PackURL_Click);
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 161);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(115, 16);
+            this.label8.TabIndex = 92;
+            this.label8.Text = "Pack URL:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // SoftwareInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(124)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(346, 216);
+            this.ClientSize = new System.Drawing.Size(346, 185);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -292,5 +344,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label ContactLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label PackCreator;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label PackURL;
+        private System.Windows.Forms.Label label8;
     }
 }
