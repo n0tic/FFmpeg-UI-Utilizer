@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer
@@ -41,6 +42,16 @@ namespace FFmpeg_Utilizer
         #endregion Version
 
         #region Files, Folders and Paths
+
+        public static bool IsValidFilename(string testName)
+        {
+            string strTheseAreInvalidFileNameChars = new string(System.IO.Path.GetInvalidFileNameChars());
+            Regex regInvalidFileName = new Regex("[" + Regex.Escape(strTheseAreInvalidFileNameChars) + "]");
+
+            if (regInvalidFileName.IsMatch(testName)) { return false; };
+
+            return true;
+        }
 
         public static void OpenDirectory(string path)
         {

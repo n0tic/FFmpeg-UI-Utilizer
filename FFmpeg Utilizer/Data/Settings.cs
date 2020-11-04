@@ -20,7 +20,7 @@ namespace FFmpeg_Utilizer.Data
         public string ffplayPath = "";
         public string outputLocation = Core.GetSubfolder(Core.SubFolders.Output);
 
-        public Libs.Overwrite overwrite = Libs.Overwrite.Ask;
+        public Libs.Overwrite overwrite = Libs.Overwrite.Yes;
         public Libs.VCodec vCodec = Libs.VCodec.libx264;
         public Libs.ACodec aCodec = Libs.ACodec.aac;
         public Libs.Preset quality = Libs.Preset.Default;

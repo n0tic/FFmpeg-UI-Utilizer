@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 
-// TODO: Fix ArgumentBuilder.
-
 namespace FFmpeg_Utilizer.Data
 {
     [Serializable]
@@ -13,7 +11,7 @@ namespace FFmpeg_Utilizer.Data
         public Libs.VCodec vCodec = Libs.VCodec.Default;
         public Libs.ACodec aCodec = Libs.ACodec.Default;
         public Libs.Tune tuner = Libs.Tune.Default;
-        public Libs.Preset preset = Libs.Preset.Default; // Quality/Speed
+        public Libs.Preset preset = Libs.Preset.Default;
         public Libs.Frames fps = Libs.Frames.Default;
         public Libs.Size res = Libs.Size.Default;
         public string outputFolder;
@@ -77,5 +75,3 @@ namespace FFmpeg_Utilizer.Data
         }
     }
 }
-
-//-y -i "C:\DownloadMerger m3u8 files\Pokemon S01\Pokemon S01 E01.ts" -c:v libx264 -c:a aac "C:\DownloadMerger m3u8 files\Pokemon S01\Encoded\Pokemon S01 E01.mp4"

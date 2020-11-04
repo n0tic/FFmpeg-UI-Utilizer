@@ -4,9 +4,6 @@ using System.IO;
 
 namespace FFMPEG_Utilizer.Data
 {
-    // TODO: Fix main to store + use reset methods
-
-    [System.Serializable]
     public class EncodeProcesserData
     {
         public string outputFolder;

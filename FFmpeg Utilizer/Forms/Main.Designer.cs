@@ -4442,7 +4442,7 @@
             this.ApplicationMinimizeButton.TabIndex = 4;
             this.ApplicationMinimizeButton.Text = "_";
             this.ApplicationMinimizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ApplicationMinimizeButton.Click += new System.EventHandler(this.ApplicationMinimizeButton_Click);
+            this.ApplicationMinimizeButton.Click += new System.EventHandler(this.SoftwareMinimizeButton_Click);
             // 
             // ApplicationCloseButton
             // 
@@ -4457,7 +4457,7 @@
             this.ApplicationCloseButton.TabIndex = 3;
             this.ApplicationCloseButton.Text = "X";
             this.ApplicationCloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ApplicationCloseButton.Click += new System.EventHandler(this.ApplicationCloseButton_Click);
+            this.ApplicationCloseButton.Click += new System.EventHandler(this.SoftwareCloseButton_Click);
             // 
             // TopLogo
             // 

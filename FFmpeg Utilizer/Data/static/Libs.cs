@@ -7,7 +7,6 @@ namespace FFmpeg_Utilizer.Data
     {
         #region System
 
-        // TODO: Add as option
         public enum Overwrite
         {
             Ask,

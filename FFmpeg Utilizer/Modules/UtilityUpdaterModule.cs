@@ -113,7 +113,6 @@ namespace FFmpeg_Utilizer.Modules
             main.Settings_OnlineVerLabel.Text = e.Result;
             main.Update_OnlineVerLabel.Text = e.Result;
 
-            // TODO: Fix Settings
             if (e.Result != main.settings.ffVersion && main.settings.ffVersion != "")
                 SetUtilityDownloader(UtilityType.Update);
             else
@@ -136,7 +135,6 @@ namespace FFmpeg_Utilizer.Modules
 
         public void StartUpdate()
         {
-            // TODO: Look into abort downloading. For now we just let the download continue.
             if (updating)
             {
                 client?.CancelAsync();
@@ -166,7 +164,6 @@ namespace FFmpeg_Utilizer.Modules
 
         private void Wc_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            // TODO: Fix Settings
             if (e.Result != "LOCALVERSION")
             {
                 downloadedVersion = e.Result;
