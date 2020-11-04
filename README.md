@@ -142,7 +142,7 @@ The software itself will need ffmpeg and ffplay to be able to execute requested 
 ```
 https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 ```
-[See Source URL](FFMPEG_Utilizer/Core/Core.cs#L160) - [Check out Gyan.dev](https://www.gyan.dev/ffmpeg/builds/)
+[See Source URL](FFmpeg%20Utilizer/Core/Core.cs#L243) - [Check out Gyan.dev](https://www.gyan.dev/ffmpeg/builds/)
 ## Install
 
 [.Net Framework 4.6](https://www.microsoft.com/en-US/download/details.aspx?id=48130) Download location.
