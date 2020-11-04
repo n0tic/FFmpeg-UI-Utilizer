@@ -29,17 +29,85 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag and drop a folder or multiple files here..."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
+            this.CutMainPanel = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.Cut_CRFBox = new System.Windows.Forms.ComboBox();
+            this.Cut_AudioCodecBox = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Cut_VideoCodecBox = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.Cut_PresetBox = new System.Windows.Forms.ComboBox();
+            this.Cut_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.Cut_RemoveSelectedButton = new System.Windows.Forms.Button();
+            this.Cut_listView = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Cut_EndMiliseconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndSeconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndMinutes = new System.Windows.Forms.NumericUpDown();
+            this.Cut_EndHours = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartMiliseconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartSeconds = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartMinutes = new System.Windows.Forms.NumericUpDown();
+            this.Cut_StartHours = new System.Windows.Forms.NumericUpDown();
+            this.Cut_PreviewLabel = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.Cut_AddTimespanButton = new System.Windows.Forms.Button();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.Cut_InputMediaButton = new System.Windows.Forms.Button();
+            this.Cut_MediaInputTextbox = new System.Windows.Forms.TextBox();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label60 = new System.Windows.Forms.Label();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel65 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.Cut_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
+            this.Cut_StartCuttingButton = new System.Windows.Forms.Button();
+            this.panel67 = new System.Windows.Forms.Panel();
+            this.label68 = new System.Windows.Forms.Label();
+            this.panel68 = new System.Windows.Forms.Panel();
+            this.panel69 = new System.Windows.Forms.Panel();
+            this.ArgumentMainPanel = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.Argument_ClearButton = new System.Windows.Forms.Button();
+            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
+            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
+            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
+            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
+            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
+            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel45 = new System.Windows.Forms.Panel();
             this.MergeMainPanel = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
+            this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.Merge_OutputFileName = new System.Windows.Forms.TextBox();
             this.button25 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -142,69 +210,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
-            this.ArgumentMainPanel = new System.Windows.Forms.Panel();
-            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
-            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
-            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
-            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
-            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
-            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.CutMainPanel = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.Cut_CRFBox = new System.Windows.Forms.ComboBox();
-            this.Cut_AudioCodecBox = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.Cut_VideoCodecBox = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.Cut_PresetBox = new System.Windows.Forms.ComboBox();
-            this.Cut_HideConsoleToggle = new System.Windows.Forms.CheckBox();
-            this.Cut_RemoveSelectedButton = new System.Windows.Forms.Button();
-            this.Cut_listView = new System.Windows.Forms.ListView();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Cut_EndMiliseconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndSeconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndMinutes = new System.Windows.Forms.NumericUpDown();
-            this.Cut_EndHours = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartMiliseconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartSeconds = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartMinutes = new System.Windows.Forms.NumericUpDown();
-            this.Cut_StartHours = new System.Windows.Forms.NumericUpDown();
-            this.Cut_PreviewLabel = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.Cut_AddTimespanButton = new System.Windows.Forms.Button();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.Cut_InputMediaButton = new System.Windows.Forms.Button();
-            this.Cut_MediaInputTextbox = new System.Windows.Forms.TextBox();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel65 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.panel66 = new System.Windows.Forms.Panel();
-            this.Cut_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Cut_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.Cut_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.Cut_OutputDirectoryBox = new System.Windows.Forms.TextBox();
-            this.Cut_StartCuttingButton = new System.Windows.Forms.Button();
-            this.panel67 = new System.Windows.Forms.Panel();
-            this.label68 = new System.Windows.Forms.Label();
-            this.panel68 = new System.Windows.Forms.Panel();
-            this.panel69 = new System.Windows.Forms.Panel();
             this.SettingsMainPanel = new System.Windows.Forms.Panel();
             this.Settings_NetPanel = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -268,7 +273,6 @@
             this.panel96 = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.panel97 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel40 = new System.Windows.Forms.Panel();
             this.SpeedLabel = new System.Windows.Forms.Label();
             this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
@@ -306,12 +310,10 @@
             this.GitLabel = new System.Windows.Forms.Label();
             this.AuthorLabel = new System.Windows.Forms.Label();
             this.SoftwareLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.InfoText = new System.Windows.Forms.Label();
             this.Menu_UpdatesTab = new System.Windows.Forms.Panel();
             this.Menu_UpdatesTabLabel = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel39 = new System.Windows.Forms.Panel();
             this.Menu_UpdatesTabIndicator = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
@@ -321,43 +323,36 @@
             this.Menu_SettingsTab = new System.Windows.Forms.Panel();
             this.Menu_SettingsTabLabel = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.Menu_SettingsTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTab = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTabLabel = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_M3U8Tab = new System.Windows.Forms.Panel();
             this.Menu_M3U8TabLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.Menu_M3U8TabIndicator = new System.Windows.Forms.Panel();
             this.Menu_MergeTab = new System.Windows.Forms.Panel();
             this.Menu_MergeTabLabel = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.Menu_MergeTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_CutTab = new System.Windows.Forms.Panel();
             this.Menu_CutTabLabel = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.Menu_CutTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTab = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTabLabel = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_EncoderTab = new System.Windows.Forms.Panel();
             this.Menu_EncoderTabLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Menu_EncoderTabIndicator = new System.Windows.Forms.Panel();
             this.MenuSpacerTop = new System.Windows.Forms.Panel();
@@ -366,26 +361,48 @@
             this.Button1 = new System.Windows.Forms.Button();
             this.BottomRightPanel = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Button2 = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.Button3 = new System.Windows.Forms.Button();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.ToTrayButton = new System.Windows.Forms.PictureBox();
             this.ApplicationMinimizeButton = new System.Windows.Forms.Label();
             this.ApplicationCloseButton = new System.Windows.Forms.Label();
-            this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
-            this.Merge_OutputFileName = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
-            this.Argument_ClearButton = new System.Windows.Forms.Button();
-            this.label38 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.InfoIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.ToTrayButton = new System.Windows.Forms.PictureBox();
+            this.TopLogo = new System.Windows.Forms.PictureBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
+            this.CutMainPanel.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).BeginInit();
+            this.panel32.SuspendLayout();
+            this.panel65.SuspendLayout();
+            this.panel66.SuspendLayout();
+            this.panel67.SuspendLayout();
+            this.ArgumentMainPanel.SuspendLayout();
+            this.panel41.SuspendLayout();
             this.MergeMainPanel.SuspendLayout();
             this.panel54.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -408,23 +425,6 @@
             this.panel9.SuspendLayout();
             this.panel37.SuspendLayout();
             this.panel47.SuspendLayout();
-            this.ArgumentMainPanel.SuspendLayout();
-            this.panel41.SuspendLayout();
-            this.CutMainPanel.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).BeginInit();
-            this.panel32.SuspendLayout();
-            this.panel65.SuspendLayout();
-            this.panel66.SuspendLayout();
-            this.panel67.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.Settings_NetPanel.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -447,7 +447,6 @@
             this.panel94.SuspendLayout();
             this.panel96.SuspendLayout();
             this.panel97.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel40.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel73.SuspendLayout();
@@ -463,37 +462,38 @@
             this.NoticePanel.SuspendLayout();
             this.MenuPanel.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.Menu_UpdatesTab.SuspendLayout();
             this.panel38.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel33.SuspendLayout();
             this.Menu_SettingsTab.SuspendLayout();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Menu_ArgumentsTab.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Menu_M3U8Tab.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Menu_MergeTab.SuspendLayout();
             this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.Menu_CutTab.SuspendLayout();
             this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.Menu_CutMergeTab.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Menu_EncoderTab.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.FooterPanel.SuspendLayout();
             this.BottomRightPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel22.SuspendLayout();
             this.TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
             this.SuspendLayout();
@@ -526,6 +526,799 @@
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
             // 
+            // CutMainPanel
+            // 
+            this.CutMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.CutMainPanel.Controls.Add(this.panel14);
+            this.CutMainPanel.Controls.Add(this.panel65);
+            this.CutMainPanel.Controls.Add(this.panel66);
+            this.CutMainPanel.Controls.Add(this.panel69);
+            this.CutMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CutMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.CutMainPanel.Name = "CutMainPanel";
+            this.CutMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.CutMainPanel.TabIndex = 10;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.label29);
+            this.panel14.Controls.Add(this.Cut_CRFBox);
+            this.panel14.Controls.Add(this.Cut_AudioCodecBox);
+            this.panel14.Controls.Add(this.label17);
+            this.panel14.Controls.Add(this.Cut_VideoCodecBox);
+            this.panel14.Controls.Add(this.label23);
+            this.panel14.Controls.Add(this.label26);
+            this.panel14.Controls.Add(this.Cut_PresetBox);
+            this.panel14.Controls.Add(this.Cut_HideConsoleToggle);
+            this.panel14.Controls.Add(this.Cut_RemoveSelectedButton);
+            this.panel14.Controls.Add(this.Cut_listView);
+            this.panel14.Controls.Add(this.groupBox2);
+            this.panel14.Controls.Add(this.Cut_InputMediaButton);
+            this.panel14.Controls.Add(this.Cut_MediaInputTextbox);
+            this.panel14.Controls.Add(this.panel32);
+            this.panel14.Location = new System.Drawing.Point(27, 50);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(882, 314);
+            this.panel14.TabIndex = 9;
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label29.Location = new System.Drawing.Point(314, 69);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(81, 16);
+            this.label29.TabIndex = 82;
+            this.label29.Text = "Quality";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cut_CRFBox
+            // 
+            this.Cut_CRFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_CRFBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_CRFBox.FormattingEnabled = true;
+            this.Cut_CRFBox.Location = new System.Drawing.Point(314, 88);
+            this.Cut_CRFBox.Name = "Cut_CRFBox";
+            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_CRFBox.TabIndex = 81;
+            // 
+            // Cut_AudioCodecBox
+            // 
+            this.Cut_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AudioCodecBox.FormattingEnabled = true;
+            this.Cut_AudioCodecBox.Location = new System.Drawing.Point(227, 88);
+            this.Cut_AudioCodecBox.Name = "Cut_AudioCodecBox";
+            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_AudioCodecBox.TabIndex = 76;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label17.Location = new System.Drawing.Point(137, 69);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(87, 16);
+            this.label17.TabIndex = 77;
+            this.label17.Text = "Video Encoder";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cut_VideoCodecBox
+            // 
+            this.Cut_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_VideoCodecBox.FormattingEnabled = true;
+            this.Cut_VideoCodecBox.Location = new System.Drawing.Point(140, 88);
+            this.Cut_VideoCodecBox.Name = "Cut_VideoCodecBox";
+            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_VideoCodecBox.TabIndex = 75;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label23.Location = new System.Drawing.Point(224, 69);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(87, 16);
+            this.label23.TabIndex = 78;
+            this.label23.Text = "Audio Encoder";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label26.Location = new System.Drawing.Point(401, 69);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(81, 16);
+            this.label26.TabIndex = 80;
+            this.label26.Text = "Speed";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cut_PresetBox
+            // 
+            this.Cut_PresetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cut_PresetBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PresetBox.FormattingEnabled = true;
+            this.Cut_PresetBox.Location = new System.Drawing.Point(401, 88);
+            this.Cut_PresetBox.Name = "Cut_PresetBox";
+            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 22);
+            this.Cut_PresetBox.TabIndex = 79;
+            // 
+            // Cut_HideConsoleToggle
+            // 
+            this.Cut_HideConsoleToggle.AutoSize = true;
+            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(488, 95);
+            this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
+            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Cut_HideConsoleToggle.TabIndex = 74;
+            this.Cut_HideConsoleToggle.Text = "Hide Console";
+            this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
+            // Cut_RemoveSelectedButton
+            // 
+            this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
+            this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 287);
+            this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
+            this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
+            this.Cut_RemoveSelectedButton.TabIndex = 73;
+            this.Cut_RemoveSelectedButton.Text = "Remove Selected";
+            this.Cut_RemoveSelectedButton.UseVisualStyleBackColor = false;
+            this.Cut_RemoveSelectedButton.Click += new System.EventHandler(this.Cut_RemoveSelectedButton_Click);
+            // 
+            // Cut_listView
+            // 
+            this.Cut_listView.AllowDrop = true;
+            this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11});
+            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_listView.FullRowSelect = true;
+            this.Cut_listView.GridLines = true;
+            this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Cut_listView.HideSelection = false;
+            this.Cut_listView.Location = new System.Drawing.Point(3, 69);
+            this.Cut_listView.MultiSelect = false;
+            this.Cut_listView.Name = "Cut_listView";
+            this.Cut_listView.Size = new System.Drawing.Size(129, 212);
+            this.Cut_listView.TabIndex = 72;
+            this.Cut_listView.UseCompatibleStateImageBehavior = false;
+            this.Cut_listView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Timespans";
+            this.columnHeader11.Width = 107;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Cut_EndMiliseconds);
+            this.groupBox2.Controls.Add(this.Cut_EndSeconds);
+            this.groupBox2.Controls.Add(this.Cut_EndMinutes);
+            this.groupBox2.Controls.Add(this.Cut_EndHours);
+            this.groupBox2.Controls.Add(this.Cut_StartMiliseconds);
+            this.groupBox2.Controls.Add(this.Cut_StartSeconds);
+            this.groupBox2.Controls.Add(this.Cut_StartMinutes);
+            this.groupBox2.Controls.Add(this.Cut_StartHours);
+            this.groupBox2.Controls.Add(this.Cut_PreviewLabel);
+            this.groupBox2.Controls.Add(this.label62);
+            this.groupBox2.Controls.Add(this.label63);
+            this.groupBox2.Controls.Add(this.Cut_AddTimespanButton);
+            this.groupBox2.Controls.Add(this.label64);
+            this.groupBox2.Controls.Add(this.label65);
+            this.groupBox2.Controls.Add(this.label66);
+            this.groupBox2.Controls.Add(this.label69);
+            this.groupBox2.Controls.Add(this.label70);
+            this.groupBox2.Controls.Add(this.label83);
+            this.groupBox2.Controls.Add(this.label84);
+            this.groupBox2.Controls.Add(this.label85);
+            this.groupBox2.Location = new System.Drawing.Point(138, 115);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(426, 196);
+            this.groupBox2.TabIndex = 69;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Cut Timers";
+            // 
+            // Cut_EndMiliseconds
+            // 
+            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMiliseconds.Location = new System.Drawing.Point(307, 88);
+            this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
+            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMiliseconds.TabIndex = 54;
+            this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndSeconds
+            // 
+            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndSeconds.Location = new System.Drawing.Point(231, 88);
+            this.Cut_EndSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_EndSeconds.Name = "Cut_EndSeconds";
+            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndSeconds.TabIndex = 53;
+            this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndMinutes
+            // 
+            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndMinutes.Location = new System.Drawing.Point(155, 88);
+            this.Cut_EndMinutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_EndMinutes.Name = "Cut_EndMinutes";
+            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndMinutes.TabIndex = 52;
+            this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_EndHours
+            // 
+            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
+            this.Cut_EndHours.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_EndHours.Name = "Cut_EndHours";
+            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_EndHours.TabIndex = 51;
+            this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartMiliseconds
+            // 
+            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMiliseconds.Location = new System.Drawing.Point(307, 31);
+            this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
+            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMiliseconds.TabIndex = 50;
+            this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartSeconds
+            // 
+            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartSeconds.Location = new System.Drawing.Point(231, 32);
+            this.Cut_StartSeconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_StartSeconds.Name = "Cut_StartSeconds";
+            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartSeconds.TabIndex = 49;
+            this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartMinutes
+            // 
+            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartMinutes.Location = new System.Drawing.Point(155, 31);
+            this.Cut_StartMinutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.Cut_StartMinutes.Name = "Cut_StartMinutes";
+            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartMinutes.TabIndex = 48;
+            this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_StartHours
+            // 
+            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
+            this.Cut_StartHours.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.Cut_StartHours.Name = "Cut_StartHours";
+            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
+            this.Cut_StartHours.TabIndex = 45;
+            this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
+            // 
+            // Cut_PreviewLabel
+            // 
+            this.Cut_PreviewLabel.AutoSize = true;
+            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_PreviewLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Cut_PreviewLabel.Location = new System.Drawing.Point(155, 133);
+            this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
+            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
+            this.Cut_PreviewLabel.TabIndex = 47;
+            this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label62.Location = new System.Drawing.Point(12, 91);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(49, 14);
+            this.label62.TabIndex = 46;
+            this.label62.Text = "How long:";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label63.Location = new System.Drawing.Point(7, 34);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(53, 14);
+            this.label63.TabIndex = 45;
+            this.label63.Text = "Start Time:";
+            // 
+            // Cut_AddTimespanButton
+            // 
+            this.Cut_AddTimespanButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
+            this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
+            this.Cut_AddTimespanButton.Size = new System.Drawing.Size(420, 23);
+            this.Cut_AddTimespanButton.TabIndex = 44;
+            this.Cut_AddTimespanButton.Text = "Add Timespan";
+            this.Cut_AddTimespanButton.UseVisualStyleBackColor = false;
+            this.Cut_AddTimespanButton.Click += new System.EventHandler(this.Cut_AddTimespanButton_Click);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label64.Location = new System.Drawing.Point(79, 16);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(31, 14);
+            this.label64.TabIndex = 32;
+            this.label64.Text = "Hours";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label65.Location = new System.Drawing.Point(304, 71);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(58, 14);
+            this.label65.TabIndex = 43;
+            this.label65.Text = "Miliseconds";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label66.Location = new System.Drawing.Point(228, 71);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(41, 14);
+            this.label66.TabIndex = 42;
+            this.label66.Text = "Seconds";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label69.Location = new System.Drawing.Point(152, 71);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(41, 14);
+            this.label69.TabIndex = 41;
+            this.label69.Text = "Minutes";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label70.Location = new System.Drawing.Point(79, 71);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(31, 14);
+            this.label70.TabIndex = 40;
+            this.label70.Text = "Hours";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label83.Location = new System.Drawing.Point(152, 16);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(41, 14);
+            this.label83.TabIndex = 33;
+            this.label83.Text = "Minutes";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label84.Location = new System.Drawing.Point(228, 16);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(41, 14);
+            this.label84.TabIndex = 34;
+            this.label84.Text = "Seconds";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.label85.Location = new System.Drawing.Point(304, 16);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(58, 14);
+            this.label85.TabIndex = 35;
+            this.label85.Text = "Miliseconds";
+            // 
+            // Cut_InputMediaButton
+            // 
+            this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
+            this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
+            this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
+            this.Cut_InputMediaButton.TabIndex = 68;
+            this.Cut_InputMediaButton.Text = "Input Media";
+            this.Cut_InputMediaButton.UseVisualStyleBackColor = false;
+            this.Cut_InputMediaButton.Click += new System.EventHandler(this.Cut_InputMediaButton_Click);
+            // 
+            // Cut_MediaInputTextbox
+            // 
+            this.Cut_MediaInputTextbox.Enabled = false;
+            this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
+            this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
+            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 20);
+            this.Cut_MediaInputTextbox.TabIndex = 67;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel32.Controls.Add(this.label60);
+            this.panel32.Controls.Add(this.panel46);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(0, 0);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(882, 38);
+            this.panel32.TabIndex = 3;
+            // 
+            // label60
+            // 
+            this.label60.BackColor = System.Drawing.Color.Transparent;
+            this.label60.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label60.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label60.ForeColor = System.Drawing.Color.White;
+            this.label60.Location = new System.Drawing.Point(55, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(447, 38);
+            this.label60.TabIndex = 6;
+            this.label60.Text = "Options";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel46
+            // 
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel46.Location = new System.Drawing.Point(0, 0);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(55, 38);
+            this.panel46.TabIndex = 0;
+            // 
+            // panel65
+            // 
+            this.panel65.Controls.Add(this.label67);
+            this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel65.Location = new System.Drawing.Point(0, 0);
+            this.panel65.Name = "panel65";
+            this.panel65.Size = new System.Drawing.Size(919, 44);
+            this.panel65.TabIndex = 8;
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.Transparent;
+            this.label67.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label67.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label67.Location = new System.Drawing.Point(22, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(897, 44);
+            this.label67.TabIndex = 7;
+            this.label67.Text = "Cut";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel66
+            // 
+            this.panel66.BackColor = System.Drawing.Color.White;
+            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
+            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
+            this.panel66.Controls.Add(this.button19);
+            this.panel66.Controls.Add(this.Cut_ProgressBar);
+            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
+            this.panel66.Controls.Add(this.Cut_StartCuttingButton);
+            this.panel66.Controls.Add(this.panel67);
+            this.panel66.Location = new System.Drawing.Point(27, 377);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(885, 106);
+            this.panel66.TabIndex = 2;
+            // 
+            // Cut_DefaultOutputButton
+            // 
+            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
+            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
+            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_DefaultOutputButton.TabIndex = 61;
+            this.Cut_DefaultOutputButton.Text = "✓";
+            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
+            // 
+            // Cut_OpenDirectoryButton
+            // 
+            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
+            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
+            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Cut_OpenDirectoryButton.TabIndex = 62;
+            this.Cut_OpenDirectoryButton.Text = "▶";
+            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.button19.Location = new System.Drawing.Point(792, 44);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(87, 23);
+            this.button19.TabIndex = 25;
+            this.button19.Text = "Output Folder";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // Cut_ProgressBar
+            // 
+            this.Cut_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.Cut_ProgressBar.Name = "Cut_ProgressBar";
+            this.Cut_ProgressBar.Size = new System.Drawing.Size(783, 20);
+            this.Cut_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Cut_ProgressBar.TabIndex = 24;
+            // 
+            // Cut_OutputDirectoryBox
+            // 
+            this.Cut_OutputDirectoryBox.Enabled = false;
+            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
+            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
+            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
+            this.Cut_OutputDirectoryBox.TabIndex = 23;
+            // 
+            // Cut_StartCuttingButton
+            // 
+            this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
+            this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
+            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
+            this.Cut_StartCuttingButton.TabIndex = 22;
+            this.Cut_StartCuttingButton.Text = "Start Cutting";
+            this.Cut_StartCuttingButton.UseVisualStyleBackColor = false;
+            this.Cut_StartCuttingButton.Click += new System.EventHandler(this.Cut_StartCuttingButton_Click);
+            // 
+            // panel67
+            // 
+            this.panel67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel67.Controls.Add(this.label68);
+            this.panel67.Controls.Add(this.panel68);
+            this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel67.Location = new System.Drawing.Point(0, 0);
+            this.panel67.Name = "panel67";
+            this.panel67.Size = new System.Drawing.Size(885, 38);
+            this.panel67.TabIndex = 3;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.Transparent;
+            this.label68.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label68.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
+            this.label68.ForeColor = System.Drawing.Color.White;
+            this.label68.Location = new System.Drawing.Point(55, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(447, 38);
+            this.label68.TabIndex = 6;
+            this.label68.Text = "Output";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel68
+            // 
+            this.panel68.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel68.Location = new System.Drawing.Point(0, 0);
+            this.panel68.Name = "panel68";
+            this.panel68.Size = new System.Drawing.Size(55, 38);
+            this.panel68.TabIndex = 0;
+            // 
+            // panel69
+            // 
+            this.panel69.Location = new System.Drawing.Point(719, 495);
+            this.panel69.Name = "panel69";
+            this.panel69.Size = new System.Drawing.Size(200, 73);
+            this.panel69.TabIndex = 1;
+            // 
+            // ArgumentMainPanel
+            // 
+            this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.ArgumentMainPanel.Controls.Add(this.label38);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ClearButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
+            this.ArgumentMainPanel.Controls.Add(this.panel41);
+            this.ArgumentMainPanel.Controls.Add(this.panel45);
+            this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.ArgumentMainPanel.Name = "ArgumentMainPanel";
+            this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.ArgumentMainPanel.TabIndex = 7;
+            // 
+            // label38
+            // 
+            this.label38.Font = new System.Drawing.Font("Bebas Kai", 8F);
+            this.label38.Location = new System.Drawing.Point(500, 50);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(217, 25);
+            this.label38.TabIndex = 88;
+            this.label38.Text = "You can freely write your own arguments here. ";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Argument_ClearButton
+            // 
+            this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ClearButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ClearButton.Location = new System.Drawing.Point(359, 47);
+            this.Argument_ClearButton.Name = "Argument_ClearButton";
+            this.Argument_ClearButton.Size = new System.Drawing.Size(76, 24);
+            this.Argument_ClearButton.TabIndex = 75;
+            this.Argument_ClearButton.Text = "Clear Args";
+            this.Argument_ClearButton.UseVisualStyleBackColor = false;
+            this.Argument_ClearButton.Click += new System.EventHandler(this.Argument_ClearButton_Click);
+            // 
+            // Argument_ShowM3U8Button
+            // 
+            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
+            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
+            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(76, 24);
+            this.Argument_ShowM3U8Button.TabIndex = 74;
+            this.Argument_ShowM3U8Button.Text = "Show M3U8";
+            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
+            this.Argument_ShowM3U8Button.Click += new System.EventHandler(this.Argument_ShowM3U8Button_Click);
+            // 
+            // Argument_ShowMergeButton
+            // 
+            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
+            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
+            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(78, 24);
+            this.Argument_ShowMergeButton.TabIndex = 73;
+            this.Argument_ShowMergeButton.Text = "Show Merge";
+            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowMergeButton.Click += new System.EventHandler(this.Argument_ShowMergeButton_Click);
+            // 
+            // Argument_ShowCutButton
+            // 
+            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
+            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
+            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
+            this.Argument_ShowCutButton.TabIndex = 72;
+            this.Argument_ShowCutButton.Text = "Show Cut";
+            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowCutButton.Click += new System.EventHandler(this.Argument_ShowCutButton_Click);
+            // 
+            // Argument_RunArgumentButton
+            // 
+            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
+            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
+            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
+            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
+            this.Argument_RunArgumentButton.TabIndex = 71;
+            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
+            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
+            this.Argument_RunArgumentButton.Click += new System.EventHandler(this.Argument_RunArgumentButton_Click);
+            // 
+            // Argument_ShowEncodeButton
+            // 
+            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
+            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
+            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(86, 24);
+            this.Argument_ShowEncodeButton.TabIndex = 70;
+            this.Argument_ShowEncodeButton.Text = "Show Encode";
+            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
+            // 
+            // Argument_PreviewBox
+            // 
+            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
+            this.Argument_PreviewBox.Multiline = true;
+            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
+            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
+            this.Argument_PreviewBox.TabIndex = 69;
+            // 
+            // panel41
+            // 
+            this.panel41.Controls.Add(this.label34);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel41.Location = new System.Drawing.Point(0, 0);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(919, 44);
+            this.panel41.TabIndex = 8;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label34.Font = new System.Drawing.Font("Bebas Kai", 18F);
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label34.Location = new System.Drawing.Point(22, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(897, 44);
+            this.label34.TabIndex = 7;
+            this.label34.Text = "Argument";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel45
+            // 
+            this.panel45.Location = new System.Drawing.Point(719, 495);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(200, 73);
+            this.panel45.TabIndex = 1;
+            // 
             // MergeMainPanel
             // 
             this.MergeMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -555,6 +1348,36 @@
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(882, 314);
             this.panel54.TabIndex = 11;
+            // 
+            // Merge_HideConsoleToggle
+            // 
+            this.Merge_HideConsoleToggle.AutoSize = true;
+            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 43);
+            this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
+            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
+            this.Merge_HideConsoleToggle.TabIndex = 88;
+            this.Merge_HideConsoleToggle.Text = "Hide Console";
+            this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.Font = new System.Drawing.Font("Bebas Kai", 7F);
+            this.label33.Location = new System.Drawing.Point(278, 284);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(217, 25);
+            this.label33.TabIndex = 87;
+            this.label33.Text = "Extension will be the same as the first file in the list.";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Merge_OutputFileName
+            // 
+            this.Merge_OutputFileName.Font = new System.Drawing.Font("Bebas Kai", 9F);
+            this.Merge_OutputFileName.Location = new System.Drawing.Point(270, 259);
+            this.Merge_OutputFileName.Name = "Merge_OutputFileName";
+            this.Merge_OutputFileName.Size = new System.Drawing.Size(607, 22);
+            this.Merge_OutputFileName.TabIndex = 86;
+            this.Merge_OutputFileName.Text = "OutputFileName";
             // 
             // button25
             // 
@@ -772,7 +1595,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem19});
+            listViewItem3});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -1447,7 +2270,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem20});
+            listViewItem4});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1701,774 +2524,6 @@
             this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
             this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 22);
             this.Encoder_PresetsBox.TabIndex = 40;
-            // 
-            // ArgumentMainPanel
-            // 
-            this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ArgumentMainPanel.Controls.Add(this.label38);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ClearButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
-            this.ArgumentMainPanel.Controls.Add(this.panel41);
-            this.ArgumentMainPanel.Controls.Add(this.panel45);
-            this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.ArgumentMainPanel.Name = "ArgumentMainPanel";
-            this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.ArgumentMainPanel.TabIndex = 7;
-            // 
-            // Argument_ShowM3U8Button
-            // 
-            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
-            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
-            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(76, 24);
-            this.Argument_ShowM3U8Button.TabIndex = 74;
-            this.Argument_ShowM3U8Button.Text = "Show M3U8";
-            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
-            this.Argument_ShowM3U8Button.Click += new System.EventHandler(this.Argument_ShowM3U8Button_Click);
-            // 
-            // Argument_ShowMergeButton
-            // 
-            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
-            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
-            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(78, 24);
-            this.Argument_ShowMergeButton.TabIndex = 73;
-            this.Argument_ShowMergeButton.Text = "Show Merge";
-            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowMergeButton.Click += new System.EventHandler(this.Argument_ShowMergeButton_Click);
-            // 
-            // Argument_ShowCutButton
-            // 
-            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
-            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
-            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
-            this.Argument_ShowCutButton.TabIndex = 72;
-            this.Argument_ShowCutButton.Text = "Show Cut";
-            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowCutButton.Click += new System.EventHandler(this.Argument_ShowCutButton_Click);
-            // 
-            // Argument_RunArgumentButton
-            // 
-            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
-            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
-            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
-            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
-            this.Argument_RunArgumentButton.TabIndex = 71;
-            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
-            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
-            this.Argument_RunArgumentButton.Click += new System.EventHandler(this.Argument_RunArgumentButton_Click);
-            // 
-            // Argument_ShowEncodeButton
-            // 
-            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
-            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
-            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(86, 24);
-            this.Argument_ShowEncodeButton.TabIndex = 70;
-            this.Argument_ShowEncodeButton.Text = "Show Encode";
-            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
-            // 
-            // Argument_PreviewBox
-            // 
-            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
-            this.Argument_PreviewBox.Multiline = true;
-            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
-            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
-            this.Argument_PreviewBox.TabIndex = 69;
-            // 
-            // panel41
-            // 
-            this.panel41.Controls.Add(this.label34);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel41.Location = new System.Drawing.Point(0, 0);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(919, 44);
-            this.panel41.TabIndex = 8;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label34.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label34.Location = new System.Drawing.Point(22, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(897, 44);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "Argument";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel45
-            // 
-            this.panel45.Location = new System.Drawing.Point(719, 495);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(200, 73);
-            this.panel45.TabIndex = 1;
-            // 
-            // CutMainPanel
-            // 
-            this.CutMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.CutMainPanel.Controls.Add(this.panel14);
-            this.CutMainPanel.Controls.Add(this.panel65);
-            this.CutMainPanel.Controls.Add(this.panel66);
-            this.CutMainPanel.Controls.Add(this.panel69);
-            this.CutMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CutMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.CutMainPanel.Name = "CutMainPanel";
-            this.CutMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.CutMainPanel.TabIndex = 10;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.label29);
-            this.panel14.Controls.Add(this.Cut_CRFBox);
-            this.panel14.Controls.Add(this.Cut_AudioCodecBox);
-            this.panel14.Controls.Add(this.label17);
-            this.panel14.Controls.Add(this.Cut_VideoCodecBox);
-            this.panel14.Controls.Add(this.label23);
-            this.panel14.Controls.Add(this.label26);
-            this.panel14.Controls.Add(this.Cut_PresetBox);
-            this.panel14.Controls.Add(this.Cut_HideConsoleToggle);
-            this.panel14.Controls.Add(this.Cut_RemoveSelectedButton);
-            this.panel14.Controls.Add(this.Cut_listView);
-            this.panel14.Controls.Add(this.groupBox2);
-            this.panel14.Controls.Add(this.Cut_InputMediaButton);
-            this.panel14.Controls.Add(this.Cut_MediaInputTextbox);
-            this.panel14.Controls.Add(this.panel32);
-            this.panel14.Location = new System.Drawing.Point(27, 50);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(882, 314);
-            this.panel14.TabIndex = 9;
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label29.Location = new System.Drawing.Point(314, 69);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(81, 16);
-            this.label29.TabIndex = 82;
-            this.label29.Text = "Quality";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_CRFBox
-            // 
-            this.Cut_CRFBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_CRFBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_CRFBox.FormattingEnabled = true;
-            this.Cut_CRFBox.Location = new System.Drawing.Point(314, 88);
-            this.Cut_CRFBox.Name = "Cut_CRFBox";
-            this.Cut_CRFBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_CRFBox.TabIndex = 81;
-            // 
-            // Cut_AudioCodecBox
-            // 
-            this.Cut_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_AudioCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_AudioCodecBox.FormattingEnabled = true;
-            this.Cut_AudioCodecBox.Location = new System.Drawing.Point(227, 88);
-            this.Cut_AudioCodecBox.Name = "Cut_AudioCodecBox";
-            this.Cut_AudioCodecBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_AudioCodecBox.TabIndex = 76;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label17.Location = new System.Drawing.Point(137, 69);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(87, 16);
-            this.label17.TabIndex = 77;
-            this.label17.Text = "Video Encoder";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_VideoCodecBox
-            // 
-            this.Cut_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_VideoCodecBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_VideoCodecBox.FormattingEnabled = true;
-            this.Cut_VideoCodecBox.Location = new System.Drawing.Point(140, 88);
-            this.Cut_VideoCodecBox.Name = "Cut_VideoCodecBox";
-            this.Cut_VideoCodecBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_VideoCodecBox.TabIndex = 75;
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label23.Location = new System.Drawing.Point(224, 69);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 16);
-            this.label23.TabIndex = 78;
-            this.label23.Text = "Audio Encoder";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label26.Location = new System.Drawing.Point(401, 69);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(81, 16);
-            this.label26.TabIndex = 80;
-            this.label26.Text = "Speed";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cut_PresetBox
-            // 
-            this.Cut_PresetBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cut_PresetBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_PresetBox.FormattingEnabled = true;
-            this.Cut_PresetBox.Location = new System.Drawing.Point(401, 88);
-            this.Cut_PresetBox.Name = "Cut_PresetBox";
-            this.Cut_PresetBox.Size = new System.Drawing.Size(81, 22);
-            this.Cut_PresetBox.TabIndex = 79;
-            // 
-            // Cut_HideConsoleToggle
-            // 
-            this.Cut_HideConsoleToggle.AutoSize = true;
-            this.Cut_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_HideConsoleToggle.Location = new System.Drawing.Point(488, 95);
-            this.Cut_HideConsoleToggle.Name = "Cut_HideConsoleToggle";
-            this.Cut_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
-            this.Cut_HideConsoleToggle.TabIndex = 74;
-            this.Cut_HideConsoleToggle.Text = "Hide Console";
-            this.Cut_HideConsoleToggle.UseVisualStyleBackColor = true;
-            // 
-            // Cut_RemoveSelectedButton
-            // 
-            this.Cut_RemoveSelectedButton.BackColor = System.Drawing.Color.White;
-            this.Cut_RemoveSelectedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Cut_RemoveSelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_RemoveSelectedButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_RemoveSelectedButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Cut_RemoveSelectedButton.Location = new System.Drawing.Point(9, 287);
-            this.Cut_RemoveSelectedButton.Name = "Cut_RemoveSelectedButton";
-            this.Cut_RemoveSelectedButton.Size = new System.Drawing.Size(117, 24);
-            this.Cut_RemoveSelectedButton.TabIndex = 73;
-            this.Cut_RemoveSelectedButton.Text = "Remove Selected";
-            this.Cut_RemoveSelectedButton.UseVisualStyleBackColor = false;
-            this.Cut_RemoveSelectedButton.Click += new System.EventHandler(this.Cut_RemoveSelectedButton_Click);
-            // 
-            // Cut_listView
-            // 
-            this.Cut_listView.AllowDrop = true;
-            this.Cut_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader11});
-            this.Cut_listView.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_listView.FullRowSelect = true;
-            this.Cut_listView.GridLines = true;
-            this.Cut_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Cut_listView.HideSelection = false;
-            this.Cut_listView.Location = new System.Drawing.Point(3, 69);
-            this.Cut_listView.MultiSelect = false;
-            this.Cut_listView.Name = "Cut_listView";
-            this.Cut_listView.Size = new System.Drawing.Size(129, 212);
-            this.Cut_listView.TabIndex = 72;
-            this.Cut_listView.UseCompatibleStateImageBehavior = false;
-            this.Cut_listView.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Timespans";
-            this.columnHeader11.Width = 107;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.Cut_EndMiliseconds);
-            this.groupBox2.Controls.Add(this.Cut_EndSeconds);
-            this.groupBox2.Controls.Add(this.Cut_EndMinutes);
-            this.groupBox2.Controls.Add(this.Cut_EndHours);
-            this.groupBox2.Controls.Add(this.Cut_StartMiliseconds);
-            this.groupBox2.Controls.Add(this.Cut_StartSeconds);
-            this.groupBox2.Controls.Add(this.Cut_StartMinutes);
-            this.groupBox2.Controls.Add(this.Cut_StartHours);
-            this.groupBox2.Controls.Add(this.Cut_PreviewLabel);
-            this.groupBox2.Controls.Add(this.label62);
-            this.groupBox2.Controls.Add(this.label63);
-            this.groupBox2.Controls.Add(this.Cut_AddTimespanButton);
-            this.groupBox2.Controls.Add(this.label64);
-            this.groupBox2.Controls.Add(this.label65);
-            this.groupBox2.Controls.Add(this.label66);
-            this.groupBox2.Controls.Add(this.label69);
-            this.groupBox2.Controls.Add(this.label70);
-            this.groupBox2.Controls.Add(this.label83);
-            this.groupBox2.Controls.Add(this.label84);
-            this.groupBox2.Controls.Add(this.label85);
-            this.groupBox2.Location = new System.Drawing.Point(138, 115);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(426, 196);
-            this.groupBox2.TabIndex = 69;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cut Timers";
-            // 
-            // Cut_EndMiliseconds
-            // 
-            this.Cut_EndMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndMiliseconds.Location = new System.Drawing.Point(307, 88);
-            this.Cut_EndMiliseconds.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.Cut_EndMiliseconds.Name = "Cut_EndMiliseconds";
-            this.Cut_EndMiliseconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndMiliseconds.TabIndex = 54;
-            this.Cut_EndMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_EndSeconds
-            // 
-            this.Cut_EndSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndSeconds.Location = new System.Drawing.Point(231, 88);
-            this.Cut_EndSeconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_EndSeconds.Name = "Cut_EndSeconds";
-            this.Cut_EndSeconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndSeconds.TabIndex = 53;
-            this.Cut_EndSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_EndMinutes
-            // 
-            this.Cut_EndMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndMinutes.Location = new System.Drawing.Point(155, 88);
-            this.Cut_EndMinutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_EndMinutes.Name = "Cut_EndMinutes";
-            this.Cut_EndMinutes.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndMinutes.TabIndex = 52;
-            this.Cut_EndMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_EndHours
-            // 
-            this.Cut_EndHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_EndHours.Location = new System.Drawing.Point(79, 88);
-            this.Cut_EndHours.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_EndHours.Name = "Cut_EndHours";
-            this.Cut_EndHours.Size = new System.Drawing.Size(60, 22);
-            this.Cut_EndHours.TabIndex = 51;
-            this.Cut_EndHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartMiliseconds
-            // 
-            this.Cut_StartMiliseconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartMiliseconds.Location = new System.Drawing.Point(307, 31);
-            this.Cut_StartMiliseconds.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.Cut_StartMiliseconds.Name = "Cut_StartMiliseconds";
-            this.Cut_StartMiliseconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartMiliseconds.TabIndex = 50;
-            this.Cut_StartMiliseconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartSeconds
-            // 
-            this.Cut_StartSeconds.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartSeconds.Location = new System.Drawing.Point(231, 32);
-            this.Cut_StartSeconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_StartSeconds.Name = "Cut_StartSeconds";
-            this.Cut_StartSeconds.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartSeconds.TabIndex = 49;
-            this.Cut_StartSeconds.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartMinutes
-            // 
-            this.Cut_StartMinutes.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartMinutes.Location = new System.Drawing.Point(155, 31);
-            this.Cut_StartMinutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.Cut_StartMinutes.Name = "Cut_StartMinutes";
-            this.Cut_StartMinutes.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartMinutes.TabIndex = 48;
-            this.Cut_StartMinutes.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_StartHours
-            // 
-            this.Cut_StartHours.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartHours.Location = new System.Drawing.Point(79, 31);
-            this.Cut_StartHours.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.Cut_StartHours.Name = "Cut_StartHours";
-            this.Cut_StartHours.Size = new System.Drawing.Size(60, 22);
-            this.Cut_StartHours.TabIndex = 45;
-            this.Cut_StartHours.ValueChanged += new System.EventHandler(this.Cut_StartHours_ValueChanged);
-            // 
-            // Cut_PreviewLabel
-            // 
-            this.Cut_PreviewLabel.AutoSize = true;
-            this.Cut_PreviewLabel.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_PreviewLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Cut_PreviewLabel.Location = new System.Drawing.Point(155, 133);
-            this.Cut_PreviewLabel.Name = "Cut_PreviewLabel";
-            this.Cut_PreviewLabel.Size = new System.Drawing.Size(113, 14);
-            this.Cut_PreviewLabel.TabIndex = 47;
-            this.Cut_PreviewLabel.Text = "00:00:00:00 - 00:00:00:00";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label62.Location = new System.Drawing.Point(12, 91);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(49, 14);
-            this.label62.TabIndex = 46;
-            this.label62.Text = "How long:";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label63.Location = new System.Drawing.Point(7, 34);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(53, 14);
-            this.label63.TabIndex = 45;
-            this.label63.Text = "Start Time:";
-            // 
-            // Cut_AddTimespanButton
-            // 
-            this.Cut_AddTimespanButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_AddTimespanButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Cut_AddTimespanButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_AddTimespanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_AddTimespanButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_AddTimespanButton.Location = new System.Drawing.Point(3, 170);
-            this.Cut_AddTimespanButton.Name = "Cut_AddTimespanButton";
-            this.Cut_AddTimespanButton.Size = new System.Drawing.Size(420, 23);
-            this.Cut_AddTimespanButton.TabIndex = 44;
-            this.Cut_AddTimespanButton.Text = "Add Timespan";
-            this.Cut_AddTimespanButton.UseVisualStyleBackColor = false;
-            this.Cut_AddTimespanButton.Click += new System.EventHandler(this.Cut_AddTimespanButton_Click);
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label64.Location = new System.Drawing.Point(79, 16);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(31, 14);
-            this.label64.TabIndex = 32;
-            this.label64.Text = "Hours";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label65.Location = new System.Drawing.Point(304, 71);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(58, 14);
-            this.label65.TabIndex = 43;
-            this.label65.Text = "Miliseconds";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label66.Location = new System.Drawing.Point(228, 71);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(41, 14);
-            this.label66.TabIndex = 42;
-            this.label66.Text = "Seconds";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label69.Location = new System.Drawing.Point(152, 71);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(41, 14);
-            this.label69.TabIndex = 41;
-            this.label69.Text = "Minutes";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label70.Location = new System.Drawing.Point(79, 71);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(31, 14);
-            this.label70.TabIndex = 40;
-            this.label70.Text = "Hours";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label83.Location = new System.Drawing.Point(152, 16);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(41, 14);
-            this.label83.TabIndex = 33;
-            this.label83.Text = "Minutes";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label84.Location = new System.Drawing.Point(228, 16);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(41, 14);
-            this.label84.TabIndex = 34;
-            this.label84.Text = "Seconds";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.label85.Location = new System.Drawing.Point(304, 16);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(58, 14);
-            this.label85.TabIndex = 35;
-            this.label85.Text = "Miliseconds";
-            // 
-            // Cut_InputMediaButton
-            // 
-            this.Cut_InputMediaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_InputMediaButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_InputMediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_InputMediaButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_InputMediaButton.Location = new System.Drawing.Point(782, 41);
-            this.Cut_InputMediaButton.Name = "Cut_InputMediaButton";
-            this.Cut_InputMediaButton.Size = new System.Drawing.Size(96, 24);
-            this.Cut_InputMediaButton.TabIndex = 68;
-            this.Cut_InputMediaButton.Text = "Input Media";
-            this.Cut_InputMediaButton.UseVisualStyleBackColor = false;
-            this.Cut_InputMediaButton.Click += new System.EventHandler(this.Cut_InputMediaButton_Click);
-            // 
-            // Cut_MediaInputTextbox
-            // 
-            this.Cut_MediaInputTextbox.Enabled = false;
-            this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
-            this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
-            this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 20);
-            this.Cut_MediaInputTextbox.TabIndex = 67;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel32.Controls.Add(this.label60);
-            this.panel32.Controls.Add(this.panel46);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel32.Location = new System.Drawing.Point(0, 0);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(882, 38);
-            this.panel32.TabIndex = 3;
-            // 
-            // label60
-            // 
-            this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label60.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label60.ForeColor = System.Drawing.Color.White;
-            this.label60.Location = new System.Drawing.Point(55, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(447, 38);
-            this.label60.TabIndex = 6;
-            this.label60.Text = "Options";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel46
-            // 
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel46.Location = new System.Drawing.Point(0, 0);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(55, 38);
-            this.panel46.TabIndex = 0;
-            // 
-            // panel65
-            // 
-            this.panel65.Controls.Add(this.label67);
-            this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel65.Location = new System.Drawing.Point(0, 0);
-            this.panel65.Name = "panel65";
-            this.panel65.Size = new System.Drawing.Size(919, 44);
-            this.panel65.TabIndex = 8;
-            // 
-            // label67
-            // 
-            this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label67.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label67.Font = new System.Drawing.Font("Bebas Kai", 18F);
-            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label67.Location = new System.Drawing.Point(22, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(897, 44);
-            this.label67.TabIndex = 7;
-            this.label67.Text = "Cut";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel66
-            // 
-            this.panel66.BackColor = System.Drawing.Color.White;
-            this.panel66.Controls.Add(this.Cut_DefaultOutputButton);
-            this.panel66.Controls.Add(this.Cut_OpenDirectoryButton);
-            this.panel66.Controls.Add(this.button19);
-            this.panel66.Controls.Add(this.Cut_ProgressBar);
-            this.panel66.Controls.Add(this.Cut_OutputDirectoryBox);
-            this.panel66.Controls.Add(this.Cut_StartCuttingButton);
-            this.panel66.Controls.Add(this.panel67);
-            this.panel66.Location = new System.Drawing.Point(27, 377);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(885, 106);
-            this.panel66.TabIndex = 2;
-            // 
-            // Cut_DefaultOutputButton
-            // 
-            this.Cut_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_DefaultOutputButton.Location = new System.Drawing.Point(767, 44);
-            this.Cut_DefaultOutputButton.Name = "Cut_DefaultOutputButton";
-            this.Cut_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Cut_DefaultOutputButton.TabIndex = 61;
-            this.Cut_DefaultOutputButton.Text = "✓";
-            this.Cut_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Cut_DefaultOutputButton.Click += new System.EventHandler(this.Cut_DefaultOutputButton_Click);
-            // 
-            // Cut_OpenDirectoryButton
-            // 
-            this.Cut_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_OpenDirectoryButton.Location = new System.Drawing.Point(742, 44);
-            this.Cut_OpenDirectoryButton.Name = "Cut_OpenDirectoryButton";
-            this.Cut_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Cut_OpenDirectoryButton.TabIndex = 62;
-            this.Cut_OpenDirectoryButton.Text = "▶";
-            this.Cut_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Cut_OpenDirectoryButton.Click += new System.EventHandler(this.Cut_OpenDirectoryButton_Click);
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.button19.Location = new System.Drawing.Point(792, 44);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(87, 23);
-            this.button19.TabIndex = 25;
-            this.button19.Text = "Output Folder";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // Cut_ProgressBar
-            // 
-            this.Cut_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.Cut_ProgressBar.Name = "Cut_ProgressBar";
-            this.Cut_ProgressBar.Size = new System.Drawing.Size(783, 20);
-            this.Cut_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Cut_ProgressBar.TabIndex = 24;
-            // 
-            // Cut_OutputDirectoryBox
-            // 
-            this.Cut_OutputDirectoryBox.Enabled = false;
-            this.Cut_OutputDirectoryBox.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_OutputDirectoryBox.Location = new System.Drawing.Point(3, 45);
-            this.Cut_OutputDirectoryBox.Name = "Cut_OutputDirectoryBox";
-            this.Cut_OutputDirectoryBox.Size = new System.Drawing.Size(732, 22);
-            this.Cut_OutputDirectoryBox.TabIndex = 23;
-            // 
-            // Cut_StartCuttingButton
-            // 
-            this.Cut_StartCuttingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Cut_StartCuttingButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Cut_StartCuttingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cut_StartCuttingButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Cut_StartCuttingButton.Location = new System.Drawing.Point(792, 73);
-            this.Cut_StartCuttingButton.Name = "Cut_StartCuttingButton";
-            this.Cut_StartCuttingButton.Size = new System.Drawing.Size(87, 23);
-            this.Cut_StartCuttingButton.TabIndex = 22;
-            this.Cut_StartCuttingButton.Text = "Start Cutting";
-            this.Cut_StartCuttingButton.UseVisualStyleBackColor = false;
-            this.Cut_StartCuttingButton.Click += new System.EventHandler(this.Cut_StartCuttingButton_Click);
-            // 
-            // panel67
-            // 
-            this.panel67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel67.Controls.Add(this.label68);
-            this.panel67.Controls.Add(this.panel68);
-            this.panel67.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel67.Location = new System.Drawing.Point(0, 0);
-            this.panel67.Name = "panel67";
-            this.panel67.Size = new System.Drawing.Size(885, 38);
-            this.panel67.TabIndex = 3;
-            // 
-            // label68
-            // 
-            this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label68.Font = new System.Drawing.Font("Bebas Kai", 14F);
-            this.label68.ForeColor = System.Drawing.Color.White;
-            this.label68.Location = new System.Drawing.Point(55, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(447, 38);
-            this.label68.TabIndex = 6;
-            this.label68.Text = "Output";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel68
-            // 
-            this.panel68.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel68.Location = new System.Drawing.Point(0, 0);
-            this.panel68.Name = "panel68";
-            this.panel68.Size = new System.Drawing.Size(55, 38);
-            this.panel68.TabIndex = 0;
-            // 
-            // panel69
-            // 
-            this.panel69.Location = new System.Drawing.Point(719, 495);
-            this.panel69.Name = "panel69";
-            this.panel69.Size = new System.Drawing.Size(200, 73);
-            this.panel69.TabIndex = 1;
             // 
             // SettingsMainPanel
             // 
@@ -3197,18 +3252,6 @@
             this.panel97.Size = new System.Drawing.Size(55, 38);
             this.panel97.TabIndex = 0;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
-            // 
             // panel40
             // 
             this.panel40.BackColor = System.Drawing.Color.White;
@@ -3586,8 +3629,8 @@
             this.panel3.Controls.Add(this.GitLabel);
             this.panel3.Controls.Add(this.AuthorLabel);
             this.panel3.Controls.Add(this.SoftwareLabel);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox10);
+            this.panel3.Controls.Add(this.InfoText);
+            this.panel3.Controls.Add(this.InfoIcon);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 463);
             this.panel3.Name = "panel3";
@@ -3634,30 +3677,19 @@
             this.SoftwareLabel.Text = "-";
             this.SoftwareLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // InfoText
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Bebas Kai", 12F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(27, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Information";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox10, "Software Information Area.");
+            this.InfoText.BackColor = System.Drawing.Color.Transparent;
+            this.InfoText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoText.Font = new System.Drawing.Font("Bebas Kai", 12F);
+            this.InfoText.ForeColor = System.Drawing.Color.White;
+            this.InfoText.Location = new System.Drawing.Point(27, 1);
+            this.InfoText.Name = "InfoText";
+            this.InfoText.Size = new System.Drawing.Size(102, 20);
+            this.InfoText.TabIndex = 4;
+            this.InfoText.Text = "Information";
+            this.InfoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InfoText.Click += new System.EventHandler(this.InfoIcon_Click);
             // 
             // Menu_UpdatesTab
             // 
@@ -3695,19 +3727,6 @@
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(31, 49);
             this.panel38.TabIndex = 2;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_language_outline;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Menu_UpdatesTabIndicator_Click);
             // 
             // panel39
             // 
@@ -3807,19 +3826,6 @@
             this.panel19.Size = new System.Drawing.Size(31, 49);
             this.panel19.TabIndex = 2;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_settings_outline;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.Menu_SettingsTabIndicator_Click);
-            // 
             // panel20
             // 
             this.panel20.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -3877,19 +3883,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(31, 49);
             this.panel15.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_edit_outline;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.Menu_ArgumentsTabIndicator_Click);
             // 
             // panel16
             // 
@@ -3949,19 +3942,6 @@
             this.panel11.Size = new System.Drawing.Size(31, 49);
             this.panel11.TabIndex = 2;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_download_outline;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.Menu_M3U8TabIndicator_Click);
-            // 
             // panel12
             // 
             this.panel12.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4019,19 +3999,6 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(31, 23);
             this.panel29.TabIndex = 2;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_menu_point_h_outline;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Menu_MergeTabIndicator_Click);
             // 
             // panel30
             // 
@@ -4091,19 +4058,6 @@
             this.panel25.Size = new System.Drawing.Size(31, 23);
             this.panel25.TabIndex = 2;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_divide_outline;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.Menu_CutTabIndicator_Click);
-            // 
             // panel26
             // 
             this.panel26.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4161,19 +4115,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(31, 49);
             this.panel7.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_apps_outline;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
             // 
             // panel8
             // 
@@ -4233,19 +4174,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(31, 49);
             this.panel5.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_reload_outline;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.Menu_EncoderTabIndicator_Click);
             // 
             // panel4
             // 
@@ -4336,16 +4264,6 @@
             this.label11.Text = "V2 Edition";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
-            this.pictureBox8.Location = new System.Drawing.Point(86, 24);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 25);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
@@ -4417,19 +4335,6 @@
             this.TopPanel.TabIndex = 1;
             this.TopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
             // 
-            // ToTrayButton
-            // 
-            this.ToTrayButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToTrayButton.Image = global::FFmpeg_Utilizer.Properties.Resources.TrayIcon;
-            this.ToTrayButton.Location = new System.Drawing.Point(1001, 0);
-            this.ToTrayButton.Name = "ToTrayButton";
-            this.ToTrayButton.Size = new System.Drawing.Size(29, 27);
-            this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ToTrayButton.TabIndex = 8;
-            this.ToTrayButton.TabStop = false;
-            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
-            this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
-            // 
             // ApplicationMinimizeButton
             // 
             this.ApplicationMinimizeButton.BackColor = System.Drawing.Color.White;
@@ -4459,18 +4364,6 @@
             this.ApplicationCloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ApplicationCloseButton.Click += new System.EventHandler(this.SoftwareCloseButton_Click);
             // 
-            // TopLogo
-            // 
-            this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
-            this.TopLogo.Location = new System.Drawing.Point(0, 0);
-            this.TopLogo.Name = "TopLogo";
-            this.TopLogo.Size = new System.Drawing.Size(200, 27);
-            this.TopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.TopLogo.TabIndex = 0;
-            this.TopLogo.TabStop = false;
-            this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
-            // 
             // toolTip
             // 
             this.toolTip.AutomaticDelay = 250;
@@ -4484,60 +4377,169 @@
             this.TraySystem.Text = "FFmpeg Utilizer";
             this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
             // 
-            // Merge_OutputFileName
+            // pictureBox11
             // 
-            this.Merge_OutputFileName.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_OutputFileName.Location = new System.Drawing.Point(270, 259);
-            this.Merge_OutputFileName.Name = "Merge_OutputFileName";
-            this.Merge_OutputFileName.Size = new System.Drawing.Size(607, 22);
-            this.Merge_OutputFileName.TabIndex = 86;
-            this.Merge_OutputFileName.Text = "OutputFileName";
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
             // 
-            // label33
+            // InfoIcon
             // 
-            this.label33.Font = new System.Drawing.Font("Bebas Kai", 7F);
-            this.label33.Location = new System.Drawing.Point(278, 284);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(217, 25);
-            this.label33.TabIndex = 87;
-            this.label33.Text = "Extension will be the same as the first file in the list.";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InfoIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoIcon.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.InfoIcon.Location = new System.Drawing.Point(0, 0);
+            this.InfoIcon.Name = "InfoIcon";
+            this.InfoIcon.Size = new System.Drawing.Size(20, 20);
+            this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InfoIcon.TabIndex = 1;
+            this.InfoIcon.TabStop = false;
+            this.toolTip.SetToolTip(this.InfoIcon, "Software Information Area.");
+            this.InfoIcon.Click += new System.EventHandler(this.InfoIcon_Click);
             // 
-            // Merge_HideConsoleToggle
+            // pictureBox9
             // 
-            this.Merge_HideConsoleToggle.AutoSize = true;
-            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 43);
-            this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
-            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(80, 18);
-            this.Merge_HideConsoleToggle.TabIndex = 88;
-            this.Merge_HideConsoleToggle.Text = "Hide Console";
-            this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_language_outline;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.Menu_UpdatesTabIndicator_Click);
             // 
-            // Argument_ClearButton
+            // pictureBox5
             // 
-            this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ClearButton.Font = new System.Drawing.Font("Bebas Kai", 9F);
-            this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ClearButton.Location = new System.Drawing.Point(359, 47);
-            this.Argument_ClearButton.Name = "Argument_ClearButton";
-            this.Argument_ClearButton.Size = new System.Drawing.Size(76, 24);
-            this.Argument_ClearButton.TabIndex = 75;
-            this.Argument_ClearButton.Text = "Clear Args";
-            this.Argument_ClearButton.UseVisualStyleBackColor = false;
-            this.Argument_ClearButton.Click += new System.EventHandler(this.Argument_ClearButton_Click);
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_settings_outline;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.Menu_SettingsTabIndicator_Click);
             // 
-            // label38
+            // pictureBox4
             // 
-            this.label38.Font = new System.Drawing.Font("Bebas Kai", 8F);
-            this.label38.Location = new System.Drawing.Point(500, 50);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(217, 25);
-            this.label38.TabIndex = 88;
-            this.label38.Text = "You can freely write your own arguments here. ";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_edit_outline;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.Menu_ArgumentsTabIndicator_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_download_outline;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.Menu_M3U8TabIndicator_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_menu_point_h_outline;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.Menu_MergeTabIndicator_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_divide_outline;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.Menu_CutTabIndicator_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_apps_outline;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_reload_outline;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.Menu_EncoderTabIndicator_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
+            this.pictureBox8.Location = new System.Drawing.Point(86, 24);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // ToTrayButton
+            // 
+            this.ToTrayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToTrayButton.Image = global::FFmpeg_Utilizer.Properties.Resources.TrayIcon;
+            this.ToTrayButton.Location = new System.Drawing.Point(1001, 0);
+            this.ToTrayButton.Name = "ToTrayButton";
+            this.ToTrayButton.Size = new System.Drawing.Size(29, 27);
+            this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToTrayButton.TabIndex = 8;
+            this.ToTrayButton.TabStop = false;
+            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
+            this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
+            // 
+            // TopLogo
+            // 
+            this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
+            this.TopLogo.Location = new System.Drawing.Point(0, 0);
+            this.TopLogo.Name = "TopLogo";
+            this.TopLogo.Size = new System.Drawing.Size(200, 27);
+            this.TopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.TopLogo.TabIndex = 0;
+            this.TopLogo.TabStop = false;
+            this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
             // 
             // Main
             // 
@@ -4555,6 +4557,27 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
+            this.CutMainPanel.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).EndInit();
+            this.panel32.ResumeLayout(false);
+            this.panel65.ResumeLayout(false);
+            this.panel66.ResumeLayout(false);
+            this.panel66.PerformLayout();
+            this.panel67.ResumeLayout(false);
+            this.ArgumentMainPanel.ResumeLayout(false);
+            this.ArgumentMainPanel.PerformLayout();
+            this.panel41.ResumeLayout(false);
             this.MergeMainPanel.ResumeLayout(false);
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
@@ -4583,27 +4606,6 @@
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
             this.panel47.ResumeLayout(false);
-            this.ArgumentMainPanel.ResumeLayout(false);
-            this.ArgumentMainPanel.PerformLayout();
-            this.panel41.ResumeLayout(false);
-            this.CutMainPanel.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMiliseconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndSeconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndMinutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_EndHours)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMiliseconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartSeconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartMinutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cut_StartHours)).EndInit();
-            this.panel32.ResumeLayout(false);
-            this.panel65.ResumeLayout(false);
-            this.panel66.ResumeLayout(false);
-            this.panel66.PerformLayout();
-            this.panel67.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.Settings_NetPanel.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -4629,7 +4631,6 @@
             this.panel94.ResumeLayout(false);
             this.panel96.ResumeLayout(false);
             this.panel97.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel40.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel73.ResumeLayout(false);
@@ -4645,37 +4646,38 @@
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.Menu_UpdatesTab.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel33.ResumeLayout(false);
             this.Menu_SettingsTab.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Menu_ArgumentsTab.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Menu_M3U8Tab.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Menu_MergeTab.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.Menu_CutTab.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.Menu_CutMergeTab.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Menu_EncoderTab.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.FooterPanel.ResumeLayout(false);
             this.BottomRightPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel22.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
             this.ResumeLayout(false);
@@ -4770,8 +4772,8 @@
         private System.Windows.Forms.Label GitLabel;
         private System.Windows.Forms.Label AuthorLabel;
         private System.Windows.Forms.Label SoftwareLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label InfoText;
+        private System.Windows.Forms.PictureBox InfoIcon;
         private System.Windows.Forms.Label label9;
         internal System.Windows.Forms.ComboBox Encoder_PresetsBox;
         private System.Windows.Forms.Label label12;

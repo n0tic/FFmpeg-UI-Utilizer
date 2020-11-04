@@ -1383,5 +1383,7 @@ namespace FFmpeg_Utilizer
         private void Argument_ClearButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "";
 
         #endregion Argument
+
+        private void InfoIcon_Click(object sender, EventArgs e) => new SoftwareInformation().ShowDialog();
     }
 }
