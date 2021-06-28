@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/maintenance/YES/2020" alt="Maintained Badge">
 </p>
 
-WIP!
+WIP! (Currently shelfed)
 
 FFMPEG Utilizer is a UI/GUI software which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
 
