@@ -1391,5 +1391,28 @@ namespace FFmpeg_Utilizer
         private void Argument_ClearButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "";
 
         #endregion Argument
+
+        private void M3U8_listView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (m3u8Processor.inProcess)
+            {
+                notice.SetNotice("M3U8 is already processing. You cannot add/remove or edit elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            ListViewHitTestInfo hitTest = M3U8_listView.HitTest(e.Location);
+            if (hitTest.Item != null) // replace "item name" with the name of the item you want to handle
+            {
+                using (AddM3U8URL form = new AddM3U8URL(true, hitTest.Item.SubItems[0].Text, hitTest.Item.SubItems[1].Text))
+                {
+                    DialogResult res = form.ShowDialog();
+                    if (res == DialogResult.OK)
+                    {
+                        hitTest.Item.SubItems[0].Text = form.NameField.Text;
+                        hitTest.Item.SubItems[1].Text = form.URLField.Text;
+                    }
+                }
+            }
+        }
     }
 }

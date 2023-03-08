@@ -13,6 +13,7 @@ namespace FFmpeg_Utilizer.Modules
     public class M3U8Processor
     {
         public Main main;
+        public Color backColor;
 
         internal bool inProcess = false;
 
@@ -23,7 +24,11 @@ namespace FFmpeg_Utilizer.Modules
 
         private Process m3u8Process;
 
-        public M3U8Processor(Main _main) => this.main = _main;
+        public M3U8Processor(Main _main)
+        {
+            this.main = _main;
+            backColor = main.M3U8_listView.BackColor;
+        }
 
         internal void ProcessFileQueue(M3U8ProcesserData data)
         {
@@ -40,14 +45,17 @@ namespace FFmpeg_Utilizer.Modules
                             {
                                 case "¿ Processing":
                                     item.SubItems[2].Text = "✗ Aborted";
+                                    item.BackColor = Color.FromArgb(255, 192, 192);
                                     break;
 
                                 case "✗ Aborted":
                                     item.SubItems[2].Text = "• Waiting";
+                                    item.BackColor = backColor;
                                     break;
 
                                 case "✗ Failed":
                                     item.SubItems[2].Text = "• Waiting";
+                                    item.BackColor = backColor;
                                     break;
                             }
                         }
@@ -105,7 +113,7 @@ namespace FFmpeg_Utilizer.Modules
 
                 while (m3u8Process != null) Thread.Sleep(25);
 
-                FileInfo file = new FileInfo(processQueue.outputFolder + @"\" + processQueue.queue.Peek().name + ".mp4");
+                FileInfo file = new FileInfo(processQueue.outputFolder + @"\" + processQueue.queue.Peek().name.Substring(0, Math.Min(100, processQueue.queue.Peek().name.Length)) + ".mp4");
 
                 if (File.Exists(file.FullName))
                 {
@@ -115,6 +123,7 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
                             item.SubItems[2].Text = "✓ Finished";
+                            item.BackColor = Color.FromArgb(192, 255, 192);
                         }));
                     }
                     else
@@ -123,6 +132,7 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
                             item.SubItems[2].Text = "✗ Failed";
+                            item.BackColor = Color.FromArgb(255, 192, 192);
                         }));
                     }
                 }
@@ -132,6 +142,7 @@ namespace FFmpeg_Utilizer.Modules
                     {
                         var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
                         item.SubItems[2].Text = "✗ Failed";
+                        item.BackColor = Color.FromArgb(255, 192, 192);
                     }));
                 }
 
@@ -158,15 +169,22 @@ namespace FFmpeg_Utilizer.Modules
 
         private void StartEncodingProcess()
         {
+            Console.WriteLine($"Processing {processQueue.queue.Peek().url} | Output: {processQueue.outputFolder} | Name: {processQueue.queue.Peek().name + ".mp4"}");
+
             m3u8Process = new Process
             {
                 StartInfo =
                 {
                     FileName = main.settings.ffmpegPath,
-                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -absf aac_adtstoasc -acodec copy -vcodec copy \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4",
+                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -absf aac_adtstoasc -acodec copy -vcodec copy \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4\" -report",
                     UseShellExecute = false
                 }
             };
+
+            main.Invoke(new Action(() =>
+            {
+                Clipboard.SetText(m3u8Process.StartInfo.Arguments);
+            }));
 
             if (processQueue.hideConsole) m3u8Process.StartInfo.CreateNoWindow = true;
 

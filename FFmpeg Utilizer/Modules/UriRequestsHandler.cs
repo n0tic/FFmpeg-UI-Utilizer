@@ -1,14 +1,20 @@
 ﻿#pragma warning disable IDE0059 // Nagging about requestString
 
 using FFmpeg_Utilizer.Data;
+using FFmpeg_Utilizer.Forms;
 using FFmpeg_Utilizer.Modules.Submodule;
 using System;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Web;
 
 namespace FFmpeg_Utilizer.Modules
 {
@@ -91,47 +97,65 @@ namespace FFmpeg_Utilizer.Modules
                     catch { }
 
                     if (fullRequest == "GET /favicon.ico") // We don't want to send data if we don't need to.
+                    {
+                        URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
                         connection.Close();
+                    }
 
                     //At present we will only deal with GET type
                     if (buffer.Substring(0, 3) == "GET" && fullRequest[4] == '/' && fullRequest[5] == '?' && fullRequest.Contains("="))
                     {
-                        string[] tmpRequests = fullRequest.Split(new char[] { '=' }, 2);
-                        if (tmpRequests[0] == "GET /?add")
+                        // Split the URL by the ampersand separator to get the two query parameters
+                        string[] queryParameters = fullRequest.Split('&');
+
+                        // Get the value of the "addName" parameter
+                        string addName = HttpUtility.UrlDecode(queryParameters[0].Substring(queryParameters[0].IndexOf('=') + 1));
+                        addName = addName.Replace(".m3u8", "");
+                        addName = addName.Replace("%20", " ");
+                        addName = RemoveIllegalPathCharacters(addName);
+
+                        // Get the value of the "addURL" parameter
+                        string addURL = HttpUtility.UrlDecode(queryParameters[1].Substring(queryParameters[1].IndexOf('=') + 1));
+
+                        if (URIRequestExtender.IsValidUrl(addURL) && URIRequestExtender.IsValidFile(addURL) && !main.m3u8Processor.inProcess)
                         {
-                            main.Invoke(new Action(() =>
-                            {
-                                if (URIRequestExtender.IsValidUrl(tmpRequests[1]) && URIRequestExtender.IsM3u8(tmpRequests[1]) && !main.m3u8Processor.inProcess)
-                                {
-                                    try
-                                    {
-                                        //Is the GET request http? "%2F" == "/"
-                                        if (tmpRequests[1].Contains("%2F"))
-                                            tmpRequests[1] = URIRequestExtender.FixURL(tmpRequests[1]);
-
-                                        Uri hlsFile = new Uri(tmpRequests[1]);
-
-                                        ListViewItem item = new ListViewItem(new[] { Path.GetFileNameWithoutExtension(hlsFile.AbsoluteUri), tmpRequests[1], "• Waiting" });
-                                        main.M3U8_listView.Items.Add(item);
-                                        Core.ChangeTab(Core.Tabs.M3U8);
-
-                                        URIRequestExtender.SendResponse(sHttpVersion, ref connection, true);
-                                    }
-                                    catch (Exception)
-                                    {
-                                        URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
-                                    }
-                                }
-                                else URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
+                            main.Invoke(new Action(() => {
+                                ListViewItem item = new ListViewItem(new[] { MakeUniqueName(addName), addURL, "• Waiting" });
+                                main.M3U8_listView.Items.Add(item);
+                                Core.ChangeTab(Core.Tabs.M3U8);
                             }));
                         }
-                        else URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
+
+                        URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
                     }
                     else URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
 
                     connection.Close();
                 }
             }
+        }
+
+        private string MakeUniqueName(string name)
+        {
+            int i = 0;
+            string newName = name;
+
+
+
+            // Check if the name is already in the list view
+            while (main.M3U8_listView.Items.Cast<ListViewItem>().Any(item => item.SubItems[0].Text == newName))
+            {
+                i++;
+                newName = $"{name} {i}";
+            }
+
+            return newName;
+        }
+
+        public static string RemoveIllegalPathCharacters(string path)
+        {
+            char[] invalidChars = Path.GetInvalidFileNameChars().Concat(Path.GetInvalidPathChars()).Distinct().ToArray();
+            return new string(path.Where(c => !invalidChars.Contains(c)).ToArray());
         }
 
         public void KillServer()

@@ -28,7 +28,7 @@ namespace FFmpeg_Utilizer
         public static BuildTypes buildType = BuildTypes.Alpha;
         public static int majorVersion = 0;
         public static int minorVersion = 1;
-        public static int buildVersion = 3;
+        public static int buildVersion = 4;
 
         public enum BuildTypes
         {
@@ -236,13 +236,8 @@ namespace FFmpeg_Utilizer
 
         https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip // Essential release
          */
-#if DEBUG
-        public static string FFmpeg64BitURLDownload = @"file://C:\Users\N0tiC\Downloads\ffmpeg-4.3.1-2020-10-01-essentials_build.zip";
-        public static string FFmpeg64BitURLVersion = @"https://www.gyan.dev/ffmpeg/builds/release-version";
-#else
         public static string FFmpeg64BitURLDownload = "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip";
         public static string FFmpeg64BitURLVersion = "https://www.gyan.dev/ffmpeg/builds/release-version";
-#endif
 
         #endregion External FFmpeg Builds
 

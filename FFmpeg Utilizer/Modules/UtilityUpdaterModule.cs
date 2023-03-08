@@ -218,30 +218,34 @@ namespace FFmpeg_Utilizer.Modules
 
             extractThread = new Thread(() =>
             {
-                using (ZipArchive archive = ZipFile.OpenRead(path))
+                try
                 {
-                    foreach (ZipArchiveEntry entry in archive.Entries)
+                    using (ZipArchive archive = ZipFile.OpenRead(path))
                     {
-                        string file = "";
-
-                        if (entry.FullName.Contains(Core.GetTool(Core.Tools.ffmpeg))) file = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
-                        if (entry.FullName.Contains(Core.GetTool(Core.Tools.ffplay))) file = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay);
-
-                        if (file != "")
+                        foreach (ZipArchiveEntry entry in archive.Entries)
                         {
-                            main.Invoke(new Action(() =>
-                            {
-                                main.Update_ProgressBar.Value++;
-                                main.Update_ProgressBar.Refresh();
-                                main.Update_StatusLabel.Text = "Status: Extracting " + main.Update_ProgressBar.Value.ToString() + "/2";
-                                main.SpeedLabel.Refresh();
-                            }));
+                            string file = "";
 
-                            File.Create(file).Close();
-                            entry.ExtractToFile(file, true);
+                            if (entry.FullName.Contains(Core.GetTool(Core.Tools.ffmpeg))) file = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg);
+                            if (entry.FullName.Contains(Core.GetTool(Core.Tools.ffplay))) file = Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay);
+
+                            if (file != "")
+                            {
+                                main.Invoke(new Action(() =>
+                                {
+                                    main.Update_ProgressBar.Value++;
+                                    main.Update_ProgressBar.Refresh();
+                                    main.Update_StatusLabel.Text = "Status: Extracting " + main.Update_ProgressBar.Value.ToString() + "/2";
+                                    main.SpeedLabel.Refresh();
+                                }));
+
+                                File.Create(file).Close();
+                                entry.ExtractToFile(file, true);
+                            }
                         }
                     }
                 }
+                catch { }
 
                 FinishUpdate(path);
             });

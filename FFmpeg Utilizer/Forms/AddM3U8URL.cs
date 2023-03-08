@@ -5,17 +5,19 @@ namespace FFmpeg_Utilizer.Forms
 {
     public partial class AddM3U8URL : Form
     {
-        public AddM3U8URL()
+        public AddM3U8URL(bool edit = false, string name = "Name...", string url = "URL...")
         {
             InitializeComponent();
 
-            NameField.Text = "Name...";
+            NameField.Text = name;
             NameField.GotFocus += NameField_GotFocus;
             NameField.LostFocus += NameField_LostFocus;
 
-            URLField.Text = "URL...";
-            URLField.GotFocus += URLField_GotFocus; ;
-            URLField.LostFocus += URLField_LostFocus; ;
+            URLField.Text = url;
+            URLField.GotFocus += URLField_GotFocus;
+            URLField.LostFocus += URLField_LostFocus;
+
+            if (edit) OKButton.Text = "Save Edit";
         }
 
         private void URLField_LostFocus(object sender, EventArgs e)

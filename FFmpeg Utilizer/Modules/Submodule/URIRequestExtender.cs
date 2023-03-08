@@ -88,9 +88,14 @@ namespace FFmpeg_Utilizer.Modules.Submodule
             return url;
         }
 
-        public static bool IsM3u8(string url)
+        public static bool IsValidFile(string url)
         {
-            return !string.IsNullOrEmpty(url) && url.ToLower().Contains("m3u8");
+            bool isValid = false;
+
+            if (url.ToLower().Contains("m3u8") || url.ToLower().Contains("mp4") && !string.IsNullOrEmpty(url))
+                isValid = true;
+
+            return isValid;
         }
 
         public static bool IsValidUrl(string url)

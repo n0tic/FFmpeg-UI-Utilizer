@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>m3u8Sniffer2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .btn:focus{
+            box-shadow:none!important;   
+        }
+    </style>
+</head>
+<body style="width:300px;min-height:150px;" class="container">
+    <div class="col-12 mt-1">
+        <h5>FFmpeg Utilizer Plugin</h5>
+    </div>
+    <div class="row card mb-2 ms-0 me-0">
+        <div class="col-12 card-body">
+            <div id="box" class="box card-text" style="min-height:110px;">
+                <!-- <div class="mt-1 mb-1"><span style="max-width: 200px;">index.m3u8</span><a href="#" style="float: right;">复制</a></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-success fade hide" style="padding:5px 20px 5px 20px;line-height:14px;font-size: 14px;" hidden>
+        Copy Successfully!
+    </div>
+    <div class="alert alert-warning fade hide" style="padding:5px 20px 5px 20px;line-height:14px;font-size: 14px;" hidden>
+        No detected playlists!
+    </div>
+
+
+    <form id="sendForm" method="GET" action="http://127.0.0.1:288/">
+        <input type="hidden" name="add" value="http://example.com/myvideo.m3u8">
+      </form>
+</body>
+</html>
