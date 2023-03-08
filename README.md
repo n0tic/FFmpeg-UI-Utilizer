@@ -9,12 +9,12 @@
     <br />
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
     <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer" alt="License Badge">
-    <img src="https://img.shields.io/maintenance/YES/2020" alt="Maintained Badge">
+    <img src="https://img.shields.io/maintenance/YES/2023" alt="Maintained Badge">
 </p>
 
 WIP! (Currently shelfed)
 
-FFMPEG Utilizer is a UI/GUI software which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
+FFMPEG Utilizer is a lightweight and user-friendly UI/GUI software designed to execute commands based on user input, by utilizing external ffmpeg/ffplay. This software does not rely on any third-party libraries, making it highly portable. Additionally, the use of a Chrome extension/plugin facilitates the exchange of information between the browser and the software, thereby streamlining the potential download process.
 
 FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way officially connected with FFmpeg.
 [FFmpeg](https://ffmpeg.org/) itself is a complete, cross-platform solution to record, convert and stream audio and video. 
