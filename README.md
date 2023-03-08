@@ -95,8 +95,8 @@ If the request is satisfactory the request will be handled and the data added to
 The idea is intended to be working hand in hand with a browser extension. 
 ```
 ```
-For now, only manual inputs work:
-http://127.0.0.1:{PORT}?add=http://google.se/hls.m3u8
+For now, this inputs work:
+http://127.0.0.1:{PORT}?addName=GoogleTestHLS&addURL=http://google.se/hls.m3u8
 This will add the required information automatically to our software.
 ```
 Query Headers - Bad Request
@@ -112,7 +112,7 @@ Content-Length: 0
 ```
 Query Headers - 202 Accepted Request
 ```
-GET /?add=http://google.com/provide/master.m3u8 HTTP/1.1
+GET /?add=http://127.0.0.1:288?addName=GoogleTestHLS&addURL=http://google.se/hls.m3u8 HTTP/1.1
 Host: 127.0.0.1:288
 
 HTTP/1.1 202 Accepted
