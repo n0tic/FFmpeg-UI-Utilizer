@@ -37,8 +37,6 @@ Initial need was to convert a filetype and encode to another.
 
 ## Preview 
 
-[![FFmpeg Utilizer Demo](https://img.youtube.com/vi/BLnV5Wo3Co4/0.jpg)](https://www.youtube.com/watch?v=BLnV5Wo3Co4)
-
 ![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/preview.png)
 
 <details>
