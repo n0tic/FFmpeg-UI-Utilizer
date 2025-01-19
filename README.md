@@ -158,6 +158,12 @@ So the results of the process may not be 100% satsfactory. Please leave your fee
 
 ~ Protytyping first, polishing later.
 
+- **⚠️ File Name Issues**  
+  If a file has an illegal name, the program will be unable to locate it after processing and will mark the file in red. Check the output folder to verify whether the operation was successful. (Looking into this issue when I get some time over)
+
+- **🎥 M3U8 File Processing**  
+  Some M3U8 files may not process correctly with the default arguments used in this software. (Update coming next push)
+
 ## Issues
 
 Templates to use
