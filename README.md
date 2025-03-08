@@ -9,12 +9,12 @@
     <br />
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
     <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer" alt="License Badge">
-    <img src="https://img.shields.io/maintenance/YES/2020" alt="Maintained Badge">
+    <img src="https://img.shields.io/maintenance/YES/2023" alt="Maintained Badge">
 </p>
 
 WIP! (Currently shelfed)
 
-FFMPEG Utilizer is a UI/GUI software which utilizes external ffmpeg/ffplay to execute commands depending on user input. It aims to be very lightweight, portable and user friendly. It will not be using any third party libraries.
+FFMPEG Utilizer is a user-friendly UI software that executes commands based on user input, by utilizing external ffmpeg. Its primary aim is to be highly portable and lightweight. Furthermore, the integration of a Chrome extension facilitates the exchange of information between the browser and the software, thus enhancing the efficiency.
 
 FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way officially connected with FFmpeg.
 [FFmpeg](https://ffmpeg.org/) itself is a complete, cross-platform solution to record, convert and stream audio and video. 
@@ -95,8 +95,8 @@ If the request is satisfactory the request will be handled and the data added to
 The idea is intended to be working hand in hand with a browser extension. 
 ```
 ```
-For now, only manual inputs work:
-http://127.0.0.1:{PORT}?add=http://google.se/hls.m3u8
+For now, this inputs work:
+http://127.0.0.1:{PORT}?addName=GoogleTestHLS&addURL=http://google.se/hls.m3u8
 This will add the required information automatically to our software.
 ```
 Query Headers - Bad Request
@@ -112,7 +112,7 @@ Content-Length: 0
 ```
 Query Headers - 202 Accepted Request
 ```
-GET /?add=http://google.com/provide/master.m3u8 HTTP/1.1
+GET /?add=http://127.0.0.1:288?addName=GoogleTestHLS&addURL=http://google.se/hls.m3u8 HTTP/1.1
 Host: 127.0.0.1:288
 
 HTTP/1.1 202 Accepted
@@ -157,6 +157,12 @@ I am no pro when it comes to using FFmpeg so the arguments FFmpeg Utilizer gener
 So the results of the process may not be 100% satsfactory. Please leave your feedback and or information regarding features you feel are missing or wrong.
 
 ~ Protytyping first, polishing later.
+
+- **⚠️ File Name Issues**  
+  If a file has an illegal name, the program will be unable to locate it after processing and will mark the file in red. Check the output folder to verify whether the operation was successful. (Looking into this issue when I get some time over)
+
+- **🎥 M3U8 File Processing**  
+  Some M3U8 files may not process correctly with the default arguments used in this software. (Update coming next push)
 
 ## Issues
 
