@@ -26,21 +26,11 @@ FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way offici
 - [Issues](#issues)
 - [Disclamer](#disclamer)
 - [License](#license)
+- More previews at the bottom...
 
 ## Preview 
 
 ![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/preview.png)
-
-<details>
-  <summary>Hiding images to save space, click to show!</summary>
-  
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_kiUrkxvAgF.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hMaHMZiGCM.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ZZvSdF5FZX.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_FVFM2Vvp0o.png)
-  
-</details>
-If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
 
 UI & Styling may change.
 
@@ -187,3 +177,12 @@ GNU GENERAL PUBLIC LICENSE
  
 Continue reading LICESE in repo...
 ```
+
+## Previews
+
+If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
+
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_kiUrkxvAgF.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hMaHMZiGCM.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ZZvSdF5FZX.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_FVFM2Vvp0o.png)
