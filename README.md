@@ -2,9 +2,6 @@
     <img src="https://github.com/n0tic/FFmpeg-UI-Utilizer/raw/master/FFmpeg%20Utilizer/Resources/ffmpegUtilizerLogo.jpg" alt="FFmpeg Utilizer Logo">
     <br />
     <br />
-	WIP!
-    <br />
-    <br />
     <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with LOVE">
     <br />
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
