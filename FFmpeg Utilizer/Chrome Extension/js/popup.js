@@ -10,7 +10,7 @@ $(function(){
             $(".alert-warning").removeAttr("hidden")
         }else{
             for(i=0;i<bg.tabs[tabID].m3u8list.length;i++){
-                $("#box").append(`<div id="url${i}" style="mt-1 mb-1"><span style="max-width: 200px;white-space: nowrap;display: inline-block;overflow: hidden;text-overflow: ellipsis;line-height: 1.5;" title="[M3U8] ${bg.tabs[tabID].title} ${bg.tabs[tabID].m3u8list[i].name}">[M3U8] ${bg.tabs[tabID].title} ${bg.tabs[tabID].m3u8list[i].name}</span><a href="#" id="${i}" style="float: right;margin-left: 5px;" title="Add to FFmpeg Utilizer"><i class="fas fa-download"></i></a> <a href="#" style="float: right;" title="Copy URL"><i class="fas fa-copy"></i></a></div>`);
+                $("#box").append(`<div id="url${i}" style="mt-1 mb-1"><span style="max-width: 390px;white-space: nowrap;display: inline-block;overflow: hidden;text-overflow: ellipsis;line-height: 1.5;" title="[M3U8] ${bg.tabs[tabID].title} ${bg.tabs[tabID].m3u8list[i].name}">[M3U8] ${bg.tabs[tabID].title} ${bg.tabs[tabID].m3u8list[i].name}</span><a href="#" id="${i}" style="float: right;margin-left: 5px;" title="Add to FFmpeg Utilizer"><i class="fas fa-download"></i></a> <a href="#" style="float: right;" title="Copy URL"><i class="fas fa-copy"></i></a></div>`);
                 $("#url"+i+" i.fa-copy").click({"url":bg.tabs[tabID].m3u8list[i].url},copyUrl);
             }
         }
