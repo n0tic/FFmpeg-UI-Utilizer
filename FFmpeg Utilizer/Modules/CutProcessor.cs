@@ -102,7 +102,7 @@ namespace FFmpeg_Utilizer.Modules
         {
             main.Invoke(new Action(() =>
             {
-                Clipboard.SetText(processQueue.ExecuteArgs());
+                //Clipboard.SetText(processQueue.ExecuteArgs());
             }));
 
             cutProcess = new Process

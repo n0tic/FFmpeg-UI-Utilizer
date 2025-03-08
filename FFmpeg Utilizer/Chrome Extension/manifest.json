@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "FFmpeg Utilizer Plugin",
     "version": "1.0",
-    "description": "This plugin for FFmpeg Utilizer streamlines the process of inserting M3U8 playlists into the software, making it more efficient and user-friendly.",
+    "description": "This plugin is for FFmpeg Utilizer and streamlines the process of inserting video files and HLS/M3U8 playlists into the software, making it more efficient and user-friendly.",
     "icons":
     {
         "16": "icon/icon_16.png",

@@ -46,7 +46,7 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             switch (item.SubItems[1].Text)
                             {
-                                case "¿ Processing":
+                                case "Working...":
                                     item.SubItems[1].Text = "✗ Aborted";
                                     break;
 
@@ -102,7 +102,7 @@ namespace FFmpeg_Utilizer.Modules
                 main.Invoke(new Action(() =>
                 {
                     var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
-                    item.SubItems[1].Text = "¿ Processing";
+                    item.SubItems[1].Text = "Working...";
                 }));
 
                 encodingThread = new Thread(() => StartEncodingProcess());

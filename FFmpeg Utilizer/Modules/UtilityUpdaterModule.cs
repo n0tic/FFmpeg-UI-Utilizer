@@ -82,8 +82,10 @@ namespace FFmpeg_Utilizer.Modules
             main.SpeedLabel.Text = "";
         }
 
-        public void StartUpdateCheckAsync()
+        public void StartUpdateCheckAsync(bool button = false)
         {
+            main.checkForUpdateButtonOverride = button;
+
             if (updating)
             {
                 main.notice.SetNotice("You can not check for updates while already updating.", NoticeModule.TypeNotice.Warning);
@@ -115,20 +117,33 @@ namespace FFmpeg_Utilizer.Modules
             main.Update_OnlineVerLabel.Text = e.Result;
 
             if (e.Result != main.settings.ffVersion && main.settings.ffVersion != "")
+            {
                 SetUtilityDownloader(UtilityType.Update);
+                main.notice.SetNotice("An update seems to be available. It is recommended to update.", NoticeModule.TypeNotice.Warning);
+            }
             else
             {
                 //If default files was not found and settings are loaded.
                 if (main.settings.loaded && !File.Exists(main.settings.ffmpegPath) || !File.Exists(main.settings.ffplayPath))
                 {
+                    Console.WriteLine("test1");
                     SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
                 }
                 else if (!main.settings.loaded && !File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg)) || !File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay)))
                 {
+                    Console.WriteLine("test2");
                     SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
                 }
                 else
+                {
                     SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
+                    Console.WriteLine("test3");
+                }
+            }
+
+            if(main.checkForUpdateButtonOverride && main.settings.ffVersion != e.Result)
+            {
+                main.notice.SetNotice("An update seems to be available. It is recommended to update.", NoticeModule.TypeNotice.Warning);
             }
 
             CheckingVersion = false;
@@ -295,6 +310,8 @@ namespace FFmpeg_Utilizer.Modules
             main.settings.SaveSettings();
 
             GC.Collect();
+
+            main.notice.SetNotice("Update completed successfully!", NoticeModule.TypeNotice.Success);
 
             updating = false;
         }

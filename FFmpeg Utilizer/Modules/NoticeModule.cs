@@ -1,5 +1,6 @@
 ﻿#pragma warning disable IDE0044 // Stop nagging about main readonly. Not possible.
 
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Media;
@@ -32,25 +33,28 @@ namespace FFmpeg_Utilizer.Modules
 
         public void SetNotice(string noticeText, TypeNotice nType)
         {
-            main.PixelTopNotice.BackColor = colors[(int)nType];
-            main.NoticePanel.BackColor = colors[(int)nType + 1];
-            main.NoticeTextLabel.BackColor = colors[(int)nType + 1];
-            main.NoticeCloseButton.BackColor = colors[(int)nType + 1];
-
-            main.NoticeTextLabel.Text = noticeText;
-            main.NoticePanel.Enabled = true;
-            main.NoticePanel.Visible = true;
-
-            switch (nType)
+            main.Invoke(new Action(() =>
             {
-                case TypeNotice.Warning:
-                    SystemSounds.Hand.Play();
-                    break;
+                main.PixelTopNotice.BackColor = colors[(int)nType];
+                main.NoticePanel.BackColor = colors[(int)nType + 1];
+                main.NoticeTextLabel.BackColor = colors[(int)nType + 1];
+                main.NoticeCloseButton.BackColor = colors[(int)nType + 1];
 
-                case TypeNotice.Error:
-                    SystemSounds.Hand.Play();
-                    break;
-            }
+                main.NoticeTextLabel.Text = noticeText;
+                main.NoticePanel.Enabled = true;
+                main.NoticePanel.Visible = true;
+
+                switch (nType)
+                {
+                    case TypeNotice.Warning:
+                        SystemSounds.Hand.Play();
+                        break;
+
+                    case TypeNotice.Error:
+                        SystemSounds.Hand.Play();
+                        break;
+                }
+            }));
         }
 
         public void CloseNotice()

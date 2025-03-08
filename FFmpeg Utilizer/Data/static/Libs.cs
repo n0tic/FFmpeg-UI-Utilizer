@@ -223,7 +223,9 @@ namespace FFmpeg_Utilizer.Data
             avi,
             mov,
             flv,
-            ts
+            mkv,
+            ts,
+            mpeg
         }
 
         public enum AudioFileExtensions

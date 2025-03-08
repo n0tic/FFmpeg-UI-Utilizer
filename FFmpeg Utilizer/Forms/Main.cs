@@ -12,6 +12,7 @@ using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 // TODO: Comments
 // TODO: ADD libs etc till cut
@@ -40,6 +41,8 @@ namespace FFmpeg_Utilizer
 
         // Main's "global" has Internet
         private bool hasInternet = true;
+
+        public bool checkForUpdateButtonOverride = false;
 
         #region Software Initialization
 
@@ -102,7 +105,7 @@ namespace FFmpeg_Utilizer
                 M3U8MainPanel.Dispose();
                 Settings_NetPanel.Dispose();
                 UpdateMainPanel.Dispose();
-                notice.SetNotice("Network features disabled. No network connection detected.", NoticeModule.TypeNotice.Info);
+                notice.SetNotice("Network features are disabled. No active network connection detected.", NoticeModule.TypeNotice.Info);
             }
         }
 
@@ -113,7 +116,7 @@ namespace FFmpeg_Utilizer
         /// <param name="e"></param>
         private void Main_Load(object sender, EventArgs e)
         {
-            notice.SetNotice("This software works best with the 'Libx264' Video Codec and 'AAC' Audio Codec library.", NoticeModule.TypeNotice.Info);
+            //notice.SetNotice("This software works best with the 'Libx264' Video Codec and 'AAC' Audio Codec library.", NoticeModule.TypeNotice.Info);
 
             // If we have determined we have internet; Check for updates.
             if (hasInternet)
@@ -147,12 +150,12 @@ namespace FFmpeg_Utilizer
             Core.ChangeTab(0);
 
             // If we are in debug, show the lower buttons to control the notice feature.
-#if DEBUG
-            Button1.Visible = true;
-            Button2.Visible = true;
-            Button3.Visible = true;
-            button4.Visible = true;
-#endif
+//#if DEBUG
+//            Button1.Visible = true;
+//            Button2.Visible = true;
+//            Button3.Visible = true;
+//            button4.Visible = true;
+//#endif
 
             #region Settings
 
@@ -532,7 +535,7 @@ namespace FFmpeg_Utilizer
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Update_CheckForUpdateButton_Click(object sender, EventArgs e) => updater.StartUpdateCheckAsync();
+        private void Update_CheckForUpdateButton_Click(object sender, EventArgs e) => updater.StartUpdateCheckAsync(true);
 
         /// <summary>
         /// Updates ffmpeg.
@@ -586,7 +589,7 @@ namespace FFmpeg_Utilizer
             settings.URIautoStart = Settings_URIServerAutoStart.Checked;
 
             settings.SaveSettings();
-            notice.SetNotice("Settings has been saved.", NoticeModule.TypeNotice.Success);
+            notice.SetNotice("Settings have been saved successfully.", NoticeModule.TypeNotice.Success);
         }
 
         /// <summary>
@@ -729,7 +732,7 @@ namespace FFmpeg_Utilizer
         {
             if (!File.Exists(settings.ffplayPath))
             {
-                notice.SetNotice("You need to specify a location of \"ffplay.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("You need to specify the location of \"ffplay.exe\" to enable this function.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -749,7 +752,7 @@ namespace FFmpeg_Utilizer
                     StartInfo =
                     {
                         FileName = settings.ffplayPath,
-                        Arguments = "\"" + Encoder_FilesList.SelectedItems[0].Text + "\" -autoexit",
+                        Arguments = " -ss 20 \"" + Encoder_FilesList.SelectedItems[0].Text + "\" -autoexit",
                         UseShellExecute = false
                     }
                 };
@@ -781,7 +784,7 @@ namespace FFmpeg_Utilizer
         {
             if (encodingProcessor.encodingInProcess)
             {
-                notice.SetNotice("Encoder is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("The encoder is currently processing. Adding or removing elements from the list is not allowed while the process is active.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -793,7 +796,7 @@ namespace FFmpeg_Utilizer
             //Get all files dropped by user over the control.
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-            //Detect if there was a directory. Use only directory.
+            //Detect if there was a directory. Use gather the files inside..
             if (Directory.Exists(files[0])) files = Directory.GetFiles(files[0]);
 
             //Add data to the listview.
@@ -813,7 +816,7 @@ namespace FFmpeg_Utilizer
 
             if (files.Length > Encoder_FilesList.Items.Count)
             {
-                notice.SetNotice("Some files has been filtered out since they were not an allowed extension.", NoticeModule.TypeNotice.Warning);
+                notice.SetNotice("Some files have been filtered out because their extensions are not allowed.", NoticeModule.TypeNotice.Warning);
             }
         }
 
@@ -837,12 +840,12 @@ namespace FFmpeg_Utilizer
             //Stop if there are no files or application to work with.
             if (!File.Exists(settings.ffmpegPath))
             {
-                notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("You need to specify the location of \"ffmpeg.exe\" to enable this function.", NoticeModule.TypeNotice.Error);
                 return;
             }
             if (Encoder_FilesList.Items.Count < 1 || Encoder_FilesList.Items?[0].Text == "Drag and drop a folder or multiple files here...")
             {
-                notice.SetNotice("The list of files to encode was empty. Drag files onto the list.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("The list of files to encode is empty. Drag a folder or files to the encoding table to add them.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -891,7 +894,7 @@ namespace FFmpeg_Utilizer
         {
             if (m3u8Processor.inProcess)
             {
-                notice.SetNotice("M3U8 is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("M3U8 is currently processing. You cannot add or remove items from the list while the process is active.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -907,7 +910,7 @@ namespace FFmpeg_Utilizer
         {
             if (!File.Exists(settings.ffplayPath))
             {
-                notice.SetNotice("You need to specify a location of \"ffplay.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("You need to specify the location of \"ffplay.exe\" to enable this function.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -927,7 +930,7 @@ namespace FFmpeg_Utilizer
                     StartInfo =
                     {
                         FileName = settings.ffplayPath,
-                        Arguments = "\"" + M3U8_listView.SelectedItems[0].SubItems[1].Text + "\" -autoexit",
+                        Arguments = "\"" + M3U8_listView.SelectedItems[0].SubItems[1].Text + "\" -hide_banner -loglevel error -autoexit",
                         UseShellExecute = false
                     }
                 };
@@ -998,12 +1001,12 @@ namespace FFmpeg_Utilizer
             //Stop if there are no files or application to work with.
             if (!File.Exists(settings.ffmpegPath))
             {
-                notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("You need to specify the location of \"ffmpeg.exe\" to enable this function.", NoticeModule.TypeNotice.Error);
                 return;
             }
             if (M3U8_listView.Items.Count < 1)
             {
-                notice.SetNotice("The list of files to encode was empty. Aborting.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("The list of files to encode is empty. Aborting process.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -1101,7 +1104,7 @@ namespace FFmpeg_Utilizer
         {
             if (cutProcessor.inProcess)
             {
-                notice.SetNotice("Cutting is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("Cutting is already in progress. You cannot add or remove items from the list while the process is active.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -1131,7 +1134,7 @@ namespace FFmpeg_Utilizer
         {
             if (cutProcessor.inProcess)
             {
-                notice.SetNotice("Cutting is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("Cutting is already in progress. You cannot add or remove items from the list while the process is active.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -1153,12 +1156,12 @@ namespace FFmpeg_Utilizer
             }
             if (!File.Exists(Cut_MediaInputTextbox.Text))
             {
-                notice.SetNotice("You have selected an input media that appears to not exist. Try again.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("You have selected an input media that appears to be missing. Please try again.", NoticeModule.TypeNotice.Error);
                 return;
             }
             if (Cut_listView.Items.Count < 1)
             {
-                notice.SetNotice("The list of timestamps to cut/encode was empty. Add timestamp(s).", NoticeModule.TypeNotice.Warning);
+                notice.SetNotice("The list of timestamps to cut/encode is empty. Please add timestamp(s).", NoticeModule.TypeNotice.Warning);
                 return;
             }
 
@@ -1213,7 +1216,7 @@ namespace FFmpeg_Utilizer
         {
             if (mergeProcessor.inProcess)
             {
-                notice.SetNotice("Merge is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("Merging is already in progress. You cannot add or remove items from the list while the process is active.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
@@ -1266,13 +1269,13 @@ namespace FFmpeg_Utilizer
         /// <param name="e"></param>
         private void Merge_StartButton_Click(object sender, EventArgs e)
         {
-            if (Merge_listView.Items[0].SubItems[1].Text == "Drag and drop a folder or multiple files here...")
+            if (Merge_listView.Items[0].SubItems[1].Text == "Drag and drop a folder or multiple files here to add them for processing.")
             {
-                notice.SetNotice("File list can not be empty. Drag files to merge onto the list.", NoticeModule.TypeNotice.Error);
+                notice.SetNotice("The file list cannot be empty. Drag files onto the list.", NoticeModule.TypeNotice.Error);
                 return;
             }
 
-            List<string> data = new List<string>() { "# This is the list, in order, from which the new file will generated from." };
+            List<string> data = new List<string>() { "# This is the list, in order, from which the new file will be generated." };
             foreach (ListViewItem item in Merge_listView.Items)
                 data.Add(item.SubItems[1].Text);
 
@@ -1353,11 +1356,7 @@ namespace FFmpeg_Utilizer
             Queue<TimeStamps> queue = new Queue<TimeStamps>();
             queue.Enqueue(new TimeStamps("00:00:00.000", "00:00:30.000", 0));
 
-            FileInfo file;
-            if (File.Exists(Cut_MediaInputTextbox.Text)) file = new FileInfo(Cut_MediaInputTextbox.Text);
-            else file = null;
-
-            CutArgument args = new CutArgument(file, Cut_OutputDirectoryBox.Text, queue, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Cut_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Cut_AudioCodecBox.Text, true), Cut_CRFBox.Text, (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Cut_PresetBox.Text, true));
+            CutArgument args = new CutArgument(null, Core.GetSubfolder(Core.SubFolders.Output) + "output.mp4", queue, (Libs.VCodec)Enum.Parse(typeof(Libs.VCodec), Cut_VideoCodecBox.Text, true), (Libs.ACodec)Enum.Parse(typeof(Libs.ACodec), Cut_AudioCodecBox.Text, true), Cut_CRFBox.Text, (Libs.Preset)Enum.Parse(typeof(Libs.Preset), Cut_PresetBox.Text, true));
 
             Argument_PreviewBox.Text = args.ExecuteArgs();
         }
@@ -1367,14 +1366,14 @@ namespace FFmpeg_Utilizer
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Argument_ShowM3U8Button_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "-y -i \"http://whateverurl.com/stuff.m3u8\" -acodec copy -vcodec copy -absf aac_adtstoasc \"c:\\outputfolder\\outputfile.mp4\"";
+        private void Argument_ShowM3U8Button_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = $"-y -i \"http://whateverurl.com/stuff.m3u8\" -c copy \"{Core.GetSubfolder(Core.SubFolders.Output)}outputfile.mp4\"";
 
         /// <summary>
         /// Builds the Merge string
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Argument_ShowMergeButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "-y -f concat -safe 0 -i \"C:\\filelist.txt\" \"C:\\outputfolder\\OutputFileName.extension\"";
+        private void Argument_ShowMergeButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = $"-y -f concat -safe 0 -i \"C:\\filelist.txt\" \"{Core.GetSubfolder(Core.SubFolders.Output)}OutputFileName.extension\"";
 
         /// <summary>
         /// Run custom argument
@@ -1389,6 +1388,8 @@ namespace FFmpeg_Utilizer
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Argument_ClearButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = "";
+
+        private void Argument_ShowRecordStreamTimerButton_Click(object sender, EventArgs e) => Argument_PreviewBox.Text = $"-y -i \"URL_to.m3u8\" -c copy -t 00:59:00 \"{Core.GetSubfolder(Core.SubFolders.Output)}local file.mp4\"";
 
         #endregion Argument
 
@@ -1410,6 +1411,31 @@ namespace FFmpeg_Utilizer
                     {
                         hitTest.Item.SubItems[0].Text = form.NameField.Text;
                         hitTest.Item.SubItems[1].Text = form.URLField.Text;
+                    }
+                }
+            }
+        }
+
+        private void M3U8_button_clear_Click(object sender, EventArgs e)
+        {
+            if (m3u8Processor.inProcess)
+            {
+                notice.SetNotice("M3U8 is already processing. You cannot add or remove elements of the list while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            M3U8_listView.Items.Clear();
+        }
+
+        private void Encoder_FilesList_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                if (Encoder_FilesList.SelectedItems.Count > 0)
+                {
+                    foreach (ListViewItem item in Encoder_FilesList.SelectedItems)
+                    {
+                        Encoder_FilesList.Items.Remove(item);
                     }
                 }
             }

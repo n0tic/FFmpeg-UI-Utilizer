@@ -29,15 +29,80 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-            "0",
-            "Drag & drop here..."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "0",
+            "Drag & drop here..."}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
+            this.M3U8MainPanel = new System.Windows.Forms.Panel();
+            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
+            this.M3U8_button_clear = new System.Windows.Forms.Button();
+            this.M3U8_PlayButton = new System.Windows.Forms.Button();
+            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_listView = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.M3U8_OutputButton = new System.Windows.Forms.Button();
+            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
+            this.M3U8_StartButton = new System.Windows.Forms.Button();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.EncoderMainPanel = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
+            this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
+            this.Encoder_StartEncodingProcessButton = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.Encoder_FilesList = new System.Windows.Forms.ListView();
+            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Encoder_PlayButton = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Encoder_AudioCodecBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_ResolutionBox = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Encoder_TunerBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_VideoCodecBox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.UpdateMainPanel = new System.Windows.Forms.Panel();
             this.panel94 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
@@ -73,6 +138,19 @@
             this.label79 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
+            this.ArgumentMainPanel = new System.Windows.Forms.Panel();
+            this.Argument_ShowRecordStreamTimerButton = new System.Windows.Forms.Button();
+            this.Argument_ClearButton = new System.Windows.Forms.Button();
+            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
+            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
+            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
+            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
+            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
+            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel45 = new System.Windows.Forms.Panel();
             this.SettingsMainPanel = new System.Windows.Forms.Panel();
             this.Settings_NetPanel = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -130,40 +208,6 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.ArgumentMainPanel = new System.Windows.Forms.Panel();
-            this.Argument_ClearButton = new System.Windows.Forms.Button();
-            this.Argument_ShowM3U8Button = new System.Windows.Forms.Button();
-            this.Argument_ShowMergeButton = new System.Windows.Forms.Button();
-            this.Argument_ShowCutButton = new System.Windows.Forms.Button();
-            this.Argument_RunArgumentButton = new System.Windows.Forms.Button();
-            this.Argument_ShowEncodeButton = new System.Windows.Forms.Button();
-            this.Argument_PreviewBox = new System.Windows.Forms.TextBox();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.M3U8MainPanel = new System.Windows.Forms.Panel();
-            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
-            this.M3U8_PlayButton = new System.Windows.Forms.Button();
-            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_listView = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.M3U8_OutputButton = new System.Windows.Forms.Button();
-            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
-            this.M3U8_StartButton = new System.Windows.Forms.Button();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
             this.MergeMainPanel = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
@@ -260,48 +304,6 @@
             this.label68 = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
             this.panel69 = new System.Windows.Forms.Panel();
-            this.EncoderMainPanel = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
-            this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
-            this.Encoder_StartEncodingProcessButton = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.Encoder_FilesList = new System.Windows.Forms.ListView();
-            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Encoder_PlayButton = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Encoder_AudioCodecBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_ResolutionBox = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Encoder_TunerBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_VideoCodecBox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.NoticePanel = new System.Windows.Forms.Panel();
             this.NoticeCloseButton = new System.Windows.Forms.Label();
             this.NoticeTextLabel = new System.Windows.Forms.Label();
@@ -384,8 +386,20 @@
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panel98 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
+            this.M3U8MainPanel.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel51.SuspendLayout();
+            this.EncoderMainPanel.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel47.SuspendLayout();
             this.UpdateMainPanel.SuspendLayout();
             this.panel94.SuspendLayout();
             this.panel96.SuspendLayout();
@@ -403,6 +417,8 @@
             this.panel92.SuspendLayout();
             this.panel93.SuspendLayout();
             this.panel75.SuspendLayout();
+            this.ArgumentMainPanel.SuspendLayout();
+            this.panel41.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.Settings_NetPanel.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -416,17 +432,12 @@
             this.panel82.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).BeginInit();
             this.panel83.SuspendLayout();
+            this.panel84.SuspendLayout();
             this.panel44.SuspendLayout();
             this.panel78.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.ArgumentMainPanel.SuspendLayout();
-            this.panel41.SuspendLayout();
-            this.M3U8MainPanel.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel51.SuspendLayout();
             this.MergeMainPanel.SuspendLayout();
             this.panel54.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -454,12 +465,6 @@
             this.panel65.SuspendLayout();
             this.panel66.SuspendLayout();
             this.panel67.SuspendLayout();
-            this.EncoderMainPanel.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.panel47.SuspendLayout();
             this.NoticePanel.SuspendLayout();
             this.MenuPanel.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -496,6 +501,7 @@
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // FullPanel
@@ -513,18 +519,793 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
+            this.panel95.Controls.Add(this.SettingsMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
+            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
-            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
+            // 
+            // M3U8MainPanel
+            // 
+            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8MainPanel.Controls.Add(this.panel98);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_button_clear);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
+            this.M3U8MainPanel.Controls.Add(this.panel49);
+            this.M3U8MainPanel.Controls.Add(this.panel50);
+            this.M3U8MainPanel.Controls.Add(this.panel53);
+            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.M3U8MainPanel.Name = "M3U8MainPanel";
+            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
+            this.M3U8MainPanel.TabIndex = 8;
+            // 
+            // M3U8_HideConsoleCheckbox
+            // 
+            this.M3U8_HideConsoleCheckbox.AutoSize = true;
+            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(381, 56);
+            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
+            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
+            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
+            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
+            this.toolTip.SetToolTip(this.M3U8_HideConsoleCheckbox, "Hide ffmpeg encoder window from showing");
+            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // M3U8_button_clear
+            // 
+            this.M3U8_button_clear.BackColor = System.Drawing.Color.White;
+            this.M3U8_button_clear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_button_clear.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_button_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_button_clear.Location = new System.Drawing.Point(280, 47);
+            this.M3U8_button_clear.Name = "M3U8_button_clear";
+            this.M3U8_button_clear.Size = new System.Drawing.Size(93, 24);
+            this.M3U8_button_clear.TabIndex = 80;
+            this.M3U8_button_clear.Text = "Clear List";
+            this.toolTip.SetToolTip(this.M3U8_button_clear, "Clear the list");
+            this.M3U8_button_clear.UseVisualStyleBackColor = false;
+            this.M3U8_button_clear.Click += new System.EventHandler(this.M3U8_button_clear_Click);
+            // 
+            // M3U8_PlayButton
+            // 
+            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
+            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(804, 47);
+            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(105, 24);
+            this.M3U8_PlayButton.TabIndex = 79;
+            this.M3U8_PlayButton.Text = "Play Selected ▶";
+            this.toolTip.SetToolTip(this.M3U8_PlayButton, "Play selected HLS/M3U8");
+            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
+            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            // 
+            // M3U8_RemoveM3U8Button
+            // 
+            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
+            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
+            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_RemoveM3U8Button.TabIndex = 72;
+            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
+            this.toolTip.SetToolTip(this.M3U8_RemoveM3U8Button, "Remove selected item from the list");
+            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            // 
+            // M3U8_AddM3U8Button
+            // 
+            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
+            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
+            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_AddM3U8Button.TabIndex = 71;
+            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
+            this.toolTip.SetToolTip(this.M3U8_AddM3U8Button, "Manually add HLS/M3U8 information");
+            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
+            // 
+            // M3U8_listView
+            // 
+            this.M3U8_listView.AllowDrop = true;
+            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader12});
+            this.M3U8_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.M3U8_listView.FullRowSelect = true;
+            this.M3U8_listView.GridLines = true;
+            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.M3U8_listView.HideSelection = false;
+            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
+            this.M3U8_listView.MultiSelect = false;
+            this.M3U8_listView.Name = "M3U8_listView";
+            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
+            this.M3U8_listView.TabIndex = 70;
+            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
+            this.M3U8_listView.View = System.Windows.Forms.View.Details;
+            this.M3U8_listView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.M3U8_listView_MouseDoubleClick);
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Name";
+            this.columnHeader7.Width = 130;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "URL";
+            this.columnHeader8.Width = 655;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Status";
+            this.columnHeader12.Width = 70;
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.label45);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel49.Location = new System.Drawing.Point(0, 0);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(919, 44);
+            this.panel49.TabIndex = 8;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label45.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label45.Location = new System.Drawing.Point(22, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(897, 44);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "M3U8";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
+            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
+            this.panel50.Controls.Add(this.M3U8_OutputButton);
+            this.panel50.Controls.Add(this.M3U8_ProgressBar);
+            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
+            this.panel50.Controls.Add(this.M3U8_StartButton);
+            this.panel50.Controls.Add(this.panel51);
+            this.panel50.Location = new System.Drawing.Point(27, 377);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(882, 106);
+            this.panel50.TabIndex = 2;
+            // 
+            // M3U8_DefaultOutputButton
+            // 
+            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(738, 44);
+            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
+            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_DefaultOutputButton.TabIndex = 65;
+            this.M3U8_DefaultOutputButton.Text = "✓";
+            this.toolTip.SetToolTip(this.M3U8_DefaultOutputButton, "Reset to default output folder");
+            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
+            // 
+            // M3U8_OpenDirectoryButton
+            // 
+            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(713, 44);
+            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
+            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_OpenDirectoryButton.TabIndex = 64;
+            this.M3U8_OpenDirectoryButton.Text = "▶";
+            this.toolTip.SetToolTip(this.M3U8_OpenDirectoryButton, "Open output folder");
+            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
+            // 
+            // M3U8_OutputButton
+            // 
+            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_OutputButton.Location = new System.Drawing.Point(763, 44);
+            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
+            this.M3U8_OutputButton.Size = new System.Drawing.Size(116, 23);
+            this.M3U8_OutputButton.TabIndex = 25;
+            this.M3U8_OutputButton.Text = "Set Output Folder";
+            this.toolTip.SetToolTip(this.M3U8_OutputButton, "Change output folder");
+            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
+            // 
+            // M3U8_ProgressBar
+            // 
+            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
+            this.M3U8_ProgressBar.Size = new System.Drawing.Size(765, 20);
+            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.M3U8_ProgressBar.TabIndex = 24;
+            // 
+            // M3U8_OutputFolderTextbox
+            // 
+            this.M3U8_OutputFolderTextbox.Enabled = false;
+            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
+            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(704, 23);
+            this.M3U8_OutputFolderTextbox.TabIndex = 23;
+            // 
+            // M3U8_StartButton
+            // 
+            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_StartButton.Location = new System.Drawing.Point(774, 73);
+            this.M3U8_StartButton.Name = "M3U8_StartButton";
+            this.M3U8_StartButton.Size = new System.Drawing.Size(105, 23);
+            this.M3U8_StartButton.TabIndex = 22;
+            this.M3U8_StartButton.Text = "Start M3U8";
+            this.toolTip.SetToolTip(this.M3U8_StartButton, "Start processing the HLS/M3U8 list");
+            this.M3U8_StartButton.UseVisualStyleBackColor = false;
+            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel51.Controls.Add(this.label46);
+            this.panel51.Controls.Add(this.panel52);
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel51.Location = new System.Drawing.Point(0, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(882, 38);
+            this.panel51.TabIndex = 3;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label46.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(55, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(447, 38);
+            this.label46.TabIndex = 6;
+            this.label46.Text = "Output";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel52
+            // 
+            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel52.Location = new System.Drawing.Point(0, 0);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(55, 38);
+            this.panel52.TabIndex = 0;
+            // 
+            // panel53
+            // 
+            this.panel53.Location = new System.Drawing.Point(719, 495);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(200, 73);
+            this.panel53.TabIndex = 1;
+            // 
+            // EncoderMainPanel
+            // 
+            this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.EncoderMainPanel.Controls.Add(this.panel13);
+            this.EncoderMainPanel.Controls.Add(this.panel6);
+            this.EncoderMainPanel.Controls.Add(this.panel23);
+            this.EncoderMainPanel.Controls.Add(this.panel37);
+            this.EncoderMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EncoderMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.EncoderMainPanel.Name = "EncoderMainPanel";
+            this.EncoderMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.EncoderMainPanel.TabIndex = 5;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label3);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(919, 44);
+            this.panel13.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label3.Location = new System.Drawing.Point(22, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(897, 44);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "ENCODER";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
+            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
+            this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
+            this.panel6.Controls.Add(this.Encoder_ProgressBar);
+            this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
+            this.panel6.Controls.Add(this.Encoder_StartEncodingProcessButton);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Location = new System.Drawing.Point(27, 377);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(882, 106);
+            this.panel6.TabIndex = 2;
+            // 
+            // Encoder_DefaultOutputButton
+            // 
+            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(737, 44);
+            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
+            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_DefaultOutputButton.TabIndex = 60;
+            this.Encoder_DefaultOutputButton.Text = "✓";
+            this.toolTip.SetToolTip(this.Encoder_DefaultOutputButton, "Reset to default output folder");
+            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
+            // 
+            // Encoder_OpenDirectoryButton
+            // 
+            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(713, 44);
+            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
+            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_OpenDirectoryButton.TabIndex = 61;
+            this.Encoder_OpenDirectoryButton.Text = "▶";
+            this.toolTip.SetToolTip(this.Encoder_OpenDirectoryButton, "Open output folder");
+            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
+            // 
+            // Encoder_OutputFolderButton
+            // 
+            this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(762, 44);
+            this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
+            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(117, 23);
+            this.Encoder_OutputFolderButton.TabIndex = 25;
+            this.Encoder_OutputFolderButton.Text = "Set Output Folder";
+            this.toolTip.SetToolTip(this.Encoder_OutputFolderButton, "Change output folder");
+            this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
+            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
+            // 
+            // Encoder_ProgressBar
+            // 
+            this.Encoder_ProgressBar.Location = new System.Drawing.Point(6, 75);
+            this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
+            this.Encoder_ProgressBar.Size = new System.Drawing.Size(762, 20);
+            this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Encoder_ProgressBar.TabIndex = 24;
+            this.toolTip.SetToolTip(this.Encoder_ProgressBar, "Total progress indicator");
+            // 
+            // Encoder_OutputFolderTextBox
+            // 
+            this.Encoder_OutputFolderTextBox.Enabled = false;
+            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(6, 45);
+            this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
+            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(701, 23);
+            this.Encoder_OutputFolderTextBox.TabIndex = 23;
+            this.toolTip.SetToolTip(this.Encoder_OutputFolderTextBox, "Output folder path");
+            // 
+            // Encoder_StartEncodingProcessButton
+            // 
+            this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(774, 73);
+            this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
+            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(105, 23);
+            this.Encoder_StartEncodingProcessButton.TabIndex = 22;
+            this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
+            this.toolTip.SetToolTip(this.Encoder_StartEncodingProcessButton, "Start processing the encoding list");
+            this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
+            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel9.Controls.Add(this.label2);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(882, 38);
+            this.panel9.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(55, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(447, 38);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Output";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(55, 38);
+            this.panel10.TabIndex = 0;
+            // 
+            // panel23
+            // 
+            this.panel23.Location = new System.Drawing.Point(719, 495);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(200, 73);
+            this.panel23.TabIndex = 1;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.Controls.Add(this.Encoder_FilesList);
+            this.panel37.Controls.Add(this.Encoder_PlayButton);
+            this.panel37.Controls.Add(this.label14);
+            this.panel37.Controls.Add(this.panel2);
+            this.panel37.Controls.Add(this.panel1);
+            this.panel37.Controls.Add(this.label7);
+            this.panel37.Controls.Add(this.Encoder_ExtensionBox);
+            this.panel37.Controls.Add(this.label6);
+            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
+            this.panel37.Controls.Add(this.label5);
+            this.panel37.Controls.Add(this.Encoder_FPSBox);
+            this.panel37.Controls.Add(this.label32);
+            this.panel37.Controls.Add(this.panel47);
+            this.panel37.Controls.Add(this.label4);
+            this.panel37.Controls.Add(this.Encoder_AudioCodecBox);
+            this.panel37.Controls.Add(this.Encoder_ResolutionBox);
+            this.panel37.Controls.Add(this.label13);
+            this.panel37.Controls.Add(this.Encoder_TunerBox);
+            this.panel37.Controls.Add(this.Encoder_VideoCodecBox);
+            this.panel37.Controls.Add(this.label12);
+            this.panel37.Controls.Add(this.label9);
+            this.panel37.Controls.Add(this.Encoder_PresetsBox);
+            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
+            this.panel37.Location = new System.Drawing.Point(27, 50);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(882, 314);
+            this.panel37.TabIndex = 54;
+            // 
+            // Encoder_FilesList
+            // 
+            this.Encoder_FilesList.AllowDrop = true;
+            this.Encoder_FilesList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnHeader1,
+            this.ColumnHeader2});
+            this.Encoder_FilesList.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_FilesList.FullRowSelect = true;
+            this.Encoder_FilesList.GridLines = true;
+            this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Encoder_FilesList.HideSelection = false;
+            this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
+            this.Encoder_FilesList.MultiSelect = false;
+            this.Encoder_FilesList.Name = "Encoder_FilesList";
+            this.Encoder_FilesList.Size = new System.Drawing.Size(870, 213);
+            this.Encoder_FilesList.TabIndex = 43;
+            this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
+            this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
+            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
+            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
+            this.Encoder_FilesList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Encoder_FilesList_KeyDown);
+            // 
+            // ColumnHeader1
+            // 
+            this.ColumnHeader1.Text = "File";
+            this.ColumnHeader1.Width = 765;
+            // 
+            // ColumnHeader2
+            // 
+            this.ColumnHeader2.Text = "Status";
+            this.ColumnHeader2.Width = 80;
+            // 
+            // Encoder_PlayButton
+            // 
+            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_PlayButton.Location = new System.Drawing.Point(777, 66);
+            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
+            this.Encoder_PlayButton.Size = new System.Drawing.Size(99, 26);
+            this.Encoder_PlayButton.TabIndex = 53;
+            this.Encoder_PlayButton.Text = "Play Selected ▶";
+            this.toolTip.SetToolTip(this.Encoder_PlayButton, "Preview selected file. ESC to exit/close.");
+            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
+            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(710, 39);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 16);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "Overrides";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip.SetToolTip(this.label14, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
+        "ave default if you are unsure and let ffmpeg decide.");
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.panel2.Location = new System.Drawing.Point(438, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 20);
+            this.panel2.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.panel1.Location = new System.Drawing.Point(438, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(270, 1);
+            this.panel1.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(361, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 16);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Extension";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_ExtensionBox
+            // 
+            this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_ExtensionBox.FormattingEnabled = true;
+            this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
+            this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
+            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_ExtensionBox.TabIndex = 38;
+            this.toolTip.SetToolTip(this.Encoder_ExtensionBox, "Set a prefered output extension");
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(0, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 15);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Auto Overwrite";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_OverwriteBox
+            // 
+            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_OverwriteBox.FormattingEnabled = true;
+            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
+            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
+            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_OverwriteBox.TabIndex = 48;
+            this.toolTip.SetToolTip(this.Encoder_OverwriteBox, "Set auto overwrite setting");
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(622, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 16);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "FPS/Frames";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_FPSBox
+            // 
+            this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_FPSBox.FormattingEnabled = true;
+            this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
+            this.Encoder_FPSBox.Name = "Encoder_FPSBox";
+            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_FPSBox.TabIndex = 46;
+            this.toolTip.SetToolTip(this.Encoder_FPSBox, "Set FPS preset setting");
+            // 
+            // label32
+            // 
+            this.label32.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label32.Location = new System.Drawing.Point(535, 50);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(68, 16);
+            this.label32.TabIndex = 45;
+            this.label32.Text = "Resolution";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel47.Controls.Add(this.label39);
+            this.panel47.Controls.Add(this.panel48);
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel47.Location = new System.Drawing.Point(0, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(882, 38);
+            this.panel47.TabIndex = 3;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label39.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label39.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(55, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(447, 38);
+            this.label39.TabIndex = 6;
+            this.label39.Text = "Options";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel48
+            // 
+            this.panel48.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel48.Location = new System.Drawing.Point(0, 0);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(55, 38);
+            this.panel48.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(446, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 16);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Tuner";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_AudioCodecBox
+            // 
+            this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_AudioCodecBox.FormattingEnabled = true;
+            this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
+            this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
+            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_AudioCodecBox.TabIndex = 35;
+            this.toolTip.SetToolTip(this.Encoder_AudioCodecBox, "Set audio encoder library setting");
+            // 
+            // Encoder_ResolutionBox
+            // 
+            this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_ResolutionBox.FormattingEnabled = true;
+            this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
+            this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
+            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_ResolutionBox.TabIndex = 44;
+            this.toolTip.SetToolTip(this.Encoder_ResolutionBox, "Set resolution preset setting");
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(90, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 16);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "Video Encoder";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_TunerBox
+            // 
+            this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_TunerBox.FormattingEnabled = true;
+            this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
+            this.Encoder_TunerBox.Name = "Encoder_TunerBox";
+            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_TunerBox.TabIndex = 44;
+            this.toolTip.SetToolTip(this.Encoder_TunerBox, "Set optional tuner setting for specific type");
+            // 
+            // Encoder_VideoCodecBox
+            // 
+            this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_VideoCodecBox.FormattingEnabled = true;
+            this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
+            this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
+            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_VideoCodecBox.TabIndex = 34;
+            this.toolTip.SetToolTip(this.Encoder_VideoCodecBox, "Set encoder library setting");
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(177, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 16);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Audio Encoder";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(267, 50);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 16);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Quality/Speed";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_PresetsBox
+            // 
+            this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_PresetsBox.FormattingEnabled = true;
+            this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
+            this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
+            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_PresetsBox.TabIndex = 40;
+            this.toolTip.SetToolTip(this.Encoder_PresetsBox, "Set quality/compression ratio preset setting");
+            // 
+            // Encoder_HideConsoleToggle
+            // 
+            this.Encoder_HideConsoleToggle.AutoSize = true;
+            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(699, 76);
+            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
+            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
+            this.Encoder_HideConsoleToggle.TabIndex = 61;
+            this.Encoder_HideConsoleToggle.Text = "Hide Console";
+            this.toolTip.SetToolTip(this.Encoder_HideConsoleToggle, "Set ffmpeg window hidden or visible");
+            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
             // 
             // UpdateMainPanel
             // 
@@ -548,7 +1329,7 @@
             this.panel94.Controls.Add(this.panel96);
             this.panel94.Location = new System.Drawing.Point(27, 306);
             this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(882, 141);
+            this.panel94.Size = new System.Drawing.Size(882, 159);
             this.panel94.TabIndex = 29;
             // 
             // label40
@@ -556,7 +1337,7 @@
             this.label40.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
             this.label40.Location = new System.Drawing.Point(6, 41);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(870, 95);
+            this.label40.Size = new System.Drawing.Size(870, 115);
             this.label40.TabIndex = 4;
             this.label40.Text = resources.GetString("label40.Text");
             // 
@@ -619,20 +1400,23 @@
             // 
             // SpeedLabel
             // 
+            this.SpeedLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SpeedLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SpeedLabel.Location = new System.Drawing.Point(794, 49);
+            this.SpeedLabel.Location = new System.Drawing.Point(794, 44);
             this.SpeedLabel.Name = "SpeedLabel";
             this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SpeedLabel.Size = new System.Drawing.Size(82, 16);
+            this.SpeedLabel.Size = new System.Drawing.Size(82, 25);
             this.SpeedLabel.TabIndex = 28;
+            this.SpeedLabel.Text = "Bytes/s: 0";
             this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip.SetToolTip(this.SpeedLabel, "Current download speed");
             // 
             // Update_ProgressBar
             // 
             this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
             this.Update_ProgressBar.Name = "Update_ProgressBar";
-            this.Update_ProgressBar.Size = new System.Drawing.Size(783, 25);
+            this.Update_ProgressBar.Size = new System.Drawing.Size(779, 25);
             this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.Update_ProgressBar.TabIndex = 27;
             // 
@@ -760,6 +1544,7 @@
             this.Update_DownloadButton.Size = new System.Drawing.Size(296, 26);
             this.Update_DownloadButton.TabIndex = 71;
             this.Update_DownloadButton.Text = "Loading...";
+            this.toolTip.SetToolTip(this.Update_DownloadButton, "Automatically update ffmpeg on your system");
             this.Update_DownloadButton.UseVisualStyleBackColor = false;
             this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
             // 
@@ -908,6 +1693,180 @@
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(200, 73);
             this.panel77.TabIndex = 1;
+            // 
+            // ArgumentMainPanel
+            // 
+            this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowRecordStreamTimerButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ClearButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
+            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
+            this.ArgumentMainPanel.Controls.Add(this.panel41);
+            this.ArgumentMainPanel.Controls.Add(this.panel45);
+            this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.ArgumentMainPanel.Name = "ArgumentMainPanel";
+            this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.ArgumentMainPanel.TabIndex = 7;
+            // 
+            // Argument_ShowRecordStreamTimerButton
+            // 
+            this.Argument_ShowRecordStreamTimerButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowRecordStreamTimerButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowRecordStreamTimerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowRecordStreamTimerButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowRecordStreamTimerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowRecordStreamTimerButton.Location = new System.Drawing.Point(389, 47);
+            this.Argument_ShowRecordStreamTimerButton.Name = "Argument_ShowRecordStreamTimerButton";
+            this.Argument_ShowRecordStreamTimerButton.Size = new System.Drawing.Size(139, 24);
+            this.Argument_ShowRecordStreamTimerButton.TabIndex = 76;
+            this.Argument_ShowRecordStreamTimerButton.Text = "Record Stream Timer";
+            this.Argument_ShowRecordStreamTimerButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowRecordStreamTimerButton.Click += new System.EventHandler(this.Argument_ShowRecordStreamTimerButton_Click);
+            // 
+            // Argument_ClearButton
+            // 
+            this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ClearButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ClearButton.Location = new System.Drawing.Point(535, 47);
+            this.Argument_ClearButton.Name = "Argument_ClearButton";
+            this.Argument_ClearButton.Size = new System.Drawing.Size(76, 24);
+            this.Argument_ClearButton.TabIndex = 75;
+            this.Argument_ClearButton.Text = "Clear Args";
+            this.Argument_ClearButton.UseVisualStyleBackColor = false;
+            this.Argument_ClearButton.Click += new System.EventHandler(this.Argument_ClearButton_Click);
+            // 
+            // Argument_ShowM3U8Button
+            // 
+            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(294, 47);
+            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
+            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(89, 24);
+            this.Argument_ShowM3U8Button.TabIndex = 74;
+            this.Argument_ShowM3U8Button.Text = "Show M3U8";
+            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
+            this.Argument_ShowM3U8Button.Click += new System.EventHandler(this.Argument_ShowM3U8Button_Click);
+            // 
+            // Argument_ShowMergeButton
+            // 
+            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(200, 47);
+            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
+            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(88, 24);
+            this.Argument_ShowMergeButton.TabIndex = 73;
+            this.Argument_ShowMergeButton.Text = "Show Merge";
+            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowMergeButton.Click += new System.EventHandler(this.Argument_ShowMergeButton_Click);
+            // 
+            // Argument_ShowCutButton
+            // 
+            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowCutButton.Location = new System.Drawing.Point(126, 47);
+            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
+            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
+            this.Argument_ShowCutButton.TabIndex = 72;
+            this.Argument_ShowCutButton.Text = "Show Cut";
+            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowCutButton.Click += new System.EventHandler(this.Argument_ShowCutButton_Click);
+            // 
+            // Argument_RunArgumentButton
+            // 
+            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
+            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
+            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
+            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
+            this.Argument_RunArgumentButton.TabIndex = 71;
+            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
+            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
+            this.Argument_RunArgumentButton.Click += new System.EventHandler(this.Argument_RunArgumentButton_Click);
+            // 
+            // Argument_ShowEncodeButton
+            // 
+            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
+            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
+            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
+            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(93, 24);
+            this.Argument_ShowEncodeButton.TabIndex = 70;
+            this.Argument_ShowEncodeButton.Text = "Show Encode";
+            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
+            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
+            // 
+            // Argument_PreviewBox
+            // 
+            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
+            this.Argument_PreviewBox.Multiline = true;
+            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
+            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
+            this.Argument_PreviewBox.TabIndex = 69;
+            // 
+            // panel41
+            // 
+            this.panel41.Controls.Add(this.label38);
+            this.panel41.Controls.Add(this.label34);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel41.Location = new System.Drawing.Point(0, 0);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(919, 44);
+            this.panel41.TabIndex = 8;
+            // 
+            // label38
+            // 
+            this.label38.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label38.Location = new System.Drawing.Point(116, 15);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(296, 25);
+            this.label38.TabIndex = 88;
+            this.label38.Text = "You can freely write your own arguments here. (Without FFmpeg path)";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label34.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label34.Location = new System.Drawing.Point(22, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(897, 44);
+            this.label34.TabIndex = 7;
+            this.label34.Text = "Argument";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel45
+            // 
+            this.panel45.Location = new System.Drawing.Point(719, 495);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(200, 73);
+            this.panel45.TabIndex = 1;
             // 
             // SettingsMainPanel
             // 
@@ -1144,6 +2103,7 @@
             this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(68, 16);
             this.Settings_URIServerAutoStart.TabIndex = 71;
             this.Settings_URIServerAutoStart.Text = "Auto Start";
+            this.toolTip.SetToolTip(this.Settings_URIServerAutoStart, "Set autostart enabled/disabled on startup");
             this.Settings_URIServerAutoStart.UseVisualStyleBackColor = true;
             // 
             // Settings_URIServerPort
@@ -1163,6 +2123,7 @@
             this.Settings_URIServerPort.Name = "Settings_URIServerPort";
             this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 20);
             this.Settings_URIServerPort.TabIndex = 70;
+            this.toolTip.SetToolTip(this.Settings_URIServerPort, "URI Listener port");
             this.Settings_URIServerPort.Value = new decimal(new int[] {
             288,
             0,
@@ -1176,6 +2137,7 @@
             this.Settings_URIServerIndicator.Name = "Settings_URIServerIndicator";
             this.Settings_URIServerIndicator.Size = new System.Drawing.Size(20, 20);
             this.Settings_URIServerIndicator.TabIndex = 69;
+            this.toolTip.SetToolTip(this.Settings_URIServerIndicator, "URI Listener status indicator");
             // 
             // Settings_URIServerCheckbox
             // 
@@ -1186,6 +2148,7 @@
             this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(51, 16);
             this.Settings_URIServerCheckbox.TabIndex = 68;
             this.Settings_URIServerCheckbox.Text = "Active";
+            this.toolTip.SetToolTip(this.Settings_URIServerCheckbox, "Set URI Listener active/disabled");
             this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
             this.Settings_URIServerCheckbox.CheckedChanged += new System.EventHandler(this.Settings_URIServerCheckbox_CheckedChanged);
             // 
@@ -1216,6 +2179,7 @@
             // 
             // panel84
             // 
+            this.panel84.Controls.Add(this.pictureBox10);
             this.panel84.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel84.Location = new System.Drawing.Point(0, 0);
             this.panel84.Name = "panel84";
@@ -1249,6 +2213,7 @@
             this.Settings_OverwriteDropdown.Name = "Settings_OverwriteDropdown";
             this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_OverwriteDropdown.TabIndex = 67;
+            this.toolTip.SetToolTip(this.Settings_OverwriteDropdown, "Set default file overwrite setting");
             // 
             // label21
             // 
@@ -1302,6 +2267,7 @@
             this.Settings_VideoCodecDropdown.Name = "Settings_VideoCodecDropdown";
             this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_VideoCodecDropdown.TabIndex = 61;
+            this.toolTip.SetToolTip(this.Settings_VideoCodecDropdown, "Set default encoder setting");
             // 
             // Settings_HideConsoleCheckbox
             // 
@@ -1312,6 +2278,7 @@
             this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
             this.Settings_HideConsoleCheckbox.TabIndex = 60;
             this.Settings_HideConsoleCheckbox.Text = "Hide Console";
+            this.toolTip.SetToolTip(this.Settings_HideConsoleCheckbox, "Set default ffmpeg window behaviour");
             this.Settings_HideConsoleCheckbox.UseVisualStyleBackColor = true;
             // 
             // label30
@@ -1343,6 +2310,7 @@
             this.Settings_QualityDropdown.Name = "Settings_QualityDropdown";
             this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_QualityDropdown.TabIndex = 65;
+            this.toolTip.SetToolTip(this.Settings_QualityDropdown, "Set default quality preset setting");
             // 
             // Settings_AudioCodecDropdown
             // 
@@ -1353,6 +2321,7 @@
             this.Settings_AudioCodecDropdown.Name = "Settings_AudioCodecDropdown";
             this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 21);
             this.Settings_AudioCodecDropdown.TabIndex = 63;
+            this.toolTip.SetToolTip(this.Settings_AudioCodecDropdown, "Set default audio encoder setting");
             // 
             // label15
             // 
@@ -1392,6 +2361,7 @@
             this.Settings_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_OpenDirectoryButton.TabIndex = 60;
             this.Settings_OpenDirectoryButton.Text = "▶";
+            this.toolTip.SetToolTip(this.Settings_OpenDirectoryButton, "Open output folder");
             this.Settings_OpenDirectoryButton.UseVisualStyleBackColor = false;
             this.Settings_OpenDirectoryButton.Click += new System.EventHandler(this.Settings_OpenDirectoryButton_Click);
             // 
@@ -1415,6 +2385,7 @@
             this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(153, 23);
             this.Settings_DefaultOutputButton.TabIndex = 55;
             this.Settings_DefaultOutputButton.Text = "Default Output Folder";
+            this.toolTip.SetToolTip(this.Settings_DefaultOutputButton, "Manually set default output folder for all encoding processes");
             this.Settings_DefaultOutputButton.UseVisualStyleBackColor = false;
             this.Settings_DefaultOutputButton.Click += new System.EventHandler(this.Settings_DefaultOutputButton_Click);
             // 
@@ -1471,6 +2442,7 @@
             this.Settings_AutoDefaultOutputButton.Size = new System.Drawing.Size(19, 23);
             this.Settings_AutoDefaultOutputButton.TabIndex = 59;
             this.Settings_AutoDefaultOutputButton.Text = "✓";
+            this.toolTip.SetToolTip(this.Settings_AutoDefaultOutputButton, "Reset to default output folder location");
             this.Settings_AutoDefaultOutputButton.UseVisualStyleBackColor = false;
             this.Settings_AutoDefaultOutputButton.Click += new System.EventHandler(this.Settings_AutoDefaultOutputButton_Click);
             // 
@@ -1494,6 +2466,7 @@
             this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(122, 23);
             this.Settings_FFMPEGLocationButton.TabIndex = 51;
             this.Settings_FFMPEGLocationButton.Text = "FFMPEG Location";
+            this.toolTip.SetToolTip(this.Settings_FFMPEGLocationButton, "Manually set ffmpeg location");
             this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = false;
             this.Settings_FFMPEGLocationButton.Click += new System.EventHandler(this.Settings_FFMPEGLocationButton_Click);
             // 
@@ -1508,6 +2481,7 @@
             this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(122, 23);
             this.Settings_FFPLAYLocationButton.TabIndex = 53;
             this.Settings_FFPLAYLocationButton.Text = "FFplay Location";
+            this.toolTip.SetToolTip(this.Settings_FFPLAYLocationButton, "Manually set ffplay location");
             this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = false;
             this.Settings_FFPLAYLocationButton.Click += new System.EventHandler(this.Settings_FFPLAYLocationButton_Click);
             // 
@@ -1570,423 +2544,6 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(200, 73);
             this.panel31.TabIndex = 1;
-            // 
-            // ArgumentMainPanel
-            // 
-            this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ClearButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowM3U8Button);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowMergeButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowCutButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_RunArgumentButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_ShowEncodeButton);
-            this.ArgumentMainPanel.Controls.Add(this.Argument_PreviewBox);
-            this.ArgumentMainPanel.Controls.Add(this.panel41);
-            this.ArgumentMainPanel.Controls.Add(this.panel45);
-            this.ArgumentMainPanel.Controls.Add(this.label38);
-            this.ArgumentMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ArgumentMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.ArgumentMainPanel.Name = "ArgumentMainPanel";
-            this.ArgumentMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.ArgumentMainPanel.TabIndex = 7;
-            // 
-            // Argument_ClearButton
-            // 
-            this.Argument_ClearButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Argument_ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ClearButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Argument_ClearButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ClearButton.Location = new System.Drawing.Point(359, 47);
-            this.Argument_ClearButton.Name = "Argument_ClearButton";
-            this.Argument_ClearButton.Size = new System.Drawing.Size(76, 24);
-            this.Argument_ClearButton.TabIndex = 75;
-            this.Argument_ClearButton.Text = "Clear Args";
-            this.Argument_ClearButton.UseVisualStyleBackColor = false;
-            this.Argument_ClearButton.Click += new System.EventHandler(this.Argument_ClearButton_Click);
-            // 
-            // Argument_ShowM3U8Button
-            // 
-            this.Argument_ShowM3U8Button.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Argument_ShowM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowM3U8Button.Location = new System.Drawing.Point(277, 47);
-            this.Argument_ShowM3U8Button.Name = "Argument_ShowM3U8Button";
-            this.Argument_ShowM3U8Button.Size = new System.Drawing.Size(76, 24);
-            this.Argument_ShowM3U8Button.TabIndex = 74;
-            this.Argument_ShowM3U8Button.Text = "Show M3U8";
-            this.Argument_ShowM3U8Button.UseVisualStyleBackColor = false;
-            this.Argument_ShowM3U8Button.Click += new System.EventHandler(this.Argument_ShowM3U8Button_Click);
-            // 
-            // Argument_ShowMergeButton
-            // 
-            this.Argument_ShowMergeButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowMergeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowMergeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowMergeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Argument_ShowMergeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowMergeButton.Location = new System.Drawing.Point(193, 47);
-            this.Argument_ShowMergeButton.Name = "Argument_ShowMergeButton";
-            this.Argument_ShowMergeButton.Size = new System.Drawing.Size(78, 24);
-            this.Argument_ShowMergeButton.TabIndex = 73;
-            this.Argument_ShowMergeButton.Text = "Show Merge";
-            this.Argument_ShowMergeButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowMergeButton.Click += new System.EventHandler(this.Argument_ShowMergeButton_Click);
-            // 
-            // Argument_ShowCutButton
-            // 
-            this.Argument_ShowCutButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowCutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowCutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowCutButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Argument_ShowCutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowCutButton.Location = new System.Drawing.Point(119, 47);
-            this.Argument_ShowCutButton.Name = "Argument_ShowCutButton";
-            this.Argument_ShowCutButton.Size = new System.Drawing.Size(68, 24);
-            this.Argument_ShowCutButton.TabIndex = 72;
-            this.Argument_ShowCutButton.Text = "Show Cut";
-            this.Argument_ShowCutButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowCutButton.Click += new System.EventHandler(this.Argument_ShowCutButton_Click);
-            // 
-            // Argument_RunArgumentButton
-            // 
-            this.Argument_RunArgumentButton.BackColor = System.Drawing.Color.White;
-            this.Argument_RunArgumentButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_RunArgumentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_RunArgumentButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Argument_RunArgumentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_RunArgumentButton.Location = new System.Drawing.Point(792, 47);
-            this.Argument_RunArgumentButton.Name = "Argument_RunArgumentButton";
-            this.Argument_RunArgumentButton.Size = new System.Drawing.Size(117, 24);
-            this.Argument_RunArgumentButton.TabIndex = 71;
-            this.Argument_RunArgumentButton.Text = "Run Argument ▶";
-            this.Argument_RunArgumentButton.UseVisualStyleBackColor = false;
-            this.Argument_RunArgumentButton.Click += new System.EventHandler(this.Argument_RunArgumentButton_Click);
-            // 
-            // Argument_ShowEncodeButton
-            // 
-            this.Argument_ShowEncodeButton.BackColor = System.Drawing.Color.White;
-            this.Argument_ShowEncodeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Argument_ShowEncodeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Argument_ShowEncodeButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Argument_ShowEncodeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Argument_ShowEncodeButton.Location = new System.Drawing.Point(27, 47);
-            this.Argument_ShowEncodeButton.Name = "Argument_ShowEncodeButton";
-            this.Argument_ShowEncodeButton.Size = new System.Drawing.Size(86, 24);
-            this.Argument_ShowEncodeButton.TabIndex = 70;
-            this.Argument_ShowEncodeButton.Text = "Show Encode";
-            this.Argument_ShowEncodeButton.UseVisualStyleBackColor = false;
-            this.Argument_ShowEncodeButton.Click += new System.EventHandler(this.Argument_ShowEncodeButton_Click);
-            // 
-            // Argument_PreviewBox
-            // 
-            this.Argument_PreviewBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Argument_PreviewBox.Location = new System.Drawing.Point(27, 77);
-            this.Argument_PreviewBox.Multiline = true;
-            this.Argument_PreviewBox.Name = "Argument_PreviewBox";
-            this.Argument_PreviewBox.Size = new System.Drawing.Size(882, 412);
-            this.Argument_PreviewBox.TabIndex = 69;
-            // 
-            // panel41
-            // 
-            this.panel41.Controls.Add(this.label34);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel41.Location = new System.Drawing.Point(0, 0);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(919, 44);
-            this.panel41.TabIndex = 8;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label34.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label34.Location = new System.Drawing.Point(22, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(897, 44);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "Argument";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel45
-            // 
-            this.panel45.Location = new System.Drawing.Point(719, 495);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(200, 73);
-            this.panel45.TabIndex = 1;
-            // 
-            // label38
-            // 
-            this.label38.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
-            this.label38.Location = new System.Drawing.Point(467, 51);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(296, 25);
-            this.label38.TabIndex = 88;
-            this.label38.Text = "You can freely write your own arguments here. (Without FFmpeg path)";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M3U8MainPanel
-            // 
-            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
-            this.M3U8MainPanel.Controls.Add(this.panel49);
-            this.M3U8MainPanel.Controls.Add(this.panel50);
-            this.M3U8MainPanel.Controls.Add(this.panel53);
-            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.M3U8MainPanel.Name = "M3U8MainPanel";
-            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
-            this.M3U8MainPanel.TabIndex = 8;
-            // 
-            // M3U8_HideConsoleCheckbox
-            // 
-            this.M3U8_HideConsoleCheckbox.AutoSize = true;
-            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(272, 57);
-            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
-            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
-            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
-            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
-            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
-            // 
-            // M3U8_PlayButton
-            // 
-            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
-            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_PlayButton.Location = new System.Drawing.Point(804, 47);
-            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
-            this.M3U8_PlayButton.Size = new System.Drawing.Size(105, 24);
-            this.M3U8_PlayButton.TabIndex = 79;
-            this.M3U8_PlayButton.Text = "Play Selected ▶";
-            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
-            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
-            // 
-            // M3U8_RemoveM3U8Button
-            // 
-            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
-            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
-            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_RemoveM3U8Button.TabIndex = 72;
-            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
-            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
-            // 
-            // M3U8_AddM3U8Button
-            // 
-            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
-            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
-            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_AddM3U8Button.TabIndex = 71;
-            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
-            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
-            // 
-            // M3U8_listView
-            // 
-            this.M3U8_listView.AllowDrop = true;
-            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader12});
-            this.M3U8_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.M3U8_listView.FullRowSelect = true;
-            this.M3U8_listView.GridLines = true;
-            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.M3U8_listView.HideSelection = false;
-            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
-            this.M3U8_listView.MultiSelect = false;
-            this.M3U8_listView.Name = "M3U8_listView";
-            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
-            this.M3U8_listView.TabIndex = 70;
-            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
-            this.M3U8_listView.View = System.Windows.Forms.View.Details;
-            this.M3U8_listView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.M3U8_listView_MouseDoubleClick);
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Name";
-            this.columnHeader7.Width = 130;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "URL";
-            this.columnHeader8.Width = 655;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Status";
-            this.columnHeader12.Width = 70;
-            // 
-            // panel49
-            // 
-            this.panel49.Controls.Add(this.label45);
-            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel49.Location = new System.Drawing.Point(0, 0);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(919, 44);
-            this.panel49.TabIndex = 8;
-            // 
-            // label45
-            // 
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label45.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label45.Location = new System.Drawing.Point(22, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(897, 44);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "M3U8";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel50
-            // 
-            this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
-            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
-            this.panel50.Controls.Add(this.M3U8_OutputButton);
-            this.panel50.Controls.Add(this.M3U8_ProgressBar);
-            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
-            this.panel50.Controls.Add(this.M3U8_StartButton);
-            this.panel50.Controls.Add(this.panel51);
-            this.panel50.Location = new System.Drawing.Point(27, 377);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(882, 106);
-            this.panel50.TabIndex = 2;
-            // 
-            // M3U8_DefaultOutputButton
-            // 
-            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(749, 45);
-            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
-            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.M3U8_DefaultOutputButton.TabIndex = 65;
-            this.M3U8_DefaultOutputButton.Text = "✓";
-            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
-            // 
-            // M3U8_OpenDirectoryButton
-            // 
-            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(724, 45);
-            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
-            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.M3U8_OpenDirectoryButton.TabIndex = 64;
-            this.M3U8_OpenDirectoryButton.Text = "▶";
-            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
-            // 
-            // M3U8_OutputButton
-            // 
-            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_OutputButton.Location = new System.Drawing.Point(774, 44);
-            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
-            this.M3U8_OutputButton.Size = new System.Drawing.Size(105, 23);
-            this.M3U8_OutputButton.TabIndex = 25;
-            this.M3U8_OutputButton.Text = "Output Folder";
-            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
-            // 
-            // M3U8_ProgressBar
-            // 
-            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
-            this.M3U8_ProgressBar.Size = new System.Drawing.Size(765, 20);
-            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.M3U8_ProgressBar.TabIndex = 24;
-            // 
-            // M3U8_OutputFolderTextbox
-            // 
-            this.M3U8_OutputFolderTextbox.Enabled = false;
-            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
-            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
-            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(715, 23);
-            this.M3U8_OutputFolderTextbox.TabIndex = 23;
-            // 
-            // M3U8_StartButton
-            // 
-            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_StartButton.Location = new System.Drawing.Point(774, 73);
-            this.M3U8_StartButton.Name = "M3U8_StartButton";
-            this.M3U8_StartButton.Size = new System.Drawing.Size(105, 23);
-            this.M3U8_StartButton.TabIndex = 22;
-            this.M3U8_StartButton.Text = "Start M3U8";
-            this.M3U8_StartButton.UseVisualStyleBackColor = false;
-            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
-            // 
-            // panel51
-            // 
-            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel51.Controls.Add(this.label46);
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel51.Location = new System.Drawing.Point(0, 0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(882, 38);
-            this.panel51.TabIndex = 3;
-            // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label46.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(55, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(447, 38);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "Output";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel52
-            // 
-            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel52.Location = new System.Drawing.Point(0, 0);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(55, 38);
-            this.panel52.TabIndex = 0;
-            // 
-            // panel53
-            // 
-            this.panel53.Location = new System.Drawing.Point(719, 495);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(200, 73);
-            this.panel53.TabIndex = 1;
             // 
             // MergeMainPanel
             // 
@@ -2264,7 +2821,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7});
+            listViewItem2});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -3108,479 +3665,6 @@
             this.panel69.Size = new System.Drawing.Size(200, 73);
             this.panel69.TabIndex = 1;
             // 
-            // EncoderMainPanel
-            // 
-            this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.EncoderMainPanel.Controls.Add(this.panel13);
-            this.EncoderMainPanel.Controls.Add(this.panel6);
-            this.EncoderMainPanel.Controls.Add(this.panel23);
-            this.EncoderMainPanel.Controls.Add(this.panel37);
-            this.EncoderMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EncoderMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.EncoderMainPanel.Name = "EncoderMainPanel";
-            this.EncoderMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.EncoderMainPanel.TabIndex = 5;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.label3);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(919, 44);
-            this.panel13.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label3.Location = new System.Drawing.Point(22, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(897, 44);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ENCODER";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
-            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
-            this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
-            this.panel6.Controls.Add(this.Encoder_ProgressBar);
-            this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
-            this.panel6.Controls.Add(this.Encoder_StartEncodingProcessButton);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Location = new System.Drawing.Point(27, 377);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(882, 106);
-            this.panel6.TabIndex = 2;
-            // 
-            // Encoder_DefaultOutputButton
-            // 
-            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(749, 45);
-            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
-            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_DefaultOutputButton.TabIndex = 60;
-            this.Encoder_DefaultOutputButton.Text = "✓";
-            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
-            // 
-            // Encoder_OpenDirectoryButton
-            // 
-            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(724, 45);
-            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
-            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_OpenDirectoryButton.TabIndex = 61;
-            this.Encoder_OpenDirectoryButton.Text = "▶";
-            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
-            // 
-            // Encoder_OutputFolderButton
-            // 
-            this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(774, 44);
-            this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
-            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(105, 23);
-            this.Encoder_OutputFolderButton.TabIndex = 25;
-            this.Encoder_OutputFolderButton.Text = "Output Folder";
-            this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
-            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
-            // 
-            // Encoder_ProgressBar
-            // 
-            this.Encoder_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
-            this.Encoder_ProgressBar.Size = new System.Drawing.Size(765, 20);
-            this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Encoder_ProgressBar.TabIndex = 24;
-            // 
-            // Encoder_OutputFolderTextBox
-            // 
-            this.Encoder_OutputFolderTextBox.Enabled = false;
-            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(3, 45);
-            this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
-            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(715, 23);
-            this.Encoder_OutputFolderTextBox.TabIndex = 23;
-            // 
-            // Encoder_StartEncodingProcessButton
-            // 
-            this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(774, 73);
-            this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
-            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(105, 23);
-            this.Encoder_StartEncodingProcessButton.TabIndex = 22;
-            this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
-            this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
-            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel9.Controls.Add(this.label2);
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(882, 38);
-            this.panel9.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(447, 38);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Output";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(55, 38);
-            this.panel10.TabIndex = 0;
-            // 
-            // panel23
-            // 
-            this.panel23.Location = new System.Drawing.Point(719, 495);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(200, 73);
-            this.panel23.TabIndex = 1;
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.White;
-            this.panel37.Controls.Add(this.Encoder_FilesList);
-            this.panel37.Controls.Add(this.Encoder_PlayButton);
-            this.panel37.Controls.Add(this.label14);
-            this.panel37.Controls.Add(this.panel2);
-            this.panel37.Controls.Add(this.panel1);
-            this.panel37.Controls.Add(this.label7);
-            this.panel37.Controls.Add(this.Encoder_ExtensionBox);
-            this.panel37.Controls.Add(this.label6);
-            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
-            this.panel37.Controls.Add(this.label5);
-            this.panel37.Controls.Add(this.Encoder_FPSBox);
-            this.panel37.Controls.Add(this.label32);
-            this.panel37.Controls.Add(this.panel47);
-            this.panel37.Controls.Add(this.label4);
-            this.panel37.Controls.Add(this.Encoder_AudioCodecBox);
-            this.panel37.Controls.Add(this.Encoder_ResolutionBox);
-            this.panel37.Controls.Add(this.label13);
-            this.panel37.Controls.Add(this.Encoder_TunerBox);
-            this.panel37.Controls.Add(this.Encoder_VideoCodecBox);
-            this.panel37.Controls.Add(this.label12);
-            this.panel37.Controls.Add(this.label9);
-            this.panel37.Controls.Add(this.Encoder_PresetsBox);
-            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
-            this.panel37.Location = new System.Drawing.Point(27, 50);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(882, 314);
-            this.panel37.TabIndex = 54;
-            // 
-            // Encoder_FilesList
-            // 
-            this.Encoder_FilesList.AllowDrop = true;
-            this.Encoder_FilesList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ColumnHeader1,
-            this.ColumnHeader2});
-            this.Encoder_FilesList.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Encoder_FilesList.FullRowSelect = true;
-            this.Encoder_FilesList.GridLines = true;
-            this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Encoder_FilesList.HideSelection = false;
-            this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem8});
-            this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
-            this.Encoder_FilesList.MultiSelect = false;
-            this.Encoder_FilesList.Name = "Encoder_FilesList";
-            this.Encoder_FilesList.Size = new System.Drawing.Size(870, 213);
-            this.Encoder_FilesList.TabIndex = 43;
-            this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
-            this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
-            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
-            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
-            // 
-            // ColumnHeader1
-            // 
-            this.ColumnHeader1.Text = "File";
-            this.ColumnHeader1.Width = 765;
-            // 
-            // ColumnHeader2
-            // 
-            this.ColumnHeader2.Text = "Status";
-            this.ColumnHeader2.Width = 80;
-            // 
-            // Encoder_PlayButton
-            // 
-            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_PlayButton.Location = new System.Drawing.Point(777, 66);
-            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
-            this.Encoder_PlayButton.Size = new System.Drawing.Size(99, 26);
-            this.Encoder_PlayButton.TabIndex = 53;
-            this.Encoder_PlayButton.Text = "Play Selected ▶";
-            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
-            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(710, 39);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 16);
-            this.label14.TabIndex = 52;
-            this.label14.Text = "Overrides";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip.SetToolTip(this.label14, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
-        "ave default if you are unsure and let ffmpeg decide.");
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel2.Location = new System.Drawing.Point(438, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 20);
-            this.panel2.TabIndex = 51;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel1.Location = new System.Drawing.Point(438, 46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 1);
-            this.panel1.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(361, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 16);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Extension";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_ExtensionBox
-            // 
-            this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_ExtensionBox.FormattingEnabled = true;
-            this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
-            this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
-            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_ExtensionBox.TabIndex = 38;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(0, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 15);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "Auto Overwrite";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_OverwriteBox
-            // 
-            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_OverwriteBox.FormattingEnabled = true;
-            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
-            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
-            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_OverwriteBox.TabIndex = 48;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(622, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 16);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "FPS/Frames";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_FPSBox
-            // 
-            this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_FPSBox.FormattingEnabled = true;
-            this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
-            this.Encoder_FPSBox.Name = "Encoder_FPSBox";
-            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_FPSBox.TabIndex = 46;
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label32.Location = new System.Drawing.Point(535, 50);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 16);
-            this.label32.TabIndex = 45;
-            this.label32.Text = "Resolution";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel47
-            // 
-            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel47.Controls.Add(this.label39);
-            this.panel47.Controls.Add(this.panel48);
-            this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel47.Location = new System.Drawing.Point(0, 0);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(882, 38);
-            this.panel47.TabIndex = 3;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label39.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label39.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(55, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(447, 38);
-            this.label39.TabIndex = 6;
-            this.label39.Text = "Options";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel48
-            // 
-            this.panel48.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel48.Location = new System.Drawing.Point(0, 0);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(55, 38);
-            this.panel48.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(446, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 16);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Tuner";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_AudioCodecBox
-            // 
-            this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_AudioCodecBox.FormattingEnabled = true;
-            this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
-            this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
-            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_AudioCodecBox.TabIndex = 35;
-            // 
-            // Encoder_ResolutionBox
-            // 
-            this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_ResolutionBox.FormattingEnabled = true;
-            this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
-            this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
-            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_ResolutionBox.TabIndex = 44;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(90, 50);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(87, 16);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Video Encoder";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_TunerBox
-            // 
-            this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_TunerBox.FormattingEnabled = true;
-            this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
-            this.Encoder_TunerBox.Name = "Encoder_TunerBox";
-            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_TunerBox.TabIndex = 44;
-            // 
-            // Encoder_VideoCodecBox
-            // 
-            this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_VideoCodecBox.FormattingEnabled = true;
-            this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
-            this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
-            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_VideoCodecBox.TabIndex = 34;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(177, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 16);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Audio Encoder";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(267, 50);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 16);
-            this.label9.TabIndex = 41;
-            this.label9.Text = "Quality/Speed";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_PresetsBox
-            // 
-            this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_PresetsBox.FormattingEnabled = true;
-            this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
-            this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
-            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_PresetsBox.TabIndex = 40;
-            // 
-            // Encoder_HideConsoleToggle
-            // 
-            this.Encoder_HideConsoleToggle.AutoSize = true;
-            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(699, 76);
-            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
-            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
-            this.Encoder_HideConsoleToggle.TabIndex = 61;
-            this.Encoder_HideConsoleToggle.Text = "Hide Console";
-            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
-            // 
             // NoticePanel
             // 
             this.NoticePanel.Controls.Add(this.NoticeCloseButton);
@@ -4209,6 +4293,7 @@
             this.Menu_CutMergeTab.Name = "Menu_CutMergeTab";
             this.Menu_CutMergeTab.Size = new System.Drawing.Size(159, 49);
             this.Menu_CutMergeTab.TabIndex = 2;
+            this.Menu_CutMergeTab.Visible = false;
             // 
             // Menu_CutMergeTabLabel
             // 
@@ -4557,6 +4642,28 @@
             this.TraySystem.Text = "FFmpeg Utilizer";
             this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
             // 
+            // panel98
+            // 
+            this.panel98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel98.Location = new System.Drawing.Point(273, 46);
+            this.panel98.Name = "panel98";
+            this.panel98.Size = new System.Drawing.Size(1, 27);
+            this.panel98.TabIndex = 8;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
+        "plugin to send data to the software. This \'data\' refers to the content you choos" +
+        "e to download or stream using ffmpeg.");
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4573,6 +4680,20 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
+            this.M3U8MainPanel.ResumeLayout(false);
+            this.M3U8MainPanel.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel51.ResumeLayout(false);
+            this.EncoderMainPanel.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel47.ResumeLayout(false);
             this.UpdateMainPanel.ResumeLayout(false);
             this.panel94.ResumeLayout(false);
             this.panel96.ResumeLayout(false);
@@ -4590,6 +4711,9 @@
             this.panel92.ResumeLayout(false);
             this.panel93.ResumeLayout(false);
             this.panel75.ResumeLayout(false);
+            this.ArgumentMainPanel.ResumeLayout(false);
+            this.ArgumentMainPanel.PerformLayout();
+            this.panel41.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.Settings_NetPanel.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -4604,6 +4728,7 @@
             this.panel82.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).EndInit();
             this.panel83.ResumeLayout(false);
+            this.panel84.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.panel78.ResumeLayout(false);
@@ -4611,15 +4736,6 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            this.ArgumentMainPanel.ResumeLayout(false);
-            this.ArgumentMainPanel.PerformLayout();
-            this.panel41.ResumeLayout(false);
-            this.M3U8MainPanel.ResumeLayout(false);
-            this.M3U8MainPanel.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel51.ResumeLayout(false);
             this.MergeMainPanel.ResumeLayout(false);
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
@@ -4652,14 +4768,6 @@
             this.panel66.ResumeLayout(false);
             this.panel66.PerformLayout();
             this.panel67.ResumeLayout(false);
-            this.EncoderMainPanel.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel47.ResumeLayout(false);
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -4696,6 +4804,7 @@
             this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5050,6 +5159,10 @@
         private System.Windows.Forms.Button Argument_ClearButton;
         internal System.Windows.Forms.Button Argument_RunArgumentButton;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button Argument_ShowRecordStreamTimerButton;
+        private System.Windows.Forms.Button M3U8_button_clear;
+        private System.Windows.Forms.Panel panel98;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }
 

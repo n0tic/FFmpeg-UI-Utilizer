@@ -43,7 +43,7 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             switch (item.SubItems[2].Text)
                             {
-                                case "¿ Processing":
+                                case "Working...":
                                     item.SubItems[2].Text = "✗ Aborted";
                                     item.BackColor = Color.FromArgb(255, 192, 192);
                                     break;
@@ -102,7 +102,7 @@ namespace FFmpeg_Utilizer.Modules
                 main.Invoke(new Action(() =>
                 {
                     var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
-                    item.SubItems[2].Text = "¿ Processing";
+                    item.SubItems[2].Text = "Working..."; // TODO: Fix this issue...  I do not like the text
                 }));
 
                 encodingThread = new Thread(() => StartEncodingProcess());
@@ -112,6 +112,8 @@ namespace FFmpeg_Utilizer.Modules
                 Thread.Sleep(100);
 
                 while (m3u8Process != null) Thread.Sleep(25);
+
+                // TODO: Fix naming issues and prevent crashing. Check before we even get here.
 
                 FileInfo file = new FileInfo(processQueue.outputFolder + @"\" + processQueue.queue.Peek().name.Substring(0, Math.Min(100, processQueue.queue.Peek().name.Length)) + ".mp4");
 
@@ -176,14 +178,14 @@ namespace FFmpeg_Utilizer.Modules
                 StartInfo =
                 {
                     FileName = main.settings.ffmpegPath,
-                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -absf aac_adtstoasc -acodec copy -vcodec copy \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4\" -report",
+                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -c copy \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4\" -report",
                     UseShellExecute = false
                 }
             };
 
             main.Invoke(new Action(() =>
             {
-                Clipboard.SetText(m3u8Process.StartInfo.Arguments);
+                //Clipboard.SetText(m3u8Process.StartInfo.Arguments);
             }));
 
             if (processQueue.hideConsole) m3u8Process.StartInfo.CreateNoWindow = true;

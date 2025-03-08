@@ -118,16 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label40.Text" xml:space="preserve">
-    <value>When launched FFmpeg Utilizer always create the default folders (Downloads, Output, tmp, Tools). These folders will help to automate FFmpeg Utilizer.
-The download of FFmpeg &amp; FFplay will always be the stable essentials release from https://www.gyan.dev/ffmpeg/builds/
-A unfinished download will be in the folder named tmp (Temporary). Once a download complete it will be moved to Downloads folder. (Permanently)
-Once the downloaded file has been moved, FFmpeg Utilizer will unpack into a subfolder (Tools), set references to respective tool and save settings.
-When the process has finished all steps it will finaly remove the downloaded file in the Downloads folder to clean up.
-Download- and unpack-speed will vary depending on world location, server requests and your connection.</value>
+    <value>NOTE: When you launch FFmpeg Utilizer, it automatically creates the necessary default folders: Downloads, Output, tmp, and Tools, which are essential for the automation process. 
+• The program will always download the stable essentials release of FFmpeg and FFplay from https://www.gyan.dev/ffmpeg/builds/. 
+     • If the download is interrupted or still in progress, the file will be stored in the tmp (Temporary) folder. 
+     • Once the download is complete, it will be moved to the Downloads folder for temporary storage.
+     • After the file has been successfully moved, FFmpeg Utilizer will unpack it into a subfolder located in Tools, set the appropriate references to the respective tools, and save the settings. 
+     • Finally, once all the steps are completed, the downloaded file in the Downloads folder will be removed to clean up.
+Please note that download and unpacking speeds may vary depending on your location, the server's response time, and the speed of your internet connection.</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

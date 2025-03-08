@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
+using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -15,7 +16,7 @@ namespace FFmpeg_Utilizer
     {
         public static string softwareName = "FFmpeg Utilizer";
 
-        public static string authorRealName = "Victor Rimsby";
+        public static string authorRealName = "Victor";
         public static string authorName = "N0tiC";
         public static string companyName = "ByteVault Studio";
         public static string authorContact = "contact@bytevaultstudio.se";
@@ -28,7 +29,7 @@ namespace FFmpeg_Utilizer
         public static BuildTypes buildType = BuildTypes.Alpha;
         public static int majorVersion = 0;
         public static int minorVersion = 1;
-        public static int buildVersion = 4;
+        public static int buildVersion = 6;
 
         public enum BuildTypes
         {
@@ -254,14 +255,31 @@ namespace FFmpeg_Utilizer
                 number /= 1024;
                 counter++;
             }
-            return string.Format("{0:n1} {1}", number, suffixes[counter]);
+            return string.Format("{0:n1}: {1}", number, suffixes[counter]);
         }
 
         #endregion Word Notation
 
         #region Application
 
-        #region Move Window
+        #region Window Control
+
+        [DllImport("user32.dll")]
+        private static extern bool SetForegroundWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        private const int SW_RESTORE = 9;
+
+        public static void BringWindowToFront(Form form)
+        {
+            if (form.WindowState == FormWindowState.Minimized)
+            {
+                ShowWindow(form.Handle, SW_RESTORE);
+            }
+            SetForegroundWindow(form.Handle);
+        }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;

@@ -123,6 +123,8 @@ namespace FFmpeg_Utilizer.Modules
                                 ListViewItem item = new ListViewItem(new[] { MakeUniqueName(addName), addURL, "• Waiting" });
                                 main.M3U8_listView.Items.Add(item);
                                 Core.ChangeTab(Core.Tabs.M3U8);
+                                //main.BringToFront();
+                                Core.BringWindowToFront(main);
                             }));
                         }
 
