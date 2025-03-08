@@ -122,6 +122,13 @@ namespace FFmpeg_Utilizer.Modules.Submodule
             sBuffer += "Content-Type: " + MIMEHeader + Environment.NewLine;
             sBuffer += "Accept-Ranges: bytes" + Environment.NewLine;
             sBuffer += "Content-Length: " + iTotBytes + Environment.NewLine + Environment.NewLine;
+
+            // CORS headers to allow cross-origin requests
+            sBuffer += "Access-Control-Allow-Origin: *" + Environment.NewLine;  // Allow all origins (use a specific domain for security)
+            sBuffer += "Access-Control-Allow-Methods: GET, POST, OPTIONS" + Environment.NewLine;  // Allowed methods
+            sBuffer += "Access-Control-Allow-Headers: Content-Type" + Environment.NewLine;  // Allowed headers
+
+
             byte[] bSendData = Encoding.ASCII.GetBytes(sBuffer);
             SendToBrowser(bSendData, ref mySocket);
         }

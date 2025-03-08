@@ -117,6 +117,12 @@ namespace FFmpeg_Utilizer.Modules
                         // Get the value of the "addURL" parameter
                         string addURL = HttpUtility.UrlDecode(queryParameters[1].Substring(queryParameters[1].IndexOf('=') + 1));
 
+                        if (addName == "TEST" && addURL == "TEST")
+                        {
+                            URIRequestExtender.SendResponse(sHttpVersion, ref connection, true);
+                            connection.Close();
+                        }
+
                         if (URIRequestExtender.IsValidUrl(addURL) && URIRequestExtender.IsValidFile(addURL) && !main.m3u8Processor.inProcess)
                         {
                             main.Invoke(new Action(() => {
@@ -128,7 +134,7 @@ namespace FFmpeg_Utilizer.Modules
                             }));
                         }
 
-                        URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
+                        URIRequestExtender.SendResponse(sHttpVersion, ref connection, true);
                     }
                     else URIRequestExtender.SendResponse(sHttpVersion, ref connection, false);
 

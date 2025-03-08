@@ -19,7 +19,8 @@
         "webRequest",
         "tabs",
         "http://*/*",
-        "https://*/*"
+        "https://*/*",
+        "storage"
     ],
     "background": 
     {
