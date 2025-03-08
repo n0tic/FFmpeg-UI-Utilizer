@@ -2,27 +2,19 @@
     <img src="https://github.com/n0tic/FFmpeg-UI-Utilizer/raw/master/FFmpeg%20Utilizer/Resources/ffmpegUtilizerLogo.jpg" alt="FFmpeg Utilizer Logo">
     <br />
     <br />
-	WIP! (Currently shelfed)
-    <br />
-    <br />
     <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with LOVE">
     <br />
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
     <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer" alt="License Badge">
-    <img src="https://img.shields.io/maintenance/YES/2023" alt="Maintained Badge">
+    <img src="https://img.shields.io/maintenance/YES/2025" alt="Maintained Badge">
 </p>
 
-WIP! (Currently shelfed)
+WIP!
 
 FFMPEG Utilizer is a user-friendly UI software that executes commands based on user input, by utilizing external ffmpeg. Its primary aim is to be highly portable and lightweight. Furthermore, the integration of a Chrome extension facilitates the exchange of information between the browser and the software, thus enhancing the efficiency.
 
 FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way officially connected with FFmpeg.
 [FFmpeg](https://ffmpeg.org/) itself is a complete, cross-platform solution to record, convert and stream audio and video. 
-
-
-#### Backstory: 
-The main purpose was to eliminate the need for batch files or manual CMD inputs by using a program to generate the arguments and run ffmpeg with minimal manual labour. It has since grown and expanded beyond what was initially intended.
-Initial need was to convert a filetype and encode to another.
 
 ## Table of Contents
 
@@ -34,21 +26,11 @@ Initial need was to convert a filetype and encode to another.
 - [Issues](#issues)
 - [Disclamer](#disclamer)
 - [License](#license)
+- More previews at the bottom...
 
 ## Preview 
 
 ![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/preview.png)
-
-<details>
-  <summary>Hiding images to save space, click to show!</summary>
-  
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_kiUrkxvAgF.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hMaHMZiGCM.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ZZvSdF5FZX.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_FVFM2Vvp0o.png)
-  
-</details>
-If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
 
 UI & Styling may change.
 
@@ -79,7 +61,7 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
     * Merge
     	* This feature will merge multiple video/audio files using a ordered list.
 * M3U8
-	* This feature is intended to download and merge segmented HLS video/Audio files.
+	* This feature is intended to download and merge segmented HLS/M3U8 video/Audio stream/files.
     	* Standard Add and Remove features are available.
         * Video Preview button is available.
 	* URI Listener is working with this feature of the software.
@@ -161,9 +143,6 @@ So the results of the process may not be 100% satsfactory. Please leave your fee
 - **⚠️ File Name Issues**  
   If a file has an illegal name, the program will be unable to locate it after processing and will mark the file in red. Check the output folder to verify whether the operation was successful. (Looking into this issue when I get some time over)
 
-- **🎥 M3U8 File Processing**  
-  Some M3U8 files may not process correctly with the default arguments used in this software. (Update coming next push)
-
 ## Issues
 
 Templates to use
@@ -195,3 +174,12 @@ GNU GENERAL PUBLIC LICENSE
  
 Continue reading LICESE in repo...
 ```
+
+## Previews
+
+If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
+
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_kiUrkxvAgF.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hMaHMZiGCM.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ZZvSdF5FZX.png)
+![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_FVFM2Vvp0o.png)
