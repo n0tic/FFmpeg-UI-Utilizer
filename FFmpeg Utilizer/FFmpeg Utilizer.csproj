@@ -115,6 +115,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Chrome Extension\css\bootstrap.min.css.map" />
+    <None Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon.psd" />
     <None Include="Chrome Extension\manifest.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -198,11 +199,13 @@
   <ItemGroup>
     <Content Include="Chrome Extension\background.html" />
     <Content Include="Chrome Extension\css\bootstrap.min.css" />
-    <Content Include="Chrome Extension\icon\icon_128.png" />
-    <Content Include="Chrome Extension\icon\icon_16.png" />
-    <Content Include="Chrome Extension\icon\icon_19.png" />
-    <Content Include="Chrome Extension\icon\icon_32.png" />
-    <Content Include="Chrome Extension\icon\icon_48.png" />
+    <Content Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon FoundVideo.png" />
+    <Content Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon.png" />
+    <Content Include="Chrome Extension\icon\icon128.png" />
+    <Content Include="Chrome Extension\icon\icon128_V.png" />
+    <Content Include="Chrome Extension\icon\icon16.png" />
+    <Content Include="Chrome Extension\icon\icon32.png" />
+    <Content Include="Chrome Extension\icon\icon48.png" />
     <Content Include="Chrome Extension\js\background.js" />
     <Content Include="Chrome Extension\js\bootstrap.min.js" />
     <Content Include="Chrome Extension\js\jquery.min.js" />

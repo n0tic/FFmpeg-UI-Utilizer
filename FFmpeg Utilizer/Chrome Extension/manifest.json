@@ -5,13 +5,13 @@
     "description": "This plugin is for FFmpeg Utilizer and streamlines the process of inserting video files and HLS/M3U8 playlists into the software, making it more efficient and user-friendly.",
     "icons":
     {
-        "16": "icon/icon_16.png",
-        "48": "icon/icon_48.png",
-        "128": "icon/icon_128.png"
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
     },
     "browser_action": 
 	{
-		"default_icon": "icon/icon_19.png",
+		"default_icon": "icon/icon16.png",
 		"default_popup": "popup.html"
 	},
     "permissions":

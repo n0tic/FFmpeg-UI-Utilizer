@@ -54,6 +54,15 @@ chrome.webRequest.onBeforeSendHeaders.addListener(details => {
     // Get the title of the current page and store it in tabs[details.tabId]
     chrome.tabs.get(details.tabId, tab => {
       tabs[details.tabId].title = tab.title.replace(/(https?:\/\/[^\s]+)/g, "").replace(/ - [a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}/gi, "");
+
+      // If a video is found, update the icon
+      if (tabs[details.tabId].videoList.length > 0 || tabs[details.tabId].m3u8list.length > 0) {
+        chrome.browserAction.setIcon({ path: 'icon/icon128_V.png' });
+      } else {
+        // Reset to default icon if no video found
+        chrome.browserAction.setIcon({ path: 'icon/icon128.png' });
+      }
+
     });
   }
 }, {urls: ["<all_urls>"]}, ["requestHeaders"]);
