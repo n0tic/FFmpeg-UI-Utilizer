@@ -114,7 +114,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Chrome Extension\Chromium Extension.crx" />
+    <None Include="Chrome Extension\Chromium Extension.crx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Chrome Extension\css\bootstrap.min.css.map" />
     <None Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon.psd" />
     <None Include="Chrome Extension\manifest.json" />
@@ -213,6 +215,12 @@
     <Content Include="Chrome Extension\js\popup.js" />
     <Content Include="Chrome Extension\popup.html" />
     <Content Include="FFmpegUtilizerIcon.ico" />
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\TrayIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
