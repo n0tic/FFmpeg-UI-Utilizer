@@ -24,16 +24,23 @@ $(function(){
             }
         }
 
-        if(m3ucontentAdded)
-        {
+        if (m3ucontentAdded) {
           for (var i = 0; i < bg.tabs[tabID].m3u8list.length; i++) {
-            document.getElementById(i).onclick = (function(i) {
-              return function() {
-                sendRequest(bg.tabs[tabID].title + " " + bg.tabs[tabID].m3u8list[i].name, bg.tabs[tabID].m3u8list[i].url);
+            (function(i) {
+              const button = document.getElementById(i);
+              if (button) {
+                button.onclick = function() {
+                  sendRequest(
+                    bg.tabs[tabID].title + " " + bg.tabs[tabID].m3u8list[i].name,
+                    bg.tabs[tabID].m3u8list[i].url,
+                    button // Pass the button element
+                  );
+                };
               }
             })(i);
           }
         }
+        
 
         // Flag to track whether anything is added
         var videocontentAdded = false;
@@ -52,16 +59,23 @@ $(function(){
             }
         }
 
-        if(videocontentAdded)
-        {
+        if (videocontentAdded) {
           for (var i = 0; i < bg.tabs[tabID].videoList.length; i++) {
-            document.getElementById(i).onclick = (function(i) {
-              return function() {
-                sendRequest(bg.tabs[tabID].title + " " + bg.tabs[tabID].videoList[i].name, bg.tabs[tabID].videoList[i].url);
+            (function(i) {
+              const button = document.getElementById(i);
+              if (button) {
+                button.onclick = function() {
+                  sendRequest(
+                    bg.tabs[tabID].title + " " + bg.tabs[tabID].videoList[i].name,
+                    bg.tabs[tabID].videoList[i].url,
+                    button // Pass the button element
+                  );
+                };
               }
             })(i);
           }
         }
+        
 
         console.log("m3u8: " + m3ucontentAdded.toString())
         console.log("video: " + videocontentAdded.toString())
@@ -70,6 +84,17 @@ $(function(){
           $(".alert-warning").addClass("show")
           $(".alert-warning").removeAttr("hidden")
           //console.log("Empty...");
+
+          if (bg.tabs && bg.tabs[tabID]) {
+            let videoCount = bg.tabs[tabID].videoList ? bg.tabs[tabID].videoList.length : 0;
+            let m3u8Count = bg.tabs[tabID].m3u8list ? bg.tabs[tabID].m3u8list.length : 0;
+        
+            console.log("Videos found in Background.js: " + videoCount);
+            console.log("M3U8 found in Background.js: " + m3u8Count);
+          } else {
+              console.log("Background.js did not return tab data.");
+          }
+
         }
         
      });
@@ -93,37 +118,41 @@ function copyUrl(obj) {
     },2000);//Disappears after 2 seconds
 }
 
-function sendRequest(name, url) {
-  // Load the saved port, default to 288 if not found
+function sendRequest(name, url, button) {
   chrome.storage.local.get(['port'], function(result) {
-    const port = result.port || 288; // Default to 288 if no port is found
+    const port = result.port || 288;
 
     const encodedName = encodeURIComponent(name);
     const encodedUrl = encodeURIComponent(url);
     const requestUrl = `http://127.0.0.1:${port}/?addName=${encodedName}&addURL=${encodedUrl}`;
 
+    console.log(`Downloading: ${requestUrl}`);
+
+    // Change icon to spinner
+    const icon = $(button).find("i");
+    icon.removeClass("fa-download").addClass("fa-spinner fa-spin");
+
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl);
     xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 202) {
-          // handle response
-          console.log("Software success");
-          $(".alert-danger").removeClass("show")
-          $(".alert-danger").attr("hidden","hidden")
+        if (xhr.readyState === 4) { 
+            if (xhr.status === 202) {
+                console.log("Software success");
+                $(".alert-danger").removeClass("show").attr("hidden", "hidden");
 
-          $(".alert-success").text("Added Successfully!");
-          $(".alert-success").addClass("show")
-          $(".alert-success").removeAttr("hidden")
-          window.setTimeout(function(){
-            $(".alert-success").removeClass("show")
-            $(".alert-success").attr("hidden","hidden")
-          },2000); // Disappears after 2 seconds
+                $(".alert-success").text("Added Successfully!")
+                    .addClass("show").removeAttr("hidden");
 
-        }
-        else {
-          console.log("Software failed");
-          $(".alert-danger").addClass("show")
-          $(".alert-danger").removeAttr("hidden")
+                window.setTimeout(function(){
+                    $(".alert-success").removeClass("show").attr("hidden", "hidden");
+                }, 2000); // Disappears after 2 seconds
+            } else {
+                console.log("Software failed");
+                $(".alert-danger").addClass("show").removeAttr("hidden");
+            }
+
+            // Restore the download icon
+            icon.removeClass("fa-spinner fa-spin").addClass("fa-download");
         }
     };
     xhr.send();

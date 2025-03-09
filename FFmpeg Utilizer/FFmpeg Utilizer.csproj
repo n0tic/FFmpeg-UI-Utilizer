@@ -114,6 +114,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Chrome Extension\Chromium Extension.crx" />
     <None Include="Chrome Extension\css\bootstrap.min.css.map" />
     <None Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon.psd" />
     <None Include="Chrome Extension\manifest.json" />

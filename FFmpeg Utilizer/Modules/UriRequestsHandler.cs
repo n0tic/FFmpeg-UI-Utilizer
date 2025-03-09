@@ -117,6 +117,7 @@ namespace FFmpeg_Utilizer.Modules
                         // Get the value of the "addURL" parameter
                         string addURL = HttpUtility.UrlDecode(queryParameters[1].Substring(queryParameters[1].IndexOf('=') + 1));
 
+                        // For testing purposes
                         if (addName == "TEST" && addURL == "TEST")
                         {
                             URIRequestExtender.SendResponse(sHttpVersion, ref connection, true);

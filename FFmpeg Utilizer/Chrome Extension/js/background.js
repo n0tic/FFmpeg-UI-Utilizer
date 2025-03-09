@@ -2,6 +2,9 @@ var tabs = {};
 var pattern_m3u8 = /http[s]?[://]{1}[-A-Za-z0-9+&@#/%?=~_|!:,.;]*[-A-Za-z0-9+&@#/%=~_|]*.m3u8$/;
 var pattern_video = /http[s]?:\/\/[^\s]*\.(mp4|avi|mov|wmv|flv|mkv|webm)$/i;
 
+var m3s = 0;
+var vs = 0;
+
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   if (changeInfo.status === 'loading') {
     // Do something here when the tab is being refreshed
@@ -58,6 +61,10 @@ chrome.webRequest.onBeforeSendHeaders.addListener(details => {
       // If a video is found, update the icon
       if (tabs[details.tabId].videoList.length > 0 || tabs[details.tabId].m3u8list.length > 0) {
         chrome.browserAction.setIcon({ path: 'icon/icon128_V.png' });
+
+        vs = tabs[details.tabId].videoList.length;
+        m3s = tabs[details.tabId].m3u8list.length;
+
       } else {
         // Reset to default icon if no video found
         chrome.browserAction.setIcon({ path: 'icon/icon128.png' });
