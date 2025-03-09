@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const portSettings = document.getElementById('portSettings');
   const saveButtonContainer = document.getElementById('saveButtonContainer');
   const settingsCog = document.getElementById('settingsCog');
+  const erase = document.getElementById('erase');
 
   // Load saved port if available
   chrome.storage.local.get(['port'], function(result) {
@@ -149,6 +150,25 @@ document.addEventListener('DOMContentLoaded', function() {
   settingsCog.addEventListener('click', function() {
       portSettings.hidden = false;
       saveButtonContainer.hidden = false;
+  });
+
+  // Clear the list
+  erase.addEventListener('click', function() {
+    // Retrieve the active tab
+    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+      var tabId = tabs[0].id; // Get the current active tab ID
+  
+      // Ensure bg.tabs is available
+      var bg = chrome.extension.getBackgroundPage();
+      if (bg.tabs && bg.tabs[tabId]) {
+        // Clear m3u8list and videoList for the current tab
+        bg.tabs[tabId].m3u8list = [];
+        bg.tabs[tabId].videoList = [];
+        
+        // Empty the displayed box
+        $("#box").empty();
+      }
+    });
   });
 
   // Save the new port number when save button is clicked
