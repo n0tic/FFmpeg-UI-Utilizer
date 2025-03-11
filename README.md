@@ -7,6 +7,8 @@
     <img src="https://img.shields.io/github/repo-size/n0tic/FFmpeg-UI-Utilizer?label=Repo%20Size" alt="Repo Size Badge">
     <img src="https://img.shields.io/github/license/n0tic/FFmpeg-UI-Utilizer" alt="License Badge">
     <img src="https://img.shields.io/maintenance/YES/2025" alt="Maintained Badge">
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/n0tic/FFmpeg-UI-Utilizer/total?color=orange&label=downloads">
+  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fn0tic%2FFFmpeg-UI-Utilizer"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fn0tic%2FFFmpeg-UI-Utilizer&countColor=%23263759&style=flat-square" /></a>
 </p>
 
 WIP!
