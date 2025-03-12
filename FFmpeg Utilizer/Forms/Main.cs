@@ -1544,5 +1544,9 @@ namespace FFmpeg_Utilizer
             }
         }
 
+        private void CompanyButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://bytevaultstudio.se/");
+        }
     }
 }
