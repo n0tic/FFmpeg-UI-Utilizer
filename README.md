@@ -48,6 +48,7 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
       * Audio Encoder Library
       * Quality & Speed (Interlinked)
       * Tuner (Type preset of best settings)
+      * 
       		* Overriders:
             Video Resolution (Size)
             Video FPS (Frames Per Second)
@@ -63,25 +64,30 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
     * Merge
     	* This feature will merge multiple video/audio files using a ordered list.
 * M3U8
-	* This feature is intended to download and merge segmented HLS/M3U8 video/Audio stream/files.
+	* This feature is intended to download and merge segmented HLS/M3U8 video/Audio streaming files.
     	* Standard Add and Remove features are available.
         * Video Preview button is available.
-	* URI Listener is working with this feature of the software.
+      * 
+      		 URI Listener is working with this feature of the software.
 * Arguments
 	* This feature offers the user a way to see the generated argument or run their own custom argument.
-    	* It comes with a feature to copy commands to clipboard.
 * URI Listener
-	* *Manual Start Required! - (Settings tab)*
+	* *Manual (initial) Start Required! - (In Settings tab)*
 ```
 This feature is supposed to filter connections and limit to browser requests.
-Check if the request match our specific GET request for adding a URL to our software. 
+It checks if the request match our specific GET request for adding a URL to our software. 
 If the request is satisfactory the request will be handled and the data added to our software. 
-The idea is intended to be working hand in hand with a browser extension. 
+The idea is intended to work hand in hand with the browser extension. (Chromium based extension)
 ```
 ```
 For now, this inputs work:
-http://127.0.0.1:{PORT}?addName=GoogleTestHLS&addURL=http://google.se/hls.m3u8
+http://127.0.0.1:{PORT}?addName=BigBuckBunny=[http://google.se/hls.m3u8](https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8)
 This will add the required information automatically to our software.
+
+For testing purposes, this also works:
+http://127.0.0.1:288?addName=TEST&addURL=TEST
+
+Port 288 is default.
 ```
 Query Headers - Bad Request
 ```
@@ -89,7 +95,7 @@ GET /?add=Some+Invalid+Query HTTP/1.1
 Host: 127.0.0.1:288
 
 HTTP/1.1 400 Bad Request
-Server: FFmpeg Utilizer 0.1.1 Alpha
+Server: FFmpeg Utilizer 0.1.8 Alpha
 Content-Type: text/html
 Accept-Ranges: bytes
 Content-Length: 0
@@ -103,25 +109,25 @@ HTTP/1.1 202 Accepted
 accept-ranges: bytes
 content-length: 0
 content-type: text/html
-server: FFmpeg Utilizer 0.1.1 Alpha
+server: FFmpeg Utilizer 0.1.8 Alpha
 ```
 ## Requirements
 
 To run FFMPEG Utilizer you will need:
 
 ```
-.Net Framework 4.6 
+.Net Framework 4.8 
 ```
 
 -----
 
 For full functionallity:
-- [.Net Framework 4.6](https://www.microsoft.com/en-US/download/details.aspx?id=48130)
-- Internet Connection (Turns off Internet features if not available.)
-- ffmpeg.exe (Download feature included. Requires Internet Connection.)
-- ffplay.exe (Download feature included. Requires Internet Connection.)
+- [.Net Framework 4.8]([https://www.microsoft.com/en-US/download/details.aspx?id=48130](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48))
+- Internet Connection (Turns off Internet features if not available)
+- ffmpeg.exe (Download feature included. Requires Internet Connection)
+- ffplay.exe (Download feature included. Requires Internet Connection)
 
-This software needs .NET Framework 4.6 minumum to run.
+This software needs .NET Framework 4.8 minumum to run.
 The software itself will need ffmpeg and ffplay to be able to execute requested commands. The software has a built-in feature to automatically download and unpack the latest build from Gyan.
 ```
 https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
@@ -129,10 +135,10 @@ https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 [See Source URL](FFmpeg%20Utilizer/Core/Core.cs#L243) - [Check out Gyan.dev](https://www.gyan.dev/ffmpeg/builds/)
 ## Install
 
-[.Net Framework 4.6](https://www.microsoft.com/en-US/download/details.aspx?id=48130) Download location.
+Needs .NET Famework 4.8 and you can find the download at this URL: [https://www.microsoft.com/en-US/download/details.aspx?id=48130](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
 
-The software itself is portable and does not need to be installed. Make sure you have .Net Framework installed and simply unpack and run FFMPEG_Utilizer.exe.
+The software itself is portable and does not need to be installed. Make sure you have .Net Framework installed and simply unpack and run "FFmpeg Utilizer.exe".
 
 ## Bugs
 
