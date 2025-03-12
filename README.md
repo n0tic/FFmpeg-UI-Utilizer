@@ -187,7 +187,7 @@ Continue reading LICESE in repo...
 
 If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
 
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_kiUrkxvAgF.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_hMaHMZiGCM.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_ZZvSdF5FZX.png)
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/FFmpeg_Utilizer_FVFM2Vvp0o.png)
+![FFmpeg Utilizer](https://i.imgur.com/1JKXYN1.png)
+![FFmpeg Utilizer](https://i.imgur.com/70BS0I5.png)
+![FFmpeg Utilizer](https://i.imgur.com/Aw61jkB.png)
+![FFmpeg Utilizer](https://i.imgur.com/5eIlzKu.png)
