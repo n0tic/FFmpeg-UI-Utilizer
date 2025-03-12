@@ -86,12 +86,15 @@ namespace FFmpeg_Utilizer.Modules
 
         private void StartEncodingProcess()
         {
+            string args = "-y -f concat -safe 0 -i \"" + data.file + "\" -c copy \"" + data.outputFolder + "\\" + data.outputname + data.ext + "\"";
+            //Console.WriteLine(args);
+
             mergeProcess = new Process
             {
                 StartInfo =
                 {
                     FileName = main.settings.ffmpegPath,
-                    Arguments = "-y -f concat -safe 0 -i \"" + data.file + "\" -c copy \"" + data.outputFolder + "\\" + data.outputname + data.ext + "\"",
+                    Arguments = args,
                     UseShellExecute = false
                 }
             };

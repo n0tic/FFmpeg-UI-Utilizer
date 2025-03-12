@@ -31,7 +31,7 @@ namespace FFmpeg_Utilizer.Modules
 
         public NoticeModule(Main main) => this.main = main;
 
-        public void SetNotice(string noticeText, TypeNotice nType)
+        public void SetNotice(string noticeText, TypeNotice nType, bool silent = false)
         {
             main.Invoke(new Action(() =>
             {
@@ -47,11 +47,11 @@ namespace FFmpeg_Utilizer.Modules
                 switch (nType)
                 {
                     case TypeNotice.Warning:
-                        SystemSounds.Hand.Play();
+                        if(!silent) SystemSounds.Hand.Play();
                         break;
 
                     case TypeNotice.Error:
-                        SystemSounds.Hand.Play();
+                        if (!silent) SystemSounds.Hand.Play();
                         break;
                 }
             }));

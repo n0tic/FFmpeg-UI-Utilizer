@@ -126,18 +126,18 @@ namespace FFmpeg_Utilizer.Modules
                 //If default files was not found and settings are loaded.
                 if (main.settings.loaded && !File.Exists(main.settings.ffmpegPath) || !File.Exists(main.settings.ffplayPath))
                 {
-                    Console.WriteLine("test1");
+                    //Console.WriteLine("test1");
                     SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
                 }
                 else if (!main.settings.loaded && !File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffmpeg)) || !File.Exists(Core.GetSubfolder(Core.SubFolders.Tools) + Core.GetTool(Core.Tools.ffplay)))
                 {
-                    Console.WriteLine("test2");
+                    //Console.WriteLine("test2");
                     SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
                 }
                 else
                 {
                     SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
-                    Console.WriteLine("test3");
+                    //Console.WriteLine("test3");
                 }
             }
 

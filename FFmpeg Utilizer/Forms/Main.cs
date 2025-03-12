@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -400,7 +401,12 @@ namespace FFmpeg_Utilizer
 
         private void Menu_EncoderTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Encoder);
 
-        private void Menu_CutMergeTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.CutMerge);
+        private void Menu_CutMergeTabIndicator_Click(object sender, EventArgs e)
+        {
+            notice.SetNotice("The Cut and Merge features is not yet fully implemented. Needs more testing.", NoticeModule.TypeNotice.Warning, true);
+            Core.ChangeTab(Core.Tabs.CutMerge);
+            Core.ChangeTab(Core.Tabs.Cut);
+        }
 
         private void Menu_CutTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Cut);
 
@@ -1440,5 +1446,103 @@ namespace FFmpeg_Utilizer
                 }
             }
         }
+
+        private void Cut_MediaInputTextbox_DragDrop(object sender, DragEventArgs e)
+        {
+
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+                if (files.Length == 1) // Ensure only one file is dropped
+                {
+                    string file = files[0];
+
+                    if (File.Exists(file)) // Ensure it's a file, not a folder
+                    {
+                        List<string> allowedExtensions = Libs.GetAllowedExtension();
+                        string extension = Path.GetExtension(file).TrimStart('.').ToLower();
+
+                        if (allowedExtensions.Contains(extension))
+                        {
+                            Cut_MediaInputTextbox.Text = file;
+                        }
+                        else
+                        {
+                            notice.SetNotice("The selected file has an unsupported extension. Please choose a file with a valid extension.", NoticeModule.TypeNotice.Warning);
+                        }
+                    }
+                    else
+                    {
+                        notice.SetNotice("The selected file does not exist. Please verify the file path and try again.", NoticeModule.TypeNotice.Warning);
+                    }
+                }
+                else
+                {
+                    notice.SetNotice("Only one file can be dropped at a time. Please try again.", NoticeModule.TypeNotice.Warning);
+                }
+            }
+            else
+            {
+                notice.SetNotice("No file detected. Please drag and drop a file.", NoticeModule.TypeNotice.Warning);
+            }
+        }
+
+        private void Cut_MediaInputTextbox_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+
+        private void Merge_MoveItemUp_Button_Click(object sender, EventArgs e)
+        {
+            if (Merge_listView.SelectedItems.Count == 0) return; // No item selected
+            int index = Merge_listView.SelectedItems[0].Index;
+
+            if (index > 0) // Ensure it's not the first item
+            {
+                SwapItems(index, index - 1);
+                RenumberItems();
+            }
+        }
+
+        private void Merge_MoveItemDown_Button_Click(object sender, EventArgs e)
+        {
+            if (Merge_listView.SelectedItems.Count == 0) return; // No item selected
+            int index = Merge_listView.SelectedItems[0].Index;
+
+            if (index < Merge_listView.Items.Count - 1) // Ensure it's not the last item
+            {
+                SwapItems(index, index + 1);
+                RenumberItems();
+            }
+        }
+
+        private void SwapItems(int index1, int index2)
+        {
+            ListViewItem item1 = Merge_listView.Items[index1];
+            ListViewItem item2 = Merge_listView.Items[index2];
+
+            // Swap text values directly instead of removing items
+            for (int i = 0; i < item1.SubItems.Count; i++)
+            {
+                string temp = item1.SubItems[i].Text;
+                item1.SubItems[i].Text = item2.SubItems[i].Text;
+                item2.SubItems[i].Text = temp;
+            }
+
+            // Keep the moved item selected
+            item2.Selected = true;
+            item2.Focused = true;
+            Merge_listView.Focus();
+        }
+
+        private void RenumberItems()
+        {
+            for (int i = 0; i < Merge_listView.Items.Count; i++)
+            {
+                Merge_listView.Items[i].SubItems[0].Text = (i + 1).ToString(); // Update numbering
+            }
+        }
+
     }
 }

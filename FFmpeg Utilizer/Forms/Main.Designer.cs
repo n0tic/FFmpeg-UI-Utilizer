@@ -29,16 +29,110 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag & drop here..."}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
+            this.UpdateMainPanel = new System.Windows.Forms.Panel();
+            this.panel94 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel96 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.SpeedLabel = new System.Windows.Forms.Label();
+            this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.Update_StatusLabel = new System.Windows.Forms.Label();
+            this.panel71 = new System.Windows.Forms.Panel();
+            this.Update_CheckForUpdateButton = new System.Windows.Forms.Button();
+            this.panel73 = new System.Windows.Forms.Panel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.panel74 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.Update_DownloadButton = new System.Windows.Forms.Button();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.Update_LatestUpdateLabel = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.Update_OnlineVerLabel = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel93 = new System.Windows.Forms.Panel();
+            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel75 = new System.Windows.Forms.Panel();
+            this.label79 = new System.Windows.Forms.Label();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.panel77 = new System.Windows.Forms.Panel();
+            this.SettingsMainPanel = new System.Windows.Forms.Panel();
+            this.Settings_NetPanel = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel86 = new System.Windows.Forms.Panel();
+            this.panel87 = new System.Windows.Forms.Panel();
+            this.Settings_DownloadButton = new System.Windows.Forms.Button();
+            this.panel88 = new System.Windows.Forms.Panel();
+            this.Settings_LatestUpdateLabel = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel85 = new System.Windows.Forms.Panel();
+            this.Settings_OnlineVerLabel = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.Settings_InstalledVersionLabel = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel82 = new System.Windows.Forms.Panel();
+            this.Settings_URIServerAutoStart = new System.Windows.Forms.CheckBox();
+            this.Settings_URIServerPort = new System.Windows.Forms.NumericUpDown();
+            this.Settings_URIServerIndicator = new System.Windows.Forms.Panel();
+            this.Settings_URIServerCheckbox = new System.Windows.Forms.CheckBox();
+            this.panel83 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.panel84 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.Settings_OverwriteDropdown = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel78 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel81 = new System.Windows.Forms.Panel();
+            this.Settings_VideoCodecDropdown = new System.Windows.Forms.ComboBox();
+            this.Settings_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.Settings_QualityDropdown = new System.Windows.Forms.ComboBox();
+            this.Settings_AudioCodecDropdown = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.Settings_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Settings_DefaultOutputPathBox = new System.Windows.Forms.TextBox();
+            this.Settings_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.panel79 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.panel80 = new System.Windows.Forms.Panel();
+            this.Settings_FFplayPathBox = new System.Windows.Forms.TextBox();
+            this.Settings_AutoDefaultOutputButton = new System.Windows.Forms.Button();
+            this.Settings_FFmpegPathBox = new System.Windows.Forms.TextBox();
+            this.Settings_FFMPEGLocationButton = new System.Windows.Forms.Button();
+            this.Settings_FFPLAYLocationButton = new System.Windows.Forms.Button();
+            this.Settings_ResetButton = new System.Windows.Forms.Button();
+            this.Settings_SaveButton = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel31 = new System.Windows.Forms.Panel();
             this.M3U8MainPanel = new System.Windows.Forms.Panel();
+            this.panel98 = new System.Windows.Forms.Panel();
             this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
             this.M3U8_button_clear = new System.Windows.Forms.Button();
             this.M3U8_PlayButton = new System.Windows.Forms.Button();
@@ -103,41 +197,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
             this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
-            this.UpdateMainPanel = new System.Windows.Forms.Panel();
-            this.panel94 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.panel96 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.SpeedLabel = new System.Windows.Forms.Label();
-            this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.Update_StatusLabel = new System.Windows.Forms.Label();
-            this.panel71 = new System.Windows.Forms.Panel();
-            this.Update_CheckForUpdateButton = new System.Windows.Forms.Button();
-            this.panel73 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.panel74 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel72 = new System.Windows.Forms.Panel();
-            this.panel89 = new System.Windows.Forms.Panel();
-            this.Update_DownloadButton = new System.Windows.Forms.Button();
-            this.panel90 = new System.Windows.Forms.Panel();
-            this.Update_LatestUpdateLabel = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel91 = new System.Windows.Forms.Panel();
-            this.panel92 = new System.Windows.Forms.Panel();
-            this.Update_OnlineVerLabel = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel93 = new System.Windows.Forms.Panel();
-            this.Update_InstalledVersionLabel = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel75 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.panel77 = new System.Windows.Forms.Panel();
             this.ArgumentMainPanel = new System.Windows.Forms.Panel();
             this.Argument_ShowRecordStreamTimerButton = new System.Windows.Forms.Button();
             this.Argument_ClearButton = new System.Windows.Forms.Button();
@@ -151,71 +210,14 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.SettingsMainPanel = new System.Windows.Forms.Panel();
-            this.Settings_NetPanel = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel86 = new System.Windows.Forms.Panel();
-            this.panel87 = new System.Windows.Forms.Panel();
-            this.Settings_DownloadButton = new System.Windows.Forms.Button();
-            this.panel88 = new System.Windows.Forms.Panel();
-            this.Settings_LatestUpdateLabel = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel85 = new System.Windows.Forms.Panel();
-            this.Settings_OnlineVerLabel = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.Settings_InstalledVersionLabel = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel82 = new System.Windows.Forms.Panel();
-            this.Settings_URIServerAutoStart = new System.Windows.Forms.CheckBox();
-            this.Settings_URIServerPort = new System.Windows.Forms.NumericUpDown();
-            this.Settings_URIServerIndicator = new System.Windows.Forms.Panel();
-            this.Settings_URIServerCheckbox = new System.Windows.Forms.CheckBox();
-            this.panel83 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.panel84 = new System.Windows.Forms.Panel();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.Settings_OverwriteDropdown = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.panel78 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel81 = new System.Windows.Forms.Panel();
-            this.Settings_VideoCodecDropdown = new System.Windows.Forms.ComboBox();
-            this.Settings_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.Settings_QualityDropdown = new System.Windows.Forms.ComboBox();
-            this.Settings_AudioCodecDropdown = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.Settings_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Settings_DefaultOutputPathBox = new System.Windows.Forms.TextBox();
-            this.Settings_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.panel79 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel80 = new System.Windows.Forms.Panel();
-            this.Settings_FFplayPathBox = new System.Windows.Forms.TextBox();
-            this.Settings_AutoDefaultOutputButton = new System.Windows.Forms.Button();
-            this.Settings_FFmpegPathBox = new System.Windows.Forms.TextBox();
-            this.Settings_FFMPEGLocationButton = new System.Windows.Forms.Button();
-            this.Settings_FFPLAYLocationButton = new System.Windows.Forms.Button();
-            this.Settings_ResetButton = new System.Windows.Forms.Button();
-            this.Settings_SaveButton = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel31 = new System.Windows.Forms.Panel();
             this.MergeMainPanel = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.label33 = new System.Windows.Forms.Label();
             this.Merge_OutputFileName = new System.Windows.Forms.TextBox();
             this.button25 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.Merge_MoveItemDown_Button = new System.Windows.Forms.Button();
+            this.Merge_MoveItemUp_Button = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Merge_mediaExtensionDescLabel = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -386,20 +388,8 @@
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
-            this.panel98 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
-            this.M3U8MainPanel.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel51.SuspendLayout();
-            this.EncoderMainPanel.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.panel47.SuspendLayout();
             this.UpdateMainPanel.SuspendLayout();
             this.panel94.SuspendLayout();
             this.panel96.SuspendLayout();
@@ -417,8 +407,6 @@
             this.panel92.SuspendLayout();
             this.panel93.SuspendLayout();
             this.panel75.SuspendLayout();
-            this.ArgumentMainPanel.SuspendLayout();
-            this.panel41.SuspendLayout();
             this.SettingsMainPanel.SuspendLayout();
             this.Settings_NetPanel.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -433,11 +421,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).BeginInit();
             this.panel83.SuspendLayout();
             this.panel84.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel44.SuspendLayout();
             this.panel78.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.M3U8MainPanel.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel51.SuspendLayout();
+            this.EncoderMainPanel.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel47.SuspendLayout();
+            this.ArgumentMainPanel.SuspendLayout();
+            this.panel41.SuspendLayout();
             this.MergeMainPanel.SuspendLayout();
             this.panel54.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -501,7 +502,6 @@
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // FullPanel
@@ -519,18 +519,1096 @@
             // 
             // panel95
             // 
+            this.panel95.Controls.Add(this.MergeMainPanel);
+            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
             this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
-            this.panel95.Controls.Add(this.MergeMainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
+            // 
+            // UpdateMainPanel
+            // 
+            this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.UpdateMainPanel.Controls.Add(this.panel94);
+            this.UpdateMainPanel.Controls.Add(this.panel40);
+            this.UpdateMainPanel.Controls.Add(this.Update_CheckForUpdateButton);
+            this.UpdateMainPanel.Controls.Add(this.panel73);
+            this.UpdateMainPanel.Controls.Add(this.panel74);
+            this.UpdateMainPanel.Controls.Add(this.panel77);
+            this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.UpdateMainPanel.Name = "UpdateMainPanel";
+            this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.UpdateMainPanel.TabIndex = 11;
+            // 
+            // panel94
+            // 
+            this.panel94.BackColor = System.Drawing.Color.White;
+            this.panel94.Controls.Add(this.label40);
+            this.panel94.Controls.Add(this.panel96);
+            this.panel94.Location = new System.Drawing.Point(27, 306);
+            this.panel94.Name = "panel94";
+            this.panel94.Size = new System.Drawing.Size(882, 159);
+            this.panel94.TabIndex = 29;
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label40.Location = new System.Drawing.Point(6, 41);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(870, 115);
+            this.label40.TabIndex = 4;
+            this.label40.Text = resources.GetString("label40.Text");
+            // 
+            // panel96
+            // 
+            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel96.Controls.Add(this.label41);
+            this.panel96.Controls.Add(this.panel97);
+            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel96.Location = new System.Drawing.Point(0, 0);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(882, 38);
+            this.panel96.TabIndex = 3;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label41.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(55, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(447, 38);
+            this.label41.TabIndex = 6;
+            this.label41.Text = "Information";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel97
+            // 
+            this.panel97.Controls.Add(this.pictureBox11);
+            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel97.Location = new System.Drawing.Point(0, 0);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(55, 38);
+            this.panel97.TabIndex = 0;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.White;
+            this.panel40.Controls.Add(this.SpeedLabel);
+            this.panel40.Controls.Add(this.Update_ProgressBar);
+            this.panel40.Controls.Add(this.panel42);
+            this.panel40.Location = new System.Drawing.Point(27, 82);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(882, 78);
+            this.panel40.TabIndex = 26;
+            // 
+            // SpeedLabel
+            // 
+            this.SpeedLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.SpeedLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SpeedLabel.Location = new System.Drawing.Point(794, 44);
+            this.SpeedLabel.Name = "SpeedLabel";
+            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SpeedLabel.Size = new System.Drawing.Size(82, 25);
+            this.SpeedLabel.TabIndex = 28;
+            this.SpeedLabel.Text = "Bytes/s: 0";
+            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip.SetToolTip(this.SpeedLabel, "Current download speed");
+            // 
+            // Update_ProgressBar
+            // 
+            this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
+            this.Update_ProgressBar.Name = "Update_ProgressBar";
+            this.Update_ProgressBar.Size = new System.Drawing.Size(779, 25);
+            this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Update_ProgressBar.TabIndex = 27;
+            // 
+            // panel42
+            // 
+            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel42.Controls.Add(this.Update_StatusLabel);
+            this.panel42.Controls.Add(this.panel71);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel42.Location = new System.Drawing.Point(0, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(882, 38);
+            this.panel42.TabIndex = 3;
+            // 
+            // Update_StatusLabel
+            // 
+            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_StatusLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
+            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
+            this.Update_StatusLabel.Name = "Update_StatusLabel";
+            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
+            this.Update_StatusLabel.TabIndex = 6;
+            this.Update_StatusLabel.Text = "Status";
+            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel71
+            // 
+            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel71.Location = new System.Drawing.Point(0, 0);
+            this.panel71.Name = "panel71";
+            this.panel71.Size = new System.Drawing.Size(55, 38);
+            this.panel71.TabIndex = 0;
+            // 
+            // Update_CheckForUpdateButton
+            // 
+            this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
+            this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
+            this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
+            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(132, 24);
+            this.Update_CheckForUpdateButton.TabIndex = 26;
+            this.Update_CheckForUpdateButton.Text = "Check For Update";
+            this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
+            this.Update_CheckForUpdateButton.Click += new System.EventHandler(this.Update_CheckForUpdateButton_Click);
+            // 
+            // panel73
+            // 
+            this.panel73.Controls.Add(this.label78);
+            this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel73.Location = new System.Drawing.Point(0, 0);
+            this.panel73.Name = "panel73";
+            this.panel73.Size = new System.Drawing.Size(919, 44);
+            this.panel73.TabIndex = 8;
+            // 
+            // label78
+            // 
+            this.label78.BackColor = System.Drawing.Color.Transparent;
+            this.label78.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label78.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label78.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label78.Location = new System.Drawing.Point(22, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(897, 44);
+            this.label78.TabIndex = 7;
+            this.label78.Text = "Updates";
+            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel74
+            // 
+            this.panel74.BackColor = System.Drawing.Color.White;
+            this.panel74.Controls.Add(this.groupBox4);
+            this.panel74.Controls.Add(this.panel75);
+            this.panel74.Location = new System.Drawing.Point(27, 171);
+            this.panel74.Name = "panel74";
+            this.panel74.Size = new System.Drawing.Size(882, 125);
+            this.panel74.TabIndex = 2;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.panel72);
+            this.groupBox4.Controls.Add(this.panel91);
+            this.groupBox4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.groupBox4.Location = new System.Drawing.Point(9, 44);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(864, 72);
+            this.groupBox4.TabIndex = 55;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "FFMPEG";
+            // 
+            // panel72
+            // 
+            this.panel72.Controls.Add(this.panel89);
+            this.panel72.Controls.Add(this.panel90);
+            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel72.Location = new System.Drawing.Point(3, 44);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(858, 26);
+            this.panel72.TabIndex = 1;
+            // 
+            // panel89
+            // 
+            this.panel89.Controls.Add(this.Update_DownloadButton);
+            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel89.Location = new System.Drawing.Point(562, 0);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(296, 26);
+            this.panel89.TabIndex = 1;
+            // 
+            // Update_DownloadButton
+            // 
+            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
+            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
+            this.Update_DownloadButton.Name = "Update_DownloadButton";
+            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 26);
+            this.Update_DownloadButton.TabIndex = 71;
+            this.Update_DownloadButton.Text = "Loading...";
+            this.toolTip.SetToolTip(this.Update_DownloadButton, "Automatically update ffmpeg on your system");
+            this.Update_DownloadButton.UseVisualStyleBackColor = false;
+            this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
+            // 
+            // panel90
+            // 
+            this.panel90.Controls.Add(this.Update_LatestUpdateLabel);
+            this.panel90.Controls.Add(this.label24);
+            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel90.Location = new System.Drawing.Point(0, 0);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(295, 26);
+            this.panel90.TabIndex = 0;
+            // 
+            // Update_LatestUpdateLabel
+            // 
+            this.Update_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
+            this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
+            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 26);
+            this.Update_LatestUpdateLabel.TabIndex = 2;
+            this.Update_LatestUpdateLabel.Text = "-";
+            this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label24.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label24.Location = new System.Drawing.Point(0, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 26);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Latest Update:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel91
+            // 
+            this.panel91.Controls.Add(this.panel92);
+            this.panel91.Controls.Add(this.panel93);
+            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel91.Location = new System.Drawing.Point(3, 19);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(858, 25);
+            this.panel91.TabIndex = 0;
+            // 
+            // panel92
+            // 
+            this.panel92.Controls.Add(this.Update_OnlineVerLabel);
+            this.panel92.Controls.Add(this.label35);
+            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel92.Location = new System.Drawing.Point(562, 0);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(296, 25);
+            this.panel92.TabIndex = 1;
+            // 
+            // Update_OnlineVerLabel
+            // 
+            this.Update_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_OnlineVerLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Update_OnlineVerLabel.Location = new System.Drawing.Point(107, 0);
+            this.Update_OnlineVerLabel.Name = "Update_OnlineVerLabel";
+            this.Update_OnlineVerLabel.Size = new System.Drawing.Size(190, 25);
+            this.Update_OnlineVerLabel.TabIndex = 2;
+            this.Update_OnlineVerLabel.Text = "-";
+            this.Update_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label35.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label35.Location = new System.Drawing.Point(0, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(107, 25);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Online FFmpeg Version:";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel93
+            // 
+            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
+            this.panel93.Controls.Add(this.label37);
+            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel93.Location = new System.Drawing.Point(0, 0);
+            this.panel93.Name = "panel93";
+            this.panel93.Size = new System.Drawing.Size(295, 25);
+            this.panel93.TabIndex = 0;
+            // 
+            // Update_InstalledVersionLabel
+            // 
+            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
+            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
+            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
+            this.Update_InstalledVersionLabel.TabIndex = 1;
+            this.Update_InstalledVersionLabel.Text = "-";
+            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label37
+            // 
+            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label37.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(118, 25);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Installed FFmpeg Version:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel75
+            // 
+            this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel75.Controls.Add(this.label79);
+            this.panel75.Controls.Add(this.panel76);
+            this.panel75.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel75.Location = new System.Drawing.Point(0, 0);
+            this.panel75.Name = "panel75";
+            this.panel75.Size = new System.Drawing.Size(882, 38);
+            this.panel75.TabIndex = 3;
+            // 
+            // label79
+            // 
+            this.label79.BackColor = System.Drawing.Color.Transparent;
+            this.label79.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label79.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label79.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.label79.ForeColor = System.Drawing.Color.White;
+            this.label79.Location = new System.Drawing.Point(55, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(447, 38);
+            this.label79.TabIndex = 6;
+            this.label79.Text = "Installed Information";
+            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel76
+            // 
+            this.panel76.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel76.Location = new System.Drawing.Point(0, 0);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(55, 38);
+            this.panel76.TabIndex = 0;
+            // 
+            // panel77
+            // 
+            this.panel77.Location = new System.Drawing.Point(719, 495);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(200, 73);
+            this.panel77.TabIndex = 1;
+            // 
+            // SettingsMainPanel
+            // 
+            this.SettingsMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.SettingsMainPanel.Controls.Add(this.Settings_NetPanel);
+            this.SettingsMainPanel.Controls.Add(this.panel82);
+            this.SettingsMainPanel.Controls.Add(this.panel44);
+            this.SettingsMainPanel.Controls.Add(this.panel43);
+            this.SettingsMainPanel.Controls.Add(this.Settings_ResetButton);
+            this.SettingsMainPanel.Controls.Add(this.Settings_SaveButton);
+            this.SettingsMainPanel.Controls.Add(this.panel21);
+            this.SettingsMainPanel.Controls.Add(this.panel31);
+            this.SettingsMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SettingsMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.SettingsMainPanel.Name = "SettingsMainPanel";
+            this.SettingsMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.SettingsMainPanel.TabIndex = 6;
+            // 
+            // Settings_NetPanel
+            // 
+            this.Settings_NetPanel.BackColor = System.Drawing.Color.White;
+            this.Settings_NetPanel.Controls.Add(this.panel27);
+            this.Settings_NetPanel.Controls.Add(this.groupBox1);
+            this.Settings_NetPanel.Location = new System.Drawing.Point(27, 293);
+            this.Settings_NetPanel.Name = "Settings_NetPanel";
+            this.Settings_NetPanel.Size = new System.Drawing.Size(617, 123);
+            this.Settings_NetPanel.TabIndex = 69;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel27.Controls.Add(this.label20);
+            this.panel27.Controls.Add(this.panel28);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel27.Location = new System.Drawing.Point(0, 0);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(617, 38);
+            this.panel27.TabIndex = 3;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label20.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label20.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(55, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(559, 38);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "FFmpeg Information";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel28
+            // 
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel28.Location = new System.Drawing.Point(0, 0);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(55, 38);
+            this.panel28.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.panel86);
+            this.groupBox1.Controls.Add(this.panel17);
+            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.groupBox1.Location = new System.Drawing.Point(6, 44);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(603, 72);
+            this.groupBox1.TabIndex = 54;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "FFMPEG";
+            // 
+            // panel86
+            // 
+            this.panel86.Controls.Add(this.panel87);
+            this.panel86.Controls.Add(this.panel88);
+            this.panel86.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel86.Location = new System.Drawing.Point(3, 44);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(597, 28);
+            this.panel86.TabIndex = 1;
+            // 
+            // panel87
+            // 
+            this.panel87.Controls.Add(this.Settings_DownloadButton);
+            this.panel87.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel87.Location = new System.Drawing.Point(301, 0);
+            this.panel87.Name = "panel87";
+            this.panel87.Size = new System.Drawing.Size(296, 28);
+            this.panel87.TabIndex = 1;
+            // 
+            // Settings_DownloadButton
+            // 
+            this.Settings_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Settings_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
+            this.Settings_DownloadButton.FlatAppearance.BorderSize = 2;
+            this.Settings_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_DownloadButton.Location = new System.Drawing.Point(0, 0);
+            this.Settings_DownloadButton.Name = "Settings_DownloadButton";
+            this.Settings_DownloadButton.Size = new System.Drawing.Size(296, 28);
+            this.Settings_DownloadButton.TabIndex = 71;
+            this.Settings_DownloadButton.Text = "Loading...";
+            this.Settings_DownloadButton.UseVisualStyleBackColor = false;
+            this.Settings_DownloadButton.Click += new System.EventHandler(this.Settings_DownloadButton_Click);
+            // 
+            // panel88
+            // 
+            this.panel88.Controls.Add(this.Settings_LatestUpdateLabel);
+            this.panel88.Controls.Add(this.label31);
+            this.panel88.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel88.Location = new System.Drawing.Point(0, 0);
+            this.panel88.Name = "panel88";
+            this.panel88.Size = new System.Drawing.Size(295, 28);
+            this.panel88.TabIndex = 0;
+            // 
+            // Settings_LatestUpdateLabel
+            // 
+            this.Settings_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Settings_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Settings_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
+            this.Settings_LatestUpdateLabel.Name = "Settings_LatestUpdateLabel";
+            this.Settings_LatestUpdateLabel.Size = new System.Drawing.Size(223, 28);
+            this.Settings_LatestUpdateLabel.TabIndex = 2;
+            this.Settings_LatestUpdateLabel.Text = "-";
+            this.Settings_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label31
+            // 
+            this.label31.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label31.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label31.Location = new System.Drawing.Point(0, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 28);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Latest Update:";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.panel85);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel17.Location = new System.Drawing.Point(3, 19);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(597, 25);
+            this.panel17.TabIndex = 0;
+            // 
+            // panel85
+            // 
+            this.panel85.Controls.Add(this.Settings_OnlineVerLabel);
+            this.panel85.Controls.Add(this.label27);
+            this.panel85.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel85.Location = new System.Drawing.Point(301, 0);
+            this.panel85.Name = "panel85";
+            this.panel85.Size = new System.Drawing.Size(296, 25);
+            this.panel85.TabIndex = 1;
+            // 
+            // Settings_OnlineVerLabel
+            // 
+            this.Settings_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Settings_OnlineVerLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Settings_OnlineVerLabel.Location = new System.Drawing.Point(139, 0);
+            this.Settings_OnlineVerLabel.Name = "Settings_OnlineVerLabel";
+            this.Settings_OnlineVerLabel.Size = new System.Drawing.Size(157, 25);
+            this.Settings_OnlineVerLabel.TabIndex = 2;
+            this.Settings_OnlineVerLabel.Text = "-";
+            this.Settings_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label27
+            // 
+            this.label27.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label27.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label27.Location = new System.Drawing.Point(0, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(139, 25);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "Downloadable FFmpeg Version:";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.Settings_InstalledVersionLabel);
+            this.panel18.Controls.Add(this.label16);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(295, 25);
+            this.panel18.TabIndex = 0;
+            // 
+            // Settings_InstalledVersionLabel
+            // 
+            this.Settings_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Settings_InstalledVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Settings_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
+            this.Settings_InstalledVersionLabel.Name = "Settings_InstalledVersionLabel";
+            this.Settings_InstalledVersionLabel.Size = new System.Drawing.Size(177, 25);
+            this.Settings_InstalledVersionLabel.TabIndex = 1;
+            this.Settings_InstalledVersionLabel.Text = "-";
+            this.Settings_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(118, 25);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Installed FFmpeg Version:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel82
+            // 
+            this.panel82.BackColor = System.Drawing.Color.White;
+            this.panel82.Controls.Add(this.Settings_URIServerAutoStart);
+            this.panel82.Controls.Add(this.Settings_URIServerPort);
+            this.panel82.Controls.Add(this.Settings_URIServerIndicator);
+            this.panel82.Controls.Add(this.Settings_URIServerCheckbox);
+            this.panel82.Controls.Add(this.panel83);
+            this.panel82.Location = new System.Drawing.Point(473, 186);
+            this.panel82.Name = "panel82";
+            this.panel82.Size = new System.Drawing.Size(234, 95);
+            this.panel82.TabIndex = 70;
+            // 
+            // Settings_URIServerAutoStart
+            // 
+            this.Settings_URIServerAutoStart.AutoSize = true;
+            this.Settings_URIServerAutoStart.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Settings_URIServerAutoStart.Location = new System.Drawing.Point(117, 66);
+            this.Settings_URIServerAutoStart.Name = "Settings_URIServerAutoStart";
+            this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(68, 16);
+            this.Settings_URIServerAutoStart.TabIndex = 71;
+            this.Settings_URIServerAutoStart.Text = "Auto Start";
+            this.toolTip.SetToolTip(this.Settings_URIServerAutoStart, "Set autostart enabled/disabled on startup");
+            this.Settings_URIServerAutoStart.UseVisualStyleBackColor = true;
+            // 
+            // Settings_URIServerPort
+            // 
+            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Settings_URIServerPort.Location = new System.Drawing.Point(44, 56);
+            this.Settings_URIServerPort.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.Settings_URIServerPort.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Settings_URIServerPort.Name = "Settings_URIServerPort";
+            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 20);
+            this.Settings_URIServerPort.TabIndex = 70;
+            this.toolTip.SetToolTip(this.Settings_URIServerPort, "URI Listener port");
+            this.Settings_URIServerPort.Value = new decimal(new int[] {
+            288,
+            0,
+            0,
+            0});
+            // 
+            // Settings_URIServerIndicator
+            // 
+            this.Settings_URIServerIndicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Settings_URIServerIndicator.Location = new System.Drawing.Point(18, 56);
+            this.Settings_URIServerIndicator.Name = "Settings_URIServerIndicator";
+            this.Settings_URIServerIndicator.Size = new System.Drawing.Size(20, 20);
+            this.Settings_URIServerIndicator.TabIndex = 69;
+            this.toolTip.SetToolTip(this.Settings_URIServerIndicator, "URI Listener status indicator");
+            // 
+            // Settings_URIServerCheckbox
+            // 
+            this.Settings_URIServerCheckbox.AutoSize = true;
+            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Settings_URIServerCheckbox.Location = new System.Drawing.Point(117, 50);
+            this.Settings_URIServerCheckbox.Name = "Settings_URIServerCheckbox";
+            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(51, 16);
+            this.Settings_URIServerCheckbox.TabIndex = 68;
+            this.Settings_URIServerCheckbox.Text = "Active";
+            this.toolTip.SetToolTip(this.Settings_URIServerCheckbox, "Set URI Listener active/disabled");
+            this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
+            this.Settings_URIServerCheckbox.CheckedChanged += new System.EventHandler(this.Settings_URIServerCheckbox_CheckedChanged);
+            // 
+            // panel83
+            // 
+            this.panel83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel83.Controls.Add(this.label19);
+            this.panel83.Controls.Add(this.panel84);
+            this.panel83.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel83.Location = new System.Drawing.Point(0, 0);
+            this.panel83.Name = "panel83";
+            this.panel83.Size = new System.Drawing.Size(234, 38);
+            this.panel83.TabIndex = 3;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label19.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label19.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(55, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(176, 38);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "URI Listener";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel84
+            // 
+            this.panel84.Controls.Add(this.pictureBox10);
+            this.panel84.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel84.Location = new System.Drawing.Point(0, 0);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(55, 38);
+            this.panel84.TabIndex = 0;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
+        "plugin to send data to the software. This \'data\' refers to the content you choos" +
+        "e to download or stream using ffmpeg.");
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.White;
+            this.panel44.Controls.Add(this.Settings_OverwriteDropdown);
+            this.panel44.Controls.Add(this.label21);
+            this.panel44.Controls.Add(this.panel78);
+            this.panel44.Controls.Add(this.Settings_VideoCodecDropdown);
+            this.panel44.Controls.Add(this.Settings_HideConsoleCheckbox);
+            this.panel44.Controls.Add(this.label30);
+            this.panel44.Controls.Add(this.label28);
+            this.panel44.Controls.Add(this.Settings_QualityDropdown);
+            this.panel44.Controls.Add(this.Settings_AudioCodecDropdown);
+            this.panel44.Controls.Add(this.label15);
+            this.panel44.Location = new System.Drawing.Point(27, 186);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(435, 95);
+            this.panel44.TabIndex = 69;
+            // 
+            // Settings_OverwriteDropdown
+            // 
+            this.Settings_OverwriteDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Settings_OverwriteDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Settings_OverwriteDropdown.FormattingEnabled = true;
+            this.Settings_OverwriteDropdown.Location = new System.Drawing.Point(9, 64);
+            this.Settings_OverwriteDropdown.Name = "Settings_OverwriteDropdown";
+            this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 21);
+            this.Settings_OverwriteDropdown.TabIndex = 67;
+            this.toolTip.SetToolTip(this.Settings_OverwriteDropdown, "Set default file overwrite setting");
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(6, 45);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(87, 16);
+            this.label21.TabIndex = 68;
+            this.label21.Text = "Overwrite";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel78
+            // 
+            this.panel78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel78.Controls.Add(this.label18);
+            this.panel78.Controls.Add(this.panel81);
+            this.panel78.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel78.Location = new System.Drawing.Point(0, 0);
+            this.panel78.Name = "panel78";
+            this.panel78.Size = new System.Drawing.Size(435, 38);
+            this.panel78.TabIndex = 3;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label18.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(55, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(377, 38);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "Default Encoder Options";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel81
+            // 
+            this.panel81.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel81.Location = new System.Drawing.Point(0, 0);
+            this.panel81.Name = "panel81";
+            this.panel81.Size = new System.Drawing.Size(55, 38);
+            this.panel81.TabIndex = 0;
+            // 
+            // Settings_VideoCodecDropdown
+            // 
+            this.Settings_VideoCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Settings_VideoCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Settings_VideoCodecDropdown.FormattingEnabled = true;
+            this.Settings_VideoCodecDropdown.Location = new System.Drawing.Point(96, 64);
+            this.Settings_VideoCodecDropdown.Name = "Settings_VideoCodecDropdown";
+            this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 21);
+            this.Settings_VideoCodecDropdown.TabIndex = 61;
+            this.toolTip.SetToolTip(this.Settings_VideoCodecDropdown, "Set default encoder setting");
+            // 
+            // Settings_HideConsoleCheckbox
+            // 
+            this.Settings_HideConsoleCheckbox.AutoSize = true;
+            this.Settings_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Settings_HideConsoleCheckbox.Location = new System.Drawing.Point(355, 71);
+            this.Settings_HideConsoleCheckbox.Name = "Settings_HideConsoleCheckbox";
+            this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
+            this.Settings_HideConsoleCheckbox.TabIndex = 60;
+            this.Settings_HideConsoleCheckbox.Text = "Hide Console";
+            this.toolTip.SetToolTip(this.Settings_HideConsoleCheckbox, "Set default ffmpeg window behaviour");
+            this.Settings_HideConsoleCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label30.Location = new System.Drawing.Point(270, 45);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(81, 16);
+            this.label30.TabIndex = 66;
+            this.label30.Text = "Quality/Speed";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label28.Location = new System.Drawing.Point(93, 45);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(87, 16);
+            this.label28.TabIndex = 62;
+            this.label28.Text = "Video Encoder";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Settings_QualityDropdown
+            // 
+            this.Settings_QualityDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Settings_QualityDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Settings_QualityDropdown.FormattingEnabled = true;
+            this.Settings_QualityDropdown.Location = new System.Drawing.Point(270, 64);
+            this.Settings_QualityDropdown.Name = "Settings_QualityDropdown";
+            this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 21);
+            this.Settings_QualityDropdown.TabIndex = 65;
+            this.toolTip.SetToolTip(this.Settings_QualityDropdown, "Set default quality preset setting");
+            // 
+            // Settings_AudioCodecDropdown
+            // 
+            this.Settings_AudioCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Settings_AudioCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Settings_AudioCodecDropdown.FormattingEnabled = true;
+            this.Settings_AudioCodecDropdown.Location = new System.Drawing.Point(183, 64);
+            this.Settings_AudioCodecDropdown.Name = "Settings_AudioCodecDropdown";
+            this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 21);
+            this.Settings_AudioCodecDropdown.TabIndex = 63;
+            this.toolTip.SetToolTip(this.Settings_AudioCodecDropdown, "Set default audio encoder setting");
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(180, 45);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(87, 16);
+            this.label15.TabIndex = 64;
+            this.label15.Text = "Audio Encoder";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel43
+            // 
+            this.panel43.BackColor = System.Drawing.Color.White;
+            this.panel43.Controls.Add(this.Settings_OpenDirectoryButton);
+            this.panel43.Controls.Add(this.Settings_DefaultOutputPathBox);
+            this.panel43.Controls.Add(this.Settings_DefaultOutputButton);
+            this.panel43.Controls.Add(this.panel79);
+            this.panel43.Controls.Add(this.Settings_FFplayPathBox);
+            this.panel43.Controls.Add(this.Settings_AutoDefaultOutputButton);
+            this.panel43.Controls.Add(this.Settings_FFmpegPathBox);
+            this.panel43.Controls.Add(this.Settings_FFMPEGLocationButton);
+            this.panel43.Controls.Add(this.Settings_FFPLAYLocationButton);
+            this.panel43.Location = new System.Drawing.Point(27, 50);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(882, 125);
+            this.panel43.TabIndex = 68;
+            // 
+            // Settings_OpenDirectoryButton
+            // 
+            this.Settings_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(674, 97);
+            this.Settings_OpenDirectoryButton.Name = "Settings_OpenDirectoryButton";
+            this.Settings_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Settings_OpenDirectoryButton.TabIndex = 60;
+            this.Settings_OpenDirectoryButton.Text = "▶";
+            this.toolTip.SetToolTip(this.Settings_OpenDirectoryButton, "Open output folder");
+            this.Settings_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Settings_OpenDirectoryButton.Click += new System.EventHandler(this.Settings_OpenDirectoryButton_Click);
+            // 
+            // Settings_DefaultOutputPathBox
+            // 
+            this.Settings_DefaultOutputPathBox.Enabled = false;
+            this.Settings_DefaultOutputPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_DefaultOutputPathBox.Location = new System.Drawing.Point(5, 97);
+            this.Settings_DefaultOutputPathBox.Name = "Settings_DefaultOutputPathBox";
+            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(663, 23);
+            this.Settings_DefaultOutputPathBox.TabIndex = 54;
+            // 
+            // Settings_DefaultOutputButton
+            // 
+            this.Settings_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(724, 97);
+            this.Settings_DefaultOutputButton.Name = "Settings_DefaultOutputButton";
+            this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(153, 23);
+            this.Settings_DefaultOutputButton.TabIndex = 55;
+            this.Settings_DefaultOutputButton.Text = "Default Output Folder";
+            this.toolTip.SetToolTip(this.Settings_DefaultOutputButton, "Manually set default output folder for all encoding processes");
+            this.Settings_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Settings_DefaultOutputButton.Click += new System.EventHandler(this.Settings_DefaultOutputButton_Click);
+            // 
+            // panel79
+            // 
+            this.panel79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel79.Controls.Add(this.label25);
+            this.panel79.Controls.Add(this.panel80);
+            this.panel79.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel79.Location = new System.Drawing.Point(0, 0);
+            this.panel79.Name = "panel79";
+            this.panel79.Size = new System.Drawing.Size(882, 38);
+            this.panel79.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label25.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(55, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(823, 38);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "Locations";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel80
+            // 
+            this.panel80.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel80.Location = new System.Drawing.Point(0, 0);
+            this.panel80.Name = "panel80";
+            this.panel80.Size = new System.Drawing.Size(55, 38);
+            this.panel80.TabIndex = 0;
+            // 
+            // Settings_FFplayPathBox
+            // 
+            this.Settings_FFplayPathBox.Enabled = false;
+            this.Settings_FFplayPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_FFplayPathBox.Location = new System.Drawing.Point(6, 70);
+            this.Settings_FFplayPathBox.Name = "Settings_FFplayPathBox";
+            this.Settings_FFplayPathBox.Size = new System.Drawing.Size(743, 23);
+            this.Settings_FFplayPathBox.TabIndex = 52;
+            // 
+            // Settings_AutoDefaultOutputButton
+            // 
+            this.Settings_AutoDefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_AutoDefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_AutoDefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_AutoDefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(699, 97);
+            this.Settings_AutoDefaultOutputButton.Name = "Settings_AutoDefaultOutputButton";
+            this.Settings_AutoDefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Settings_AutoDefaultOutputButton.TabIndex = 59;
+            this.Settings_AutoDefaultOutputButton.Text = "✓";
+            this.toolTip.SetToolTip(this.Settings_AutoDefaultOutputButton, "Reset to default output folder location");
+            this.Settings_AutoDefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Settings_AutoDefaultOutputButton.Click += new System.EventHandler(this.Settings_AutoDefaultOutputButton_Click);
+            // 
+            // Settings_FFmpegPathBox
+            // 
+            this.Settings_FFmpegPathBox.Enabled = false;
+            this.Settings_FFmpegPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Settings_FFmpegPathBox.Location = new System.Drawing.Point(6, 44);
+            this.Settings_FFmpegPathBox.Name = "Settings_FFmpegPathBox";
+            this.Settings_FFmpegPathBox.Size = new System.Drawing.Size(743, 23);
+            this.Settings_FFmpegPathBox.TabIndex = 50;
+            // 
+            // Settings_FFMPEGLocationButton
+            // 
+            this.Settings_FFMPEGLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_FFMPEGLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_FFMPEGLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_FFMPEGLocationButton.Location = new System.Drawing.Point(755, 43);
+            this.Settings_FFMPEGLocationButton.Name = "Settings_FFMPEGLocationButton";
+            this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(122, 23);
+            this.Settings_FFMPEGLocationButton.TabIndex = 51;
+            this.Settings_FFMPEGLocationButton.Text = "FFMPEG Location";
+            this.toolTip.SetToolTip(this.Settings_FFMPEGLocationButton, "Manually set ffmpeg location");
+            this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = false;
+            this.Settings_FFMPEGLocationButton.Click += new System.EventHandler(this.Settings_FFMPEGLocationButton_Click);
+            // 
+            // Settings_FFPLAYLocationButton
+            // 
+            this.Settings_FFPLAYLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Settings_FFPLAYLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_FFPLAYLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_FFPLAYLocationButton.Location = new System.Drawing.Point(755, 70);
+            this.Settings_FFPLAYLocationButton.Name = "Settings_FFPLAYLocationButton";
+            this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(122, 23);
+            this.Settings_FFPLAYLocationButton.TabIndex = 53;
+            this.Settings_FFPLAYLocationButton.Text = "FFplay Location";
+            this.toolTip.SetToolTip(this.Settings_FFPLAYLocationButton, "Manually set ffplay location");
+            this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = false;
+            this.Settings_FFPLAYLocationButton.Click += new System.EventHandler(this.Settings_FFPLAYLocationButton_Click);
+            // 
+            // Settings_ResetButton
+            // 
+            this.Settings_ResetButton.BackColor = System.Drawing.Color.White;
+            this.Settings_ResetButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Settings_ResetButton.FlatAppearance.BorderSize = 2;
+            this.Settings_ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_ResetButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_ResetButton.Location = new System.Drawing.Point(27, 457);
+            this.Settings_ResetButton.Name = "Settings_ResetButton";
+            this.Settings_ResetButton.Size = new System.Drawing.Size(116, 26);
+            this.Settings_ResetButton.TabIndex = 58;
+            this.Settings_ResetButton.Text = "Reset Settings";
+            this.Settings_ResetButton.UseVisualStyleBackColor = false;
+            this.Settings_ResetButton.Click += new System.EventHandler(this.Settings_ResetButton_Click);
+            // 
+            // Settings_SaveButton
+            // 
+            this.Settings_SaveButton.BackColor = System.Drawing.Color.White;
+            this.Settings_SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Settings_SaveButton.FlatAppearance.BorderSize = 2;
+            this.Settings_SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_SaveButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Settings_SaveButton.Location = new System.Drawing.Point(793, 457);
+            this.Settings_SaveButton.Name = "Settings_SaveButton";
+            this.Settings_SaveButton.Size = new System.Drawing.Size(116, 26);
+            this.Settings_SaveButton.TabIndex = 57;
+            this.Settings_SaveButton.Text = "Save Settings";
+            this.Settings_SaveButton.UseVisualStyleBackColor = false;
+            this.Settings_SaveButton.Click += new System.EventHandler(this.Settings_SaveButton_Click);
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.label22);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel21.Location = new System.Drawing.Point(0, 0);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(919, 44);
+            this.panel21.TabIndex = 8;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label22.Location = new System.Drawing.Point(22, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(897, 44);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "Settings";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel31
+            // 
+            this.panel31.Location = new System.Drawing.Point(719, 495);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(200, 73);
+            this.panel31.TabIndex = 1;
             // 
             // M3U8MainPanel
             // 
@@ -550,6 +1628,14 @@
             this.M3U8MainPanel.Name = "M3U8MainPanel";
             this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
             this.M3U8MainPanel.TabIndex = 8;
+            // 
+            // panel98
+            // 
+            this.panel98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel98.Location = new System.Drawing.Point(273, 46);
+            this.panel98.Name = "panel98";
+            this.panel98.Size = new System.Drawing.Size(1, 27);
+            this.panel98.TabIndex = 8;
             // 
             // M3U8_HideConsoleCheckbox
             // 
@@ -1030,7 +2116,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem6});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1307,393 +2393,6 @@
             this.toolTip.SetToolTip(this.Encoder_HideConsoleToggle, "Set ffmpeg window hidden or visible");
             this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
             // 
-            // UpdateMainPanel
-            // 
-            this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.UpdateMainPanel.Controls.Add(this.panel94);
-            this.UpdateMainPanel.Controls.Add(this.panel40);
-            this.UpdateMainPanel.Controls.Add(this.Update_CheckForUpdateButton);
-            this.UpdateMainPanel.Controls.Add(this.panel73);
-            this.UpdateMainPanel.Controls.Add(this.panel74);
-            this.UpdateMainPanel.Controls.Add(this.panel77);
-            this.UpdateMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UpdateMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.UpdateMainPanel.Name = "UpdateMainPanel";
-            this.UpdateMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.UpdateMainPanel.TabIndex = 11;
-            // 
-            // panel94
-            // 
-            this.panel94.BackColor = System.Drawing.Color.White;
-            this.panel94.Controls.Add(this.label40);
-            this.panel94.Controls.Add(this.panel96);
-            this.panel94.Location = new System.Drawing.Point(27, 306);
-            this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(882, 159);
-            this.panel94.TabIndex = 29;
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label40.Location = new System.Drawing.Point(6, 41);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(870, 115);
-            this.label40.TabIndex = 4;
-            this.label40.Text = resources.GetString("label40.Text");
-            // 
-            // panel96
-            // 
-            this.panel96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel96.Controls.Add(this.label41);
-            this.panel96.Controls.Add(this.panel97);
-            this.panel96.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel96.Location = new System.Drawing.Point(0, 0);
-            this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(882, 38);
-            this.panel96.TabIndex = 3;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label41.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label41.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(55, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(447, 38);
-            this.label41.TabIndex = 6;
-            this.label41.Text = "Information";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel97
-            // 
-            this.panel97.Controls.Add(this.pictureBox11);
-            this.panel97.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel97.Location = new System.Drawing.Point(0, 0);
-            this.panel97.Name = "panel97";
-            this.panel97.Size = new System.Drawing.Size(55, 38);
-            this.panel97.TabIndex = 0;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.Color.White;
-            this.panel40.Controls.Add(this.SpeedLabel);
-            this.panel40.Controls.Add(this.Update_ProgressBar);
-            this.panel40.Controls.Add(this.panel42);
-            this.panel40.Location = new System.Drawing.Point(27, 82);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(882, 78);
-            this.panel40.TabIndex = 26;
-            // 
-            // SpeedLabel
-            // 
-            this.SpeedLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SpeedLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
-            this.SpeedLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SpeedLabel.Location = new System.Drawing.Point(794, 44);
-            this.SpeedLabel.Name = "SpeedLabel";
-            this.SpeedLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SpeedLabel.Size = new System.Drawing.Size(82, 25);
-            this.SpeedLabel.TabIndex = 28;
-            this.SpeedLabel.Text = "Bytes/s: 0";
-            this.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip.SetToolTip(this.SpeedLabel, "Current download speed");
-            // 
-            // Update_ProgressBar
-            // 
-            this.Update_ProgressBar.Location = new System.Drawing.Point(9, 44);
-            this.Update_ProgressBar.Name = "Update_ProgressBar";
-            this.Update_ProgressBar.Size = new System.Drawing.Size(779, 25);
-            this.Update_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Update_ProgressBar.TabIndex = 27;
-            // 
-            // panel42
-            // 
-            this.panel42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel42.Controls.Add(this.Update_StatusLabel);
-            this.panel42.Controls.Add(this.panel71);
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel42.Location = new System.Drawing.Point(0, 0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(882, 38);
-            this.panel42.TabIndex = 3;
-            // 
-            // Update_StatusLabel
-            // 
-            this.Update_StatusLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Update_StatusLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Update_StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_StatusLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.Update_StatusLabel.ForeColor = System.Drawing.Color.White;
-            this.Update_StatusLabel.Location = new System.Drawing.Point(55, 0);
-            this.Update_StatusLabel.Name = "Update_StatusLabel";
-            this.Update_StatusLabel.Size = new System.Drawing.Size(680, 38);
-            this.Update_StatusLabel.TabIndex = 6;
-            this.Update_StatusLabel.Text = "Status";
-            this.Update_StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel71
-            // 
-            this.panel71.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel71.Location = new System.Drawing.Point(0, 0);
-            this.panel71.Name = "panel71";
-            this.panel71.Size = new System.Drawing.Size(55, 38);
-            this.panel71.TabIndex = 0;
-            // 
-            // Update_CheckForUpdateButton
-            // 
-            this.Update_CheckForUpdateButton.BackColor = System.Drawing.Color.White;
-            this.Update_CheckForUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Update_CheckForUpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_CheckForUpdateButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Update_CheckForUpdateButton.Location = new System.Drawing.Point(27, 50);
-            this.Update_CheckForUpdateButton.Name = "Update_CheckForUpdateButton";
-            this.Update_CheckForUpdateButton.Size = new System.Drawing.Size(132, 24);
-            this.Update_CheckForUpdateButton.TabIndex = 26;
-            this.Update_CheckForUpdateButton.Text = "Check For Update";
-            this.Update_CheckForUpdateButton.UseVisualStyleBackColor = false;
-            this.Update_CheckForUpdateButton.Click += new System.EventHandler(this.Update_CheckForUpdateButton_Click);
-            // 
-            // panel73
-            // 
-            this.panel73.Controls.Add(this.label78);
-            this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel73.Location = new System.Drawing.Point(0, 0);
-            this.panel73.Name = "panel73";
-            this.panel73.Size = new System.Drawing.Size(919, 44);
-            this.panel73.TabIndex = 8;
-            // 
-            // label78
-            // 
-            this.label78.BackColor = System.Drawing.Color.Transparent;
-            this.label78.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label78.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label78.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label78.Location = new System.Drawing.Point(22, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(897, 44);
-            this.label78.TabIndex = 7;
-            this.label78.Text = "Updates";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel74
-            // 
-            this.panel74.BackColor = System.Drawing.Color.White;
-            this.panel74.Controls.Add(this.groupBox4);
-            this.panel74.Controls.Add(this.panel75);
-            this.panel74.Location = new System.Drawing.Point(27, 171);
-            this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(882, 125);
-            this.panel74.TabIndex = 2;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.panel72);
-            this.groupBox4.Controls.Add(this.panel91);
-            this.groupBox4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.groupBox4.Location = new System.Drawing.Point(9, 44);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(864, 72);
-            this.groupBox4.TabIndex = 55;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "FFMPEG";
-            // 
-            // panel72
-            // 
-            this.panel72.Controls.Add(this.panel89);
-            this.panel72.Controls.Add(this.panel90);
-            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel72.Location = new System.Drawing.Point(3, 44);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(858, 26);
-            this.panel72.TabIndex = 1;
-            // 
-            // panel89
-            // 
-            this.panel89.Controls.Add(this.Update_DownloadButton);
-            this.panel89.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel89.Location = new System.Drawing.Point(562, 0);
-            this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(296, 26);
-            this.panel89.TabIndex = 1;
-            // 
-            // Update_DownloadButton
-            // 
-            this.Update_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Update_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Update_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.Update_DownloadButton.FlatAppearance.BorderSize = 2;
-            this.Update_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Update_DownloadButton.Location = new System.Drawing.Point(0, 0);
-            this.Update_DownloadButton.Name = "Update_DownloadButton";
-            this.Update_DownloadButton.Size = new System.Drawing.Size(296, 26);
-            this.Update_DownloadButton.TabIndex = 71;
-            this.Update_DownloadButton.Text = "Loading...";
-            this.toolTip.SetToolTip(this.Update_DownloadButton, "Automatically update ffmpeg on your system");
-            this.Update_DownloadButton.UseVisualStyleBackColor = false;
-            this.Update_DownloadButton.Click += new System.EventHandler(this.Update_DownloadButton_Click);
-            // 
-            // panel90
-            // 
-            this.panel90.Controls.Add(this.Update_LatestUpdateLabel);
-            this.panel90.Controls.Add(this.label24);
-            this.panel90.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel90.Location = new System.Drawing.Point(0, 0);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(295, 26);
-            this.panel90.TabIndex = 0;
-            // 
-            // Update_LatestUpdateLabel
-            // 
-            this.Update_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Update_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
-            this.Update_LatestUpdateLabel.Name = "Update_LatestUpdateLabel";
-            this.Update_LatestUpdateLabel.Size = new System.Drawing.Size(484, 26);
-            this.Update_LatestUpdateLabel.TabIndex = 2;
-            this.Update_LatestUpdateLabel.Text = "-";
-            this.Update_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label24
-            // 
-            this.label24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label24.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label24.Location = new System.Drawing.Point(0, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 26);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Latest Update:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel91
-            // 
-            this.panel91.Controls.Add(this.panel92);
-            this.panel91.Controls.Add(this.panel93);
-            this.panel91.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel91.Location = new System.Drawing.Point(3, 19);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(858, 25);
-            this.panel91.TabIndex = 0;
-            // 
-            // panel92
-            // 
-            this.panel92.Controls.Add(this.Update_OnlineVerLabel);
-            this.panel92.Controls.Add(this.label35);
-            this.panel92.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel92.Location = new System.Drawing.Point(562, 0);
-            this.panel92.Name = "panel92";
-            this.panel92.Size = new System.Drawing.Size(296, 25);
-            this.panel92.TabIndex = 1;
-            // 
-            // Update_OnlineVerLabel
-            // 
-            this.Update_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_OnlineVerLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Update_OnlineVerLabel.Location = new System.Drawing.Point(107, 0);
-            this.Update_OnlineVerLabel.Name = "Update_OnlineVerLabel";
-            this.Update_OnlineVerLabel.Size = new System.Drawing.Size(190, 25);
-            this.Update_OnlineVerLabel.TabIndex = 2;
-            this.Update_OnlineVerLabel.Text = "-";
-            this.Update_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label35
-            // 
-            this.label35.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label35.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label35.Location = new System.Drawing.Point(0, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(107, 25);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Online FFmpeg Version:";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel93
-            // 
-            this.panel93.Controls.Add(this.Update_InstalledVersionLabel);
-            this.panel93.Controls.Add(this.label37);
-            this.panel93.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel93.Location = new System.Drawing.Point(0, 0);
-            this.panel93.Name = "panel93";
-            this.panel93.Size = new System.Drawing.Size(295, 25);
-            this.panel93.TabIndex = 0;
-            // 
-            // Update_InstalledVersionLabel
-            // 
-            this.Update_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Update_InstalledVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Update_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
-            this.Update_InstalledVersionLabel.Name = "Update_InstalledVersionLabel";
-            this.Update_InstalledVersionLabel.Size = new System.Drawing.Size(438, 25);
-            this.Update_InstalledVersionLabel.TabIndex = 1;
-            this.Update_InstalledVersionLabel.Text = "-";
-            this.Update_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label37
-            // 
-            this.label37.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label37.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label37.Location = new System.Drawing.Point(0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(118, 25);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Installed FFmpeg Version:";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel75
-            // 
-            this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel75.Controls.Add(this.label79);
-            this.panel75.Controls.Add(this.panel76);
-            this.panel75.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel75.Location = new System.Drawing.Point(0, 0);
-            this.panel75.Name = "panel75";
-            this.panel75.Size = new System.Drawing.Size(882, 38);
-            this.panel75.TabIndex = 3;
-            // 
-            // label79
-            // 
-            this.label79.BackColor = System.Drawing.Color.Transparent;
-            this.label79.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label79.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label79.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.label79.ForeColor = System.Drawing.Color.White;
-            this.label79.Location = new System.Drawing.Point(55, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(447, 38);
-            this.label79.TabIndex = 6;
-            this.label79.Text = "Installed Information";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel76
-            // 
-            this.panel76.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel76.Location = new System.Drawing.Point(0, 0);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(55, 38);
-            this.panel76.TabIndex = 0;
-            // 
-            // panel77
-            // 
-            this.panel77.Location = new System.Drawing.Point(719, 495);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(200, 73);
-            this.panel77.TabIndex = 1;
-            // 
             // ArgumentMainPanel
             // 
             this.ArgumentMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -1868,683 +2567,6 @@
             this.panel45.Size = new System.Drawing.Size(200, 73);
             this.panel45.TabIndex = 1;
             // 
-            // SettingsMainPanel
-            // 
-            this.SettingsMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.SettingsMainPanel.Controls.Add(this.Settings_NetPanel);
-            this.SettingsMainPanel.Controls.Add(this.panel82);
-            this.SettingsMainPanel.Controls.Add(this.panel44);
-            this.SettingsMainPanel.Controls.Add(this.panel43);
-            this.SettingsMainPanel.Controls.Add(this.Settings_ResetButton);
-            this.SettingsMainPanel.Controls.Add(this.Settings_SaveButton);
-            this.SettingsMainPanel.Controls.Add(this.panel21);
-            this.SettingsMainPanel.Controls.Add(this.panel31);
-            this.SettingsMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SettingsMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.SettingsMainPanel.Name = "SettingsMainPanel";
-            this.SettingsMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.SettingsMainPanel.TabIndex = 6;
-            // 
-            // Settings_NetPanel
-            // 
-            this.Settings_NetPanel.BackColor = System.Drawing.Color.White;
-            this.Settings_NetPanel.Controls.Add(this.panel27);
-            this.Settings_NetPanel.Controls.Add(this.groupBox1);
-            this.Settings_NetPanel.Location = new System.Drawing.Point(27, 293);
-            this.Settings_NetPanel.Name = "Settings_NetPanel";
-            this.Settings_NetPanel.Size = new System.Drawing.Size(617, 123);
-            this.Settings_NetPanel.TabIndex = 69;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel27.Controls.Add(this.label20);
-            this.panel27.Controls.Add(this.panel28);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(0, 0);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(617, 38);
-            this.panel27.TabIndex = 3;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label20.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(55, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(559, 38);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "FFmpeg Information";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel28
-            // 
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel28.Location = new System.Drawing.Point(0, 0);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(55, 38);
-            this.panel28.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.panel86);
-            this.groupBox1.Controls.Add(this.panel17);
-            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.groupBox1.Location = new System.Drawing.Point(6, 44);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(603, 72);
-            this.groupBox1.TabIndex = 54;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "FFMPEG";
-            // 
-            // panel86
-            // 
-            this.panel86.Controls.Add(this.panel87);
-            this.panel86.Controls.Add(this.panel88);
-            this.panel86.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel86.Location = new System.Drawing.Point(3, 44);
-            this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(597, 28);
-            this.panel86.TabIndex = 1;
-            // 
-            // panel87
-            // 
-            this.panel87.Controls.Add(this.Settings_DownloadButton);
-            this.panel87.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel87.Location = new System.Drawing.Point(301, 0);
-            this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(296, 28);
-            this.panel87.TabIndex = 1;
-            // 
-            // Settings_DownloadButton
-            // 
-            this.Settings_DownloadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Settings_DownloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Settings_DownloadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.Settings_DownloadButton.FlatAppearance.BorderSize = 2;
-            this.Settings_DownloadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_DownloadButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_DownloadButton.Location = new System.Drawing.Point(0, 0);
-            this.Settings_DownloadButton.Name = "Settings_DownloadButton";
-            this.Settings_DownloadButton.Size = new System.Drawing.Size(296, 28);
-            this.Settings_DownloadButton.TabIndex = 71;
-            this.Settings_DownloadButton.Text = "Loading...";
-            this.Settings_DownloadButton.UseVisualStyleBackColor = false;
-            this.Settings_DownloadButton.Click += new System.EventHandler(this.Settings_DownloadButton_Click);
-            // 
-            // panel88
-            // 
-            this.panel88.Controls.Add(this.Settings_LatestUpdateLabel);
-            this.panel88.Controls.Add(this.label31);
-            this.panel88.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel88.Location = new System.Drawing.Point(0, 0);
-            this.panel88.Name = "panel88";
-            this.panel88.Size = new System.Drawing.Size(295, 28);
-            this.panel88.TabIndex = 0;
-            // 
-            // Settings_LatestUpdateLabel
-            // 
-            this.Settings_LatestUpdateLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Settings_LatestUpdateLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Settings_LatestUpdateLabel.Location = new System.Drawing.Point(72, 0);
-            this.Settings_LatestUpdateLabel.Name = "Settings_LatestUpdateLabel";
-            this.Settings_LatestUpdateLabel.Size = new System.Drawing.Size(223, 28);
-            this.Settings_LatestUpdateLabel.TabIndex = 2;
-            this.Settings_LatestUpdateLabel.Text = "-";
-            this.Settings_LatestUpdateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label31
-            // 
-            this.label31.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label31.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label31.Location = new System.Drawing.Point(0, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 28);
-            this.label31.TabIndex = 1;
-            this.label31.Text = "Latest Update:";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.panel85);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(3, 19);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(597, 25);
-            this.panel17.TabIndex = 0;
-            // 
-            // panel85
-            // 
-            this.panel85.Controls.Add(this.Settings_OnlineVerLabel);
-            this.panel85.Controls.Add(this.label27);
-            this.panel85.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel85.Location = new System.Drawing.Point(301, 0);
-            this.panel85.Name = "panel85";
-            this.panel85.Size = new System.Drawing.Size(296, 25);
-            this.panel85.TabIndex = 1;
-            // 
-            // Settings_OnlineVerLabel
-            // 
-            this.Settings_OnlineVerLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Settings_OnlineVerLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Settings_OnlineVerLabel.Location = new System.Drawing.Point(139, 0);
-            this.Settings_OnlineVerLabel.Name = "Settings_OnlineVerLabel";
-            this.Settings_OnlineVerLabel.Size = new System.Drawing.Size(157, 25);
-            this.Settings_OnlineVerLabel.TabIndex = 2;
-            this.Settings_OnlineVerLabel.Text = "-";
-            this.Settings_OnlineVerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label27
-            // 
-            this.label27.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label27.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label27.Location = new System.Drawing.Point(0, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(139, 25);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "Downloadable FFmpeg Version:";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.Settings_InstalledVersionLabel);
-            this.panel18.Controls.Add(this.label16);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(295, 25);
-            this.panel18.TabIndex = 0;
-            // 
-            // Settings_InstalledVersionLabel
-            // 
-            this.Settings_InstalledVersionLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Settings_InstalledVersionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Settings_InstalledVersionLabel.Location = new System.Drawing.Point(118, 0);
-            this.Settings_InstalledVersionLabel.Name = "Settings_InstalledVersionLabel";
-            this.Settings_InstalledVersionLabel.Size = new System.Drawing.Size(177, 25);
-            this.Settings_InstalledVersionLabel.TabIndex = 1;
-            this.Settings_InstalledVersionLabel.Text = "-";
-            this.Settings_InstalledVersionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(118, 25);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Installed FFmpeg Version:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel82
-            // 
-            this.panel82.BackColor = System.Drawing.Color.White;
-            this.panel82.Controls.Add(this.Settings_URIServerAutoStart);
-            this.panel82.Controls.Add(this.Settings_URIServerPort);
-            this.panel82.Controls.Add(this.Settings_URIServerIndicator);
-            this.panel82.Controls.Add(this.Settings_URIServerCheckbox);
-            this.panel82.Controls.Add(this.panel83);
-            this.panel82.Location = new System.Drawing.Point(473, 186);
-            this.panel82.Name = "panel82";
-            this.panel82.Size = new System.Drawing.Size(234, 95);
-            this.panel82.TabIndex = 70;
-            // 
-            // Settings_URIServerAutoStart
-            // 
-            this.Settings_URIServerAutoStart.AutoSize = true;
-            this.Settings_URIServerAutoStart.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Settings_URIServerAutoStart.Location = new System.Drawing.Point(117, 66);
-            this.Settings_URIServerAutoStart.Name = "Settings_URIServerAutoStart";
-            this.Settings_URIServerAutoStart.Size = new System.Drawing.Size(68, 16);
-            this.Settings_URIServerAutoStart.TabIndex = 71;
-            this.Settings_URIServerAutoStart.Text = "Auto Start";
-            this.toolTip.SetToolTip(this.Settings_URIServerAutoStart, "Set autostart enabled/disabled on startup");
-            this.Settings_URIServerAutoStart.UseVisualStyleBackColor = true;
-            // 
-            // Settings_URIServerPort
-            // 
-            this.Settings_URIServerPort.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Settings_URIServerPort.Location = new System.Drawing.Point(44, 56);
-            this.Settings_URIServerPort.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.Settings_URIServerPort.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.Settings_URIServerPort.Name = "Settings_URIServerPort";
-            this.Settings_URIServerPort.Size = new System.Drawing.Size(60, 20);
-            this.Settings_URIServerPort.TabIndex = 70;
-            this.toolTip.SetToolTip(this.Settings_URIServerPort, "URI Listener port");
-            this.Settings_URIServerPort.Value = new decimal(new int[] {
-            288,
-            0,
-            0,
-            0});
-            // 
-            // Settings_URIServerIndicator
-            // 
-            this.Settings_URIServerIndicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Settings_URIServerIndicator.Location = new System.Drawing.Point(18, 56);
-            this.Settings_URIServerIndicator.Name = "Settings_URIServerIndicator";
-            this.Settings_URIServerIndicator.Size = new System.Drawing.Size(20, 20);
-            this.Settings_URIServerIndicator.TabIndex = 69;
-            this.toolTip.SetToolTip(this.Settings_URIServerIndicator, "URI Listener status indicator");
-            // 
-            // Settings_URIServerCheckbox
-            // 
-            this.Settings_URIServerCheckbox.AutoSize = true;
-            this.Settings_URIServerCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Settings_URIServerCheckbox.Location = new System.Drawing.Point(117, 50);
-            this.Settings_URIServerCheckbox.Name = "Settings_URIServerCheckbox";
-            this.Settings_URIServerCheckbox.Size = new System.Drawing.Size(51, 16);
-            this.Settings_URIServerCheckbox.TabIndex = 68;
-            this.Settings_URIServerCheckbox.Text = "Active";
-            this.toolTip.SetToolTip(this.Settings_URIServerCheckbox, "Set URI Listener active/disabled");
-            this.Settings_URIServerCheckbox.UseVisualStyleBackColor = true;
-            this.Settings_URIServerCheckbox.CheckedChanged += new System.EventHandler(this.Settings_URIServerCheckbox_CheckedChanged);
-            // 
-            // panel83
-            // 
-            this.panel83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel83.Controls.Add(this.label19);
-            this.panel83.Controls.Add(this.panel84);
-            this.panel83.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel83.Location = new System.Drawing.Point(0, 0);
-            this.panel83.Name = "panel83";
-            this.panel83.Size = new System.Drawing.Size(234, 38);
-            this.panel83.TabIndex = 3;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(55, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(176, 38);
-            this.label19.TabIndex = 6;
-            this.label19.Text = "URI Listener";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel84
-            // 
-            this.panel84.Controls.Add(this.pictureBox10);
-            this.panel84.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel84.Location = new System.Drawing.Point(0, 0);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(55, 38);
-            this.panel84.TabIndex = 0;
-            // 
-            // panel44
-            // 
-            this.panel44.BackColor = System.Drawing.Color.White;
-            this.panel44.Controls.Add(this.Settings_OverwriteDropdown);
-            this.panel44.Controls.Add(this.label21);
-            this.panel44.Controls.Add(this.panel78);
-            this.panel44.Controls.Add(this.Settings_VideoCodecDropdown);
-            this.panel44.Controls.Add(this.Settings_HideConsoleCheckbox);
-            this.panel44.Controls.Add(this.label30);
-            this.panel44.Controls.Add(this.label28);
-            this.panel44.Controls.Add(this.Settings_QualityDropdown);
-            this.panel44.Controls.Add(this.Settings_AudioCodecDropdown);
-            this.panel44.Controls.Add(this.label15);
-            this.panel44.Location = new System.Drawing.Point(27, 186);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(435, 95);
-            this.panel44.TabIndex = 69;
-            // 
-            // Settings_OverwriteDropdown
-            // 
-            this.Settings_OverwriteDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_OverwriteDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Settings_OverwriteDropdown.FormattingEnabled = true;
-            this.Settings_OverwriteDropdown.Location = new System.Drawing.Point(9, 64);
-            this.Settings_OverwriteDropdown.Name = "Settings_OverwriteDropdown";
-            this.Settings_OverwriteDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Settings_OverwriteDropdown.TabIndex = 67;
-            this.toolTip.SetToolTip(this.Settings_OverwriteDropdown, "Set default file overwrite setting");
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label21.Location = new System.Drawing.Point(6, 45);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(87, 16);
-            this.label21.TabIndex = 68;
-            this.label21.Text = "Overwrite";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel78
-            // 
-            this.panel78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel78.Controls.Add(this.label18);
-            this.panel78.Controls.Add(this.panel81);
-            this.panel78.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel78.Location = new System.Drawing.Point(0, 0);
-            this.panel78.Name = "panel78";
-            this.panel78.Size = new System.Drawing.Size(435, 38);
-            this.panel78.TabIndex = 3;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(55, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(377, 38);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Default Encoder Options";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel81
-            // 
-            this.panel81.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel81.Location = new System.Drawing.Point(0, 0);
-            this.panel81.Name = "panel81";
-            this.panel81.Size = new System.Drawing.Size(55, 38);
-            this.panel81.TabIndex = 0;
-            // 
-            // Settings_VideoCodecDropdown
-            // 
-            this.Settings_VideoCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_VideoCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Settings_VideoCodecDropdown.FormattingEnabled = true;
-            this.Settings_VideoCodecDropdown.Location = new System.Drawing.Point(96, 64);
-            this.Settings_VideoCodecDropdown.Name = "Settings_VideoCodecDropdown";
-            this.Settings_VideoCodecDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Settings_VideoCodecDropdown.TabIndex = 61;
-            this.toolTip.SetToolTip(this.Settings_VideoCodecDropdown, "Set default encoder setting");
-            // 
-            // Settings_HideConsoleCheckbox
-            // 
-            this.Settings_HideConsoleCheckbox.AutoSize = true;
-            this.Settings_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Settings_HideConsoleCheckbox.Location = new System.Drawing.Point(355, 71);
-            this.Settings_HideConsoleCheckbox.Name = "Settings_HideConsoleCheckbox";
-            this.Settings_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
-            this.Settings_HideConsoleCheckbox.TabIndex = 60;
-            this.Settings_HideConsoleCheckbox.Text = "Hide Console";
-            this.toolTip.SetToolTip(this.Settings_HideConsoleCheckbox, "Set default ffmpeg window behaviour");
-            this.Settings_HideConsoleCheckbox.UseVisualStyleBackColor = true;
-            // 
-            // label30
-            // 
-            this.label30.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label30.Location = new System.Drawing.Point(270, 45);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(81, 16);
-            this.label30.TabIndex = 66;
-            this.label30.Text = "Quality/Speed";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label28.Location = new System.Drawing.Point(93, 45);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(87, 16);
-            this.label28.TabIndex = 62;
-            this.label28.Text = "Video Encoder";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Settings_QualityDropdown
-            // 
-            this.Settings_QualityDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_QualityDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Settings_QualityDropdown.FormattingEnabled = true;
-            this.Settings_QualityDropdown.Location = new System.Drawing.Point(270, 64);
-            this.Settings_QualityDropdown.Name = "Settings_QualityDropdown";
-            this.Settings_QualityDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Settings_QualityDropdown.TabIndex = 65;
-            this.toolTip.SetToolTip(this.Settings_QualityDropdown, "Set default quality preset setting");
-            // 
-            // Settings_AudioCodecDropdown
-            // 
-            this.Settings_AudioCodecDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Settings_AudioCodecDropdown.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Settings_AudioCodecDropdown.FormattingEnabled = true;
-            this.Settings_AudioCodecDropdown.Location = new System.Drawing.Point(183, 64);
-            this.Settings_AudioCodecDropdown.Name = "Settings_AudioCodecDropdown";
-            this.Settings_AudioCodecDropdown.Size = new System.Drawing.Size(81, 21);
-            this.Settings_AudioCodecDropdown.TabIndex = 63;
-            this.toolTip.SetToolTip(this.Settings_AudioCodecDropdown, "Set default audio encoder setting");
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(180, 45);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(87, 16);
-            this.label15.TabIndex = 64;
-            this.label15.Text = "Audio Encoder";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel43
-            // 
-            this.panel43.BackColor = System.Drawing.Color.White;
-            this.panel43.Controls.Add(this.Settings_OpenDirectoryButton);
-            this.panel43.Controls.Add(this.Settings_DefaultOutputPathBox);
-            this.panel43.Controls.Add(this.Settings_DefaultOutputButton);
-            this.panel43.Controls.Add(this.panel79);
-            this.panel43.Controls.Add(this.Settings_FFplayPathBox);
-            this.panel43.Controls.Add(this.Settings_AutoDefaultOutputButton);
-            this.panel43.Controls.Add(this.Settings_FFmpegPathBox);
-            this.panel43.Controls.Add(this.Settings_FFMPEGLocationButton);
-            this.panel43.Controls.Add(this.Settings_FFPLAYLocationButton);
-            this.panel43.Location = new System.Drawing.Point(27, 50);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(882, 125);
-            this.panel43.TabIndex = 68;
-            // 
-            // Settings_OpenDirectoryButton
-            // 
-            this.Settings_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Settings_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Settings_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_OpenDirectoryButton.Location = new System.Drawing.Point(674, 97);
-            this.Settings_OpenDirectoryButton.Name = "Settings_OpenDirectoryButton";
-            this.Settings_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Settings_OpenDirectoryButton.TabIndex = 60;
-            this.Settings_OpenDirectoryButton.Text = "▶";
-            this.toolTip.SetToolTip(this.Settings_OpenDirectoryButton, "Open output folder");
-            this.Settings_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Settings_OpenDirectoryButton.Click += new System.EventHandler(this.Settings_OpenDirectoryButton_Click);
-            // 
-            // Settings_DefaultOutputPathBox
-            // 
-            this.Settings_DefaultOutputPathBox.Enabled = false;
-            this.Settings_DefaultOutputPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Settings_DefaultOutputPathBox.Location = new System.Drawing.Point(5, 97);
-            this.Settings_DefaultOutputPathBox.Name = "Settings_DefaultOutputPathBox";
-            this.Settings_DefaultOutputPathBox.Size = new System.Drawing.Size(663, 23);
-            this.Settings_DefaultOutputPathBox.TabIndex = 54;
-            // 
-            // Settings_DefaultOutputButton
-            // 
-            this.Settings_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Settings_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Settings_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_DefaultOutputButton.Location = new System.Drawing.Point(724, 97);
-            this.Settings_DefaultOutputButton.Name = "Settings_DefaultOutputButton";
-            this.Settings_DefaultOutputButton.Size = new System.Drawing.Size(153, 23);
-            this.Settings_DefaultOutputButton.TabIndex = 55;
-            this.Settings_DefaultOutputButton.Text = "Default Output Folder";
-            this.toolTip.SetToolTip(this.Settings_DefaultOutputButton, "Manually set default output folder for all encoding processes");
-            this.Settings_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Settings_DefaultOutputButton.Click += new System.EventHandler(this.Settings_DefaultOutputButton_Click);
-            // 
-            // panel79
-            // 
-            this.panel79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel79.Controls.Add(this.label25);
-            this.panel79.Controls.Add(this.panel80);
-            this.panel79.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel79.Location = new System.Drawing.Point(0, 0);
-            this.panel79.Name = "panel79";
-            this.panel79.Size = new System.Drawing.Size(882, 38);
-            this.panel79.TabIndex = 3;
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label25.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(55, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(823, 38);
-            this.label25.TabIndex = 6;
-            this.label25.Text = "Locations";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel80
-            // 
-            this.panel80.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel80.Location = new System.Drawing.Point(0, 0);
-            this.panel80.Name = "panel80";
-            this.panel80.Size = new System.Drawing.Size(55, 38);
-            this.panel80.TabIndex = 0;
-            // 
-            // Settings_FFplayPathBox
-            // 
-            this.Settings_FFplayPathBox.Enabled = false;
-            this.Settings_FFplayPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Settings_FFplayPathBox.Location = new System.Drawing.Point(6, 70);
-            this.Settings_FFplayPathBox.Name = "Settings_FFplayPathBox";
-            this.Settings_FFplayPathBox.Size = new System.Drawing.Size(743, 23);
-            this.Settings_FFplayPathBox.TabIndex = 52;
-            // 
-            // Settings_AutoDefaultOutputButton
-            // 
-            this.Settings_AutoDefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Settings_AutoDefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Settings_AutoDefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_AutoDefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_AutoDefaultOutputButton.Location = new System.Drawing.Point(699, 97);
-            this.Settings_AutoDefaultOutputButton.Name = "Settings_AutoDefaultOutputButton";
-            this.Settings_AutoDefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Settings_AutoDefaultOutputButton.TabIndex = 59;
-            this.Settings_AutoDefaultOutputButton.Text = "✓";
-            this.toolTip.SetToolTip(this.Settings_AutoDefaultOutputButton, "Reset to default output folder location");
-            this.Settings_AutoDefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Settings_AutoDefaultOutputButton.Click += new System.EventHandler(this.Settings_AutoDefaultOutputButton_Click);
-            // 
-            // Settings_FFmpegPathBox
-            // 
-            this.Settings_FFmpegPathBox.Enabled = false;
-            this.Settings_FFmpegPathBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Settings_FFmpegPathBox.Location = new System.Drawing.Point(6, 44);
-            this.Settings_FFmpegPathBox.Name = "Settings_FFmpegPathBox";
-            this.Settings_FFmpegPathBox.Size = new System.Drawing.Size(743, 23);
-            this.Settings_FFmpegPathBox.TabIndex = 50;
-            // 
-            // Settings_FFMPEGLocationButton
-            // 
-            this.Settings_FFMPEGLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Settings_FFMPEGLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Settings_FFMPEGLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_FFMPEGLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_FFMPEGLocationButton.Location = new System.Drawing.Point(755, 43);
-            this.Settings_FFMPEGLocationButton.Name = "Settings_FFMPEGLocationButton";
-            this.Settings_FFMPEGLocationButton.Size = new System.Drawing.Size(122, 23);
-            this.Settings_FFMPEGLocationButton.TabIndex = 51;
-            this.Settings_FFMPEGLocationButton.Text = "FFMPEG Location";
-            this.toolTip.SetToolTip(this.Settings_FFMPEGLocationButton, "Manually set ffmpeg location");
-            this.Settings_FFMPEGLocationButton.UseVisualStyleBackColor = false;
-            this.Settings_FFMPEGLocationButton.Click += new System.EventHandler(this.Settings_FFMPEGLocationButton_Click);
-            // 
-            // Settings_FFPLAYLocationButton
-            // 
-            this.Settings_FFPLAYLocationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Settings_FFPLAYLocationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Settings_FFPLAYLocationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_FFPLAYLocationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_FFPLAYLocationButton.Location = new System.Drawing.Point(755, 70);
-            this.Settings_FFPLAYLocationButton.Name = "Settings_FFPLAYLocationButton";
-            this.Settings_FFPLAYLocationButton.Size = new System.Drawing.Size(122, 23);
-            this.Settings_FFPLAYLocationButton.TabIndex = 53;
-            this.Settings_FFPLAYLocationButton.Text = "FFplay Location";
-            this.toolTip.SetToolTip(this.Settings_FFPLAYLocationButton, "Manually set ffplay location");
-            this.Settings_FFPLAYLocationButton.UseVisualStyleBackColor = false;
-            this.Settings_FFPLAYLocationButton.Click += new System.EventHandler(this.Settings_FFPLAYLocationButton_Click);
-            // 
-            // Settings_ResetButton
-            // 
-            this.Settings_ResetButton.BackColor = System.Drawing.Color.White;
-            this.Settings_ResetButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Settings_ResetButton.FlatAppearance.BorderSize = 2;
-            this.Settings_ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_ResetButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_ResetButton.Location = new System.Drawing.Point(27, 457);
-            this.Settings_ResetButton.Name = "Settings_ResetButton";
-            this.Settings_ResetButton.Size = new System.Drawing.Size(116, 26);
-            this.Settings_ResetButton.TabIndex = 58;
-            this.Settings_ResetButton.Text = "Reset Settings";
-            this.Settings_ResetButton.UseVisualStyleBackColor = false;
-            this.Settings_ResetButton.Click += new System.EventHandler(this.Settings_ResetButton_Click);
-            // 
-            // Settings_SaveButton
-            // 
-            this.Settings_SaveButton.BackColor = System.Drawing.Color.White;
-            this.Settings_SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Settings_SaveButton.FlatAppearance.BorderSize = 2;
-            this.Settings_SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_SaveButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Settings_SaveButton.Location = new System.Drawing.Point(793, 457);
-            this.Settings_SaveButton.Name = "Settings_SaveButton";
-            this.Settings_SaveButton.Size = new System.Drawing.Size(116, 26);
-            this.Settings_SaveButton.TabIndex = 57;
-            this.Settings_SaveButton.Text = "Save Settings";
-            this.Settings_SaveButton.UseVisualStyleBackColor = false;
-            this.Settings_SaveButton.Click += new System.EventHandler(this.Settings_SaveButton_Click);
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.label22);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 0);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(919, 44);
-            this.panel21.TabIndex = 8;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label22.Location = new System.Drawing.Point(22, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(897, 44);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Settings";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel31
-            // 
-            this.panel31.Location = new System.Drawing.Point(719, 495);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(200, 73);
-            this.panel31.TabIndex = 1;
-            // 
             // MergeMainPanel
             // 
             this.MergeMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -2565,8 +2587,8 @@
             this.panel54.Controls.Add(this.label33);
             this.panel54.Controls.Add(this.Merge_OutputFileName);
             this.panel54.Controls.Add(this.button25);
-            this.panel54.Controls.Add(this.button15);
-            this.panel54.Controls.Add(this.button16);
+            this.panel54.Controls.Add(this.Merge_MoveItemDown_Button);
+            this.panel54.Controls.Add(this.Merge_MoveItemUp_Button);
             this.panel54.Controls.Add(this.groupBox3);
             this.panel54.Controls.Add(this.Merge_listView);
             this.panel54.Controls.Add(this.panel55);
@@ -2588,7 +2610,7 @@
             // 
             // label33
             // 
-            this.label33.Font = new System.Drawing.Font("Bahnschrift Condensed", 8F);
+            this.label33.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(278, 284);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(217, 25);
@@ -2610,35 +2632,39 @@
             this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.button25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Location = new System.Drawing.Point(253, 70);
+            this.button25.Location = new System.Drawing.Point(255, 70);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(5, 212);
+            this.button25.Size = new System.Drawing.Size(1, 212);
             this.button25.TabIndex = 85;
             this.button25.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // Merge_MoveItemDown_Button
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(246, 288);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(20, 20);
-            this.button15.TabIndex = 84;
-            this.button15.Text = "▼";
-            this.button15.UseVisualStyleBackColor = false;
+            this.Merge_MoveItemDown_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_MoveItemDown_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_MoveItemDown_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_MoveItemDown_Button.Location = new System.Drawing.Point(246, 288);
+            this.Merge_MoveItemDown_Button.Name = "Merge_MoveItemDown_Button";
+            this.Merge_MoveItemDown_Button.Size = new System.Drawing.Size(20, 20);
+            this.Merge_MoveItemDown_Button.TabIndex = 84;
+            this.Merge_MoveItemDown_Button.Text = "▼";
+            this.toolTip.SetToolTip(this.Merge_MoveItemDown_Button, "Re-Arrange selected file down  in the list.");
+            this.Merge_MoveItemDown_Button.UseVisualStyleBackColor = false;
+            this.Merge_MoveItemDown_Button.Click += new System.EventHandler(this.Merge_MoveItemDown_Button_Click);
             // 
-            // button16
+            // Merge_MoveItemUp_Button
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(246, 44);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(20, 20);
-            this.button16.TabIndex = 83;
-            this.button16.Text = "▲";
-            this.button16.UseVisualStyleBackColor = false;
+            this.Merge_MoveItemUp_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_MoveItemUp_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_MoveItemUp_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_MoveItemUp_Button.Location = new System.Drawing.Point(246, 44);
+            this.Merge_MoveItemUp_Button.Name = "Merge_MoveItemUp_Button";
+            this.Merge_MoveItemUp_Button.Size = new System.Drawing.Size(20, 20);
+            this.Merge_MoveItemUp_Button.TabIndex = 83;
+            this.Merge_MoveItemUp_Button.Text = "▲";
+            this.toolTip.SetToolTip(this.Merge_MoveItemUp_Button, "Re-Arrange selected file up in the list.");
+            this.Merge_MoveItemUp_Button.UseVisualStyleBackColor = false;
+            this.Merge_MoveItemUp_Button.Click += new System.EventHandler(this.Merge_MoveItemUp_Button_Click);
             // 
             // groupBox3
             // 
@@ -2821,7 +2847,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem5});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -3475,12 +3501,15 @@
             // 
             // Cut_MediaInputTextbox
             // 
-            this.Cut_MediaInputTextbox.Enabled = false;
+            this.Cut_MediaInputTextbox.AllowDrop = true;
             this.Cut_MediaInputTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.Cut_MediaInputTextbox.Location = new System.Drawing.Point(3, 43);
             this.Cut_MediaInputTextbox.Name = "Cut_MediaInputTextbox";
+            this.Cut_MediaInputTextbox.ReadOnly = true;
             this.Cut_MediaInputTextbox.Size = new System.Drawing.Size(774, 23);
             this.Cut_MediaInputTextbox.TabIndex = 67;
+            this.Cut_MediaInputTextbox.DragDrop += new System.Windows.Forms.DragEventHandler(this.Cut_MediaInputTextbox_DragDrop);
+            this.Cut_MediaInputTextbox.DragEnter += new System.Windows.Forms.DragEventHandler(this.Cut_MediaInputTextbox_DragEnter);
             // 
             // panel32
             // 
@@ -4293,7 +4322,6 @@
             this.Menu_CutMergeTab.Name = "Menu_CutMergeTab";
             this.Menu_CutMergeTab.Size = new System.Drawing.Size(159, 49);
             this.Menu_CutMergeTab.TabIndex = 2;
-            this.Menu_CutMergeTab.Visible = false;
             // 
             // Menu_CutMergeTabLabel
             // 
@@ -4642,28 +4670,6 @@
             this.TraySystem.Text = "FFmpeg Utilizer";
             this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
             // 
-            // panel98
-            // 
-            this.panel98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel98.Location = new System.Drawing.Point(273, 46);
-            this.panel98.Name = "panel98";
-            this.panel98.Size = new System.Drawing.Size(1, 27);
-            this.panel98.TabIndex = 8;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
-        "plugin to send data to the software. This \'data\' refers to the content you choos" +
-        "e to download or stream using ffmpeg.");
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4680,20 +4686,6 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
-            this.M3U8MainPanel.ResumeLayout(false);
-            this.M3U8MainPanel.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel51.ResumeLayout(false);
-            this.EncoderMainPanel.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel47.ResumeLayout(false);
             this.UpdateMainPanel.ResumeLayout(false);
             this.panel94.ResumeLayout(false);
             this.panel96.ResumeLayout(false);
@@ -4711,9 +4703,6 @@
             this.panel92.ResumeLayout(false);
             this.panel93.ResumeLayout(false);
             this.panel75.ResumeLayout(false);
-            this.ArgumentMainPanel.ResumeLayout(false);
-            this.ArgumentMainPanel.PerformLayout();
-            this.panel41.ResumeLayout(false);
             this.SettingsMainPanel.ResumeLayout(false);
             this.Settings_NetPanel.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -4729,6 +4718,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).EndInit();
             this.panel83.ResumeLayout(false);
             this.panel84.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.panel78.ResumeLayout(false);
@@ -4736,6 +4726,23 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
+            this.M3U8MainPanel.ResumeLayout(false);
+            this.M3U8MainPanel.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel51.ResumeLayout(false);
+            this.EncoderMainPanel.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel47.ResumeLayout(false);
+            this.ArgumentMainPanel.ResumeLayout(false);
+            this.ArgumentMainPanel.PerformLayout();
+            this.panel41.ResumeLayout(false);
             this.MergeMainPanel.ResumeLayout(false);
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
@@ -4804,7 +4811,6 @@
             this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5008,8 +5014,8 @@
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Panel panel60;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button Merge_MoveItemDown_Button;
+        private System.Windows.Forms.Button Merge_MoveItemUp_Button;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel62;
         private System.Windows.Forms.Label Merge_mediaExtensionLabel;
