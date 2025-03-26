@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Media;
 using System.Threading;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 /*
@@ -123,6 +124,7 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
                             item.SubItems[1].Text = "✓ Finished";
+                            item.SubItems[1].BackColor = Color.FromArgb(192, 255, 192);
                         }));
                     }
                     else
@@ -131,6 +133,7 @@ namespace FFmpeg_Utilizer.Modules
                         {
                             var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
                             item.SubItems[1].Text = "✗ Failed";
+                            item.SubItems[1].BackColor = Color.FromArgb(255, 192, 192);
                         }));
                     }
                 }
@@ -140,6 +143,7 @@ namespace FFmpeg_Utilizer.Modules
                     {
                         var item = main.Encoder_FilesList.FindItemWithText(processQueue.queue.Peek().inputFile.FullName);
                         item.SubItems[1].Text = "✗ Failed";
+                        item.SubItems[1].BackColor = Color.FromArgb(255, 192, 192);
                     }));
                 }
 
