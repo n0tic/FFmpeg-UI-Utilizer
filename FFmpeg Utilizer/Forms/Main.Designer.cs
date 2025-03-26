@@ -38,6 +38,30 @@
             ""}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
+            this.M3U8MainPanel = new System.Windows.Forms.Panel();
+            this.panel98 = new System.Windows.Forms.Panel();
+            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
+            this.M3U8_button_clear = new System.Windows.Forms.Button();
+            this.M3U8_PlayButton = new System.Windows.Forms.Button();
+            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
+            this.M3U8_listView = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.M3U8_OutputButton = new System.Windows.Forms.Button();
+            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
+            this.M3U8_StartButton = new System.Windows.Forms.Button();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
             this.MergeMainPanel = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
@@ -227,30 +251,6 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.M3U8MainPanel = new System.Windows.Forms.Panel();
-            this.panel98 = new System.Windows.Forms.Panel();
-            this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
-            this.M3U8_button_clear = new System.Windows.Forms.Button();
-            this.M3U8_PlayButton = new System.Windows.Forms.Button();
-            this.M3U8_RemoveM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_AddM3U8Button = new System.Windows.Forms.Button();
-            this.M3U8_listView = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.M3U8_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.M3U8_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.M3U8_OutputButton = new System.Windows.Forms.Button();
-            this.M3U8_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.M3U8_OutputFolderTextbox = new System.Windows.Forms.TextBox();
-            this.M3U8_StartButton = new System.Windows.Forms.Button();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
             this.EncoderMainPanel = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -389,8 +389,14 @@
             this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
+            this.M3U8_MultiDownload_CheckBox = new System.Windows.Forms.CheckBox();
+            this.M3U8_NumDownloadsAsync = new System.Windows.Forms.NumericUpDown();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
+            this.M3U8MainPanel.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel51.SuspendLayout();
             this.MergeMainPanel.SuspendLayout();
             this.panel54.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -455,10 +461,6 @@
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.M3U8MainPanel.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel51.SuspendLayout();
             this.EncoderMainPanel.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -503,6 +505,7 @@
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).BeginInit();
             this.SuspendLayout();
             // 
             // FullPanel
@@ -520,11 +523,11 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.MergeMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
-            this.panel95.Controls.Add(this.M3U8MainPanel);
             this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -532,6 +535,301 @@
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
+            // 
+            // M3U8MainPanel
+            // 
+            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8MainPanel.Controls.Add(this.M3U8_NumDownloadsAsync);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_MultiDownload_CheckBox);
+            this.M3U8MainPanel.Controls.Add(this.panel98);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_button_clear);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
+            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
+            this.M3U8MainPanel.Controls.Add(this.panel49);
+            this.M3U8MainPanel.Controls.Add(this.panel50);
+            this.M3U8MainPanel.Controls.Add(this.panel53);
+            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.M3U8MainPanel.Name = "M3U8MainPanel";
+            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
+            this.M3U8MainPanel.TabIndex = 8;
+            // 
+            // panel98
+            // 
+            this.panel98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel98.Location = new System.Drawing.Point(273, 46);
+            this.panel98.Name = "panel98";
+            this.panel98.Size = new System.Drawing.Size(1, 27);
+            this.panel98.TabIndex = 8;
+            // 
+            // M3U8_HideConsoleCheckbox
+            // 
+            this.M3U8_HideConsoleCheckbox.AutoSize = true;
+            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(713, 55);
+            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
+            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
+            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
+            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
+            this.toolTip.SetToolTip(this.M3U8_HideConsoleCheckbox, "Hide ffmpeg encoder window from showing");
+            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // M3U8_button_clear
+            // 
+            this.M3U8_button_clear.BackColor = System.Drawing.Color.White;
+            this.M3U8_button_clear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_button_clear.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_button_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_button_clear.Location = new System.Drawing.Point(280, 47);
+            this.M3U8_button_clear.Name = "M3U8_button_clear";
+            this.M3U8_button_clear.Size = new System.Drawing.Size(93, 24);
+            this.M3U8_button_clear.TabIndex = 80;
+            this.M3U8_button_clear.Text = "Clear List";
+            this.toolTip.SetToolTip(this.M3U8_button_clear, "Clear the list");
+            this.M3U8_button_clear.UseVisualStyleBackColor = false;
+            this.M3U8_button_clear.Click += new System.EventHandler(this.M3U8_button_clear_Click);
+            // 
+            // M3U8_PlayButton
+            // 
+            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
+            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_PlayButton.Location = new System.Drawing.Point(804, 47);
+            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
+            this.M3U8_PlayButton.Size = new System.Drawing.Size(105, 24);
+            this.M3U8_PlayButton.TabIndex = 79;
+            this.M3U8_PlayButton.Text = "Play Selected ▶";
+            this.toolTip.SetToolTip(this.M3U8_PlayButton, "Play selected HLS/M3U8");
+            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
+            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
+            // 
+            // M3U8_RemoveM3U8Button
+            // 
+            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
+            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
+            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_RemoveM3U8Button.TabIndex = 72;
+            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
+            this.toolTip.SetToolTip(this.M3U8_RemoveM3U8Button, "Remove selected item from the list");
+            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
+            // 
+            // M3U8_AddM3U8Button
+            // 
+            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
+            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
+            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
+            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
+            this.M3U8_AddM3U8Button.TabIndex = 71;
+            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
+            this.toolTip.SetToolTip(this.M3U8_AddM3U8Button, "Manually add HLS/M3U8 information");
+            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
+            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
+            // 
+            // M3U8_listView
+            // 
+            this.M3U8_listView.AllowDrop = true;
+            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader12});
+            this.M3U8_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.M3U8_listView.FullRowSelect = true;
+            this.M3U8_listView.GridLines = true;
+            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.M3U8_listView.HideSelection = false;
+            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
+            this.M3U8_listView.MultiSelect = false;
+            this.M3U8_listView.Name = "M3U8_listView";
+            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
+            this.M3U8_listView.TabIndex = 70;
+            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
+            this.M3U8_listView.View = System.Windows.Forms.View.Details;
+            this.M3U8_listView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.M3U8_listView_MouseDoubleClick);
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Name";
+            this.columnHeader7.Width = 130;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "URL";
+            this.columnHeader8.Width = 655;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Status";
+            this.columnHeader12.Width = 70;
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.label45);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel49.Location = new System.Drawing.Point(0, 0);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(919, 44);
+            this.panel49.TabIndex = 8;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label45.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label45.Location = new System.Drawing.Point(22, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(897, 44);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "M3U8";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
+            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
+            this.panel50.Controls.Add(this.M3U8_OutputButton);
+            this.panel50.Controls.Add(this.M3U8_ProgressBar);
+            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
+            this.panel50.Controls.Add(this.M3U8_StartButton);
+            this.panel50.Controls.Add(this.panel51);
+            this.panel50.Location = new System.Drawing.Point(27, 377);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(882, 106);
+            this.panel50.TabIndex = 2;
+            // 
+            // M3U8_DefaultOutputButton
+            // 
+            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(738, 44);
+            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
+            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_DefaultOutputButton.TabIndex = 65;
+            this.M3U8_DefaultOutputButton.Text = "✓";
+            this.toolTip.SetToolTip(this.M3U8_DefaultOutputButton, "Reset to default output folder");
+            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
+            // 
+            // M3U8_OpenDirectoryButton
+            // 
+            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(713, 44);
+            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
+            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.M3U8_OpenDirectoryButton.TabIndex = 64;
+            this.M3U8_OpenDirectoryButton.Text = "▶";
+            this.toolTip.SetToolTip(this.M3U8_OpenDirectoryButton, "Open output folder");
+            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
+            // 
+            // M3U8_OutputButton
+            // 
+            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_OutputButton.Location = new System.Drawing.Point(763, 44);
+            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
+            this.M3U8_OutputButton.Size = new System.Drawing.Size(116, 23);
+            this.M3U8_OutputButton.TabIndex = 25;
+            this.M3U8_OutputButton.Text = "Set Output Folder";
+            this.toolTip.SetToolTip(this.M3U8_OutputButton, "Change output folder");
+            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
+            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
+            // 
+            // M3U8_ProgressBar
+            // 
+            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
+            this.M3U8_ProgressBar.Size = new System.Drawing.Size(765, 20);
+            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.M3U8_ProgressBar.TabIndex = 24;
+            // 
+            // M3U8_OutputFolderTextbox
+            // 
+            this.M3U8_OutputFolderTextbox.Enabled = false;
+            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
+            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
+            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(704, 23);
+            this.M3U8_OutputFolderTextbox.TabIndex = 23;
+            // 
+            // M3U8_StartButton
+            // 
+            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.M3U8_StartButton.Location = new System.Drawing.Point(774, 73);
+            this.M3U8_StartButton.Name = "M3U8_StartButton";
+            this.M3U8_StartButton.Size = new System.Drawing.Size(105, 23);
+            this.M3U8_StartButton.TabIndex = 22;
+            this.M3U8_StartButton.Text = "Start M3U8";
+            this.toolTip.SetToolTip(this.M3U8_StartButton, "Start processing the HLS/M3U8 list");
+            this.M3U8_StartButton.UseVisualStyleBackColor = false;
+            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel51.Controls.Add(this.label46);
+            this.panel51.Controls.Add(this.panel52);
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel51.Location = new System.Drawing.Point(0, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(882, 38);
+            this.panel51.TabIndex = 3;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label46.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(55, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(447, 38);
+            this.label46.TabIndex = 6;
+            this.label46.Text = "Output";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel52
+            // 
+            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel52.Location = new System.Drawing.Point(0, 0);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(55, 38);
+            this.panel52.TabIndex = 0;
+            // 
+            // panel53
+            // 
+            this.panel53.Location = new System.Drawing.Point(719, 495);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(200, 73);
+            this.panel53.TabIndex = 1;
             // 
             // MergeMainPanel
             // 
@@ -2738,299 +3036,6 @@
             this.panel31.Size = new System.Drawing.Size(200, 73);
             this.panel31.TabIndex = 1;
             // 
-            // M3U8MainPanel
-            // 
-            this.M3U8MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8MainPanel.Controls.Add(this.panel98);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_HideConsoleCheckbox);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_button_clear);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_PlayButton);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_RemoveM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_AddM3U8Button);
-            this.M3U8MainPanel.Controls.Add(this.M3U8_listView);
-            this.M3U8MainPanel.Controls.Add(this.panel49);
-            this.M3U8MainPanel.Controls.Add(this.panel50);
-            this.M3U8MainPanel.Controls.Add(this.panel53);
-            this.M3U8MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M3U8MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.M3U8MainPanel.Name = "M3U8MainPanel";
-            this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
-            this.M3U8MainPanel.TabIndex = 8;
-            // 
-            // panel98
-            // 
-            this.panel98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel98.Location = new System.Drawing.Point(273, 46);
-            this.panel98.Name = "panel98";
-            this.panel98.Size = new System.Drawing.Size(1, 27);
-            this.panel98.TabIndex = 8;
-            // 
-            // M3U8_HideConsoleCheckbox
-            // 
-            this.M3U8_HideConsoleCheckbox.AutoSize = true;
-            this.M3U8_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.M3U8_HideConsoleCheckbox.Location = new System.Drawing.Point(381, 56);
-            this.M3U8_HideConsoleCheckbox.Name = "M3U8_HideConsoleCheckbox";
-            this.M3U8_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
-            this.M3U8_HideConsoleCheckbox.TabIndex = 80;
-            this.M3U8_HideConsoleCheckbox.Text = "Hide Console";
-            this.toolTip.SetToolTip(this.M3U8_HideConsoleCheckbox, "Hide ffmpeg encoder window from showing");
-            this.M3U8_HideConsoleCheckbox.UseVisualStyleBackColor = true;
-            // 
-            // M3U8_button_clear
-            // 
-            this.M3U8_button_clear.BackColor = System.Drawing.Color.White;
-            this.M3U8_button_clear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.M3U8_button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_button_clear.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_button_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_button_clear.Location = new System.Drawing.Point(280, 47);
-            this.M3U8_button_clear.Name = "M3U8_button_clear";
-            this.M3U8_button_clear.Size = new System.Drawing.Size(93, 24);
-            this.M3U8_button_clear.TabIndex = 80;
-            this.M3U8_button_clear.Text = "Clear List";
-            this.toolTip.SetToolTip(this.M3U8_button_clear, "Clear the list");
-            this.M3U8_button_clear.UseVisualStyleBackColor = false;
-            this.M3U8_button_clear.Click += new System.EventHandler(this.M3U8_button_clear_Click);
-            // 
-            // M3U8_PlayButton
-            // 
-            this.M3U8_PlayButton.BackColor = System.Drawing.Color.White;
-            this.M3U8_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_PlayButton.Location = new System.Drawing.Point(804, 47);
-            this.M3U8_PlayButton.Name = "M3U8_PlayButton";
-            this.M3U8_PlayButton.Size = new System.Drawing.Size(105, 24);
-            this.M3U8_PlayButton.TabIndex = 79;
-            this.M3U8_PlayButton.Text = "Play Selected ▶";
-            this.toolTip.SetToolTip(this.M3U8_PlayButton, "Play selected HLS/M3U8");
-            this.M3U8_PlayButton.UseVisualStyleBackColor = false;
-            this.M3U8_PlayButton.Click += new System.EventHandler(this.HLS_PlayButton_Click);
-            // 
-            // M3U8_RemoveM3U8Button
-            // 
-            this.M3U8_RemoveM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_RemoveM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.M3U8_RemoveM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_RemoveM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_RemoveM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_RemoveM3U8Button.Location = new System.Drawing.Point(150, 47);
-            this.M3U8_RemoveM3U8Button.Name = "M3U8_RemoveM3U8Button";
-            this.M3U8_RemoveM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_RemoveM3U8Button.TabIndex = 72;
-            this.M3U8_RemoveM3U8Button.Text = "Remove Selected";
-            this.toolTip.SetToolTip(this.M3U8_RemoveM3U8Button, "Remove selected item from the list");
-            this.M3U8_RemoveM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_RemoveM3U8Button.Click += new System.EventHandler(this.HLS_RemoveHLSButton_Click);
-            // 
-            // M3U8_AddM3U8Button
-            // 
-            this.M3U8_AddM3U8Button.BackColor = System.Drawing.Color.White;
-            this.M3U8_AddM3U8Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_AddM3U8Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_AddM3U8Button.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_AddM3U8Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.M3U8_AddM3U8Button.Location = new System.Drawing.Point(27, 47);
-            this.M3U8_AddM3U8Button.Name = "M3U8_AddM3U8Button";
-            this.M3U8_AddM3U8Button.Size = new System.Drawing.Size(117, 24);
-            this.M3U8_AddM3U8Button.TabIndex = 71;
-            this.M3U8_AddM3U8Button.Text = "Add HLS/M3U8 URL";
-            this.toolTip.SetToolTip(this.M3U8_AddM3U8Button, "Manually add HLS/M3U8 information");
-            this.M3U8_AddM3U8Button.UseVisualStyleBackColor = false;
-            this.M3U8_AddM3U8Button.Click += new System.EventHandler(this.M3U8_AddM3U8Button_Click);
-            // 
-            // M3U8_listView
-            // 
-            this.M3U8_listView.AllowDrop = true;
-            this.M3U8_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader12});
-            this.M3U8_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.M3U8_listView.FullRowSelect = true;
-            this.M3U8_listView.GridLines = true;
-            this.M3U8_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.M3U8_listView.HideSelection = false;
-            this.M3U8_listView.Location = new System.Drawing.Point(27, 77);
-            this.M3U8_listView.MultiSelect = false;
-            this.M3U8_listView.Name = "M3U8_listView";
-            this.M3U8_listView.Size = new System.Drawing.Size(882, 293);
-            this.M3U8_listView.TabIndex = 70;
-            this.M3U8_listView.UseCompatibleStateImageBehavior = false;
-            this.M3U8_listView.View = System.Windows.Forms.View.Details;
-            this.M3U8_listView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.M3U8_listView_MouseDoubleClick);
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Name";
-            this.columnHeader7.Width = 130;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "URL";
-            this.columnHeader8.Width = 655;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Status";
-            this.columnHeader12.Width = 70;
-            // 
-            // panel49
-            // 
-            this.panel49.Controls.Add(this.label45);
-            this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel49.Location = new System.Drawing.Point(0, 0);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(919, 44);
-            this.panel49.TabIndex = 8;
-            // 
-            // label45
-            // 
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label45.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label45.Location = new System.Drawing.Point(22, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(897, 44);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "M3U8";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel50
-            // 
-            this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.Controls.Add(this.M3U8_DefaultOutputButton);
-            this.panel50.Controls.Add(this.M3U8_OpenDirectoryButton);
-            this.panel50.Controls.Add(this.M3U8_OutputButton);
-            this.panel50.Controls.Add(this.M3U8_ProgressBar);
-            this.panel50.Controls.Add(this.M3U8_OutputFolderTextbox);
-            this.panel50.Controls.Add(this.M3U8_StartButton);
-            this.panel50.Controls.Add(this.panel51);
-            this.panel50.Location = new System.Drawing.Point(27, 377);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(882, 106);
-            this.panel50.TabIndex = 2;
-            // 
-            // M3U8_DefaultOutputButton
-            // 
-            this.M3U8_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_DefaultOutputButton.Location = new System.Drawing.Point(738, 44);
-            this.M3U8_DefaultOutputButton.Name = "M3U8_DefaultOutputButton";
-            this.M3U8_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.M3U8_DefaultOutputButton.TabIndex = 65;
-            this.M3U8_DefaultOutputButton.Text = "✓";
-            this.toolTip.SetToolTip(this.M3U8_DefaultOutputButton, "Reset to default output folder");
-            this.M3U8_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_DefaultOutputButton.Click += new System.EventHandler(this.M3U8_DefaultOutputButton_Click);
-            // 
-            // M3U8_OpenDirectoryButton
-            // 
-            this.M3U8_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_OpenDirectoryButton.Location = new System.Drawing.Point(713, 44);
-            this.M3U8_OpenDirectoryButton.Name = "M3U8_OpenDirectoryButton";
-            this.M3U8_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.M3U8_OpenDirectoryButton.TabIndex = 64;
-            this.M3U8_OpenDirectoryButton.Text = "▶";
-            this.toolTip.SetToolTip(this.M3U8_OpenDirectoryButton, "Open output folder");
-            this.M3U8_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.M3U8_OpenDirectoryButton.Click += new System.EventHandler(this.M3U8_OpenDirectoryButton_Click);
-            // 
-            // M3U8_OutputButton
-            // 
-            this.M3U8_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_OutputButton.Location = new System.Drawing.Point(763, 44);
-            this.M3U8_OutputButton.Name = "M3U8_OutputButton";
-            this.M3U8_OutputButton.Size = new System.Drawing.Size(116, 23);
-            this.M3U8_OutputButton.TabIndex = 25;
-            this.M3U8_OutputButton.Text = "Set Output Folder";
-            this.toolTip.SetToolTip(this.M3U8_OutputButton, "Change output folder");
-            this.M3U8_OutputButton.UseVisualStyleBackColor = false;
-            this.M3U8_OutputButton.Click += new System.EventHandler(this.M3U8_OutputButton_Click);
-            // 
-            // M3U8_ProgressBar
-            // 
-            this.M3U8_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.M3U8_ProgressBar.Name = "M3U8_ProgressBar";
-            this.M3U8_ProgressBar.Size = new System.Drawing.Size(765, 20);
-            this.M3U8_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.M3U8_ProgressBar.TabIndex = 24;
-            // 
-            // M3U8_OutputFolderTextbox
-            // 
-            this.M3U8_OutputFolderTextbox.Enabled = false;
-            this.M3U8_OutputFolderTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.M3U8_OutputFolderTextbox.Location = new System.Drawing.Point(3, 45);
-            this.M3U8_OutputFolderTextbox.Name = "M3U8_OutputFolderTextbox";
-            this.M3U8_OutputFolderTextbox.Size = new System.Drawing.Size(704, 23);
-            this.M3U8_OutputFolderTextbox.TabIndex = 23;
-            // 
-            // M3U8_StartButton
-            // 
-            this.M3U8_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.M3U8_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.M3U8_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M3U8_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.M3U8_StartButton.Location = new System.Drawing.Point(774, 73);
-            this.M3U8_StartButton.Name = "M3U8_StartButton";
-            this.M3U8_StartButton.Size = new System.Drawing.Size(105, 23);
-            this.M3U8_StartButton.TabIndex = 22;
-            this.M3U8_StartButton.Text = "Start M3U8";
-            this.toolTip.SetToolTip(this.M3U8_StartButton, "Start processing the HLS/M3U8 list");
-            this.M3U8_StartButton.UseVisualStyleBackColor = false;
-            this.M3U8_StartButton.Click += new System.EventHandler(this.M3U8_StartButton_Click);
-            // 
-            // panel51
-            // 
-            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel51.Controls.Add(this.label46);
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel51.Location = new System.Drawing.Point(0, 0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(882, 38);
-            this.panel51.TabIndex = 3;
-            // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label46.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(55, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(447, 38);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "Output";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel52
-            // 
-            this.panel52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel52.Location = new System.Drawing.Point(0, 0);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(55, 38);
-            this.panel52.TabIndex = 0;
-            // 
-            // panel53
-            // 
-            this.panel53.Location = new System.Drawing.Point(719, 495);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(200, 73);
-            this.panel53.TabIndex = 1;
-            // 
             // EncoderMainPanel
             // 
             this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -4683,6 +4688,32 @@
             this.TraySystem.Text = "FFmpeg Utilizer";
             this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
             // 
+            // M3U8_MultiDownload_CheckBox
+            // 
+            this.M3U8_MultiDownload_CheckBox.AutoSize = true;
+            this.M3U8_MultiDownload_CheckBox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.M3U8_MultiDownload_CheckBox.Location = new System.Drawing.Point(382, 57);
+            this.M3U8_MultiDownload_CheckBox.Name = "M3U8_MultiDownload_CheckBox";
+            this.M3U8_MultiDownload_CheckBox.Size = new System.Drawing.Size(143, 16);
+            this.M3U8_MultiDownload_CheckBox.TabIndex = 81;
+            this.M3U8_MultiDownload_CheckBox.Text = "Download Multiple At once";
+            this.toolTip.SetToolTip(this.M3U8_MultiDownload_CheckBox, "Hide ffmpeg encoder window from showing");
+            this.M3U8_MultiDownload_CheckBox.UseVisualStyleBackColor = true;
+            this.M3U8_MultiDownload_CheckBox.CheckedChanged += new System.EventHandler(this.M3U8_MultiDownload_CheckBox_CheckedChanged);
+            // 
+            // M3U8_NumDownloadsAsync
+            // 
+            this.M3U8_NumDownloadsAsync.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.M3U8_NumDownloadsAsync.Location = new System.Drawing.Point(528, 53);
+            this.M3U8_NumDownloadsAsync.Name = "M3U8_NumDownloadsAsync";
+            this.M3U8_NumDownloadsAsync.Size = new System.Drawing.Size(60, 20);
+            this.M3U8_NumDownloadsAsync.TabIndex = 82;
+            this.M3U8_NumDownloadsAsync.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4699,6 +4730,12 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
+            this.M3U8MainPanel.ResumeLayout(false);
+            this.M3U8MainPanel.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel51.ResumeLayout(false);
             this.MergeMainPanel.ResumeLayout(false);
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
@@ -4771,12 +4808,6 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            this.M3U8MainPanel.ResumeLayout(false);
-            this.M3U8MainPanel.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel51.ResumeLayout(false);
             this.EncoderMainPanel.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -4824,6 +4855,7 @@
             this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5183,6 +5215,8 @@
         private System.Windows.Forms.Panel panel98;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox M3U8_MultiDownload_CheckBox;
+        private System.Windows.Forms.NumericUpDown M3U8_NumDownloadsAsync;
     }
 }
 

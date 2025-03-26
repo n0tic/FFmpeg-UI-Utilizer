@@ -1,11 +1,13 @@
 ﻿using FFmpeg_Utilizer.Data;
 using System;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Media;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
@@ -14,15 +16,9 @@ namespace FFmpeg_Utilizer.Modules
     {
         public Main main;
         public Color backColor;
-
         internal bool inProcess = false;
-
         private M3U8ProcesserData processQueue;
-
-        internal Thread encodingThread;
-        internal Thread queueThread;
-
-        private Process m3u8Process;
+        private CancellationTokenSource cancellationTokenSource;
 
         public M3U8Processor(Main _main)
         {
@@ -30,190 +26,198 @@ namespace FFmpeg_Utilizer.Modules
             backColor = main.M3U8_listView.BackColor;
         }
 
-        internal void ProcessFileQueue(M3U8ProcesserData data)
+        internal async Task ProcessFileQueue(M3U8ProcesserData data, bool multiDownload, int simultaneousDownloads = 1)
         {
             if (inProcess)
             {
-                try
-                {
-                    if (processQueue.queue.Count > 0)
-                    {
-                        ListView.ListViewItemCollection items = main.M3U8_listView.Items;
-                        foreach (ListViewItem item in items)
-                        {
-                            switch (item.SubItems[2].Text)
-                            {
-                                case "Working...":
-                                    item.SubItems[2].Text = "✗ Aborted";
-                                    item.BackColor = Color.FromArgb(255, 192, 192);
-                                    break;
-
-                                case "✗ Aborted":
-                                    item.SubItems[2].Text = "• Waiting";
-                                    item.BackColor = backColor;
-                                    break;
-
-                                case "✗ Failed":
-                                    item.SubItems[2].Text = "• Waiting";
-                                    item.BackColor = backColor;
-                                    break;
-                            }
-                        }
-                    }
-
-                    m3u8Process.Kill();
-                }
-                catch (Win32Exception) { }
-                catch (NotSupportedException) { }
-                catch (InvalidOperationException) { }
-
-                KillThreads();
-
-                main.M3U8_ProgressBar.Value = 0;
-                main.M3U8_StartButton.Text = "Start M3U8";
-                main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229); // 99, 172, 229 blue | 255, 128, 128 red
+                await StopProcessing();
+                return;
             }
-            else
+
+            if (!File.Exists(main.settings.ffmpegPath))
             {
-                if (!File.Exists(main.settings.ffmpegPath))
-                {
-                    main.notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
-                    return;
-                }
-
-                processQueue = data;
-                main.M3U8_ProgressBar.Value = 0;
-                main.M3U8_ProgressBar.Maximum = data.queue.Count;
-
-                queueThread = new Thread(() => StartQueueProcess());
-                queueThread.Start();
-
-                inProcess = true;
-                main.M3U8_StartButton.Text = "Stop M3U8";
-                main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
+                main.notice.SetNotice("You need to specify a location of \"ffmpeg.exe\" to use this function.", NoticeModule.TypeNotice.Error);
+                return;
             }
-        }
 
-        private void StartQueueProcess()
-        {
-            bool queueProcess = true;
-            while (queueProcess)
+            processQueue = data;
+            inProcess = true;
+            cancellationTokenSource = new CancellationTokenSource();
+
+            main.M3U8_ProgressBar.Value = 0;
+            main.M3U8_ProgressBar.Maximum = data.queue.Count;
+            main.M3U8_StartButton.Text = "Stop M3U8";
+            main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 128);
+
+            try
             {
-                main.Invoke(new Action(() =>
+                if (multiDownload)
                 {
-                    var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
-                    item.SubItems[2].Text = "Working..."; // TODO: Fix this issue...  I do not like the text
-                }));
-
-                encodingThread = new Thread(() => StartEncodingProcess());
-                encodingThread.Start();
-
-                //Give time for application to start. Is it needed?
-                Thread.Sleep(100);
-
-                while (m3u8Process != null) Thread.Sleep(25);
-
-                // TODO: Fix naming issues and prevent crashing. Check before we even get here.
-
-                FileInfo file = new FileInfo(processQueue.outputFolder + @"\" + processQueue.queue.Peek().name.Substring(0, Math.Min(100, processQueue.queue.Peek().name.Length)) + ".mp4");
-
-                if (File.Exists(file.FullName))
-                {
-                    if (file.Length > 0)
-                    {
-                        main.Invoke(new Action(() =>
-                        {
-                            var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
-                            item.SubItems[2].Text = "✓ Finished";
-                            item.BackColor = Color.FromArgb(192, 255, 192);
-                        }));
-                    }
-                    else
-                    {
-                        main.Invoke(new Action(() =>
-                        {
-                            var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
-                            item.SubItems[2].Text = "✗ Failed";
-                            item.BackColor = Color.FromArgb(255, 192, 192);
-                        }));
-                    }
+                    await ProcessFilesParallelAsync(simultaneousDownloads);
                 }
                 else
                 {
-                    main.Invoke(new Action(() =>
-                    {
-                        var item = main.M3U8_listView.FindItemWithText(processQueue.queue.Peek().url);
-                        item.SubItems[2].Text = "✗ Failed";
-                        item.BackColor = Color.FromArgb(255, 192, 192);
-                    }));
+                    await ProcessFilesSequentialAsync();
                 }
-
-                main.Invoke(new Action(() =>
+            }
+            finally
+            {
+                await main.InvokeAsync(async () =>
                 {
-                    main.M3U8_ProgressBar.Value++;
-                }));
+                    SystemSounds.Exclamation.Play();
+                    main.M3U8_StartButton.Text = "Start M3U8";
+                    main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
+                    inProcess = false;
+                });
+                cancellationTokenSource.Dispose();
+            }
+        }
 
-                processQueue.queue.Dequeue();
+        private async Task ProcessFilesParallelAsync(int simultaneousDownloads)
+        {
+            var semaphore = new SemaphoreSlim(simultaneousDownloads);
+            var tasks = new List<Task>();
 
-                if (processQueue.queue.Count < 1) queueProcess = false;
+            while (processQueue.queue.Count > 0)
+            {
+                var itemData = processQueue.queue.Dequeue();
+                var listItem = main.M3U8_listView.FindItemWithText(itemData.url);
+
+                await main.InvokeAsync(() =>
+                {
+                    listItem.SubItems[2].Text = "Working...";
+                });
+
+                await semaphore.WaitAsync(cancellationTokenSource.Token);
+                if (cancellationTokenSource.Token.IsCancellationRequested) break;
+
+                tasks.Add(ProcessSingleFileAsync(itemData, listItem)
+                    .ContinueWith(_ => semaphore.Release(), TaskContinuationOptions.ExecuteSynchronously));
             }
 
-            main.Invoke(new Action(() =>
+            await Task.WhenAll(tasks);
+        }
+
+        private async Task ProcessFilesSequentialAsync()
+        {
+            while (processQueue.queue.Count > 0 && !cancellationTokenSource.Token.IsCancellationRequested)
             {
-                //Don't reset if successful.
-                SystemSounds.Exclamation.Play();
+                var itemData = processQueue.queue.Dequeue();
+                var listItem = main.M3U8_listView.FindItemWithText(itemData.url);
+
+                await main.InvokeAsync(() =>
+                {
+                    listItem.SubItems[2].Text = "Working...";
+                });
+
+                await ProcessSingleFileAsync(itemData, listItem);
+            }
+        }
+
+        private async Task ProcessSingleFileAsync(M3U8Argument itemData, ListViewItem listItem)
+        {
+            try
+            {
+                var outputFile = Path.Combine(processQueue.outputFolder, $"{itemData.name.Substring(0, Math.Min(100, itemData.name.Length))}.mp4");
+
+                var process = new Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = main.settings.ffmpegPath,
+                        Arguments = $"-y -i \"{itemData.url}\" -c copy \"{outputFile}\" -report",
+                        UseShellExecute = false,
+                        CreateNoWindow = processQueue.hideConsole
+                    }
+                };
+
+                await Task.Run(() =>
+                {
+                    process.Start();
+                    process.WaitForExit();
+                }, cancellationTokenSource.Token);
+
+                FileInfo file = new FileInfo(outputFile);
+                bool success = File.Exists(file.FullName) && file.Length > 0;
+
+                await main.InvokeAsync(() =>
+                {
+                    listItem.SubItems[2].Text = success ? "✓ Finished" : "✗ Failed";
+                    listItem.BackColor = success ? Color.FromArgb(192, 255, 192) : Color.FromArgb(255, 192, 192);
+                    main.M3U8_ProgressBar.Value++;
+                });
+            }
+            catch (Exception ex)
+            {
+                await main.InvokeAsync(() =>
+                {
+                    listItem.SubItems[2].Text = "✗ Failed";
+                    listItem.BackColor = Color.FromArgb(255, 192, 192);
+                    main.M3U8_ProgressBar.Value++;
+                    main.notice.SetNotice(ex.Message, NoticeModule.TypeNotice.Error);
+                });
+            }
+        }
+
+        private async Task StopProcessing()
+        {
+            if (inProcess)
+            {
+                cancellationTokenSource.Cancel();
+
+                foreach (ListViewItem item in main.M3U8_listView.Items)
+                {
+                    await main.InvokeAsync(() =>
+                    {
+                        switch (item.SubItems[2].Text)
+                        {
+                            case "Working...":
+                                item.SubItems[2].Text = "✗ Aborted";
+                                item.BackColor = Color.FromArgb(255, 192, 192);
+                                break;
+                            case "✗ Aborted":
+                            case "✗ Failed":
+                                item.SubItems[2].Text = "• Waiting";
+                                item.BackColor = backColor;
+                                break;
+                        }
+                    });
+                }
+
+                inProcess = false;
+                main.M3U8_ProgressBar.Value = 0;
                 main.M3U8_StartButton.Text = "Start M3U8";
                 main.M3U8_StartButton.FlatAppearance.BorderColor = Color.FromArgb(99, 172, 229);
-            }));
-
-            inProcess = false;
+            }
         }
+    }
 
-        private void StartEncodingProcess()
+    public static class ControlExtensions
+    {
+        public static Task InvokeAsync(this Control control, Action action)
         {
-            Console.WriteLine($"Processing {processQueue.queue.Peek().url} | Output: {processQueue.outputFolder} | Name: {processQueue.queue.Peek().name + ".mp4"}");
-
-            m3u8Process = new Process
+            if (control.InvokeRequired)
             {
-                StartInfo =
+                var tcs = new TaskCompletionSource<bool>();
+                control.Invoke(new Action(() =>
                 {
-                    FileName = main.settings.ffmpegPath,
-                    Arguments = "-y -i \"" + processQueue.queue.Peek().url + "\" -c copy \"" + processQueue.outputFolder + "\\" + processQueue.queue.Peek().name + ".mp4\" -report",
-                    UseShellExecute = false
-                }
-            };
-
-            main.Invoke(new Action(() =>
-            {
-                //Clipboard.SetText(m3u8Process.StartInfo.Arguments);
-            }));
-
-            if (processQueue.hideConsole) m3u8Process.StartInfo.CreateNoWindow = true;
-
-            try
-            {
-                m3u8Process.Start(); // ffmpegProcess.Id
-                m3u8Process.WaitForExit();
+                    try
+                    {
+                        action();
+                        tcs.SetResult(true);
+                    }
+                    catch (Exception ex)
+                    {
+                        tcs.SetException(ex);
+                    }
+                }));
+                return tcs.Task;
             }
-            catch (ObjectDisposedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
-            catch (InvalidOperationException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
-            catch (Win32Exception x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
-            catch (PlatformNotSupportedException x) { main.notice.SetNotice(x.Message, NoticeModule.TypeNotice.Error); }
-            finally { m3u8Process = null; }
-        }
-
-        internal void KillThreads()
-        {
-            try
+            else
             {
-                queueThread?.Abort();
-                encodingThread?.Abort();
+                action();
+                return Task.CompletedTask;
             }
-            catch (PlatformNotSupportedException) { }
-            catch (System.Security.SecurityException) { }
-            catch (ThreadStateException) { }
-
-            inProcess = false;
         }
     }
 }

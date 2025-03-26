@@ -314,6 +314,9 @@ namespace FFmpeg_Utilizer
                     M3U8_OutputFolderTextbox.Text = Core.GetSubfolder(Core.SubFolders.Output);
             }
 
+            // TODO: Add M3U8 settings to settings.cs
+            M3U8_NumDownloadsAsync.Visible = false;
+
             #endregion M3U8
 
             #region Cut
@@ -510,7 +513,8 @@ namespace FFmpeg_Utilizer
 
             //Kill all modules and their respective threads.
             encodingProcessor?.KillThreads();
-            m3u8Processor?.KillThreads();
+            // TODO: Fix possible crash...
+            //m3u8Processor?.KillThreads();
             cutProcessor?.KillThreads();
             mergeProcessor?.KillThreads();
             uriRequestHandler?.KillServer();
@@ -1002,7 +1006,7 @@ namespace FFmpeg_Utilizer
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void M3U8_StartButton_Click(object sender, EventArgs e)
+        private async void M3U8_StartButton_Click(object sender, EventArgs e)
         {
             //Stop if there are no files or application to work with.
             if (!File.Exists(settings.ffmpegPath))
@@ -1023,8 +1027,9 @@ namespace FFmpeg_Utilizer
             for (int i = 0; i < M3U8_listView.Items.Count; i++)
                 processQueueData.Add(M3U8_listView.Items[i].SubItems[0].Text, M3U8_listView.Items[i].SubItems[1].Text);
 
+
             //Start the encoding process.
-            m3u8Processor.ProcessFileQueue(processQueueData);
+            await m3u8Processor.ProcessFileQueue(processQueueData, M3U8_MultiDownload_CheckBox.Checked, Int32.Parse(M3U8_NumDownloadsAsync.Value.ToString()));
         }
 
         #endregion M3U8
@@ -1547,6 +1552,18 @@ namespace FFmpeg_Utilizer
         private void CompanyButton_Click(object sender, EventArgs e)
         {
             Process.Start("https://bytevaultstudio.se/");
+        }
+
+        private void M3U8_MultiDownload_CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(M3U8_MultiDownload_CheckBox.Checked)
+            {
+                M3U8_NumDownloadsAsync.Visible = true;
+            }
+            else
+            {
+                M3U8_NumDownloadsAsync.Visible = false;
+            }
         }
     }
 }
