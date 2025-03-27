@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Icon_delete_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_delete_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_question_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_question_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_love_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_love_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,14 +127,17 @@
   <data name="Icon_love_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_love_solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ffmpegUtilizerLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ffmpegUtilizerLogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_settings_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_settings_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_close_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_close_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_settings_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_settings_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_language_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_language_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrayIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrayIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_edit_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_edit_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +157,14 @@
   <data name="Icon_divide_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_divide_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_language_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_language_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_delete_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_delete_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_minus_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_minus_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_apps_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_apps_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ffmpegUtilizerLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ffmpegUtilizerLogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_reload_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_reload_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,9 +175,6 @@
   <data name="Icon_home_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_home_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_question_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_question_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Icon_attention_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_attention_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,10 +184,10 @@
   <data name="Icon_star_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_star_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_apps_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_apps_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_minus_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_minus_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TrayIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrayIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

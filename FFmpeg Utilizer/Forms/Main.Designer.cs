@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag & drop here..."}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
             this.M3U8MainPanel = new System.Windows.Forms.Panel();
+            this.M3U8_NumDownloadsAsync = new System.Windows.Forms.NumericUpDown();
+            this.M3U8_MultiDownload_CheckBox = new System.Windows.Forms.CheckBox();
             this.panel98 = new System.Windows.Forms.Panel();
             this.M3U8_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
             this.M3U8_button_clear = new System.Windows.Forms.Button();
@@ -62,49 +64,6 @@
             this.label46 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
             this.panel53 = new System.Windows.Forms.Panel();
-            this.MergeMainPanel = new System.Windows.Forms.Panel();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.Merge_OutputFileName = new System.Windows.Forms.TextBox();
-            this.button25 = new System.Windows.Forms.Button();
-            this.Merge_MoveItemDown_Button = new System.Windows.Forms.Button();
-            this.Merge_MoveItemUp_Button = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.Merge_mediaExtensionDescLabel = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel62 = new System.Windows.Forms.Panel();
-            this.Merge_mediaExtensionLabel = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.panel63 = new System.Windows.Forms.Panel();
-            this.Merge_SizeLabel = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.panel64 = new System.Windows.Forms.Panel();
-            this.Merge_mediaPathLabel = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.panel70 = new System.Windows.Forms.Panel();
-            this.Merge_mediaOrderLabel = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.Merge_listView = new System.Windows.Forms.ListView();
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel55 = new System.Windows.Forms.Panel();
-            this.label88 = new System.Windows.Forms.Label();
-            this.panel56 = new System.Windows.Forms.Panel();
-            this.panel58 = new System.Windows.Forms.Panel();
-            this.Merge_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Merge_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Merge_OutputButton = new System.Windows.Forms.Button();
-            this.Merge_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.Merge_OutputDirectoryTextbox = new System.Windows.Forms.TextBox();
-            this.Merge_StartButton = new System.Windows.Forms.Button();
-            this.panel59 = new System.Windows.Forms.Panel();
-            this.label89 = new System.Windows.Forms.Label();
-            this.panel60 = new System.Windows.Forms.Panel();
-            this.panel57 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
-            this.panel61 = new System.Windows.Forms.Panel();
             this.CutMainPanel = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
@@ -158,13 +117,55 @@
             this.label68 = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
             this.panel69 = new System.Windows.Forms.Panel();
+            this.MergeMainPanel = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.Merge_HideConsoleToggle = new System.Windows.Forms.CheckBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.Merge_OutputFileName = new System.Windows.Forms.TextBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.Merge_MoveItemDown_Button = new System.Windows.Forms.Button();
+            this.Merge_MoveItemUp_Button = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Merge_mediaExtensionDescLabel = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.Merge_mediaExtensionLabel = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.panel63 = new System.Windows.Forms.Panel();
+            this.Merge_SizeLabel = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel64 = new System.Windows.Forms.Panel();
+            this.Merge_mediaPathLabel = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.panel70 = new System.Windows.Forms.Panel();
+            this.Merge_mediaOrderLabel = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.Merge_listView = new System.Windows.Forms.ListView();
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.label88 = new System.Windows.Forms.Label();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.Merge_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Merge_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Merge_OutputButton = new System.Windows.Forms.Button();
+            this.Merge_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Merge_OutputDirectoryTextbox = new System.Windows.Forms.TextBox();
+            this.Merge_StartButton = new System.Windows.Forms.Button();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.label89 = new System.Windows.Forms.Label();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.panel57 = new System.Windows.Forms.Panel();
+            this.label56 = new System.Windows.Forms.Label();
+            this.panel61 = new System.Windows.Forms.Panel();
             this.UpdateMainPanel = new System.Windows.Forms.Panel();
             this.panel94 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.panel96 = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.panel97 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel40 = new System.Windows.Forms.Panel();
             this.SpeedLabel = new System.Windows.Forms.Label();
             this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
@@ -220,7 +221,6 @@
             this.panel83 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel84 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel44 = new System.Windows.Forms.Panel();
             this.Settings_OverwriteDropdown = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -316,11 +316,9 @@
             this.AuthorLabel = new System.Windows.Forms.Label();
             this.SoftwareLabel = new System.Windows.Forms.Label();
             this.InfoText = new System.Windows.Forms.Label();
-            this.InfoIcon = new System.Windows.Forms.PictureBox();
             this.Menu_UpdatesTab = new System.Windows.Forms.Panel();
             this.Menu_UpdatesTabLabel = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel39 = new System.Windows.Forms.Panel();
             this.Menu_UpdatesTabIndicator = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
@@ -330,43 +328,36 @@
             this.Menu_SettingsTab = new System.Windows.Forms.Panel();
             this.Menu_SettingsTabLabel = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.Menu_SettingsTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTab = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTabLabel = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_M3U8Tab = new System.Windows.Forms.Panel();
             this.Menu_M3U8TabLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.Menu_M3U8TabIndicator = new System.Windows.Forms.Panel();
             this.Menu_MergeTab = new System.Windows.Forms.Panel();
             this.Menu_MergeTabLabel = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.Menu_MergeTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_CutTab = new System.Windows.Forms.Panel();
             this.Menu_CutTabLabel = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.Menu_CutTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTab = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTabLabel = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_EncoderTab = new System.Windows.Forms.Panel();
             this.Menu_EncoderTabLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Menu_EncoderTabIndicator = new System.Windows.Forms.Panel();
             this.MenuSpacerTop = new System.Windows.Forms.Panel();
@@ -375,7 +366,6 @@
             this.Button1 = new System.Windows.Forms.Button();
             this.BottomRightPanel = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Button2 = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
@@ -383,32 +373,37 @@
             this.Button3 = new System.Windows.Forms.Button();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.ToTrayButton = new System.Windows.Forms.PictureBox();
             this.ApplicationMinimizeButton = new System.Windows.Forms.Label();
             this.ApplicationCloseButton = new System.Windows.Forms.Label();
-            this.TopLogo = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
-            this.M3U8_MultiDownload_CheckBox = new System.Windows.Forms.CheckBox();
-            this.M3U8_NumDownloadsAsync = new System.Windows.Forms.NumericUpDown();
+            this.Menu_NormalizeAudioTab = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel100 = new System.Windows.Forms.Panel();
+            this.panel101 = new System.Windows.Forms.Panel();
+            this.panel102 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.InfoIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.ToTrayButton = new System.Windows.Forms.PictureBox();
+            this.TopLogo = new System.Windows.Forms.PictureBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
             this.M3U8MainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).BeginInit();
             this.panel49.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel51.SuspendLayout();
-            this.MergeMainPanel.SuspendLayout();
-            this.panel54.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel62.SuspendLayout();
-            this.panel63.SuspendLayout();
-            this.panel64.SuspendLayout();
-            this.panel70.SuspendLayout();
-            this.panel55.SuspendLayout();
-            this.panel58.SuspendLayout();
-            this.panel59.SuspendLayout();
-            this.panel57.SuspendLayout();
             this.CutMainPanel.SuspendLayout();
             this.panel14.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -424,11 +419,22 @@
             this.panel65.SuspendLayout();
             this.panel66.SuspendLayout();
             this.panel67.SuspendLayout();
+            this.MergeMainPanel.SuspendLayout();
+            this.panel54.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel62.SuspendLayout();
+            this.panel63.SuspendLayout();
+            this.panel64.SuspendLayout();
+            this.panel70.SuspendLayout();
+            this.panel55.SuspendLayout();
+            this.panel58.SuspendLayout();
+            this.panel59.SuspendLayout();
+            this.panel57.SuspendLayout();
             this.UpdateMainPanel.SuspendLayout();
             this.panel94.SuspendLayout();
             this.panel96.SuspendLayout();
             this.panel97.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel40.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel73.SuspendLayout();
@@ -455,7 +461,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).BeginInit();
             this.panel83.SuspendLayout();
             this.panel84.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel44.SuspendLayout();
             this.panel78.SuspendLayout();
             this.panel43.SuspendLayout();
@@ -472,40 +477,44 @@
             this.NoticePanel.SuspendLayout();
             this.MenuPanel.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).BeginInit();
             this.Menu_UpdatesTab.SuspendLayout();
             this.panel38.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel33.SuspendLayout();
             this.Menu_SettingsTab.SuspendLayout();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Menu_ArgumentsTab.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Menu_M3U8Tab.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Menu_MergeTab.SuspendLayout();
             this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.Menu_CutTab.SuspendLayout();
             this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.Menu_CutMergeTab.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Menu_EncoderTab.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.FooterPanel.SuspendLayout();
             this.BottomRightPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel22.SuspendLayout();
             this.TopPanel.SuspendLayout();
+            this.Menu_NormalizeAudioTab.SuspendLayout();
+            this.panel100.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).BeginInit();
             this.SuspendLayout();
             // 
             // FullPanel
@@ -556,6 +565,32 @@
             this.M3U8MainPanel.Name = "M3U8MainPanel";
             this.M3U8MainPanel.Size = new System.Drawing.Size(919, 495);
             this.M3U8MainPanel.TabIndex = 8;
+            // 
+            // M3U8_NumDownloadsAsync
+            // 
+            this.M3U8_NumDownloadsAsync.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.M3U8_NumDownloadsAsync.Location = new System.Drawing.Point(528, 53);
+            this.M3U8_NumDownloadsAsync.Name = "M3U8_NumDownloadsAsync";
+            this.M3U8_NumDownloadsAsync.Size = new System.Drawing.Size(60, 20);
+            this.M3U8_NumDownloadsAsync.TabIndex = 82;
+            this.M3U8_NumDownloadsAsync.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // M3U8_MultiDownload_CheckBox
+            // 
+            this.M3U8_MultiDownload_CheckBox.AutoSize = true;
+            this.M3U8_MultiDownload_CheckBox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.M3U8_MultiDownload_CheckBox.Location = new System.Drawing.Point(382, 57);
+            this.M3U8_MultiDownload_CheckBox.Name = "M3U8_MultiDownload_CheckBox";
+            this.M3U8_MultiDownload_CheckBox.Size = new System.Drawing.Size(143, 16);
+            this.M3U8_MultiDownload_CheckBox.TabIndex = 81;
+            this.M3U8_MultiDownload_CheckBox.Text = "Download Multiple At once";
+            this.toolTip.SetToolTip(this.M3U8_MultiDownload_CheckBox, "Hide ffmpeg encoder window from showing");
+            this.M3U8_MultiDownload_CheckBox.UseVisualStyleBackColor = true;
+            this.M3U8_MultiDownload_CheckBox.CheckedChanged += new System.EventHandler(this.M3U8_MultiDownload_CheckBox_CheckedChanged);
             // 
             // panel98
             // 
@@ -830,491 +865,6 @@
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(200, 73);
             this.panel53.TabIndex = 1;
-            // 
-            // MergeMainPanel
-            // 
-            this.MergeMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.MergeMainPanel.Controls.Add(this.panel54);
-            this.MergeMainPanel.Controls.Add(this.panel58);
-            this.MergeMainPanel.Controls.Add(this.panel57);
-            this.MergeMainPanel.Controls.Add(this.panel61);
-            this.MergeMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MergeMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.MergeMainPanel.Name = "MergeMainPanel";
-            this.MergeMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.MergeMainPanel.TabIndex = 9;
-            // 
-            // panel54
-            // 
-            this.panel54.BackColor = System.Drawing.Color.White;
-            this.panel54.Controls.Add(this.Merge_HideConsoleToggle);
-            this.panel54.Controls.Add(this.label33);
-            this.panel54.Controls.Add(this.Merge_OutputFileName);
-            this.panel54.Controls.Add(this.button25);
-            this.panel54.Controls.Add(this.Merge_MoveItemDown_Button);
-            this.panel54.Controls.Add(this.Merge_MoveItemUp_Button);
-            this.panel54.Controls.Add(this.groupBox3);
-            this.panel54.Controls.Add(this.Merge_listView);
-            this.panel54.Controls.Add(this.panel55);
-            this.panel54.Location = new System.Drawing.Point(27, 50);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(882, 314);
-            this.panel54.TabIndex = 11;
-            // 
-            // Merge_HideConsoleToggle
-            // 
-            this.Merge_HideConsoleToggle.AutoSize = true;
-            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 44);
-            this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
-            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
-            this.Merge_HideConsoleToggle.TabIndex = 88;
-            this.Merge_HideConsoleToggle.Text = "Hide Console";
-            this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
-            // 
-            // label33
-            // 
-            this.label33.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(278, 284);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(217, 25);
-            this.label33.TabIndex = 87;
-            this.label33.Text = "Extension will be the same as the first file in the list.";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Merge_OutputFileName
-            // 
-            this.Merge_OutputFileName.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Merge_OutputFileName.Location = new System.Drawing.Point(270, 259);
-            this.Merge_OutputFileName.Name = "Merge_OutputFileName";
-            this.Merge_OutputFileName.Size = new System.Drawing.Size(607, 23);
-            this.Merge_OutputFileName.TabIndex = 86;
-            this.Merge_OutputFileName.Text = "OutputFileName";
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Location = new System.Drawing.Point(255, 70);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(1, 212);
-            this.button25.TabIndex = 85;
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // Merge_MoveItemDown_Button
-            // 
-            this.Merge_MoveItemDown_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_MoveItemDown_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_MoveItemDown_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_MoveItemDown_Button.Location = new System.Drawing.Point(246, 288);
-            this.Merge_MoveItemDown_Button.Name = "Merge_MoveItemDown_Button";
-            this.Merge_MoveItemDown_Button.Size = new System.Drawing.Size(20, 20);
-            this.Merge_MoveItemDown_Button.TabIndex = 84;
-            this.Merge_MoveItemDown_Button.Text = "▼";
-            this.toolTip.SetToolTip(this.Merge_MoveItemDown_Button, "Re-Arrange selected file down  in the list.");
-            this.Merge_MoveItemDown_Button.UseVisualStyleBackColor = false;
-            this.Merge_MoveItemDown_Button.Click += new System.EventHandler(this.Merge_MoveItemDown_Button_Click);
-            // 
-            // Merge_MoveItemUp_Button
-            // 
-            this.Merge_MoveItemUp_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_MoveItemUp_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_MoveItemUp_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_MoveItemUp_Button.Location = new System.Drawing.Point(246, 44);
-            this.Merge_MoveItemUp_Button.Name = "Merge_MoveItemUp_Button";
-            this.Merge_MoveItemUp_Button.Size = new System.Drawing.Size(20, 20);
-            this.Merge_MoveItemUp_Button.TabIndex = 83;
-            this.Merge_MoveItemUp_Button.Text = "▲";
-            this.toolTip.SetToolTip(this.Merge_MoveItemUp_Button, "Re-Arrange selected file up in the list.");
-            this.Merge_MoveItemUp_Button.UseVisualStyleBackColor = false;
-            this.Merge_MoveItemUp_Button.Click += new System.EventHandler(this.Merge_MoveItemUp_Button_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.Merge_mediaExtensionDescLabel);
-            this.groupBox3.Controls.Add(this.panel24);
-            this.groupBox3.Controls.Add(this.panel62);
-            this.groupBox3.Controls.Add(this.panel63);
-            this.groupBox3.Controls.Add(this.panel64);
-            this.groupBox3.Controls.Add(this.panel70);
-            this.groupBox3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.groupBox3.Location = new System.Drawing.Point(270, 62);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(606, 191);
-            this.groupBox3.TabIndex = 79;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Media Details";
-            // 
-            // Merge_mediaExtensionDescLabel
-            // 
-            this.Merge_mediaExtensionDescLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(3, 144);
-            this.Merge_mediaExtensionDescLabel.Name = "Merge_mediaExtensionDescLabel";
-            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(600, 44);
-            this.Merge_mediaExtensionDescLabel.TabIndex = 5;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.label36);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(3, 119);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(600, 25);
-            this.panel24.TabIndex = 4;
-            // 
-            // label36
-            // 
-            this.label36.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label36.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label36.Location = new System.Drawing.Point(0, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(113, 25);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "Extension Description:";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel62
-            // 
-            this.panel62.Controls.Add(this.Merge_mediaExtensionLabel);
-            this.panel62.Controls.Add(this.label50);
-            this.panel62.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel62.Location = new System.Drawing.Point(3, 94);
-            this.panel62.Name = "panel62";
-            this.panel62.Size = new System.Drawing.Size(600, 25);
-            this.panel62.TabIndex = 3;
-            // 
-            // Merge_mediaExtensionLabel
-            // 
-            this.Merge_mediaExtensionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaExtensionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Merge_mediaExtensionLabel.Location = new System.Drawing.Point(69, 0);
-            this.Merge_mediaExtensionLabel.Name = "Merge_mediaExtensionLabel";
-            this.Merge_mediaExtensionLabel.Size = new System.Drawing.Size(531, 25);
-            this.Merge_mediaExtensionLabel.TabIndex = 1;
-            this.Merge_mediaExtensionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label50
-            // 
-            this.label50.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label50.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label50.Location = new System.Drawing.Point(0, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(69, 25);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Extension:";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel63
-            // 
-            this.panel63.Controls.Add(this.Merge_SizeLabel);
-            this.panel63.Controls.Add(this.label51);
-            this.panel63.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel63.Location = new System.Drawing.Point(3, 69);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(600, 25);
-            this.panel63.TabIndex = 2;
-            // 
-            // Merge_SizeLabel
-            // 
-            this.Merge_SizeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_SizeLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Merge_SizeLabel.Location = new System.Drawing.Point(35, 0);
-            this.Merge_SizeLabel.Name = "Merge_SizeLabel";
-            this.Merge_SizeLabel.Size = new System.Drawing.Size(565, 25);
-            this.Merge_SizeLabel.TabIndex = 1;
-            this.Merge_SizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label51
-            // 
-            this.label51.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label51.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(35, 25);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Size:";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel64
-            // 
-            this.panel64.Controls.Add(this.Merge_mediaPathLabel);
-            this.panel64.Controls.Add(this.label52);
-            this.panel64.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel64.Location = new System.Drawing.Point(3, 44);
-            this.panel64.Name = "panel64";
-            this.panel64.Size = new System.Drawing.Size(600, 25);
-            this.panel64.TabIndex = 1;
-            // 
-            // Merge_mediaPathLabel
-            // 
-            this.Merge_mediaPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaPathLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Merge_mediaPathLabel.Location = new System.Drawing.Point(72, 0);
-            this.Merge_mediaPathLabel.Name = "Merge_mediaPathLabel";
-            this.Merge_mediaPathLabel.Size = new System.Drawing.Size(528, 25);
-            this.Merge_mediaPathLabel.TabIndex = 1;
-            this.Merge_mediaPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label52
-            // 
-            this.label52.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label52.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label52.Location = new System.Drawing.Point(0, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(72, 25);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "Media Path:";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel70
-            // 
-            this.panel70.Controls.Add(this.Merge_mediaOrderLabel);
-            this.panel70.Controls.Add(this.label53);
-            this.panel70.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel70.Location = new System.Drawing.Point(3, 19);
-            this.panel70.Name = "panel70";
-            this.panel70.Size = new System.Drawing.Size(600, 25);
-            this.panel70.TabIndex = 0;
-            // 
-            // Merge_mediaOrderLabel
-            // 
-            this.Merge_mediaOrderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Merge_mediaOrderLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.Merge_mediaOrderLabel.Location = new System.Drawing.Point(72, 0);
-            this.Merge_mediaOrderLabel.Name = "Merge_mediaOrderLabel";
-            this.Merge_mediaOrderLabel.Size = new System.Drawing.Size(528, 25);
-            this.Merge_mediaOrderLabel.TabIndex = 1;
-            this.Merge_mediaOrderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label53
-            // 
-            this.label53.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label53.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
-            this.label53.Location = new System.Drawing.Point(0, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(72, 25);
-            this.label53.TabIndex = 0;
-            this.label53.Text = "Media Order:";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Merge_listView
-            // 
-            this.Merge_listView.AllowDrop = true;
-            this.Merge_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader9,
-            this.columnHeader10});
-            this.Merge_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Merge_listView.FullRowSelect = true;
-            this.Merge_listView.GridLines = true;
-            this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Merge_listView.HideSelection = false;
-            this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
-            this.Merge_listView.Location = new System.Drawing.Point(6, 44);
-            this.Merge_listView.MultiSelect = false;
-            this.Merge_listView.Name = "Merge_listView";
-            this.Merge_listView.Size = new System.Drawing.Size(235, 264);
-            this.Merge_listView.TabIndex = 72;
-            this.Merge_listView.UseCompatibleStateImageBehavior = false;
-            this.Merge_listView.View = System.Windows.Forms.View.Details;
-            this.Merge_listView.SelectedIndexChanged += new System.EventHandler(this.Merge_listView_SelectedIndexChanged);
-            this.Merge_listView.DragDrop += new System.Windows.Forms.DragEventHandler(this.Merge_listView_DragDrop);
-            this.Merge_listView.DragEnter += new System.Windows.Forms.DragEventHandler(this.Merge_listView_DragEnter);
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Order";
-            this.columnHeader9.Width = 50;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Media";
-            this.columnHeader10.Width = 160;
-            // 
-            // panel55
-            // 
-            this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel55.Controls.Add(this.label88);
-            this.panel55.Controls.Add(this.panel56);
-            this.panel55.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel55.Location = new System.Drawing.Point(0, 0);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(882, 38);
-            this.panel55.TabIndex = 3;
-            // 
-            // label88
-            // 
-            this.label88.BackColor = System.Drawing.Color.Transparent;
-            this.label88.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label88.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label88.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label88.ForeColor = System.Drawing.Color.White;
-            this.label88.Location = new System.Drawing.Point(55, 0);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(447, 38);
-            this.label88.TabIndex = 6;
-            this.label88.Text = "Options";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel56
-            // 
-            this.panel56.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel56.Location = new System.Drawing.Point(0, 0);
-            this.panel56.Name = "panel56";
-            this.panel56.Size = new System.Drawing.Size(55, 38);
-            this.panel56.TabIndex = 0;
-            // 
-            // panel58
-            // 
-            this.panel58.BackColor = System.Drawing.Color.White;
-            this.panel58.Controls.Add(this.Merge_DefaultOutputButton);
-            this.panel58.Controls.Add(this.Merge_OpenDirectoryButton);
-            this.panel58.Controls.Add(this.Merge_OutputButton);
-            this.panel58.Controls.Add(this.Merge_ProgressBar);
-            this.panel58.Controls.Add(this.Merge_OutputDirectoryTextbox);
-            this.panel58.Controls.Add(this.Merge_StartButton);
-            this.panel58.Controls.Add(this.panel59);
-            this.panel58.Location = new System.Drawing.Point(27, 377);
-            this.panel58.Name = "panel58";
-            this.panel58.Size = new System.Drawing.Size(885, 106);
-            this.panel58.TabIndex = 10;
-            // 
-            // Merge_DefaultOutputButton
-            // 
-            this.Merge_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(749, 44);
-            this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
-            this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Merge_DefaultOutputButton.TabIndex = 64;
-            this.Merge_DefaultOutputButton.Text = "✓";
-            this.Merge_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Merge_DefaultOutputButton.Click += new System.EventHandler(this.Merge_DefaultOutputButton_Click);
-            // 
-            // Merge_OpenDirectoryButton
-            // 
-            this.Merge_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(724, 44);
-            this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
-            this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Merge_OpenDirectoryButton.TabIndex = 63;
-            this.Merge_OpenDirectoryButton.Text = "▶";
-            this.Merge_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Merge_OpenDirectoryButton.Click += new System.EventHandler(this.Merge_OpenDirectoryButton_Click);
-            // 
-            // Merge_OutputButton
-            // 
-            this.Merge_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_OutputButton.Location = new System.Drawing.Point(774, 44);
-            this.Merge_OutputButton.Name = "Merge_OutputButton";
-            this.Merge_OutputButton.Size = new System.Drawing.Size(105, 23);
-            this.Merge_OutputButton.TabIndex = 25;
-            this.Merge_OutputButton.Text = "Output Folder";
-            this.Merge_OutputButton.UseVisualStyleBackColor = false;
-            // 
-            // Merge_ProgressBar
-            // 
-            this.Merge_ProgressBar.Location = new System.Drawing.Point(3, 75);
-            this.Merge_ProgressBar.Name = "Merge_ProgressBar";
-            this.Merge_ProgressBar.Size = new System.Drawing.Size(765, 20);
-            this.Merge_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Merge_ProgressBar.TabIndex = 24;
-            // 
-            // Merge_OutputDirectoryTextbox
-            // 
-            this.Merge_OutputDirectoryTextbox.Enabled = false;
-            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
-            this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
-            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(715, 23);
-            this.Merge_OutputDirectoryTextbox.TabIndex = 23;
-            // 
-            // Merge_StartButton
-            // 
-            this.Merge_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Merge_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Merge_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Merge_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Merge_StartButton.Location = new System.Drawing.Point(774, 73);
-            this.Merge_StartButton.Name = "Merge_StartButton";
-            this.Merge_StartButton.Size = new System.Drawing.Size(105, 23);
-            this.Merge_StartButton.TabIndex = 22;
-            this.Merge_StartButton.Text = "Start Merging";
-            this.Merge_StartButton.UseVisualStyleBackColor = false;
-            this.Merge_StartButton.Click += new System.EventHandler(this.Merge_StartButton_Click);
-            // 
-            // panel59
-            // 
-            this.panel59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel59.Controls.Add(this.label89);
-            this.panel59.Controls.Add(this.panel60);
-            this.panel59.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel59.Location = new System.Drawing.Point(0, 0);
-            this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(885, 38);
-            this.panel59.TabIndex = 3;
-            // 
-            // label89
-            // 
-            this.label89.BackColor = System.Drawing.Color.Transparent;
-            this.label89.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label89.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label89.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label89.ForeColor = System.Drawing.Color.White;
-            this.label89.Location = new System.Drawing.Point(55, 0);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(447, 38);
-            this.label89.TabIndex = 6;
-            this.label89.Text = "Output";
-            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel60
-            // 
-            this.panel60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel60.Location = new System.Drawing.Point(0, 0);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(55, 38);
-            this.panel60.TabIndex = 0;
-            // 
-            // panel57
-            // 
-            this.panel57.Controls.Add(this.label56);
-            this.panel57.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel57.Location = new System.Drawing.Point(0, 0);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(919, 44);
-            this.panel57.TabIndex = 8;
-            // 
-            // label56
-            // 
-            this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label56.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label56.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label56.Location = new System.Drawing.Point(22, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(897, 44);
-            this.label56.TabIndex = 7;
-            this.label56.Text = "Merge";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel61
-            // 
-            this.panel61.Location = new System.Drawing.Point(719, 495);
-            this.panel61.Name = "panel61";
-            this.panel61.Size = new System.Drawing.Size(200, 73);
-            this.panel61.TabIndex = 1;
             // 
             // CutMainPanel
             // 
@@ -1958,6 +1508,491 @@
             this.panel69.Size = new System.Drawing.Size(200, 73);
             this.panel69.TabIndex = 1;
             // 
+            // MergeMainPanel
+            // 
+            this.MergeMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.MergeMainPanel.Controls.Add(this.panel54);
+            this.MergeMainPanel.Controls.Add(this.panel58);
+            this.MergeMainPanel.Controls.Add(this.panel57);
+            this.MergeMainPanel.Controls.Add(this.panel61);
+            this.MergeMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MergeMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MergeMainPanel.Name = "MergeMainPanel";
+            this.MergeMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.MergeMainPanel.TabIndex = 9;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.White;
+            this.panel54.Controls.Add(this.Merge_HideConsoleToggle);
+            this.panel54.Controls.Add(this.label33);
+            this.panel54.Controls.Add(this.Merge_OutputFileName);
+            this.panel54.Controls.Add(this.button25);
+            this.panel54.Controls.Add(this.Merge_MoveItemDown_Button);
+            this.panel54.Controls.Add(this.Merge_MoveItemUp_Button);
+            this.panel54.Controls.Add(this.groupBox3);
+            this.panel54.Controls.Add(this.Merge_listView);
+            this.panel54.Controls.Add(this.panel55);
+            this.panel54.Location = new System.Drawing.Point(27, 50);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(882, 314);
+            this.panel54.TabIndex = 11;
+            // 
+            // Merge_HideConsoleToggle
+            // 
+            this.Merge_HideConsoleToggle.AutoSize = true;
+            this.Merge_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Merge_HideConsoleToggle.Location = new System.Drawing.Point(270, 44);
+            this.Merge_HideConsoleToggle.Name = "Merge_HideConsoleToggle";
+            this.Merge_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
+            this.Merge_HideConsoleToggle.TabIndex = 88;
+            this.Merge_HideConsoleToggle.Text = "Hide Console";
+            this.Merge_HideConsoleToggle.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(278, 284);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(217, 25);
+            this.label33.TabIndex = 87;
+            this.label33.Text = "Extension will be the same as the first file in the list.";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Merge_OutputFileName
+            // 
+            this.Merge_OutputFileName.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Merge_OutputFileName.Location = new System.Drawing.Point(270, 259);
+            this.Merge_OutputFileName.Name = "Merge_OutputFileName";
+            this.Merge_OutputFileName.Size = new System.Drawing.Size(607, 23);
+            this.Merge_OutputFileName.TabIndex = 86;
+            this.Merge_OutputFileName.Text = "OutputFileName";
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Location = new System.Drawing.Point(255, 70);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(1, 212);
+            this.button25.TabIndex = 85;
+            this.button25.UseVisualStyleBackColor = false;
+            // 
+            // Merge_MoveItemDown_Button
+            // 
+            this.Merge_MoveItemDown_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_MoveItemDown_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_MoveItemDown_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_MoveItemDown_Button.Location = new System.Drawing.Point(246, 288);
+            this.Merge_MoveItemDown_Button.Name = "Merge_MoveItemDown_Button";
+            this.Merge_MoveItemDown_Button.Size = new System.Drawing.Size(20, 20);
+            this.Merge_MoveItemDown_Button.TabIndex = 84;
+            this.Merge_MoveItemDown_Button.Text = "▼";
+            this.toolTip.SetToolTip(this.Merge_MoveItemDown_Button, "Re-Arrange selected file down  in the list.");
+            this.Merge_MoveItemDown_Button.UseVisualStyleBackColor = false;
+            this.Merge_MoveItemDown_Button.Click += new System.EventHandler(this.Merge_MoveItemDown_Button_Click);
+            // 
+            // Merge_MoveItemUp_Button
+            // 
+            this.Merge_MoveItemUp_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_MoveItemUp_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_MoveItemUp_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_MoveItemUp_Button.Location = new System.Drawing.Point(246, 44);
+            this.Merge_MoveItemUp_Button.Name = "Merge_MoveItemUp_Button";
+            this.Merge_MoveItemUp_Button.Size = new System.Drawing.Size(20, 20);
+            this.Merge_MoveItemUp_Button.TabIndex = 83;
+            this.Merge_MoveItemUp_Button.Text = "▲";
+            this.toolTip.SetToolTip(this.Merge_MoveItemUp_Button, "Re-Arrange selected file up in the list.");
+            this.Merge_MoveItemUp_Button.UseVisualStyleBackColor = false;
+            this.Merge_MoveItemUp_Button.Click += new System.EventHandler(this.Merge_MoveItemUp_Button_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Merge_mediaExtensionDescLabel);
+            this.groupBox3.Controls.Add(this.panel24);
+            this.groupBox3.Controls.Add(this.panel62);
+            this.groupBox3.Controls.Add(this.panel63);
+            this.groupBox3.Controls.Add(this.panel64);
+            this.groupBox3.Controls.Add(this.panel70);
+            this.groupBox3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.groupBox3.Location = new System.Drawing.Point(270, 62);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(606, 191);
+            this.groupBox3.TabIndex = 79;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Media Details";
+            // 
+            // Merge_mediaExtensionDescLabel
+            // 
+            this.Merge_mediaExtensionDescLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaExtensionDescLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Merge_mediaExtensionDescLabel.Location = new System.Drawing.Point(3, 144);
+            this.Merge_mediaExtensionDescLabel.Name = "Merge_mediaExtensionDescLabel";
+            this.Merge_mediaExtensionDescLabel.Size = new System.Drawing.Size(600, 44);
+            this.Merge_mediaExtensionDescLabel.TabIndex = 5;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.label36);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(3, 119);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(600, 25);
+            this.panel24.TabIndex = 4;
+            // 
+            // label36
+            // 
+            this.label36.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label36.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label36.Location = new System.Drawing.Point(0, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(113, 25);
+            this.label36.TabIndex = 0;
+            this.label36.Text = "Extension Description:";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel62
+            // 
+            this.panel62.Controls.Add(this.Merge_mediaExtensionLabel);
+            this.panel62.Controls.Add(this.label50);
+            this.panel62.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel62.Location = new System.Drawing.Point(3, 94);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(600, 25);
+            this.panel62.TabIndex = 3;
+            // 
+            // Merge_mediaExtensionLabel
+            // 
+            this.Merge_mediaExtensionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaExtensionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Merge_mediaExtensionLabel.Location = new System.Drawing.Point(69, 0);
+            this.Merge_mediaExtensionLabel.Name = "Merge_mediaExtensionLabel";
+            this.Merge_mediaExtensionLabel.Size = new System.Drawing.Size(531, 25);
+            this.Merge_mediaExtensionLabel.TabIndex = 1;
+            this.Merge_mediaExtensionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label50
+            // 
+            this.label50.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label50.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label50.Location = new System.Drawing.Point(0, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(69, 25);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Extension:";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel63
+            // 
+            this.panel63.Controls.Add(this.Merge_SizeLabel);
+            this.panel63.Controls.Add(this.label51);
+            this.panel63.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel63.Location = new System.Drawing.Point(3, 69);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(600, 25);
+            this.panel63.TabIndex = 2;
+            // 
+            // Merge_SizeLabel
+            // 
+            this.Merge_SizeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_SizeLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Merge_SizeLabel.Location = new System.Drawing.Point(35, 0);
+            this.Merge_SizeLabel.Name = "Merge_SizeLabel";
+            this.Merge_SizeLabel.Size = new System.Drawing.Size(565, 25);
+            this.Merge_SizeLabel.TabIndex = 1;
+            this.Merge_SizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label51
+            // 
+            this.label51.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label51.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label51.Location = new System.Drawing.Point(0, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(35, 25);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Size:";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel64
+            // 
+            this.panel64.Controls.Add(this.Merge_mediaPathLabel);
+            this.panel64.Controls.Add(this.label52);
+            this.panel64.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel64.Location = new System.Drawing.Point(3, 44);
+            this.panel64.Name = "panel64";
+            this.panel64.Size = new System.Drawing.Size(600, 25);
+            this.panel64.TabIndex = 1;
+            // 
+            // Merge_mediaPathLabel
+            // 
+            this.Merge_mediaPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaPathLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Merge_mediaPathLabel.Location = new System.Drawing.Point(72, 0);
+            this.Merge_mediaPathLabel.Name = "Merge_mediaPathLabel";
+            this.Merge_mediaPathLabel.Size = new System.Drawing.Size(528, 25);
+            this.Merge_mediaPathLabel.TabIndex = 1;
+            this.Merge_mediaPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label52
+            // 
+            this.label52.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label52.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label52.Location = new System.Drawing.Point(0, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(72, 25);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Media Path:";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel70
+            // 
+            this.panel70.Controls.Add(this.Merge_mediaOrderLabel);
+            this.panel70.Controls.Add(this.label53);
+            this.panel70.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel70.Location = new System.Drawing.Point(3, 19);
+            this.panel70.Name = "panel70";
+            this.panel70.Size = new System.Drawing.Size(600, 25);
+            this.panel70.TabIndex = 0;
+            // 
+            // Merge_mediaOrderLabel
+            // 
+            this.Merge_mediaOrderLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Merge_mediaOrderLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.Merge_mediaOrderLabel.Location = new System.Drawing.Point(72, 0);
+            this.Merge_mediaOrderLabel.Name = "Merge_mediaOrderLabel";
+            this.Merge_mediaOrderLabel.Size = new System.Drawing.Size(528, 25);
+            this.Merge_mediaOrderLabel.TabIndex = 1;
+            this.Merge_mediaOrderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label53
+            // 
+            this.label53.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label53.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.5F);
+            this.label53.Location = new System.Drawing.Point(0, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(72, 25);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "Media Order:";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Merge_listView
+            // 
+            this.Merge_listView.AllowDrop = true;
+            this.Merge_listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader9,
+            this.columnHeader10});
+            this.Merge_listView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Merge_listView.FullRowSelect = true;
+            this.Merge_listView.GridLines = true;
+            this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Merge_listView.HideSelection = false;
+            this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem9});
+            this.Merge_listView.Location = new System.Drawing.Point(6, 44);
+            this.Merge_listView.MultiSelect = false;
+            this.Merge_listView.Name = "Merge_listView";
+            this.Merge_listView.Size = new System.Drawing.Size(235, 264);
+            this.Merge_listView.TabIndex = 72;
+            this.Merge_listView.UseCompatibleStateImageBehavior = false;
+            this.Merge_listView.View = System.Windows.Forms.View.Details;
+            this.Merge_listView.SelectedIndexChanged += new System.EventHandler(this.Merge_listView_SelectedIndexChanged);
+            this.Merge_listView.DragDrop += new System.Windows.Forms.DragEventHandler(this.Merge_listView_DragDrop);
+            this.Merge_listView.DragEnter += new System.Windows.Forms.DragEventHandler(this.Merge_listView_DragEnter);
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Order";
+            this.columnHeader9.Width = 50;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Media";
+            this.columnHeader10.Width = 160;
+            // 
+            // panel55
+            // 
+            this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel55.Controls.Add(this.label88);
+            this.panel55.Controls.Add(this.panel56);
+            this.panel55.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel55.Location = new System.Drawing.Point(0, 0);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(882, 38);
+            this.panel55.TabIndex = 3;
+            // 
+            // label88
+            // 
+            this.label88.BackColor = System.Drawing.Color.Transparent;
+            this.label88.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label88.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label88.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label88.ForeColor = System.Drawing.Color.White;
+            this.label88.Location = new System.Drawing.Point(55, 0);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(447, 38);
+            this.label88.TabIndex = 6;
+            this.label88.Text = "Options";
+            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel56
+            // 
+            this.panel56.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel56.Location = new System.Drawing.Point(0, 0);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(55, 38);
+            this.panel56.TabIndex = 0;
+            // 
+            // panel58
+            // 
+            this.panel58.BackColor = System.Drawing.Color.White;
+            this.panel58.Controls.Add(this.Merge_DefaultOutputButton);
+            this.panel58.Controls.Add(this.Merge_OpenDirectoryButton);
+            this.panel58.Controls.Add(this.Merge_OutputButton);
+            this.panel58.Controls.Add(this.Merge_ProgressBar);
+            this.panel58.Controls.Add(this.Merge_OutputDirectoryTextbox);
+            this.panel58.Controls.Add(this.Merge_StartButton);
+            this.panel58.Controls.Add(this.panel59);
+            this.panel58.Location = new System.Drawing.Point(27, 377);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(885, 106);
+            this.panel58.TabIndex = 10;
+            // 
+            // Merge_DefaultOutputButton
+            // 
+            this.Merge_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Merge_DefaultOutputButton.Location = new System.Drawing.Point(749, 44);
+            this.Merge_DefaultOutputButton.Name = "Merge_DefaultOutputButton";
+            this.Merge_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Merge_DefaultOutputButton.TabIndex = 64;
+            this.Merge_DefaultOutputButton.Text = "✓";
+            this.Merge_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Merge_DefaultOutputButton.Click += new System.EventHandler(this.Merge_DefaultOutputButton_Click);
+            // 
+            // Merge_OpenDirectoryButton
+            // 
+            this.Merge_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Merge_OpenDirectoryButton.Location = new System.Drawing.Point(724, 44);
+            this.Merge_OpenDirectoryButton.Name = "Merge_OpenDirectoryButton";
+            this.Merge_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Merge_OpenDirectoryButton.TabIndex = 63;
+            this.Merge_OpenDirectoryButton.Text = "▶";
+            this.Merge_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Merge_OpenDirectoryButton.Click += new System.EventHandler(this.Merge_OpenDirectoryButton_Click);
+            // 
+            // Merge_OutputButton
+            // 
+            this.Merge_OutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_OutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_OutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_OutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Merge_OutputButton.Location = new System.Drawing.Point(774, 44);
+            this.Merge_OutputButton.Name = "Merge_OutputButton";
+            this.Merge_OutputButton.Size = new System.Drawing.Size(105, 23);
+            this.Merge_OutputButton.TabIndex = 25;
+            this.Merge_OutputButton.Text = "Output Folder";
+            this.Merge_OutputButton.UseVisualStyleBackColor = false;
+            // 
+            // Merge_ProgressBar
+            // 
+            this.Merge_ProgressBar.Location = new System.Drawing.Point(3, 75);
+            this.Merge_ProgressBar.Name = "Merge_ProgressBar";
+            this.Merge_ProgressBar.Size = new System.Drawing.Size(765, 20);
+            this.Merge_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Merge_ProgressBar.TabIndex = 24;
+            // 
+            // Merge_OutputDirectoryTextbox
+            // 
+            this.Merge_OutputDirectoryTextbox.Enabled = false;
+            this.Merge_OutputDirectoryTextbox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Merge_OutputDirectoryTextbox.Location = new System.Drawing.Point(3, 45);
+            this.Merge_OutputDirectoryTextbox.Name = "Merge_OutputDirectoryTextbox";
+            this.Merge_OutputDirectoryTextbox.Size = new System.Drawing.Size(715, 23);
+            this.Merge_OutputDirectoryTextbox.TabIndex = 23;
+            // 
+            // Merge_StartButton
+            // 
+            this.Merge_StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Merge_StartButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Merge_StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Merge_StartButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Merge_StartButton.Location = new System.Drawing.Point(774, 73);
+            this.Merge_StartButton.Name = "Merge_StartButton";
+            this.Merge_StartButton.Size = new System.Drawing.Size(105, 23);
+            this.Merge_StartButton.TabIndex = 22;
+            this.Merge_StartButton.Text = "Start Merging";
+            this.Merge_StartButton.UseVisualStyleBackColor = false;
+            this.Merge_StartButton.Click += new System.EventHandler(this.Merge_StartButton_Click);
+            // 
+            // panel59
+            // 
+            this.panel59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel59.Controls.Add(this.label89);
+            this.panel59.Controls.Add(this.panel60);
+            this.panel59.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel59.Location = new System.Drawing.Point(0, 0);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(885, 38);
+            this.panel59.TabIndex = 3;
+            // 
+            // label89
+            // 
+            this.label89.BackColor = System.Drawing.Color.Transparent;
+            this.label89.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label89.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label89.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label89.ForeColor = System.Drawing.Color.White;
+            this.label89.Location = new System.Drawing.Point(55, 0);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(447, 38);
+            this.label89.TabIndex = 6;
+            this.label89.Text = "Output";
+            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel60
+            // 
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel60.Location = new System.Drawing.Point(0, 0);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(55, 38);
+            this.panel60.TabIndex = 0;
+            // 
+            // panel57
+            // 
+            this.panel57.Controls.Add(this.label56);
+            this.panel57.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel57.Location = new System.Drawing.Point(0, 0);
+            this.panel57.Name = "panel57";
+            this.panel57.Size = new System.Drawing.Size(919, 44);
+            this.panel57.TabIndex = 8;
+            // 
+            // label56
+            // 
+            this.label56.BackColor = System.Drawing.Color.Transparent;
+            this.label56.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label56.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label56.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label56.Location = new System.Drawing.Point(22, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(897, 44);
+            this.label56.TabIndex = 7;
+            this.label56.Text = "Merge";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel61
+            // 
+            this.panel61.Location = new System.Drawing.Point(719, 495);
+            this.panel61.Name = "panel61";
+            this.panel61.Size = new System.Drawing.Size(200, 73);
+            this.panel61.TabIndex = 1;
+            // 
             // UpdateMainPanel
             // 
             this.UpdateMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -2025,18 +2060,6 @@
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(55, 38);
             this.panel97.TabIndex = 0;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
             // 
             // panel40
             // 
@@ -2663,20 +2686,6 @@
             this.panel84.Size = new System.Drawing.Size(55, 38);
             this.panel84.TabIndex = 0;
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
-        "plugin to send data to the software. This \'data\' refers to the content you choos" +
-        "e to download or stream using ffmpeg.");
-            // 
             // panel44
             // 
             this.panel44.BackColor = System.Drawing.Color.White;
@@ -3249,7 +3258,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem10});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -3751,7 +3760,6 @@
             // MenuPanel
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
-            this.MenuPanel.Controls.Add(this.panel3);
             this.MenuPanel.Controls.Add(this.Menu_UpdatesTab);
             this.MenuPanel.Controls.Add(this.panel33);
             this.MenuPanel.Controls.Add(this.Menu_SettingsTab);
@@ -3760,8 +3768,10 @@
             this.MenuPanel.Controls.Add(this.Menu_MergeTab);
             this.MenuPanel.Controls.Add(this.Menu_CutTab);
             this.MenuPanel.Controls.Add(this.Menu_CutMergeTab);
+            this.MenuPanel.Controls.Add(this.Menu_NormalizeAudioTab);
             this.MenuPanel.Controls.Add(this.Menu_EncoderTab);
             this.MenuPanel.Controls.Add(this.MenuSpacerTop);
+            this.MenuPanel.Controls.Add(this.panel3);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 27);
             this.MenuPanel.Name = "MenuPanel";
@@ -3837,19 +3847,6 @@
             this.toolTip.SetToolTip(this.InfoText, "Click to view more information!");
             this.InfoText.Click += new System.EventHandler(this.InfoIcon_Click);
             // 
-            // InfoIcon
-            // 
-            this.InfoIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.InfoIcon.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.InfoIcon.Location = new System.Drawing.Point(2, 2);
-            this.InfoIcon.Name = "InfoIcon";
-            this.InfoIcon.Size = new System.Drawing.Size(20, 20);
-            this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.InfoIcon.TabIndex = 1;
-            this.InfoIcon.TabStop = false;
-            this.toolTip.SetToolTip(this.InfoIcon, "Click to view more information!");
-            this.InfoIcon.Click += new System.EventHandler(this.InfoIcon_Click);
-            // 
             // Menu_UpdatesTab
             // 
             this.Menu_UpdatesTab.Controls.Add(this.Menu_UpdatesTabLabel);
@@ -3858,7 +3855,7 @@
             this.Menu_UpdatesTab.Controls.Add(this.Menu_UpdatesTabIndicator);
             this.Menu_UpdatesTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_UpdatesTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_UpdatesTab.Location = new System.Drawing.Point(0, 316);
+            this.Menu_UpdatesTab.Location = new System.Drawing.Point(0, 365);
             this.Menu_UpdatesTab.Name = "Menu_UpdatesTab";
             this.Menu_UpdatesTab.Size = new System.Drawing.Size(159, 49);
             this.Menu_UpdatesTab.TabIndex = 13;
@@ -3886,19 +3883,6 @@
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(31, 49);
             this.panel38.TabIndex = 2;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_language_outline;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Menu_UpdatesTabIndicator_Click);
             // 
             // panel39
             // 
@@ -3928,7 +3912,7 @@
             this.panel33.Controls.Add(this.panel36);
             this.panel33.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel33.Location = new System.Drawing.Point(0, 296);
+            this.panel33.Location = new System.Drawing.Point(0, 345);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(159, 20);
             this.panel33.TabIndex = 12;
@@ -3969,7 +3953,7 @@
             this.Menu_SettingsTab.Controls.Add(this.Menu_SettingsTabIndicator);
             this.Menu_SettingsTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_SettingsTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_SettingsTab.Location = new System.Drawing.Point(0, 247);
+            this.Menu_SettingsTab.Location = new System.Drawing.Point(0, 296);
             this.Menu_SettingsTab.Name = "Menu_SettingsTab";
             this.Menu_SettingsTab.Size = new System.Drawing.Size(159, 49);
             this.Menu_SettingsTab.TabIndex = 11;
@@ -3997,19 +3981,6 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(31, 49);
             this.panel19.TabIndex = 2;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_settings_outline;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.Menu_SettingsTabIndicator_Click);
             // 
             // panel20
             // 
@@ -4040,7 +4011,7 @@
             this.Menu_ArgumentsTab.Controls.Add(this.Menu_ArgumentsTabIndicator);
             this.Menu_ArgumentsTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_ArgumentsTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_ArgumentsTab.Location = new System.Drawing.Point(0, 198);
+            this.Menu_ArgumentsTab.Location = new System.Drawing.Point(0, 247);
             this.Menu_ArgumentsTab.Name = "Menu_ArgumentsTab";
             this.Menu_ArgumentsTab.Size = new System.Drawing.Size(159, 49);
             this.Menu_ArgumentsTab.TabIndex = 10;
@@ -4068,19 +4039,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(31, 49);
             this.panel15.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_edit_outline;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.Menu_ArgumentsTabIndicator_Click);
             // 
             // panel16
             // 
@@ -4111,7 +4069,7 @@
             this.Menu_M3U8Tab.Controls.Add(this.Menu_M3U8TabIndicator);
             this.Menu_M3U8Tab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_M3U8Tab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_M3U8Tab.Location = new System.Drawing.Point(0, 149);
+            this.Menu_M3U8Tab.Location = new System.Drawing.Point(0, 198);
             this.Menu_M3U8Tab.Name = "Menu_M3U8Tab";
             this.Menu_M3U8Tab.Size = new System.Drawing.Size(159, 49);
             this.Menu_M3U8Tab.TabIndex = 9;
@@ -4139,19 +4097,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(31, 49);
             this.panel11.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_download_outline;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.Menu_M3U8TabIndicator_Click);
             // 
             // panel12
             // 
@@ -4182,7 +4127,7 @@
             this.Menu_MergeTab.Controls.Add(this.Menu_MergeTabIndicator);
             this.Menu_MergeTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_MergeTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_MergeTab.Location = new System.Drawing.Point(0, 126);
+            this.Menu_MergeTab.Location = new System.Drawing.Point(0, 175);
             this.Menu_MergeTab.Name = "Menu_MergeTab";
             this.Menu_MergeTab.Size = new System.Drawing.Size(159, 23);
             this.Menu_MergeTab.TabIndex = 4;
@@ -4210,19 +4155,6 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(31, 23);
             this.panel29.TabIndex = 2;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_menu_point_h_outline;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Menu_MergeTabIndicator_Click);
             // 
             // panel30
             // 
@@ -4253,7 +4185,7 @@
             this.Menu_CutTab.Controls.Add(this.Menu_CutTabIndicator);
             this.Menu_CutTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_CutTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_CutTab.Location = new System.Drawing.Point(0, 103);
+            this.Menu_CutTab.Location = new System.Drawing.Point(0, 152);
             this.Menu_CutTab.Name = "Menu_CutTab";
             this.Menu_CutTab.Size = new System.Drawing.Size(159, 23);
             this.Menu_CutTab.TabIndex = 3;
@@ -4281,19 +4213,6 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(31, 23);
             this.panel25.TabIndex = 2;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_divide_outline;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.Menu_CutTabIndicator_Click);
             // 
             // panel26
             // 
@@ -4324,7 +4243,7 @@
             this.Menu_CutMergeTab.Controls.Add(this.Menu_CutMergeTabIndicator);
             this.Menu_CutMergeTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu_CutMergeTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_CutMergeTab.Location = new System.Drawing.Point(0, 54);
+            this.Menu_CutMergeTab.Location = new System.Drawing.Point(0, 103);
             this.Menu_CutMergeTab.Name = "Menu_CutMergeTab";
             this.Menu_CutMergeTab.Size = new System.Drawing.Size(159, 49);
             this.Menu_CutMergeTab.TabIndex = 2;
@@ -4352,19 +4271,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(31, 49);
             this.panel7.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_apps_outline;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
             // 
             // panel8
             // 
@@ -4424,19 +4330,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(31, 49);
             this.panel5.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_reload_outline;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.Menu_EncoderTabIndicator_Click);
             // 
             // panel4
             // 
@@ -4527,17 +4420,6 @@
             this.label11.Text = "V2 Edition";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
-            this.pictureBox8.Location = new System.Drawing.Point(86, 24);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 25);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
@@ -4620,19 +4502,7 @@
             this.label1.TabIndex = 89;
             this.label1.Text = "Alpha Build";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ToTrayButton
-            // 
-            this.ToTrayButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToTrayButton.Image = global::FFmpeg_Utilizer.Properties.Resources.TrayIcon;
-            this.ToTrayButton.Location = new System.Drawing.Point(1001, 0);
-            this.ToTrayButton.Name = "ToTrayButton";
-            this.ToTrayButton.Size = new System.Drawing.Size(29, 27);
-            this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ToTrayButton.TabIndex = 8;
-            this.ToTrayButton.TabStop = false;
-            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
-            this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
             // 
             // ApplicationMinimizeButton
             // 
@@ -4663,18 +4533,6 @@
             this.ApplicationCloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ApplicationCloseButton.Click += new System.EventHandler(this.SoftwareCloseButton_Click);
             // 
-            // TopLogo
-            // 
-            this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
-            this.TopLogo.Location = new System.Drawing.Point(0, 0);
-            this.TopLogo.Name = "TopLogo";
-            this.TopLogo.Size = new System.Drawing.Size(200, 27);
-            this.TopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.TopLogo.TabIndex = 0;
-            this.TopLogo.TabStop = false;
-            this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
-            // 
             // toolTip
             // 
             this.toolTip.AutomaticDelay = 250;
@@ -4688,31 +4546,251 @@
             this.TraySystem.Text = "FFmpeg Utilizer";
             this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
             // 
-            // M3U8_MultiDownload_CheckBox
+            // Menu_NormalizeAudioTab
             // 
-            this.M3U8_MultiDownload_CheckBox.AutoSize = true;
-            this.M3U8_MultiDownload_CheckBox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.M3U8_MultiDownload_CheckBox.Location = new System.Drawing.Point(382, 57);
-            this.M3U8_MultiDownload_CheckBox.Name = "M3U8_MultiDownload_CheckBox";
-            this.M3U8_MultiDownload_CheckBox.Size = new System.Drawing.Size(143, 16);
-            this.M3U8_MultiDownload_CheckBox.TabIndex = 81;
-            this.M3U8_MultiDownload_CheckBox.Text = "Download Multiple At once";
-            this.toolTip.SetToolTip(this.M3U8_MultiDownload_CheckBox, "Hide ffmpeg encoder window from showing");
-            this.M3U8_MultiDownload_CheckBox.UseVisualStyleBackColor = true;
-            this.M3U8_MultiDownload_CheckBox.CheckedChanged += new System.EventHandler(this.M3U8_MultiDownload_CheckBox_CheckedChanged);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.label8);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.panel100);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.panel101);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.panel102);
+            this.Menu_NormalizeAudioTab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu_NormalizeAudioTab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Menu_NormalizeAudioTab.Location = new System.Drawing.Point(0, 54);
+            this.Menu_NormalizeAudioTab.Name = "Menu_NormalizeAudioTab";
+            this.Menu_NormalizeAudioTab.Size = new System.Drawing.Size(159, 49);
+            this.Menu_NormalizeAudioTab.TabIndex = 17;
             // 
-            // M3U8_NumDownloadsAsync
+            // label8
             // 
-            this.M3U8_NumDownloadsAsync.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.M3U8_NumDownloadsAsync.Location = new System.Drawing.Point(528, 53);
-            this.M3U8_NumDownloadsAsync.Name = "M3U8_NumDownloadsAsync";
-            this.M3U8_NumDownloadsAsync.Size = new System.Drawing.Size(60, 20);
-            this.M3U8_NumDownloadsAsync.TabIndex = 82;
-            this.M3U8_NumDownloadsAsync.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
+            this.label8.Location = new System.Drawing.Point(51, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(97, 49);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Normalize Audio";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel100
+            // 
+            this.panel100.Controls.Add(this.pictureBox12);
+            this.panel100.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel100.Location = new System.Drawing.Point(20, 0);
+            this.panel100.Name = "panel100";
+            this.panel100.Size = new System.Drawing.Size(31, 49);
+            this.panel100.TabIndex = 2;
+            // 
+            // panel101
+            // 
+            this.panel101.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel101.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel101.Location = new System.Drawing.Point(5, 0);
+            this.panel101.Name = "panel101";
+            this.panel101.Size = new System.Drawing.Size(15, 49);
+            this.panel101.TabIndex = 1;
+            // 
+            // panel102
+            // 
+            this.panel102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.panel102.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel102.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel102.Location = new System.Drawing.Point(0, 0);
+            this.panel102.Name = "panel102";
+            this.panel102.Size = new System.Drawing.Size(5, 49);
+            this.panel102.TabIndex = 0;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
+        "plugin to send data to the software. This \'data\' refers to the content you choos" +
+        "e to download or stream using ffmpeg.");
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox12.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_filter;
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
+            // 
+            // InfoIcon
+            // 
+            this.InfoIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoIcon.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.InfoIcon.Location = new System.Drawing.Point(2, 2);
+            this.InfoIcon.Name = "InfoIcon";
+            this.InfoIcon.Size = new System.Drawing.Size(20, 20);
+            this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InfoIcon.TabIndex = 1;
+            this.InfoIcon.TabStop = false;
+            this.toolTip.SetToolTip(this.InfoIcon, "Click to view more information!");
+            this.InfoIcon.Click += new System.EventHandler(this.InfoIcon_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_language_outline;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.Menu_UpdatesTabIndicator_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_settings_outline;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.Menu_SettingsTabIndicator_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_edit_outline;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.Menu_ArgumentsTabIndicator_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_download_outline;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.Menu_M3U8TabIndicator_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_menu_point_h_outline;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.Menu_MergeTabIndicator_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_divide_outline;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.Menu_CutTabIndicator_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_apps_outline;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_reload_outline;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.Menu_EncoderTabIndicator_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
+            this.pictureBox8.Location = new System.Drawing.Point(86, 24);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // ToTrayButton
+            // 
+            this.ToTrayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToTrayButton.Image = global::FFmpeg_Utilizer.Properties.Resources.TrayIcon;
+            this.ToTrayButton.Location = new System.Drawing.Point(1001, 0);
+            this.ToTrayButton.Name = "ToTrayButton";
+            this.ToTrayButton.Size = new System.Drawing.Size(29, 27);
+            this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToTrayButton.TabIndex = 8;
+            this.ToTrayButton.TabStop = false;
+            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
+            this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
+            // 
+            // TopLogo
+            // 
+            this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TopLogo.Image = global::FFmpeg_Utilizer.Properties.Resources.ffmpegUtilizerLogo;
+            this.TopLogo.Location = new System.Drawing.Point(0, 0);
+            this.TopLogo.Name = "TopLogo";
+            this.TopLogo.Size = new System.Drawing.Size(200, 27);
+            this.TopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.TopLogo.TabIndex = 0;
+            this.TopLogo.TabStop = false;
+            this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
             // 
             // Main
             // 
@@ -4732,24 +4810,11 @@
             this.panel95.ResumeLayout(false);
             this.M3U8MainPanel.ResumeLayout(false);
             this.M3U8MainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).EndInit();
             this.panel49.ResumeLayout(false);
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
             this.panel51.ResumeLayout(false);
-            this.MergeMainPanel.ResumeLayout(false);
-            this.panel54.ResumeLayout(false);
-            this.panel54.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel62.ResumeLayout(false);
-            this.panel63.ResumeLayout(false);
-            this.panel64.ResumeLayout(false);
-            this.panel70.ResumeLayout(false);
-            this.panel55.ResumeLayout(false);
-            this.panel58.ResumeLayout(false);
-            this.panel58.PerformLayout();
-            this.panel59.ResumeLayout(false);
-            this.panel57.ResumeLayout(false);
             this.CutMainPanel.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
@@ -4768,11 +4833,24 @@
             this.panel66.ResumeLayout(false);
             this.panel66.PerformLayout();
             this.panel67.ResumeLayout(false);
+            this.MergeMainPanel.ResumeLayout(false);
+            this.panel54.ResumeLayout(false);
+            this.panel54.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel62.ResumeLayout(false);
+            this.panel63.ResumeLayout(false);
+            this.panel64.ResumeLayout(false);
+            this.panel70.ResumeLayout(false);
+            this.panel55.ResumeLayout(false);
+            this.panel58.ResumeLayout(false);
+            this.panel58.PerformLayout();
+            this.panel59.ResumeLayout(false);
+            this.panel57.ResumeLayout(false);
             this.UpdateMainPanel.ResumeLayout(false);
             this.panel94.ResumeLayout(false);
             this.panel96.ResumeLayout(false);
             this.panel97.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel40.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel73.ResumeLayout(false);
@@ -4800,7 +4878,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).EndInit();
             this.panel83.ResumeLayout(false);
             this.panel84.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.panel78.ResumeLayout(false);
@@ -4822,40 +4899,44 @@
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).EndInit();
             this.Menu_UpdatesTab.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel33.ResumeLayout(false);
             this.Menu_SettingsTab.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Menu_ArgumentsTab.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Menu_M3U8Tab.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Menu_MergeTab.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.Menu_CutTab.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.Menu_CutMergeTab.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Menu_EncoderTab.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.FooterPanel.ResumeLayout(false);
             this.BottomRightPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel22.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
+            this.Menu_NormalizeAudioTab.ResumeLayout(false);
+            this.panel100.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4877,12 +4958,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label Menu_EncoderTabLabel;
-        private System.Windows.Forms.Panel Menu_CutMergeTab;
-        private System.Windows.Forms.Label Menu_CutMergeTabLabel;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel Menu_CutMergeTabIndicator;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel Menu_SettingsTab;
@@ -5217,6 +5292,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox M3U8_MultiDownload_CheckBox;
         private System.Windows.Forms.NumericUpDown M3U8_NumDownloadsAsync;
+        private System.Windows.Forms.Panel Menu_CutMergeTab;
+        private System.Windows.Forms.Label Menu_CutMergeTabLabel;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel Menu_CutMergeTabIndicator;
+        private System.Windows.Forms.Panel Menu_NormalizeAudioTab;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel100;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Panel panel101;
+        private System.Windows.Forms.Panel panel102;
     }
 }
 
