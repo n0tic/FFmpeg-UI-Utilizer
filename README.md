@@ -81,7 +81,7 @@ The idea is intended to work hand in hand with the browser extension. (Chromium 
 ```
 ```
 For now, this inputs work:
-http://127.0.0.1:{PORT}?addName=BigBuckBunny=[http://google.se/hls.m3u8](https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8)
+http://127.0.0.1:{PORT}?addName=BigBuckBunny&addURL=https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 This will add the required information automatically to our software.
 
 For testing purposes, this also works:
