@@ -36,6 +36,7 @@ namespace FFmpeg_Utilizer
         public MergeProcessor mergeProcessor;
         public UriRequestsHandler uriRequestHandler;
         public ArgumentsProcesser argumentsProcesser;
+        public NormalizeAudioProcesser normalizeAudioProcesser;
 
         //FFplay process
         private Process PlayProcess;
@@ -88,6 +89,7 @@ namespace FFmpeg_Utilizer
             cutProcessor = new CutProcessor(this);
             mergeProcessor = new MergeProcessor(this);
             argumentsProcesser = new ArgumentsProcesser(this);
+            normalizeAudioProcesser = new NormalizeAudioProcesser(this);
 
             // If we have Internet, initialize updater.
             if (hasInternet)
@@ -297,6 +299,24 @@ namespace FFmpeg_Utilizer
 
             #endregion Encoder
 
+            #region Normalize Audio
+
+            //Get Settings Data
+            if (settings.loaded)
+            {
+                if (Directory.Exists(settings.outputLocation))
+                    NormalizeAudio_OutputDirectory.Text = settings.outputLocation;
+                else if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    NormalizeAudio_OutputDirectory.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+            else //Default settings
+            {
+                if (Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output)))
+                    NormalizeAudio_OutputDirectory.Text = Core.GetSubfolder(Core.SubFolders.Output);
+            }
+
+            #endregion Normalize Audio
+
             #region M3U8
 
             if (settings.loaded)
@@ -400,6 +420,7 @@ namespace FFmpeg_Utilizer
             Core.AddTab(Menu_ArgumentsTab, Menu_ArgumentsTabIndicator, Menu_ArgumentsTabLabel, ArgumentMainPanel);
             Core.AddTab(Menu_SettingsTab, Menu_SettingsTabIndicator, Menu_SettingsTabLabel, SettingsMainPanel);
             Core.AddTab(Menu_UpdatesTab, Menu_UpdatesTabIndicator, Menu_UpdatesTabLabel, UpdateMainPanel, hasInternet);
+            Core.AddTab(Menu_NormalizeAudioTab, Menu_NormalizeAudioIndicator, Menu_NormalizeAudioLabel, NormalizeAudioMainPanel);
         }
 
         private void Menu_EncoderTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Encoder);
@@ -1564,6 +1585,119 @@ namespace FFmpeg_Utilizer
             {
                 M3U8_NumDownloadsAsync.Visible = false;
             }
+        }
+
+        private void Menu_NormalizeAudioIndicator_Click(object sender, EventArgs e)
+        {
+            Core.ChangeTab(Core.Tabs.NormalizeAudio);
+        }
+
+        private void NormalizeAudio_ListView_DragDrop(object sender, DragEventArgs e)
+        {
+            // TODO: Fix for Normalize Audio
+
+            if (normalizeAudioProcesser.normalizeAudioInProcess)
+            {
+                notice.SetNotice("The Normalizer is currently processing. Adding or removing elements from the list is not allowed while the process is active.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            List<string> allowedExtensions = Libs.GetAllowedExtension();
+
+            //Clear listview.
+            NormalizeAudio_ListView.Items.Clear();
+
+            //Get all files dropped by user over the control.
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            //Detect if there was a directory. Use gather the files inside..
+            if (Directory.Exists(files[0])) files = Directory.GetFiles(files[0]);
+
+            //Add data to the listview.
+            foreach (string file in files)
+            {
+                FileInfo f = new FileInfo(file);
+                foreach (string ext in allowedExtensions)
+                {
+                    if ("." + ext == f.Extension)
+                    {
+                        ListViewItem item = new ListViewItem(new[] { file, "• Waiting" });
+                        NormalizeAudio_ListView.Items.Add(item);
+                        break;
+                    }
+                }
+            }
+
+            if (files.Length > NormalizeAudio_ListView.Items.Count)
+            {
+                notice.SetNotice("Some files have been filtered out because their extensions are not allowed.", NoticeModule.TypeNotice.Warning);
+            }
+        }
+
+        private void NormalizeAudio_ListView_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+
+        private void NormalizeAudio_ListView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                if (NormalizeAudio_ListView.SelectedItems.Count > 0)
+                {
+                    foreach (ListViewItem item in NormalizeAudio_ListView.SelectedItems)
+                    {
+                        NormalizeAudio_ListView.Items.Remove(item);
+                    }
+                }
+            }
+        }
+
+        private void NormalizeAudio_SetOutputButton_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog fb = new FolderBrowserDialog())
+            {
+                DialogResult result = fb.ShowDialog();
+                if (result == DialogResult.OK) NormalizeAudio_OutputDirectory.Text = fb.SelectedPath;
+            }
+        }
+
+        private void NormalizeAudio_ResetDefaultButton_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists(Core.GetSubfolder(Core.SubFolders.Output))) Directory.CreateDirectory(Core.GetSubfolder(Core.SubFolders.Output));
+            NormalizeAudio_OutputDirectory.Text = Core.GetSubfolder(Core.SubFolders.Output);
+        }
+
+        private void NormalizeAudio_OpenOutputDirectory_Click(object sender, EventArgs e) => Core.OpenDirectory(Encoder_OutputFolderTextBox.Text);
+
+        private void NormalizeAudio_StartNormalizingAudioButton_Click(object sender, EventArgs e)
+        {
+            //Stop if there are no files or application to work with.
+            if (!File.Exists(settings.ffmpegPath))
+            {
+                notice.SetNotice("You need to specify the location of \"ffmpeg.exe\" to enable this function.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+            if (NormalizeAudio_ListView.Items.Count < 1 || NormalizeAudio_ListView.Items?[0].Text == "Drag and drop a folder or multiple files here...")
+            {
+                notice.SetNotice("The list of files to normalize is empty. Drag a folder or files to the normalize table to add them.", NoticeModule.TypeNotice.Error);
+                return;
+            }
+
+            //Create a queue to process.
+            NormalizeAudioData processQueueData = new NormalizeAudioData(NormalizeAudio_OutputDirectory.Text, NormalizeAudio_HideConsoleCheckbox.Checked);
+
+            //For every file...
+            for (int i = 0; i < NormalizeAudio_ListView.Items.Count; i++)
+            {
+                processQueueData.Add(NormalizeAudio_ListView.Items[i].Text);
+            }
+
+            processQueueData.outputFolder = NormalizeAudio_OutputDirectory.Text;
+            processQueueData.hideConsole = NormalizeAudio_HideConsoleCheckbox.Checked;
+
+            //Start the encoding process.
+            normalizeAudioProcesser.ProcessFileQueue(processQueueData);
         }
     }
 }

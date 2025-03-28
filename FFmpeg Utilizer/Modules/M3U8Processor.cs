@@ -62,7 +62,7 @@ namespace FFmpeg_Utilizer.Modules
             }
             finally
             {
-                await main.InvokeAsync(async () =>
+                await main.InvokeAsync(() =>
                 {
                     SystemSounds.Exclamation.Play();
                     main.M3U8_StartButton.Text = "Start M3U8";

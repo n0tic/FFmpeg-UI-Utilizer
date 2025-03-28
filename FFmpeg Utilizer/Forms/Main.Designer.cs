@@ -29,15 +29,60 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Drag and drop a folder or multiple files here...",
+            ""}, -1);
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag & drop here..."}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             this.FullPanel = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
+            this.EncoderMainPanel = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
+            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
+            this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
+            this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
+            this.Encoder_StartEncodingProcessButton = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.Encoder_FilesList = new System.Windows.Forms.ListView();
+            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Encoder_PlayButton = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Encoder_AudioCodecBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_ResolutionBox = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Encoder_TunerBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_VideoCodecBox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
+            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.M3U8MainPanel = new System.Windows.Forms.Panel();
             this.M3U8_NumDownloadsAsync = new System.Windows.Forms.NumericUpDown();
             this.M3U8_MultiDownload_CheckBox = new System.Windows.Forms.CheckBox();
@@ -166,6 +211,7 @@
             this.panel96 = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.panel97 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel40 = new System.Windows.Forms.Panel();
             this.SpeedLabel = new System.Windows.Forms.Label();
             this.Update_ProgressBar = new System.Windows.Forms.ProgressBar();
@@ -221,6 +267,7 @@
             this.panel83 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel84 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel44 = new System.Windows.Forms.Panel();
             this.Settings_OverwriteDropdown = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -251,48 +298,6 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.EncoderMainPanel = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.Encoder_DefaultOutputButton = new System.Windows.Forms.Button();
-            this.Encoder_OpenDirectoryButton = new System.Windows.Forms.Button();
-            this.Encoder_OutputFolderButton = new System.Windows.Forms.Button();
-            this.Encoder_ProgressBar = new System.Windows.Forms.ProgressBar();
-            this.Encoder_OutputFolderTextBox = new System.Windows.Forms.TextBox();
-            this.Encoder_StartEncodingProcessButton = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.Encoder_FilesList = new System.Windows.Forms.ListView();
-            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Encoder_PlayButton = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Encoder_ExtensionBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Encoder_OverwriteBox = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Encoder_FPSBox = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Encoder_AudioCodecBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_ResolutionBox = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Encoder_TunerBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_VideoCodecBox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Encoder_PresetsBox = new System.Windows.Forms.ComboBox();
-            this.Encoder_HideConsoleToggle = new System.Windows.Forms.CheckBox();
             this.ArgumentMainPanel = new System.Windows.Forms.Panel();
             this.Argument_ShowRecordStreamTimerButton = new System.Windows.Forms.Button();
             this.Argument_ClearButton = new System.Windows.Forms.Button();
@@ -311,14 +316,10 @@
             this.NoticeTextLabel = new System.Windows.Forms.Label();
             this.PixelTopNotice = new System.Windows.Forms.Panel();
             this.MenuPanel = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.GitLabel = new System.Windows.Forms.Label();
-            this.AuthorLabel = new System.Windows.Forms.Label();
-            this.SoftwareLabel = new System.Windows.Forms.Label();
-            this.InfoText = new System.Windows.Forms.Label();
             this.Menu_UpdatesTab = new System.Windows.Forms.Panel();
             this.Menu_UpdatesTabLabel = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel39 = new System.Windows.Forms.Panel();
             this.Menu_UpdatesTabIndicator = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
@@ -328,44 +329,64 @@
             this.Menu_SettingsTab = new System.Windows.Forms.Panel();
             this.Menu_SettingsTabLabel = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.Menu_SettingsTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTab = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTabLabel = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.Menu_ArgumentsTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_M3U8Tab = new System.Windows.Forms.Panel();
             this.Menu_M3U8TabLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.Menu_M3U8TabIndicator = new System.Windows.Forms.Panel();
             this.Menu_MergeTab = new System.Windows.Forms.Panel();
             this.Menu_MergeTabLabel = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.Menu_MergeTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_CutTab = new System.Windows.Forms.Panel();
             this.Menu_CutTabLabel = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.Menu_CutTabIndicator = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTab = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTabLabel = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.Menu_CutMergeTabIndicator = new System.Windows.Forms.Panel();
+            this.Menu_NormalizeAudioTab = new System.Windows.Forms.Panel();
+            this.Menu_NormalizeAudioLabel = new System.Windows.Forms.Label();
+            this.panel100 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel101 = new System.Windows.Forms.Panel();
+            this.Menu_NormalizeAudioIndicator = new System.Windows.Forms.Panel();
             this.Menu_EncoderTab = new System.Windows.Forms.Panel();
             this.Menu_EncoderTabLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Menu_EncoderTabIndicator = new System.Windows.Forms.Panel();
             this.MenuSpacerTop = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.GitLabel = new System.Windows.Forms.Label();
+            this.AuthorLabel = new System.Windows.Forms.Label();
+            this.SoftwareLabel = new System.Windows.Forms.Label();
+            this.InfoText = new System.Windows.Forms.Label();
+            this.InfoIcon = new System.Windows.Forms.PictureBox();
             this.FooterPanel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.Button1 = new System.Windows.Forms.Button();
             this.BottomRightPanel = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Button2 = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
@@ -373,32 +394,45 @@
             this.Button3 = new System.Windows.Forms.Button();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.ToTrayButton = new System.Windows.Forms.PictureBox();
             this.ApplicationMinimizeButton = new System.Windows.Forms.Label();
             this.ApplicationCloseButton = new System.Windows.Forms.Label();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
-            this.Menu_NormalizeAudioTab = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel100 = new System.Windows.Forms.Panel();
-            this.panel101 = new System.Windows.Forms.Panel();
-            this.panel102 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.InfoIcon = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.ToTrayButton = new System.Windows.Forms.PictureBox();
             this.TopLogo = new System.Windows.Forms.PictureBox();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.NormalizeAudio_ResetDefaultButton = new System.Windows.Forms.Button();
+            this.NormalizeAudio_OpenOutputDirectory = new System.Windows.Forms.Button();
+            this.NormalizeAudio_SetOutputButton = new System.Windows.Forms.Button();
+            this.NormalizeAudio_Progressbar = new System.Windows.Forms.ProgressBar();
+            this.NormalizeAudio_OutputDirectory = new System.Windows.Forms.TextBox();
+            this.NormalizeAudio_StartNormalizingAudioButton = new System.Windows.Forms.Button();
+            this.TraySystem = new System.Windows.Forms.NotifyIcon(this.components);
+            this.NormalizeAudioMainPanel = new System.Windows.Forms.Panel();
+            this.panel102 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel103 = new System.Windows.Forms.Panel();
+            this.panel104 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel105 = new System.Windows.Forms.Panel();
+            this.panel106 = new System.Windows.Forms.Panel();
+            this.NormalizeAudio_ListView = new System.Windows.Forms.ListView();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.NormalizeAudio_HideConsoleCheckbox = new System.Windows.Forms.CheckBox();
             this.FullPanel.SuspendLayout();
             this.panel95.SuspendLayout();
+            this.EncoderMainPanel.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel47.SuspendLayout();
             this.M3U8MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).BeginInit();
             this.panel49.SuspendLayout();
@@ -435,6 +469,7 @@
             this.panel94.SuspendLayout();
             this.panel96.SuspendLayout();
             this.panel97.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel40.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel73.SuspendLayout();
@@ -461,60 +496,57 @@
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).BeginInit();
             this.panel83.SuspendLayout();
             this.panel84.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel44.SuspendLayout();
             this.panel78.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel79.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.EncoderMainPanel.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.panel47.SuspendLayout();
             this.ArgumentMainPanel.SuspendLayout();
             this.panel41.SuspendLayout();
             this.NoticePanel.SuspendLayout();
             this.MenuPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.Menu_UpdatesTab.SuspendLayout();
             this.panel38.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel33.SuspendLayout();
             this.Menu_SettingsTab.SuspendLayout();
             this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Menu_ArgumentsTab.SuspendLayout();
             this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Menu_M3U8Tab.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Menu_MergeTab.SuspendLayout();
             this.panel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.Menu_CutTab.SuspendLayout();
             this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.Menu_CutMergeTab.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.Menu_EncoderTab.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.FooterPanel.SuspendLayout();
-            this.BottomRightPanel.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Menu_NormalizeAudioTab.SuspendLayout();
             this.panel100.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Menu_EncoderTab.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).BeginInit();
+            this.FooterPanel.SuspendLayout();
+            this.BottomRightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel22.SuspendLayout();
+            this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).BeginInit();
+            this.NormalizeAudioMainPanel.SuspendLayout();
+            this.panel102.SuspendLayout();
+            this.panel103.SuspendLayout();
+            this.panel104.SuspendLayout();
             this.SuspendLayout();
             // 
             // FullPanel
@@ -532,18 +564,510 @@
             // 
             // panel95
             // 
-            this.panel95.Controls.Add(this.M3U8MainPanel);
-            this.panel95.Controls.Add(this.CutMainPanel);
+            this.panel95.Controls.Add(this.NormalizeAudioMainPanel);
+            this.panel95.Controls.Add(this.EncoderMainPanel);
             this.panel95.Controls.Add(this.MergeMainPanel);
             this.panel95.Controls.Add(this.UpdateMainPanel);
             this.panel95.Controls.Add(this.SettingsMainPanel);
-            this.panel95.Controls.Add(this.EncoderMainPanel);
+            this.panel95.Controls.Add(this.M3U8MainPanel);
+            this.panel95.Controls.Add(this.CutMainPanel);
             this.panel95.Controls.Add(this.ArgumentMainPanel);
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(159, 80);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(919, 495);
             this.panel95.TabIndex = 12;
+            // 
+            // EncoderMainPanel
+            // 
+            this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.EncoderMainPanel.Controls.Add(this.panel13);
+            this.EncoderMainPanel.Controls.Add(this.panel6);
+            this.EncoderMainPanel.Controls.Add(this.panel23);
+            this.EncoderMainPanel.Controls.Add(this.panel37);
+            this.EncoderMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EncoderMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.EncoderMainPanel.Name = "EncoderMainPanel";
+            this.EncoderMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.EncoderMainPanel.TabIndex = 5;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label44);
+            this.panel13.Controls.Add(this.label3);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(919, 44);
+            this.panel13.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label3.Location = new System.Drawing.Point(22, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(897, 44);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "ENCODER";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
+            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
+            this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
+            this.panel6.Controls.Add(this.Encoder_ProgressBar);
+            this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
+            this.panel6.Controls.Add(this.Encoder_StartEncodingProcessButton);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Location = new System.Drawing.Point(27, 377);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(882, 106);
+            this.panel6.TabIndex = 2;
+            // 
+            // Encoder_DefaultOutputButton
+            // 
+            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(737, 44);
+            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
+            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_DefaultOutputButton.TabIndex = 60;
+            this.Encoder_DefaultOutputButton.Text = "✓";
+            this.toolTip.SetToolTip(this.Encoder_DefaultOutputButton, "Reset to default output folder");
+            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
+            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
+            // 
+            // Encoder_OpenDirectoryButton
+            // 
+            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(713, 44);
+            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
+            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
+            this.Encoder_OpenDirectoryButton.TabIndex = 61;
+            this.Encoder_OpenDirectoryButton.Text = "▶";
+            this.toolTip.SetToolTip(this.Encoder_OpenDirectoryButton, "Open output folder");
+            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
+            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
+            // 
+            // Encoder_OutputFolderButton
+            // 
+            this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(762, 44);
+            this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
+            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(117, 23);
+            this.Encoder_OutputFolderButton.TabIndex = 25;
+            this.Encoder_OutputFolderButton.Text = "Set Output Folder";
+            this.toolTip.SetToolTip(this.Encoder_OutputFolderButton, "Change output folder");
+            this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
+            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
+            // 
+            // Encoder_ProgressBar
+            // 
+            this.Encoder_ProgressBar.Location = new System.Drawing.Point(6, 75);
+            this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
+            this.Encoder_ProgressBar.Size = new System.Drawing.Size(762, 20);
+            this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.Encoder_ProgressBar.TabIndex = 24;
+            this.toolTip.SetToolTip(this.Encoder_ProgressBar, "Total progress indicator");
+            // 
+            // Encoder_OutputFolderTextBox
+            // 
+            this.Encoder_OutputFolderTextBox.Enabled = false;
+            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(6, 45);
+            this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
+            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(701, 23);
+            this.Encoder_OutputFolderTextBox.TabIndex = 23;
+            this.toolTip.SetToolTip(this.Encoder_OutputFolderTextBox, "Output folder path");
+            // 
+            // Encoder_StartEncodingProcessButton
+            // 
+            this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(774, 73);
+            this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
+            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(105, 23);
+            this.Encoder_StartEncodingProcessButton.TabIndex = 22;
+            this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
+            this.toolTip.SetToolTip(this.Encoder_StartEncodingProcessButton, "Start processing the encoding list");
+            this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
+            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel9.Controls.Add(this.label2);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(882, 38);
+            this.panel9.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(55, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(447, 38);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Output";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(55, 38);
+            this.panel10.TabIndex = 0;
+            // 
+            // panel23
+            // 
+            this.panel23.Location = new System.Drawing.Point(719, 495);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(200, 73);
+            this.panel23.TabIndex = 1;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.Controls.Add(this.Encoder_FilesList);
+            this.panel37.Controls.Add(this.Encoder_PlayButton);
+            this.panel37.Controls.Add(this.label14);
+            this.panel37.Controls.Add(this.panel2);
+            this.panel37.Controls.Add(this.panel1);
+            this.panel37.Controls.Add(this.label7);
+            this.panel37.Controls.Add(this.Encoder_ExtensionBox);
+            this.panel37.Controls.Add(this.label6);
+            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
+            this.panel37.Controls.Add(this.label5);
+            this.panel37.Controls.Add(this.Encoder_FPSBox);
+            this.panel37.Controls.Add(this.label32);
+            this.panel37.Controls.Add(this.panel47);
+            this.panel37.Controls.Add(this.label4);
+            this.panel37.Controls.Add(this.Encoder_AudioCodecBox);
+            this.panel37.Controls.Add(this.Encoder_ResolutionBox);
+            this.panel37.Controls.Add(this.label13);
+            this.panel37.Controls.Add(this.Encoder_TunerBox);
+            this.panel37.Controls.Add(this.Encoder_VideoCodecBox);
+            this.panel37.Controls.Add(this.label12);
+            this.panel37.Controls.Add(this.label9);
+            this.panel37.Controls.Add(this.Encoder_PresetsBox);
+            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
+            this.panel37.Location = new System.Drawing.Point(27, 50);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(882, 314);
+            this.panel37.TabIndex = 54;
+            // 
+            // Encoder_FilesList
+            // 
+            this.Encoder_FilesList.AllowDrop = true;
+            this.Encoder_FilesList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnHeader1,
+            this.ColumnHeader2});
+            this.Encoder_FilesList.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.Encoder_FilesList.FullRowSelect = true;
+            this.Encoder_FilesList.GridLines = true;
+            this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Encoder_FilesList.HideSelection = false;
+            this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem10});
+            this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
+            this.Encoder_FilesList.MultiSelect = false;
+            this.Encoder_FilesList.Name = "Encoder_FilesList";
+            this.Encoder_FilesList.Size = new System.Drawing.Size(870, 213);
+            this.Encoder_FilesList.TabIndex = 43;
+            this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
+            this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
+            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
+            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
+            this.Encoder_FilesList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Encoder_FilesList_KeyDown);
+            // 
+            // ColumnHeader1
+            // 
+            this.ColumnHeader1.Text = "File";
+            this.ColumnHeader1.Width = 765;
+            // 
+            // ColumnHeader2
+            // 
+            this.ColumnHeader2.Text = "Status";
+            this.ColumnHeader2.Width = 80;
+            // 
+            // Encoder_PlayButton
+            // 
+            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.Encoder_PlayButton.Location = new System.Drawing.Point(777, 66);
+            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
+            this.Encoder_PlayButton.Size = new System.Drawing.Size(99, 26);
+            this.Encoder_PlayButton.TabIndex = 53;
+            this.Encoder_PlayButton.Text = "Play Selected ▶";
+            this.toolTip.SetToolTip(this.Encoder_PlayButton, "Preview selected file. ESC to exit/close.");
+            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
+            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(710, 39);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 16);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "Overrides";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip.SetToolTip(this.label14, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
+        "ave default if you are unsure and let ffmpeg decide.");
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.panel2.Location = new System.Drawing.Point(438, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 20);
+            this.panel2.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.panel1.Location = new System.Drawing.Point(438, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(270, 1);
+            this.panel1.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(361, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 16);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Extension";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_ExtensionBox
+            // 
+            this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_ExtensionBox.FormattingEnabled = true;
+            this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
+            this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
+            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_ExtensionBox.TabIndex = 38;
+            this.toolTip.SetToolTip(this.Encoder_ExtensionBox, "Set a prefered output extension");
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(0, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 15);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Auto Overwrite";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_OverwriteBox
+            // 
+            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_OverwriteBox.FormattingEnabled = true;
+            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
+            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
+            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_OverwriteBox.TabIndex = 48;
+            this.toolTip.SetToolTip(this.Encoder_OverwriteBox, "Set auto overwrite setting");
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(622, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 16);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "FPS/Frames";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_FPSBox
+            // 
+            this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_FPSBox.FormattingEnabled = true;
+            this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
+            this.Encoder_FPSBox.Name = "Encoder_FPSBox";
+            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_FPSBox.TabIndex = 46;
+            this.toolTip.SetToolTip(this.Encoder_FPSBox, "Set FPS preset setting");
+            // 
+            // label32
+            // 
+            this.label32.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label32.Location = new System.Drawing.Point(535, 50);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(68, 16);
+            this.label32.TabIndex = 45;
+            this.label32.Text = "Resolution";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel47.Controls.Add(this.label39);
+            this.panel47.Controls.Add(this.panel48);
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel47.Location = new System.Drawing.Point(0, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(882, 38);
+            this.panel47.TabIndex = 3;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label39.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label39.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(55, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(447, 38);
+            this.label39.TabIndex = 6;
+            this.label39.Text = "Options";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel48
+            // 
+            this.panel48.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel48.Location = new System.Drawing.Point(0, 0);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(55, 38);
+            this.panel48.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(446, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 16);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Tuner";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_AudioCodecBox
+            // 
+            this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_AudioCodecBox.FormattingEnabled = true;
+            this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
+            this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
+            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_AudioCodecBox.TabIndex = 35;
+            this.toolTip.SetToolTip(this.Encoder_AudioCodecBox, "Set audio encoder library setting");
+            // 
+            // Encoder_ResolutionBox
+            // 
+            this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_ResolutionBox.FormattingEnabled = true;
+            this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
+            this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
+            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_ResolutionBox.TabIndex = 44;
+            this.toolTip.SetToolTip(this.Encoder_ResolutionBox, "Set resolution preset setting");
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(90, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 16);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "Video Encoder";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_TunerBox
+            // 
+            this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_TunerBox.FormattingEnabled = true;
+            this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
+            this.Encoder_TunerBox.Name = "Encoder_TunerBox";
+            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_TunerBox.TabIndex = 44;
+            this.toolTip.SetToolTip(this.Encoder_TunerBox, "Set optional tuner setting for specific type");
+            // 
+            // Encoder_VideoCodecBox
+            // 
+            this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_VideoCodecBox.FormattingEnabled = true;
+            this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
+            this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
+            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_VideoCodecBox.TabIndex = 34;
+            this.toolTip.SetToolTip(this.Encoder_VideoCodecBox, "Set encoder library setting");
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(177, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 16);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Audio Encoder";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(267, 50);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 16);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Quality/Speed";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Encoder_PresetsBox
+            // 
+            this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
+            this.Encoder_PresetsBox.FormattingEnabled = true;
+            this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
+            this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
+            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 21);
+            this.Encoder_PresetsBox.TabIndex = 40;
+            this.toolTip.SetToolTip(this.Encoder_PresetsBox, "Set quality/compression ratio preset setting");
+            // 
+            // Encoder_HideConsoleToggle
+            // 
+            this.Encoder_HideConsoleToggle.AutoSize = true;
+            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(699, 76);
+            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
+            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
+            this.Encoder_HideConsoleToggle.TabIndex = 61;
+            this.Encoder_HideConsoleToggle.Text = "Hide Console";
+            this.toolTip.SetToolTip(this.Encoder_HideConsoleToggle, "Set ffmpeg window hidden or visible");
+            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
             // 
             // M3U8MainPanel
             // 
@@ -713,6 +1237,7 @@
             // 
             // panel49
             // 
+            this.panel49.Controls.Add(this.label49);
             this.panel49.Controls.Add(this.label45);
             this.panel49.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel49.Location = new System.Drawing.Point(0, 0);
@@ -1360,6 +1885,7 @@
             // 
             // panel65
             // 
+            this.panel65.Controls.Add(this.label47);
             this.panel65.Controls.Add(this.label67);
             this.panel65.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel65.Location = new System.Drawing.Point(0, 0);
@@ -1378,7 +1904,7 @@
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(897, 44);
             this.label67.TabIndex = 7;
-            this.label67.Text = "Cut";
+            this.label67.Text = "CUT";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel66
@@ -1788,7 +2314,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem9});
+            listViewItem11});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -1965,6 +2491,7 @@
             // 
             // panel57
             // 
+            this.panel57.Controls.Add(this.label48);
             this.panel57.Controls.Add(this.label56);
             this.panel57.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel57.Location = new System.Drawing.Point(0, 0);
@@ -1983,7 +2510,7 @@
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(897, 44);
             this.label56.TabIndex = 7;
-            this.label56.Text = "Merge";
+            this.label56.Text = "MERGE";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel61
@@ -2060,6 +2587,18 @@
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(55, 38);
             this.panel97.TabIndex = 0;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 2;
+            this.pictureBox11.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
             // 
             // panel40
             // 
@@ -2143,6 +2682,7 @@
             // 
             // panel73
             // 
+            this.panel73.Controls.Add(this.label55);
             this.panel73.Controls.Add(this.label78);
             this.panel73.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel73.Location = new System.Drawing.Point(0, 0);
@@ -2686,6 +3226,20 @@
             this.panel84.Size = new System.Drawing.Size(55, 38);
             this.panel84.TabIndex = 0;
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
+        "plugin to send data to the software. This \'data\' refers to the content you choos" +
+        "e to download or stream using ffmpeg.");
+            // 
             // panel44
             // 
             this.panel44.BackColor = System.Drawing.Color.White;
@@ -3017,6 +3571,7 @@
             // 
             // panel21
             // 
+            this.panel21.Controls.Add(this.label54);
             this.panel21.Controls.Add(this.label22);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel21.Location = new System.Drawing.Point(0, 0);
@@ -3035,7 +3590,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(897, 44);
             this.label22.TabIndex = 7;
-            this.label22.Text = "Settings";
+            this.label22.Text = "SETTINGS";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel31
@@ -3044,496 +3599,6 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(200, 73);
             this.panel31.TabIndex = 1;
-            // 
-            // EncoderMainPanel
-            // 
-            this.EncoderMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.EncoderMainPanel.Controls.Add(this.panel13);
-            this.EncoderMainPanel.Controls.Add(this.panel6);
-            this.EncoderMainPanel.Controls.Add(this.panel23);
-            this.EncoderMainPanel.Controls.Add(this.panel37);
-            this.EncoderMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EncoderMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.EncoderMainPanel.Name = "EncoderMainPanel";
-            this.EncoderMainPanel.Size = new System.Drawing.Size(919, 495);
-            this.EncoderMainPanel.TabIndex = 5;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.label3);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(919, 44);
-            this.panel13.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.label3.Location = new System.Drawing.Point(22, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(897, 44);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ENCODER";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.Encoder_DefaultOutputButton);
-            this.panel6.Controls.Add(this.Encoder_OpenDirectoryButton);
-            this.panel6.Controls.Add(this.Encoder_OutputFolderButton);
-            this.panel6.Controls.Add(this.Encoder_ProgressBar);
-            this.panel6.Controls.Add(this.Encoder_OutputFolderTextBox);
-            this.panel6.Controls.Add(this.Encoder_StartEncodingProcessButton);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Location = new System.Drawing.Point(27, 377);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(882, 106);
-            this.panel6.TabIndex = 2;
-            // 
-            // Encoder_DefaultOutputButton
-            // 
-            this.Encoder_DefaultOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_DefaultOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_DefaultOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_DefaultOutputButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_DefaultOutputButton.Location = new System.Drawing.Point(737, 44);
-            this.Encoder_DefaultOutputButton.Name = "Encoder_DefaultOutputButton";
-            this.Encoder_DefaultOutputButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_DefaultOutputButton.TabIndex = 60;
-            this.Encoder_DefaultOutputButton.Text = "✓";
-            this.toolTip.SetToolTip(this.Encoder_DefaultOutputButton, "Reset to default output folder");
-            this.Encoder_DefaultOutputButton.UseVisualStyleBackColor = false;
-            this.Encoder_DefaultOutputButton.Click += new System.EventHandler(this.Encoder_DefaultOutputButton_Click);
-            // 
-            // Encoder_OpenDirectoryButton
-            // 
-            this.Encoder_OpenDirectoryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OpenDirectoryButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OpenDirectoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OpenDirectoryButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_OpenDirectoryButton.Location = new System.Drawing.Point(713, 44);
-            this.Encoder_OpenDirectoryButton.Name = "Encoder_OpenDirectoryButton";
-            this.Encoder_OpenDirectoryButton.Size = new System.Drawing.Size(19, 23);
-            this.Encoder_OpenDirectoryButton.TabIndex = 61;
-            this.Encoder_OpenDirectoryButton.Text = "▶";
-            this.toolTip.SetToolTip(this.Encoder_OpenDirectoryButton, "Open output folder");
-            this.Encoder_OpenDirectoryButton.UseVisualStyleBackColor = false;
-            this.Encoder_OpenDirectoryButton.Click += new System.EventHandler(this.Encoder_OpenDirectoryButton_Click);
-            // 
-            // Encoder_OutputFolderButton
-            // 
-            this.Encoder_OutputFolderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_OutputFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_OutputFolderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_OutputFolderButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_OutputFolderButton.Location = new System.Drawing.Point(762, 44);
-            this.Encoder_OutputFolderButton.Name = "Encoder_OutputFolderButton";
-            this.Encoder_OutputFolderButton.Size = new System.Drawing.Size(117, 23);
-            this.Encoder_OutputFolderButton.TabIndex = 25;
-            this.Encoder_OutputFolderButton.Text = "Set Output Folder";
-            this.toolTip.SetToolTip(this.Encoder_OutputFolderButton, "Change output folder");
-            this.Encoder_OutputFolderButton.UseVisualStyleBackColor = false;
-            this.Encoder_OutputFolderButton.Click += new System.EventHandler(this.Encoder_OutputFolderButton_Click);
-            // 
-            // Encoder_ProgressBar
-            // 
-            this.Encoder_ProgressBar.Location = new System.Drawing.Point(6, 75);
-            this.Encoder_ProgressBar.Name = "Encoder_ProgressBar";
-            this.Encoder_ProgressBar.Size = new System.Drawing.Size(762, 20);
-            this.Encoder_ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.Encoder_ProgressBar.TabIndex = 24;
-            this.toolTip.SetToolTip(this.Encoder_ProgressBar, "Total progress indicator");
-            // 
-            // Encoder_OutputFolderTextBox
-            // 
-            this.Encoder_OutputFolderTextBox.Enabled = false;
-            this.Encoder_OutputFolderTextBox.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Encoder_OutputFolderTextBox.Location = new System.Drawing.Point(6, 45);
-            this.Encoder_OutputFolderTextBox.Name = "Encoder_OutputFolderTextBox";
-            this.Encoder_OutputFolderTextBox.Size = new System.Drawing.Size(701, 23);
-            this.Encoder_OutputFolderTextBox.TabIndex = 23;
-            this.toolTip.SetToolTip(this.Encoder_OutputFolderTextBox, "Output folder path");
-            // 
-            // Encoder_StartEncodingProcessButton
-            // 
-            this.Encoder_StartEncodingProcessButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.Encoder_StartEncodingProcessButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_StartEncodingProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_StartEncodingProcessButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_StartEncodingProcessButton.Location = new System.Drawing.Point(774, 73);
-            this.Encoder_StartEncodingProcessButton.Name = "Encoder_StartEncodingProcessButton";
-            this.Encoder_StartEncodingProcessButton.Size = new System.Drawing.Size(105, 23);
-            this.Encoder_StartEncodingProcessButton.TabIndex = 22;
-            this.Encoder_StartEncodingProcessButton.Text = "Start Encoding";
-            this.toolTip.SetToolTip(this.Encoder_StartEncodingProcessButton, "Start processing the encoding list");
-            this.Encoder_StartEncodingProcessButton.UseVisualStyleBackColor = false;
-            this.Encoder_StartEncodingProcessButton.Click += new System.EventHandler(this.Encoder_StartEncodingProcessButton_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel9.Controls.Add(this.label2);
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(882, 38);
-            this.panel9.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(447, 38);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Output";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(55, 38);
-            this.panel10.TabIndex = 0;
-            // 
-            // panel23
-            // 
-            this.panel23.Location = new System.Drawing.Point(719, 495);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(200, 73);
-            this.panel23.TabIndex = 1;
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.White;
-            this.panel37.Controls.Add(this.Encoder_FilesList);
-            this.panel37.Controls.Add(this.Encoder_PlayButton);
-            this.panel37.Controls.Add(this.label14);
-            this.panel37.Controls.Add(this.panel2);
-            this.panel37.Controls.Add(this.panel1);
-            this.panel37.Controls.Add(this.label7);
-            this.panel37.Controls.Add(this.Encoder_ExtensionBox);
-            this.panel37.Controls.Add(this.label6);
-            this.panel37.Controls.Add(this.Encoder_OverwriteBox);
-            this.panel37.Controls.Add(this.label5);
-            this.panel37.Controls.Add(this.Encoder_FPSBox);
-            this.panel37.Controls.Add(this.label32);
-            this.panel37.Controls.Add(this.panel47);
-            this.panel37.Controls.Add(this.label4);
-            this.panel37.Controls.Add(this.Encoder_AudioCodecBox);
-            this.panel37.Controls.Add(this.Encoder_ResolutionBox);
-            this.panel37.Controls.Add(this.label13);
-            this.panel37.Controls.Add(this.Encoder_TunerBox);
-            this.panel37.Controls.Add(this.Encoder_VideoCodecBox);
-            this.panel37.Controls.Add(this.label12);
-            this.panel37.Controls.Add(this.label9);
-            this.panel37.Controls.Add(this.Encoder_PresetsBox);
-            this.panel37.Controls.Add(this.Encoder_HideConsoleToggle);
-            this.panel37.Location = new System.Drawing.Point(27, 50);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(882, 314);
-            this.panel37.TabIndex = 54;
-            // 
-            // Encoder_FilesList
-            // 
-            this.Encoder_FilesList.AllowDrop = true;
-            this.Encoder_FilesList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ColumnHeader1,
-            this.ColumnHeader2});
-            this.Encoder_FilesList.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.Encoder_FilesList.FullRowSelect = true;
-            this.Encoder_FilesList.GridLines = true;
-            this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.Encoder_FilesList.HideSelection = false;
-            this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem10});
-            this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
-            this.Encoder_FilesList.MultiSelect = false;
-            this.Encoder_FilesList.Name = "Encoder_FilesList";
-            this.Encoder_FilesList.Size = new System.Drawing.Size(870, 213);
-            this.Encoder_FilesList.TabIndex = 43;
-            this.Encoder_FilesList.UseCompatibleStateImageBehavior = false;
-            this.Encoder_FilesList.View = System.Windows.Forms.View.Details;
-            this.Encoder_FilesList.DragDrop += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragDrop);
-            this.Encoder_FilesList.DragEnter += new System.Windows.Forms.DragEventHandler(this.Encoder_FilesList_DragEnter);
-            this.Encoder_FilesList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Encoder_FilesList_KeyDown);
-            // 
-            // ColumnHeader1
-            // 
-            this.ColumnHeader1.Text = "File";
-            this.ColumnHeader1.Width = 765;
-            // 
-            // ColumnHeader2
-            // 
-            this.ColumnHeader2.Text = "Status";
-            this.ColumnHeader2.Width = 80;
-            // 
-            // Encoder_PlayButton
-            // 
-            this.Encoder_PlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
-            this.Encoder_PlayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encoder_PlayButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.Encoder_PlayButton.Location = new System.Drawing.Point(777, 66);
-            this.Encoder_PlayButton.Name = "Encoder_PlayButton";
-            this.Encoder_PlayButton.Size = new System.Drawing.Size(99, 26);
-            this.Encoder_PlayButton.TabIndex = 53;
-            this.Encoder_PlayButton.Text = "Play Selected ▶";
-            this.toolTip.SetToolTip(this.Encoder_PlayButton, "Preview selected file. ESC to exit/close.");
-            this.Encoder_PlayButton.UseVisualStyleBackColor = true;
-            this.Encoder_PlayButton.Click += new System.EventHandler(this.Encoder_PlayButton_Click);
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(710, 39);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 16);
-            this.label14.TabIndex = 52;
-            this.label14.Text = "Overrides";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip.SetToolTip(this.label14, "Options past the line are \"overrides.\r\nOverrides will override other options.\r\nLe" +
-        "ave default if you are unsure and let ffmpeg decide.");
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel2.Location = new System.Drawing.Point(438, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 20);
-            this.panel2.TabIndex = 51;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
-            this.panel1.Location = new System.Drawing.Point(438, 46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 1);
-            this.panel1.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(361, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 16);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Extension";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_ExtensionBox
-            // 
-            this.Encoder_ExtensionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ExtensionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_ExtensionBox.FormattingEnabled = true;
-            this.Encoder_ExtensionBox.Location = new System.Drawing.Point(354, 69);
-            this.Encoder_ExtensionBox.Name = "Encoder_ExtensionBox";
-            this.Encoder_ExtensionBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_ExtensionBox.TabIndex = 38;
-            this.toolTip.SetToolTip(this.Encoder_ExtensionBox, "Set a prefered output extension");
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(0, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 15);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "Auto Overwrite";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_OverwriteBox
-            // 
-            this.Encoder_OverwriteBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_OverwriteBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_OverwriteBox.FormattingEnabled = true;
-            this.Encoder_OverwriteBox.Location = new System.Drawing.Point(6, 69);
-            this.Encoder_OverwriteBox.Name = "Encoder_OverwriteBox";
-            this.Encoder_OverwriteBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_OverwriteBox.TabIndex = 48;
-            this.toolTip.SetToolTip(this.Encoder_OverwriteBox, "Set auto overwrite setting");
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(622, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 16);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "FPS/Frames";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_FPSBox
-            // 
-            this.Encoder_FPSBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_FPSBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_FPSBox.FormattingEnabled = true;
-            this.Encoder_FPSBox.Location = new System.Drawing.Point(615, 69);
-            this.Encoder_FPSBox.Name = "Encoder_FPSBox";
-            this.Encoder_FPSBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_FPSBox.TabIndex = 46;
-            this.toolTip.SetToolTip(this.Encoder_FPSBox, "Set FPS preset setting");
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label32.Location = new System.Drawing.Point(535, 50);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 16);
-            this.label32.TabIndex = 45;
-            this.label32.Text = "Resolution";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel47
-            // 
-            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
-            this.panel47.Controls.Add(this.label39);
-            this.panel47.Controls.Add(this.panel48);
-            this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel47.Location = new System.Drawing.Point(0, 0);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(882, 38);
-            this.panel47.TabIndex = 3;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label39.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label39.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(55, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(447, 38);
-            this.label39.TabIndex = 6;
-            this.label39.Text = "Options";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel48
-            // 
-            this.panel48.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel48.Location = new System.Drawing.Point(0, 0);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(55, 38);
-            this.panel48.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(446, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 16);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Tuner";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_AudioCodecBox
-            // 
-            this.Encoder_AudioCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_AudioCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_AudioCodecBox.FormattingEnabled = true;
-            this.Encoder_AudioCodecBox.Location = new System.Drawing.Point(180, 69);
-            this.Encoder_AudioCodecBox.Name = "Encoder_AudioCodecBox";
-            this.Encoder_AudioCodecBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_AudioCodecBox.TabIndex = 35;
-            this.toolTip.SetToolTip(this.Encoder_AudioCodecBox, "Set audio encoder library setting");
-            // 
-            // Encoder_ResolutionBox
-            // 
-            this.Encoder_ResolutionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_ResolutionBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_ResolutionBox.FormattingEnabled = true;
-            this.Encoder_ResolutionBox.Location = new System.Drawing.Point(528, 69);
-            this.Encoder_ResolutionBox.Name = "Encoder_ResolutionBox";
-            this.Encoder_ResolutionBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_ResolutionBox.TabIndex = 44;
-            this.toolTip.SetToolTip(this.Encoder_ResolutionBox, "Set resolution preset setting");
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(90, 50);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(87, 16);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Video Encoder";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_TunerBox
-            // 
-            this.Encoder_TunerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_TunerBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_TunerBox.FormattingEnabled = true;
-            this.Encoder_TunerBox.Location = new System.Drawing.Point(441, 69);
-            this.Encoder_TunerBox.Name = "Encoder_TunerBox";
-            this.Encoder_TunerBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_TunerBox.TabIndex = 44;
-            this.toolTip.SetToolTip(this.Encoder_TunerBox, "Set optional tuner setting for specific type");
-            // 
-            // Encoder_VideoCodecBox
-            // 
-            this.Encoder_VideoCodecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_VideoCodecBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_VideoCodecBox.FormattingEnabled = true;
-            this.Encoder_VideoCodecBox.Location = new System.Drawing.Point(93, 69);
-            this.Encoder_VideoCodecBox.Name = "Encoder_VideoCodecBox";
-            this.Encoder_VideoCodecBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_VideoCodecBox.TabIndex = 34;
-            this.toolTip.SetToolTip(this.Encoder_VideoCodecBox, "Set encoder library setting");
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(177, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 16);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Audio Encoder";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(267, 50);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 16);
-            this.label9.TabIndex = 41;
-            this.label9.Text = "Quality/Speed";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Encoder_PresetsBox
-            // 
-            this.Encoder_PresetsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Encoder_PresetsBox.Font = new System.Drawing.Font("Bahnschrift", 8F);
-            this.Encoder_PresetsBox.FormattingEnabled = true;
-            this.Encoder_PresetsBox.Location = new System.Drawing.Point(267, 69);
-            this.Encoder_PresetsBox.Name = "Encoder_PresetsBox";
-            this.Encoder_PresetsBox.Size = new System.Drawing.Size(81, 21);
-            this.Encoder_PresetsBox.TabIndex = 40;
-            this.toolTip.SetToolTip(this.Encoder_PresetsBox, "Set quality/compression ratio preset setting");
-            // 
-            // Encoder_HideConsoleToggle
-            // 
-            this.Encoder_HideConsoleToggle.AutoSize = true;
-            this.Encoder_HideConsoleToggle.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
-            this.Encoder_HideConsoleToggle.Location = new System.Drawing.Point(699, 76);
-            this.Encoder_HideConsoleToggle.Name = "Encoder_HideConsoleToggle";
-            this.Encoder_HideConsoleToggle.Size = new System.Drawing.Size(82, 16);
-            this.Encoder_HideConsoleToggle.TabIndex = 61;
-            this.Encoder_HideConsoleToggle.Text = "Hide Console";
-            this.toolTip.SetToolTip(this.Encoder_HideConsoleToggle, "Set ffmpeg window hidden or visible");
-            this.Encoder_HideConsoleToggle.UseVisualStyleBackColor = true;
             // 
             // ArgumentMainPanel
             // 
@@ -3681,7 +3746,7 @@
             // label38
             // 
             this.label38.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
-            this.label38.Location = new System.Drawing.Point(116, 15);
+            this.label38.Location = new System.Drawing.Point(126, 14);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(296, 25);
             this.label38.TabIndex = 88;
@@ -3699,7 +3764,7 @@
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(897, 44);
             this.label34.TabIndex = 7;
-            this.label34.Text = "Argument";
+            this.label34.Text = "ARGUMENT";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel45
@@ -3778,75 +3843,6 @@
             this.MenuPanel.Size = new System.Drawing.Size(159, 548);
             this.MenuPanel.TabIndex = 3;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(58)))), ((int)(((byte)(75)))));
-            this.panel3.Controls.Add(this.GitLabel);
-            this.panel3.Controls.Add(this.AuthorLabel);
-            this.panel3.Controls.Add(this.SoftwareLabel);
-            this.panel3.Controls.Add(this.InfoText);
-            this.panel3.Controls.Add(this.InfoIcon);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 463);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(159, 85);
-            this.panel3.TabIndex = 16;
-            // 
-            // GitLabel
-            // 
-            this.GitLabel.BackColor = System.Drawing.Color.Transparent;
-            this.GitLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GitLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GitLabel.ForeColor = System.Drawing.Color.White;
-            this.GitLabel.Location = new System.Drawing.Point(2, 63);
-            this.GitLabel.Name = "GitLabel";
-            this.GitLabel.Size = new System.Drawing.Size(157, 20);
-            this.GitLabel.TabIndex = 8;
-            this.GitLabel.Text = "-";
-            this.GitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GitLabel.Click += new System.EventHandler(this.GitLabel_Click);
-            // 
-            // AuthorLabel
-            // 
-            this.AuthorLabel.BackColor = System.Drawing.Color.Transparent;
-            this.AuthorLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.AuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AuthorLabel.ForeColor = System.Drawing.Color.White;
-            this.AuthorLabel.Location = new System.Drawing.Point(2, 43);
-            this.AuthorLabel.Name = "AuthorLabel";
-            this.AuthorLabel.Size = new System.Drawing.Size(157, 20);
-            this.AuthorLabel.TabIndex = 7;
-            this.AuthorLabel.Text = "-";
-            this.AuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // SoftwareLabel
-            // 
-            this.SoftwareLabel.BackColor = System.Drawing.Color.Transparent;
-            this.SoftwareLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SoftwareLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SoftwareLabel.ForeColor = System.Drawing.Color.White;
-            this.SoftwareLabel.Location = new System.Drawing.Point(2, 23);
-            this.SoftwareLabel.Name = "SoftwareLabel";
-            this.SoftwareLabel.Size = new System.Drawing.Size(157, 20);
-            this.SoftwareLabel.TabIndex = 5;
-            this.SoftwareLabel.Text = "-";
-            this.SoftwareLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // InfoText
-            // 
-            this.InfoText.BackColor = System.Drawing.Color.Transparent;
-            this.InfoText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.InfoText.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.InfoText.ForeColor = System.Drawing.Color.White;
-            this.InfoText.Location = new System.Drawing.Point(26, 0);
-            this.InfoText.Name = "InfoText";
-            this.InfoText.Size = new System.Drawing.Size(122, 20);
-            this.InfoText.TabIndex = 4;
-            this.InfoText.Text = "Information";
-            this.InfoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip.SetToolTip(this.InfoText, "Click to view more information!");
-            this.InfoText.Click += new System.EventHandler(this.InfoIcon_Click);
-            // 
             // Menu_UpdatesTab
             // 
             this.Menu_UpdatesTab.Controls.Add(this.Menu_UpdatesTabLabel);
@@ -3883,6 +3879,19 @@
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(31, 49);
             this.panel38.TabIndex = 2;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_language_outline;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.Menu_UpdatesTabIndicator_Click);
             // 
             // panel39
             // 
@@ -3982,6 +3991,19 @@
             this.panel19.Size = new System.Drawing.Size(31, 49);
             this.panel19.TabIndex = 2;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_settings_outline;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.Menu_SettingsTabIndicator_Click);
+            // 
             // panel20
             // 
             this.panel20.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4039,6 +4061,19 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(31, 49);
             this.panel15.TabIndex = 2;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_edit_outline;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.Menu_ArgumentsTabIndicator_Click);
             // 
             // panel16
             // 
@@ -4098,6 +4133,19 @@
             this.panel11.Size = new System.Drawing.Size(31, 49);
             this.panel11.TabIndex = 2;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_download_outline;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.Menu_M3U8TabIndicator_Click);
+            // 
             // panel12
             // 
             this.panel12.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4155,6 +4203,19 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(31, 23);
             this.panel29.TabIndex = 2;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_menu_point_h_outline;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.Menu_MergeTabIndicator_Click);
             // 
             // panel30
             // 
@@ -4214,6 +4275,19 @@
             this.panel25.Size = new System.Drawing.Size(31, 23);
             this.panel25.TabIndex = 2;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_divide_outline;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.Menu_CutTabIndicator_Click);
+            // 
             // panel26
             // 
             this.panel26.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4272,6 +4346,19 @@
             this.panel7.Size = new System.Drawing.Size(31, 49);
             this.panel7.TabIndex = 2;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_apps_outline;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
+            // 
             // panel8
             // 
             this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4292,6 +4379,77 @@
             this.Menu_CutMergeTabIndicator.Size = new System.Drawing.Size(5, 49);
             this.Menu_CutMergeTabIndicator.TabIndex = 0;
             this.Menu_CutMergeTabIndicator.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
+            // 
+            // Menu_NormalizeAudioTab
+            // 
+            this.Menu_NormalizeAudioTab.Controls.Add(this.Menu_NormalizeAudioLabel);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.panel100);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.panel101);
+            this.Menu_NormalizeAudioTab.Controls.Add(this.Menu_NormalizeAudioIndicator);
+            this.Menu_NormalizeAudioTab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu_NormalizeAudioTab.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Menu_NormalizeAudioTab.Location = new System.Drawing.Point(0, 54);
+            this.Menu_NormalizeAudioTab.Name = "Menu_NormalizeAudioTab";
+            this.Menu_NormalizeAudioTab.Size = new System.Drawing.Size(159, 49);
+            this.Menu_NormalizeAudioTab.TabIndex = 17;
+            // 
+            // Menu_NormalizeAudioLabel
+            // 
+            this.Menu_NormalizeAudioLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.Menu_NormalizeAudioLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu_NormalizeAudioLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Menu_NormalizeAudioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
+            this.Menu_NormalizeAudioLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
+            this.Menu_NormalizeAudioLabel.Location = new System.Drawing.Point(51, 0);
+            this.Menu_NormalizeAudioLabel.Name = "Menu_NormalizeAudioLabel";
+            this.Menu_NormalizeAudioLabel.Size = new System.Drawing.Size(97, 49);
+            this.Menu_NormalizeAudioLabel.TabIndex = 3;
+            this.Menu_NormalizeAudioLabel.Text = "NORMALIZE AUDIO";
+            this.Menu_NormalizeAudioLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Menu_NormalizeAudioLabel.Click += new System.EventHandler(this.Menu_NormalizeAudioIndicator_Click);
+            // 
+            // panel100
+            // 
+            this.panel100.Controls.Add(this.pictureBox12);
+            this.panel100.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel100.Location = new System.Drawing.Point(20, 0);
+            this.panel100.Name = "panel100";
+            this.panel100.Size = new System.Drawing.Size(31, 49);
+            this.panel100.TabIndex = 2;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox12.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_filter;
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.Menu_NormalizeAudioIndicator_Click);
+            // 
+            // panel101
+            // 
+            this.panel101.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel101.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel101.Location = new System.Drawing.Point(5, 0);
+            this.panel101.Name = "panel101";
+            this.panel101.Size = new System.Drawing.Size(15, 49);
+            this.panel101.TabIndex = 1;
+            this.panel101.Click += new System.EventHandler(this.Menu_NormalizeAudioIndicator_Click);
+            // 
+            // Menu_NormalizeAudioIndicator
+            // 
+            this.Menu_NormalizeAudioIndicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
+            this.Menu_NormalizeAudioIndicator.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu_NormalizeAudioIndicator.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Menu_NormalizeAudioIndicator.Location = new System.Drawing.Point(0, 0);
+            this.Menu_NormalizeAudioIndicator.Name = "Menu_NormalizeAudioIndicator";
+            this.Menu_NormalizeAudioIndicator.Size = new System.Drawing.Size(5, 49);
+            this.Menu_NormalizeAudioIndicator.TabIndex = 0;
+            this.Menu_NormalizeAudioIndicator.Click += new System.EventHandler(this.Menu_NormalizeAudioIndicator_Click);
             // 
             // Menu_EncoderTab
             // 
@@ -4331,6 +4489,19 @@
             this.panel5.Size = new System.Drawing.Size(31, 49);
             this.panel5.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_reload_outline;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.Menu_EncoderTabIndicator_Click);
+            // 
             // panel4
             // 
             this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -4359,6 +4530,88 @@
             this.MenuSpacerTop.Name = "MenuSpacerTop";
             this.MenuSpacerTop.Size = new System.Drawing.Size(159, 5);
             this.MenuSpacerTop.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(58)))), ((int)(((byte)(75)))));
+            this.panel3.Controls.Add(this.GitLabel);
+            this.panel3.Controls.Add(this.AuthorLabel);
+            this.panel3.Controls.Add(this.SoftwareLabel);
+            this.panel3.Controls.Add(this.InfoText);
+            this.panel3.Controls.Add(this.InfoIcon);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 463);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(159, 85);
+            this.panel3.TabIndex = 16;
+            // 
+            // GitLabel
+            // 
+            this.GitLabel.BackColor = System.Drawing.Color.Transparent;
+            this.GitLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GitLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GitLabel.ForeColor = System.Drawing.Color.White;
+            this.GitLabel.Location = new System.Drawing.Point(2, 63);
+            this.GitLabel.Name = "GitLabel";
+            this.GitLabel.Size = new System.Drawing.Size(157, 20);
+            this.GitLabel.TabIndex = 8;
+            this.GitLabel.Text = "-";
+            this.GitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GitLabel.Click += new System.EventHandler(this.GitLabel_Click);
+            // 
+            // AuthorLabel
+            // 
+            this.AuthorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AuthorLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.AuthorLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AuthorLabel.ForeColor = System.Drawing.Color.White;
+            this.AuthorLabel.Location = new System.Drawing.Point(2, 43);
+            this.AuthorLabel.Name = "AuthorLabel";
+            this.AuthorLabel.Size = new System.Drawing.Size(157, 20);
+            this.AuthorLabel.TabIndex = 7;
+            this.AuthorLabel.Text = "-";
+            this.AuthorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // SoftwareLabel
+            // 
+            this.SoftwareLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SoftwareLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.SoftwareLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SoftwareLabel.ForeColor = System.Drawing.Color.White;
+            this.SoftwareLabel.Location = new System.Drawing.Point(2, 23);
+            this.SoftwareLabel.Name = "SoftwareLabel";
+            this.SoftwareLabel.Size = new System.Drawing.Size(157, 20);
+            this.SoftwareLabel.TabIndex = 5;
+            this.SoftwareLabel.Text = "-";
+            this.SoftwareLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // InfoText
+            // 
+            this.InfoText.BackColor = System.Drawing.Color.Transparent;
+            this.InfoText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoText.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.InfoText.ForeColor = System.Drawing.Color.White;
+            this.InfoText.Location = new System.Drawing.Point(26, 0);
+            this.InfoText.Name = "InfoText";
+            this.InfoText.Size = new System.Drawing.Size(122, 20);
+            this.InfoText.TabIndex = 4;
+            this.InfoText.Text = "Information";
+            this.InfoText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip.SetToolTip(this.InfoText, "Click to view more information!");
+            this.InfoText.Click += new System.EventHandler(this.InfoIcon_Click);
+            // 
+            // InfoIcon
+            // 
+            this.InfoIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoIcon.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
+            this.InfoIcon.Location = new System.Drawing.Point(2, 2);
+            this.InfoIcon.Name = "InfoIcon";
+            this.InfoIcon.Size = new System.Drawing.Size(20, 20);
+            this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.InfoIcon.TabIndex = 1;
+            this.InfoIcon.TabStop = false;
+            this.toolTip.SetToolTip(this.InfoIcon, "Click to view more information!");
+            this.InfoIcon.Click += new System.EventHandler(this.InfoIcon_Click);
             // 
             // FooterPanel
             // 
@@ -4419,6 +4672,17 @@
             this.label11.TabIndex = 6;
             this.label11.Text = "V2 Edition";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
+            this.pictureBox8.Location = new System.Drawing.Point(86, 24);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
             // 
             // label10
             // 
@@ -4504,6 +4768,19 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
             // 
+            // ToTrayButton
+            // 
+            this.ToTrayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToTrayButton.Image = global::FFmpeg_Utilizer.Properties.Resources.TrayIcon;
+            this.ToTrayButton.Location = new System.Drawing.Point(1001, 0);
+            this.ToTrayButton.Name = "ToTrayButton";
+            this.ToTrayButton.Size = new System.Drawing.Size(29, 27);
+            this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToTrayButton.TabIndex = 8;
+            this.ToTrayButton.TabStop = false;
+            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
+            this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
+            // 
             // ApplicationMinimizeButton
             // 
             this.ApplicationMinimizeButton.BackColor = System.Drawing.Color.White;
@@ -4533,253 +4810,6 @@
             this.ApplicationCloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ApplicationCloseButton.Click += new System.EventHandler(this.SoftwareCloseButton_Click);
             // 
-            // toolTip
-            // 
-            this.toolTip.AutomaticDelay = 250;
-            // 
-            // TraySystem
-            // 
-            this.TraySystem.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.TraySystem.BalloonTipText = "The software is still running!";
-            this.TraySystem.BalloonTipTitle = "FFmpeg Utilizer";
-            this.TraySystem.Icon = ((System.Drawing.Icon)(resources.GetObject("TraySystem.Icon")));
-            this.TraySystem.Text = "FFmpeg Utilizer";
-            this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
-            // 
-            // Menu_NormalizeAudioTab
-            // 
-            this.Menu_NormalizeAudioTab.Controls.Add(this.label8);
-            this.Menu_NormalizeAudioTab.Controls.Add(this.panel100);
-            this.Menu_NormalizeAudioTab.Controls.Add(this.panel101);
-            this.Menu_NormalizeAudioTab.Controls.Add(this.panel102);
-            this.Menu_NormalizeAudioTab.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Menu_NormalizeAudioTab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Menu_NormalizeAudioTab.Location = new System.Drawing.Point(0, 54);
-            this.Menu_NormalizeAudioTab.Name = "Menu_NormalizeAudioTab";
-            this.Menu_NormalizeAudioTab.Size = new System.Drawing.Size(159, 49);
-            this.Menu_NormalizeAudioTab.TabIndex = 17;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
-            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 10F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(168)))), ((int)(((byte)(179)))));
-            this.label8.Location = new System.Drawing.Point(51, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 49);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Normalize Audio";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel100
-            // 
-            this.panel100.Controls.Add(this.pictureBox12);
-            this.panel100.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel100.Location = new System.Drawing.Point(20, 0);
-            this.panel100.Name = "panel100";
-            this.panel100.Size = new System.Drawing.Size(31, 49);
-            this.panel100.TabIndex = 2;
-            // 
-            // panel101
-            // 
-            this.panel101.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel101.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel101.Location = new System.Drawing.Point(5, 0);
-            this.panel101.Name = "panel101";
-            this.panel101.Size = new System.Drawing.Size(15, 49);
-            this.panel101.TabIndex = 1;
-            // 
-            // panel102
-            // 
-            this.panel102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(64)))), ((int)(((byte)(82)))));
-            this.panel102.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel102.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel102.Location = new System.Drawing.Point(0, 0);
-            this.panel102.Name = "panel102";
-            this.panel102.Size = new System.Drawing.Size(5, 49);
-            this.panel102.TabIndex = 0;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox11.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 2;
-            this.pictureBox11.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox11, "Software Information Area.");
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.pictureBox10.Location = new System.Drawing.Point(17, 9);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
-            this.toolTip.SetToolTip(this.pictureBox10, "The URI Listener works with the Chromium browser extension, allowing the browser " +
-        "plugin to send data to the software. This \'data\' refers to the content you choos" +
-        "e to download or stream using ffmpeg.");
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_filter;
-            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 0;
-            this.pictureBox12.TabStop = false;
-            // 
-            // InfoIcon
-            // 
-            this.InfoIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.InfoIcon.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_question_outline;
-            this.InfoIcon.Location = new System.Drawing.Point(2, 2);
-            this.InfoIcon.Name = "InfoIcon";
-            this.InfoIcon.Size = new System.Drawing.Size(20, 20);
-            this.InfoIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.InfoIcon.TabIndex = 1;
-            this.InfoIcon.TabStop = false;
-            this.toolTip.SetToolTip(this.InfoIcon, "Click to view more information!");
-            this.InfoIcon.Click += new System.EventHandler(this.InfoIcon_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_language_outline;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Menu_UpdatesTabIndicator_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_settings_outline;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.Menu_SettingsTabIndicator_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_edit_outline;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.Menu_ArgumentsTabIndicator_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_download_outline;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.Menu_M3U8TabIndicator_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_menu_point_h_outline;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Menu_MergeTabIndicator_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_divide_outline;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.Menu_CutTabIndicator_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_apps_outline;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.Menu_CutMergeTabIndicator_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_reload_outline;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.Menu_EncoderTabIndicator_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox8.Image = global::FFmpeg_Utilizer.Properties.Resources.Icon_love_solid;
-            this.pictureBox8.Location = new System.Drawing.Point(86, 24);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 25);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // ToTrayButton
-            // 
-            this.ToTrayButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToTrayButton.Image = global::FFmpeg_Utilizer.Properties.Resources.TrayIcon;
-            this.ToTrayButton.Location = new System.Drawing.Point(1001, 0);
-            this.ToTrayButton.Name = "ToTrayButton";
-            this.ToTrayButton.Size = new System.Drawing.Size(29, 27);
-            this.ToTrayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ToTrayButton.TabIndex = 8;
-            this.ToTrayButton.TabStop = false;
-            this.toolTip.SetToolTip(this.ToTrayButton, "Minimize to tray");
-            this.ToTrayButton.Click += new System.EventHandler(this.ToTrayButton_Click);
-            // 
             // TopLogo
             // 
             this.TopLogo.Dock = System.Windows.Forms.DockStyle.Left;
@@ -4791,6 +4821,310 @@
             this.TopLogo.TabIndex = 0;
             this.TopLogo.TabStop = false;
             this.TopLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopLogo_MouseDown);
+            // 
+            // toolTip
+            // 
+            this.toolTip.AutomaticDelay = 250;
+            // 
+            // NormalizeAudio_ResetDefaultButton
+            // 
+            this.NormalizeAudio_ResetDefaultButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.NormalizeAudio_ResetDefaultButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.NormalizeAudio_ResetDefaultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NormalizeAudio_ResetDefaultButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.NormalizeAudio_ResetDefaultButton.Location = new System.Drawing.Point(737, 44);
+            this.NormalizeAudio_ResetDefaultButton.Name = "NormalizeAudio_ResetDefaultButton";
+            this.NormalizeAudio_ResetDefaultButton.Size = new System.Drawing.Size(19, 23);
+            this.NormalizeAudio_ResetDefaultButton.TabIndex = 60;
+            this.NormalizeAudio_ResetDefaultButton.Text = "✓";
+            this.toolTip.SetToolTip(this.NormalizeAudio_ResetDefaultButton, "Reset to default output folder");
+            this.NormalizeAudio_ResetDefaultButton.UseVisualStyleBackColor = false;
+            this.NormalizeAudio_ResetDefaultButton.Click += new System.EventHandler(this.NormalizeAudio_ResetDefaultButton_Click);
+            // 
+            // NormalizeAudio_OpenOutputDirectory
+            // 
+            this.NormalizeAudio_OpenOutputDirectory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.NormalizeAudio_OpenOutputDirectory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.NormalizeAudio_OpenOutputDirectory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NormalizeAudio_OpenOutputDirectory.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.NormalizeAudio_OpenOutputDirectory.Location = new System.Drawing.Point(713, 44);
+            this.NormalizeAudio_OpenOutputDirectory.Name = "NormalizeAudio_OpenOutputDirectory";
+            this.NormalizeAudio_OpenOutputDirectory.Size = new System.Drawing.Size(19, 23);
+            this.NormalizeAudio_OpenOutputDirectory.TabIndex = 61;
+            this.NormalizeAudio_OpenOutputDirectory.Text = "▶";
+            this.toolTip.SetToolTip(this.NormalizeAudio_OpenOutputDirectory, "Open output folder");
+            this.NormalizeAudio_OpenOutputDirectory.UseVisualStyleBackColor = false;
+            this.NormalizeAudio_OpenOutputDirectory.Click += new System.EventHandler(this.NormalizeAudio_OpenOutputDirectory_Click);
+            // 
+            // NormalizeAudio_SetOutputButton
+            // 
+            this.NormalizeAudio_SetOutputButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.NormalizeAudio_SetOutputButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.NormalizeAudio_SetOutputButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NormalizeAudio_SetOutputButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.NormalizeAudio_SetOutputButton.Location = new System.Drawing.Point(762, 44);
+            this.NormalizeAudio_SetOutputButton.Name = "NormalizeAudio_SetOutputButton";
+            this.NormalizeAudio_SetOutputButton.Size = new System.Drawing.Size(117, 23);
+            this.NormalizeAudio_SetOutputButton.TabIndex = 25;
+            this.NormalizeAudio_SetOutputButton.Text = "Set Output Folder";
+            this.toolTip.SetToolTip(this.NormalizeAudio_SetOutputButton, "Change output folder");
+            this.NormalizeAudio_SetOutputButton.UseVisualStyleBackColor = false;
+            this.NormalizeAudio_SetOutputButton.Click += new System.EventHandler(this.NormalizeAudio_SetOutputButton_Click);
+            // 
+            // NormalizeAudio_Progressbar
+            // 
+            this.NormalizeAudio_Progressbar.Location = new System.Drawing.Point(6, 75);
+            this.NormalizeAudio_Progressbar.Name = "NormalizeAudio_Progressbar";
+            this.NormalizeAudio_Progressbar.Size = new System.Drawing.Size(762, 20);
+            this.NormalizeAudio_Progressbar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.NormalizeAudio_Progressbar.TabIndex = 24;
+            this.toolTip.SetToolTip(this.NormalizeAudio_Progressbar, "Total progress indicator");
+            // 
+            // NormalizeAudio_OutputDirectory
+            // 
+            this.NormalizeAudio_OutputDirectory.Enabled = false;
+            this.NormalizeAudio_OutputDirectory.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.NormalizeAudio_OutputDirectory.Location = new System.Drawing.Point(6, 45);
+            this.NormalizeAudio_OutputDirectory.Name = "NormalizeAudio_OutputDirectory";
+            this.NormalizeAudio_OutputDirectory.Size = new System.Drawing.Size(701, 23);
+            this.NormalizeAudio_OutputDirectory.TabIndex = 23;
+            this.toolTip.SetToolTip(this.NormalizeAudio_OutputDirectory, "Output folder path");
+            // 
+            // NormalizeAudio_StartNormalizingAudioButton
+            // 
+            this.NormalizeAudio_StartNormalizingAudioButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.NormalizeAudio_StartNormalizingAudioButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(172)))), ((int)(((byte)(229)))));
+            this.NormalizeAudio_StartNormalizingAudioButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NormalizeAudio_StartNormalizingAudioButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.NormalizeAudio_StartNormalizingAudioButton.Location = new System.Drawing.Point(774, 73);
+            this.NormalizeAudio_StartNormalizingAudioButton.Name = "NormalizeAudio_StartNormalizingAudioButton";
+            this.NormalizeAudio_StartNormalizingAudioButton.Size = new System.Drawing.Size(105, 23);
+            this.NormalizeAudio_StartNormalizingAudioButton.TabIndex = 22;
+            this.NormalizeAudio_StartNormalizingAudioButton.Text = "Start Process";
+            this.toolTip.SetToolTip(this.NormalizeAudio_StartNormalizingAudioButton, "Start processing the encoding list");
+            this.NormalizeAudio_StartNormalizingAudioButton.UseVisualStyleBackColor = false;
+            this.NormalizeAudio_StartNormalizingAudioButton.Click += new System.EventHandler(this.NormalizeAudio_StartNormalizingAudioButton_Click);
+            // 
+            // TraySystem
+            // 
+            this.TraySystem.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.TraySystem.BalloonTipText = "The software is still running!";
+            this.TraySystem.BalloonTipTitle = "FFmpeg Utilizer";
+            this.TraySystem.Icon = ((System.Drawing.Icon)(resources.GetObject("TraySystem.Icon")));
+            this.TraySystem.Text = "FFmpeg Utilizer";
+            this.TraySystem.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TraySystem_MouseDoubleClick);
+            // 
+            // NormalizeAudioMainPanel
+            // 
+            this.NormalizeAudioMainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.NormalizeAudioMainPanel.Controls.Add(this.NormalizeAudio_HideConsoleCheckbox);
+            this.NormalizeAudioMainPanel.Controls.Add(this.NormalizeAudio_ListView);
+            this.NormalizeAudioMainPanel.Controls.Add(this.panel102);
+            this.NormalizeAudioMainPanel.Controls.Add(this.panel103);
+            this.NormalizeAudioMainPanel.Controls.Add(this.panel106);
+            this.NormalizeAudioMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NormalizeAudioMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.NormalizeAudioMainPanel.Name = "NormalizeAudioMainPanel";
+            this.NormalizeAudioMainPanel.Size = new System.Drawing.Size(919, 495);
+            this.NormalizeAudioMainPanel.TabIndex = 6;
+            // 
+            // panel102
+            // 
+            this.panel102.Controls.Add(this.label43);
+            this.panel102.Controls.Add(this.label8);
+            this.panel102.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel102.Location = new System.Drawing.Point(0, 0);
+            this.panel102.Name = "panel102";
+            this.panel102.Size = new System.Drawing.Size(919, 44);
+            this.panel102.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 16F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(126)))), ((int)(((byte)(148)))));
+            this.label8.Location = new System.Drawing.Point(22, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(897, 44);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "NORMALIZE AUDIO";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel103
+            // 
+            this.panel103.BackColor = System.Drawing.Color.White;
+            this.panel103.Controls.Add(this.NormalizeAudio_ResetDefaultButton);
+            this.panel103.Controls.Add(this.NormalizeAudio_OpenOutputDirectory);
+            this.panel103.Controls.Add(this.NormalizeAudio_SetOutputButton);
+            this.panel103.Controls.Add(this.NormalizeAudio_Progressbar);
+            this.panel103.Controls.Add(this.NormalizeAudio_OutputDirectory);
+            this.panel103.Controls.Add(this.NormalizeAudio_StartNormalizingAudioButton);
+            this.panel103.Controls.Add(this.panel104);
+            this.panel103.Location = new System.Drawing.Point(27, 377);
+            this.panel103.Name = "panel103";
+            this.panel103.Size = new System.Drawing.Size(882, 106);
+            this.panel103.TabIndex = 2;
+            // 
+            // panel104
+            // 
+            this.panel104.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(126)))), ((int)(((byte)(149)))));
+            this.panel104.Controls.Add(this.label42);
+            this.panel104.Controls.Add(this.panel105);
+            this.panel104.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel104.Location = new System.Drawing.Point(0, 0);
+            this.panel104.Name = "panel104";
+            this.panel104.Size = new System.Drawing.Size(882, 38);
+            this.panel104.TabIndex = 3;
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label42.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label42.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(55, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(447, 38);
+            this.label42.TabIndex = 6;
+            this.label42.Text = "Output";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel105
+            // 
+            this.panel105.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel105.Location = new System.Drawing.Point(0, 0);
+            this.panel105.Name = "panel105";
+            this.panel105.Size = new System.Drawing.Size(55, 38);
+            this.panel105.TabIndex = 0;
+            // 
+            // panel106
+            // 
+            this.panel106.Location = new System.Drawing.Point(719, 495);
+            this.panel106.Name = "panel106";
+            this.panel106.Size = new System.Drawing.Size(200, 73);
+            this.panel106.TabIndex = 1;
+            // 
+            // NormalizeAudio_ListView
+            // 
+            this.NormalizeAudio_ListView.AllowDrop = true;
+            this.NormalizeAudio_ListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3,
+            this.columnHeader4});
+            this.NormalizeAudio_ListView.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.NormalizeAudio_ListView.FullRowSelect = true;
+            this.NormalizeAudio_ListView.GridLines = true;
+            this.NormalizeAudio_ListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.NormalizeAudio_ListView.HideSelection = false;
+            this.NormalizeAudio_ListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem12});
+            this.NormalizeAudio_ListView.Location = new System.Drawing.Point(27, 68);
+            this.NormalizeAudio_ListView.MultiSelect = false;
+            this.NormalizeAudio_ListView.Name = "NormalizeAudio_ListView";
+            this.NormalizeAudio_ListView.Size = new System.Drawing.Size(882, 303);
+            this.NormalizeAudio_ListView.TabIndex = 43;
+            this.NormalizeAudio_ListView.UseCompatibleStateImageBehavior = false;
+            this.NormalizeAudio_ListView.View = System.Windows.Forms.View.Details;
+            this.NormalizeAudio_ListView.DragDrop += new System.Windows.Forms.DragEventHandler(this.NormalizeAudio_ListView_DragDrop);
+            this.NormalizeAudio_ListView.DragEnter += new System.Windows.Forms.DragEventHandler(this.NormalizeAudio_ListView_DragEnter);
+            this.NormalizeAudio_ListView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NormalizeAudio_ListView_KeyDown);
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "File";
+            this.columnHeader3.Width = 765;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Status";
+            this.columnHeader4.Width = 80;
+            // 
+            // label43
+            // 
+            this.label43.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label43.Location = new System.Drawing.Point(192, 18);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(679, 15);
+            this.label43.TabIndex = 89;
+            this.label43.Text = "If you have multiple audio clips or videos with varying volume levels, you can us" +
+    "e this feature to normalize the audio and achieve a more consistent sound. (-23 " +
+    "LUFS)\r\n";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label44
+            // 
+            this.label44.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label44.Location = new System.Drawing.Point(117, 19);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(659, 15);
+            this.label44.TabIndex = 90;
+            this.label44.Text = "Use this feature to customize video encoding, including options such as compressi" +
+    "on, format, and resolution. (May fix some artifacts and duplicate frames.)";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label47
+            // 
+            this.label47.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label47.Location = new System.Drawing.Point(75, 19);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(659, 15);
+            this.label47.TabIndex = 91;
+            this.label47.Text = "Cut out parts of a video or audio clip.";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label48
+            // 
+            this.label48.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label48.Location = new System.Drawing.Point(100, 19);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(659, 15);
+            this.label48.TabIndex = 92;
+            this.label48.Text = "Merge multiple audio or video files.";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label49
+            // 
+            this.label49.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label49.Location = new System.Drawing.Point(86, 19);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(659, 15);
+            this.label49.TabIndex = 92;
+            this.label49.Text = "Write a M3U8 or HLS network-stream to a local file.";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label54
+            // 
+            this.label54.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label54.Location = new System.Drawing.Point(120, 19);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(659, 15);
+            this.label54.TabIndex = 93;
+            this.label54.Text = "Global software settings and features.";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label55
+            // 
+            this.label55.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F);
+            this.label55.Location = new System.Drawing.Point(103, 18);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(659, 15);
+            this.label55.TabIndex = 93;
+            this.label55.Text = "Automatically install, reference and update for FFMPEG tools used by the software" +
+    ".";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // NormalizeAudio_HideConsoleCheckbox
+            // 
+            this.NormalizeAudio_HideConsoleCheckbox.AutoSize = true;
+            this.NormalizeAudio_HideConsoleCheckbox.Font = new System.Drawing.Font("Bahnschrift", 7.5F);
+            this.NormalizeAudio_HideConsoleCheckbox.Location = new System.Drawing.Point(27, 46);
+            this.NormalizeAudio_HideConsoleCheckbox.Name = "NormalizeAudio_HideConsoleCheckbox";
+            this.NormalizeAudio_HideConsoleCheckbox.Size = new System.Drawing.Size(82, 16);
+            this.NormalizeAudio_HideConsoleCheckbox.TabIndex = 89;
+            this.NormalizeAudio_HideConsoleCheckbox.Text = "Hide Console";
+            this.NormalizeAudio_HideConsoleCheckbox.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -4808,6 +5142,14 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.FullPanel.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
+            this.EncoderMainPanel.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel47.ResumeLayout(false);
             this.M3U8MainPanel.ResumeLayout(false);
             this.M3U8MainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.M3U8_NumDownloadsAsync)).EndInit();
@@ -4851,6 +5193,7 @@
             this.panel94.ResumeLayout(false);
             this.panel96.ResumeLayout(false);
             this.panel97.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel40.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel73.ResumeLayout(false);
@@ -4878,6 +5221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Settings_URIServerPort)).EndInit();
             this.panel83.ResumeLayout(false);
             this.panel84.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.panel78.ResumeLayout(false);
@@ -4885,58 +5229,54 @@
             this.panel43.PerformLayout();
             this.panel79.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            this.EncoderMainPanel.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel47.ResumeLayout(false);
             this.ArgumentMainPanel.ResumeLayout(false);
             this.ArgumentMainPanel.PerformLayout();
             this.panel41.ResumeLayout(false);
             this.NoticePanel.ResumeLayout(false);
             this.MenuPanel.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.Menu_UpdatesTab.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel33.ResumeLayout(false);
             this.Menu_SettingsTab.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Menu_ArgumentsTab.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Menu_M3U8Tab.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Menu_MergeTab.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.Menu_CutTab.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.Menu_CutMergeTab.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.Menu_EncoderTab.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.FooterPanel.ResumeLayout(false);
-            this.BottomRightPanel.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
-            this.TopPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Menu_NormalizeAudioTab.ResumeLayout(false);
             this.panel100.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Menu_EncoderTab.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.InfoIcon)).EndInit();
+            this.FooterPanel.ResumeLayout(false);
+            this.BottomRightPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel22.ResumeLayout(false);
+            this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ToTrayButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo)).EndInit();
+            this.NormalizeAudioMainPanel.ResumeLayout(false);
+            this.NormalizeAudioMainPanel.PerformLayout();
+            this.panel102.ResumeLayout(false);
+            this.panel103.ResumeLayout(false);
+            this.panel103.PerformLayout();
+            this.panel104.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -5299,11 +5639,36 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel Menu_CutMergeTabIndicator;
         private System.Windows.Forms.Panel Menu_NormalizeAudioTab;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label Menu_NormalizeAudioLabel;
         private System.Windows.Forms.Panel panel100;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel101;
+        private System.Windows.Forms.Panel Menu_NormalizeAudioIndicator;
+        private System.Windows.Forms.Panel NormalizeAudioMainPanel;
         private System.Windows.Forms.Panel panel102;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel103;
+        private System.Windows.Forms.Button NormalizeAudio_ResetDefaultButton;
+        private System.Windows.Forms.Button NormalizeAudio_OpenOutputDirectory;
+        private System.Windows.Forms.Button NormalizeAudio_SetOutputButton;
+        public System.Windows.Forms.ProgressBar NormalizeAudio_Progressbar;
+        private System.Windows.Forms.TextBox NormalizeAudio_OutputDirectory;
+        public System.Windows.Forms.Button NormalizeAudio_StartNormalizingAudioButton;
+        private System.Windows.Forms.Panel panel104;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Panel panel105;
+        private System.Windows.Forms.Panel panel106;
+        public System.Windows.Forms.ListView NormalizeAudio_ListView;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label55;
+        internal System.Windows.Forms.CheckBox NormalizeAudio_HideConsoleCheckbox;
     }
 }
 
