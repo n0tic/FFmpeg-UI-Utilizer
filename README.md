@@ -13,7 +13,7 @@
 
 WIP!
 
-FFMPEG Utilizer is a user-friendly UI software that executes commands based on user input, by utilizing external ffmpeg. Its primary aim is to be highly portable and lightweight. Furthermore, the integration of a Chrome extension facilitates the exchange of information between the browser and the software, thus enhancing the efficiency.
+FFMPEG Utilizer is a user-friendly UI software that executes commands based on user input, by utilizing external ffmpeg (FFMPEG GUI/UI). Its primary aim is to be highly portable and lightweight. Furthermore, the integration of a Chrome extension facilitates the exchange of information between the browser and the software, thus enhancing the efficiency.
 
 FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way officially connected with FFmpeg.
 [FFmpeg](https://ffmpeg.org/) itself is a complete, cross-platform solution to record, convert and stream audio and video. 
