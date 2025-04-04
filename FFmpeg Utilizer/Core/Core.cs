@@ -311,7 +311,8 @@ namespace FFmpeg_Utilizer
             Argument = 5,
             Settings = 6,
             Updater = 7,
-            NormalizeAudio = 8
+            NormalizeAudio = 8,
+            RecordStream = 9
         }
 
         public enum TabColor

@@ -421,13 +421,14 @@ namespace FFmpeg_Utilizer
             Core.AddTab(Menu_SettingsTab, Menu_SettingsTabIndicator, Menu_SettingsTabLabel, SettingsMainPanel);
             Core.AddTab(Menu_UpdatesTab, Menu_UpdatesTabIndicator, Menu_UpdatesTabLabel, UpdateMainPanel, hasInternet);
             Core.AddTab(Menu_NormalizeAudioTab, Menu_NormalizeAudioIndicator, Menu_NormalizeAudioLabel, NormalizeAudioMainPanel);
+            Core.AddTab(Menu_StreamRecorderTab, Menu_StreamRecorderIndicator, Menu_StreamRecorderLabel, StreamRecorderMainPanel);
         }
 
         private void Menu_EncoderTabIndicator_Click(object sender, EventArgs e) => Core.ChangeTab(Core.Tabs.Encoder);
 
         private void Menu_CutMergeTabIndicator_Click(object sender, EventArgs e)
         {
-            notice.SetNotice("The Cut and Merge features is not yet fully implemented. Needs more testing.", NoticeModule.TypeNotice.Warning, true);
+            //notice.SetNotice("The Cut and Merge features is not yet fully implemented. Needs more testing.", NoticeModule.TypeNotice.Warning, true);
             Core.ChangeTab(Core.Tabs.CutMerge);
             Core.ChangeTab(Core.Tabs.Cut);
         }
@@ -1698,6 +1699,11 @@ namespace FFmpeg_Utilizer
 
             //Start the encoding process.
             normalizeAudioProcesser.ProcessFileQueue(processQueueData);
+        }
+
+        private void Menu_StreamRecorderIndicator_Click(object sender, EventArgs e)
+        {
+            Core.ChangeTab(Core.Tabs.RecordStream);
         }
     }
 }
