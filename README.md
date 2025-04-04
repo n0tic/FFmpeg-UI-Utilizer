@@ -54,6 +54,8 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
             Video FPS (Frames Per Second)
             Video Max Bufsize (Bitrate) (To be added)
             File Exstension / Type
+* Normalize Audio
+	* Auto-adjust audio volume for consistency. (-23LUFS)
 * Cut and Merge files
     * Cut
     	* This feature will extract video/audio from user timestamps.
@@ -66,9 +68,15 @@ NOTE: THIS IS A WORK IN PROGRESS AND THESE ARE THE PLANNED FEATURES. EVERYTHING 
 * M3U8
 	* This feature is intended to download and merge segmented HLS/M3U8 video/Audio streaming files.
     	* Standard Add and Remove features are available.
+     	* Asynchronous parallel download available.
         * Video Preview button is available.
       * 
       		 URI Listener is working with this feature of the software.
+* Stream Recorder
+	* Captures live M3U8/HLS streams into a continuous system file.
+		* Supports segmentation into smaller files.
+  		* Uses crash-resistant TS format.
+		* Asynchronous parallel download available.
 * Arguments
 	* This feature offers the user a way to see the generated argument or run their own custom argument.
 * URI Listener
