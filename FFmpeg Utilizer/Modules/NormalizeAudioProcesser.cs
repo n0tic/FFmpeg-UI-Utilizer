@@ -180,7 +180,7 @@ namespace FFmpeg_Utilizer.Modules
         {
             string inputPath = inputFile.FullName;
             string outputPath = Path.Combine(processQueue.outputFolder, inputFile.Name);
-            string args = $"-y -i \"{inputPath}\" -filter:a loudnorm \"{outputPath}\"";
+            string args = $"-y -i \"{inputPath}\" -c:v copy -filter:a loudnorm -c:a aac \"{outputPath}\"";
 
             normalizeAudioProcess = new Process
             {

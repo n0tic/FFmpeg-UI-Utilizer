@@ -123,7 +123,7 @@ namespace FFmpeg_Utilizer
 
             // If we have determined we have internet; Check for updates.
             if (hasInternet)
-                updater.StartUpdateCheckAsync();
+                updater.StartUpdateCheckAsync(false, false);
 
             //Check if default folders exist, or create them.
             SetupFolders();
@@ -1086,7 +1086,6 @@ namespace FFmpeg_Utilizer
             using (OpenFileDialog op = new OpenFileDialog())
             {
                 // TODO: Add real filters to everything?
-                //op.Filter = "Executable Files(*exe.exe)|ffmpeg.exe";
 
                 DialogResult result = op.ShowDialog();
                 if (result == DialogResult.OK) Cut_MediaInputTextbox.Text = op.FileName;

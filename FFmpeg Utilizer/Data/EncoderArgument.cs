@@ -58,8 +58,8 @@ namespace FFmpeg_Utilizer.Data
             else
                 args += " -i \"C:\\inputfile.avi\"";
 
-            if (vCodec != Libs.VCodec.Default) args += " -c:v " + vCodec.ToString();
-            if (aCodec != Libs.ACodec.Default) args += " -c:a " + aCodec.ToString();
+            if (vCodec != Libs.VCodec.Default) args += " -c:v " + vCodec.ToString(); else args += " -c:v copy";
+            if (aCodec != Libs.ACodec.Default) args += " -c:a " + aCodec.ToString(); else args += " -c:a copy";
             if (tuner != Libs.Tune.Default) args += " -tune " + tuner.ToString();
             if (preset != Libs.Preset.Default) args += " -preset " + preset.ToString();
             if (fps != Libs.Frames.Default) args += " -filter:v fps=fps=" + Libs.GetFramesCount(fps);

@@ -108,7 +108,11 @@ namespace FFmpeg_Utilizer
             Output
         }
 
-        public static string GetDirectory() => @AppDomain.CurrentDomain.BaseDirectory;
+        // Works if not installed/extracted to a non-protected windows folder (like Program Files)
+        //public static string GetDirectory() => @AppDomain.CurrentDomain.BaseDirectory;
+
+        public static string GetDirectory() => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FFmpeg Utilizer") + @"\";
+
 
         public static string GetSubfolder(SubFolders folder) => GetDirectory() + folder.ToString() + @"\";
 

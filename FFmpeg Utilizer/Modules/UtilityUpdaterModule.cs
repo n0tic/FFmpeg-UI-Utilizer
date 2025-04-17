@@ -82,7 +82,7 @@ namespace FFmpeg_Utilizer.Modules
             main.SpeedLabel.Text = "";
         }
 
-        public void StartUpdateCheckAsync(bool button = false)
+        public void StartUpdateCheckAsync(bool button = false, bool notify = true)
         {
             main.checkForUpdateButtonOverride = button;
 
@@ -106,11 +106,11 @@ namespace FFmpeg_Utilizer.Modules
             main.Update_StatusLabel.Text = "Status: Getting Version...";
             main.Refresh();
 
-            client.DownloadStringCompleted += ClientVersionCheckCompleted;
+            client.DownloadStringCompleted += (s, e) => ClientVersionCheckCompleted(s, e, notify);
             client.DownloadStringAsync(new Uri(Core.FFmpeg64BitURLVersion));
         }
 
-        private void ClientVersionCheckCompleted(object sender, DownloadStringCompletedEventArgs e)
+        private void ClientVersionCheckCompleted(object sender, DownloadStringCompletedEventArgs e, bool notify)
         {
             ResetUI();
             main.Settings_OnlineVerLabel.Text = e.Result;
@@ -120,6 +120,16 @@ namespace FFmpeg_Utilizer.Modules
             {
                 SetUtilityDownloader(UtilityType.Update);
                 main.notice.SetNotice("An update seems to be available. It is recommended to update.", NoticeModule.TypeNotice.Warning);
+            }
+            else if(e.Result == main.settings.ffVersion && main.settings.ffVersion != "")
+            {
+                SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
+                if (notify) main.notice.SetNotice("You are running the latest version of FFmpeg.", NoticeModule.TypeNotice.Success);
+            }
+            else if (main.settings.ffVersion == "" && e.Result != "LOCALVERSION")
+            {
+                SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
+                if (notify) main.notice.SetNotice("You are running the latest version of FFmpeg.", NoticeModule.TypeNotice.Success);
             }
             else
             {
@@ -196,6 +206,7 @@ namespace FFmpeg_Utilizer.Modules
             {
                 updating = false;
                 ResetUI();
+                Console.WriteLine("Already up to date.");
             }
         }
 
