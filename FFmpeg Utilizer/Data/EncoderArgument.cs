@@ -57,7 +57,8 @@ namespace FFmpeg_Utilizer.Data
                 args += " -i \"" + inputFile.FullName + "\"";
             else
                 args += " -i \"C:\\inputfile.avi\"";
-
+            // TODO: Add check for when deleting file during encoding
+            // TODO: Add check for when file with the same name exist in encoding to stop overwriting
             if (vCodec != Libs.VCodec.Default) args += " -c:v " + vCodec.ToString(); else args += " -c:v copy";
             if (aCodec != Libs.ACodec.Default) args += " -c:a " + aCodec.ToString(); else args += " -c:a copy";
             if (tuner != Libs.Tune.Default) args += " -tune " + tuner.ToString();

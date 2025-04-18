@@ -224,8 +224,18 @@
     <Content Include="README.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Screenshots\Arguments.png" />
+    <Content Include="Screenshots\Cut.png" />
+    <Content Include="Screenshots\Encoder.png" />
+    <Content Include="Screenshots\M3U8.png" />
+    <Content Include="Screenshots\Merge.png" />
+    <Content Include="Screenshots\NormalizeAudio.png" />
+    <Content Include="Screenshots\Settings.png" />
+    <Content Include="Screenshots\StreamRecorder.png" />
+    <Content Include="Screenshots\Updates.png" />
     <None Include="Resources\Icon_filter.png" />
     <None Include="Resources\TrayIcon.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
