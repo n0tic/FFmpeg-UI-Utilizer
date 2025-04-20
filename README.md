@@ -32,7 +32,7 @@ FFMPEG Utilizer is NOT affiliated, associated, endorsed by, or in any way offici
 
 ## Preview 
 
-![FFmpeg Utilizer](http://bytevaultstudio.se/ShareX/preview.png)
+![Encoder](FFmpeg%20Utilizer/Screenshots/Encoder.png)
 
 UI & Styling may change.
 
@@ -193,9 +193,19 @@ Continue reading LICESE in repo...
 
 ## Previews
 
-If you can't click the preview above, Imgur album available here → http://imgur.com/a/wUtQ2dm
+# FFmpeg Utilizer
 
-![FFmpeg Utilizer](https://i.imgur.com/1JKXYN1.png)
-![FFmpeg Utilizer](https://i.imgur.com/70BS0I5.png)
-![FFmpeg Utilizer](https://i.imgur.com/Aw61jkB.png)
-![FFmpeg Utilizer](https://i.imgur.com/5eIlzKu.png)
+Below are screenshots showcasing the features of FFmpeg Utilizer:
+
+## Screenshots
+
+### Encoder
+![Encoder](FFmpeg%20Utilizer/Screenshots/Encoder.png)
+![Normalize Audio](FFmpeg%20Utilizer/Screenshots/NormalizeAudio.png)
+![Cut](FFmpeg%20Utilizer/Screenshots/Cut.png)
+![Merge](FFmpeg%20Utilizer/Screenshots/Merge.png)
+![M3U8](FFmpeg%20Utilizer/Screenshots/M3U8.png)
+![Stream Recorder](FFmpeg%20Utilizer/Screenshots/StreamRecorder.png)
+![Arguments](FFmpeg%20Utilizer/Screenshots/Arguments.png)
+![Settings](FFmpeg%20Utilizer/Screenshots/Settings.png)
+![Updates](FFmpeg%20Utilizer/Screenshots/Updates.png)
