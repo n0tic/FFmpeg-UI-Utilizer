@@ -20,8 +20,8 @@ namespace FFmpeg_Utilizer
         public static List<string> AudioFiles = new List<string> { ".aif", ".iff", ".m3u", ".m4a", ".mid", ".mp3", ".mpa", ".wav", ".wma" };
         public static List<string> AudioFilesDesc = new List<string> { "Audio Interchange File Format", "Interchange File Format", "Media Playlist File", "MPEG-4 Audio File", "MIDI File", "MP3 Audio File", "MPEG-2 Audio File", "WAVE Audio File", "Windows Media Audio File" };
 
-        public static List<string> VideoFiles = new List<string> { ".3g2", ".3gp", ".asf", ".avi", ".flv", ".m4v", ".mov", ".mp4", ".mpg", ".rm", ".srt", ".swf", ".vob", ".wmv", ".ts", ".mpeg", ".mkv" };
-        public static List<string> VideoFilesDesc = new List<string> { "3GPP2 Multimedia File", "3GPP Multimedia File", "Advanced Systems Format File", "Audio Video Interleave File", "Flash Video File", "iTunes Video File", "Apple QuickTime Movie", "MPEG-4 Video File", "MPEG Video File", "RealMedia File", "SubRip Subtitle File", "Shockwave Flash Movie", "DVD Video Object File", "Windows Media Video File", "Video Stream File", "Moving Picture Experts Group", "Matroska Video" };
+        public static List<string> VideoFiles = new List<string> { ".3g2", ".3gp", ".asf", ".avi", ".flv", ".m4v", ".mov", ".mp4", ".mpg", ".rm", ".srt", ".swf", ".vob", ".wmv", ".ts", ".mpeg", ".mkv", ".vob" };
+        public static List<string> VideoFilesDesc = new List<string> { "3GPP2 Multimedia File", "3GPP Multimedia File", "Advanced Systems Format File", "Audio Video Interleave File", "Flash Video File", "iTunes Video File", "Apple QuickTime Movie", "MPEG-4 Video File", "MPEG Video File", "RealMedia File", "SubRip Subtitle File", "Shockwave Flash Movie", "DVD Video Object File", "Windows Media Video File", "Video Stream File", "Moving Picture Experts Group", "Matroska Video", "Video Object file" };
 
         public static List<string> ImageFiles3D = new List<string> { ".3dm", ".3ds", ".max" };
         public static List<string> ImageFiles3DDesc = new List<string> { "Rhino 3D Model", "3D Studio Scene", "3ds Max Scene File" };

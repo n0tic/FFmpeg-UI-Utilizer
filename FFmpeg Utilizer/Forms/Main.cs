@@ -837,7 +837,7 @@ namespace FFmpeg_Utilizer
                 FileInfo f = new FileInfo(file);
                 foreach (string ext in allowedExtensions)
                 {
-                    if ("." + ext == f.Extension)
+                    if ("." + ext == f.Extension.ToLower())
                     {
                         ListViewItem item = new ListViewItem(new[] { file, "• Waiting" });
                         Encoder_FilesList.Items.Add(item);
@@ -1269,7 +1269,7 @@ namespace FFmpeg_Utilizer
                 FileInfo f = new FileInfo(file);
                 foreach (string ext in allowedExtensions)
                 {
-                    if ("." + ext == f.Extension)
+                    if ("." + ext == f.Extension.ToLower())
                     {
                         ListViewItem item = new ListViewItem(new[] { (Merge_listView.Items.Count + 1).ToString(), file });
                         Merge_listView.Items.Add(item);
@@ -1619,7 +1619,7 @@ namespace FFmpeg_Utilizer
                 FileInfo f = new FileInfo(file);
                 foreach (string ext in allowedExtensions)
                 {
-                    if ("." + ext == f.Extension)
+                    if ("." + ext == f.Extension.ToLower())
                     {
                         ListViewItem item = new ListViewItem(new[] { file, "• Waiting" });
                         NormalizeAudio_ListView.Items.Add(item);
@@ -1703,6 +1703,20 @@ namespace FFmpeg_Utilizer
         private void Menu_StreamRecorderIndicator_Click(object sender, EventArgs e)
         {
             Core.ChangeTab(Core.Tabs.RecordStream);
+        }
+
+        private void Merge_listView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                if (Merge_listView.SelectedItems.Count > 0)
+                {
+                    foreach (ListViewItem item in Merge_listView.SelectedItems)
+                    {
+                        Merge_listView.Items.Remove(item);
+                    }
+                }
+            }
         }
     }
 }
