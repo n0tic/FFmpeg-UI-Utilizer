@@ -6,7 +6,6 @@ using System.Drawing;
 using System.IO;
 using System.Media;
 using System.Threading;
-using System.Windows.Forms;
 
 namespace FFmpeg_Utilizer.Modules
 {

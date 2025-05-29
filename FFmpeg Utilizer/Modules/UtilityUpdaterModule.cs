@@ -121,7 +121,7 @@ namespace FFmpeg_Utilizer.Modules
                 SetUtilityDownloader(UtilityType.Update);
                 main.notice.SetNotice("An update seems to be available. It is recommended to update.", NoticeModule.TypeNotice.Warning);
             }
-            else if(e.Result == main.settings.ffVersion && main.settings.ffVersion != "")
+            else if (e.Result == main.settings.ffVersion && main.settings.ffVersion != "")
             {
                 SetUtilityDownloader(UtilityUpdaterModule.UtilityType.Download);
                 if (notify) main.notice.SetNotice("You are running the latest version of FFmpeg.", NoticeModule.TypeNotice.Success);
@@ -151,7 +151,7 @@ namespace FFmpeg_Utilizer.Modules
                 }
             }
 
-            if(main.checkForUpdateButtonOverride && main.settings.ffVersion != e.Result)
+            if (main.checkForUpdateButtonOverride && main.settings.ffVersion != e.Result)
             {
                 main.notice.SetNotice("An update seems to be available. It is recommended to update.", NoticeModule.TypeNotice.Warning);
             }

@@ -11,9 +11,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 // TODO: Comments
 // TODO: ADD libs etc till cut
@@ -153,12 +151,12 @@ namespace FFmpeg_Utilizer
             Core.ChangeTab(0);
 
             // If we are in debug, show the lower buttons to control the notice feature.
-//#if DEBUG
-//            Button1.Visible = true;
-//            Button2.Visible = true;
-//            Button3.Visible = true;
-//            button4.Visible = true;
-//#endif
+            //#if DEBUG
+            //            Button1.Visible = true;
+            //            Button2.Visible = true;
+            //            Button3.Visible = true;
+            //            button4.Visible = true;
+            //#endif
 
             #region Settings
 
@@ -729,8 +727,12 @@ namespace FFmpeg_Utilizer
         /// <param name="e"></param>
         private void Settings_URIServerCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            if (Settings_URIServerCheckbox.Checked) uriRequestHandler = new UriRequestsHandler(this, Convert.ToInt32(Settings_URIServerPort.Value));
-            else uriRequestHandler.KillServer();
+            if (Settings_URIServerCheckbox.Checked)
+            {
+                uriRequestHandler = new UriRequestsHandler(this, Convert.ToInt32(Settings_URIServerPort.Value));
+                uriRequestHandler.StartServer();
+            }
+            else uriRequestHandler.StopServer();
         }
 
         #endregion Settings
@@ -1577,7 +1579,7 @@ namespace FFmpeg_Utilizer
 
         private void M3U8_MultiDownload_CheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if(M3U8_MultiDownload_CheckBox.Checked)
+            if (M3U8_MultiDownload_CheckBox.Checked)
             {
                 M3U8_NumDownloadsAsync.Visible = true;
             }

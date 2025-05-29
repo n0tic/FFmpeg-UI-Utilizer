@@ -1,5 +1,4 @@
-﻿using FFmpeg_Utilizer.Data;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 
 namespace FFMPEG_Utilizer.Data

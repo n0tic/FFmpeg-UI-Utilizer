@@ -49,7 +49,8 @@ namespace FFmpeg_Utilizer
             string strTheseAreInvalidFileNameChars = new string(System.IO.Path.GetInvalidFileNameChars());
             Regex regInvalidFileName = new Regex("[" + Regex.Escape(strTheseAreInvalidFileNameChars) + "]");
 
-            if (regInvalidFileName.IsMatch(testName)) { return false; };
+            if (regInvalidFileName.IsMatch(testName)) { return false; }
+            ;
 
             return true;
         }

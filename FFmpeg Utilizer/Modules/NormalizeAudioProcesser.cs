@@ -1,5 +1,4 @@
-﻿using FFmpeg_Utilizer.Data;
-using FFMPEG_Utilizer.Data;
+﻿using FFMPEG_Utilizer.Data;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;

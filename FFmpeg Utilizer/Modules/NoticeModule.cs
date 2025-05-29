@@ -47,7 +47,7 @@ namespace FFmpeg_Utilizer.Modules
                 switch (nType)
                 {
                     case TypeNotice.Warning:
-                        if(!silent) SystemSounds.Hand.Play();
+                        if (!silent) SystemSounds.Hand.Play();
                         break;
 
                     case TypeNotice.Error:
