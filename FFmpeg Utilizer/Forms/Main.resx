@@ -129,9 +129,6 @@
      • Finally, once all the steps are completed, the downloaded file in the Downloads folder will be removed to clean up.
 Please note that download and unpacking speeds may vary depending on your location, the server's response time, and the speed of your internet connection.</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="TraySystem.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>107, 17</value>
   </metadata>

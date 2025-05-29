@@ -1,29 +1,33 @@
 {
-    "manifest_version": 2,
-    "name": "FFmpeg Utilizer Plugin",
-    "version": "1.0",
-    "description": "This plugin is for FFmpeg Utilizer and streamlines the process of inserting video files and HLS/M3U8 playlists into the software, making it more efficient and user-friendly.",
-    "icons":
-    {
-        "16": "icon/icon16.png",
-        "48": "icon/icon48.png",
-        "128": "icon/icon128.png"
-    },
-    "browser_action": 
-	{
-		"default_icon": "icon/icon16.png",
-		"default_popup": "popup.html"
-	},
-    "permissions":
-    [
-        "webRequest",
-        "tabs",
-        "http://*/*",
-        "https://*/*",
-        "storage"
-    ],
-    "background": 
-    {
-        "page": "background.html"
+  "manifest_version": 3,
+  "name": "FFmpeg Utilizer Media Detector",
+  "version": "0.0.2",
+  "description": "Detect and download videos/streams from any webpage using webRequest API for FFmpeg Utilizer processing.",
+  "permissions": [
+    "activeTab",
+    "storage", 
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FFmpeg Utilizer Media Detector",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }

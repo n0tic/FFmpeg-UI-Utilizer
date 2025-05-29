@@ -117,10 +117,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Chrome Extension\Chromium Extension.crx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Chrome Extension\css\bootstrap.min.css.map" />
     <None Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon.psd" />
     <None Include="Chrome Extension\manifest.json" />
     <None Include="Properties\Settings.settings">
@@ -203,8 +199,7 @@
     <None Include="Resources\Icon_star_outline.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Chrome Extension\background.html" />
-    <Content Include="Chrome Extension\css\bootstrap.min.css" />
+    <Content Include="Chrome Extension\css\popup.css" />
     <Content Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon FoundVideo.png" />
     <Content Include="Chrome Extension\icon\FFmpegUtilizer Chrome extension icon.png" />
     <Content Include="Chrome Extension\icon\icon128.png" />
@@ -213,8 +208,6 @@
     <Content Include="Chrome Extension\icon\icon32.png" />
     <Content Include="Chrome Extension\icon\icon48.png" />
     <Content Include="Chrome Extension\js\background.js" />
-    <Content Include="Chrome Extension\js\bootstrap.min.js" />
-    <Content Include="Chrome Extension\js\jquery.min.js" />
     <Content Include="Chrome Extension\js\popup.js" />
     <Content Include="Chrome Extension\popup.html" />
     <Content Include="FFmpegUtilizerIcon.ico" />

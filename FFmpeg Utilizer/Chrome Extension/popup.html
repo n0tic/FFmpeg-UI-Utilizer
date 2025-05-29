@@ -1,50 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>FFMPEG Utilizer Chromium Extension</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/popup.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .btn:focus{
-            box-shadow:none!important;   
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFmpeg Utilizer Media Detector</title>
+  <link rel="stylesheet" href="css/popup.css">
 </head>
-<body style="width:500px;min-height:250px;" class="container">
-    <div class="col-12 mt-1">
-        <h5>FFmpeg Utilizer Plugin <a href="#" style="float: right;" title="Clear List"><i class="fas fa-eraser" id="erase"></i></a>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>FFmpeg Utilizer Media Detector</h1>
+      <button id="clearBtn" class="clear-btn" title="Clear List">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+        </svg>
+      </button>
     </div>
-    <div class="row card mb-2 ms-0 me-0">
-        <div class="col-12 card-body">
-            <div id="box" class="box card-text" style="min-height:110px;">
-                <!-- <div class="mt-1 mb-1"><span style="max-width: 200px;">index.m3u8</span><a href="#" style="float: right;">复制</a></div> -->
-            </div>
-        </div>
-    </div>
-
-    <div class="alert alert-success fade hide" style="padding:5px 20px 5px 20px;line-height:14px;font-size: 14px;" hidden>
-        Copied Successfully!
-    </div>
-    <div class="alert alert-warning fade hide" style="padding:5px 20px 5px 20px;line-height:14px;font-size: 14px;" hidden>
-        No playlist or video detected! Refreshing the page may help...
-    </div>
-    <div class="alert alert-danger fade hide" style="padding:5px 20px 5px 20px;line-height:14px;font-size: 14px;" hidden>
-        Error communicating with FFmpeg Utilizer software... <a href="#" style="float: right;" title="Port Settings"><i class="fas fa-cog" id="settingsCog"></i></a>
-    </div>
-
-    <!-- Port input and save button, hidden by default -->
-    <div id="portSettings" class="mt-3" hidden>
-        <label for="portInput">Port Number:</label>
-        <input type="number" id="portInput" class="form-control" placeholder="Enter port" value="288">
-        <p>Make sure you have FFmpeg Utilizer software running and that URI Listener is active in settings. (Indicating green)</p>
-    </div>
-    <div id="saveButtonContainer" class="mt-2" style="margin-bottom: 10px;" hidden>
-        <button id="saveBtn" class="btn btn-primary">Save</button>
+    
+    <div class="settings">
+      <label for="portInput">Local Server Port:</label>
+      <input type="number" id="portInput" placeholder="Port" value="288" min="1" max="65535">
+      <button id="scanBtn" class="port-btn scan-btn" title="Scan for open server">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        Scan
+      </button>
+      <button id="testBtn" class="port-btn test-btn" title="Test server connection">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.061L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        Test
+      </button>
     </div>
 
+    <div id="portStatus" class="port-status" style="display: none;">
+      <div class="status-message"></div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">
+        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+          <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+        </svg>
+        All <span class="count" id="countAll">0</span>
+      </button>
+      <button class="filter-tab" data-filter="video">
+        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+        </svg>
+        Video <span class="count" id="countVideo">0</span>
+      </button>
+      <button class="filter-tab" data-filter="audio">
+        <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M9 4a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v4H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H9V4Z"/>
+        </svg>
+        Audio <span class="count" id="countAudio">0</span>
+      </button>
+    </div>
+
+    <div id="noVideos" class="no-videos">
+      <div class="icon">📹</div>
+      <p>No media detected on this page</p>
+    </div>
+
+    <div id="videoList" class="video-list"></div>
+  </div>
+
+  <script src="js/popup.js"></script>
 </body>
 </html>

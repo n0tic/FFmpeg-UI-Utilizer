@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Drag & drop here..."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Drag and drop a folder or multiple files here...",
             ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
@@ -596,12 +596,12 @@
             // 
             // ContainerPanel
             // 
+            this.ContainerPanel.Controls.Add(this.SettingsMainPanel);
             this.ContainerPanel.Controls.Add(this.MergeMainPanel);
             this.ContainerPanel.Controls.Add(this.EncoderMainPanel);
             this.ContainerPanel.Controls.Add(this.NormalizeAudioMainPanel);
             this.ContainerPanel.Controls.Add(this.StreamRecorderMainPanel);
             this.ContainerPanel.Controls.Add(this.M3U8MainPanel);
-            this.ContainerPanel.Controls.Add(this.SettingsMainPanel);
             this.ContainerPanel.Controls.Add(this.UpdateMainPanel);
             this.ContainerPanel.Controls.Add(this.CutMainPanel);
             this.ContainerPanel.Controls.Add(this.ArgumentMainPanel);
@@ -850,7 +850,7 @@
             this.Merge_listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Merge_listView.HideSelection = false;
             this.Merge_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem1});
             this.Merge_listView.Location = new System.Drawing.Point(6, 44);
             this.Merge_listView.MultiSelect = false;
             this.Merge_listView.Name = "Merge_listView";
@@ -1292,7 +1292,7 @@
             this.Encoder_FilesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Encoder_FilesList.HideSelection = false;
             this.Encoder_FilesList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            listViewItem2});
             this.Encoder_FilesList.Location = new System.Drawing.Point(6, 95);
             this.Encoder_FilesList.MultiSelect = false;
             this.Encoder_FilesList.Name = "Encoder_FilesList";
@@ -1606,7 +1606,7 @@
             this.NormalizeAudio_ListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.NormalizeAudio_ListView.HideSelection = false;
             this.NormalizeAudio_ListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem6});
+            listViewItem3});
             this.NormalizeAudio_ListView.Location = new System.Drawing.Point(27, 68);
             this.NormalizeAudio_ListView.MultiSelect = false;
             this.NormalizeAudio_ListView.Name = "NormalizeAudio_ListView";
@@ -2742,12 +2742,12 @@
             this.Settings_URIServerPort.Font = new System.Drawing.Font("Bahnschrift", 8F);
             this.Settings_URIServerPort.Location = new System.Drawing.Point(44, 56);
             this.Settings_URIServerPort.Maximum = new decimal(new int[] {
-            65535,
+            300,
             0,
             0,
             0});
             this.Settings_URIServerPort.Minimum = new decimal(new int[] {
-            1,
+            275,
             0,
             0,
             0});
